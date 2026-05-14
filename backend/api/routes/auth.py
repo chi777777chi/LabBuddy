@@ -60,4 +60,4 @@ async def google_callback(code: str, db: Session = Depends(get_db)):
         db.refresh(user)
 
     token = create_access_token({"sub": user.id, "email": user.email, "name": user.name})
-    return RedirectResponse(f"{settings.frontend_url}/callback/{token}")
+    return RedirectResponse(f"{settings.frontend_url}/callback/{token}/")

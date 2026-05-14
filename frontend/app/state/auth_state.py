@@ -12,7 +12,7 @@ class AuthState(rx.State):
 
     def handle_callback(self):
         """OAuth callback：從 URL path param 讀取 token，存入 LocalStorage 後導向主選單。"""
-        token = self.router.page.params.get("token", "")
+        token = self.router.page.params.get("jwt", "")
         if not token:
             return rx.redirect("/")
         self.token = token
