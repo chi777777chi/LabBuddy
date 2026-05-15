@@ -10,10 +10,10 @@
 ## Phase 1｜基礎建設
 > 目標：專案可以跑起來、用 Google 登入
 
-- [ ] 建立專案結構（FastAPI + Reflex）
-- [ ] 設計資料庫 schema（User、Subject、Question、ExamSession、Answer）
-- [ ] 整合 Google OAuth 登入
-- [ ] 建立基本頁面路由（首頁、登入頁、主選單）
+- [x] 建立專案結構（FastAPI + Reflex）
+- [ ] 設計資料庫 schema（User、Subject、Question、ExamSession、Answer）— User 已完成，待補其餘
+- [x] 整合 Google OAuth 登入
+- [x] 建立基本頁面路由（首頁、登入頁、主選單）
 
 ---
 

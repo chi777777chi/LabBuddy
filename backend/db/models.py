@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime
 from sqlalchemy import String, DateTime
 from sqlalchemy.orm import Mapped, mapped_column
-from .database import Base
+from db.database import Base
 
 
 class User(Base):
