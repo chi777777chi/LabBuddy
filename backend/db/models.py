@@ -65,9 +65,11 @@ class ExamSession(Base):
     timed: Mapped[bool] = mapped_column(Boolean, default=False)
     instant_review: Mapped[bool] = mapped_column(Boolean, default=True)
     save_to_history: Mapped[bool] = mapped_column(Boolean, default=True)
+    shuffle_options: Mapped[bool] = mapped_column(Boolean, default=False)
     score: Mapped[int | None] = mapped_column(Integer, nullable=True)
     started_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
     finished_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    session_questions: Mapped[str | None] = mapped_column(Text, nullable=True)  # JSON: [{question_id, order, effective_answer}]
 
     user: Mapped["User"] = relationship(back_populates="sessions")
     answers: Mapped[list["Answer"]] = relationship(back_populates="session")
@@ -79,7 +81,8 @@ class Answer(Base):
     id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
     session_id: Mapped[str] = mapped_column(ForeignKey("exam_sessions.id"), nullable=False)
     question_id: Mapped[str] = mapped_column(ForeignKey("questions.id"), nullable=False)
-    chosen: Mapped[str | None] = mapped_column(String, nullable=True)   # A/B/C/D 或 None（未作答）
+    order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)  # 在本次考試中的順序
+    chosen: Mapped[str | None] = mapped_column(String, nullable=True)      # A/B/C/D 或 None（未作答）
     is_correct: Mapped[bool | None] = mapped_column(Boolean, nullable=True)
     time_spent_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)
 

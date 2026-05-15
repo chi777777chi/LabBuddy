@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from core.config import settings
 from db.database import Base, engine
-from api.routes import auth, users, subjects, questions
+from api.routes import auth, users, subjects, questions, exam
 
 Base.metadata.create_all(bind=engine)
 
@@ -21,6 +21,7 @@ app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(subjects.router)
 app.include_router(questions.router)
+app.include_router(exam.router)
 
 
 @app.get("/health")
