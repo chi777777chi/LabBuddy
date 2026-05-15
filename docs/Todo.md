@@ -11,7 +11,7 @@
 > 目標：專案可以跑起來、用 Google 登入
 
 - [x] 建立專案結構（FastAPI + Reflex）
-- [ ] 設計資料庫 schema（User、Subject、Question、ExamSession、Answer）— User 已完成，待補其餘
+- [x] 設計資料庫 schema（User、Subject、Question、ExamSession、Answer）
 - [x] 整合 Google OAuth 登入
 - [x] 建立基本頁面路由（首頁、登入頁、主選單）
 
@@ -20,10 +20,11 @@
 ## Phase 2｜題庫系統
 > 目標：題目可以存入資料庫並查詢
 
-- [ ] 定義題目資料格式（JSON / CSV）
-- [ ] 建立 Question CRUD API
-- [ ] 建立六大科目分類結構
-- [ ] 撰寫考古題批次匯入工具
+- [x] 定義題目資料格式（JSON）
+- [x] 建立六大科目分類結構（Subject model）
+- [x] 完善資料庫 schema（Question、ExamSession、Answer model）
+- [x] 建立 Question / Subject CRUD API
+- [x] 撰寫考古題批次匯入工具
 
 ---
 
