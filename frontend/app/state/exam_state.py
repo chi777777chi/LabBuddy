@@ -57,6 +57,7 @@ class ExamState(rx.State):
     result_total: int = 0
     result_percentage: float = 0.0
     result_details: list[ResultDetail] = []
+    result_session_id: str = ""  # 交卷後保留 session_id 供 PDF 匯出
 
     # ── 基本 computed vars ────────────────────────────────────
     @rx.var
@@ -287,6 +288,11 @@ class ExamState(rx.State):
 
     def set_show_quit_dialog(self, value: bool):
         self.show_quit_dialog = value
+
+    async def download_result_pdf(self):
+        auth = await self.get_state(AuthState)
+        url = f"{BACKEND_URL}/exam/{self.result_session_id}/export-pdf?token={auth.token}"
+        return rx.redirect(url, is_external=True)
 
     def open_early_submit_dialog(self):
         self.show_early_submit_dialog = True
@@ -519,5 +525,6 @@ class ExamState(rx.State):
                 )
                 for d in data.get("details", [])
             ]
+            self.result_session_id = self.session_id
             self.session_id = ""
             return rx.redirect("/result")

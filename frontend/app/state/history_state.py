@@ -41,6 +41,7 @@ class HistoryState(rx.State):
     # ── 詳情 dialog ───────────────────────────────────────────
     is_detail_open: bool = False
     is_detail_loading: bool = False
+    detail_session_id: str = ""
     detail_subject: str = ""
     detail_year_sitting: str = ""
     detail_score: int = 0
@@ -104,9 +105,15 @@ class HistoryState(rx.State):
         self.items = items
 
     # ── 載入單次詳情 ──────────────────────────────────────────
+    async def download_pdf(self):
+        auth = await self.get_state(AuthState)
+        url = f"{BACKEND_URL}/exam/{self.detail_session_id}/export-pdf?token={auth.token}"
+        return rx.redirect(url, is_external=True)
+
     async def load_detail(self, session_id: str):
         self.is_detail_open = True
         self.is_detail_loading = True
+        self.detail_session_id = session_id
         self.detail_items = []
         auth = await self.get_state(AuthState)
         t = auth.token

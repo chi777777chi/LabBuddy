@@ -58,14 +58,25 @@ def detail_dialog() -> rx.Component:
                             weight="bold",
                             size="5",
                         ),
-                        rx.dialog.close(
+                        rx.hstack(
                             rx.button(
-                                rx.icon("x", size=14),
-                                "關閉",
-                                variant="ghost",
-                                color_scheme="gray",
+                                rx.icon("file-down", size=14),
+                                "匯出 PDF",
+                                on_click=HistoryState.download_pdf,
+                                variant="soft",
+                                color_scheme="green",
                                 size="2",
                             ),
+                            rx.dialog.close(
+                                rx.button(
+                                    rx.icon("x", size=14),
+                                    "關閉",
+                                    variant="ghost",
+                                    color_scheme="gray",
+                                    size="2",
+                                ),
+                            ),
+                            spacing="2",
                         ),
                         align="end",
                         spacing="2",

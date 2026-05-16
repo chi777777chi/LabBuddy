@@ -75,6 +75,13 @@ def result_page() -> rx.Component:
                                 color_scheme="blue",
                             ),
                             rx.button(
+                                rx.icon("file-down", size=16),
+                                "匯出 PDF",
+                                on_click=ExamState.download_result_pdf,
+                                variant="soft",
+                                color_scheme="green",
+                            ),
+                            rx.button(
                                 rx.icon("clock", size=16),
                                 "歷史紀錄",
                                 on_click=rx.redirect("/history"),

@@ -1,6 +1,7 @@
-import json, random
+import io, json, random
 from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from sqlalchemy import func
 from sqlalchemy.orm import Session
@@ -8,6 +9,7 @@ from sqlalchemy.orm import Session
 from db.database import get_db
 from db.models import Answer, ExamSession, Question, QuestionStats, Subject, User
 from core.security import decode_token
+from utils.pdf import generate_exam_pdf
 
 router = APIRouter(prefix="/exam", tags=["exam"])
 
@@ -366,6 +368,79 @@ def get_session_detail(
         "question_count": session.question_count,
         "details": details,
     }
+
+
+# ── GET /exam/{session_id}/export-pdf ────────────────────────
+@router.get("/{session_id}/export-pdf")
+def export_pdf(
+    session_id: str,
+    token: str = Query(...),
+    db: Session = Depends(get_db),
+):
+    payload = decode_token(token)
+    session = db.query(ExamSession).filter(
+        ExamSession.id == session_id,
+        ExamSession.user_id == payload["sub"],
+        ExamSession.finished_at.isnot(None),
+    ).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    subject = db.query(Subject).filter(Subject.id == session.subject_id).first()
+    meta = {m["question_id"]: m for m in json.loads(session.session_questions or "[]")}
+    answers = db.query(Answer).filter(Answer.session_id == session_id).order_by(Answer.order).all()
+
+    details = []
+    for a in answers:
+        q = db.query(Question).filter(Question.id == a.question_id).first()
+        details.append({
+            "order": a.order,
+            "content": q.content if q else "",
+            "options": {
+                "A": q.option_a if q else "",
+                "B": q.option_b if q else "",
+                "C": q.option_c if q else "",
+                "D": q.option_d if q else "",
+            },
+            "chosen": a.chosen or "未作答",
+            "correct_answer": meta.get(a.question_id, {}).get("effective_answer", ""),
+            "is_correct": a.is_correct,
+        })
+
+    mode_labels = {
+        "single_full": "完整考卷", "single_random": "單卷隨機",
+        "multi_random": "多卷混合", "wrong_review": "錯題複習",
+    }
+    sitting_labels = {1: "第一次", 2: "第二次"}
+    if session.mode in ("multi_random", "wrong_review"):
+        year_sitting = "多年混合"
+    elif session.year and session.sitting:
+        year_sitting = f"{session.year}年{sitting_labels.get(session.sitting, '')}"
+    else:
+        year_sitting = ""
+
+    score = session.score or 0
+    total = session.question_count
+    pct = round(score / total * 100, 1) if total else 0.0
+    finished_str = session.finished_at.strftime("%Y/%m/%d %H:%M") if session.finished_at else ""
+    filename = f"exam_{session.finished_at.strftime('%Y%m%d_%H%M') if session.finished_at else 'result'}.pdf"
+
+    pdf_bytes = generate_exam_pdf(
+        subject_name=subject.name if subject else "",
+        year_sitting=year_sitting,
+        mode_label=mode_labels.get(session.mode, session.mode),
+        finished_at=finished_str,
+        score=score,
+        total=total,
+        percentage=pct,
+        details=details,
+    )
+
+    return StreamingResponse(
+        io.BytesIO(pdf_bytes),
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename={filename}"},
+    )
 
 
 # ── POST /exam/{session_id}/submit ───────────────────────────
