@@ -2,10 +2,11 @@ import json, random
 from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from db.database import get_db
-from db.models import Answer, ExamSession, Question, Subject, User
+from db.models import Answer, ExamSession, Question, QuestionStats, Subject, User
 from core.security import decode_token
 
 router = APIRouter(prefix="/exam", tags=["exam"])
@@ -106,6 +107,24 @@ def start_exam(
         pool = base_q.all()
         questions = random.sample(pool, min(body.question_count, len(pool)))
 
+    elif body.mode == "wrong_review":
+        wrong_stats = (
+            db.query(QuestionStats)
+            .join(Question, QuestionStats.question_id == Question.id)
+            .filter(
+                QuestionStats.user_id == user.id,
+                QuestionStats.wrong_count > 0,
+                Question.subject_id == body.subject_id,
+            )
+            .all()
+        )
+        if not wrong_stats:
+            raise HTTPException(status_code=404, detail="此科目沒有錯題紀錄")
+        stats_map = {s.question_id: s for s in wrong_stats}
+        pool = base_q.filter(Question.id.in_(list(stats_map.keys()))).all()
+        pool.sort(key=lambda q: stats_map[q.id].wrong_count, reverse=True)
+        questions = pool[:body.question_count]
+
     else:
         raise HTTPException(status_code=422, detail=f"未知的出題模式：{body.mode}")
 
@@ -151,7 +170,7 @@ def start_exam(
             order=order,
         ))
 
-        question_list.append({
+        q_data = {
             "order": order,
             "question_id": q.id,
             "content": q.content,
@@ -159,7 +178,12 @@ def start_exam(
             "source": build_source(q.year, q.sitting, subject.name, q.number),
             "has_image": q.has_image,
             "image_path": q.image_path,
-        })
+        }
+        if body.mode == "wrong_review" and q.id in stats_map:
+            stat = stats_map[q.id]
+            q_data["wrong_count"] = stat.wrong_count
+            q_data["correct_count"] = stat.correct_count
+        question_list.append(q_data)
 
     session.session_questions = json.dumps(session_q_meta, ensure_ascii=False)
     db.commit()
@@ -216,6 +240,134 @@ def submit_answer(
     return resp
 
 
+# ── GET /exam/history ────────────────────────────────────────
+@router.get("/history")
+def get_history(
+    token: str = Query(...),
+    db: Session = Depends(get_db),
+):
+    payload = decode_token(token)
+    user = db.query(User).filter(User.id == payload["sub"]).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    sessions = (
+        db.query(ExamSession)
+        .filter(
+            ExamSession.user_id == user.id,
+            ExamSession.finished_at.isnot(None),
+            ExamSession.save_to_history == True,
+        )
+        .order_by(ExamSession.finished_at.desc())
+        .all()
+    )
+
+    result = []
+    for s in sessions:
+        subject = db.query(Subject).filter(Subject.id == s.subject_id).first()
+        total = s.question_count
+        score = s.score or 0
+        pct = round(score / total * 100, 1) if total else 0.0
+        result.append({
+            "session_id": s.id,
+            "subject_name": subject.name if subject else "",
+            "year": s.year,
+            "sitting": s.sitting,
+            "mode": s.mode,
+            "question_count": total,
+            "score": score,
+            "percentage": pct,
+            "timed": s.timed,
+            "finished_at": s.finished_at.isoformat() if s.finished_at else "",
+        })
+
+    return result
+
+
+# ── GET /exam/wrong-questions ─────────────────────────────────
+@router.get("/wrong-questions")
+def get_wrong_questions(
+    token: str = Query(...),
+    db: Session = Depends(get_db),
+):
+    payload = decode_token(token)
+    user = db.query(User).filter(User.id == payload["sub"]).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    results = (
+        db.query(
+            Subject.id,
+            Subject.name,
+            func.count(QuestionStats.id).label("wrong_question_count"),
+            func.sum(QuestionStats.wrong_count).label("total_wrong"),
+            func.sum(QuestionStats.correct_count).label("total_correct"),
+        )
+        .join(Question, QuestionStats.question_id == Question.id)
+        .join(Subject, Question.subject_id == Subject.id)
+        .filter(
+            QuestionStats.user_id == user.id,
+            QuestionStats.wrong_count > 0,
+        )
+        .group_by(Subject.id, Subject.name)
+        .all()
+    )
+
+    return [
+        {
+            "subject_id": r[0],
+            "subject_name": r[1],
+            "wrong_question_count": r[2],
+            "total_wrong": int(r[3] or 0),
+            "total_correct": int(r[4] or 0),
+        }
+        for r in results
+    ]
+
+
+# ── GET /exam/{session_id}/detail ────────────────────────────
+@router.get("/{session_id}/detail")
+def get_session_detail(
+    session_id: str,
+    token: str = Query(...),
+    db: Session = Depends(get_db),
+):
+    payload = decode_token(token)
+    session = db.query(ExamSession).filter(
+        ExamSession.id == session_id,
+        ExamSession.user_id == payload["sub"],
+        ExamSession.finished_at.isnot(None),
+    ).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    subject = db.query(Subject).filter(Subject.id == session.subject_id).first()
+    meta = {m["question_id"]: m for m in json.loads(session.session_questions or "[]")}
+    answers = db.query(Answer).filter(Answer.session_id == session_id).order_by(Answer.order).all()
+
+    details = []
+    for a in answers:
+        q = db.query(Question).filter(Question.id == a.question_id).first()
+        details.append({
+            "order": a.order,
+            "content": q.content if q else "",
+            "chosen": a.chosen,
+            "correct_answer": meta.get(a.question_id, {}).get("effective_answer"),
+            "is_correct": a.is_correct,
+        })
+
+    return {
+        "session_id": session_id,
+        "subject_name": subject.name if subject else "",
+        "year": session.year,
+        "sitting": session.sitting,
+        "mode": session.mode,
+        "score": session.score or 0,
+        "question_count": session.question_count,
+        "details": details,
+    }
+
+
 # ── POST /exam/{session_id}/submit ───────────────────────────
 @router.post("/{session_id}/submit")
 def submit_exam(
@@ -240,6 +392,29 @@ def submit_exam(
 
     session.score = correct
     session.finished_at = datetime.utcnow()
+
+    # ── 更新每題的累計作答統計 ──
+    for a in answers:
+        if a.is_correct is None:  # 未作答，不計入統計
+            continue
+        stat = db.query(QuestionStats).filter(
+            QuestionStats.user_id == session.user_id,
+            QuestionStats.question_id == a.question_id,
+        ).first()
+        if stat:
+            if a.is_correct:
+                stat.correct_count += 1
+            else:
+                stat.wrong_count += 1
+            stat.last_attempted_at = datetime.utcnow()
+        else:
+            db.add(QuestionStats(
+                user_id=session.user_id,
+                question_id=a.question_id,
+                correct_count=1 if a.is_correct else 0,
+                wrong_count=0 if a.is_correct else 1,
+            ))
+
     db.commit()
 
     # 回傳各題詳情

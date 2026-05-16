@@ -75,6 +75,13 @@ def result_page() -> rx.Component:
                                 color_scheme="blue",
                             ),
                             rx.button(
+                                rx.icon("clock", size=16),
+                                "歷史紀錄",
+                                on_click=rx.redirect("/history"),
+                                variant="soft",
+                                color_scheme="violet",
+                            ),
+                            rx.button(
                                 rx.icon("home", size=16),
                                 "回主選單",
                                 on_click=rx.redirect("/home"),

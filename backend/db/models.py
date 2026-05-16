@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime
-from sqlalchemy import String, DateTime, Integer, Boolean, ForeignKey, Text
+from sqlalchemy import String, DateTime, Integer, Boolean, ForeignKey, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from db.database import Base
 
@@ -88,3 +88,17 @@ class Answer(Base):
 
     session: Mapped["ExamSession"] = relationship(back_populates="answers")
     question: Mapped["Question"] = relationship(back_populates="answers")
+
+
+class QuestionStats(Base):
+    """每位使用者對每道題的累計作答統計（答對/答錯次數）"""
+    __tablename__ = "question_stats"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id"), nullable=False)
+    question_id: Mapped[str] = mapped_column(ForeignKey("questions.id"), nullable=False)
+    correct_count: Mapped[int] = mapped_column(Integer, default=0)
+    wrong_count: Mapped[int] = mapped_column(Integer, default=0)
+    last_attempted_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    __table_args__ = (UniqueConstraint("user_id", "question_id"),)

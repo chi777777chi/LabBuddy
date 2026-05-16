@@ -42,6 +42,16 @@ class ExamState(rx.State):
     time_left: int = 0
     is_timer_running: bool = False
 
+    # ── 放棄確認 dialog ───────────────────────────────────────
+    show_quit_dialog: bool = False
+
+    # ── 提早交卷確認 dialog ───────────────────────────────────
+    show_early_submit_dialog: bool = False
+
+    # ── 即時對答回饋等待 ──────────────────────────────────────
+    is_showing_feedback: bool = False  # 顯示回饋中（2 秒鎖定）
+    pending_submit: bool = False       # 2 秒後要交卷（而非下一題）
+
     # ── 成績 ─────────────────────────────────────────────────
     result_score: int = 0
     result_total: int = 0
@@ -64,6 +74,37 @@ class ExamState(rx.State):
     @rx.var
     def has_session(self) -> bool:
         return self.session_id != ""
+
+    @rx.var
+    def unanswered_count(self) -> int:
+        return len(self.questions) - len(self.selected_answers)
+
+    @rx.var
+    def all_answered(self) -> bool:
+        return len(self.selected_answers) == len(self.questions) and len(self.questions) > 0
+
+    @rx.var
+    def is_current_answered(self) -> bool:
+        """即時對答模式下，當前題目是否已送出（鎖定）"""
+        return self.current_qid in self.answered_via_api
+
+    @rx.var
+    def is_wrong_review(self) -> bool:
+        if not self.questions:
+            return False
+        return "wrong_count" in self.questions[0]
+
+    @rx.var
+    def current_wrong_count(self) -> int:
+        if not self.questions or self.current_index >= len(self.questions):
+            return 0
+        return self.questions[self.current_index].get("wrong_count", 0)
+
+    @rx.var
+    def current_correct_count(self) -> int:
+        if not self.questions or self.current_index >= len(self.questions):
+            return 0
+        return self.questions[self.current_index].get("correct_count", 0)
 
     @rx.var
     def current_qid(self) -> str:
@@ -241,6 +282,40 @@ class ExamState(rx.State):
         self.save_to_history = value
 
     # ── 開始 / 重做考試 ───────────────────────────────────────
+    def open_quit_dialog(self):
+        self.show_quit_dialog = True
+
+    def set_show_quit_dialog(self, value: bool):
+        self.show_quit_dialog = value
+
+    def open_early_submit_dialog(self):
+        self.show_early_submit_dialog = True
+
+    def set_show_early_submit_dialog(self, value: bool):
+        self.show_early_submit_dialog = value
+
+    def confirm_quit(self):
+        """放棄此次測驗，不交卷，直接清除 session 回主選單。"""
+        self.session_id = ""
+        self.questions = []
+        self.is_timer_running = False
+        self.time_left = 0
+        self.show_quit_dialog = False
+        return rx.redirect("/home")
+
+    async def start_wrong_review(self, subject_id: int):
+        self.selected_subject_id = subject_id
+        self.selected_mode = "wrong_review"
+        self.selected_count = 999  # 後端會 cap 到實際錯題數
+        self.current_index = 0
+        self.selected_answers = {}
+        self.eliminated = {}
+        self.feedback = {}
+        self.answered_via_api = {}
+        self.time_left = 0
+        self.is_timer_running = False
+        return ExamState.start_exam
+
     async def restart_exam(self):
         self.current_index = 0
         self.selected_answers = {}
@@ -320,7 +395,7 @@ class ExamState(rx.State):
     # ── 答題介面事件 ──────────────────────────────────────────
     def select_option(self, option: str):
         qid = self.current_qid
-        if not qid:
+        if not qid or qid in self.answered_via_api:  # 已送出，鎖定
             return
         if self.selected_answers.get(qid) == option:
             new = dict(self.selected_answers)
@@ -331,7 +406,7 @@ class ExamState(rx.State):
 
     def toggle_eliminate(self, option: str):
         qid = self.current_qid
-        if not qid:
+        if not qid or qid in self.answered_via_api:  # 已送出，鎖定
             return
         current = list(self.eliminated.get(qid, []))
         if option in current:
@@ -348,15 +423,73 @@ class ExamState(rx.State):
         if self.current_index > 0:
             self.current_index -= 1
 
+    async def handle_next(self):
+        """下一題 / 交卷按鈕：即時對答模式先送 API 顯示回饋 1 秒，再前進。"""
+        if self.is_showing_feedback:
+            return
+        qid = self.current_qid
+        chosen = self.selected_answers.get(qid)
+        is_last = self.current_index >= len(self.questions) - 1
+
+        # 已送出過（返回後再按下一題）→ 直接前進，不重複顯示回饋
+        if qid in self.answered_via_api:
+            if is_last:
+                return ExamState.submit_exam
+            self.current_index += 1
+            return
+
+        if self.instant_review and chosen:
+            auth = await self.get_state(AuthState)
+            t = auth.token
+            async with httpx.AsyncClient() as client:
+                resp = await client.post(
+                    f"{BACKEND_URL}/exam/{self.session_id}/answer",
+                    params={"token": t},
+                    json={"question_id": qid, "chosen": chosen},
+                )
+            if resp.status_code == 200:
+                data = resp.json()
+                self.feedback = {
+                    **self.feedback,
+                    qid: {
+                        "is_correct": data.get("is_correct", False),
+                        "correct_answer": data.get("correct_answer", ""),
+                    },
+                }
+                self.answered_via_api = {**self.answered_via_api, qid: True}
+            self.is_showing_feedback = True
+            self.pending_submit = is_last
+            return ExamState.feedback_delay
+
+        if is_last:
+            return ExamState.submit_exam
+        self.current_index += 1
+
+    @rx.event(background=True)
+    async def feedback_delay(self):
+        import asyncio
+        await asyncio.sleep(1)
+        do_submit = False
+        async with self:
+            self.is_showing_feedback = False
+            do_submit = self.pending_submit
+            if not do_submit:
+                self.current_index += 1
+        if do_submit:
+            yield ExamState.submit_exam
+
     async def submit_exam(self):
         if not self.session_id or self.is_loading:
             return
+        self.show_early_submit_dialog = False
         self.is_loading = True
         self.is_timer_running = False
         auth = await self.get_state(AuthState)
         t = auth.token
         async with httpx.AsyncClient() as client:
             for qid, chosen in self.selected_answers.items():
+                if qid in self.answered_via_api:  # 即時對答已送過，跳過
+                    continue
                 await client.post(
                     f"{BACKEND_URL}/exam/{self.session_id}/answer",
                     params={"token": t},

@@ -45,10 +45,10 @@ def option_item(
             border="2px solid",
             border_color=border_color,
             background=bg_color,
-            cursor="pointer",
+            cursor=rx.cond(ExamState.is_current_answered, "default", "pointer"),
             on_click=ExamState.select_option(label),
             transition="all 0.15s",
-            _hover={"border_color": rx.color("blue", 6)},
+            _hover={"border_color": rx.cond(ExamState.is_current_answered, border_color, rx.color("blue", 6))},
         ),
         rx.icon_button(
             rx.icon("x", size=14),
@@ -64,8 +64,92 @@ def option_item(
     )
 
 
+def early_submit_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.heading("提早交卷", size="5"),
+                rx.cond(
+                    ExamState.all_answered,
+                    rx.text("確定要提早交卷？", size="3"),
+                    rx.hstack(
+                        rx.icon("triangle-alert", size=18, color=rx.color("orange", 9)),
+                        rx.text(
+                            "還有 ",
+                            rx.text.span(ExamState.unanswered_count, weight="bold"),
+                            " 題未作答，確定要提早交卷？",
+                            size="3",
+                        ),
+                        align="center",
+                        spacing="2",
+                    ),
+                ),
+                rx.hstack(
+                    rx.dialog.close(
+                        rx.button("取消", variant="soft", color_scheme="gray"),
+                    ),
+                    rx.button(
+                        "確定交卷",
+                        color_scheme="red",
+                        on_click=ExamState.submit_exam,
+                    ),
+                    spacing="3",
+                    justify="end",
+                    width="100%",
+                ),
+                spacing="4",
+                width="100%",
+            ),
+            max_width="360px",
+        ),
+        open=ExamState.show_early_submit_dialog,
+        on_open_change=ExamState.set_show_early_submit_dialog,
+    )
+
+
+def quit_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.heading("放棄此次測驗？", size="5"),
+                rx.text(
+                    "作答紀錄不會儲存，確定要返回主選單嗎？",
+                    size="3",
+                    color=rx.color("gray", 9),
+                ),
+                rx.hstack(
+                    rx.dialog.close(
+                        rx.button("繼續作答", variant="soft", color_scheme="gray"),
+                    ),
+                    rx.button(
+                        "確定放棄",
+                        color_scheme="red",
+                        on_click=ExamState.confirm_quit,
+                    ),
+                    spacing="3",
+                    justify="end",
+                    width="100%",
+                ),
+                spacing="4",
+                width="100%",
+            ),
+            max_width="380px",
+        ),
+        open=ExamState.show_quit_dialog,
+        on_open_change=ExamState.set_show_quit_dialog,
+    )
+
+
 def top_bar() -> rx.Component:
     return rx.hstack(
+        rx.button(
+            rx.icon("arrow-left", size=15),
+            "返回",
+            on_click=ExamState.open_quit_dialog,
+            size="2",
+            variant="ghost",
+            color_scheme="gray",
+        ),
         rx.vstack(
             rx.text(ExamState.current_source, size="1", color=rx.color("gray", 10)),
             rx.progress(
@@ -92,7 +176,7 @@ def top_bar() -> rx.Component:
         rx.button(
             rx.icon("flag", size=14),
             "提早交卷",
-            on_click=ExamState.submit_exam,
+            on_click=ExamState.open_early_submit_dialog,
             disabled=ExamState.is_loading,
             size="2",
             color_scheme="red",
@@ -110,6 +194,27 @@ def top_bar() -> rx.Component:
 
 def question_area() -> rx.Component:
     return rx.vstack(
+        rx.cond(
+            ExamState.is_wrong_review,
+            rx.hstack(
+                rx.badge(
+                    rx.icon("x-circle", size=13),
+                    "答錯 ", ExamState.current_wrong_count, " 次",
+                    color_scheme="red",
+                    variant="soft",
+                    size="2",
+                ),
+                rx.badge(
+                    rx.icon("check-circle", size=13),
+                    "答對 ", ExamState.current_correct_count, " 次",
+                    color_scheme="green",
+                    variant="soft",
+                    size="2",
+                ),
+                spacing="2",
+            ),
+            rx.box(),
+        ),
         rx.box(
             rx.text(
                 rx.text.span(
@@ -147,7 +252,7 @@ def nav_buttons() -> rx.Component:
             rx.icon("chevron-left", size=16),
             "上一題",
             on_click=ExamState.go_prev,
-            disabled=ExamState.current_index == 0,
+            disabled=(ExamState.current_index == 0) | ExamState.is_showing_feedback,
             variant="soft",
             color_scheme="gray",
             size="3",
@@ -158,15 +263,16 @@ def nav_buttons() -> rx.Component:
             rx.button(
                 "交卷",
                 rx.icon("check", size=16),
-                on_click=ExamState.submit_exam,
-                disabled=ExamState.is_loading,
+                on_click=ExamState.open_early_submit_dialog,
+                disabled=ExamState.is_loading | ExamState.is_showing_feedback,
                 color_scheme="green",
                 size="3",
             ),
             rx.button(
                 "下一題",
                 rx.icon("chevron-right", size=16),
-                on_click=ExamState.go_next,
+                on_click=ExamState.handle_next,
+                disabled=ExamState.is_showing_feedback,
                 color_scheme="blue",
                 size="3",
             ),
@@ -180,6 +286,8 @@ def exam_page() -> rx.Component:
     return rx.cond(
         ExamState.has_session,
         rx.box(
+            early_submit_dialog(),
+            quit_dialog(),
             top_bar(),
             rx.center(
                 rx.vstack(

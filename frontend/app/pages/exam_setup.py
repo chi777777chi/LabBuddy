@@ -133,6 +133,11 @@ def options_toggles() -> rx.Component:
             align="center",
         ),
         rx.hstack(
+            rx.switch(checked=ExamState.instant_review, on_change=ExamState.toggle_instant_review),
+            rx.text("即時對答（答完每題立即顯示對錯）", size="2"),
+            align="center",
+        ),
+        rx.hstack(
             rx.switch(checked=ExamState.save_to_history, on_change=ExamState.toggle_save_history),
             rx.text("儲存至歷史紀錄", size="2"),
             align="center",

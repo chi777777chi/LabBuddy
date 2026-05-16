@@ -61,6 +61,7 @@ def home_page() -> rx.Component:
                 rx.hstack(
                     menu_card("pencil", "開始測驗", "選擇科目與模式，開始練習", "/exam-setup"),
                     menu_card("clock", "歷史紀錄", "查看過去的測驗成績與詳解", "/history"),
+                    menu_card("bookmark-x", "錯題複習", "針對答錯的題目加強練習", "/wrong-review"),
                     menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
                     spacing="6",
                     flex_wrap="wrap",
