@@ -149,7 +149,7 @@ def analytics_page() -> rx.Component:
         nav_bar(),
         rx.center(
             rx.cond(
-                AnalyticsState.is_loading,
+                ~AnalyticsState.has_loaded,
                 rx.center(
                     rx.vstack(
                         rx.spinner(size="3"),
@@ -160,7 +160,19 @@ def analytics_page() -> rx.Component:
                     padding_top="20",
                 ),
                 rx.cond(
-                    AnalyticsState.has_data,
+                    AnalyticsState.error_msg != "",
+                    rx.center(
+                        rx.vstack(
+                            rx.icon("wifi-off", size=40, color=rx.color("red", 7)),
+                            rx.text(AnalyticsState.error_msg, size="3", color=rx.color("red", 9)),
+                            rx.button("重新載入", on_click=AnalyticsState.load_analytics, color_scheme="blue", size="2"),
+                            spacing="4",
+                            align="center",
+                            padding_top="20",
+                        ),
+                    ),
+                    rx.cond(
+                        AnalyticsState.has_data,
                     rx.vstack(
                         rx.heading("學習分析", size="6"),
                         # 科目答對率
@@ -228,6 +240,7 @@ def analytics_page() -> rx.Component:
                             padding_top="20",
                         ),
                     ),
+                ),
                 ),
             ),
         ),
