@@ -2,8 +2,8 @@
 
 ## 技術選型
 - 後端：FastAPI
-- 前端：Reflex（純 Python，底層編譯成 React，支援手機端響應式）
-- AI：Claude API
+- 前端：Reflex 0.9（純 Python，底層編譯成 React，支援手機端響應式）
+- AI：Groq API（llama-3.3-70b-versatile）
 
 ---
 
@@ -82,13 +82,22 @@
 > 目標：AI 輔助分析與智慧出題
 
 ### 後端
-- [ ] 呼叫 Claude API 做題目難易度分級（easy / medium / hard）
-- [ ] `GET /users/me/weakness`：根據歷史答題分析弱點知識點
+- [ ] 題目難易度分級（easy / medium / hard）
 - [ ] 自適應出題加權邏輯（弱點題型出現頻率提升）
-- [ ] 成長追蹤報告（比較歷次成績趨勢）
+- [x] `GET /analytics/me`：各科答對率、成績趨勢、最常答錯題目、AI 學習建議
+- [x] `POST /ai/hint`：分階段 AI 提示（Groq llama-3.3-70b）
+- [x] `GET /users/me/stats`：個人學習統計（場數、答題數、答對率、最愛科目）
 
 ### 前端
-- [ ] 答題中 AI 提示按鈕（呼叫後顯示提示，不洩漏答案）
-- [ ] 弱點分析報告頁
-- [ ] 成長追蹤圖表（各科答對率趨勢）
+- [x] 答題中 AI 分階段提示按鈕（3 層遞進，每題各自計算，設定頁開關控制）
+- [x] 弱點分析頁（/analytics）：科目卡片、成績折線圖、弱點題列表、AI 建議
+- [x] 個人資料頁（/profile）：學習統計、快速導航
 - [ ] AI 生成模擬試卷（stretch goal）
+
+---
+
+## Phase 6｜老師端（未來）
+> 見 docs/Future.md
+
+## Phase 7｜管理員端（未來）
+> 見 docs/Future.md
