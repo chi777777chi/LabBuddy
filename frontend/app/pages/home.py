@@ -4,9 +4,22 @@ from ..state.auth_state import AuthState
 
 def nav_bar() -> rx.Component:
     return rx.hstack(
-        rx.heading("醫檢師國考練習平台", size="4"),
+        rx.heading(
+            "醫檢師國考練習平台",
+            size="4",
+            on_click=rx.redirect("/home"),
+            cursor="pointer",
+        ),
         rx.spacer(),
         rx.hstack(
+            rx.button(
+                rx.icon("bar-chart-2", size=15),
+                "學習分析",
+                on_click=rx.redirect("/analytics"),
+                size="2",
+                variant="ghost",
+                color_scheme="violet",
+            ),
             rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
             rx.text(AuthState.user_name, weight="medium"),
             rx.button(
@@ -62,6 +75,7 @@ def home_page() -> rx.Component:
                     menu_card("pencil", "開始測驗", "選擇科目與模式，開始練習", "/exam-setup"),
                     menu_card("clock", "歷史紀錄", "查看過去的測驗成績與詳解", "/history"),
                     menu_card("bookmark-x", "錯題複習", "針對答錯的題目加強練習", "/wrong-review"),
+                    menu_card("bar-chart-2", "學習分析", "AI 弱點分析與成績趨勢", "/analytics"),
                     menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
                     spacing="6",
                     flex_wrap="wrap",

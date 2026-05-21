@@ -52,6 +52,13 @@ class ExamState(rx.State):
     is_showing_feedback: bool = False  # 顯示回饋中（2 秒鎖定）
     pending_submit: bool = False       # 2 秒後要交卷（而非下一題）
 
+    # ── AI Hint ───────────────────────────────────────────────
+    use_ai_hint: bool = False
+    show_ai_hint_dialog: bool = False
+    ai_hint_text: str = ""
+    ai_hint_loading: bool = False
+    hint_levels: dict[str, int] = {}  # {question_id: 已看層數}
+
     # ── 成績 ─────────────────────────────────────────────────
     result_score: int = 0
     result_total: int = 0
@@ -192,6 +199,10 @@ class ExamState(rx.State):
 
     # ── feedback computed vars ────────────────────────────────
     @rx.var
+    def current_hint_level(self) -> int:
+        return self.hint_levels.get(self.current_qid, 0)
+
+    @rx.var
     def has_current_feedback(self) -> bool:
         return self.current_qid in self.feedback
 
@@ -249,7 +260,15 @@ class ExamState(rx.State):
                 params={"subject_id": self.selected_subject_id},
             )
         if resp.status_code == 200:
-            self.available_exams = resp.json()
+            sitting_label = {1: "第一次", 2: "第二次"}
+            self.available_exams = [
+                {
+                    **e,
+                    "label": f"{e['year']}年{sitting_label.get(e['sitting'], '')}",
+                    "combo": f"{e['year']}-{e['sitting']}",
+                }
+                for e in resp.json()
+            ]
             if self.available_exams:
                 self.selected_year = self.available_exams[0]["year"]
                 self.selected_sitting = self.available_exams[0]["sitting"]
@@ -269,6 +288,17 @@ class ExamState(rx.State):
 
     def set_sitting(self, value: str):
         self.selected_sitting = int(value)
+
+    def set_exam(self, value: str):
+        """設定考古題年份＋梯次（格式：'114-1'）"""
+        parts = value.split("-")
+        if len(parts) == 2:
+            self.selected_year = int(parts[0])
+            self.selected_sitting = int(parts[1])
+
+    @rx.var
+    def selected_exam_value(self) -> str:
+        return f"{self.selected_year}-{self.selected_sitting}"
 
     def toggle_shuffle(self, value: bool):
         self.shuffle_options = value
@@ -328,6 +358,7 @@ class ExamState(rx.State):
         self.eliminated = {}
         self.feedback = {}
         self.answered_via_api = {}
+        self.hint_levels = {}
         self.time_left = 0
         self.is_timer_running = False
         return ExamState.start_exam
@@ -373,6 +404,7 @@ class ExamState(rx.State):
         self.eliminated = {}
         self.feedback = {}
         self.answered_via_api = {}
+        self.hint_levels = {}
 
         if self.timed:
             self.time_left = len(self.questions) * 90
@@ -483,6 +515,36 @@ class ExamState(rx.State):
                 self.current_index += 1
         if do_submit:
             yield ExamState.submit_exam
+
+    def toggle_ai_hint(self, value: bool):
+        self.use_ai_hint = value
+
+    def close_ai_hint_dialog(self):
+        self.show_ai_hint_dialog = False
+        self.ai_hint_text = ""
+
+    async def fetch_ai_hint(self):
+        qid = self.current_qid
+        current_level = self.hint_levels.get(qid, 0)
+        if self.ai_hint_loading or not qid or current_level >= 3:
+            return
+        next_level = current_level + 1
+        self.ai_hint_loading = True
+        self.ai_hint_text = ""
+        self.show_ai_hint_dialog = True
+        auth = await self.get_state(AuthState)
+        async with httpx.AsyncClient(timeout=30) as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/ai/hint",
+                params={"token": auth.token},
+                json={"question_id": qid, "level": next_level},
+            )
+        self.ai_hint_loading = False
+        if resp.status_code == 200:
+            self.hint_levels = {**self.hint_levels, qid: next_level}
+            self.ai_hint_text = resp.json().get("hint", "")
+        else:
+            self.ai_hint_text = "無法取得提示，請稍後再試。"
 
     async def submit_exam(self):
         if not self.session_id or self.is_loading:

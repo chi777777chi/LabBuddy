@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 96,
+    "sitting": 1,
+    "subject": "生物化學與臨床生化學",
+    "exam_code": "5308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "下列何者含有α-1,4glycosidicbond？",
+      "has_image": false,
+      "options": {
+        "A": "Cellulose",
+        "B": "Maltose",
+        "C": "Sucrose",
+        "D": "Lactose"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "下列方法中，何者不能證明蛋白質間之交互作用？",
+      "has_image": false,
+      "options": {
+        "A": "表面電漿共振法（Surfaceplasmonresonance,SPR）",
+        "B": "陰離子交換層析法（Anionexchangechromatography）",
+        "C": "免疫共沈法（Co-immunoprecipitation）",
+        "D": "親合管柱層析法（Affinitychromatography）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "由以下之DNA 序列，\n產生之mRNA 序列為：",
+      "has_image": false,
+      "options": {
+        "A": "5’-TTTCGCAGGCT-3’",
+        "B": "5’-ATTCGCAGGCT-3’",
+        "C": "5’-AUUCGCAGGCU-3’",
+        "D": "3’-UAAGCGUCCGA-5’"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "20 種胺基酸中，只有那一個胺基酸不具有光學活性？",
+      "has_image": false,
+      "options": {
+        "A": "Alanine",
+        "B": "Glycine",
+        "C": "Proline",
+        "D": "Methionine"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "下列何種物質同時參與glycerophospholipids 與triacylglycerols 的生成？",
+      "has_image": false,
+      "options": {
+        "A": "phosphatidicacid",
+        "B": "phosphoethanolamine",
+        "C": "CDP-diacylglycerol",
+        "D": "CDP-choline"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "下列那一個化合物在生成時不需要用到isoprene 作為前驅物？",
+      "has_image": false,
+      "options": {
+        "A": "vitaminA",
+        "B": "β-carotene",
+        "C": "plastoquinone",
+        "D": "vitaminB12"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "有關黃體素progesterone 之敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "由腎上腺分泌",
+        "B": "黃體素有拮抗睪丸固酮（testosterone）之作用",
+        "C": "主要代謝物是膽固醇（cholesterol）",
+        "D": "是類固醇激素（steroidhormone）的一種"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "下列何者為膽固醇生合成路徑之調控酵素？",
+      "has_image": false,
+      "options": {
+        "A": "HMGCoA 合成酶（HMGCoAsynthase）",
+        "B": "HMGCoA 還原酶（HMGCoAreductase）",
+        "C": "鯊烯單加氧酶（squalenemonooxygenase）",
+        "D": "氧化鯊烯環化酶（cyclase）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "某蛋白質的分子量約50,000Da，以下列何者偵測分子量時之正確性最高？",
+      "has_image": false,
+      "options": {
+        "A": "SDSpolyacrylamidegelelectrophoresis",
+        "B": "isoelectricfocusing",
+        "C": "massspectrometry",
+        "D": "sizeexclusionchromatography"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "血液的pH 值為7.4，可樂的pH 值為3.4，則可樂中的[H+]是血液中[H+]的多少倍？",
+      "has_image": false,
+      "options": {
+        "A": "0.46 倍",
+        "B": "2.2 倍",
+        "C": "4 倍",
+        "D": "10,000 倍"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "限制酶（restrictionenzymes）的生理功能是：",
+      "has_image": false,
+      "options": {
+        "A": "有助於重組（recombinant）DNA 研究",
+        "B": "限制某些細菌中DNA 的大小",
+        "C": "分解進入細菌的外來 DNA",
+        "D": "使細菌對於抗生素產生阻抗"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "阿斯匹靈之消炎作用歸功于抑制：",
+      "has_image": false,
+      "options": {
+        "A": "5-Lipoxygenase",
+        "B": "ProstaglandinHsynthase",
+        "C": "PGI synthase",
+        "D": "PhospholipaseC\n2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "膽固醇由何種物質生合成而來？",
+      "has_image": false,
+      "options": {
+        "A": "硫辛酸（lipoicacid）",
+        "B": "蘋果酸（malicacid）",
+        "C": "草醋酸（oxalicacid）",
+        "D": "乙醯輔酶A（acetylCoA）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "下列脂蛋白何者蛋白質含量最少？",
+      "has_image": false,
+      "options": {
+        "A": "乳糜微粒（chylomicron）",
+        "B": "低密度脂蛋白（LDL）",
+        "C": "極低密度脂蛋白（VLDL）",
+        "D": "高密度脂蛋白（HDL）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "下列維生素何者為輔酶A（coenzymeA）之前驅體（precursor）？",
+      "has_image": false,
+      "options": {
+        "A": "核黃素（riboflavin）",
+        "B": "泛酸（pantothenicacid）",
+        "C": "菸鹼酸（niacin）",
+        "D": "維生素B （thiamine）\n1"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "下列那一個是起始密碼子（initiationcodon）？",
+      "has_image": false,
+      "options": {
+        "A": "UAA",
+        "B": "UAG",
+        "C": "AUG",
+        "D": "UGA"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "下列有關乳酸脫氫酶（lactatedehydrogenase）的敘述，何者是正確的？",
+      "has_image": false,
+      "options": {
+        "A": "有異構酶（isozyme）的存在",
+        "B": "是一具有双元體（dimer）結構的蛋白質",
+        "C": "僅心臟含有此酵素",
+        "D": "酒精（乙醇）是此酵素的受質（substrate）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "下列何者不是由膽固醇代謝而成？",
+      "has_image": false,
+      "options": {
+        "A": "Bileacid",
+        "B": "Heme",
+        "C": "VitaminD",
+        "D": "Cortisol"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列何種物質不屬於電子傳遞鏈系統（electrontransportsystem）？",
+      "has_image": false,
+      "options": {
+        "A": "UDP",
+        "B": "CoenzymeQ",
+        "C": "Cytochromec",
+        "D": "Flavoprotein"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "NADP+ 或NAD+ 經dehydrogenase 作用，還原為NADPH 或NADH，如分析反應物340nm\n吸收光譜，其opticaldensity（O.D.）呈現何種變化？",
+      "has_image": false,
+      "options": {
+        "A": "下降",
+        "B": "上升",
+        "C": "不變",
+        "D": "不規則"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "一水溶液之醋酸及醋酸鈉濃度為0.1M，請問其pH 值為多少？（醋酸之pK 為4.76）\na",
+      "has_image": false,
+      "options": {
+        "A": "4.56",
+        "B": "4.76",
+        "C": "4.96",
+        "D": "3.96"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "下列那一個apolipoprotein 是脂蛋白chylomicron 形成時必需的（essential）成分？",
+      "has_image": false,
+      "options": {
+        "A": "apoA-Ⅰ",
+        "B": "apoC-Ⅱ",
+        "C": "apoB-48",
+        "D": "apoE"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "下列何者是葡萄糖於缺氧狀態時之主要代謝物？",
+      "has_image": false,
+      "options": {
+        "A": "pyruvate",
+        "B": "CO",
+        "C": "lactate",
+        "D": "glycerate\n2"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列那一個疾病不是胺基酸代謝異常所造成？",
+      "has_image": false,
+      "options": {
+        "A": "phenylketonuria",
+        "B": "gout",
+        "C": "alkaptonuria",
+        "D": "maplesyrupurinedisease"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "抗體與抗原反應取決於兩者比例，在何種狀況下所形成的沉澱最多？",
+      "has_image": false,
+      "options": {
+        "A": "抗體略多於抗原",
+        "B": "抗體甚多於抗原",
+        "C": "抗體略少於抗原",
+        "D": "抗體甚少於抗原"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "何種墨點法不用在核酸或蛋白質的分析？",
+      "has_image": false,
+      "options": {
+        "A": "東方",
+        "B": "西方",
+        "C": "南方",
+        "D": "北方"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "檢驗參考值之建立，如果是一種非高斯分布時，則通常可在分布圖之上下各去除多少百分\n數，剩餘的當作其範圍？",
+      "has_image": false,
+      "options": {
+        "A": "1.5",
+        "B": "2.5",
+        "C": "3.5",
+        "D": "4.5"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "關於新生兒黃疸症之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "結合型膽紅素上升",
+        "B": "膽紅素濃度大於16mg/Dl",
+        "C": "可能是因為新生兒溶血",
+        "D": "過高會引起核黃疸"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "關於methotrexate 之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "會引起肝硬化",
+        "B": "用免疫分析法定量",
+        "C": "服用者尿液宜維持酸性",
+        "D": "是一種抗癌藥劑"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "關於procainamide 之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "N-acetylprocainamide 也有藥效",
+        "B": "是抗癌藥劑",
+        "C": "可用酵素免疫法分析",
+        "D": "口服1 小時血中濃度可達高峰"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "下列何者不屬於治療藥物監測之目標？",
+      "has_image": false,
+      "options": {
+        "A": "cocaine",
+        "B": "cyclosporine",
+        "C": "carbamazepine",
+        "D": "lithium"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "何種腫瘤標記與癌症之組合錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "CA19-9與胰臟癌",
+        "B": "CA125與攝護腺癌",
+        "C": "CA15-3與卵巢癌",
+        "D": "CA549與乳癌"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "臨床上測量血清副甲狀腺素，主要是用於評估何者？",
+      "has_image": false,
+      "options": {
+        "A": "高鈣血症",
+        "B": "高磷血症",
+        "C": "高鉀血症",
+        "D": "低鈉血症"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "下列何者與體內鈣的代謝無關？",
+      "has_image": false,
+      "options": {
+        "A": "Calcitonin",
+        "B": "PTH",
+        "C": "Renin",
+        "D": "VitaminD"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "香草扁桃酸（vanillylmandelicacid）可用HPLC 來測量，其常用的內標準物是：",
+      "has_image": false,
+      "options": {
+        "A": "Isovanillylmandelicacid",
+        "B": "Homovanillicacid",
+        "C": "Epinephrine",
+        "D": "Dopamine"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "CEA 值上升與何者無關？",
+      "has_image": false,
+      "options": {
+        "A": "大腸癌",
+        "B": "胃癌",
+        "C": "肝癌",
+        "D": "淋巴腫瘤"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下列何種檢驗應空腹抽血結果才準確？",
+      "has_image": false,
+      "options": {
+        "A": "澱粉酶",
+        "B": "三酸甘油酯",
+        "C": "肌酸酐",
+        "D": "鈉"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "下列何者可以利用電流測定法來定量？",
+      "has_image": false,
+      "options": {
+        "A": "鈣",
+        "B": "白蛋白",
+        "C": "葡萄糖",
+        "D": "肌酸激酶"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "Trinder 反應的試劑含有4-aminoantipyrine、phenol 及辣根過氧化酶，當有下列何者存在\n時，可形成紅色產物？",
+      "has_image": false,
+      "options": {
+        "A": "H O",
+        "B": "H O",
+        "C": "ATP",
+        "D": "NADP\n2 2 2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "血清電泳後，移動位置相當於α蛋白的位置是何種脂蛋白？",
+      "has_image": false,
+      "options": {
+        "A": "Chylomicron",
+        "B": "HDL",
+        "C": "LDL",
+        "D": "VLDL"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "何種脂蛋白在第一型高脂蛋白血症時會上升？",
+      "has_image": false,
+      "options": {
+        "A": "Chylomicron",
+        "B": "HDL",
+        "C": "LDL",
+        "D": "VLDL"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "何者可抑制血中葡萄糖的分解？",
+      "has_image": false,
+      "options": {
+        "A": "氫氧化鈉",
+        "B": "氯化鈉",
+        "C": "硫酸鈉",
+        "D": "醋酸碘鈉"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "葡萄糖的測量會使用NADP，如欲直接測量該物之反應，最好使用下列多少nm 的波長？",
+      "has_image": false,
+      "options": {
+        "A": "340",
+        "B": "520",
+        "C": "575",
+        "D": "630"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "三酸甘油酯可作為下列何者的受質？",
+      "has_image": false,
+      "options": {
+        "A": "解脂酶",
+        "B": "澱粉酶",
+        "C": "過氧化酶",
+        "D": "乳酸脫氫酶"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "下列何者不用來作比色計的校正？",
+      "has_image": false,
+      "options": {
+        "A": "氧化鈥",
+        "B": "氯化鈉",
+        "C": "硝酸鈷銨",
+        "D": "重鉻酸鉀"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "臨床上常用電量測定法（coulometry）測量下列何種離子？",
+      "has_image": false,
+      "options": {
+        "A": "鈉",
+        "B": "鉀",
+        "C": "氯",
+        "D": "鈣"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "下列何種染料可用來染電泳後的脂蛋白？",
+      "has_image": false,
+      "options": {
+        "A": "amidoblack",
+        "B": "bromophenolblue",
+        "C": "nigrosin",
+        "D": "fatred7B"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "關於Guthrie 氏試驗之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "一種利用微生物之分析法",
+        "B": "使用大腸桿菌",
+        "C": "可檢查苯酮酸尿症",
+        "D": "可用於血液檢體"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "關於Immunoradiometricassay（IRMA）及Radioimmunoassay（RIA）之敘述，何者是正確？",
+      "has_image": false,
+      "options": {
+        "A": "RIA 有放射性元素，IRMA 無",
+        "B": "RIA 需要使用高純度的抗原，接上標幟物",
+        "C": "IRMA 抗原上有標幟物",
+        "D": "兩者最後使用340nm 比色"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "Indocyaninegreentest 可用來評估肝功能，其正常值是百分之多少？",
+      "has_image": false,
+      "options": {
+        "A": "5",
+        "B": "15",
+        "C": "25",
+        "D": "35"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "下列何者可用偶氮劑反應（diazoreaction）來檢測？",
+      "has_image": false,
+      "options": {
+        "A": "ALD",
+        "B": "bilirubin",
+        "C": "GLDH",
+        "D": "sphingomyelin"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "何種檢驗其標本不可用血清？",
+      "has_image": false,
+      "options": {
+        "A": "AST",
+        "B": "CK",
+        "C": "G6PD",
+        "D": "PSA"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "何種檢驗較不適合作前列腺癌診斷？",
+      "has_image": false,
+      "options": {
+        "A": "ACP",
+        "B": "ALP",
+        "C": "CA549",
+        "D": "PSA"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "何種血清酵素在飲酒期間活性會增強？",
+      "has_image": false,
+      "options": {
+        "A": "ChE",
+        "B": "CK",
+        "C": "LD",
+        "D": "GGT"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "下列何種酵素可用N-acetylcysteine 使其穩定？",
+      "has_image": false,
+      "options": {
+        "A": "ALT",
+        "B": "CK",
+        "C": "LD",
+        "D": "GGT"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "何種緩衝液具有活化鹼性磷酸酶的作用？",
+      "has_image": false,
+      "options": {
+        "A": "barbital",
+        "B": "carbonate",
+        "C": "diethanolamine",
+        "D": "glycine"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "急性心肌梗塞病人其血清乳酸脫氫酶電泳圖，會呈現何種結果？",
+      "has_image": false,
+      "options": {
+        "A": "LD-1>LD-3",
+        "B": "LD-3>LD-2",
+        "C": "LD-4>LD-1",
+        "D": "LD-4>LD-2"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "下列何者可以用4-nitrophenyl-glycoside 衍生物來測量？",
+      "has_image": false,
+      "options": {
+        "A": "乳酸脫氫酶",
+        "B": "解脂酶",
+        "C": "澱粉酶",
+        "D": "過氧化酶"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "多規則品管方法中不包含何種規則？",
+      "has_image": false,
+      "options": {
+        "A": "1",
+        "B": "1",
+        "C": "4",
+        "D": "R\n2s 3s 1s 2s"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "外部品管中常以標準偏差指數（SDI）來表示一實驗室之檢驗品質，其正確的求法是：實\n驗室測定值（D）；群體平均值（M）；群體標準偏差（SD）",
+      "has_image": false,
+      "options": {
+        "A": "(D-M)/SD",
+        "B": "(D-SD)/M",
+        "C": "(M-SD)/D",
+        "D": "(D-M)×SD"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "何種血清檢驗較會受日內變動之影響？",
+      "has_image": false,
+      "options": {
+        "A": "cortisol",
+        "B": "creatinine",
+        "C": "GGT",
+        "D": "totalprotein"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "以真陽性率作縱軸而偽陽性率為橫軸所畫出的ROC 曲線，好的診斷方法之曲線是愈靠近何\n處？",
+      "has_image": false,
+      "options": {
+        "A": "右上角",
+        "B": "右下角",
+        "C": "左上角",
+        "D": "左下角"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "病人坐立抽血比起躺臥著，何種檢驗值較不會變？",
+      "has_image": false,
+      "options": {
+        "A": "Ca2+",
+        "B": "K+",
+        "C": "renin",
+        "D": "totalprotein"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "檢驗方法的干擾測試，其作法與何者相似？",
+      "has_image": false,
+      "options": {
+        "A": "再現性",
+        "B": "標準偏差",
+        "C": "相關性",
+        "D": "回收率"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "兩種檢驗方法作比較所畫出的線性迴歸圖，如與45 度角畫出的線平行上移，表示此兩方法\n存在有何種誤差？",
+      "has_image": false,
+      "options": {
+        "A": "比例",
+        "B": "溫度",
+        "C": "隨機",
+        "D": "固定"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "關於酮體的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "β-羥丁酸（β-hydroxybutyricacid）屬之",
+        "B": "Acetest 無法測β-羥丁酸",
+        "C": "丙酮會自然變成乙醯乙酸",
+        "D": "Ketostix 可測出乙醯乙酸"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "利用尿酸酶來定量尿酸之方法中，以293nm 測量之物質是何者？",
+      "has_image": false,
+      "options": {
+        "A": "allantoin",
+        "B": "formaldehyde",
+        "C": "quinomeimine",
+        "D": "uricacid"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "何種情況下血清BUN/creatinine 之比值大於20？",
+      "has_image": false,
+      "options": {
+        "A": "洗腎",
+        "B": "嚴重肝病",
+        "C": "蛋白質攝取量少",
+        "D": "嚴重的胃腸道出血"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "苦味酸（picricacid）加上何種試劑可以用來測量肌酸酐？",
+      "has_image": false,
+      "options": {
+        "A": "NaOH",
+        "B": "NADP",
+        "C": "NAD",
+        "D": "KC1"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "何者可利用導電度原理（conductometry）來測量？",
+      "has_image": false,
+      "options": {
+        "A": "肌酸酐",
+        "B": "膽紅素",
+        "C": "尿素",
+        "D": "氯"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "關於microalbumin 之敘述，何者是正確？",
+      "has_image": false,
+      "options": {
+        "A": "分子量小的白蛋白",
+        "B": "可以biuret 方法定量之",
+        "C": "可以免疫比濁法定量之",
+        "D": "正常尿之含量約為500mg/day"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "血鈉測量方法中，何者不會因有高血脂而有低值的現象？",
+      "has_image": false,
+      "options": {
+        "A": "火焰比色法",
+        "B": "原子吸光法",
+        "C": "間接離子電極法",
+        "D": "直接離子電極法"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "何種抗生素可用來測量血鉀？",
+      "has_image": false,
+      "options": {
+        "A": "valinomycin",
+        "B": "vancomycin",
+        "C": "tobramycin",
+        "D": "kanamycin"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "血漿中何種物質較不影響滲透壓？",
+      "has_image": false,
+      "options": {
+        "A": "鈉",
+        "B": "鉀",
+        "C": "尿素",
+        "D": "葡萄糖"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "下列有關OCPC 測量血鈣之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "在鹼性下進行",
+        "B": "形成紅色產物",
+        "C": "游離鈣會被測出",
+        "D": "8-hydroxyquinoline 去除血脂干擾"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "一位病人，在尚未進行代償作用時其血液PCO 是50mmHg，則可能是何種狀況？\n2",
+      "has_image": false,
+      "options": {
+        "A": "代謝性酸中毒",
+        "B": "代謝性鹼中毒",
+        "C": "呼吸性酸中毒",
+        "D": "呼吸性鹼中毒"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "代謝性酸中毒在尚未產生代償作用時，何者會下降？",
+      "has_image": false,
+      "options": {
+        "A": "PO",
+        "B": "PCO",
+        "C": "bicarbonate",
+        "D": "Hb\n2 2"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "何種檢驗在過程中需外加鐵離子？",
+      "has_image": false,
+      "options": {
+        "A": "freeiron",
+        "B": "TIBC",
+        "C": "serumiron",
+        "D": "ferritin"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "測量血氧分壓常用的方法中，主要是測量電極產生的：",
+      "has_image": false,
+      "options": {
+        "A": "電壓",
+        "B": "電阻",
+        "C": "電流",
+        "D": "導電度"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "下列何種酵素的抑制反應，其Km 與Vm 呈相同方向變化？",
+      "has_image": false,
+      "options": {
+        "A": "競爭性（competitive）",
+        "B": "無競爭性（noncompetitive）",
+        "C": "非競爭性（uncompetitive）",
+        "D": "混合性（mixed）"
+      },
+      "answer": "C",
+      "bonus": false
+    }
+  ]
+}

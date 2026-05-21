@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 99,
+    "sitting": 2,
+    "subject": "生物化學與臨床生化學",
+    "exam_code": "5308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "色素BCP（bromcresolpurple）在pH5.2 條件下，與下列何者有最強的結合能力？",
+      "has_image": false,
+      "options": {
+        "A": "球蛋白",
+        "B": "白蛋白",
+        "C": "免疫抗體",
+        "D": "運鐵蛋白"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "若需要精確定量胺基酸的量，下列那一種方法最為適宜？",
+      "has_image": false,
+      "options": {
+        "A": "呈色法",
+        "B": "薄層層析法",
+        "C": "高效能液相層析法",
+        "D": "Guthrie 氏微生物試驗"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "人體主要是以那種型式排出含氮代謝廢物？",
+      "has_image": false,
+      "options": {
+        "A": "氨",
+        "B": "尿素",
+        "C": "尿酸",
+        "D": "肌酸酐"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "下列那一種層析法（chromatography），主要是利用蛋白質所帶電荷來進行分離？",
+      "has_image": false,
+      "options": {
+        "A": "sizeexclusion",
+        "B": "ionexchange",
+        "C": "hydrophobicinteraction",
+        "D": "affinity"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "進行Radioimmunoassay時，抗體要以125I 標定，125I 標定於何種胺基酸側鏈？",
+      "has_image": false,
+      "options": {
+        "A": "asparagine",
+        "B": "serine",
+        "C": "tryptophan",
+        "D": "tyrosine"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "蛋白質若具有下列何種胺基酸，較易於利用電荷作用與DNA 結合？",
+      "has_image": false,
+      "options": {
+        "A": "Arg",
+        "B": "Asp",
+        "C": "Ala",
+        "D": "Trp"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "Glutathione 由那三種胺基酸所組成？",
+      "has_image": false,
+      "options": {
+        "A": "Glutamicacid、Serine、Glycine",
+        "B": "Glutamine、Serine、Glycine",
+        "C": "Glutamine、Cysteine、Glycine",
+        "D": "Glutamicacid、Cysteine、Glycine"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "檸檬酸鹽（citrate）在何種酵素作用下，可轉變成acetyl-CoA？",
+      "has_image": false,
+      "options": {
+        "A": "citratesynthase",
+        "B": "citratelyase",
+        "C": "citratephosphatase",
+        "D": "acyl-CoAsynthase"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "下列那一種物質並未參與脂肪酸的氧化作用？",
+      "has_image": false,
+      "options": {
+        "A": "carnitine",
+        "B": "CoA",
+        "C": "NAD+",
+        "D": "NADP+"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "下列有關HDL 特性之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "又稱α-lipoprotein",
+        "B": "含有apoA,B,C,E",
+        "C": "負責攜帶膽固醇回到肝臟代謝",
+        "D": "密度為1.063-1.210g/mL"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "肌肉運動產生的lactate 可經由血液到肝臟轉換成葡萄糖再流回到肌肉，此種過程稱為：",
+      "has_image": false,
+      "options": {
+        "A": "Coricycle",
+        "B": "Glycolysis",
+        "C": "Glyoxylatecycle",
+        "D": "Ureacycle"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "在脂肪組織中，下列何種物質扮演活化脂解作用（lipolysis）的訊息傳訊者（second\nmessenger）？",
+      "has_image": false,
+      "options": {
+        "A": "cGMP",
+        "B": "cAMP",
+        "C": "SAM",
+        "D": "NAD+"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "激烈運動時的肌肉細胞，其葡萄糖氧化所需的NAD+ 係由下列那個酵素反應所提供的？",
+      "has_image": false,
+      "options": {
+        "A": "乙醇去氫酶（alcoholdehydrogenase）",
+        "B": "葡萄糖去氫酶（glucosedehydrogenase）",
+        "C": "乳酸去氫酶（lactatedehydrogenase）",
+        "D": "丙酮酸激酶（pyruvatekinase）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "將pyruvate 轉換為oxaloacetate 之反應中，不需要那一種物質參與反應？",
+      "has_image": false,
+      "options": {
+        "A": "ADP",
+        "B": "biotin",
+        "C": "CO",
+        "D": "pyruvatecarboxylase\n2"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "銅經消化道進入血中後與白蛋白結合送至肝臟，數小時內大部分都轉變為何物？",
+      "has_image": false,
+      "options": {
+        "A": "運鐵蛋白（transferrin）",
+        "B": "藍胞漿素（ceruloplasmin）",
+        "C": "白蛋白結合物（albumincomplex）",
+        "D": "接合蛋白（haptoglobin）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "下列有關tyrosinase 的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "銅離子為其活性所必需",
+        "B": "其為合成兒茶酚胺所必需之酵素",
+        "C": "其為合成正腎上腺素所必需之酵素",
+        "D": "當其活性降低時，會造成皮膚之色素沉積"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "下列那一個酵素不是膽道疾病的指標酵素？",
+      "has_image": false,
+      "options": {
+        "A": "arylamidase",
+        "B": "γ-glutamyltransferase",
+        "C": "lactatedehydrogenase",
+        "D": "5’-nucleotidase"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "下列何種金屬離子，不可作為酵素的cofactor？",
+      "has_image": false,
+      "options": {
+        "A": "Hg2+",
+        "B": "Mg2+",
+        "C": "Mn2+",
+        "D": "Zn2+"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列何種維生素可由腸內菌合成？",
+      "has_image": false,
+      "options": {
+        "A": "維生素A",
+        "B": "維生素D",
+        "C": "維生素E",
+        "D": "維生素K"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "下列何者不是由膽固醇（cholesterol）所合成而來？",
+      "has_image": false,
+      "options": {
+        "A": "androgen",
+        "B": "bileacids",
+        "C": "terpenes",
+        "D": "vitaminD"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "下列各維生素與其缺乏所引起之臨床症狀的配對中，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "抗壞血酸（ascorbicacid）∕腳氣病（beriberi）",
+        "B": "葉酸（folicacid）∕巨母紅血球貧血（megaloblasticanemia）",
+        "C": "鈷胺素（cobalamin）∕溶血性貧血（hemolyticanemia）",
+        "D": "菸草酸（niacin）∕軟骨病（rickets）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "下列何種疾病與鐵在小腸過度吸收有關？",
+      "has_image": false,
+      "options": {
+        "A": "Xerodermapigmentosum",
+        "B": "Tangierdisease",
+        "C": "Menkes’disease",
+        "D": "Hemochromatosis"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "下列有關糖尿病之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "第一型糖尿病多因胰島的β細胞被破壞所引起",
+        "B": "多數病人屬於第一型",
+        "C": "第二型病人的胰島素無法正常發揮功能",
+        "D": "第二型病人多於成年後發病"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列何種輔酶（coenzyme）能協助單碳基團（one-carbongroups）轉移，缺乏時影響DNA\n的合成？",
+      "has_image": false,
+      "options": {
+        "A": "coenzymeA",
+        "B": "lipoate",
+        "C": "tetrahydrofolate",
+        "D": "thiaminepyrophosphate"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "溶血檢體會使下列何種血清檢測偽性上升？",
+      "has_image": false,
+      "options": {
+        "A": "氯",
+        "B": "銅",
+        "C": "鈉",
+        "D": "鋅"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "下列有關Friedewaldequation 的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "[LDL-C]=[Totalchol]－[HDLchol]－[TG/10]",
+        "B": "[LDL-C]=[Totalchol]－[HDLchol]－[TG/8]",
+        "C": "TG 的濃度必須小於400mg/Dl",
+        "D": "第III 型高血脂症的檢體也適用"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "下列何者會造成血清中conjugatedbilirubin 的增加？",
+      "has_image": false,
+      "options": {
+        "A": "Dubin-Johnson 症",
+        "B": "Crigler-Najjar 症TypeI",
+        "C": "Crigler-Najjar 症TypeII",
+        "D": "Gilbert 氏症"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何者不是primaryreferencematerials 所必備的條件？",
+      "has_image": false,
+      "options": {
+        "A": "高純度",
+        "B": "穩定度高",
+        "C": "不會潮解",
+        "D": "分子量大"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "實驗室存放維生素A 的玻璃是屬於何種材質？",
+      "has_image": false,
+      "options": {
+        "A": "borosilicateglass",
+        "B": "highsilicaglass",
+        "C": "lowactinicglass",
+        "D": "softglass"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "下列何種塑膠材質的燒杯不適合高溫高壓滅菌？",
+      "has_image": false,
+      "options": {
+        "A": "polymethylpentene",
+        "B": "polypropylene",
+        "C": "polysulfone",
+        "D": "polyvinylchloride"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "已知coproporphyrinI 的naturalbandwidth 為10nm，則分光光度計的波寬應至少小於多少，\n才能準確（99.5%）測定peakabsorbance？",
+      "has_image": false,
+      "options": {
+        "A": "0.1",
+        "B": "1",
+        "C": "5",
+        "D": "10"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "Chemiluminescence 分析法是利用下列何種物質會產生光的原理？",
+      "has_image": false,
+      "options": {
+        "A": "luminol",
+        "B": "fluorescein",
+        "C": "propidiumiodide",
+        "D": "rhodamine"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "下列何者會造成比例系統誤差？",
+      "has_image": false,
+      "options": {
+        "A": "試藥過期",
+        "B": "檢體溶血",
+        "C": "檢驗報告登錄錯誤",
+        "D": "校正物濃度不準確"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "下列有關Nephelometry 的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "原理是利用光線碰到粒子產生散射",
+        "B": "適用於抗原抗體複合物的偵測",
+        "C": "PMT 接受器必須要和光源在同一直線",
+        "D": "敏感度比Turbidimetry"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "下列那一種血清指標對偵測充血性心衰竭的專一性最高？",
+      "has_image": false,
+      "options": {
+        "A": "BNP",
+        "B": "carbonicanhydrase",
+        "C": "CK-MB",
+        "D": "myoglobin"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "日內差（diurnalvariation）最小的血清檢驗是：",
+      "has_image": false,
+      "options": {
+        "A": "cortisol",
+        "B": "iron",
+        "C": "renin",
+        "D": "totalprotein"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "血清有較高之BUN/creatinine 比值（＞20），且伴隨昇高之creatinine 值，通常由下列何者\n引起？",
+      "has_image": false,
+      "options": {
+        "A": "充血性心衰竭",
+        "B": "腎小管損傷或壞死",
+        "C": "腎後病因引起，如腎結石或膀胱癌引起之輸尿道阻塞",
+        "D": "極度蛋白攝取不足引起"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "在pH8.6 的緩衝液中，下列何者帶有最多的負電荷？",
+      "has_image": false,
+      "options": {
+        "A": "前白蛋白",
+        "B": "白蛋白",
+        "C": "C-反應蛋白",
+        "D": "血紅素"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "鋅在血中的結合蛋白質是：",
+      "has_image": false,
+      "options": {
+        "A": "prealbumin",
+        "B": "hemopexin",
+        "C": "haptoglobin",
+        "D": "albumin"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "利用uricase 測定血清uricacid，下列敘述何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "會消秏O2 分子",
+        "B": "uricacid可被氧化成allantoin",
+        "C": "偶合peroxidase 可進行呈色反應",
+        "D": "以293nm 偵測吸光值的上升"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "進行西方墨跡Westernblotting 測驗時，應先進行那一種步驟？",
+      "has_image": false,
+      "options": {
+        "A": "蛋白質水解",
+        "B": "核酸水解",
+        "C": "蛋白質電泳",
+        "D": "核酸電泳"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "下列有關lecithin-to-sphingomyelinratio 檢測的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "評估血管硬化的程度",
+        "B": "評估胎兒hyalinemembranedisease 的指標",
+        "C": "L/Sratio 大於2.5 表示胎兒肺部不成熟的機會大",
+        "D": "通常用孕婦的血液檢查"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "有一hyperlipoproteinemia 之病人，其血清脂蛋白以agarosegel 為介質經電泳後發現其β帶\n有明顯增加，則下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "該病人血清中增加之脂蛋白為VLDL",
+        "B": "該病人血清TG 大量增加",
+        "C": "該病人血清外觀應為Clear",
+        "D": "該疾病由lipoproteinlipase（LPL）基因突變引起"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "要消除glycerol 對triglyceride 測定之干擾，須分兩次作反應。其中一次反應所加的試劑中\n缺少下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "glycerolkinase",
+        "B": "glycerolphosphateoxidase",
+        "C": "lipase",
+        "D": "peroxidase"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "從飲食中攝取的脂肪成分被腸黏膜吸收後，以脂蛋白形式進入血液循環，其在pH8.6 電泳\n位置為：",
+      "has_image": false,
+      "options": {
+        "A": "檢體添加處",
+        "B": "α",
+        "C": "pre-β",
+        "D": "β"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "下列何種脂蛋白的蛋白質含量最高？",
+      "has_image": false,
+      "options": {
+        "A": "IDL",
+        "B": "LP(a)",
+        "C": "LDL",
+        "D": "VLDL"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "第二型糖尿病的診斷標準，不包括下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "血中insulin 過低",
+        "B": "空腹血糖 126 mg/dL ≥",
+        "C": "飯後2 小時血糖 200 mg/dL ≥",
+        "D": "口服葡萄糖耐受試驗（OGTT）2 小時≥ 200 mg/dL"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列何者之血液中含量增加時，表示insulin 之分泌增加？",
+      "has_image": false,
+      "options": {
+        "A": "procalcitonin",
+        "B": "preproinsulin",
+        "C": "glucagon",
+        "D": "C-peptide"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "有關妊娠糖尿病確診檢測，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "給予50g 葡萄糖",
+        "B": "必須要禁食至少8 小時才能作",
+        "C": "口服30 分鐘後抽血檢測血糖",
+        "D": "血糖濃度大於100mg/dL 則必須進一步作尿糖檢驗"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "Glucose 經glucosedehydrogenase 反應後的產物有：",
+      "has_image": false,
+      "options": {
+        "A": "glucose-6-phosphate",
+        "B": "glucuronicacid",
+        "C": "H O",
+        "D": "NADH\n2 2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "使用親和力層析法分析糖化血紅素之基本原理為糖化血色素之下列何者功能基和boronic\nacid 具親和力？",
+      "has_image": false,
+      "options": {
+        "A": "aldehyde",
+        "B": "carboxylicacid",
+        "C": "cis-diol",
+        "D": "sulfhydryl"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "有關酵素活性的SI 單位（katal），其定義為每秒鐘能催化多少受質所需的酵素量？",
+      "has_image": false,
+      "options": {
+        "A": "1mol",
+        "B": "1mmol",
+        "C": "1µmol",
+        "D": "1Mmol"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列那一種酵素活性的測定，必須偶合乳酸去氫酶（lactatedehydrogenase）的反應？",
+      "has_image": false,
+      "options": {
+        "A": "鹼性磷酯酶ALP",
+        "B": "丙胺酸轉胺酶ALT",
+        "C": "天門冬胺酸轉胺酶AST",
+        "D": "肌酸激酶CK"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "無競爭型抑制劑（non-competitiveinhibitor）對酵素催化反應動力學參數的影響是：",
+      "has_image": false,
+      "options": {
+        "A": "K 上升，V 不變",
+        "B": "K 不變，V 上升\nm max m max",
+        "C": "K 不變，V 下降",
+        "D": "K 下降，V 下降\nm max m max"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "某人之血清CK活性為2×10-6kat/L，則其活性等於多少IU/L？",
+      "has_image": false,
+      "options": {
+        "A": "12",
+        "B": "120",
+        "C": "1,200",
+        "D": "12,000"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列何者酵素碼（ECnumber）第1 碼為1？",
+      "has_image": false,
+      "options": {
+        "A": "ACP",
+        "B": "AST",
+        "C": "ChE",
+        "D": "GLD"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "ICG（Indocyaninegreen）test 主要以何種方式來評估肝臟之功能及發報告？",
+      "has_image": false,
+      "options": {
+        "A": "excretionrate",
+        "B": "flowrate",
+        "C": "retentionrate",
+        "D": "turnoverrate"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "有關α-bilirubin 之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "無法在尿液偵測到",
+        "B": "是間接型膽紅素",
+        "C": "在血液中由albumin 所攜帶",
+        "D": "正常成人血清含量比β-bilirubin 低"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "血清中LDH同功酶M4 及HM3 增加，通常代表：",
+      "has_image": false,
+      "options": {
+        "A": "肝臟疾病",
+        "B": "肺阻塞",
+        "C": "腎臟疾病",
+        "D": "檢體溶血"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "下列那一種酵素在停經後婦女血清中的活性會增高？",
+      "has_image": false,
+      "options": {
+        "A": "acidphosphatase",
+        "B": "alkalinephosphatase",
+        "C": "glucose-6-phosphatedehydrogenase",
+        "D": "glutathionereductase"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "17-ketosteroids 是測定下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "aldosterone",
+        "B": "corticosterone",
+        "C": "dehydroepiandrosterone",
+        "D": "17-hydroxyprogesterone"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "下列有關VMA（vanillylmandelicacid）的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "是serotonin 的代謝產物",
+        "B": "是細胞內次級訊息傳遞者",
+        "C": "是檢測類癌的檢驗",
+        "D": "尿液檢體的儲存需要酸性環境"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "下列那一種腫瘤與腫瘤標幟配對的特異性最差？",
+      "has_image": false,
+      "options": {
+        "A": "骨癌-boneALP",
+        "B": "淋巴瘤-LDH",
+        "C": "肝癌-GGT",
+        "D": "前列腺癌-PSA"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "下列那一血清檢測在心肌缺血的早期會上升？",
+      "has_image": false,
+      "options": {
+        "A": "ironbindingcapacitytest",
+        "B": "flippedLDHisotest",
+        "C": "carbonicanhydraseIIItest",
+        "D": "albumincobaltbindingtest"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "作競爭性螢光偏極免疫分析（FPIA），若所測得之偏極程度較高，則表示待測物：",
+      "has_image": false,
+      "options": {
+        "A": "濃度較高",
+        "B": "濃度較低",
+        "C": "分子量較大",
+        "D": "分子量較小"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "腫瘤標幟CYFRA21-1 常用來追蹤下列那一種癌症病患？",
+      "has_image": false,
+      "options": {
+        "A": "breastcancer",
+        "B": "colorectalcancer",
+        "C": "lungcancer",
+        "D": "ovariancancer"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列何者會導致血漿滲透壓之下降？",
+      "has_image": false,
+      "options": {
+        "A": "尿素濃度上升",
+        "B": "低鈉血症",
+        "C": "高血糖症",
+        "D": "攝取酒精"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "下列那一種血清電解質與蛋白質結合的比例最低？",
+      "has_image": false,
+      "options": {
+        "A": "鈉",
+        "B": "鈣",
+        "C": "鎂",
+        "D": "銅"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "下列何者為人體細胞內含量第二高的陽離子？",
+      "has_image": false,
+      "options": {
+        "A": "鈣",
+        "B": "鎂",
+        "C": "鈉",
+        "D": "銅"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "肝功能有問題時，下列何種血清（血漿）的檢測值會下降？",
+      "has_image": false,
+      "options": {
+        "A": "bileacids",
+        "B": "ferritin",
+        "C": "indocyaninegreen",
+        "D": "prealbumin"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "下列何項金屬離子的缺乏容易造成缺鐵性貧血？",
+      "has_image": false,
+      "options": {
+        "A": "銅",
+        "B": "鎂",
+        "C": "錳",
+        "D": "鈣"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "下列有關血中鋰（Li）測定之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "可使用火焰比色計測定",
+        "B": "使用電極法測定分析時間較短",
+        "C": "必須使用石墨爐（graphitefurnace）法才可測定",
+        "D": "濃度單位一般使用mmol/L"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "在臨床檢驗之實務上，下列何者為毒物及藥物濫用檢驗第一階段的篩檢試驗？",
+      "has_image": false,
+      "options": {
+        "A": "LC/MS/MS",
+        "B": "HPLC",
+        "C": "GC/MS",
+        "D": "EIA 或FPIA"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "Aniongap 實際之算法為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "unmeasuredcation-measuredanion",
+        "B": "unmeasuredanion-measuredcation",
+        "C": "measuredcation-measuredanion",
+        "D": "measuredanion-measuredcation"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "甲乙兩家醫院作血清Totalprotein 的品管檢測，甲家平均值為6.5g/dL，SD 為0.3g/dL；乙\n家平均值為5.0g/dL，SD 為0.3g/dL，則下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "不精密度甲＞乙",
+        "B": "不精密度甲＜乙",
+        "C": "平均值都在成人參考值範圍內",
+        "D": "平均值都在成人參考值範圍外"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "一病人之動脈血氣體分析結果如下：pH=7.19 ；PCO =19mmHg ；PO =96mmHg ；\n2 2\nHCO -=7mmol/L ；sO =96%（calculated）該病人得了下列何症？\n3 2",
+      "has_image": false,
+      "options": {
+        "A": "代謝性酸中毒",
+        "B": "呼吸性酸中毒",
+        "C": "代謝性鹼中毒",
+        "D": "呼吸性鹼中毒"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "血清滲透莫耳濃度差（osmolgap）可用來檢驗：",
+      "has_image": false,
+      "options": {
+        "A": "敗血症",
+        "B": "尿毒症",
+        "C": "金屬中毒",
+        "D": "甲醇中毒"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "方法評估使用MethodEvaluationDecision（MEDx）chart，通常根據其Decisioncriteria 區分\n為四個區域，最差的檢驗方法位於那一區域？",
+      "has_image": false,
+      "options": {
+        "A": "最靠近左邊之區域",
+        "B": "由左邊算來第二區域",
+        "C": "由左邊算來第三區域",
+        "D": "最靠近右邊之區域"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "具有下列何項檢驗結果者患心血管疾病的風險最低？",
+      "has_image": false,
+      "options": {
+        "A": "cTnI2.0ng/mL",
+        "B": "HDL-C85mg/dL",
+        "C": "LDL-C190mg/dL",
+        "D": "CRP8mg/L"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "新生兒黃疸血中，那一種成分濃度增高容易產生病變？",
+      "has_image": false,
+      "options": {
+        "A": "α-膽紅素",
+        "B": "β-膽紅素",
+        "C": "γ-膽紅素",
+        "D": "δ-膽紅素"
+      },
+      "answer": "A",
+      "bonus": false
+    }
+  ]
+}

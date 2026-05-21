@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 105,
+    "sitting": 2,
+    "subject": "醫學分子檢驗學與臨床鏡檢學",
+    "exam_code": "3308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "有關一般光學顯微鏡原理的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "由一組凹透鏡組合而成",
+        "B": "物鏡先將檢體影像放大成實像，再被目鏡放大成虛像，最後入眼球而成實像",
+        "C": "當光線經過檢體時，會產生折射與反射的現象，需要避免折射，以得到清晰的影像",
+        "D": "使用油鏡，從檢體透出的光線，穿過浸油至物鏡時，不易被反射，可以得到較佳的影像"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "將物鏡倍數由10倍調到40倍時，則下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "視野面積不變",
+        "B": "單一視野中細胞數量變少",
+        "C": "玻片總細胞數量不變",
+        "D": "解析度增加"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "下列何種異常易導致微白蛋白尿（microalbuminuria）？",
+      "has_image": false,
+      "options": {
+        "A": "腎絲球過濾率",
+        "B": "腎小管再吸收能力",
+        "C": "腎前蛋白產量",
+        "D": "輸尿管"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "高蛋白飲食的健康成人，最易產生下列何種狀況？",
+      "has_image": false,
+      "options": {
+        "A": "高蛋白尿",
+        "B": "低酸鹼值尿",
+        "C": "低尿膽素原尿",
+        "D": "高亞硝酸鹽尿"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "以尿液試紙法檢查，下列何者常僅以陰性／陽性表示，而無半定量數據？①膽紅素 ②酮體 ③亞硝酸鹽 ④白血球酯酶 ⑤\n尿膽素原",
+      "has_image": false,
+      "options": {
+        "A": "僅③",
+        "B": "僅⑤",
+        "C": "②④",
+        "D": "①③⑤"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "有關尿液試紙之敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "放在室溫即可",
+        "B": "不需要避光",
+        "C": "蒸餾水可用來當作陰性對照組",
+        "D": "低溫的尿液不會影響其測試結果"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "下列何者是Clinitest錠劑中，銅還原所需要的能量來源？",
+      "has_image": false,
+      "options": {
+        "A": "copper sulfate",
+        "B": "sodium carbonate",
+        "C": "sodium hydroxide",
+        "D": "sodium citrate"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "定量尿液化學成份，例如catecholamines、17-hydroxysteroids，下列何者為最佳檢體？",
+      "has_image": false,
+      "options": {
+        "A": "隨機尿液",
+        "B": "早晨初次尿液",
+        "C": "24小時尿液",
+        "D": "三杯尿液"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "消化系統中的何種器官是水分再吸收的最主要器官？",
+      "has_image": false,
+      "options": {
+        "A": "食道",
+        "B": "胃",
+        "C": "小腸",
+        "D": "大腸"
+      },
+      "answer": "",
+      "bonus": true
+    },
+    {
+      "number": 10,
+      "content": "為檢測糞便中是否有未消化的肌肉纖維存在，須使用下列何者染色？",
+      "has_image": false,
+      "options": {
+        "A": "methylene blue",
+        "B": "10% alcoholic eosin",
+        "C": "Sudan III",
+        "D": "trypan blue"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "關於糞便HemeQuant潛血試驗的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "試驗原理為先將檢體內的血紅素轉變成紫質類",
+        "B": "若血紅素經過腸道時，被細菌先分解成紫質類，則不能使用此試驗",
+        "C": "使用螢光比色計測定專一性抗體與血紅素的結合量",
+        "D": "因不受飲食中過氧化酶的干擾，故不須禁食肉類"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "有關氣管與支氣管分泌物之敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "唾液酸（sialic acid）是造成痰液具有黏稠性的主要成份之一",
+        "B": "不需迷走神經控制，杯狀細胞（goblet cell）能自行分泌黏液素（mucin）",
+        "C": "下呼吸道能保持無菌，主要是由分泌IgA的特殊漿細胞（plasma cell）所負責",
+        "D": "痰液的固體成份含有DNA，發炎越劇則DNA含量越多"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "鏡檢痰液的特殊物質，外觀呈黃色或灰色的硫顆粒（sulfur granules），最有可能為下列何種微生物感染所造成？",
+      "has_image": false,
+      "options": {
+        "A": "放射菌（Actinomyces israelii）",
+        "B": "綠膿桿菌（Pseudomonas aeruginosa）",
+        "C": "卡氏肺囊蟲（Pneumocystitis carnii）",
+        "D": "肺炎桿菌（Klebsiella pneumoniae）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "下列何者不會出現於正常痰液？",
+      "has_image": false,
+      "options": {
+        "A": "紅血球",
+        "B": "嗜中性白血球",
+        "C": "肺泡巨噬細胞",
+        "D": "間皮細胞"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "腦脊髓液蛋白電泳時，運鐵蛋白（transferrin）出現於下列那個位置？",
+      "has_image": false,
+      "options": {
+        "A": "白蛋白",
+        "B": "α\n1\n球蛋白",
+        "C": "α\n2\n球蛋白",
+        "D": "β球蛋白"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "下列何者會造成腦脊髓液凝固？",
+      "has_image": false,
+      "options": {
+        "A": "冷藏後的腦脊髓液",
+        "B": "化膿性腦膜炎",
+        "C": "多發性硬化症",
+        "D": "正常人的腦脊髓液"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "下列何者是造成濾出液（transudate）的原因？",
+      "has_image": false,
+      "options": {
+        "A": "血漿膠體滲透壓增加",
+        "B": "微血管通透性增加",
+        "C": "淋巴管吸收減少",
+        "D": "壁膜微血管液體靜壓增加"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "關於胸膜液（pleural fluid）間皮細胞（mesothelial cell）之敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "呈現多形性，與腫瘤細胞聚集時，常造成鑑定困難",
+        "B": "發炎性胸膜液的間皮細胞大量增加，可以用於診斷轉移性肺腫瘤之指標",
+        "C": "相較於一般的肺部發炎疾病，結核性胸膜炎（tuberculous pleuritis）積水的間皮細胞數量明顯減少",
+        "D": "可以使用特殊染色法，區分間皮細胞和其他組織細胞"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列何種計算公式比較適合用來區分腹膜液屬於滲出液（exudate）或濾出液（transudate）？",
+      "has_image": false,
+      "options": {
+        "A": "血清與腹膜液葡萄糖的濃度比",
+        "B": "血清與腹膜液葡萄糖的濃度差",
+        "C": "血清與腹膜液白蛋白的濃度比",
+        "D": "血清與腹膜液白蛋白的濃度差"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "下列何者是關節液不可使用粉末狀EDTA為抗凝固劑的原因？",
+      "has_image": false,
+      "options": {
+        "A": "會增加檢體的體積",
+        "B": "會形成人工結晶",
+        "C": "增加抗凝效果",
+        "D": "降低抗凝效果"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "下列何者是高濃度的肝素（超過125 U/mL）影響關節液微生物檢查的原因？",
+      "has_image": false,
+      "options": {
+        "A": "會促進某些汙染菌的生長",
+        "B": "會抑制某些致病菌的生長",
+        "C": "加強革蘭氏染色",
+        "D": "抑制革蘭氏染色"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "正常的精液，其酸鹼值不可能是下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "6.0",
+        "B": "7.0",
+        "C": "7.5",
+        "D": "8.0"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "下列何者是射精管阻塞時精液之主要變化？",
+      "has_image": false,
+      "options": {
+        "A": "精液量增加",
+        "B": "凝結能力增加",
+        "C": "酸鹼值不變",
+        "D": "失去特殊的味道"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列有關正常精液的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "每毫升含2～5千萬隻精蟲",
+        "B": "體積約為2～5毫升",
+        "C": "pH值介於7.2到7.8",
+        "D": "至少超過80%精蟲具有正常移動能力"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "以三明治免疫分析法欲同時測定血清人類絨毛膜性腺激素和其β次單元時，必須用到下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "單一種抗β次單元的抗體",
+        "B": "單一種抗α次單元的抗體",
+        "C": "兩種不同抗原決定點的抗β次單元抗體",
+        "D": "抗α和抗β次單元的抗體"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "關於妊娠滋養層疾病（gestational trophoblastic disease）的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "患者子宮增大",
+        "B": "hCG呈陽性反應但濃度較正常懷孕時低",
+        "C": "患者有類似懷孕的症狀",
+        "D": "無胎兒心跳"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "有關人體感染幼裂頭絛蟲（spargana）的敘述，下列何者正確？①常因以生蛙肉敷眼造成眼眶浮腫 ②通常可用手術摘除蟲體\n③不會感染中樞神經系統",
+      "has_image": false,
+      "options": {
+        "A": "僅①②",
+        "B": "僅①③",
+        "C": "僅②③",
+        "D": "①②③"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何者會吞食紅血球？",
+      "has_image": false,
+      "options": {
+        "A": "痢疾阿米巴（Entamoeba histolytica）",
+        "B": "大腸阿米巴（Entamoeba coli）",
+        "C": "相異阿米巴（Entamoeba dispar）",
+        "D": "哈氏阿米巴（Entamoeba hartmanni）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "感染旋毛蟲（Trichinella spiralis）時，下列何者是最早可能發生的症狀？",
+      "has_image": false,
+      "options": {
+        "A": "嗜酸性白血球大量增多",
+        "B": "肌肉痛",
+        "C": "腸胃炎",
+        "D": "腦膜炎"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "下列何者是人體感染血吸蟲（blood flukes）的方式？",
+      "has_image": false,
+      "options": {
+        "A": "吃到淡水螺內的胞幼（sporocysts）",
+        "B": "吃到淡水魚內的囊幼（metacercariae）",
+        "C": "嗆水吸進囊幼",
+        "D": "尾幼（cercariae）鑽入皮膚"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "感染衛氏肺吸蟲（Paragonimus westermani）是因吃了下列何種未熟的食物？",
+      "has_image": false,
+      "options": {
+        "A": "淡水魚",
+        "B": "螃蟹",
+        "C": "筊白筍",
+        "D": "菱角"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "內臟幼蟲移行症（visceral larva migrans）患者，最常發現何種白血球顯著增多？",
+      "has_image": false,
+      "options": {
+        "A": "嗜酸性白血球（eosinophils）",
+        "B": "嗜鹼性白血球（basophils）",
+        "C": "嗜中性白血球（neutrophils）",
+        "D": "單核白血球（monocytes）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "下列何者的白血球正常成人參考值約為0～5個 /µL？",
+      "has_image": false,
+      "options": {
+        "A": "腦脊髓液",
+        "B": "關節液",
+        "C": "胸水－滲出液",
+        "D": "血漿"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "下列何者的葡萄糖正常參考值約為50～80 mg/dL？",
+      "has_image": false,
+      "options": {
+        "A": "腦脊髓液",
+        "B": "胸水",
+        "C": "尿液",
+        "D": "羊水"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "欲做腹水白血球計數時，若檢體呈現血狀，應添加下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "氫氧化鈉",
+        "B": "低張鹽水",
+        "C": "冰醋酸",
+        "D": "高張鹽水"
+      },
+      "answer": "",
+      "bonus": true
+    },
+    {
+      "number": 36,
+      "content": "下列何者的外觀最像自來水？",
+      "has_image": false,
+      "options": {
+        "A": "尿液",
+        "B": "腹水",
+        "C": "胸水",
+        "D": "腦脊髓液"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下圖是尿沉渣何種有形成份？",
+      "has_image": false,
+      "options": {
+        "A": "calcium oxalate crystal",
+        "B": "uric acid crystal",
+        "C": "triple phosphate crystal",
+        "D": "hyaline cast"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "承上題，此病人尿液檢體之pH值約為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "4.0",
+        "B": "6.0",
+        "C": "8.0",
+        "D": "12.0"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "下列何者為銅還原尿液化性試驗？",
+      "has_image": false,
+      "options": {
+        "A": "SSA test",
+        "B": "Benedict's test",
+        "C": "Watson-Schwartz test",
+        "D": "Rothera's test"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "承上題，若某尿液檢體試驗結果如下圖第2管，則檢驗報告應為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "尿蛋白－陰性（-）",
+        "B": "尿糖－微量（trace）",
+        "C": "尿蛋白－中度陽性（++）",
+        "D": "尿糖－重度陽性（++++）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "雙股斷裂之DNA受損，可用下列何種修復系統修復？",
+      "has_image": false,
+      "options": {
+        "A": "Photoreactivation",
+        "B": "Base excision repair",
+        "C": "Non-homologous end joining",
+        "D": "Translesion synthesis"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "細胞中DNA是negatively supercoiled，下列何種酵素負責解開（Relax）此種supercoiled DNA？",
+      "has_image": false,
+      "options": {
+        "A": "Primase",
+        "B": "Polymerase",
+        "C": "Topoisomerase",
+        "D": "Reverse transcriptase"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "下列何者與真核生物 RNA polymerase II core promoter的組成無關？",
+      "has_image": false,
+      "options": {
+        "A": "Upstream activator sequences（UAS）",
+        "B": "Motif ten element（MTE）",
+        "C": "Initiator element（Inr）",
+        "D": "Downstream core element（DCE）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "下列何種 small nuclear RNA proteins（snRNPs）同時參與major 和 minor spliceosome調控的 RNA splicing？",
+      "has_image": false,
+      "options": {
+        "A": "U1 snRNP",
+        "B": "U2 snRNP",
+        "C": "U5 snRNP",
+        "D": "U11 snRNP"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "關於真核生物蛋白質轉譯的調控，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "eIF2α 磷酸化會增加轉譯作用的速率，使蛋白質合成增加",
+        "B": "Maskin可連結 eIF4E 和 CPEB 形成複合物而增加轉譯作用",
+        "C": "蛋白質激酶 mTor 可使 4E-BP 磷酸化而增加轉譯作用",
+        "D": "在鐵存在的情況下，iron regulatory protein（IRP）會和 iron regulatory element（IRE）結合，增加 ferritin 的合成"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "去氧核糖核酸（DNA）同分異構物（Topoisomers）可以用電泳分開，下列何者跑最快？",
+      "has_image": false,
+      "options": {
+        "A": "Relaxed circular DNA",
+        "B": "Supercoiled DNA",
+        "C": "Linear DNA",
+        "D": "Nicked circular DNA"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "細胞周期中，那一個時期有最凝聚濃縮（Maximally condensed）的染色體？",
+      "has_image": false,
+      "options": {
+        "A": "G1",
+        "B": "S",
+        "C": "G2",
+        "D": "M"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列關於聚合酶連鎖反應（PCR）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "Mg2+濃度太高易產生非特異性的產物",
+        "B": "DNA中有EDTA成分要外加Mg2+",
+        "C": "反應中加入DMSO可以減少DNA模板的二級結構",
+        "D": "一般反應的 pH值介於 pH 7 ～ pH 7.5"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "Pfu DNA聚合酶因為含有下列何種酵素活性，所以出錯率比Taq DNA聚合酶低？",
+      "has_image": false,
+      "options": {
+        "A": "5'→3' 外切酶（Exonuclease）",
+        "B": "3'→5' 外切酶（Exonuclease）",
+        "C": "5'→3' 內切酶（Endonuclease）",
+        "D": "3'→5' 內切酶（Endonuclease）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "下列何種方法無法用來檢測DNA與蛋白質的結合？",
+      "has_image": false,
+      "options": {
+        "A": "DNA footprinting",
+        "B": "Electrophoretic mobility-shift assay",
+        "C": "Chromatin immunoprecipitation",
+        "D": "Fluorescence in situ hybridization"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "何謂晶片實驗室（Lab on a chip）？",
+      "has_image": false,
+      "options": {
+        "A": "利用各種晶片來檢測臨床檢體的實驗室",
+        "B": "利用各種晶片來進行不同臨床試驗的實驗室",
+        "C": "從樣品製備、處理到檢測分析全在一個晶片執行",
+        "D": "製造與研究開發各種晶片的實驗室"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "下列何種措施對於預防PCR之核酸汙染沒有太大幫助？",
+      "has_image": false,
+      "options": {
+        "A": "使用帶濾心滴管尖（Barrier tip）",
+        "B": "使用UV照射工作區域",
+        "C": "使用10%漂白水清潔工作檯",
+        "D": "使用10% Triton X-100於反應試管中"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列有關巢式PCR（Nested PCR）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "兩對引子放在同一試管中反應",
+        "B": "增加反應的靈敏度",
+        "C": "增加反應的專一性",
+        "D": "第二對引子設計在第一對的內側"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "一個A→G之single nucleotide polymorphism（SNP）的異合基因型（Heterozygote）個體，其基因PCR產物經變性／回復作\n用（Denaturation / renaturation）後，所形成的heteroduplex為：",
+      "has_image": false,
+      "options": {
+        "A": "A / C、T / G",
+        "B": "A / G、T / C",
+        "C": "A / A、G / G",
+        "D": "T / T、C / C"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "以polymerase chain reaction-restriction fragment length polymorphism（PCR-RFLP）偵測SNP，正常DNA為A，突變DNA為\nG，正常DNA之PCR片段以Sac I處理時，其電泳帶大小為210 bp，突變DNA之PCR片段以Sac I處理時，其電泳帶大小為130\nbp與80 bp，一個heterozygous A/G genotype之病人結果應為：",
+      "has_image": false,
+      "options": {
+        "A": "130 bp與80 bp",
+        "B": "210 bp與80 bp",
+        "C": "210 bp與130 bp",
+        "D": "210 bp、130 bp與80 bp"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列關於核酸雜交的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "雜交溫度一般比探針之Tm（Melting temperature）高5℃",
+        "B": "分析全基因的DNA探針通常比較短",
+        "C": "長的探針專一性比較好",
+        "D": "短的探針雜交的時間較長"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "有關carbapenemase在革蘭氏陰性桿菌之敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "屬於class C β-lactamase",
+        "B": "Metallo-β-lactamase 是carbapenemase的一種",
+        "C": "KPC酵素是carbapenemase的一種",
+        "D": "NDM-1酵素較常見於腸內菌科"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "結核分枝桿菌若具有katG（Catalase-peroxidase）基因突變，主要與下列何種藥物的抗藥有關？",
+      "has_image": false,
+      "options": {
+        "A": "Ethambutol",
+        "B": "Streptomycin",
+        "C": "Isoniazid",
+        "D": "Pyrazinamide"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "dsDNA病毒的某段DNA為5'-ATGCTA-3'，其互補DNA序列為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "5'-ATGCTA-3'",
+        "B": "5'-TAGCAT-3'",
+        "C": "3'-ATGCTA-5'",
+        "D": "5'-UAGCAU-3'"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "下列何種病毒主要藉由核酸的偵測，而無法用細胞培養分離病毒或抗原（抗體）檢測的方法鑑定？",
+      "has_image": false,
+      "options": {
+        "A": "Human papillomavirus",
+        "B": "Epstein-Barr virus",
+        "C": "Cytomegalovirus",
+        "D": "Human immunodeficiency virus"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "有關病毒檢測的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "目前用細胞培養的人類冠狀病毒（Human coronaviruses）不可靠，病毒檢驗以偵測病毒核酸為主",
+        "B": "目前很難用細胞培養乙型肝炎病毒（HBV），但可以用血清學來偵測病毒感染",
+        "C": "目前很難用細胞培養丙型肝炎病毒（HCV），但可以用血清學來偵測病毒感染",
+        "D": "人類乳突瘤病毒（HPV）可以於細胞中培養，但病毒檢驗以偵測病毒核酸為主"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "下列何種G6PD基因突變不常發生在台灣？",
+      "has_image": false,
+      "options": {
+        "A": "1376 G→T",
+        "B": "1388 G→A",
+        "C": "95 A→G",
+        "D": "241 G→T"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "在進行細胞遺傳學核型分析時，每個個案需至少觀察幾個完整核型？",
+      "has_image": false,
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "30",
+        "D": "40"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "關於鑲嵌型（Mosaicism）的唐氏症患者，下列敘述何者正確？①約占唐氏症總數20% ②因偶發性的細胞有絲分裂不分離\n（Mitotic non-disjunction）所引起 ③通常父母有一方染色體數目異常",
+      "has_image": false,
+      "options": {
+        "A": "僅①",
+        "B": "僅②",
+        "C": "僅③",
+        "D": "①③"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "病患擁有下列何種基因或染色體異常，對於 acute lymphocytic leukemia（ALL）標準的化學治療有較差的預後？",
+      "has_image": false,
+      "options": {
+        "A": "Hyperdiploidy（>50 chromosomes）或 t(12; 21)",
+        "B": "Hypodiploidy（<44 chromosomes）或 t(12; 21)",
+        "C": "Hyperdiploidy（>50 chromosomes）或 MLL rearranged",
+        "D": "Hypodiploidy（<44 chromosomes）或 MLL rearranged"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "在myeloproliferative neoplasm患者的血球中，最常見的 JAK2 變異是：",
+      "has_image": false,
+      "options": {
+        "A": "F617V",
+        "B": "V617F",
+        "C": "F716V",
+        "D": "V716F"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "關於A血型中，基因變異539 G→C是屬於下列何種亞型？",
+      "has_image": false,
+      "options": {
+        "A": "A2",
+        "B": "A3",
+        "C": "Am",
+        "D": "Ael"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "最常造成弱D（Weak D）血型的RhD基因變異為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "G355S",
+        "B": "V270G",
+        "C": "M295I",
+        "D": "Y330X"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "Warfarin藥物的適用劑量與下列那個基因的多型性很有關係？",
+      "has_image": false,
+      "options": {
+        "A": "CYP34",
+        "B": "VKORC1",
+        "C": "CYP2D6",
+        "D": "rpoB"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "關於細胞色素 cytochrome P450 第二階段（Phase II）酵素反應的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "增加疏水性（Hydrophobicity）",
+        "B": "促進葡萄醛酸化（Glucuronidation）",
+        "C": "促進硫基化（Sulfation）",
+        "D": "促進氧化（Oxidation）"
+      },
+      "answer": "",
+      "bonus": true
+    },
+    {
+      "number": 71,
+      "content": "下列何種方法用於人類白血球抗原（HLA）交叉反應？",
+      "has_image": false,
+      "options": {
+        "A": "DNA定序",
+        "B": "血清學試驗",
+        "C": "特異性寡核苷酸探針（Sequence-specific oligonucleotide probe）",
+        "D": "序列特異性聚合酶連鎖反應（Sequence-specific primer-PCR）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "利用血清學分型人類白血球抗原（HLA）是根據下列何種原理？",
+      "has_image": false,
+      "options": {
+        "A": "比濁法",
+        "B": "凝集法",
+        "C": "補體毒殺試驗",
+        "D": "酵素免疫分析"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "人類STR標記的突變率大約為：",
+      "has_image": false,
+      "options": {
+        "A": "10-2～10-6",
+        "B": "10-7～10-10",
+        "C": "10-11～10-15",
+        "D": "0"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "目前親子鑑定最常使用的技術是：",
+      "has_image": false,
+      "options": {
+        "A": "短重複序列標誌分析（STR marker analysis）",
+        "B": "迷你衛星去氧核醣核酸指紋圖譜（Minisatellite DNA fingerprinting）",
+        "C": "單一核苷酸多型性（SNP）",
+        "D": "ABO血型typing"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "為了進行RNA分析，收集血液檢體並取出白血球之後，若保存在2～8℃時須在多久之內將RNA萃取出？",
+      "has_image": false,
+      "options": {
+        "A": "2～4小時",
+        "B": "24小時",
+        "C": "72小時",
+        "D": "一星期"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "分子檢驗項目的開立，須提供臨床敏感度（Clinical sensitivity）的資訊，下列何者正確？（TP: true positive, TN: true\nnegative, FP: false positive, FN: false negative）",
+      "has_image": false,
+      "options": {
+        "A": "［TP /（TP＋FN）］×100",
+        "B": "［FN /（TP＋FN）］×100",
+        "C": "［TN /（TN＋FP）］×100",
+        "D": "［FP /（TN＋FP）］×100"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "下列何種方法可以檢測腫瘤組織中全體染色體基因片段增減的情形？",
+      "has_image": false,
+      "options": {
+        "A": "Loss of heterozygosity",
+        "B": "Comparative genomic hybridization",
+        "C": "Restriction fragment length polymorphism",
+        "D": "Sandwich hybridization assay"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "承上題，若已將染色體增減的範圍縮小到基因區段時，可以下列何種方法進行篩檢偵測基因突變點或基因定位？",
+      "has_image": false,
+      "options": {
+        "A": "Loss of heterozygosity",
+        "B": "Comparative genomic hybridization",
+        "C": "Restriction fragment length polymorphism",
+        "D": "Sandwich hybridization assay"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "下列何者是人類癌症最常見的致癌基因？",
+      "has_image": false,
+      "options": {
+        "A": "K-RAS",
+        "B": "MYC",
+        "C": "SRC",
+        "D": "TP53"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "承上題，下列何者為該致癌基因在腫瘤組織中常見的基因變異？",
+      "has_image": false,
+      "options": {
+        "A": "基因座放大",
+        "B": "基因點突變",
+        "C": "基因缺失",
+        "D": "基因甲基化\n測驗題標準答案更正\n考試名稱：105年第二次專門職業及技術人員高等考試醫師牙醫師藥師考試分階段考試、藥師、醫事\n檢驗師、醫事放射師、助產師、物理治療師、職能治療師、呼吸治療師、獸醫師考試\n類科名稱：醫事檢驗師\n科目名稱：醫學分子檢驗學與臨床鏡檢學（包括寄生蟲學）(試題代號：3308)\n題 數：80題\n標準答案：答案標註＃者，表該題有更正答案，其更正內容詳備註。\n題序 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20\n答案 Ｄ Ａ Ａ Ｂ Ａ Ａ Ｃ Ｃ ＃ Ｂ Ａ Ｃ Ａ Ｄ Ｄ Ｂ Ｄ Ｂ Ｄ Ｂ\n題序 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40\n答案 Ｂ Ａ Ｄ Ｄ Ｃ Ｂ Ａ Ａ Ｃ Ｄ Ｂ Ａ Ａ Ａ ＃ Ｄ Ｃ Ｃ Ｂ Ｄ\n題序 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60\n答案 Ｃ Ｃ Ａ Ｃ Ｃ Ｂ Ｄ Ｄ Ｂ Ｄ Ｃ Ｄ Ａ Ａ Ｄ Ｃ Ａ Ｃ Ｂ Ａ\n題序 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80\n答案 Ｄ Ｄ Ｂ Ｂ Ｄ Ｂ Ａ Ｂ Ｂ ＃ Ｂ Ｃ Ａ Ａ Ａ Ａ Ｂ Ａ Ａ Ｂ\n題序\n答案\n備 註：第9題答Ｃ、Ｄ給分，第35題答Ｂ、Ｃ給分，第70題一律給分。"
+      },
+      "answer": "B",
+      "bonus": false
+    }
+  ]
+}

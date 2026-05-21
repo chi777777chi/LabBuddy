@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 96,
+    "sitting": 1,
+    "subject": "臨床血液學與血庫學",
+    "exam_code": "2308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "erythropoietin 基因之3’端含有：",
+      "has_image": false,
+      "options": {
+        "A": "heat-responseelement",
+        "B": "iron-responseelement",
+        "C": "hypoxia-responseelement",
+        "D": "estrogen-responseelement"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "下列何種細胞具有erythropoietinreceptor？",
+      "has_image": false,
+      "options": {
+        "A": "CFU-EandearlyBFU-E",
+        "B": "CFU-EandlateBFU-E",
+        "C": "earlyBFU-EandlateBFU-E",
+        "D": "CFU-MandCFU-GEMM"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "成人HbA 的正常值為：\n2",
+      "has_image": false,
+      "options": {
+        "A": "<1.5%",
+        "B": "1.6%-3.2%",
+        "C": "3.3%-8%",
+        "D": ">9%"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "下列何種蛋白在紅血球上是以貫穿細胞膜的形式存在？",
+      "has_image": false,
+      "options": {
+        "A": "spectrin",
+        "B": "band3",
+        "C": "ankyrin",
+        "D": "protein4.2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "正常骨髓中，myeloid:erythroidratio 為多少？",
+      "has_image": false,
+      "options": {
+        "A": "<1:11",
+        "B": "1:12–1:2.4",
+        "C": "2.5:1–12:1",
+        "D": ">13:1"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "下列何者數據可反映出骨髓製造紅血球的能力？",
+      "has_image": false,
+      "options": {
+        "A": "RBCcount",
+        "B": "hemoglobinvalue",
+        "C": "hematocritvalue",
+        "D": "reticulocytecount"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "缺鐵時，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "ironregulatoryprotein 會與3’端之ironresponseelements 結合，使得ferritin 基因無法製造\n出RNA",
+        "B": "ironregulatoryprotein 會與5’端之ironresponseelements 結合，使得ferritin 基因無法製造\n出RNA",
+        "C": "ironregulatoryprotein 會與3’端之ironresponseelements 結合，使得transferrinreceptor 基\n因無法製造出RNA",
+        "D": "ironregulatoryprotein 會與5’端之ironresponseelements 結合，使得transferrinrecetpor 基\n因無法製造出RNA"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "鉛中毒時，紅血球內何種酵素會受抑制，使其染色時呈現“basophilicstippling”？",
+      "has_image": false,
+      "options": {
+        "A": "pyrimidine5’nucleotidase",
+        "B": "glucose-6-phosphatedehydrogenase",
+        "C": "pyruvatekinase",
+        "D": "glutathionereductase"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "血漿中，vitaminB12 主要以何種型式存在？",
+      "has_image": false,
+      "options": {
+        "A": "cyanoB",
+        "B": "hydroxoB",
+        "C": "adoB",
+        "D": "methylB\n12 12 12 12"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "South-EastAsianovalocytosis 主要是紅血球內下列何蛋白的缺陷？",
+      "has_image": false,
+      "options": {
+        "A": "spectrin",
+        "B": "band3",
+        "C": "ankyrin",
+        "D": "protein4.2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "下列何種貧血，DAT（directantiglobulintest）會呈現陽性？",
+      "has_image": false,
+      "options": {
+        "A": "hereditaryspherocytosis",
+        "B": "G6PDdeficiency",
+        "C": "thalassemia",
+        "D": "autoimmunehemolyticanemia"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "下列何種疾病與GPIanchor 有關係？",
+      "has_image": false,
+      "options": {
+        "A": "paroxysmalnocturnalhemoglobinuria",
+        "B": "paroxysmalcoldhemoglobinuria",
+        "C": "hereditaryspherocytosis",
+        "D": "redcellfragmentationsyndromes"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "下列何者檢測之數值可以反映出體內鐵的儲存量？",
+      "has_image": false,
+      "options": {
+        "A": "serumFe",
+        "B": "TIBC（totalironbindingcapacity）",
+        "C": "serumferritin",
+        "D": "serumtransferrinreceptor"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "血管內溶血時釋放出來的血色素先解離為hemoglobindimer，則需要再與下列何種蛋白形成\ncomplex，才能進入肝細胞內代謝？",
+      "has_image": false,
+      "options": {
+        "A": "haptoglobin",
+        "B": "hemopexin",
+        "C": "albumin",
+        "D": "globulin"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "Pappenheimerbodies 內之主要成分是：",
+      "has_image": false,
+      "options": {
+        "A": "hemoglobin",
+        "B": "RNA",
+        "C": "iron",
+        "D": "nucleus"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "利用fluorescentscreeningtest 檢測G6PDdeficiency 之判讀為：",
+      "has_image": false,
+      "options": {
+        "A": "NADPH 螢光之出現，代表G6PD 正常",
+        "B": "NADP+螢光之出現，代表G6PD 正常",
+        "C": "NADH 螢光之出現，代表G6PD 正常",
+        "D": "NAD+螢光之出現，代表G6PD 正常"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "檢測paroxysmalnocturnalhemoglobinuria，可以採用flowcytometry 檢測中性球上之下列表\n面標幟抗原，何者除外？",
+      "has_image": false,
+      "options": {
+        "A": "CD13",
+        "B": "CD16",
+        "C": "CD55",
+        "D": "CD67"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "下列何者檢測結果可診斷為缺鐵性貧血？",
+      "has_image": false,
+      "options": {
+        "A": "serumFe 降低，TIBC 降低，transferrinsaturation 降低",
+        "B": "serumFe 降低，TIBC 降低，transferrinsaturation 上升",
+        "C": "serumFe 上升，TIBC 降低，transferrinsaturation 降低",
+        "D": "serumFe 降低，TIBC 上升，transferrinsaturation 降低"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "關於血色素與氧之間的親合力，下列何者描述正確？",
+      "has_image": false,
+      "options": {
+        "A": "2,3-DPG 分子會增加血色素與氧之間的親合力",
+        "B": "HbM 與氧之間的親合力較HbA 來的",
+        "C": "溫度高會增加血色素與氧之間的親合力",
+        "D": "HbF 與氧之間的親合力較HbA 來的"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "紅血球中之NADH 主要是由下列何種生化反應所產生？",
+      "has_image": false,
+      "options": {
+        "A": "Embden-Meyerhofpathway",
+        "B": "Luebering-Rapoportshunt",
+        "C": "Hexosemonophosphateshunt",
+        "D": "Glutathionereductionpathway"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "正常情況下，骨髓內一個pronormoblast 可以分裂分化成多少個網狀紅血球？",
+      "has_image": false,
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "16",
+        "D": "32"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "CFU-GEMM 細胞不會分裂分化成熟成為下列何種血球？",
+      "has_image": false,
+      "options": {
+        "A": "紅血球",
+        "B": "淋巴球",
+        "C": "中性球",
+        "D": "血小板"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "myeloproliferativedisorders 包括：polycythemiarubravera,essentialthrombocythemia,\nmyelofibrosis；它們的共同特徵之一是有高比例的病患有下列何者基因的變異？",
+      "has_image": false,
+      "options": {
+        "A": "p53",
+        "B": "RAS",
+        "C": "RB",
+        "D": "JAK2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列何種疾病之骨髓可見到許多plasmacell 聚集在一起？",
+      "has_image": false,
+      "options": {
+        "A": "multiplemyeloma",
+        "B": "Burkitt’slymphoma",
+        "C": "MALTlymphoma",
+        "D": "Mantlecelllymphoma"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "關於Reed-Sternberg(RS)cells 的描述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "常見於Hodgkin’slymphoma，是一種T 淋巴系列之細胞",
+        "B": "常見於Hodgkin’slymphoma，是一種B 淋巴系列之細胞",
+        "C": "常見於non-Hodgkin’slymphoma，是一種T 淋巴系列之細胞",
+        "D": "常見於non-Hodgkin’slymphoma，是一種B 淋巴系列之細胞"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "TyrosinekinaseinhibitorsImatinib(Glivec)主要是針對下列何種染色體變異的治療？",
+      "has_image": false,
+      "options": {
+        "A": "t(8;21)",
+        "B": "t(15;17)",
+        "C": "t(9;22)",
+        "D": "inv(16)"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "AML 病患若帶有下列染色體基因的變異被認為是預後較好的，何者除外？",
+      "has_image": false,
+      "options": {
+        "A": "t(8;21)",
+        "B": "inv(16)",
+        "C": "Flt-3mutation",
+        "D": "NPMmutation"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何種AML 的細胞，CD41 呈現陽性？",
+      "has_image": false,
+      "options": {
+        "A": "M2",
+        "B": "M4",
+        "C": "M6",
+        "D": "M7"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "關於acidphosphatasestain，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "positivewithGolgistaining:T-ALL",
+        "B": "positivewithdiffusionpattern:B-ALL",
+        "C": "positivewithGolgistaining:AML,M6",
+        "D": "positivewithdiffusionpattern:AML,M7"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "下列之細胞特殊染色結果，何者最有可能被分類為ALL？",
+      "has_image": false,
+      "options": {
+        "A": "myeloperoxidase(+),Sudanblack(+)",
+        "B": "myeloperoxidase(+),Sudanblack(-)",
+        "C": "myeloperoxidase(-),Sudanblack(+)",
+        "D": "myeloperoxidase(-),Sudanblack(-)"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "染色體inv(16)變異常見於下列何種AML？",
+      "has_image": false,
+      "options": {
+        "A": "M1",
+        "B": "M2",
+        "C": "M3",
+        "D": "M4"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "Arsenic 最常用於下列何種AML 的治療？",
+      "has_image": false,
+      "options": {
+        "A": "AML,M1",
+        "B": "AML,M2",
+        "C": "AML,M3",
+        "D": "AML,M4"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "基因甲基化是造成白血病的重要原因之一，5’…GCGATCA…3’序列中那一個核酸是會發生\n甲基化的位置（從5’端算起）？",
+      "has_image": false,
+      "options": {
+        "A": "第一個C",
+        "B": "第一個G",
+        "C": "第二個C",
+        "D": "第二個G"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "PML-RARα融合蛋白是下列何種染色體變異的產物？",
+      "has_image": false,
+      "options": {
+        "A": "t(8;21)",
+        "B": "t(15;17)",
+        "C": "t(9;22)",
+        "D": "inv(16)"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "下列何者病毒在紅血球上有receptor，會造成病患發生redcellaplasia？",
+      "has_image": false,
+      "options": {
+        "A": "EBvirus",
+        "B": "cytomegalovirus",
+        "C": "HTLV",
+        "D": "parvovirus"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "下列何種AML 的細胞，glycophorin 呈現陽性？",
+      "has_image": false,
+      "options": {
+        "A": "M2",
+        "B": "M4",
+        "C": "M6",
+        "D": "M7"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下列何種染色體變異與AML,M2 有相關性？",
+      "has_image": false,
+      "options": {
+        "A": "t(8;21)",
+        "B": "t(15;17)",
+        "C": "t(9;22)",
+        "D": "inv(16)"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "surfaceCD22 會開始在下列何者細胞出現？",
+      "has_image": false,
+      "options": {
+        "A": "Prepre-B 細胞",
+        "B": "Pre-B 細胞",
+        "C": "EarlyB 細胞",
+        "D": "MatureB 細胞"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "關於T 細胞之表面抗原，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "CD2(+),CD3(-),CD19(+),CD20(-)",
+        "B": "CD2(-),CD3(-),CD19(+),CD20(+)",
+        "C": "CD2(+),CD3(+),CD19(-),CD20(-)",
+        "D": "CD2(-),CD3(+),CD19(-),CD20(+)"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "在正常骨髓中成熟後進入周邊血液的單核球，在周邊血液中循環時間約：",
+      "has_image": false,
+      "options": {
+        "A": "6–12 小時",
+        "B": "20–40 小時",
+        "C": "2–4 天",
+        "D": "4–5 天"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "下列何種疾病的中性球可見類似Döhlebodies 之RNAinclusion 於細胞質中？",
+      "has_image": false,
+      "options": {
+        "A": "Pelger-Huetanomaly",
+        "B": "May-Hegglinanomaly",
+        "C": "Chediak-Higashisyndrome",
+        "D": "megaloblasticanemia"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "Hypersegmentedneutrophil 常見於下列何種疾病？",
+      "has_image": false,
+      "options": {
+        "A": "Pelger-Huetanomaly",
+        "B": "May-Hegglinanomaly",
+        "C": "Chediak-Higashisyndrome",
+        "D": "megaloblasticanemia"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "正常情況下，每一個成熟的megakaryocyte 可以自細胞質中裂解出多少個血小板？",
+      "has_image": false,
+      "options": {
+        "A": "400–800",
+        "B": "1000–5000",
+        "C": "6000–10000",
+        "D": "12000–20000"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "血小板的壽命約多少天？",
+      "has_image": false,
+      "options": {
+        "A": "7–10",
+        "B": "11–15",
+        "C": "16–28",
+        "D": "35–42"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "血小板中之densegranules 主要儲存下列那些物質？",
+      "has_image": false,
+      "options": {
+        "A": "platelet-derivedgrowthfactor,fibrinogen,Vwf",
+        "B": "ADP,5-hydroxytryptamine,calcium",
+        "C": "hydrolyticenzymes,catalase",
+        "D": "ADP,vWF,fibrinogen"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "fibrinogen 在血小板上之receptor 是：",
+      "has_image": false,
+      "options": {
+        "A": "GPIa",
+        "B": "GPIb",
+        "C": "GPIIb/IIIa",
+        "D": "GPIIa/IIIb"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "vonWillebrandfactor(vWF) 是由下列細胞所製造的：",
+      "has_image": false,
+      "options": {
+        "A": "內皮細胞與肝細胞",
+        "B": "肝細胞與腎細胞",
+        "C": "腎細胞與megakaryocyte",
+        "D": "megakaryocyte 與內皮細胞"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列關於vWF 敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "自densegranule 釋放出，經由血漿內酵素ADAMTS-13 結合成largemultimer，始有作用",
+        "B": "自Weibel-Paladebodies 釋放出，經由血漿內酵素ADAMTS-13 水解成較小的multimer，\n始有作用",
+        "C": "自densegranule 釋放出，經由血漿內酵素ADAMTS-13 水解成monomer，始有作用",
+        "D": "自Weibel-Paladebodies 釋放出，經由血漿內酵素ADAMTS-13 結合成monomer，始有作\n用"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "活化態之凝血因子II,VII,IX,X 是一種：",
+      "has_image": false,
+      "options": {
+        "A": "threonineprotease",
+        "B": "serineprotease",
+        "C": "tyrosineprotease",
+        "D": "tyrosinekinase"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "下列何種凝血因子之活化態是一種transglutaminase？",
+      "has_image": false,
+      "options": {
+        "A": "Hagemanfactor",
+        "B": "fibrin-stabilizingfactor",
+        "C": "prekallikrein(Fletcherfactor)",
+        "D": "HMWK(Fitzgeraldfactor)"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "vWF 可攜帶下列何者凝血因子？",
+      "has_image": false,
+      "options": {
+        "A": "V",
+        "B": "VII",
+        "C": "VIII",
+        "D": "IX"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "下列凝血因子何者沒有EGFdomain？",
+      "has_image": false,
+      "options": {
+        "A": "FactorII",
+        "B": "FactorVII",
+        "C": "FactorIX",
+        "D": "FactorX"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列凝血因子何者有Gladomain？",
+      "has_image": false,
+      "options": {
+        "A": "V",
+        "B": "VII",
+        "C": "VIII",
+        "D": "XI"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "下列凝血因子中，何者在血漿中的壽命最短？",
+      "has_image": false,
+      "options": {
+        "A": "V",
+        "B": "VII",
+        "C": "VIII",
+        "D": "IX"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "下列何者凝血因子的活性需要vitaminK？",
+      "has_image": false,
+      "options": {
+        "A": "V",
+        "B": "VII",
+        "C": "VIII",
+        "D": "XI"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列關於ProteinC 的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "活性需要vitaminK",
+        "B": "有Gladomain",
+        "C": "有EGFdomain",
+        "D": "有Kringledomain"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "fibrinogendeficiency 者，下列檢測結果，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "PT↑,APTT↑,TT↑",
+        "B": "PTnormal,APTT↑,TT↑",
+        "C": "PT↑,APTTnormal,TT↑",
+        "D": "PT↑,APTT↑,TTnormal"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "第十凝血因子缺乏者，下列檢測結果，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "PT↑,APTT↑,TT↑",
+        "B": "PTnormal,APTT↑,TT↑",
+        "C": "PT↑,APTTnormal,TT↑",
+        "D": "PT↑,APTT↑,TTnormal"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "vonWillebranddisease 者，下列檢測結果，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "PTnormal,impairedRistocetin-inducedplateletaggregation,bleedingtime↑",
+        "B": "PTnormal,normalRistocetin-inducedplateletaggregation,bleedingtime↑",
+        "C": "PT↑,impairedRistocetin-inducedplateletaggregation,bleedingtime↑",
+        "D": "PT↑,impairedRistocetin-inducedplateletaggregation,bleedingtimenormal"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "Glanzmann’sdisease 主要是血小板之下列何者蛋白缺乏所致？",
+      "has_image": false,
+      "options": {
+        "A": "GPIa",
+        "B": "GPIb",
+        "C": "GPIIb",
+        "D": "GPIIIb"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "Bernard-Souliersyndrome 主要是血小板之下列何者蛋白缺乏所致？",
+      "has_image": false,
+      "options": {
+        "A": "GPIa",
+        "B": "GPIb",
+        "C": "GPIIb",
+        "D": "GPIIIa"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "β-storagepooldisease 主要是血小板之下列何者缺乏所致？",
+      "has_image": false,
+      "options": {
+        "A": "alphagranules",
+        "B": "densegranules",
+        "C": "GPIa",
+        "D": "GPIIIa"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "第八凝血因子最主要是由下列何者組織細胞所製造？",
+      "has_image": false,
+      "options": {
+        "A": "肝與腎",
+        "B": "肝與脾",
+        "C": "脾與腎",
+        "D": "腎與內皮細胞"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "遺傳性靜脈栓塞之病患最常見的基因變異為factorVLeiden，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "factorVLeiden 無法被proteinS 去活化而導致容易栓塞",
+        "B": "factorVLeiden 主要是Arg306Gln 的變異",
+        "C": "factorVLeiden 主要是Arg506Gln 的變異",
+        "D": "factorVLeiden 主要是Arg679Gln 的變異"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "Adsorbednormalhumanplasma 內不含下列何種凝血因子？",
+      "has_image": false,
+      "options": {
+        "A": "VII",
+        "B": "VIII",
+        "C": "XI",
+        "D": "XII"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "洗出試驗（elutiontechnique）是為了檢測：",
+      "has_image": false,
+      "options": {
+        "A": "紅血球上附著的抗體",
+        "B": "血漿中游離之抗體",
+        "C": "紅血球上的抗原",
+        "D": "血漿中游離之抗原"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列各種方式可促進抗原抗體反應，何者除外？",
+      "has_image": false,
+      "options": {
+        "A": "紅血球經過酵素（如：papain,bromelin,ficin 等）處理",
+        "B": "加入polyethyleneglycol",
+        "C": "降低離子強度",
+        "D": "增加pH 值"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "下列臨床上有意義的不規則抗體中，何者是國人最不常見的？",
+      "has_image": false,
+      "options": {
+        "A": "anti-D",
+        "B": "anti-Miltenberger",
+        "C": "anti-E",
+        "D": "anti-c"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "關於Du血型，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "此病患會有anti-D 產生",
+        "B": "該紅血球與anti-D 試劑進行抗原抗體作用時，在RTphase 可看到凝集反應",
+        "C": "應該當作D(-)",
+        "D": "該紅血球與anti-D 試劑進行抗原抗體作用時，在AHGphase 可看到凝集反應"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "A 型的癌症病患，進行 ABO 檢測時，發現有acquiredB 現象，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "血清定型：A 型；血球定型：B 型",
+        "B": "血清定型：B 型；血球定型：AB 型",
+        "C": "血清定型：B 型；血球定型：B 型",
+        "D": "血清定型：A 型；血球定型：AB 型"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "中國人最常看到的ABO 亞型是：",
+      "has_image": false,
+      "options": {
+        "A": "A2",
+        "B": "B3",
+        "C": "Ael",
+        "D": "Bel"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "下列各血型的紅血球中含有H 物質最多的是：",
+      "has_image": false,
+      "options": {
+        "A": "O",
+        "B": "A1",
+        "C": "B",
+        "D": "Bombay"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "Plasmodiumvivax 侵入紅血球是經由下列何種抗原？",
+      "has_image": false,
+      "options": {
+        "A": "P",
+        "B": "Lewis",
+        "C": "Duffy",
+        "D": "Lutheran"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "下列紅血球的膜蛋白，何者負責HCO -之進出？\n3",
+      "has_image": false,
+      "options": {
+        "A": "Band3",
+        "B": "Band4.1",
+        "C": "Band4.2",
+        "D": "Band4.5"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "冷凍紅血球之保存，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "40%甘油下，-35℃保存，10 年",
+        "B": "20%甘油下，-65℃保存，10 年",
+        "C": "40%甘油下，-65℃保存，10 年",
+        "D": "30%甘油下，-35℃保存，10 年"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "加入ficin 酵素後，下列何種抗原的反應會加強？",
+      "has_image": false,
+      "options": {
+        "A": "Jka",
+        "B": "Fya",
+        "C": "Lewis",
+        "D": "K"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "用Kleihauer-Betketest 檢測胎兒血液流入母親體內多寡的方法，偵測原理是：",
+      "has_image": false,
+      "options": {
+        "A": "胎兒血較母親血耐酸",
+        "B": "胎兒血較母親血耐鹼",
+        "C": "胎兒血較母親血耐高溫",
+        "D": "胎兒血較母親血耐低溫"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "檢測紅血球上附著的抗體：indirectCoombs’test；檢測血漿中游離之抗體：indirect\nCoombs’test",
+        "B": "檢測紅血球上附著的抗體：indirectCoombs’test；檢測血漿中游離之抗體：direct\nCoombs’test",
+        "C": "檢測紅血球上附著的抗體：directCoombs’test；檢測血漿中游離之抗體：directCoombs’\ntest",
+        "D": "檢測紅血球上附著的抗體：directCoombs’test；檢測血漿中游離之抗體：indirect\nCoombs’test"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "一般抗體普檢試驗，都用何種血型之血液來製作“試劑紅血球”（screeningcells）？",
+      "has_image": false,
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "AB",
+        "D": "O"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "下列何種血品適用於治療 vonWillebrand’sdisease？",
+      "has_image": false,
+      "options": {
+        "A": "冷凍血漿",
+        "B": "新鮮冷凍血漿",
+        "C": "冷凍沉澱品",
+        "D": "全血"
+      },
+      "answer": "C",
+      "bonus": false
+    }
+  ]
+}

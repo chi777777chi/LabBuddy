@@ -62,16 +62,17 @@ def import_json(db, json_path: Path):
         if exists:
             continue
 
+        opts = q.get("options", {})
         db.add(Question(
             subject_id=subject.id,
             year=year,
             sitting=sitting,
             number=q["number"],
             content=q["content"],
-            option_a=q["options"]["A"],
-            option_b=q["options"]["B"],
-            option_c=q["options"]["C"],
-            option_d=q["options"]["D"],
+            option_a=opts.get("A", ""),
+            option_b=opts.get("B", ""),
+            option_c=opts.get("C", ""),
+            option_d=opts.get("D", ""),
             answer=q.get("answer") or "",
             has_image=q.get("has_image", False),
             image_path=q.get("image_path"),

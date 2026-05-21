@@ -56,39 +56,21 @@ def mode_select() -> rx.Component:
 def year_sitting_select() -> rx.Component:
     return rx.cond(
         ExamState.selected_mode != "multi_random",
-        rx.hstack(
-            rx.vstack(
-                rx.text("年份", weight="bold", size="2"),
-                rx.select.root(
-                    rx.select.trigger(width="130px"),
-                    rx.select.content(
-                        rx.foreach(
-                            ExamState.available_exams,
-                            lambda e: rx.select.item(
-                                e["year"].to_string() + " 年",
-                                value=e["year"].to_string(),
-                            ),
-                        ),
+        rx.vstack(
+            rx.text("考古題年份／梯次", weight="bold", size="2"),
+            rx.select.root(
+                rx.select.trigger(width="200px"),
+                rx.select.content(
+                    rx.foreach(
+                        ExamState.available_exams,
+                        lambda e: rx.select.item(e["label"], value=e["combo"]),
                     ),
-                    value=ExamState.selected_year.to_string(),
-                    on_change=ExamState.set_year,
                 ),
-                align="start",
+                value=ExamState.selected_exam_value,
+                on_change=ExamState.set_exam,
             ),
-            rx.vstack(
-                rx.text("梯次", weight="bold", size="2"),
-                rx.select.root(
-                    rx.select.trigger(width="110px"),
-                    rx.select.content(
-                        rx.select.item("第一次", value="1"),
-                        rx.select.item("第二次", value="2"),
-                    ),
-                    value=ExamState.selected_sitting.to_string(),
-                    on_change=ExamState.set_sitting,
-                ),
-                align="start",
-            ),
-            spacing="4",
+            align="start",
+            width="100%",
         ),
         rx.fragment(),
     )
@@ -140,6 +122,11 @@ def options_toggles() -> rx.Component:
         rx.hstack(
             rx.switch(checked=ExamState.save_to_history, on_change=ExamState.toggle_save_history),
             rx.text("儲存至歷史紀錄", size="2"),
+            align="center",
+        ),
+        rx.hstack(
+            rx.switch(checked=ExamState.use_ai_hint, on_change=ExamState.toggle_ai_hint),
+            rx.text("AI 提示（答題中可查看 Gemini 分析）", size="2"),
             align="center",
         ),
         align="start",

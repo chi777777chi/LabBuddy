@@ -11,977 +11,1043 @@
   "questions": [
     {
       "number": 1,
-      "content": "由下方心電圖圖形顯示該受檢者心臟有何種情形？",
-      "has_image": true,
-      "image_description": "心電圖圖形（顯示特定波形）",
+      "content": "由 下方心電圖圖形顯示該受檢者心臟有何種情形？",
+      "has_image": false,
       "options": {
-        "A": "心肌梗塞",
-        "B": "左心室肥大",
-        "C": "心臟節律器",
-        "D": "WPW症候群"
+        "A": "心 肌梗塞",
+        "B": "左 心室肥大",
+        "C": "心 臟節律器",
+        "D": "W PW症候群"
       },
-      "answer": "C",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img01.png"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 2,
-      "content": "下列對於操作心電圖機器，完成一張標準12導程心電圖的敘述，何者錯誤？",
+      "content": "下 列對於操作心電圖機器，完成一張標準12導程心電圖的敘述，何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "肢體導極放置於左手、左腳、右手、右腳",
-        "B": "胸前導極V6放置於左胸第五肋間與腋中線交界",
-        "C": "胸前導極V1放置於胸骨右緣與第三肋間交界",
-        "D": "胸前導極V4放置於左胸第五肋間與鎖骨中線交界"
+        "A": "肢 體導極放置於左手、左腳、右手、右腳",
+        "B": "胸 前導極V6放置於左胸第五肋間與腋中線交界",
+        "C": "胸 前導極V1放置於胸骨右緣與第三肋間交界",
+        "D": "胸 前導極V4放置於左胸第五肋間與鎖骨中線交界"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 3,
-      "content": "心電圖上的P波代表下列何者？",
+      "content": "心 電圖上的P波代表下列何者？",
       "has_image": false,
       "options": {
-        "A": "心房去極化",
-        "B": "心房再極化",
-        "C": "心室去極化",
-        "D": "心室再極化"
+        "A": "心 房去極化",
+        "B": "心 房再極化",
+        "C": "心 室去極化",
+        "D": "心 室再極化"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 4,
-      "content": "對於下方心電圖之診斷，下列何者正確？",
-      "has_image": true,
-      "image_description": "心電圖圖形（顯示房室傳導阻斷相關波形）",
+      "content": "對 於下方心電圖之診斷，下列何者正確？",
+      "has_image": false,
       "options": {
-        "A": "一度房室傳導阻斷（first degree AV block）",
-        "B": "二度一房室傳導阻斷（Mobitz type Ⅰ, second degree AV block）",
-        "C": "二度二房室傳導阻斷（Mobitz type Ⅱ, second degree AV block）",
-        "D": "三度房室傳導阻斷（third degree AV block）"
+        "A": "一 度房室傳導阻斷（first degree AV block）",
+        "B": "二 度一房室傳導阻斷（Mobitz typeⅠ, second degree AV block）",
+        "C": "二 度二房室傳導阻斷（Mobitz typeⅡ, second degree AV block）",
+        "D": "三 度房室傳導阻斷（thrid degree AV block）"
       },
-      "answer": "D",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img02.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 5,
-      "content": "心電圖上T波倒置的可能原因，下列何者錯誤？",
+      "content": "心 電圖上T波倒置的可能原因，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "心肌缺氧",
-        "B": "使用毛地黃",
-        "C": "鎂離子過高",
-        "D": "心肌肥厚"
+        "A": "心 肌缺氧",
+        "B": "使 用毛地黃",
+        "C": "鎂 離子過高",
+        "D": "心 肌肥厚"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 6,
-      "content": "有關心電圖的代數關係，下列何者錯誤？",
+      "content": "有 關心電圖的代數關係，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "aVR＋aVL＋aVF＝0",
-        "B": "aVR＝2/3 VR",
-        "C": "aVL＝（Lead Ⅰ－Lead Ⅲ）/2",
-        "D": "aVF＝（Lead Ⅱ＋Lead Ⅲ）/2"
+        "A": "a VR＋aVL＋aVF＝0",
+        "B": "a VR＝2/3 VR",
+        "C": "a VL＝（Lead Ⅰ－Lead Ⅲ）/2",
+        "D": "a VF＝（Lead Ⅱ＋Lead Ⅲ）/2"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 7,
-      "content": "某病患心電圖如下，下列分析何者最適當？",
-      "has_image": true,
-      "image_description": "12導程心電圖（I、II、III、aVR、aVL、aVF、V1–V6）",
+      "content": "某 病患心電圖如下，下列分析何者最適當？",
+      "has_image": false,
       "options": {
-        "A": "心軸極度右偏",
-        "B": "心軸左偏",
-        "C": "左手左腳電擊板倒置",
-        "D": "右手左腳電擊板倒置"
+        "A": "心 軸極度右偏",
+        "B": "心 軸左偏",
+        "C": "左 手左腳電擊板倒置",
+        "D": "右 手左腳電擊板倒置"
       },
-      "answer": "A",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img03.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 8,
-      "content": "左前下降冠狀動脈發生心肌梗塞後，造成心肌永久性壞死，心電圖產生何種變化？",
+      "content": "左 前下降冠狀動脈發生心肌梗塞後，造成心肌永久性壞死，心電圖產生何種變化？",
       "has_image": false,
       "options": {
-        "A": "T波顛倒",
-        "B": "ST上升",
-        "C": "ST下降",
-        "D": "出現深而寬的q或Q波"
+        "A": "T 波顛倒",
+        "B": "S T上升",
+        "C": "S T下降",
+        "D": "出 現深而寬的q或Q波"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 9,
-      "content": "以下心電圖所顯示之心跳速率約每分鐘幾下？",
-      "has_image": true,
-      "image_description": "12導程心電圖（含V1 rhythm strip）",
+      "content": "以 下心電圖所顯示之心跳速率約每分鐘幾下？",
+      "has_image": false,
       "options": {
-        "A": "84 bpm",
-        "B": "96 bpm",
-        "C": "64 bpm",
-        "D": "72 bpm"
+        "A": "8 4 bpm",
+        "B": "9 6 bpm",
+        "C": "6 4 bpm",
+        "D": "7 2 bpm"
       },
-      "answer": "D",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img04.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 10,
-      "content": "當QRS正平面（frontal plane）軸顯示心軸偏右（right axis deviation），此時Ⅰ導程與aVF導程的QRS波方向應分別為何？",
+      "content": "當 QRS正平面（frontal plane）軸顯示心軸偏右（right axis deviation），此時Ⅰ導程與aVF導程的QRS\n波方向應分別為何？",
       "has_image": false,
       "options": {
-        "A": "正向、正向",
-        "B": "正向、負向",
-        "C": "負向、正向",
-        "D": "負向、負向"
+        "A": "正 向、正向",
+        "B": "正 向、負向",
+        "C": "負 向、正向",
+        "D": "負 向、負向"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 11,
-      "content": "在心電圖的操作中，四肢的誘導電極以下列何者來當地線？",
+      "content": "在 心電圖的操作中，四肢的誘導電極以下列何者來當地線？",
       "has_image": false,
       "options": {
-        "A": "左手",
-        "B": "左腳",
-        "C": "右手",
-        "D": "右腳"
+        "A": "左 手",
+        "B": "左 腳",
+        "C": "右 手",
+        "D": "右 腳"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 12,
-      "content": "下列何種生理因素對神經傳導檢查數值影響最小？",
+      "content": "下 列何種生理因素對神經傳導檢查數值影響最小？",
       "has_image": false,
       "options": {
-        "A": "身高",
-        "B": "體重",
-        "C": "年齡",
-        "D": "體表溫度"
+        "A": "身 高",
+        "B": "體 重",
+        "C": "年 齡",
+        "D": "體 表溫度"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 13,
-      "content": "一般正常成人其平均腦波頻率（Hz），最不會出現下列何種情況？",
+      "content": "一 般正常成人其平均腦波頻率（Hz），最不會出現下列何種情況？",
       "has_image": false,
       "options": {
-        "A": "7～10 Hz",
-        "B": "11～20 Hz",
-        "C": "21～80 Hz",
-        "D": "81～120 Hz"
+        "A": "7 ～10 Hz",
+        "B": "1 1～20 Hz",
+        "C": "2 1～80 Hz",
+        "D": "8 1～120 Hz"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 14,
-      "content": "一般正常成人腦波α節律（α rhythm），最常於下列何種情形或狀態出現？",
+      "content": "一 般正常成人腦波α節律（α rhythm），最常於下列何種情形或狀態出現？",
       "has_image": false,
       "options": {
-        "A": "放鬆和閉眼時",
-        "B": "進行微積分運算時",
-        "C": "進入深層睡眠狀態時",
-        "D": "進行聲光刺激檢查時"
+        "A": "放 鬆和閉眼時",
+        "B": "進 行微積分運算時",
+        "C": "進 入深層睡眠狀態時",
+        "D": "進 行聲光刺激檢查時"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 15,
-      "content": "有關一般正常成人的快速動眼期（REM）敘述，下列何者最適當？",
+      "content": "有 關一般正常成人的快速動眼期（REM）敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "經常於此期做鮮明的夢",
-        "B": "是深睡期的一部分",
-        "C": "骨骼肌的肌張力明顯增加",
-        "D": "腦波的平均頻率多落於1～4 Hz"
+        "A": "經 常於此期做鮮明的夢",
+        "B": "是 深睡期的一部分",
+        "C": "骨 骼肌的肌張力明顯增加",
+        "D": "腦 波的平均頻率多落於1～4 Hz"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 16,
-      "content": "一般正常成人入睡後的第一個睡眠週期，其非快速動眼期（NREM）占此週期之多少比率？",
+      "content": "一 般正常成人入睡後的第一個睡眠週期，其非快速動眼期（NREM）占此週期之多少比率？",
       "has_image": false,
       "options": {
-        "A": "5～15％",
-        "B": "25～50％",
-        "C": "70～85％",
-        "D": "95～100％"
+        "A": "5 ～15％",
+        "B": "2 5～50％",
+        "C": "7 0～85％",
+        "D": "9 5～100％"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 17,
-      "content": "有關一般阻塞型睡眠呼吸中止症（obstructive sleep apnea），睡眠時會出現口鼻部呼吸氣流暫時停止至少幾秒？",
+      "content": "有 關一般阻塞型睡眠呼吸中止症（obstructive sleep apnea），睡眠時會出現口鼻部呼吸氣流暫時停止至少\n幾秒？",
       "has_image": false,
       "options": {
-        "A": "10",
-        "B": "20",
-        "C": "30",
-        "D": "60"
+        "A": "1 0",
+        "B": "2 0",
+        "C": "3 0",
+        "D": "6 0"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 18,
-      "content": "有關腦波中α波的敘述，下列何者錯誤？",
+      "content": "有 關腦波中α波的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "正常成人安靜、閉眼、放鬆無警覺狀態的腦波",
-        "B": "睡眠時主要的腦波",
-        "C": "隨年齡、性別或身體狀況略有差異",
-        "D": "是規則且協調的同步腦波"
+        "A": "正 常成人安靜、閉眼、放鬆無警覺狀態的腦波",
+        "B": "睡 眠時主要的腦波",
+        "C": "隨 年齡、性別或身體狀況略有差異",
+        "D": "是 規則且協調的同步腦波"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 19,
-      "content": "若靜脈血的血氧分壓（PO2）為40 mmHg，血氧飽和濃度（SvO2）大約是多少？",
+      "content": "若 靜脈血的血氧分壓（PO）為40 mmHg，血氧飽和濃度（SvO）大約是多少？\n2 2",
       "has_image": false,
       "options": {
-        "A": "40",
-        "B": "50",
-        "C": "75",
-        "D": "95"
+        "A": "4 0",
+        "B": "5 0",
+        "C": "7 5",
+        "D": "9 5"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 20,
-      "content": "二氧化碳在全身血液裡主要是以何種形式來運輸（transport）？",
+      "content": "二 氧化碳在全身血液裡主要是以何種形式來運輸（transport）？",
       "has_image": false,
       "options": {
-        "A": "溶解（dissolved）血漿",
-        "B": "和血紅素（hemoglobin）結合",
-        "C": "轉換成重碳酸離子（HCO3⁻, bicarbonate）",
-        "D": "和血液中的蛋白質結合"
+        "A": "溶 解（dissolved）血漿",
+        "B": "和 血紅素（hemoblogin）結合",
+        "C": "轉 換成重碳酸離子（HCO-, bicarbonate）\n3",
+        "D": "和 血液中的蛋白質結合"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 21,
-      "content": "一位心衰竭病患，因呼吸喘兩天送急診治療，其血液氣體分析結果如下：pH 7.23、PCO2 68 mmHg、PO2 85 mmHg、HCO3⁻ 35.6 mmol/L，其酸鹼障礙判讀最可能為何？",
+      "content": "一 位心衰竭病患，因呼吸喘兩天送急診治療，其血液氣體分析結果如下：pH 7.23、PCO 68 mmHg、PO 85\n2 2\nmmHg、HCO- 35.6 mmol/L，其酸鹼障礙判讀最可能為何？\n3",
       "has_image": false,
       "options": {
-        "A": "急性呼吸性鹼中毒",
-        "B": "慢性代謝性鹼中毒",
-        "C": "呼吸性酸中毒",
-        "D": "代謝性酸中毒"
+        "A": "急 性呼吸性鹼中毒",
+        "B": "慢 性代謝性鹼中毒",
+        "C": "呼 吸性酸中毒",
+        "D": "代 謝性酸中毒"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 22,
-      "content": "承上題，此病患之HCO3⁻高達35.6 mmol/L的可能原因中，下列何者最不可能？",
+      "content": "承 上題，此病患之HCO-高達35.6 mmol/L的可能原因中，下列何者最不可能？\n3",
       "has_image": false,
       "options": {
-        "A": "心衰竭病患，平時長期使用利尿劑治療的結果",
-        "B": "長期二氧化碳滯留而有慢性呼吸性酸中毒，因此腎臟代償使HCO3⁻上升",
-        "C": "若之前有接受大量含HCO3⁻之輸液治療，也可能會有此變化",
-        "D": "可能是合併腎衰竭造成的HCO3⁻無法排出而累積起來的"
+        "A": "心 衰竭病患，平時長期使用利尿劑治療的結果",
+        "B": "長 期二氧化碳滯留而有慢性呼吸性酸中毒，因此腎臟代償使HCO-上升\n3",
+        "C": "若 之前有接受大量含HCO-之輸液治療，也可能會有此變化\n3",
+        "D": "可 能是合併腎衰竭造成的HCO-無法排出而累積起來的\n3"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 23,
-      "content": "下列何者不是侷限性肺功能異常的表現？",
+      "content": "下 列何者不是侷限性肺功能異常的表現？",
       "has_image": false,
       "options": {
-        "A": "患者的肺或胸廓的順應性降低",
-        "B": "用力肺活量（forced vital capacity, FVC）上升",
-        "C": "總肺量（total lung capacity, TLC）下降",
-        "D": "嚴重時會有缺氧或發紺"
+        "A": "患 者的肺或胸廓的順應性降低",
+        "B": "用 力肺活量（forced vital capacity, FVC）上升",
+        "C": "總 肺量（total lung capacity, TLC）下降",
+        "D": "嚴 重時會有缺氧或發紺"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 24,
-      "content": "根據Miller和橫山的換氣障礙分類標準，應用第一秒呼氣率（FEV1.0％）與用力肺活量（FVC），下列敘述何者正確？",
+      "content": "根 據Miller和橫山的換氣障礙分類標準，應用第一秒呼氣率（FEV ）與用力肺活量（FVC），下列敘述何\n1.0％\n者正確？",
       "has_image": false,
       "options": {
-        "A": "FEV1.0％＜70％，FVC＞80％為混合型肺功能異常",
-        "B": "FEV1.0％＞70％，FVC＜80％為正常",
-        "C": "FEV1.0％＜70％，FVC＜80％為阻塞型肺功能異常",
-        "D": "FEV1.0％＞70％，FVC＜80％為侷限型肺功能異常"
+        "A": "F EV ＜70％，FVC＞80％為混合型肺功能異常\n1.0％",
+        "B": "F EV ＞70％，FVC＜80％為正常\n1.0％",
+        "C": "F EV ＜70％，FVC＜80％為阻塞型肺功能異常\n1.0％",
+        "D": "F EV ＞70％，FVC＜80％為侷限型肺功能異常\n1.0％"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 25,
-      "content": "肺量計法（simple spirometry）不能測得下列何者？①用力肺活量（FVC） ②潮氣容積（tidal volume） ③功能餘氣量（FRC） ④最大志願換氣量（MVV） ⑤肺餘容積（RV）",
+      "content": "肺 量計法（simple spirometry）不能測得下列何者？①用力肺活量（FVC） ②潮氣容積（tidal volume）\n③功能餘氣量（FRC） ④最大志願換氣量（MVV） ⑤肺餘容積（RV）",
       "has_image": false,
       "options": {
-        "A": "①③",
-        "B": "②④",
-        "C": "③⑤",
-        "D": "④⑤"
+        "A": "① ③",
+        "B": "② ④",
+        "C": "③ ⑤",
+        "D": "④ ⑤"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 26,
-      "content": "A、B與C三人的肺功能量計（spirometry）之檢查結果如下圖，判定C為正常，A與B最可能分別為以下何疾病？",
-      "has_image": true,
-      "image_description": "三個肺功能量計圖（A、B、C，X軸為時間1秒，Y軸為肺容積Lung Volume liters）",
+      "content": "A 、B與C三人的肺功能量計（spirometry）之檢查結果如下圖，判定C為正常，A與B最可能分別為以下何疾病？",
+      "has_image": false,
       "options": {
-        "A": "A為急性間質性肺炎（acute interstitial pneumonia）／B為肺部類肉瘤（sarcoidosis）",
-        "B": "A為特發性肺纖維化（idiopathic pulmonary fibrosis）／B為支氣管擴張（bronchiectasis）",
-        "C": "A為隱源性機化性肺炎（cryptogenic organizing pneumonia）／B為急性間質性肺炎（acute interstitial pneumonia）",
-        "D": "A為支氣管擴張（bronchiectasis）／B為急性間質性肺炎（acute interstitial pneumonia）"
+        "A": "A 為急性間質性肺炎（acute interstitial pneumonia）／B為肺部類肉瘤（sarcoidosis）",
+        "B": "A 為特發性肺纖維化（idiopathic pulmonary fibrosis）／B為支氣管擴張（bronchiectasis）",
+        "C": "A 為隱源性機化性肺炎（cryptogenic organizing pneumonia）／B為急性間質性肺炎（acute\ninterstitial pneumonia）",
+        "D": "A 為支氣管擴張（bronchiectasis）／B為急性間質性肺炎（acute interstitial pneumonia）"
       },
-      "answer": "B",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img05.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 27,
-      "content": "罹患混合性（mixed）肺功能異常的患者接受肺功能檢查，下列那一個結果最不可能出現？（FEV1：一秒用力呼氣量；FVC：用力肺活量；PEFR：最大呼氣流速率）",
+      "content": "罹 患混合性（mixed）肺功能異常的患者接受肺功能檢查，下列那一個結果最不可能出現？（FEV1：一秒用力\n呼氣量；FVC：用力肺活量；PEFR：最大呼氣流速率）",
       "has_image": false,
       "options": {
-        "A": "FEV1低於預測值的80％",
-        "B": "FVC低於預測值的80％",
-        "C": "FEV1/FVC小於70％",
-        "D": "PEFR較預測值的80％為高"
+        "A": "F EV1低於預測值的80％",
+        "B": "F VC低於預測值的80％",
+        "C": "F EV1/FVC小於70％",
+        "D": "P EFR較預測值的80％為高"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 28,
-      "content": "有關換氣之調節，下列何者錯誤？",
+      "content": "有 關換氣之調節，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "人類之呼吸中樞位於腦幹之延腦及腦橋之處",
-        "B": "呼吸中樞受血液中之O2、CO2及pH等化學變化調節",
-        "C": "末梢性化學接受體包括頸動脈體及主動脈體",
-        "D": "末梢性化學接受體感應PaCO2增加會促使換氣量減少"
+        "A": "人 類之呼吸中樞位於腦幹之延腦及腦橋之處",
+        "B": "呼 吸中樞受血液中之O、CO 及pH等化學變化調節\n2 2",
+        "C": "末 梢性化學接受體包括頸動脈體及主動脈體",
+        "D": "末 梢性化學接受體感應PaCO 增加會促使換氣量減少\n2"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 29,
-      "content": "長期吸菸50歲男性開始出現輕度肺功能異常，一秒用力呼氣量（FEV1）：68％預測值，下列敘述何者最不適當？",
+      "content": "長 期吸菸50歲男性開始出現輕度肺功能異常，一秒用力呼氣量（FEV1）：68％預測值，下列敘述何者最不適\n當？",
       "has_image": false,
       "options": {
-        "A": "臨床上可能只有咳嗽的症狀",
-        "B": "動脈血氣體分析可能是正常的",
-        "C": "胸部X光檢查可能無異樣",
-        "D": "戒菸可以讓肺功能恢復正常"
+        "A": "臨 床上可能只有咳嗽的症狀",
+        "B": "動 脈血氣體分析可能是正常的",
+        "C": "胸 部X光檢查可能無異樣",
+        "D": "戒 菸可以讓肺功能恢復正常"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 30,
-      "content": "用肺量計執行肺功能測試，下列操作何者錯誤？",
+      "content": "用 肺量計執行肺功能測試，下列操作何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "在吹氣筒上接上可拋棄式紙筒",
-        "B": "以鼻夾夾住鼻子",
-        "C": "做最大吸氣，摒住氣",
-        "D": "口部含住吹氣筒，並緩慢吐出氣體"
+        "A": "在 吹氣筒上接上可拋棄式紙筒",
+        "B": "以 鼻夾夾住鼻子",
+        "C": "做 最大吸氣，摒住氣",
+        "D": "口 部含住吹氣筒，並緩慢吐出氣體"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 31,
-      "content": "下圖為子宮超音波影像，最可能診斷為以下何種疾病？",
-      "has_image": true,
-      "image_description": "子宮超音波影像",
+      "content": "下 圖為子宮超音波影像，最可能診斷為以下何種疾病？",
+      "has_image": false,
       "options": {
-        "A": "子宮肌瘤（uterine myoma）",
-        "B": "子宮內膜癌（endometrial cancer）",
-        "C": "子宮頸癌（cervical carcinoma）",
-        "D": "子宮腺肌症（adenomyosis）"
+        "A": "子 宮肌瘤（uterine myoma）",
+        "B": "子 宮內膜癌（endometrial cancer）",
+        "C": "子 宮頸癌（cervical carcinoma）",
+        "D": "子 宮腺肌症（adenomyosis）"
       },
-      "answer": "A",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img06.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 32,
-      "content": "關於下圖心臟超音波的敘述，下列何者錯誤？",
-      "has_image": true,
-      "image_description": "心臟超音波影像（心尖四腔室圖，78 bpm）",
+      "content": "關 於下圖心臟超音波的敘述，下列何者錯誤？",
+      "has_image": false,
       "options": {
-        "A": "此張超音波可辨認出左心房、左心室以及右心房、右心室",
-        "B": "此張心臟超音波為心尖四腔室圖",
-        "C": "此張超音波可診斷中度二尖瓣逆流",
-        "D": "此張超音波可看到二尖瓣與三尖瓣"
+        "A": "此 張超音波可辨認出左心房、左心室以及右心房、右心室",
+        "B": "此 張心臟超音波為心尖四腔室圖",
+        "C": "此 張超音波可診斷中度二尖瓣逆流",
+        "D": "此 張超音波可看到二尖瓣與三尖瓣"
       },
-      "answer": "C",
-      "image_path": "Question/clinical_physiology/images/114-2-clinical_physiology-img07.jpeg"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 33,
-      "content": "關於胰臟超音波的檢查，下列操作之說明何者錯誤？",
+      "content": "關 於胰臟超音波的檢查，下列操作之說明何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "沿著脾靜脈橫向掃描可觀察胰臟體部及尾部",
-        "B": "要施壓排開胃或結腸氣體才能看尾部",
-        "C": "掃描頭部，需掃描下腔靜脈後方，門靜脈上位置",
-        "D": "橫向掃描可在體部觀察到胰管"
+        "A": "沿 著脾靜脈橫向掃描可觀察胰臟體部及尾部",
+        "B": "要 施壓排開胃或結腸氣體才能看尾部",
+        "C": "掃 描頭部，需掃描下腔靜脈後方，門靜脈上位置",
+        "D": "橫 向掃描可在體部觀察到胰管"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 34,
-      "content": "有關超音波診斷的敘述，下列何者較不適當？",
+      "content": "有 關超音波診斷的敘述，下列何者較不適當？",
       "has_image": false,
       "options": {
-        "A": "一般醫用檢查頻率為1～10 MHz",
-        "B": "波長越長穿透力愈差",
-        "C": "波長越短影像越佳",
-        "D": "音波在水中的傳導速度比空氣快"
+        "A": "一 般醫用檢查頻率為1～10 MHz",
+        "B": "波 長越長穿透力愈差",
+        "C": "波 長越短影像越佳",
+        "D": "音 波在水中的傳導速度比空氣快"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 35,
-      "content": "心臟超音波之杜卜勒檢查，對下列何種心血管疾病的診斷最沒有助益？",
+      "content": "心 臟超音波之杜卜勒檢查，對下列何種心血管疾病的診斷最沒有助益？",
       "has_image": false,
       "options": {
-        "A": "心臟瓣膜閉鎖不全",
-        "B": "心臟瓣膜狹窄",
-        "C": "冠狀動脈狹窄",
-        "D": "主動脈狹窄"
+        "A": "心 臟瓣膜閉鎖不全",
+        "B": "心 臟瓣膜狹窄",
+        "C": "冠 狀動脈狹窄",
+        "D": "主 動脈狹窄"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 36,
-      "content": "醫用超音波脈衝重複頻率（pulse repetition frequency, PRF）最常使用的單位為何？",
+      "content": "醫 用超音波脈衝重複頻率（pulse repetition frequency, PRF）最常使用的單位為何？",
       "has_image": false,
       "options": {
-        "A": "kHz",
-        "B": "MHz",
-        "C": "GHz",
-        "D": "THz"
+        "A": "k Hz",
+        "B": "M Hz",
+        "C": "G Hz",
+        "D": "T Hz"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 37,
-      "content": "有關肌電圖檢查發現異常時，下列敘述何者錯誤？",
+      "content": "有 關肌電圖檢查發現異常時，下列敘述何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "插入肌肉時記錄放電活動為80毫秒，此肌肉可能有纖維化或嚴重萎縮",
-        "B": "肌肉放鬆時在兩個以上不同點出現震顫電位與正棘波自發活動，可能有下運動神經元病變",
-        "C": "當肌肉開始收縮強度逐漸增強時，正常狀況下，放電速率與活動中運動單元數目比值一般不會少於10",
-        "D": "當肌肉收縮後並強度繼續增加，單一運動單元電位會因其他運動單元電位干擾，變無法區別"
+        "A": "插 入肌肉時記錄放電活動為80毫秒，此肌肉可能有纖維化或嚴重萎縮",
+        "B": "肌 肉放鬆時在兩個以上不同點出現震顫電位與正棘波自發活動，可能有下運動神經元病變",
+        "C": "當 肌肉開始收縮強度逐漸增強時，正常狀況下，放電速率與活動中運動單元數目比值一般不會少於10",
+        "D": "當 肌肉收縮後並強度繼續增加，單一運動單元電位會因其他運動單元電位干擾，變無法區別"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 38,
-      "content": "有關一般正常人睡眠時期的生長激素（growth hormone）分泌之敘述，下列何者最恰當？",
+      "content": "有 關一般正常人睡眠時期的生長激素（growth hormone）分泌之敘述，下列何者最恰當？",
       "has_image": false,
       "options": {
-        "A": "多半在第一個睡眠週期的深睡期（N3）出現分泌高峰",
-        "B": "僅出現於青春期快速成長的小孩，成人時便消失",
-        "C": "多半出現於早上清醒前的最後一個睡眠週期的淺睡期（N2）",
-        "D": "與腎上腺皮質（adrenal cortex）的生理時鐘節律性高度相關"
+        "A": "多 半在第一個睡眠週期的深睡期（N3）出現分泌高峰",
+        "B": "僅 出現於青春期快速成長的小孩，成人時便消失",
+        "C": "多 半出現於早上清醒前的最後一個睡眠週期的淺睡期（N2）",
+        "D": "與 腎上腺皮質（adrenal cortex）的生理時鐘節律性高度相關"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 39,
-      "content": "下列何種檢查最適合用於心臟衰竭的診斷？",
+      "content": "下 列何種檢查最適合用於心臟衰竭的診斷？",
       "has_image": false,
       "options": {
-        "A": "12導程心電圖",
-        "B": "運動心電圖",
-        "C": "心臟超音波",
-        "D": "心臟電腦斷層"
+        "A": "1 2導程心電圖",
+        "B": "運 動心電圖",
+        "C": "心 臟超音波",
+        "D": "心 臟電腦斷層"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 40,
-      "content": "臨床生理檢查項目中，有關波形或波幅的定義，下列何者錯誤？",
+      "content": "臨 床生理檢查項目中，有關波形或波幅的定義，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "心電圖波形向上的波為正波或陽性波",
-        "B": "腦波的波形向上的波為正波或陽性波",
-        "C": "肌電圖波形向上的波為負波或陰性波",
-        "D": "超音波的波幅主要是用來表示強度"
+        "A": "心 電圖波形向上的波為正波或陽性波",
+        "B": "腦 波的波形向上的波為正波或陽性波",
+        "C": "肌 電圖波形向上的波為負波或陰性波",
+        "D": "超 音波的波幅主要是用來表示強度"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 41,
-      "content": "缺乏維生素C會造成組織修復不良，主要是影響下列何者？",
+      "content": "缺 乏維生素C會造成組織修復不良，主要是影響下列何者？",
       "has_image": false,
       "options": {
-        "A": "膠原蛋白結構的形成",
-        "B": "肉芽組織的形成",
-        "C": "巨噬細胞（macrophage）的功能",
-        "D": "細胞激素的分泌"
+        "A": "膠 原蛋白結構的形成",
+        "B": "肉 芽組織的形成",
+        "C": "巨 噬細胞（macrophage）的功能",
+        "D": "細 胞激素的分泌"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 42,
-      "content": "肉芽腫發炎（granulomatous inflammation）較少出現在下列何種疾病？",
+      "content": "肉 芽腫發炎（granulomatous inflammation）較少出現在下列何種疾病？",
       "has_image": false,
       "options": {
-        "A": "結核病（tuberculosis）",
-        "B": "發炎性腸病（inflammatory bowel disease）",
-        "C": "痲瘋病（leprosy）",
-        "D": "化膿性細菌（pyogenic bacteria）感染"
+        "A": "結 核病（tuberculosis）",
+        "B": "發 炎性腸病（inflammatory bowel disease）",
+        "C": "痲 瘋病（leprosy）",
+        "D": "化 膿性細菌（pyogenic bacteria）感染"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 43,
-      "content": "在炎症中，以下何者最可能參與殺死微生物？",
+      "content": "在 炎症中，以下何者最可能參與殺死微生物？",
       "has_image": false,
       "options": {
-        "A": "內皮型一氧化氮合酶（eNOS）",
-        "B": "誘導型一氧化氮合酶（iNOS）",
-        "C": "神經型一氧化氮合酶（nNOS）",
-        "D": "血管型一氧化氮合酶（vNOS）"
+        "A": "內 皮型一氧化氮合酶（eNOS）",
+        "B": "誘 導型一氧化氮合酶（iNOS）",
+        "C": "神 經型一氧化氮合酶（nNOS）",
+        "D": "血 管型一氧化氮合酶（vNOS）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 44,
-      "content": "腫瘤分級（grading），與下列何者最有關？",
+      "content": "腫 瘤分級（grading），與下列何者最有關？",
       "has_image": false,
       "options": {
-        "A": "細胞分化程度",
-        "B": "肉眼所見的腫瘤大小",
-        "C": "淋巴結轉移",
-        "D": "遠端轉移"
+        "A": "細 胞分化程度",
+        "B": "肉 眼所見的腫瘤大小",
+        "C": "淋 巴結轉移",
+        "D": "遠 端轉移"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 45,
-      "content": "下列何種病毒與子宮頸癌關係最密切？",
+      "content": "下 列何種病毒與子宮頸癌關係最密切？",
       "has_image": false,
       "options": {
-        "A": "人類乳突瘤病毒（human papillomavirus）",
-        "B": "Epstein-Barr病毒",
-        "C": "巨細胞病毒（cytomegalovirus）",
-        "D": "人類疱疹病毒第8型（human herpesvirus 8）"
+        "A": "人 類乳突瘤病毒（human papillomavirus）",
+        "B": "E pstein-Barr病毒",
+        "C": "巨 細胞病毒（cytomegalovirus）",
+        "D": "人 類疱疹病毒第8型（human herpesvirus 8）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 46,
-      "content": "有關良性與惡性腫瘤特性的敘述，下列何者正確？",
+      "content": "有 關良性與惡性腫瘤特性的敘述，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "良性腫瘤在與正常組織交界處常見浸潤型生長",
-        "B": "惡性腫瘤才會有壞死發生",
-        "C": "惡性腫瘤分化較差",
-        "D": "良性腫瘤生長速率一般較快"
+        "A": "良 性腫瘤在與正常組織交界處常見浸潤型生長",
+        "B": "惡 性腫瘤才會有壞死發生",
+        "C": "惡 性腫瘤分化較差",
+        "D": "良 性腫瘤生長速率一般較快"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 47,
-      "content": "有關基因突變（gene mutations），下列敘述何者正確？",
+      "content": "有 關基因突變（gene mutations），下列敘述何者正確？",
       "has_image": false,
       "options": {
-        "A": "點突變（point mutation）一定會造成所轉譯的蛋白質改變",
-        "B": "框移突變（frameshift mutation）可由加入或移除1～3個鹼基對（base pair）造成",
-        "C": "三核苷酸重複序列擴增（trinucleotide repeat expansion）較常見於神經疾病",
-        "D": "費城染色體（Philadelphia chromosome）的發生是基因擴增（gene amplification）的結果"
+        "A": "點 突變（point mutation）一定會造成所轉譯的蛋白質改變",
+        "B": "框 移突變（frameshift mutation）可由加入或移除1～3個鹼基對（base pair）造成",
+        "C": "三 核苷酸重複序列擴增（trinucleotide repeat expansion）較常見於神經疾病",
+        "D": "費 城染色體（Philadelphia chromosome）的發生是基因擴增（gene amplification）的結果"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 48,
-      "content": "下列何者與免疫反應造成的胎兒水腫（fetal hydrops）最相關？",
+      "content": "下 列何者與免疫反應造成的胎兒水腫（fetal hydrops）最相關？",
       "has_image": false,
       "options": {
-        "A": "特納氏症候群（Turner syndrome）",
-        "B": "唐氏症（Down syndrome）",
-        "C": "同合子型的甲型地中海型貧血（homozygous α-thalassemia）",
-        "D": "Rh不相容溶血（Rh incompatibility hemolysis）"
+        "A": "特 納氏症候群（Turner syndrome）",
+        "B": "唐 氏症（Down syndrome）",
+        "C": "同 合子型的甲型地中海型貧血（homozygous α-thalassemia）",
+        "D": "R h不相容溶血（Rh incompatibility hemolysis）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 49,
-      "content": "有關塵肺症（pneumoconiosis）的敘述，下列何者錯誤？",
+      "content": "有 關塵肺症（pneumoconiosis）的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "塵肺症是因吸入體內之礦物質粉塵沉積於肺部引起的疾病",
-        "B": "造成塵肺症之礦物質粉塵有可能為二氧化矽、石綿、煤",
-        "C": "煤礦工人除了肺塵埃沉著症（黑肺病），也可能罹患矽肺症，使肺纖維化",
-        "D": "長期暴露在二氧化矽及煤礦，為罹患肺臟間皮瘤（mesothelioma）最常見之高危險因子"
+        "A": "塵 肺症是因吸入體內之礦物質粉塵沉積於肺部引起的疾病",
+        "B": "造 成塵肺症之礦物質粉塵有可能為二氧化矽、石綿、煤",
+        "C": "煤 礦工人除了肺塵埃沉著症（黑肺病），也可能罹患矽肺症，使肺纖維化",
+        "D": "長 期暴露在二氧化矽及煤礦，為罹患肺臟間皮瘤（mesothelioma）最常見之高危險因子"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 50,
-      "content": "有關外生性動情素之敘述，下列何者錯誤？",
+      "content": "有 關外生性動情素之敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "常使用於更年期婦女的荷爾蒙補充療法",
-        "B": "最好不要合併黃體素使用以免增加副作用",
-        "C": "過量的外生性動情素可增加子宮內膜癌風險",
-        "D": "過量的外生性動情素可增加乳癌風險"
+        "A": "常 使用於更年期婦女的荷爾蒙補充療法",
+        "B": "最 好不要合併黃體素使用以免增加副作用",
+        "C": "過 量的外生性動情素可增加子宮內膜癌風險",
+        "D": "過 量的外生性動情素可增加乳癌風險"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 51,
-      "content": "抽菸所造成的傷害，下列何者錯誤？",
+      "content": "抽 菸所造成的傷害，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "提高肺癌風險",
-        "B": "增加胎兒早產風險",
-        "C": "增加動脈粥樣硬化風險",
-        "D": "與二手菸無關"
+        "A": "提 高肺癌風險",
+        "B": "增 加胎兒早產風險",
+        "C": "增 加動脈粥樣硬化風險",
+        "D": "與 二手菸無關"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 52,
-      "content": "下列何種傳染病主要是藉由呼吸道感染？",
+      "content": "下 列何種傳染病主要是藉由呼吸道感染？",
       "has_image": false,
       "options": {
-        "A": "腮腺炎（mumps）",
-        "B": "傳染性單核球增生症（infectious mononucleosis）",
-        "C": "小兒麻痺症（poliomyelitis）",
-        "D": "伊波拉病毒（Ebola virus）感染"
+        "A": "腮 腺炎（mumps）",
+        "B": "傳 染性單核球增生症（infectious mononucleosis）",
+        "C": "小 兒麻痺症（poliomyelitis）",
+        "D": "伊 波拉病毒（Ebola virus）感染"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 53,
-      "content": "Epstein-Barr病毒會造成下列何種疾病？",
+      "content": "E pstein-Barr病毒會造成下列何種疾病？",
       "has_image": false,
       "options": {
-        "A": "巨細胞包涵體症（cytomegalic inclusion disease）",
-        "B": "感染性單核球增生症（infectious mononucleosis）",
-        "C": "水痘（chicken pox）",
-        "D": "麻疹（measles）"
+        "A": "巨 細胞包涵體症（cytomegalic inclusion disease）",
+        "B": "感 染性單核球增生症（infectious mononucleosis）",
+        "C": "水 痘（chicken pox）",
+        "D": "麻 疹（measles）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 54,
-      "content": "與布魯頓氏病（Bruton disease）相關的遺傳染色體為何？",
+      "content": "與 布魯頓氏病（Bruton disease）相關的遺傳染色體為何？",
       "has_image": false,
       "options": {
-        "A": "第7號染色體",
-        "B": "X染色體",
-        "C": "第15號染色體",
-        "D": "Y染色體"
+        "A": "第 7號染色體",
+        "B": "X 染色體",
+        "C": "第 15號染色體",
+        "D": "Y 染色體"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 55,
-      "content": "全身性紅斑性狼瘡（systemic lupus erythematosus, SLE）患者臉部出現的皮膚紅斑形態大多數為何？",
+      "content": "全 身性紅斑性狼瘡（systemic lupus erythematosus, SLE）患者臉部出現的皮膚紅斑形態大多數為何？",
       "has_image": false,
       "options": {
-        "A": "半月狀",
-        "B": "標靶狀",
-        "C": "齒輪狀",
-        "D": "蝴蝶狀"
+        "A": "半 月狀",
+        "B": "標 靶狀",
+        "C": "齒 輪狀",
+        "D": "蝴 蝶狀"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 56,
-      "content": "下列何者是虎頭蜂螫傷後致死的免疫反應？",
+      "content": "下 列何者是虎頭蜂螫傷後致死的免疫反應？",
       "has_image": false,
       "options": {
-        "A": "第Ⅰ型過敏反應（type Ⅰ hypersensitivity）",
-        "B": "第Ⅱ型過敏反應（type Ⅱ hypersensitivity）",
-        "C": "第Ⅳ型過敏反應（type Ⅳ hypersensitivity）",
-        "D": "第Ⅲ型過敏反應（type Ⅲ hypersensitivity）"
+        "A": "第 Ⅰ型過敏反應（type Ⅰ hypersensitivity）",
+        "B": "第 Ⅱ型過敏反應（type Ⅱ hypersensitivity）",
+        "C": "第 Ⅳ型過敏反應（type Ⅳ hypersensitivity）",
+        "D": "第 Ⅲ型過敏反應（type Ⅲ hypersensitivity）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 57,
-      "content": "有關伯基特氏淋巴瘤（Burkitt lymphoma）的敘述，下列何者正確？",
+      "content": "有 關伯基特氏淋巴瘤（Burkitt lymphoma）的敘述，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "主要好發於老年人",
-        "B": "腫瘤細胞為T淋巴球",
-        "C": "致病機轉與MYC轉錄因子過度表現（overexpression）有高度相關",
-        "D": "屬於低惡性度（indolent）的淋巴瘤"
+        "A": "主 要好發於老年人",
+        "B": "腫 瘤細胞為T淋巴球",
+        "C": "致 病機轉與MYC轉錄因子過度表現（overexpression）有高度相關",
+        "D": "屬 於低惡性度（indolent）的淋巴瘤"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 58,
-      "content": "有關何杰金氏淋巴瘤（Hodgkin lymphoma）與非何杰金氏淋巴瘤（non-Hodgkin lymphoma）兩者的比較，下列何者正確？",
+      "content": "有 關何杰金氏淋巴瘤（Hodgkin lymphoma）與非何杰金氏淋巴瘤（non-Hodgkin lymphoma）兩者的比較，下\n列何者正確？",
       "has_image": false,
       "options": {
-        "A": "何杰金氏淋巴瘤侵犯的淋巴結範圍常呈現跳躍性散布，非何杰金氏淋巴瘤侵犯的淋巴結範圍常呈現連續性散布",
-        "B": "何杰金氏淋巴瘤較常侵犯Waldeyer ring，非何杰金氏淋巴瘤較少侵犯Waldeyer ring",
-        "C": "通常何杰金氏淋巴瘤的預後比非何杰金氏淋巴瘤來的差",
-        "D": "何杰金氏淋巴瘤較少侵犯淋巴結外的組織，非何杰金氏淋巴瘤較常影響淋巴結外的組織"
+        "A": "何 杰金氏淋巴瘤侵犯的淋巴結範圍常呈現跳躍性散布，非何杰金氏淋巴瘤侵犯的淋巴結範圍常呈現連續性散\n布",
+        "B": "何 杰金氏淋巴瘤較常侵犯Waldeyer ring，非何杰金氏淋巴瘤較少侵犯Waldeyer ring",
+        "C": "通 常何杰金氏淋巴瘤的預後比非何杰金氏淋巴瘤來的差",
+        "D": "何 杰金氏淋巴瘤較少侵犯淋巴結外的組織，非何杰金氏淋巴瘤較常影響淋巴結外的組織"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 59,
-      "content": "下列何者是成人心臟最常見的原發性腫瘤？",
+      "content": "下 列何者是成人心臟最常見的原發性腫瘤？",
       "has_image": false,
       "options": {
-        "A": "黏液瘤（myxoma）",
-        "B": "脂肪瘤（lipoma）",
-        "C": "橫紋肌瘤（rhabdomyoma）",
-        "D": "血管肉瘤（angiosarcoma）"
+        "A": "黏 液瘤（myxoma）",
+        "B": "脂 肪瘤（lipoma）",
+        "C": "橫 紋肌瘤（rhabdomyoma）",
+        "D": "血 管肉瘤（angiosarcoma）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 60,
-      "content": "下列何種血管炎並非主要影響中小型血管？",
+      "content": "下 列何種血管炎並非主要影響中小型血管？",
       "has_image": false,
       "options": {
-        "A": "巨細胞動脈炎（giant cell arteritis）",
-        "B": "顯微性多血管炎（microscopic polyangiitis）",
-        "C": "肉芽腫性多血管炎（granulomatosis with polyangiitis）",
-        "D": "類過敏性紫斑症（Henoch-Schönlein purpura）"
+        "A": "巨 細胞動脈炎（giant cell arteritis）",
+        "B": "顯 微性多血管炎（microscopic polyangiitis）",
+        "C": "肉 芽腫性多血管炎（granulomatosis with polyangiitis）",
+        "D": "類 過敏性紫斑症（Henoch-Schönlein purpura）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 61,
-      "content": "5歲的女孩腹圍逐漸增大，超音波發現有右側卵巢腫瘤，血清中甲型胎兒蛋白（alpha-fetoprotein）異常增高。其卵巢腫瘤最有可能為下列何者？",
+      "content": "5 歲的女孩腹圍逐漸增大，超音波發現有右側卵巢腫瘤，血清中甲型胎兒蛋白（alpha-fetoprotein）異常增\n高。其卵巢腫瘤最有可能為下列何者？",
       "has_image": false,
       "options": {
-        "A": "卵黃囊瘤（yolk sac tumor）",
-        "B": "顆粒細胞瘤（granulosa cell tumor）",
-        "C": "成熟畸胎瘤（mature teratoma）",
-        "D": "絨毛膜癌（choriocarcinoma）"
+        "A": "卵 黃囊瘤（yolk sac tumor）",
+        "B": "顆 粒細胞瘤（granulosa cell tumor）",
+        "C": "成 熟畸胎瘤（mature teratoma）",
+        "D": "絨 毛膜癌（choriocarcinoma）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 62,
-      "content": "下列那項敘述與卵巢Krükenberg瘤（Krükenberg tumor）最不相關？",
+      "content": "下 列那項敘述與卵巢Krükenberg瘤（Krükenberg tumor）最不相關？",
       "has_image": false,
       "options": {
-        "A": "會出現Schiller-Düval小體（Schiller-Düval bodies）",
-        "B": "容易侵犯雙側卵巢",
-        "C": "是轉移性腫瘤，原發部位以胃（stomach）最為常見",
-        "D": "腫瘤細胞會分泌細胞內黏液（intracellular mucin）"
+        "A": "會 出現Schiller-Düval小體（Schiller-Düval bodies）",
+        "B": "容 易侵犯雙側卵巢",
+        "C": "是 轉移性腫瘤，原發部位以胃（stomach）最為常見",
+        "D": "腫 瘤細胞會分泌細胞內黏液（intracellular mucin）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 63,
-      "content": "下列有關肺腺癌的敘述何者錯誤？",
+      "content": "下 列有關肺腺癌的敘述何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "為臺灣最常見的肺癌形態",
-        "B": "是女性與非吸菸者最常見的肺癌形態",
-        "C": "在臺灣最常見的基因突變是BRAF突變",
-        "D": "完全以伏壁型（lepidic）形態生長且不大於三公分的腫瘤，目前歸為非侵襲性腺癌或稱原位腺癌（adenocarcinoma in situ）"
+        "A": "為 臺灣最常見的肺癌形態",
+        "B": "是 女性與非吸菸者最常見的肺癌形態",
+        "C": "在 臺灣最常見的基因突變是BRAF 突變",
+        "D": "完 全以伏壁型（lepidic）形態生長且不大於三公分的腫瘤，目前歸為非侵襲性腺癌或稱原位腺癌\n（adenocarcinoma in situ）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 64,
-      "content": "有關胰臟神經內分泌瘤（pancreatic neuroendocrine tumor）之敘述，下列何者錯誤？",
+      "content": "有 關胰臟神經內分泌瘤（pancreatic neuroendocrine tumor）之敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "胰臟神經內分泌瘤在分類上歸屬於惡性腫瘤",
-        "B": "柔林格症候群（Zollinger-Ellison Syndrome）患者常有胃潰瘍",
-        "C": "胰島素瘤（insulinoma）會造成糖尿病症狀",
-        "D": "家族性胰臟神經內分泌瘤與第一型多發性神經內分泌腫瘤症候群有關"
+        "A": "胰 臟神經內分泌瘤在分類上歸屬於惡性腫瘤",
+        "B": "柔 林格症候群（Zollinger-Ellison Syndrome）患者常有胃潰瘍",
+        "C": "胰 島素瘤（insulinoma）會造成糖尿病症狀",
+        "D": "家 族性胰臟神經內分泌瘤與第一型多發性神經內分泌腫瘤症候群有關"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 65,
-      "content": "有關間質性肺炎（interstitial pneumonia）的敘述，下列何者錯誤？",
+      "content": "有 關間質性肺炎（interstitial pneumonia）的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "常見由肺炎黴漿菌與病毒感染造成",
-        "B": "炎症反應主要在肺泡腔內，常見單核細胞包括淋巴球、組織球或漿細胞",
-        "C": "2003年發生的嚴重急性呼吸道症候群（SARS）與2019年發生的嚴重特殊傳染性肺炎（COVID-19），均是由冠狀病毒引發的間質性肺炎",
-        "D": "SARS及COVID-19死亡病例肺部病理變化主要是瀰漫性肺泡損害（diffuse alveolar damage）"
+        "A": "常 見由肺炎黴漿菌與病毒感染造成",
+        "B": "炎 症反應主要在肺泡腔內，常見單核細胞包括淋巴球、組織球或漿細胞",
+        "C": "2 003年發生的嚴重急性呼吸道症候群（SARS）與2019年發生的嚴重特殊傳染性肺炎（COVID-19），均是由\n冠狀病毒引發的間質性肺炎",
+        "D": "S ARS及COVID-19死亡病例肺部病理變化主要是瀰漫性肺泡損害（diffuse alveolar damage）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 66,
-      "content": "下列何者為腦下腺後葉（neurohypophysis）所分泌之荷爾蒙？",
+      "content": "下 列何者為腦下腺後葉（neurohypophysis）所分泌之荷爾蒙？",
       "has_image": false,
       "options": {
-        "A": "泌乳素（prolactin）",
-        "B": "生長激素（growth hormone）",
-        "C": "催產素（oxytocin）",
-        "D": "促腎上腺皮質素（adrenocorticotropic hormone）"
+        "A": "泌 乳素（prolactin）",
+        "B": "生 長激素（growth hormone）",
+        "C": "催 產素（oxytocin）",
+        "D": "促 腎上腺皮質素（adrenocorticotropic hormone）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 67,
-      "content": "下列何者不是動脈瘤（aneurysm）的致病機制？",
+      "content": "下 列何者不是動脈瘤（aneurysm）的致病機制？",
       "has_image": false,
       "options": {
-        "A": "乙型轉化生長因子（transforming growth factor beta, TGF-β）訊息傳遞過度活化",
-        "B": "血管壁平滑肌細胞增加",
-        "C": "血管壁彈性纖維碎裂",
-        "D": "血管壁蛋白聚醣（proteoglycan）增加"
+        "A": "乙 型轉化生長因子（transforming growth factor beta, TGF-β）訊息傳遞過度活化",
+        "B": "血 管壁平滑肌細胞增加",
+        "C": "血 管壁彈性纖維碎裂",
+        "D": "血 管壁蛋白聚醣（proteoglycan）增加"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 68,
-      "content": "有關肺小細胞癌（small cell carcinoma of lung）的敘述，下列何者錯誤？",
+      "content": "有 關肺小細胞癌（small cell carcinoma of lung）的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "與吸菸的關係非常密切",
-        "B": "是最容易引起副贅瘤症候群（paraneoplastic syndrome）的肺癌",
-        "C": "大部分的肺小細胞癌可以用手術切除，極少數需要化學治療",
-        "D": "肺小細胞癌病人預後比肺腺癌病人預後差"
+        "A": "與 吸菸的關係非常密切",
+        "B": "是 最容易引起副贅瘤症候群（paraneoplastic syndrome）的肺癌",
+        "C": "大 部分的肺小細胞癌可以用手術切除，極少數需要化學治療",
+        "D": "肺 小細胞癌病人預後比肺腺癌病人預後差"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 69,
-      "content": "20歲女性懷孕12週，出現不正常的陰道出血；血液中人類絨毛膜性腺激素（hCG）顯著的增高；病理檢體可見腫大的胎盤絨毛（villi）伴隨顯著瀰漫性的滋養層細胞增生，未見胎兒組織存在，下列何者是最可能的診斷？",
+      "content": "2 0歲女性懷孕12週，出現不正常的陰道出血；血液中人類絨毛膜性腺激素（hCG）顯著的增高；病理檢體可\n見腫大的胎盤絨毛（villi）伴隨顯著瀰漫性的滋養層細胞增生，未見胎兒組織存在，下列何者是最可能的診\n斷？",
       "has_image": false,
       "options": {
-        "A": "完全型水囊狀胎塊（complete hydatidiform mole）",
-        "B": "部分型水囊狀胎塊（partial hydatidiform mole）",
-        "C": "絨毛膜癌（choriocarcinoma）",
-        "D": "水腫性流產兒（hydropic abortus）"
+        "A": "完 全型水囊狀胎塊（complete hydatidiform mole）",
+        "B": "部 分型水囊狀胎塊（partial hydatidiform mole）",
+        "C": "絨 毛膜癌（choriocarcinoma）",
+        "D": "水 腫性流產兒（hydropic abortus）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 70,
-      "content": "下列何者為最常引起空洞水腦症（hydrocephalus ex vacuo）的原因？",
+      "content": "下 列何者為最常引起空洞水腦症（hydrocephalus ex vacuo）的原因？",
       "has_image": false,
       "options": {
-        "A": "腦出血",
-        "B": "腦腫瘤",
-        "C": "神經退化性疾病",
-        "D": "腦膿瘍"
+        "A": "腦 出血",
+        "B": "腦 腫瘤",
+        "C": "神 經退化性疾病",
+        "D": "腦 膿瘍"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 71,
-      "content": "有關阿茲海默病（Alzheimer disease）的敘述，下列何者正確？",
+      "content": "有 關阿茲海默病（Alzheimer disease）的敘述，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "其發生率會隨著年紀增加而遞減",
-        "B": "目前研究顯示通常是AA類澱粉蛋白的堆積而造成疾病的發生",
-        "C": "疾病會造成腦部的萎縮尤其在額葉、顳葉及頂葉特別明顯",
-        "D": "大腦類澱粉血管病變（cerebral amyloid angiopathy）不是其病徵之一"
+        "A": "其 發生率會隨著年紀增加而遞減",
+        "B": "目 前研究顯示通常是AA類澱粉蛋白的堆積而造成疾病的發生",
+        "C": "疾 病會造成腦部的萎縮尤其在額葉、顳葉及頂葉特別明顯",
+        "D": "大 腦類澱粉血管病變（cerebral amyloid angiopathy）不是其病徵之一"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 72,
-      "content": "有關骨折，下列敘述何者較不適當？",
+      "content": "有 關骨折，下列敘述何者較不適當？",
       "has_image": false,
       "options": {
-        "A": "骨折處的兩端若固定（immobilization）不良，有可能造成無法癒合",
-        "B": "複合性骨折（compound fracture），是指骨折處與皮膚傷口相通，會增加感染的風險",
-        "C": "多種發炎細胞、血小板、細胞激素（cytokines）及生長因子在骨折癒合中扮演重要角色",
-        "D": "蝕骨細胞（osteoclast）會干擾新骨合成，因此癒合期間活性會大幅降低直到癒合完成"
+        "A": "骨 折處的兩端若固定（immobilization）不良，有可能造成無法癒合",
+        "B": "複 合性骨折（compound fracture），是指骨折處與皮膚傷口相通，會增加感染的風險",
+        "C": "多 種發炎細胞、血小板、細胞激素（cytokines）及生長因子在骨折癒合中扮演重要角色",
+        "D": "蝕 骨細胞（osteoclast）會干擾新骨合成，因此癒合期間活性會大幅降低直到癒合完成"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 73,
-      "content": "有關腎絲球體（glomeruli）的敘述，下列何者錯誤？",
+      "content": "有 關腎絲球體（glomeruli）的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "有孔洞的血管內皮細胞（fenestrated endothelial cells）可通透抗體",
-        "B": "腎絲球體基底膜（glomerular basement membrane）位於血管內皮細胞與足細胞（podocytes）之間",
-        "C": "足細胞（podocytes）又稱壁層上皮細胞（parietal epithelial cells）",
-        "D": "繫膜細胞（mesangial cells）位於腎絲球體內的微血管之間的胞外基質，具收縮能力"
+        "A": "有 孔洞的血管內皮細胞（fenestrated endothelial cells）可通透抗體",
+        "B": "腎 絲球體基底膜（glomerular basement membrane）位於血管內皮細胞與足細胞（podocytes）之間",
+        "C": "足 細胞（podocytes）又稱壁層上皮細胞（parietal epithelial cells）",
+        "D": "繫 膜細胞（mesangial cells）位於腎絲球體內的微血管之間的胞外基質，具收縮能力"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 74,
-      "content": "有關腦部實質感染性疾病之敘述，下列何者正確？",
+      "content": "有 關腦部實質感染性疾病之敘述，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "病毒感染通常較為侷限",
-        "B": "細菌感染（如果沒有合併腦膜炎）通常造成瀰漫性病變",
-        "C": "狂犬病毒的感染常會造成腦膜炎",
-        "D": "在免疫功能不足或低下的個體，通常會造成廣泛性的感染"
+        "A": "病 毒感染通常較為侷限",
+        "B": "細 菌感染（如果沒有合併腦膜炎）通常造成瀰漫性病變",
+        "C": "狂 犬病毒的感染常會造成腦膜炎",
+        "D": "在 免疫功能不足或低下的個體，通常會造成廣泛性的感染"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 75,
-      "content": "在患有腸道吸收不良的人血清中發現抗肌內膜抗體（anti-endomysial antibodies），強烈支持以下那個診斷？",
+      "content": "在 患有腸道吸收不良的人血清中發現抗肌內膜抗體（anti-endomysial antibodies），強烈支持以下那個診\n斷？",
       "has_image": false,
       "options": {
-        "A": "嗜酸細胞性胃腸炎（eosinophilic gastroenteritis）",
-        "B": "惠普爾氏症（Whipple disease）",
-        "C": "乳糖酶缺乏（lactase deficiency）",
-        "D": "麩質敏感性腸病（celiac disease）"
+        "A": "嗜 酸細胞性胃腸炎（eosinophilic gastroenteritis）",
+        "B": "惠 普爾氏症（Whipple disease）",
+        "C": "乳 糖酶缺乏（lactase deficiency）",
+        "D": "麩 質敏感性腸病（celiac disease）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 76,
-      "content": "巴雷氏食道（Barrett esophagus）主要的特徵是食道下段黏膜發生何種變化？",
+      "content": "巴 雷氏食道（Barrett esophagus）主要的特徵是食道下段黏膜發生何種變化？",
       "has_image": false,
       "options": {
-        "A": "鱗狀上皮化生（squamous metaplasia）",
-        "B": "腸化生（intestinal metaplasia）",
-        "C": "淋巴組織增生（lymphoid hyperplasia）",
-        "D": "黏膜下腺增生（submucosal gland hyperplasia）"
+        "A": "鱗 狀上皮化生（squamous metaplasia）",
+        "B": "腸 化生（intestinal metaplasia）",
+        "C": "淋 巴組織增生（lymphoid hyperplasia）",
+        "D": "黏 膜下腺增生（submucosal gland hyperplasia）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 77,
-      "content": "白種人（Caucasian）的前列腺腺癌與下列何種融合基因最相關？",
+      "content": "白 種人（Caucasian）的前列腺腺癌與下列何種融合基因最相關？",
       "has_image": false,
       "options": {
-        "A": "TMPRSS2-ETS",
-        "B": "ASPS-TFE3",
-        "C": "BCR-ABL",
-        "D": "SYT-SSX"
+        "A": "T MPRSS2-ETS",
+        "B": "A SPS-TFE3",
+        "C": "B CR-ABL",
+        "D": "S YT-SSX"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 78,
-      "content": "關於腦腫瘤的敘述，下列何者錯誤？",
+      "content": "關 於腦腫瘤的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "一般來說，小孩子的腦腫瘤較常發生在天幕上（supratentorial），而大人的較常發生在顱後窩（posterior fossa）",
-        "B": "第二級星狀細胞瘤（astrocytoma）即使生長速度不快，仍因高浸潤性（infiltrative）生長方式而難以切除，預後不佳",
-        "C": "神經元細胞瘤通常惡性度較低，以癲癇為常見臨床表徵",
-        "D": "免疫力缺損的病人最常見的腦瘤是原發性的淋巴瘤"
+        "A": "一 般來說，小孩子的腦腫瘤較常發生在天幕上（supratentorial），而大人的較常發生在顱後窩\n（posterior fossa）",
+        "B": "第 二級星狀細胞瘤（astrocytoma）即使生長速度不快，仍因高浸潤性（infiltrative）生長方式而難以切\n除，預後不佳",
+        "C": "神 經元細胞瘤通常惡性度較低，以癲癇為常見臨床表徵",
+        "D": "免 疫力缺損的病人最常見的腦瘤是原發性的淋巴瘤"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 79,
-      "content": "關於骨軟骨瘤（osteochondroma）的敘述，下列何者錯誤？",
+      "content": "關 於骨軟骨瘤（osteochondroma）的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "最常見的良性骨腫瘤",
-        "B": "可形成單一病灶，亦有多發型",
-        "C": "好發於扁平骨，如脊椎及顏面骨",
-        "D": "有惡性轉變之可能"
+        "A": "最 常見的良性骨腫瘤",
+        "B": "可 形成單一病灶，亦有多發型",
+        "C": "好 發於扁平骨，如脊椎及顏面骨",
+        "D": "有 惡性轉變之可能"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 80,
-      "content": "下列何者是結核病人伴隨骨結核病時最常見的部位？",
+      "content": "下 列何者是結核病人伴隨骨結核病時最常見的部位？",
       "has_image": false,
       "options": {
-        "A": "指骨",
-        "B": "肋骨",
-        "C": "頭骨",
-        "D": "脊椎"
+        "A": "指 骨",
+        "B": "肋 骨",
+        "C": "頭 骨",
+        "D": "脊 椎"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     }
   ]
 }

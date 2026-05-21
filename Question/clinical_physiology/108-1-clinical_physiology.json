@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 108,
+    "sitting": 1,
+    "subject": "臨床生理學與病理學",
+    "exam_code": "1308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "一個正常的人，做心電圖時將左右手的誘導電極錯置用反，不會出現下列何種現象？",
+      "has_image": false,
+      "options": {
+        "A": "第I導QRS波會變為負向波",
+        "B": "V 、V 導不會受到影響\n1 2",
+        "C": "V 、V 導不會受到影響",
+        "D": "aVF導會受到影響\n5 6"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "EKG紀錄紙分成大小方格，最大格長寬為：",
+      "has_image": false,
+      "options": {
+        "A": "1×1 mm",
+        "B": "1×2 mm",
+        "C": "2×2 mm",
+        "D": "5×5 mm"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "心電圖標準十二導中的第II導在六軸系統中的角度為：",
+      "has_image": false,
+      "options": {
+        "A": "0度",
+        "B": "30度",
+        "C": "60度",
+        "D": "90度"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "高血鉀症（hyperkalemia）之心電圖特徵為何？",
+      "has_image": false,
+      "options": {
+        "A": "U波下降",
+        "B": "高聳尖形T波",
+        "C": "QTc間隔延長",
+        "D": "ST段下降"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "一般心電圖導線，以日本製規格，左手放高的導極是以下 列何種顏色為記號？",
+      "has_image": false,
+      "options": {
+        "A": "黃",
+        "B": "黑",
+        "C": "白",
+        "D": "紅"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "下列何者是須作緊急處理之異常心電圖？",
+      "has_image": false,
+      "options": {
+        "A": "完全心臟阻滯",
+        "B": "右側枝傳導阻滯",
+        "C": "左側枝傳導阻滯",
+        "D": "聯結節律"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "正常人每分鐘心跳 72 次，則其心電圖二個連續 QRS 波間隔時間約為幾秒？",
+      "has_image": false,
+      "options": {
+        "A": "0.12",
+        "B": "0.35",
+        "C": "0.62",
+        "D": "0.83"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "下列何者不是國際腦波學會所推薦記錄腦波電極放置方法的名稱？",
+      "has_image": false,
+      "options": {
+        "A": "Jasper 氏法",
+        "B": "Motreal 法",
+        "C": "10－20 電極配置法",
+        "D": "Benedict 法"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "頻率為8～13 Hz的腦波稱為：",
+      "has_image": false,
+      "options": {
+        "A": "α波",
+        "B": "β波",
+        "C": "δ波",
+        "D": "θ波"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "正常成人之腦波，於何處測得的β波最強？",
+      "has_image": false,
+      "options": {
+        "A": "枕葉",
+        "B": "額葉",
+        "C": "顳葉",
+        "D": "頂葉"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "快速動眼期（rapid eye movement, REM）睡眠中，下列何者下降？",
+      "has_image": false,
+      "options": {
+        "A": "眼球運動",
+        "B": "心跳速率",
+        "C": "頸部肌醫肉運動",
+        "D": "呼 吸速率"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "當血液pH = 7.4 時，且磷酸鹽系統之pK=6.8，則HPO 2-/H PO -為：\n4 2 4",
+      "has_image": false,
+      "options": {
+        "A": "80／20",
+        "B": "80／40",
+        "C": "40／80",
+        "D": "20／80"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "下列何者為血漿中最重要的non-carbonate緩衝系統？",
+      "has_image": false,
+      "options": {
+        "A": "globulin",
+        "B": "albumin",
+        "C": "phosphate",
+        "D": "lactate"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "血液氣體分析試驗有封口的heparinized 動脈血放置於室溫一小時以上，則P mmHg、P mmHg\nO2 CO2\n及pH可能發生的變化依序是：\n護",
+      "has_image": false,
+      "options": {
+        "A": "增加、增加、增加",
+        "B": "減少、減少、減少",
+        "C": "減少、增加、減少",
+        "D": "增加、增加、減少"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "下列關於超音波的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "腹部超音波常用頻率為12～14 MHz",
+        "B": "超音波在液態中傳遞良好，於氣態中傳遞較差",
+        "C": "音波頻率越高，音波穿透力越差",
+        "D": "音波頻率越高，影像解析度越佳"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "下列心電圖波形何者在急性心肌梗塞時最早出現？",
+      "has_image": false,
+      "options": {
+        "A": "出現Q波",
+        "B": "T波倒置",
+        "C": "T波變高",
+        "D": "ST段下降"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "依心電圖基本法則，當肌肉束一樣大時，去極化電流朝向導極擴散，則心電圖產生：",
+      "has_image": false,
+      "options": {
+        "A": "向上波",
+        "B": "向下波",
+        "C": "雙向波",
+        "D": "一條直線\n \n1108高點醫護｜｜第一次專技技醫檢師 ‧ 高分詳解"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "這張心電電圖最可能是何何種疾病？",
+      "has_image": false,
+      "options": {
+        "A": "急性前前壁心肌梗塞塞",
+        "B": "急性心心包膜炎",
+        "C": ")急性心內膜炎炎",
+        "D": "急性下下壁心肌梗塞塞"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "關於心臟臟水平面電力位位置的敘述，，下列何者正正確？",
+      "has_image": false,
+      "options": {
+        "A": "體型高高瘦者多呈水水平，肥胖者多多呈垂直",
+        "B": "吸氣時時心臟偏向水水平而呈現逆時時針旋轉（coounter clockwwise rotation）",
+        "C": "過渡帶帶（transitionnal zone）出現現在V 、V 稱稱為逆時針旋轉轉\n1 2",
+        "D": "嬰兒通通常可見順時時針旋轉（cloockwise rotatioon）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "某人心電電圖結果如下，其最合適的的判讀為：\n醫\n護",
+      "has_image": false,
+      "options": {
+        "A": "竇性頻頻脈（sinus taachycardia）",
+        "B": "上心室頻頻脈（supravventricular tachhycardia）",
+        "C": "心室頻頻脈（ventricular tachycarddia）",
+        "D": "竇竇性不整脈（ssinus arrhythmmia）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "閉眼時的的腦波圖中，其其振幅最高的的α波會出現現於下列那一個個位置？",
+      "has_image": false,
+      "options": {
+        "A": "F7 (",
+        "B": "O2",
+        "C": "FPP2",
+        "D": "C3"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "下列何者者是腦波操作時時影響基線動動搖的主要因因素？",
+      "has_image": false,
+      "options": {
+        "A": "眼球運運動",
+        "B": "流汗汗",
+        "C": "咬牙",
+        "D": "心臟電流流"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "在腦波版的的波形權中，50μμV所代表高度有為為多少m，m？ 翻印必究】\n(A)1 (BB)5 (C)10 (D)20",
+      "has_image": false,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "在代償作作用未發生以前前，下列何者者容易造成代代謝性鹼中毒？\n(A)胰臟炎炎 (B)甲狀腺腺機能亢進 (C)飢餓 (DD)幽門十二指指腸阻塞",
+      "has_image": false,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "為了保持持肺泡膨脹，減減少表面張力力，故肺泡表表面散布著何種種脂蛋白，且且由何種細胞胞所所分泌？",
+      "has_image": false,
+      "options": {
+        "A": "肺泡蛋蛋白（alveolaar protein）；二型柱狀細胞胞所分泌",
+        "B": "表面張張力素（surfaactant）；二型型上皮細胞所所分泌",
+        "C": "肺泡蛋蛋白（alveolaar protein）；一型上皮細胞胞所分泌",
+        "D": "表面張張力素（surfaactant）；一型型上皮細胞所所分泌"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "一氧化碳碳肺功能擴散能能力（DL ））檢查中，受受測者必須吸吸入CO與O混混合氣幾秒？\nCO 2",
+      "has_image": false,
+      "options": {
+        "A": "10",
+        "B": "15",
+        "C": "6",
+        "D": "3\n \n1108高點醫護｜｜第一次專技技醫檢師 ‧ 高分詳解"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "關於呼吸吸功能的敘述，下列何者正正確？",
+      "has_image": false,
+      "options": {
+        "A": "身體內內CO 運送主要是以直接溶溶解在血液的的形式\n2",
+        "B": "Cl-會在在紅血球運送送CO 的機制中中進入紅血球球\n2",
+        "C": "血紅素素與氧的結合合不會受到pHH值改變的影響響",
+        "D": "碳酸酐酐酶（carbonnic anhydrase））是紅血球運運送組織O 機制中的重要酵酵素\n2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何者者無法直接由肺肺量計（spirrometer）肺功功能檢查測得得？\n(A)肺活量量（VC） ((B)最大吸氣量量（MIC） (C)潮氣容積積（TV） (DD)肺餘容積（RV）",
+      "has_image": false,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "肺活量（VC）：3,500mL，一秒秒用力呼氣量量（FEV1.0）：1,500mLL，功能殘餘餘量（FRC）：\n3,000mL，，最大吸氣量量（MIC）：22,500mL，呼氣儲備容積（ERV）：1,,000mL，則肺肺總容量（TLC）\n為多少mLL？\n(A)3,500 (B)4,500 (C)5,500 (DD)6,500",
+      "has_image": false,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "慢性肺氣氣腫之病患易發發生下列何種種現象？",
+      "has_image": false,
+      "options": {
+        "A": "P 及及 FEV1均下下降",
+        "B": "P 及 F高EV1均上上升\nCO2 CO2",
+        "C": "P 下下降及 FEV11上升",
+        "D": "P 上升且 FFEV1下降\nCO2 CO2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "影響肺活活量的生理因素素，下列何者者較不重要？",
+      "has_image": false,
+      "options": {
+        "A": "身高",
+        "B": "年齡",
+        "C": "體重",
+        "D": "性別"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "超音波左左肋間之掃描方方式，多使用用於下列何種種器官之掃描？",
+      "has_image": false,
+      "options": {
+        "A": "脾臟",
+        "B": "胰臟",
+        "C": "肝臟",
+        "D": "腎臟"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "超音波的的換能器是利利用何種原理，由換能器內內的晶體將電電子脈衝轉換成成超音波或將將超音波轉換換成\n電子脈衝？",
+      "has_image": false,
+      "options": {
+        "A": "光電效效應",
+        "B": "壓電電效應",
+        "C": "杜杜卜勒效應",
+        "D": "牛頓第三三運動定律"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "超音波在在腎臟的傳導速速度大約為何何（m/sec）？？\n(A)350 (B)1,500 (CC)3,000 (D)5,000",
+      "has_image": false,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "超音波橫橫向解析度與下下列何者關係係較密切？",
+      "has_image": false,
+      "options": {
+        "A": "波長",
+        "B": "分貝（ddB）",
+        "C": "音束束直徑（beamm diameter）",
+        "D": "速度"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "如圖之膽膽囊超音波，白色箭頭A及及箭頭B醫所指可可能是何 種影影像？\n護",
+      "has_image": false,
+      "options": {
+        "A": "A為膽膽息肉，B為音音影（acoustiic shadow）",
+        "B": "A為膽息息肉，B為回音音增益",
+        "C": "A為膽膽囊結石，B為為音影（acouustic shadow）",
+        "D": "A為膽膽囊結石，B為為回音增益"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下列那一一項的心電圖敘敘述是錯誤的的？\n【",
+      "has_image": false,
+      "options": {
+        "A": "右版心症症病人權的R波從從所V ～V 由有小小變大 ，",
+        "B": "右右心房翻增大會會出印現尖聳P必波波 究】\n1 6",
+        "C": "心肌梗梗塞的急性期期出現上凸形SST節",
+        "D": "毛毛地黃效應造成成ST節成匙狀狀下降"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "有關微血血管氣體交換的的敘述，下列列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "CO 濃濃度升高時，可使O 的解離離曲線右移\n2 2",
+        "B": "CO 濃濃度升高時，促促使O 與Hb結結合\n2 2",
+        "C": "O 與HHb結合將促使使CO 釋放\n2 2",
+        "D": "在肺泡泡微血管氣體體交換主要受何何爾登（Haldane）效應的的影響"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "下列那一一項疾病的心電電圖比較不會會出現顛倒的的T波？",
+      "has_image": false,
+      "options": {
+        "A": "心肌缺缺氧",
+        "B": "心肌肌梗塞",
+        "C": "甲甲狀腺機能亢亢進",
+        "D": "左心心室肥大"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "下列那一一種疾病與代謝謝性酸中毒最最不相關？",
+      "has_image": false,
+      "options": {
+        "A": "持續性性嘔吐",
+        "B": "腎腎衰竭",
+        "C": "mmethanol中毒",
+        "D": "消化道液體流失\n \n108高點醫護｜第一次專技醫檢師 ‧ 高分詳解"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "下列何者為最重要之促組織纖維化因子（fibrogenic agent）？",
+      "has_image": false,
+      "options": {
+        "A": "α型轉化生長因子（TGF-α）",
+        "B": "β型轉化生長因子（TGF-β）",
+        "C": "血小板衍生性生長因子（PDGF）",
+        "D": "腫瘤壞死因子（TNF）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "下列何種訊息傳導方式與傷口癒合過程最為相關？",
+      "has_image": false,
+      "options": {
+        "A": "自分泌（autocrine）傳導",
+        "B": "旁分泌（paracrine）傳導",
+        "C": "內分泌（endocrine）傳導",
+        "D": "外分泌（exocrine）傳導"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "下列有關基因體印記（genomic imprinting）之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "可發生在來自父親或來自母親之等位基因（genetic allele）上",
+        "B": "基因體印記發生在體細胞（somatic cells）分裂時",
+        "C": "基因體印記可藉由DNA的甲基化（methylation）達成",
+        "D": "當印記發生在來自父親的等位基因時，只有來自母親的等位基因可被轉錄成RNA及蛋白質"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "下列何種皮膚病變與日曬最不相關？",
+      "has_image": false,
+      "options": {
+        "A": "彈性纖維變性（elastosis）",
+        "B": "基底高細胞癌（basal cell carcinoma）",
+        "C": "鱗狀細胞癌（squamous cell carcinoma）",
+        "D": "魚鱗癬（ichthyosis）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "有關粥狀動脈硬化（atherosclerosis）的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "家族性高膽固醇血症（familial hypercholesterolemia）是其危險因子",
+        "B": "高血壓是其危險因子",
+        "C": "停經後婦女荷爾蒙替補療法（postmenopausal hormone replacement）能有效減少其發生",
+        "D": "主要是血管內膜（intima）的疾病"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "下列有關何杰金氏淋巴瘤（Hodgkin lymphoma）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "經常發生在頸部淋巴結",
+        "B": "好發於年輕人",
+        "C": "腫瘤細胞叫做Reed-Sternberg細胞",
+        "D": "病人很少活過5年"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "下列何者為最常見的惡性卵巢腫瘤？",
+      "has_image": false,
+      "options": {
+        "A": "卵黃囊瘤（yolk sac tumor）",
+        "B": "漿液性腺癌（serous adenocarcinoma）",
+        "C": "黏液性腺癌（mucinous adenocarcinoma）",
+        "D": "無性胚胎瘤（dysgerminoma）\n醫"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列有關氣喘（asthma）的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "大多為第四型過敏反應（type IV hypersensitivity）所引起",
+        "B": "常有大量IgG抗體產生",
+        "C": "病毒感染不會引發氣喘",
+        "D": "氣喘患者不一定有家族史"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "下列何種病毒感染不會產生慢性肝病？",
+      "has_image": false,
+      "options": {
+        "A": "B型肝炎",
+        "B": "C型肝炎",
+        "C": "D型肝炎",
+        "D": "E型肝炎"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "有關骨樣骨瘤（osteoid osteoma）之敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "引起之疼痛與前列腺素E2（prostagl護andin E2）過多 有關",
+        "B": "好發於頭蓋骨",
+        "C": "引起之疼痛可以水楊酸類藥物（如阿斯匹靈）緩解",
+        "D": "引起之疼痛多出現於夜間（nocturnal pain）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "病患開刀後，殘留在軟組織中的手術縫線所造成的炎症是屬於下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "卡他性炎症（catarrhal inflammation）",
+        "B": "潰瘍性炎症（ulcerative inflammation）",
+        "C": "肉芽腫性炎症（granulomatous inflammation）",
+        "D": "偽膜性炎症（pseudomembranous inflammation）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "組織纖維化（fibrosis）後，可引起組織與組織間，或是器官與器官之間的相黏，這種現象名稱為\n下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "瘢瘤（keloid）",
+        "B": "機化（organization）",
+        "C": "瘢痕（scar）",
+        "D": "黏連（adhesion）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列何者是以自體隱性（autosomal recessive）遺傳？",
+      "has_image": false,
+      "options": {
+        "A": "色素性乾皮症（xeroderma pigmentosum）",
+        "B": "家族性大腸息肉症（familial adenomatous polyposis）",
+        "C": "李–彿美尼症候群（Li-Fraumeni syndrome）",
+        "D": "痣樣基底細胞癌症候群（nevoid basal cell carcinoma syndrome）\n \n108高點醫護｜第一次專技醫檢師 ‧ 高分詳解"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "下列何者為良性腫瘤？",
+      "has_image": false,
+      "options": {
+        "A": "淋巴瘤（lymphoma）",
+        "B": "黑色素細胞瘤（melanoma）",
+        "C": "精原細胞瘤（seminoma）",
+        "D": "多形性腺瘤（pleomorphic adenoma）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "前哨淋巴結（sentinel lymph node）的定義為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "接受原發腫瘤流出之淋巴液的第一個淋巴結",
+        "B": "呼吸道入口的淋巴結",
+        "C": "身體體表的淋巴結",
+        "D": "眼睛周遭的淋巴結"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列何者是囊腫纖維症（cystic fibrosis）最常影響的器官？",
+      "has_image": false,
+      "options": {
+        "A": "肺臟",
+        "B": "心臟",
+        "C": "脾臟",
+        "D": "腦"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "病患長期飲用深井水造成下肢的烏腳病，最可能是水中含有下列何種重金屬？",
+      "has_image": false,
+      "options": {
+        "A": "砷（arsenic）",
+        "B": "鉛（lead）",
+        "C": "汞（mercury）",
+        "D": "鎘（cadmium）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "成年人的軟骨症（osteomalacia）與下列何種維生素攝取不足有關？",
+      "has_image": false,
+      "options": {
+        "A": "維生素A",
+        "B": "維生素C",
+        "C": "維生素D",
+        "D": "維生素E"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "下列何者與梅毒（syphilis）最有關？",
+      "has_image": false,
+      "options": {
+        "A": "尖圭濕疣（condyloma acuminatum）",
+        "B": "非典型濕疣（atypical condylomata）",
+        "C": "接觸傳染性軟疣（molluscum contagiosum）",
+        "D": "扁平濕疣（condyloma lata）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "感染造成中性白血球聚集，局部組織液化性壞死，最容易形成下列何種變化？",
+      "has_image": false,
+      "options": {
+        "A": "膿瘍（abscess）",
+        "B": "乾性壞疽（dry gangrene）",
+        "C": "細胞凋亡（apoptosis）",
+        "D": "肉芽腫（granuloma）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "關於T細胞為媒介的免疫過度反應（T cell-mediated hypersensitivity）的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "此反應是由巨噬細胞（macrophages）分泌干擾素γ（interferon-γ）活化T細胞所致",
+        "B": "T細胞會分泌間白素17（interleukin 17），造成組織傷害並刺激纖維母細胞導致纖維化病變",
+        "C": "多發性硬化症（multiple sclerosis）被認為主要是因為T細胞為媒介的免疫過度反應所造成的疾\n病\n醫",
+        "D": "典型的肉芽腫發炎反應（granulomatous inflammation）主要是由巨噬細胞（macrophages）、B\n淋巴細胞與漿細胞形成"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "引起下列疾病最主要的免疫過度反應中，何者與引起急性風濕熱（acute rheumatic fever）最為相\n近？",
+      "has_image": false,
+      "options": {
+        "A": "葛瑞夫茲氏病（Graves disease）",
+        "B": "結核病（tuberculosis）",
+        "C": "A型鏈球菌感染引起的廣泛增生性腎護絲球腎炎（dif fuse proliferative glomerulonephritis）",
+        "D": "氣喘（asthma）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "下列何者主要屬於免疫複合體（immune complex）沉積造成的疾病？",
+      "has_image": false,
+      "options": {
+        "A": "重症肌無力（myasthenia gravis）",
+        "B": "血清病（serum sickness）",
+        "C": "第一型糖尿病（diabetes mellitus type I）",
+        "D": "克隆氏症（Crohn's disease）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "關於心肌梗塞（myocardial infarction）的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "高血壓是造成急性心肌梗塞的最主要成因",
+        "B": "急性期的透壁（transmural）心肌梗塞，典型的心電圖表現為ST段升",
+        "C": "20天前發生的心肌梗塞，在病人血中仍可驗出過高的肌紅蛋白（myoglobin）",
+        "D": "造成心肌梗塞的不可逆傷害是由靠近心包膜的心肌細胞開始，再逐漸擴展到心內膜區域"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "關於主動脈瘤（aortic aneurysm）與主動脈剝離（aortic dissection）的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "馬凡氏症候群（Marfan syndrome）是因FBN1基因異常，比較容易發生主動脈剝離",
+        "B": "主動脈瘤最主要的兩個成因為動脈硬化與第三期梅毒",
+        "C": "動脈硬化造成的主動脈瘤主要發生在主動脈弓",
+        "D": "主動脈瘤與主動脈剝離發生率都是胸主動脈遠高於腹主動脈"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "下列那一種甲狀腺腫瘤之細胞核最常呈現毛玻璃狀（ground glass ）或含偽包涵體\n（pseudoinclusion）？",
+      "has_image": false,
+      "options": {
+        "A": "乳突狀癌",
+        "B": "濾泡癌",
+        "C": "未分化癌",
+        "D": "髓質癌\n \n108高點醫護｜第一次專技醫檢師 ‧ 高分詳解"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列何者與傳染性單核白血球增多症（infectious mononucleosis）最有關？",
+      "has_image": false,
+      "options": {
+        "A": "廣泛性血管內凝固（disseminated intravascular coagulation）",
+        "B": "von Willebrand氏病（von Willebrand disease）",
+        "C": "人類疱疹病毒第八型（human herpesvirus-8）",
+        "D": "Epstein-Barr病毒（Epstein-Barr virus）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "肌小節（sarcomere）基因突變是下列何種疾病的最主要成因？",
+      "has_image": false,
+      "options": {
+        "A": "肥厚型心肌症（hypertrophic cardiomyopathy）",
+        "B": "先天性肺動脈高壓（pulmonary arterial hypertension）",
+        "C": "擴張型心肌症（dilated cardiomyopathy）",
+        "D": "限制型心肌症（restrictive cardiomyopathy）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "糖尿病病患胰臟的病理變化，下列何者最有可能？",
+      "has_image": false,
+      "options": {
+        "A": "大部分的第一型糖尿病病患，其胰島的數目增多且體積增大",
+        "B": "早期第二型糖尿病患，其胰島內含大高量嗜醶性白血 球浸潤",
+        "C": "第二型糖尿病的長期病患，胰島內常有類澱粉沉積",
+        "D": "糖尿病母親所產下之血糖正常新生兒，其胰島萎縮且數目減小"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "惡性間皮瘤（malignant mesothelioma）與下列何種物質之接觸史最為相關？",
+      "has_image": false,
+      "options": {
+        "A": "鐵（iron）",
+        "B": "銅（copper）",
+        "C": "石綿（asbestos）",
+        "D": "碳（carbon）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "腦神經元（neuron）出現red neurons之組織學變化，是在大腦缺血多久之後最為明顯？",
+      "has_image": false,
+      "options": {
+        "A": "1小時",
+        "B": "2小時",
+        "C": "6小時",
+        "D": "12小時"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "肝臟惡性腫瘤中，最常見之病理類型為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "肝細胞癌（hepatocellular carcinoma）",
+        "B": "膽管癌（cholangiocarcinoma）",
+        "C": "血管肉瘤（angiosarcoma）",
+        "D": "轉移癌（metastatic carcinoma）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "下列何者與良性攝護腺增生之關係最為密切？\n醫",
+      "has_image": false,
+      "options": {
+        "A": "dehydroepiandrosterone",
+        "B": "androstenedione",
+        "C": "testosterone",
+        "D": "dihydrotestosterone"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "下列何者為家族性腺瘤性息肉病（familial adenomatous polyposis）最主要之基因突變？",
+      "has_image": false,
+      "options": {
+        "A": "APC",
+        "B": "BRAF",
+        "C": "MLH1",
+        "D": "MSH2"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "顳葉海馬迴疝（uncal herniation）最容易造成下列那一對腦神經受損？",
+      "has_image": false,
+      "options": {
+        "A": "視神經",
+        "B": "動眼神經",
+        "C": "三叉神經",
+        "D": "外展神經"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "造成陰囊腫塊最常見的原因為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "水囊腫（hydrocele）",
+        "B": "精索靜脈曲張（varicocele）\n護",
+        "C": "血囊腫（hematocele）",
+        "D": "乳糜囊腫（chylocele）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "在家族型亮細胞腎癌（familial clear cell renal cell carcinoma）的發生機轉中，下列何者最有關？",
+      "has_image": false,
+      "options": {
+        "A": "MET gene activation",
+        "B": "VHL gene mutation",
+        "C": "Loss of chromosomes 1, 14 and Y",
+        "D": "Loss of chromosomes 1, 2, 6, 10, 13, 17 and 21"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "下列何者相對較少轉移至腦部？",
+      "has_image": false,
+      "options": {
+        "A": "侵襲性乳管癌（invasive ductal carcinoma of breast）\n【",
+        "B": "皮版膚基底細權胞癌（ba所sal cell ca有rcinoma o，f skin） 翻印必究】",
+        "C": "皮膚黑色素瘤（melanoma of skin）",
+        "D": "腎細胞癌（renal cell carcinoma）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "5歲幼童最近常抱怨頭痛，早上起床時最痛，伴隨嘔吐、噁心，以及走路容易跌倒等現象，腦部電\n腦斷層檢查顯示後顱窩腫塊。最可能診斷為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "髓母細胞瘤（medulloblastoma）",
+        "B": "生殖細胞瘤（germinoma）",
+        "C": "寡樹突神經膠細胞瘤（oligodendroglioma）",
+        "D": "神經膠質母細胞瘤（glioblastoma）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "陰莖鱗狀細胞癌（squamous cell carcinoma）與下列何者感染之關係最密切？",
+      "has_image": false,
+      "options": {
+        "A": "HPV 6",
+        "B": "HPV 11",
+        "C": "HPV 16/18",
+        "D": "HPV 33"
+      },
+      "answer": "C",
+      "bonus": false
+    }
+  ]
+}

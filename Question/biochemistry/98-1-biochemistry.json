@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 98,
+    "sitting": 1,
+    "subject": "生物化學與臨床生化學",
+    "exam_code": "5308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "Testosterone歸類於下列那一群激素？",
+      "has_image": false,
+      "options": {
+        "A": "Estrogens",
+        "B": "Glucocorticoids",
+        "C": "Androgens",
+        "D": "Mineralocorticoids"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "下列何者為activevitaminB ？\n6",
+      "has_image": false,
+      "options": {
+        "A": "pyridoxine5-phosphate",
+        "B": "pyridoxamine",
+        "C": "pyridoxal5-phosphate",
+        "D": "4-pyridoxicacid"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "脂肪酸的合成通常被稱為還原性合成（reductivesynthesis），產生脂肪的還原當量是由下列\n那個化合物所提供的？",
+      "has_image": false,
+      "options": {
+        "A": "NADH",
+        "B": "FAD+",
+        "C": "FADH",
+        "D": "NADPH\n2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "下列那一個生化反應不是在細胞質內進行的？",
+      "has_image": false,
+      "options": {
+        "A": "脂質生合成作用（lipogenesis）",
+        "B": "脂肪酸β-氧化作用（fattyacid β-oxidation）",
+        "C": "醣解作用（glycolysis）",
+        "D": "肝醣合成（glycogensynthesis）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "癩皮病（pellagra）是缺乏何種維生素所引起的？",
+      "has_image": false,
+      "options": {
+        "A": "niacin",
+        "B": "folicacid",
+        "C": "biotin",
+        "D": "lipoicacid"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "Perniciousanemia是缺乏何種維生素所引起的？",
+      "has_image": false,
+      "options": {
+        "A": "VitaminB",
+        "B": "VitaminC",
+        "C": "VitaminK",
+        "D": "VitaminB\n1 12"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "多數的植物油在室溫呈現液態，是因為：",
+      "has_image": false,
+      "options": {
+        "A": "植物油大多數的脂肪酸是飽和態",
+        "B": "植物油大多數脂肪酸是反式不飽和態",
+        "C": "植物油大多數脂肪酸是順式不飽和態",
+        "D": "植物油有相等總數的飽和及不飽和脂肪酸"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "下列何者不是抑癌基因（tumoursuppressorgene）？",
+      "has_image": false,
+      "options": {
+        "A": "p53gene",
+        "B": "RBgene",
+        "C": "BRCA2gene",
+        "D": "rasgene"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "一般在測定酵素活性時，受質使用的濃度會是一個飽和的濃度，以便在一定時間內測得下列\n何值來計算酵素活性？",
+      "has_image": false,
+      "options": {
+        "A": "受質減少或產物生成的一級速率（first-orderrate）",
+        "B": "受質減少或產物生成之恆定初始速率（constantinitialrate）",
+        "C": "反應結束時產物的吸光值",
+        "D": "Michaelis-Menten常數(K )\nm"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "下列有關selenocysteine和selenomethionine的敘述，何者最正確？",
+      "has_image": false,
+      "options": {
+        "A": "Selenomethionine為人體可自行製造的第21個胺基酸",
+        "B": "Glutathioneperoxidase中含有selenocysteine，且其為這個酵素作用所必需",
+        "C": "人體內selenocysteine的取得需仰賴食物中的攝取",
+        "D": "人體組織中只有selenocysteine，而無selenomethionine的存在"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "下列何者是生物體中含heme的含鐵蛋白質？",
+      "has_image": false,
+      "options": {
+        "A": "粒線體電子傳遞鏈上的細胞色素（cytochromes）",
+        "B": "粒線體電子傳遞鏈上的鐵硫蛋白（iron-sulfurproteins）",
+        "C": "Transferrin",
+        "D": "Ferritin"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "下列那一種化合物可使細胞呼吸鏈中之氧化作用（oxidation）與磷酸化作用\n（phosphorylation）去偶合（uncoupled）？",
+      "has_image": false,
+      "options": {
+        "A": "AntimycinA",
+        "B": "Oligomycin",
+        "C": "2,4-dinitrophenol",
+        "D": "Malonate"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "下列那一種分子是肝醣合成酶的受質？",
+      "has_image": false,
+      "options": {
+        "A": "Glucose",
+        "B": "Uridinediphosphateglucose",
+        "C": "Glucose-6-phosphate",
+        "D": "Glucose-1-phosphate"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "檸檬酸循環（TCAcycle）主要產生何種還原能（reducingequivalent）進入呼吸鏈氧化產生\nATP？",
+      "has_image": false,
+      "options": {
+        "A": "NAD+",
+        "B": "NADPH",
+        "C": "NADH",
+        "D": "FAD"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "下列那一種醣類之葡萄糖殘基並不以α-1,4 鍵結來相連？",
+      "has_image": false,
+      "options": {
+        "A": "Starch",
+        "B": "Glycogen",
+        "C": "Maltose",
+        "D": "Cellulose"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "奇數碳之脂肪酸經β-氧化作用（β-oxidation）之後，會產生acetyl-CoA 及下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "Malonyl-CoA",
+        "B": "Formicacid",
+        "C": "Succinyl-CoA",
+        "D": "Propionyl-CoA"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "Hypoxanthineguaninephosphoribosyltransferease（HGPRT）此酵素在核酸的新陳代謝中的角\n色為何？",
+      "has_image": false,
+      "options": {
+        "A": "HGPRT 是生成嘧啶（pyrimidines）之回收路徑（salvagepathway）所必需",
+        "B": "HGPRT 是嘧啶（pyrimidines）新合成路徑（denovopathway）所必需",
+        "C": "HGPRT 是生成嘌呤（purines）回收路徑（salvagepathway）所必需",
+        "D": "HGPRT 是嘌呤（purines）新合成路徑（denovopathway）所必需"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "Allopurinol 這個藥物可用來治療血中尿酸過高（hyperuricemia），主要是因此藥可抑制下\n列何種酵素的活性？",
+      "has_image": false,
+      "options": {
+        "A": "Purinenucleosidephosphorylase",
+        "B": "Adenosinedeaminase",
+        "C": "Xanthineoxidase",
+        "D": "Uricase"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "Creatine 在體內轉變成creatinine 需經過什麼反應？",
+      "has_image": false,
+      "options": {
+        "A": "氧化",
+        "B": "還原",
+        "C": "水解",
+        "D": "脫水"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "下列那一種含氮代謝物對於人體中樞神經系統的毒性最高？",
+      "has_image": false,
+      "options": {
+        "A": "氨",
+        "B": "尿素",
+        "C": "尿酸",
+        "D": "肌酸"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "下列那一種非蛋白氮（NPN）受到飲食的影響最少？",
+      "has_image": false,
+      "options": {
+        "A": "氨",
+        "B": "尿酸",
+        "C": "尿素",
+        "D": "肌酸酐"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "膽固醇氧化酶作用於膽固醇時，可以產生下列那一種物質？",
+      "has_image": false,
+      "options": {
+        "A": "NADH",
+        "B": "水",
+        "C": "二氧化碳",
+        "D": "過氧化氫"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "核酸代謝所產生的guanine 和adenine 可在酵素催化下，與何種分子反應而重新產生GMP？",
+      "has_image": false,
+      "options": {
+        "A": "Ribose-5-phosphate",
+        "B": "Phosphoribosylpyrophosphate",
+        "C": "5-Phosphoribosylamine",
+        "D": "Hypoxanthine"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "人體肌酸酐產生的量，主要與何者相關？",
+      "has_image": false,
+      "options": {
+        "A": "飲食量",
+        "B": "運動量",
+        "C": "體脂肪",
+        "D": "肌肉量"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "根據Westgard 規則，下列何者為隨機誤差？",
+      "has_image": false,
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "R",
+        "D": "4\n3S 1S 3S 1S"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "Receiver-operatingcharacteristic（ROC）curve 的X 軸是：",
+      "has_image": false,
+      "options": {
+        "A": "truepositive",
+        "B": "falsepositive",
+        "C": "truenegative",
+        "D": "falsenegative"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "日內差（diurnalerror）最小的檢驗是：",
+      "has_image": false,
+      "options": {
+        "A": "creatinine",
+        "B": "glucose",
+        "C": "epinephrine",
+        "D": "insulin"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "影響系統誤差最主要的因素為：",
+      "has_image": false,
+      "options": {
+        "A": "檢體錯誤",
+        "B": "校正誤差",
+        "C": "檢體混濁",
+        "D": "檢體溶血"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "變異係數（CV 值）是表示檢驗法的：",
+      "has_image": false,
+      "options": {
+        "A": "敏感度",
+        "B": "特異性",
+        "C": "精密度",
+        "D": "準確度"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "病人血漿中Haptoglobin及α1-acidglycoprotein都減少有可能是何種原因造成？",
+      "has_image": false,
+      "options": {
+        "A": "Nephroticsyndrome",
+        "B": "Hepatocellulardisease",
+        "C": "Acutephaseresponse",
+        "D": "Androgeneffect"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "Ferritin 在血液中是帶何種離子？",
+      "has_image": false,
+      "options": {
+        "A": "Fe2+",
+        "B": "Fe3+",
+        "C": "Cu+",
+        "D": "Cu2+"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "Receiver-operatingcharacteristic（ROC）curve 上之areaundercurve 愈靠近下列何者，表示\n該方法之診斷正確性愈高？",
+      "has_image": false,
+      "options": {
+        "A": "0",
+        "B": "0.5",
+        "C": "1.0",
+        "D": "1.5"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "下列何種測定葡萄糖的方法可用電極法偵測訊號？",
+      "has_image": false,
+      "options": {
+        "A": "FolinWu 法",
+        "B": "Glucoseoxidase 法",
+        "C": "Benedict’s 法",
+        "D": "O-toluidine 法"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "當血清儲存於室溫時，那一種酵素活性降低最快？",
+      "has_image": false,
+      "options": {
+        "A": "AST",
+        "B": "ALT",
+        "C": "LDH",
+        "D": "ACP"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "下列何種血漿蛋白在Acutephaseresponse 時會下降？",
+      "has_image": false,
+      "options": {
+        "A": "Transthyretin",
+        "B": "α -acidglycoprotein",
+        "C": "Haptoglobin",
+        "D": "Ceruloplasmin\n1"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "下列何者不適用於體液中蛋白質的染色？",
+      "has_image": false,
+      "options": {
+        "A": "SudanblackB",
+        "B": "Amidoblack",
+        "C": "Ponceau-S",
+        "D": "Silvernitrate"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "Lipoprotein(a)之結構中有部分類似下列何種血清蛋白？",
+      "has_image": false,
+      "options": {
+        "A": "fibrinogen",
+        "B": "plasminogen",
+        "C": "thrombin",
+        "D": "coagulationfactor Ⅷ"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "Floating β-lipoprotein會出現於下列何型的hyperlipoproteinemia？",
+      "has_image": false,
+      "options": {
+        "A": "Ⅰ",
+        "B": "Ⅱ",
+        "C": "Ⅲ",
+        "D": "Ⅳ"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "以Glucose-6-phosphatedehydrogenase測定血糖，需添加下列那一種酵素？",
+      "has_image": false,
+      "options": {
+        "A": "Glucoseoxidase",
+        "B": "Hexokinase",
+        "C": "Glycogensynthase",
+        "D": "Glucosedehydrogenase"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "孕婦診斷妊娠糖尿病之口服葡萄糖耐量試驗，其口服葡萄糖量為多少？",
+      "has_image": false,
+      "options": {
+        "A": "150g",
+        "B": "100g",
+        "C": "75g",
+        "D": "7.5g"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "Glucoseoxidase常用來測量血糖，但只會與下列何者作用？",
+      "has_image": false,
+      "options": {
+        "A": "α-D-glucose",
+        "B": "α-L-glucose",
+        "C": "β-D-glucose",
+        "D": "β-L-glucose"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "中等長度的脂肪酸是指含幾個碳？",
+      "has_image": false,
+      "options": {
+        "A": "2-4",
+        "B": "6-10",
+        "C": "12-26",
+        "D": "28-38"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "細胞內合成酯化膽固醇（cholesterolester）的主要酵素為：",
+      "has_image": false,
+      "options": {
+        "A": "Cholesterolesterase",
+        "B": "Cholesteroloxidase",
+        "C": "ACAT",
+        "D": "LCAT"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "某病人的AST和ALT活性皆上升，且ALT>AST，則其最有可能是：",
+      "has_image": false,
+      "options": {
+        "A": "心肌梗塞",
+        "B": "病毒性肝炎",
+        "C": "酒精性肝炎",
+        "D": "胰臟癌"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "測定下列何種酵素不能反映肌肉的疾病？",
+      "has_image": false,
+      "options": {
+        "A": "AST",
+        "B": "CK",
+        "C": "GGT",
+        "D": "LD"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "有關未結合型（unconjugated）bilirubin之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "又稱為α-bilirubin",
+        "B": "水溶性低",
+        "C": "在血液中由albumin所攜帶",
+        "D": "正常成人血清含量<0.2mg/dL"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "檢驗項目中的AFP，其中的“A”所代表的意義為：",
+      "has_image": false,
+      "options": {
+        "A": "電泳的位置",
+        "B": "作用的位置",
+        "C": "單元體的種類",
+        "D": "首先被發現的"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列有關Amylase的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "人類血清中為β-form",
+        "B": "在急性胰臟炎發生5-8小時後，S-type開始明顯上升",
+        "C": "使用opiates之病人，血中濃度會上升",
+        "D": "人類的型式可以切Amylose中的α-1,6-linkage"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "Creatinekinase不穩定，需加入下列何者以防止其在空氣中形成雙硫鍵？",
+      "has_image": false,
+      "options": {
+        "A": "AP A",
+        "B": "EDTA",
+        "C": "Mg2+",
+        "D": "NAC\n5"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "下列何者對膽汁阻塞的檢測特異性最高？",
+      "has_image": false,
+      "options": {
+        "A": "ALP",
+        "B": "ALT",
+        "C": "AST",
+        "D": "5’-nucleotidase"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "在酒精性肝中毒的病人血清中，下列何值會下降？",
+      "has_image": false,
+      "options": {
+        "A": "Albumin",
+        "B": "AST",
+        "C": "GGT",
+        "D": "PT"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "測定血中葡萄糖時，專一性最高的為：",
+      "has_image": false,
+      "options": {
+        "A": "Alkalineferricyanide法",
+        "B": "Glucoseoxidase法",
+        "C": "Condensation法",
+        "D": "Glucosedehydrogenase法"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列何物質常用來檢測ALT酵素活性？",
+      "has_image": false,
+      "options": {
+        "A": "D-alanine",
+        "B": "2-oxoglutarate",
+        "C": "2-oxobutyrate",
+        "D": "pyruvate-5’-phosphate"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "LD的檢測反應中，讓NAD→NADH的適當pH值為何？",
+      "has_image": false,
+      "options": {
+        "A": "10.2",
+        "B": "9.2",
+        "C": "7.6",
+        "D": "5.6"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "下列有關hyper-parathyroidism的血清檢驗判讀，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "Ca↑，P↓",
+        "B": "Ca↑，P↑",
+        "C": "Ca↓，P↓",
+        "D": "Ca↓，P↑"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列有關區分ALP同功酶的方法之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "Wheatgermlectin可讓肝臟型沉澱，使其電泳移動得比骨骼型慢",
+        "B": "Neuraminidase可移除骨骼型上的sialicacid，使其電泳移動得比肝臟型慢",
+        "C": "65℃，30分鐘下，骨骼型的耐熱程度最好",
+        "D": "65℃，30分鐘下，腸型的耐熱程度最好"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "下列何者是highmolecularweightglycoprotein（Mucin）類腫瘤標幟？",
+      "has_image": false,
+      "options": {
+        "A": "ACP",
+        "B": "AFP",
+        "C": "CA125",
+        "D": "PSA"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "Acidphosphatase當作腫瘤標幟，常用來偵測下列那一種癌症？",
+      "has_image": false,
+      "options": {
+        "A": "前列腺癌",
+        "B": "卵巢癌",
+        "C": "乳癌",
+        "D": "胰臟癌"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "欲診斷“巨型澱粉酶症＂時，可藉偵測下列何者來協助判斷？",
+      "has_image": false,
+      "options": {
+        "A": "P-aminohippurateclearance",
+        "B": "AST/ALTratio",
+        "C": "γ-glutamyltransferase/ALPratio",
+        "D": "Amylase/creatinineclearanceratio"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "腫瘤標幟CA19-9常用來偵測下列那一種癌症？",
+      "has_image": false,
+      "options": {
+        "A": "Breastcancer",
+        "B": "Hepatocellularcarcinoma",
+        "C": "Ovariancancer",
+        "D": "Colorectalcancer"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "病人血液作PCO 氣體分析時，若檢體有氣泡，會造成何種影響？\n2",
+      "has_image": false,
+      "options": {
+        "A": "上升",
+        "B": "不變",
+        "C": "下降",
+        "D": "先降後升"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "人登高山時，下列何者會上升？",
+      "has_image": false,
+      "options": {
+        "A": "PO",
+        "B": "2,3-DPG",
+        "C": "Hb與O 的親和力",
+        "D": "PCO\n2 2 2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "要維持血液之pH值為7.4，則HCO - 及H CO 之比率必須為：\n3 2 3",
+      "has_image": false,
+      "options": {
+        "A": "1：10",
+        "B": "1：20",
+        "C": "10：1",
+        "D": "20：1"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "hCG和下列那一種hormone不會有交互作用（crossreaction）？",
+      "has_image": false,
+      "options": {
+        "A": "LH",
+        "B": "ACTH",
+        "C": "FSH",
+        "D": "TSH"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "正常人血清鉀之參考值為：",
+      "has_image": false,
+      "options": {
+        "A": "3.5-5.1μM",
+        "B": "3.5-5.1mg/dL",
+        "C": "3.5-5.1mmol/L",
+        "D": "3.5-5.1mg/L"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "細胞中下列那一種離子的濃度最低？",
+      "has_image": false,
+      "options": {
+        "A": "鈣",
+        "B": "鉀",
+        "C": "鈉",
+        "D": "氯"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列關於有機磷中毒的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "只會抑制Serumcholinesterase，而對Truecholinesterase沒有影響",
+        "B": "會活化Cholinesterase的活性而使Acetylcholine水解",
+        "C": "Lipase的活性會被抑制",
+        "D": "Pseudocholinesterase被抑制的程度大於Truecholinesterase"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "下列何種酵素需要有鎂離子的存在才能正常作用？",
+      "has_image": false,
+      "options": {
+        "A": "phosphatase",
+        "B": "dehydrogenase",
+        "C": "hydrolase",
+        "D": "enolase"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "PCR之三個主要步驟之順序為下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "denature,primerannealing,extension",
+        "B": "primerannealing,denature,extension",
+        "C": "denature,extension,primerannealing",
+        "D": "extension,denature,primerannealing"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "碳酸（H CO ）-重碳酸鹽（HCO -）緩衝系統的pK' 為：\n2 3 3 a",
+      "has_image": false,
+      "options": {
+        "A": "4.1",
+        "B": "5.1",
+        "C": "6.1",
+        "D": "7.1"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "家族性高膽固醇血症（familialhypercholesterolemia;FH）主要是由於下列何種基因缺陷所\n造成？",
+      "has_image": false,
+      "options": {
+        "A": "ACAT",
+        "B": "ApoE",
+        "C": "LCAT",
+        "D": "LDLreceptor"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "Southernblot是用來偵測：",
+      "has_image": false,
+      "options": {
+        "A": "DNA",
+        "B": "RNA",
+        "C": "protein",
+        "D": "lipid"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "以mRNA為模板合成cDNA時，需要用到那一種酵素？",
+      "has_image": false,
+      "options": {
+        "A": "Reversetranscriptase",
+        "B": "RNApolymerase",
+        "C": "T7DNApolymerase",
+        "D": "TaqDNApolymerase"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "根據Beer’s原理，當透光度（transmittance）為1%時，吸光度（absorbance）為：",
+      "has_image": false,
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "10"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "血清保存於室溫環境三天，則那一種酵素的活性會上升？",
+      "has_image": false,
+      "options": {
+        "A": "酸性磷酯酶",
+        "B": "鹼性磷酯酶",
+        "C": "天門冬胺酸轉胺酶",
+        "D": "丙胺酸轉胺酶"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "促進女性卵泡成長以及男性精子生成，在腦下腺前葉分泌的激素是：",
+      "has_image": false,
+      "options": {
+        "A": "濾泡促素",
+        "B": "生長激素",
+        "C": "黃體促素",
+        "D": "睪固酮"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "正常人的血漿glucose約為：",
+      "has_image": false,
+      "options": {
+        "A": "5mM",
+        "B": "5M",
+        "C": "5mg/dL",
+        "D": "50mEq/L"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "若水溶液中X酸的pKa是6.7，當X酸：X酸鈉鹽濃度比為1：10，則該溶液的pH值為：",
+      "has_image": false,
+      "options": {
+        "A": "5.7",
+        "B": "6.7",
+        "C": "7.7",
+        "D": "8.7"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "分析羊水中之下列何者，可預知胎兒的肺部發育是否正常？",
+      "has_image": false,
+      "options": {
+        "A": "Lecithin的含量",
+        "B": "Sphingomyelin的含量",
+        "C": "Cholesterol的含量",
+        "D": "Lecithin/Sphingomyelin的比值"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "Creatinine之排泄量與下列何種組織在體內之含量成正比？",
+      "has_image": false,
+      "options": {
+        "A": "骨骼",
+        "B": "肌肉",
+        "C": "血管",
+        "D": "神經"
+      },
+      "answer": "B",
+      "bonus": false
+    }
+  ]
+}

@@ -11,963 +11,1043 @@
   "questions": [
     {
       "number": 1,
-      "content": "有關光學顯微鏡的10 倍目鏡（10X）和視野數（field number, FN）標示為20，下列何者正確？",
+      "content": "有 關光學顯微鏡的10倍目鏡（10X）和視野數（field number, FN）標示為20，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "目鏡光圈的直徑為 20 mm",
-        "B": "影像解析力為10/20 mm",
-        "C": "檢體實際可視範圍為10/20 mm",
-        "D": "在距離人眼20x10 mm 處，產生虛像，得以觀察放大之影像"
+        "A": "目 鏡光圈的直徑為 20 mm",
+        "B": "影 像解析力為10/20 mm",
+        "C": "檢 體實際可視範圍為10/20 mm",
+        "D": "在 距離人眼20x10 mm處，產生虛像，得以觀察放大之影像"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 2,
-      "content": "使用顯微鏡時，光線通過透鏡後，所形成的影像與完美影像的偏差，稱為相差（Aberration），有關相差的敘\n述，下列何者錯誤？",
+      "content": "使 用顯微鏡時，光線通過透鏡後，所形成的影像與完美影像的偏差，稱為相差（Aberration），有關相差的敘\n述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "光線通過球面透鏡時，光線聚焦在透鏡中央軸上不同的地方稱球面相差（Spherical aberration）",
-        "B": "光線通過球面透鏡時，光線會顯出不同顏色的光，而不同顏色光因折射率不同聚焦在透鏡中央軸上不同地方\n所造成的現象稱色相差（Chromatic aberration）",
-        "C": "色相差（Chromatic aberration）屬於必然的現象，無法做彌補或校正",
-        "D": "顯微鏡使用無限校正鏡頭，可彌補大部分球面相差（Spherical aberration）"
+        "A": "光 線通過球面透鏡時，光線聚焦在透鏡中央軸上不同的地方稱球面相差（Spherical aberration）",
+        "B": "光 線通過球面透鏡時，光線會顯出不同顏色的光，而不同顏色光因折射率不同聚焦在透鏡中央軸上不同地方\n所造成的現象稱色相差（Chromatic aberration）",
+        "C": "色 相差（Chromatic aberration）屬於必然的現象，無法做彌補或校正",
+        "D": "顯 微鏡使用無限校正鏡頭，可彌補大部分球面相差（Spherical aberration）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 3,
-      "content": "若有一新鮮尿液檢體有強烈氨氣味，顯示此尿液最可能是下列何者？",
+      "content": "若 有一新鮮尿液檢體有強烈氨氣味，顯示此尿液最可能是下列何者？",
       "has_image": false,
       "options": {
-        "A": "酮尿",
-        "B": "正常尿",
-        "C": "苯酮尿",
-        "D": "菌尿"
+        "A": "酮 尿",
+        "B": "正 常尿",
+        "C": "苯 酮尿",
+        "D": "菌 尿"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 4,
-      "content": "以尿試紙法檢測尿潛血反應，下列何者常呈陰性結果？",
+      "content": "以 尿試紙法檢測尿潛血反應，下列何者常呈陰性結果？",
       "has_image": false,
       "options": {
-        "A": "血尿（Hematuria）",
-        "B": "血紅素尿（Hemoglobinuria）",
-        "C": "肌紅素尿（Myoglobinuria）",
-        "D": "血鐵質尿（Hemosiderinuria）"
+        "A": "血 尿（Hematuria）",
+        "B": "血 紅素尿（Hemoglobinuria）",
+        "C": "肌 紅素尿（Myoglobinuria）",
+        "D": "血 鐵質尿（Hemosiderinuria）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 5,
-      "content": "下列何種方法可用來檢測尿液酮體？①Acetest ②Clinitest ③Rothera test ④Watson-Schwartz test",
+      "content": "下 列何種方法可用來檢測尿液酮體？①Acetest ②Clinitest ③Rothera test ④Watson-Schwartz test",
       "has_image": false,
       "options": {
-        "A": "①②",
-        "B": "③④",
-        "C": "①③",
-        "D": "②④"
+        "A": "① ②",
+        "B": "③ ④",
+        "C": "① ③",
+        "D": "② ④"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 6,
-      "content": "下列何種蛋白質係由腎小管上皮細胞所製造？",
+      "content": "下 列何種蛋白質係由腎小管上皮細胞所製造？",
       "has_image": false,
       "options": {
-        "A": "Albumin",
-        "B": "β2-Microglobulin",
-        "C": "Bence-Jones protein",
-        "D": "Uromodulin（Tamm-Horsfall protein）"
+        "A": "A lbumin",
+        "B": "β -Microglobulin\n2",
+        "C": "B ence-Jones protein",
+        "D": "U romodulin（Tamm-Horsfall protein）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 7,
-      "content": "常規尿液試紙檢查結果，無法提供下列何者相關的異常訊息？",
+      "content": "常 規尿液試紙檢查結果，無法提供下列何者相關的異常訊息？",
       "has_image": false,
       "options": {
-        "A": "肝臟疾病",
-        "B": "心臟疾病",
-        "C": "酸鹼平衡",
-        "D": "醣類及脂肪代謝"
+        "A": "肝 臟疾病",
+        "B": "心 臟疾病",
+        "C": "酸 鹼平衡",
+        "D": "醣 類及脂肪代謝"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 8,
-      "content": "關於尿蛋白的敘述，下列何者錯誤？",
+      "content": "關 於尿蛋白的敘述，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "可作為評估腎病的指標",
-        "B": "分子量約50～60 kD 以下的蛋白較易從腎絲球基底膜過濾",
-        "C": "常見蛋白尿類型的以白蛋白居多",
-        "D": "任何種類的尿蛋白皆可被尿試紙測出結果"
+        "A": "可 作為評估腎病的指標",
+        "B": "分 子量約50～60 kD 以下的蛋白較易從腎絲球基底膜過濾",
+        "C": "常 見蛋白尿類型的以白蛋白居多",
+        "D": "任 何種類的尿蛋白皆可被尿試紙測出結果"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 9,
-      "content": "醛固酮（aldosterone）作用於何處，促使鈉再吸收及鉀排出？",
+      "content": "醛 固酮（aldosterone）作用於何處，促使鈉再吸收及鉀排出？",
       "has_image": false,
       "options": {
-        "A": "近曲小管",
-        "B": "亨利式環下降枝",
-        "C": "亨利式環上升枝",
-        "D": "遠曲小管"
+        "A": "近 曲小管",
+        "B": "亨 利式環下降枝",
+        "C": "亨 利式環上升枝",
+        "D": "遠 曲小管"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 10,
-      "content": "下列圖中尿液比重計顯示檢體比重為何者？",
+      "content": "下 列圖中尿液比重計顯示檢體比重為何者？",
       "has_image": false,
       "options": {
-        "A": "1.010",
-        "B": "1.019",
-        "C": "1.20",
-        "D": "1.30"
+        "A": "1 .010",
+        "B": "1 .019",
+        "C": "1 .20",
+        "D": "1 .30"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 11,
-      "content": "承上題，此尿液檢體若含有1 g/dL protein 與1 g/dL glucose，則此尿液檢體的比重檢驗報告應為下列何\n者？",
+      "content": "承 上題，此尿液檢體若含有1 g/dL protein與1 g/dL glucose，則此尿液檢體的比重檢驗報告應為下列何\n者？",
       "has_image": false,
       "options": {
-        "A": "1.012",
-        "B": "1.026",
-        "C": "1.13",
-        "D": "1.26"
+        "A": "1 .012",
+        "B": "1 .026",
+        "C": "1 .13",
+        "D": "1 .26"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 12,
-      "content": "糞便潛血檢測時可透過呈色劑的氧化而判別陽性反應，下列何種呈色劑的敏感度最高？",
+      "content": "糞 便潛血檢測時可透過呈色劑的氧化而判別陽性反應，下列何種呈色劑的敏感度最高？",
       "has_image": false,
       "options": {
-        "A": "Guaiac",
-        "B": "Benzidine",
-        "C": "o-Toluidine",
-        "D": "Ehrlich aldehyde"
+        "A": "G uaiac",
+        "B": "B enzidine",
+        "C": "o -Toluidine",
+        "D": "E hrlich aldehyde"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 13,
-      "content": "下列何種糞便潛血試驗使用逆被動血球凝集原理（reverse passive hemagglutination）？",
+      "content": "下 列何種糞便潛血試驗使用逆被動血球凝集原理（reverse passive hemagglutination）？",
       "has_image": false,
       "options": {
-        "A": "HemoQuant test",
-        "B": "Hemoccult ICT test",
-        "C": "HemeSelect test",
-        "D": "Eiken OC-LIGHT test"
+        "A": "H emoQuant test",
+        "B": "H emoccult ICT test",
+        "C": "H emeSelect test",
+        "D": "E iken OC-LIGHT test"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 14,
-      "content": "下列何種阿米巴囊體或滋養體具有一個核，核仁通常在中央、體積小？",
+      "content": "下 列何種阿米巴囊體或滋養體具有一個核，核仁通常在中央、體積小？",
       "has_image": false,
       "options": {
-        "A": "痢疾阿米巴成熟囊體",
-        "B": "痢疾阿米巴滋養體",
-        "C": "大腸阿米巴成熟囊體",
-        "D": "微小阿米巴的囊體"
+        "A": "痢 疾阿米巴成熟囊體",
+        "B": "痢 疾阿米巴滋養體",
+        "C": "大 腸阿米巴成熟囊體",
+        "D": "微 小阿米巴的囊體"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 15,
-      "content": "下列何種病患的糞便表面常附著染有血液的黏液？",
+      "content": "下 列何種病患的糞便表面常附著染有血液的黏液？",
       "has_image": false,
       "options": {
-        "A": "脂肪痢",
-        "B": "胃出血",
-        "C": "總膽管阻塞",
-        "D": "直腸腫瘤"
+        "A": "脂 肪痢",
+        "B": "胃 出血",
+        "C": "總 膽管阻塞",
+        "D": "直 腸腫瘤"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 16,
-      "content": "痰液採集時，下列何種方法會使用生理食鹽水？",
+      "content": "痰 液採集時，下列何種方法會使用生理食鹽水？",
       "has_image": false,
       "options": {
-        "A": "誘導方法",
-        "B": "支氣管肺泡灌洗法",
-        "C": "咳嗽拭子法",
-        "D": "氣管穿刺抽痰"
+        "A": "誘 導方法",
+        "B": "支 氣管肺泡灌洗法",
+        "C": "咳 嗽拭子法",
+        "D": "氣 管穿刺抽痰"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 17,
-      "content": "痰液發現緻密且位於邊緣的細胞核，含有黑色碳物質顆粒的細胞質，可能是下列何種細胞？",
+      "content": "痰 液發現緻密且位於邊緣的細胞核，含有黑色碳物質顆粒的細胞質，可能是下列何種細胞？",
       "has_image": false,
       "options": {
-        "A": "巨噬細胞",
-        "B": "淋巴球",
-        "C": "嗜中性白血球",
-        "D": "杯狀細胞"
+        "A": "巨 噬細胞",
+        "B": "淋 巴球",
+        "C": "嗜 中性白血球",
+        "D": "杯 狀細胞"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 18,
-      "content": "發燒中王小弟的腦脊髓液檢驗數據如下：白血球數上升、葡萄糖量正常、乳酸量正常，下列何項進一步檢查\n所得結果陽性最相關？",
+      "content": "發 燒中王小弟的腦脊髓液檢驗數據如下：白血球數上升、葡萄糖量正常、乳酸量正常，下列何項進一步檢查\n所得結果陽性最相關？",
       "has_image": false,
       "options": {
-        "A": "顯微鏡檢發現acid-fast 陽性菌",
-        "B": "乳膠凝集法檢驗N. meningitidis",
-        "C": "印度墨水染色法檢驗C. neoformans",
-        "D": "核酸聚合酶連鎖反應檢驗Enterovirus 71"
+        "A": "顯 微鏡檢發現acid-fast陽性菌",
+        "B": "乳 膠凝集法檢驗N. meningitidis",
+        "C": "印 度墨水染色法檢驗C. neoformans",
+        "D": "核 酸聚合酶連鎖反應檢驗Enterovirus 71"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 19,
-      "content": "因穿刺出血導致腦脊髓液總蛋白質增加，下列何者與其校正公式無關？",
+      "content": "因 穿刺出血導致腦脊髓液總蛋白質增加，下列何者與其校正公式無關？",
       "has_image": false,
       "options": {
-        "A": "血清總蛋白濃度",
-        "B": "血球比容",
-        "C": "血液紅血球計數",
-        "D": "血液白血球計數"
+        "A": "血 清總蛋白濃度",
+        "B": "血 球比容",
+        "C": "血 液紅血球計數",
+        "D": "血 液白血球計數"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 20,
-      "content": "滲出液（Exudates）常見於下列何種疾病？",
+      "content": "滲 出液（Exudates）常見於下列何種疾病？",
       "has_image": false,
       "options": {
-        "A": "充血性心臟衰竭",
-        "B": "肝硬化",
-        "C": "胰臟炎",
-        "D": "腎病症候群"
+        "A": "充 血性心臟衰竭",
+        "B": "肝 硬化",
+        "C": "胰 臟炎",
+        "D": "腎 病症候群"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 21,
-      "content": "全身性紅斑狼瘡的病人，胸膜液中那一種白血球比例＞50%？",
+      "content": "全 身性紅斑狼瘡的病人，胸膜液中那一種白血球比例＞50%？",
       "has_image": false,
       "options": {
-        "A": "嗜中性白血球",
-        "B": "淋巴球",
-        "C": "嗜酸性白血球",
-        "D": "嗜鹼性白血球"
+        "A": "嗜 中性白血球",
+        "B": "淋 巴球",
+        "C": "嗜 酸性白血球",
+        "D": "嗜 鹼性白血球"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 22,
-      "content": "假性乳糜性積液（pseudochylous effusion）有下列何種結晶出現，可與真性乳糜性積液（chylous \neffusion）做區分？",
+      "content": "假 性乳糜性積液（pseudochylous effusion）有下列何種結晶出現，可與真性乳糜性積液（chylous\neffusion）做區分？",
       "has_image": false,
       "options": {
-        "A": "尿酸",
-        "B": "膽固醇",
-        "C": "草酸鈣",
-        "D": "不定形磷酸鹽"
+        "A": "尿 酸",
+        "B": "膽 固醇",
+        "C": "草 酸鈣",
+        "D": "不 定形磷酸鹽"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 23,
-      "content": "關於胸膜液（pleural fluid）顯微鏡檢查之敘述，下列何者正確？",
+      "content": "關 於胸膜液（pleural fluid）顯微鏡檢查之敘述，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "以肝素抗凝管進行白血球分類計數",
-        "B": "外觀呈現血液狀的檢體，可使用蒸餾水作為稀釋液以溶解紅血球，進行白血球計數",
-        "C": "檢體含有高量蛋白質時，冰醋酸不能用作稀釋液",
-        "D": "進行白血球分類計數時，檢體不能離心，以避免血球破裂"
+        "A": "以 肝素抗凝管進行白血球分類計數",
+        "B": "外 觀呈現血液狀的檢體，可使用蒸餾水作為稀釋液以溶解紅血球，進行白血球計數",
+        "C": "檢 體含有高量蛋白質時，冰醋酸不能用作稀釋液",
+        "D": "進 行白血球分類計數時，檢體不能離心，以避免血球破裂"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 24,
-      "content": "以血球計算盤計算關節液之白血球數目，若檢體稀釋2 倍後計算4 大方格，總數為20 顆白血球，則其計數為\n多少個/μL？",
+      "content": "以 血球計算盤計算關節液之白血球數目，若檢體稀釋2倍後計算4大方格，總數為20顆白血球，則其計數為\n多少個/μL？",
       "has_image": false,
       "options": {
-        "A": "50",
-        "B": "100",
-        "C": "500",
-        "D": "1,000"
+        "A": "5 0",
+        "B": "1 00",
+        "C": "5 00",
+        "D": "1 ,000"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 25,
-      "content": "承上題，此結果最可能為下列何者？",
+      "content": "承 上題，此結果最可能為下列何者？",
       "has_image": false,
       "options": {
-        "A": "正常",
-        "B": "敗血性關節炎",
-        "C": "類風濕性關節炎",
-        "D": "痛風"
+        "A": "正 常",
+        "B": "敗 血性關節炎",
+        "C": "類 風濕性關節炎",
+        "D": "痛 風"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 26,
-      "content": "下列何者會導致關節疾病的關節液發生凝固現象？",
+      "content": "下 列何者會導致關節疾病的關節液發生凝固現象？",
       "has_image": false,
       "options": {
-        "A": "補體",
-        "B": "白蛋白",
-        "C": "纖維蛋白原",
-        "D": "嗜中性白血球"
+        "A": "補 體",
+        "B": "白 蛋白",
+        "C": "纖 維蛋白原",
+        "D": "嗜 中性白血球"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 27,
-      "content": "精蟲生成過程中，最後在下列何者成熟並具有活動力？",
+      "content": "精 蟲生成過程中，最後在下列何者成熟並具有活動力？",
       "has_image": false,
       "options": {
-        "A": "睪丸",
-        "B": "附睪",
-        "C": "精囊",
-        "D": "前列腺"
+        "A": "睪 丸",
+        "B": "附 睪",
+        "C": "精 囊",
+        "D": "前 列腺"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 28,
-      "content": "當精蟲數量正常但運動性異常時，應加選下列何種試驗？",
+      "content": "當 精蟲數量正常但運動性異常時，應加選下列何種試驗？",
       "has_image": false,
       "options": {
-        "A": "H&E 染色",
-        "B": "前列腺素濃度",
-        "C": "鋅濃度",
-        "D": "eosin-nigrosin 染色"
+        "A": "H &E染色",
+        "B": "前 列腺素濃度",
+        "C": "鋅 濃度",
+        "D": "e osin-nigrosin染色"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 29,
-      "content": "有關檢測人類絨毛膜性腺激素（hCG）的免疫學方法，下列敘述何者正確？",
+      "content": "有 關檢測人類絨毛膜性腺激素（hCG）的免疫學方法，下列敘述何者正確？",
       "has_image": false,
       "options": {
-        "A": "採用抗α次單元抗體（anti-α hCG），可以降低與黃體促素（LH）的交叉反應",
-        "B": "乳膠顆粒凝集抑制分析法（latex particle agglutination inhibition assay），發生凝集即為陽性",
-        "C": "放射受體分析法（radioreceptor assay, RRA），較放射免疫法（radioimmunoassay, RIA），更快速且特\n異性高",
-        "D": "固相免疫分析法（solid phase immunoassay），使用雙抗體，必須辨識不同的抗原表位（hCG epitopes）"
+        "A": "採 用抗α次單元抗體（anti-α hCG），可以降低與黃體促素（LH）的交叉反應",
+        "B": "乳 膠顆粒凝集抑制分析法（latex particle agglutination inhibition assay），發生凝集即為陽性",
+        "C": "放 射受體分析法（radioreceptor assay, RRA），較放射免疫法（radioimmunoassay, RIA），更快速且特\n異性高",
+        "D": "固 相免疫分析法（solid phase immunoassay），使用雙抗體，必須辨識不同的抗原表位（hCG epitopes）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 30,
-      "content": "血清人類絨毛膜性腺激素（hCG）的檢測，下列何者可用於協助診斷睪丸腫瘤？",
+      "content": "血 清人類絨毛膜性腺激素（hCG）的檢測，下列何者可用於協助診斷睪丸腫瘤？",
       "has_image": false,
       "options": {
-        "A": "hCG 與甲型胎兒蛋白(AFP)",
-        "B": "hCG 與睪固酮（testosterone）",
-        "C": "游離α-hCG 與甲型胎兒蛋白（AFP）的比值",
-        "D": "游離β-hCG 與甲型胎兒蛋白（AFP）的比值"
+        "A": "h CG與甲型胎兒蛋白(AFP)",
+        "B": "h CG與睪固酮（testosterone）",
+        "C": "游 離α-hCG與甲型胎兒蛋白（AFP）的比值",
+        "D": "游 離β-hCG與甲型胎兒蛋白（AFP）的比值"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 31,
-      "content": "下列那個蟲卵卵殼沒有放射狀紋？",
+      "content": "下 列那個蟲卵卵殼沒有放射狀紋？",
       "has_image": false,
       "options": {
-        "A": "菲律賓毛細線蟲（Capillaria philippinensis）",
-        "B": "肝毛細線蟲（Capillaria hepatica）",
-        "C": "縮小胞膜絛蟲（Hymenolepis diminuta）",
-        "D": "豬肉絛蟲（Taenia solium）"
+        "A": "菲 律賓毛細線蟲（Capillaria philippinensis）",
+        "B": "肝 毛細線蟲（Capillaria hepatica）",
+        "C": "縮 小胞膜絛蟲（Hymenolepis diminuta）",
+        "D": "豬 肉絛蟲（Taenia solium）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 32,
-      "content": "以顯微鏡檢查糞便檢體，最不可能檢查到下列何者的囊體（cyst）？",
+      "content": "以 顯微鏡檢查糞便檢體，最不可能檢查到下列何者的囊體（cyst）？",
       "has_image": false,
       "options": {
-        "A": "嗜碘阿米巴（Iodamoeba bütschlii）",
-        "B": "大腸阿米巴（Entamoeba coli）",
-        "C": "雙核阿米巴（Dientamoeba fragilis）",
-        "D": "哈門氏阿米巴（Entamoeba hartmanni）"
+        "A": "嗜 碘阿米巴（Iodamoeba bütschlii）",
+        "B": "大 腸阿米巴（Entamoeba coli）",
+        "C": "雙 核阿米巴（Dientamoeba fragilis）",
+        "D": "哈 門氏阿米巴（Entamoeba hartmanni）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 33,
-      "content": "下列何者是造成日本血吸蟲（Schistosoma japonicum）患者肝臟病變的主要原因？",
+      "content": "下 列何者是造成日本血吸蟲（Schistosoma japonicum）患者肝臟病變的主要原因？",
       "has_image": false,
       "options": {
-        "A": "成蟲",
-        "B": "尾幼（cercariae）",
-        "C": "童蟲（schistosomula）",
-        "D": "蟲卵"
+        "A": "成 蟲",
+        "B": "尾 幼（cercariae）",
+        "C": "童 蟲（schistosomula）",
+        "D": "蟲 卵"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 34,
-      "content": "下列何者不會出現在衛氏肺吸蟲（Paragonimus westermani）病人的痰液中？",
+      "content": "下 列何者不會出現在衛氏肺吸蟲（Paragonimus westermani）病人的痰液中？",
       "has_image": false,
       "options": {
-        "A": "蟲卵",
-        "B": "血絲",
-        "C": "Charcot-Leyden 結晶",
-        "D": "原頭節（protoscolices）"
+        "A": "蟲 卵",
+        "B": "血 絲",
+        "C": "C harcot-Leyden結晶",
+        "D": "原 頭節（protoscolices）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 35,
-      "content": "檢查福氏內格里阿米巴（Naegleria fowleri）病人腦脊髓液時，可能有下列何種發現？①看到滋養體\n（trophozoites） ②嗜酸性白血球增加 ③蛋白質濃度上升",
+      "content": "檢 查福氏內格里阿米巴（Naegleria fowleri）病人腦脊髓液時，可能有下列何種發現？①看到滋養體\n（trophozoites） ②嗜酸性白血球增加 ③蛋白質濃度上升",
       "has_image": false,
       "options": {
-        "A": "僅①②",
-        "B": "僅①③",
-        "C": "僅②③",
-        "D": "①②③"
+        "A": "僅 ①②",
+        "B": "僅 ①③",
+        "C": "僅 ②③",
+        "D": "① ②③"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 36,
-      "content": "下列何者於感染早期，會在患者皮膚形成恰克氏瘤（chagoma）？",
+      "content": "下 列何者於感染早期，會在患者皮膚形成恰克氏瘤（chagoma）？",
       "has_image": false,
       "options": {
-        "A": "蟠尾絲蟲（Onchocerca volvulus）",
-        "B": "枯西氏錐蟲（Trypanosoma cruzi）",
-        "C": "杜氏利什曼原蟲（Leishmania donovani）",
-        "D": "弓蟲（Toxoplasma gondii）"
+        "A": "蟠 尾絲蟲（Onchocerca volvulus）",
+        "B": "枯 西氏錐蟲（Trypanosoma cruzi）",
+        "C": "杜 氏利什曼原蟲（Leishmania donovani）",
+        "D": "弓 蟲（Toxoplasma gondii）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 37,
-      "content": "測定糞便中Elastase I 的含量可做為下列何種疾病的輔助診斷？",
+      "content": "測 定糞便中Elastase I的含量可做為下列何種疾病的輔助診斷？",
       "has_image": false,
       "options": {
-        "A": "肝硬化",
-        "B": "直腸癌",
-        "C": "胰臟功能不足",
-        "D": "乳糖不耐症"
+        "A": "肝 硬化",
+        "B": "直 腸癌",
+        "C": "胰 臟功能不足",
+        "D": "乳 糖不耐症"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 38,
-      "content": "腦脊髓液進行細胞離心之前，可加入下列何者以增加細胞貼附性並減少細胞變形？",
+      "content": "腦 脊髓液進行細胞離心之前，可加入下列何者以增加細胞貼附性並減少細胞變形？",
       "has_image": false,
       "options": {
-        "A": "生理食鹽水",
-        "B": "30% 白蛋白",
-        "C": "3% 醋酸",
-        "D": "1% 皂素（saponin）"
+        "A": "生 理食鹽水",
+        "B": "3 0% 白蛋白",
+        "C": "3 % 醋酸",
+        "D": "1 % 皂素（saponin）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 39,
-      "content": "下列何種染色法主要用於糞便隱孢子蟲（Cryptosporidium）與環孢子蟲（Cyclospora）的檢驗？",
+      "content": "下 列何種染色法主要用於糞便隱孢子蟲（Cryptosporidium）與環孢子蟲（Cyclospora）的檢驗？",
       "has_image": false,
       "options": {
-        "A": "Acid-fast stain",
-        "B": "Iodine stain",
-        "C": "Samson stain",
-        "D": "Hansel’s stain"
+        "A": "A cid-fast stain",
+        "B": "I odine stain",
+        "C": "S amson stain",
+        "D": "H ansel’s stain"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 40,
-      "content": "下列何者於採集後可經玻尿酸酶處理降低黏稠性，以利血球計數？",
+      "content": "下 列何者於採集後可經玻尿酸酶處理降低黏稠性，以利血球計數？",
       "has_image": false,
       "options": {
-        "A": "腦脊髓液",
-        "B": "腹膜液",
-        "C": "滑膜液",
-        "D": "精液"
+        "A": "腦 脊髓液",
+        "B": "腹 膜液",
+        "C": "滑 膜液",
+        "D": "精 液"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 41,
-      "content": "下列何者為5'-AGCCCCGACTCTATTC-3'的DNA 互補股？",
+      "content": "下 列何者為5'-AGCCCCGACTCTATTC-3'的DNA互補股？",
       "has_image": false,
       "options": {
-        "A": "5'-TCGGGGCTGAGATAAG-3'",
-        "B": "5'-GAATAGAGTCGGGGCT-3'",
-        "C": "5'-GAAUAGAGUCGGGGCU-3'",
-        "D": "5'-UCGGGGCUGAGAUAAG-3'"
+        "A": "5 '-TCGGGGCTGAGATAAG-3'",
+        "B": "5 '-GAATAGAGTCGGGGCT-3'",
+        "C": "5 '-GAAUAGAGUCGGGGCU-3'",
+        "D": "5 '-UCGGGGCUGAGAUAAG-3'"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 42,
-      "content": "下列基因突變的紀錄，何者錯誤？",
+      "content": "下 列基因突變的紀錄，何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "c.1253_1254insC",
-        "B": "c.324_329insGAAGT",
-        "C": "c.1253dup",
-        "D": "c.250C>T"
+        "A": "c .1253_1254insC",
+        "B": "c .324_329insGAAGT",
+        "C": "c .1253dup",
+        "D": "c .250C>T"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 43,
-      "content": "關於 E. coli 染色體DNA 複製的敘述，下列何者最不適當？",
+      "content": "關 於 E. coli染色體DNA複製的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "DNA helicase 負責解開複製叉（replication fork）前面的雙螺旋結構",
-        "B": "Okazaki fragments 主要是由DNA polymerase I 複製",
-        "C": "DNA polymerase II 不參與染色體複製",
-        "D": "完成整個染色體複製的時間約40 分鐘"
+        "A": "D NA helicase負責解開複製叉（replication fork）前面的雙螺旋結構",
+        "B": "O kazaki fragments主要是由DNA polymerase I 複製",
+        "C": "D NA polymerase II 不參與染色體複製",
+        "D": "完 成整個染色體複製的時間約40分鐘"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 44,
-      "content": "先天性遺傳疾病中，透納氏症（Turner syndrome）與下列何者最相關？",
+      "content": "先 天性遺傳疾病中，透納氏症（Turner syndrome）與下列何者最相關？",
       "has_image": false,
       "options": {
-        "A": "單染色體 X（monosomy X）",
-        "B": "第13 號染色體三體（trisomy 13）",
-        "C": "第18 號染色體三體（trisomy 18）",
-        "D": "粒線體基因發生點突變或大片段缺損影響了ATPase 功能"
+        "A": "單 染色體 X（monosomy X）",
+        "B": "第 13號染色體三體（trisomy 13）",
+        "C": "第 18號染色體三體（trisomy 18）",
+        "D": "粒 線體基因發生點突變或大片段缺損影響了ATPase功能"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 45,
-      "content": "關於乙型海洋性貧血（β-thalassemia）的突變，下列何種最常見？",
+      "content": "關 於乙型海洋性貧血（β-thalassemia）的突變，下列何種最常見？",
       "has_image": false,
       "options": {
-        "A": "點突變（point mutation）",
-        "B": "基因刪除（gene deletion）",
-        "C": "DNA 倒轉（DNA inversion）",
-        "D": "染色體易位（chromosome translocation）"
+        "A": "點 突變（point mutation）",
+        "B": "基 因刪除（gene deletion）",
+        "C": "D NA倒轉（DNA inversion）",
+        "D": "染 色體易位（chromosome translocation）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 46,
-      "content": "組織固定液對核酸品質的影響，由影響最弱至最強排列為何？①10% buffered neutral formalin ②\nparaformaldehyde ③Carnoy's fixative ④Bouin's fixative",
+      "content": "組 織固定液對核酸品質的影響，由影響最弱至最強排列為何？①10% buffered neutral formalin ②\nparaformaldehyde ③Carnoy's fixative ④Bouin's fixative",
       "has_image": false,
       "options": {
-        "A": "①②③④",
-        "B": "②①③④",
-        "C": "③①②④",
-        "D": "④①②③"
+        "A": "① ②③④",
+        "B": "② ①③④",
+        "C": "③ ①②④",
+        "D": "④ ①②③"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 47,
-      "content": "關於核酸的敘述，下列何者最不適當？",
+      "content": "關 於核酸的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "可以用鹼性溶解法（alkaline lysis methods）處理Gram-negative bacteria 來將核酸釋出",
-        "B": "從檢體中執行核酸萃取，只能萃取出DNA 或是RNA 的其中一種",
-        "C": "萃取出的RNA 較不穩定，最好是保存在-70℃，並儘快執行後續分析",
-        "D": "可以使用紫外分光光度計，測定260 nm 吸光度並換算為核酸量"
+        "A": "可 以用鹼性溶解法（alkaline lysis methods）處理Gram-negative bacteria來將核酸釋出",
+        "B": "從 檢體中執行核酸萃取，只能萃取出DNA或是RNA的其中一種",
+        "C": "萃 取出的RNA較不穩定，最好是保存在-70℃，並儘快執行後續分析",
+        "D": "可 以使用紫外分光光度計，測定260 nm吸光度並換算為核酸量"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 48,
-      "content": "關於巢式聚合酶連鎖反應（nested PCR）的敘述，下列何者最不適當？",
+      "content": "關 於巢式聚合酶連鎖反應（nested PCR）的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "是將第一次PCR 反應的產物作為第二次PCR 反應的模板",
-        "B": "需設計兩組引子（primer）",
-        "C": "通常在模板DNA 含量較高時使用",
-        "D": "所使用的第二組引子（primer）會結合在第一次PCR 產物的內部"
+        "A": "是 將第一次PCR反應的產物作為第二次PCR反應的模板",
+        "B": "需 設計兩組引子（primer）",
+        "C": "通 常在模板DNA含量較高時使用",
+        "D": "所 使用的第二組引子（primer）會結合在第一次PCR產物的內部"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 49,
-      "content": "如圖為genomic DNA 經過bisulfite conversion 後，利用圖中所示探針進行MethyLight 分析所得之擴增曲\n線，下列敘述何者最不適當？",
+      "content": "如 圖為genomic DNA經過bisulfite conversion後，利用圖中所示探針進行MethyLight分析所得之擴增曲\n線，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "此區域中有4 個CpG 位點",
-        "B": "可用於檢測腫瘤檢體中抑癌基因啟動子區域是否有高度甲基化的現象",
+        "A": "此 區域中有4個CpG位點",
+        "B": "可 用於檢測腫瘤檢體中抑癌基因啟動子區域是否有高度甲基化的現象",
         "C": "a 曲線是基因啟動子區域沒有甲基化的結果",
-        "D": "可選用富含CpG 位點的Alu elements 來作為DNA input control"
+        "D": "可 選用富含CpG位點的Alu elements來作為DNA input control"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 50,
-      "content": "下列那個限制酶的切割作用會受CpG 甲基化的影響？",
+      "content": "下 列那個限制酶的切割作用會受CpG甲基化的影響？",
       "has_image": false,
       "options": {
-        "A": "MspI",
-        "B": "HpaII",
-        "C": "KpnI",
-        "D": "NdeI"
+        "A": "M spI",
+        "B": "H paII",
+        "C": "K pnI",
+        "D": "N deI"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 51,
-      "content": "下列何種情況最不適合使用次世代定序技術來進行檢測？",
+      "content": "下 列何種情況最不適合使用次世代定序技術來進行檢測？",
       "has_image": false,
       "options": {
-        "A": "多基因造成的遺傳疾病",
-        "B": "人類白血球抗原分型",
-        "C": "已知家族遺傳突變位點的單基因遺傳疾病",
-        "D": "計算腫瘤突變量來評估是否適用免疫檢查點抑制劑"
+        "A": "多 基因造成的遺傳疾病",
+        "B": "人 類白血球抗原分型",
+        "C": "已 知家族遺傳突變位點的單基因遺傳疾病",
+        "D": "計 算腫瘤突變量來評估是否適用免疫檢查點抑制劑"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 52,
-      "content": "針對單一核苷酸多型性（single nucleotide polymorphism, SNP）或單一核苷酸變異（single nucleotide \nvariation, SNV）晶片的臨床檢驗應用，下列敘述何者最不適當？",
+      "content": "針 對單一核苷酸多型性（single nucleotide polymorphism, SNP）或單一核苷酸變異（single nucleotide\nvariation, SNV）晶片的臨床檢驗應用，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "可用於已知HLA 相關藥物基因體檢測",
-        "B": "可以檢驗受試者具有特定疾病的發生風險",
-        "C": "可用於抗藥性病原體的檢驗",
-        "D": "可以篩檢新穎（novel）單一核苷酸變異位點"
+        "A": "可 用於已知HLA相關藥物基因體檢測",
+        "B": "可 以檢驗受試者具有特定疾病的發生風險",
+        "C": "可 用於抗藥性病原體的檢驗",
+        "D": "可 以篩檢新穎（novel）單一核苷酸變異位點"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 53,
-      "content": "序列特異聚合酶連鎖反應（polymerase chain reaction-seguence-specific primers, PCR-SSP）是基於\nsequence-specific primers 進行多樣性基因分型，下列敘述何者最不適當？",
+      "content": "序 列特異聚合酶連鎖反應（polymerase chain reaction-seguence-specific primers, PCR-SSP）是基於\nsequence-specific primers進行多樣性基因分型，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "臨床上可用在 human leukocyte antigen（HLA）typing",
-        "B": "使用的Taq DNA polymerase，需要有3'端至5'端exonuclease 活性",
-        "C": "操作時，需有增幅內生性對照組（internal control）",
-        "D": "反應完後，需要進行電泳分析"
+        "A": "臨 床上可用在 human leukocyte antigen（HLA）typing",
+        "B": "使 用的Taq DNA polymerase，需要有3'端至5'端exonuclease活性",
+        "C": "操 作時，需有增幅內生性對照組（internal control）",
+        "D": "反 應完後，需要進行電泳分析"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 54,
-      "content": "下列何種等位基因特異性檢驗方法，需要在基因放大且經限制酶切割後，再進行膠體電泳分析？",
+      "content": "下 列何種等位基因特異性檢驗方法，需要在基因放大且經限制酶切割後，再進行膠體電泳分析？",
       "has_image": false,
       "options": {
-        "A": "amplification refractory mutation system（ARMS）",
-        "B": "mutagenically separated PCR（MS-PCR）",
-        "C": "chemical cleavage of mismatch duplexes（CCM）",
-        "D": "amplified created restriction sites（ACRS）"
+        "A": "a mplification refractory mutation system（ARMS）",
+        "B": "m utagenically separated PCR（MS-PCR）",
+        "C": "c hemical cleavage of mismatch duplexes（CCM）",
+        "D": "a mplified created restriction sites（ACRS）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 55,
-      "content": "原位螢光雜交法（FISH）是利用螢光探針偵測細胞內特定之DNA 序列，下列敘述何者最不適當？",
+      "content": "原 位螢光雜交法（FISH）是利用螢光探針偵測細胞內特定之DNA序列，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "進行interphase FISH 時，所使用的probe 長度建議為60～200 kb",
-        "B": "使用全染色體探針時，建議進行interphase FISH",
-        "C": "偵測translocation 時，可設計兩條probes 進行檢測",
-        "D": "進行metaphase FISH 時，需加入colcemides，使細胞停在metaphase"
+        "A": "進 行interphase FISH時，所使用的probe長度建議為60～200 kb",
+        "B": "使 用全染色體探針時，建議進行interphase FISH",
+        "C": "偵 測translocation時，可設計兩條probes進行檢測",
+        "D": "進 行metaphase FISH時，需加入colcemides，使細胞停在metaphase"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 56,
-      "content": "在比較配對檢體之蛋白質的差別，下列何種分離方法可以最有效減少操作過程的誤差？",
+      "content": "在 比較配對檢體之蛋白質的差別，下列何種分離方法可以最有效減少操作過程的誤差？",
       "has_image": false,
       "options": {
-        "A": "二維電泳分析（2D-PAGE）",
-        "B": "磁珠親和分離法（Beadbased affinity fractionation）",
-        "C": "螢光染劑標示二維凝膠電泳（fluorescent two dimensional difference in-gel electrophoresis, \nfluorescent 2D-DIGE）",
-        "D": "膠體過濾層析法（gel filtration chromatography）"
+        "A": "二 維電泳分析（2D-PAGE）",
+        "B": "磁 珠親和分離法（Beadbased affinity fractionation）",
+        "C": "螢 光染劑標示二維凝膠電泳（fluorescent two dimensional difference in-gel electrophoresis,\nfluorescent 2D-DIGE）",
+        "D": "膠 體過濾層析法（gel filtration chromatography）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 57,
-      "content": "微陣列比較型基因組雜交（array comparative genomic hybridization, aCGH）晶片分析是目前臨床用於進\n行基因體檢測的工具之一；關於aCGH 的敘述，下列何者最正確？",
+      "content": "微 陣列比較型基因組雜交（array comparative genomic hybridization, aCGH）晶片分析是目前臨床用於進\n行基因體檢測的工具之一；關於aCGH的敘述，下列何者最正確？",
       "has_image": false,
       "options": {
-        "A": "aCGH 適用於檢測特定基因產出攜訊核糖核酸（mRNA）的表現量",
-        "B": "可以使用aCGH 鑑定基因組中長片段序列的拷貝數變異",
-        "C": "aCGH 可檢測出多數基因轉錄區（coding region）中的點突變",
-        "D": "aCGH 可用於比較不同家族基因組中單一核苷酸多型性（SNP）的差別"
+        "A": "a CGH適用於檢測特定基因產出攜訊核糖核酸（mRNA）的表現量",
+        "B": "可 以使用aCGH鑑定基因組中長片段序列的拷貝數變異",
+        "C": "a CGH可檢測出多數基因轉錄區（coding region）中的點突變",
+        "D": "a CGH可用於比較不同家族基因組中單一核苷酸多型性（SNP）的差別"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 58,
-      "content": "關於人類HLA 等位基因檢測的敘述，下列何者最適當？",
+      "content": "關 於人類HLA等位基因檢測的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "共有6 種HLA 等位基因",
-        "B": "通常在同一個基因座會有一種或兩種等位基因",
-        "C": "HLA 第一類型（HLA class I）等位基因的變異大多數集中在exon 1",
-        "D": "HLA 檢測的檢體來源主要是骨髓"
+        "A": "共 有6種HLA等位基因",
+        "B": "通 常在同一個基因座會有一種或兩種等位基因",
+        "C": "H LA第一類型（HLA class I）等位基因的變異大多數集中在exon 1",
+        "D": "H LA檢測的檢體來源主要是骨髓"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 59,
-      "content": "微衛星標記最不適合用來檢測下列何種變異？",
+      "content": "微 衛星標記最不適合用來檢測下列何種變異？",
       "has_image": false,
       "options": {
-        "A": "失異合性（loss of heterozygosity）",
-        "B": "異體幹細胞移植的成效",
-        "C": "生長因子的受體過度表現",
-        "D": "微衛星不穩定性"
+        "A": "失 異合性（loss of heterozygosity）",
+        "B": "異 體幹細胞移植的成效",
+        "C": "生 長因子的受體過度表現",
+        "D": "微 衛星不穩定性"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 60,
-      "content": "關於純化後DNA 在TE buffer 中之儲存敘述，下列何者最不適當？",
+      "content": "關 於純化後DNA在TE buffer中之儲存敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "2～8℃，可達1 年以上",
-        "B": "-20℃，可達7 年",
-        "C": "-70℃，可達7 年以上",
-        "D": "室溫，可達1 年"
+        "A": "2 ～8℃，可達1年以上",
+        "B": "- 20℃，可達7年",
+        "C": "- 70℃，可達7年以上",
+        "D": "室 溫，可達1年"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 61,
-      "content": "關於新批號試劑啟用的敘述，下列何者最不適當？",
+      "content": "關 於新批號試劑啟用的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "新批號試劑使用前，需經過確效，才能用於臨床檢測",
-        "B": "同批號試劑，不同時間入庫，可直接使用於臨床檢測",
-        "C": "品管物質最好能以至少10 家實驗室所建立之允收標準作為參考",
-        "D": "校正物質若可追溯至國際標準，則不需再比對或驗證"
+        "A": "新 批號試劑使用前，需經過確效，才能用於臨床檢測",
+        "B": "同 批號試劑，不同時間入庫，可直接使用於臨床檢測",
+        "C": "品 管物質最好能以至少10家實驗室所建立之允收標準作為參考",
+        "D": "校 正物質若可追溯至國際標準，則不需再比對或驗證"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 62,
-      "content": "醫學中心之醫學分子檢驗的報告，除了結果以外，尚需包含那些內容？①使用的檢驗方法、系統 ②檢測的\n基因或位點 ③分析敏感度與分析極限 ④臨床上的解釋 ⑤檢驗分析上的解釋",
+      "content": "醫 學中心之醫學分子檢驗的報告，除了結果以外，尚需包含那些內容？①使用的檢驗方法、系統 ②檢測的\n基因或位點 ③分析敏感度與分析極限 ④臨床上的解釋 ⑤檢驗分析上的解釋",
       "has_image": false,
       "options": {
-        "A": "僅①②③",
-        "B": "僅①②③④",
-        "C": "僅①②③⑤",
-        "D": "①②③④⑤"
+        "A": "僅 ①②③",
+        "B": "僅 ①②③④",
+        "C": "僅 ①②③⑤",
+        "D": "① ②③④⑤"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 63,
-      "content": "下列那個物種的全基因體定序，最先被完成？",
+      "content": "下 列那個物種的全基因體定序，最先被完成？",
       "has_image": false,
       "options": {
-        "A": "Escherichia coli",
-        "B": "Haemophilus influenzae",
-        "C": "Mycoplasma pneumoniae",
-        "D": "Staphylococcus aureus"
+        "A": "E scherichia coli",
+        "B": "H aemophilus influenzae",
+        "C": "M ycoplasma pneumoniae",
+        "D": "S taphylococcus aureus"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 64,
-      "content": "A 實驗室接受B 醫院的HBV 病毒量的委託檢驗，下列敘述何者最不適當？",
+      "content": "A 實驗室接受B醫院的HBV病毒量的委託檢驗，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "A 實驗室與B 醫院簽訂代檢合約，內容包括所使用的檢驗方法、發報告時間等",
-        "B": "為使檢體在採集後快速送到實驗室處理，A 實驗室專人到B 醫院收檢後，搭乘高鐵送回實驗室",
-        "C": "為使檢驗報告以最快速度送回B 醫院，A 實驗室提供平台讓B 醫院可以查詢電子簽章的電子報告",
-        "D": "B 醫院在自己醫院資訊系統轉發報告，並備註由A 實驗室代檢"
+        "A": "A 實驗室與B醫院簽訂代檢合約，內容包括所使用的檢驗方法、發報告時間等",
+        "B": "為 使檢體在採集後快速送到實驗室處理，A實驗室專人到B醫院收檢後，搭乘高鐵送回實驗室",
+        "C": "為 使檢驗報告以最快速度送回B醫院，A實驗室提供平台讓B醫院可以查詢電子簽章的電子報告",
+        "D": "B 醫院在自己醫院資訊系統轉發報告，並備註由A實驗室代檢"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 65,
-      "content": "以次世代定序進行遺傳基因檢測，利用已知變異的參考物質，計算可偵測範圍中的每種變異的準確度，整理\n檢測結果如圖所示。下列計算何者正確？",
+      "content": "以 次世代定序進行遺傳基因檢測，利用已知變異的參考物質，計算可偵測範圍中的每種變異的準確度，整理\n檢測結果如圖所示。下列計算何者正確？",
       "has_image": false,
       "options": {
-        "A": "陽性一致率：A/(A+C+E)",
-        "B": "陽性預測值：A/(A+C)",
-        "C": "偽陰性率：1-[A/(A+C)]",
-        "D": "偽陽性率：1-[D/(B+D+F)]"
+        "A": "陽 性一致率：A/(A+C+E)",
+        "B": "陽 性預測值：A/(A+C)",
+        "C": "偽 陰性率：1-[A/(A+C)]",
+        "D": "偽 陽性率：1-[D/(B+D+F)]"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 66,
-      "content": "篩檢HIV-1 的空窗期與病毒量，下列那種試驗方式最適當？",
+      "content": "篩 檢HIV-1的空窗期與病毒量，下列那種試驗方式最適當？",
       "has_image": false,
       "options": {
-        "A": "Western blot",
-        "B": "Sanger sequencing",
-        "C": "transcription-mediated amplification（TMA）",
-        "D": "restriction fragment length polymorphism（RFLP）"
+        "A": "W estern blot",
+        "B": "S anger sequencing",
+        "C": "t ranscription-mediated amplification（TMA）",
+        "D": "r estriction fragment length polymorphism（RFLP）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 67,
-      "content": "以基因定序法進行16S rRNA 基因序列比對之結果，若要達到菌種（species）層級之鑑定，下列何者錯誤？",
+      "content": "以 基因定序法進行16S rRNA基因序列比對之結果，若要達到菌種（species）層級之鑑定，下列何者錯誤？",
       "has_image": false,
       "options": {
-        "A": "大於95%序列相似度，才可判定為同種（species）",
-        "B": "若序列比對結果最高及第二高相似菌種序列，彼此相似度的差異性小於0.5%，則應使用其他試驗進行菌種\n之確認",
-        "C": "以標準參考菌株比對為最佳",
-        "D": "可序列比對之基因長度，應至少500 個核苷酸以上"
+        "A": "大 於95%序列相似度，才可判定為同種（species）",
+        "B": "若 序列比對結果最高及第二高相似菌種序列，彼此相似度的差異性小於0.5%，則應使用其他試驗進行菌種\n之確認",
+        "C": "以 標準參考菌株比對為最佳",
+        "D": "可 序列比對之基因長度，應至少500個核苷酸以上"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 68,
-      "content": "具萬古黴素抗藥性腸球菌（VRE）抗藥性基因及其表現型，下列何者最不適當？",
+      "content": "具 萬古黴素抗藥性腸球菌（VRE）抗藥性基因及其表現型，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "帶vanA 基因的VRE 對vancomycin 及teicoplanin 均具有高度抗藥性",
-        "B": "vanA 基因通常位於質體上",
-        "C": "vanA 基因可轉譯出D-ala-D-ala ligase",
-        "D": "vanA 表現型對vancomycin 的MIC 約為2～4 μg/mL"
+        "A": "帶 vanA基因的VRE對vancomycin及teicoplanin均具有高度抗藥性",
+        "B": "v anA基因通常位於質體上",
+        "C": "v anA基因可轉譯出D-ala-D-ala ligase",
+        "D": "v anA表現型對vancomycin的MIC約為2～4 μg/mL"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 69,
-      "content": "利用標的擴增（amplification）技術進行病毒分子檢測時，下列何組病毒與偵測標的基因的配對最適當？",
+      "content": "利 用標的擴增（amplification）技術進行病毒分子檢測時，下列何組病毒與偵測標的基因的配對最適當？",
       "has_image": false,
       "options": {
-        "A": "HCV：nucleoprotein gene",
-        "B": "influenza virus：conserved matrix gene",
-        "C": "SARS-CoV-2：DNA polymerase gene",
-        "D": "BK virus（polyomavirus）：fusion gene"
+        "A": "H CV：nucleoprotein gene",
+        "B": "i nfluenza virus：conserved matrix gene",
+        "C": "S ARS-CoV-2：DNA polymerase gene",
+        "D": "B K virus（polyomavirus）：fusion gene"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 70,
-      "content": "選擇適合的分子檢驗方法進行細菌分型鑑定時，下列敘述何者最不適當？",
+      "content": "選 擇適合的分子檢驗方法進行細菌分型鑑定時，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "聚合酶連鎖反應分型法的準確性略低於脈衝式電泳分型法（pulsed field gel electrophoresis）",
-        "B": "配合DNA 雜交法可以增加限制酶片段長度多型性分型法（restriction fragment length polymorphism, \nRFLP）的辨識性與應用性",
-        "C": "若無已建立之標準資料庫，不易比對不同地區之菌株資訊",
-        "D": "脈衝式電泳分型法（pulsed field gel electrophoresis）可以得到欲鑑定細菌的基因序列"
+        "A": "聚 合酶連鎖反應分型法的準確性略低於脈衝式電泳分型法（pulsed field gel electrophoresis）",
+        "B": "配 合DNA雜交法可以增加限制酶片段長度多型性分型法（restriction fragment length polymorphism,\nRFLP）的辨識性與應用性",
+        "C": "若 無已建立之標準資料庫，不易比對不同地區之菌株資訊",
+        "D": "脈 衝式電泳分型法（pulsed field gel electrophoresis）可以得到欲鑑定細菌的基因序列"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 71,
-      "content": "下列何者是用多對引子（primers）同時偵測多種可能病毒感染的方法？",
+      "content": "下 列何者是用多對引子（primers）同時偵測多種可能病毒感染的方法？",
       "has_image": false,
       "options": {
-        "A": "nested PCR",
-        "B": "multiplex PCR",
-        "C": "hybrid capture assay",
-        "D": "random PCR"
+        "A": "n ested PCR",
+        "B": "m ultiplex PCR",
+        "C": "h ybrid capture assay",
+        "D": "r andom PCR"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 72,
-      "content": "下列何者不是唐氏症之核型異常的成因？",
+      "content": "下 列何者不是唐氏症之核型異常的成因？",
       "has_image": false,
       "options": {
-        "A": "染色體個數異常，第21 號染色體三體（trisomy 21）",
-        "B": "染色體易位（translocation）",
-        "C": "鑲嵌型（mosaicism）",
-        "D": "點突變（point mutation）"
+        "A": "染 色體個數異常，第21號染色體三體（trisomy 21）",
+        "B": "染 色體易位（translocation）",
+        "C": "鑲 嵌型（mosaicism）",
+        "D": "點 突變（point mutation）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 73,
-      "content": "油滴數位化聚合酶連鎖反應（droplet digital PCR, ddPCR）是藉由單分子油滴式隔離進行核酸拷貝數的絕\n對定量；對檢測腫瘤微量突變等位比例（mutation allele frequency, MAF）有極高敏感度。圖示為利用\nddPCR 收取16,000 顆油滴，進行A 基因野生型與突變型之螢光訊號強度的分析結果，超過閾值的油滴數目以\n紅字標示。此突變等位比例為何？",
+      "content": "油 滴數位化聚合酶連鎖反應（droplet digital PCR, ddPCR）是藉由單分子油滴式隔離進行核酸拷貝數的絕\n對定量；對檢測腫瘤微量突變等位比例（mutation allele frequency, MAF）有極高敏感度。圖示為利用\nddPCR收取16,000顆油滴，進行A基因野生型與突變型之螢光訊號強度的分析結果，超過閾值的油滴數目以\n紅字標示。此突變等位比例為何？",
       "has_image": false,
       "options": {
-        "A": "3.8%",
-        "B": "14.3%",
-        "C": "12.5%",
-        "D": "16.7%"
+        "A": "3 .8%",
+        "B": "1 4.3%",
+        "C": "1 2.5%",
+        "D": "1 6.7%"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 74,
-      "content": "關於基因變異（或表現異常）與肺癌發生的相關性，下列何者最正確？",
+      "content": "關 於基因變異（或表現異常）與肺癌發生的相關性，下列何者最正確？",
       "has_image": false,
       "options": {
-        "A": "RAS 基因家族的變異常見於小細胞肺癌中",
-        "B": "在肺癌細胞中，常見TP53 基因與同源的p51／p73 基因同時發生變異",
-        "C": "過度表現的MYC 基因家族常見於小細胞肺癌與非小細胞肺癌",
-        "D": "HER2 基因大量表現是肺癌病人具有較佳預後的指標"
+        "A": "R AS基因家族的變異常見於小細胞肺癌中",
+        "B": "在 肺癌細胞中，常見TP53基因與同源的p51／p73基因同時發生變異",
+        "C": "過 度表現的MYC基因家族常見於小細胞肺癌與非小細胞肺癌",
+        "D": "H ER2基因大量表現是肺癌病人具有較佳預後的指標"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 75,
-      "content": "ERCC1（excision repair cross complementing 1）基因的單一核苷酸多型性會影響oxaliplatin 治療腸胃\n道相關惡性腫瘤的效果，下列敘述何者最適當？",
+      "content": "E RCC1（excision repair cross complementing 1）基因的單一核苷酸多型性會影響oxaliplatin治療腸胃\n道相關惡性腫瘤的效果，下列敘述何者最適當？",
       "has_image": false,
       "options": {
-        "A": "C 變異成G 是 ERCC1 基因最常見的單一核苷酸多型性",
-        "B": "單股核酸結構多樣性法不適用於檢測ERCC1 基因的單一核苷酸多型性",
-        "C": "CC 同合子基因型對oxaliplatin 治療的反應最差",
-        "D": "TT 同合子基因型對oxaliplatin 治療的反應為中等"
+        "A": "C 變異成G是 ERCC1基因最常見的單一核苷酸多型性",
+        "B": "單 股核酸結構多樣性法不適用於檢測ERCC1基因的單一核苷酸多型性",
+        "C": "C C同合子基因型對oxaliplatin治療的反應最差",
+        "D": "T T同合子基因型對oxaliplatin治療的反應為中等"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 76,
-      "content": "血癌病人在經過治療之後，多數病人血液或骨髓中的癌細胞分別降至1／100 或1／1000 以下，下列何種方法\n最有可能偵測到這些微量殘存的癌細胞？",
+      "content": "血 癌病人在經過治療之後，多數病人血液或骨髓中的癌細胞分別降至1／100或1／1000以下，下列何種方法\n最有可能偵測到這些微量殘存的癌細胞？",
       "has_image": false,
       "options": {
-        "A": "原位螢光雜交分析",
-        "B": "南方墨點分析",
-        "C": "染色體核型分析",
-        "D": "即時定量聚合酶連鎖反應"
+        "A": "原 位螢光雜交分析",
+        "B": "南 方墨點分析",
+        "C": "染 色體核型分析",
+        "D": "即 時定量聚合酶連鎖反應"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 77,
-      "content": "關於藥物代謝基因，下列何者與抗愛滋藥物abacavir 的藥物不良反應最相關？",
+      "content": "關 於藥物代謝基因，下列何者與抗愛滋藥物abacavir的藥物不良反應最相關？",
       "has_image": false,
       "options": {
-        "A": "HLA-B*1301",
-        "B": "HLA-B*1502",
-        "C": "HLA-B*5701",
-        "D": "HLA-B*5801"
+        "A": "H LA-B*1301",
+        "B": "H LA-B*1502",
+        "C": "H LA-B*5701",
+        "D": "H LA-B*5801"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 78,
-      "content": "關於抗癌藥物與伴隨式檢測結果之間的關係，下列何者最正確？",
+      "content": "關 於抗癌藥物與伴隨式檢測結果之間的關係，下列何者最正確？",
       "has_image": false,
       "options": {
-        "A": "erlotinib 對K-RAS G12C 突變的非小細胞肺癌病人治療效果較好",
-        "B": "crizotinib 對EGFR L858R 突變的非小細胞肺癌病人治療效果較好",
-        "C": "cetuximab 對BRAF V600E 突變的大腸直腸癌病人治療效果較好",
-        "D": "trastuzumab 對Her2/neu 過度表現的乳癌病人治療效果較好"
+        "A": "e rlotinib對K-RAS G12C突變的非小細胞肺癌病人治療效果較好",
+        "B": "c rizotinib對EGFR L858R突變的非小細胞肺癌病人治療效果較好",
+        "C": "c etuximab對BRAF V600E突變的大腸直腸癌病人治療效果較好",
+        "D": "t rastuzumab對Her2/neu過度表現的乳癌病人治療效果較好"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 79,
-      "content": "關於藥物基因多型性的敘述，下列何者最不適當？",
+      "content": "關 於藥物基因多型性的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "warfarin 的適用劑量與VKORC1 的基因多型性有關",
-        "B": "clopidogrel 的療效與CYP2D6 的基因多型性最有關",
-        "C": "irinotecan 化療藥物的毒性副作用與UGT1A1 的基因多型性最有關",
-        "D": "CYP2D6*2 基因多型性產生的酵素活性高於CYP2D6*1 野生型的酵素"
+        "A": "w arfarin的適用劑量與VKORC1的基因多型性有關",
+        "B": "c lopidogrel的療效與CYP2D6的基因多型性最有關",
+        "C": "i rinotecan化療藥物的毒性副作用與UGT1A1的基因多型性最有關",
+        "D": "C YP2D6*2基因多型性產生的酵素活性高於CYP2D6*1野生型的酵素"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 80,
-      "content": "關於腫瘤幹細胞（cancer stem cell）的敘述，下列何者最不適當？",
+      "content": "關 於腫瘤幹細胞（cancer stem cell）的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "是造成癌症病患腫瘤切除後仍具有高度復發的原因之一",
-        "B": "具有自我更新（self-renewal）的能力",
-        "C": "具有特異的細胞表面標記，可以發展為治療的標的",
-        "D": "不具有基因變異"
+        "A": "是 造成癌症病患腫瘤切除後仍具有高度復發的原因之一",
+        "B": "具 有自我更新（self-renewal）的能力",
+        "C": "具 有特異的細胞表面標記，可以發展為治療的標的",
+        "D": "不 具有基因變異"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     }
   ]
 }

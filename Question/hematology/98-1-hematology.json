@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 98,
+    "sitting": 1,
+    "subject": "臨床血液學與血庫學",
+    "exam_code": "2308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "有關正常RBC 經約120 天循環後被破壞之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "主要的破壞發生於血管內，破壞的紅血球釋出血紅素（Hb）",
+        "B": "Hb 代謝，globin 分解為胺基酸由尿液排泄",
+        "C": "Hb 代謝分解出的heme 可回收用於Hb 製造",
+        "D": "Hb 代謝出的鐵經plasma 運送，回收貯存或用於製造Hb"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "下列何者不是irondeficiencyanemia 可見之紅血球形態變化特徵？",
+      "has_image": false,
+      "options": {
+        "A": "microcytic",
+        "B": "hypochromic",
+        "C": "anisocytosis",
+        "D": "basophilicstippling"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "關於HbS 之基因缺陷，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "β chain 第6 位置胺基酸Glu 被Val 取代",
+        "B": "β chain 第6 位置胺基酸Glu 被Lys 取代",
+        "C": "β chain 第26 位置胺基酸Glu 被Lys 取代",
+        "D": "β chain 第121 位置胺基酸Glu 被Lys 取代"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "正常人類α-球蛋白含多少個胺基酸？",
+      "has_image": false,
+      "options": {
+        "A": "141",
+        "B": "146",
+        "C": "164",
+        "D": "169"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "下列何者不是巨紅芽球大球性貧血（megaloblasticanemias）週邊血液抹片血球特徵？",
+      "has_image": false,
+      "options": {
+        "A": "嗜中性白血球核分葉多於5 葉（hypersegmentation）",
+        "B": "血小板數目減少",
+        "C": "紅血球MCV>120fl",
+        "D": "紅血球染色偏低（hypochromic）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "慢性疾病貧血（Anemiaofchronicdisease）之致病原因為：",
+      "has_image": false,
+      "options": {
+        "A": "吞噬細胞釋放鐵之能力受hepcidin 所抑制",
+        "B": "自體抗體",
+        "C": "EPO 分泌增加",
+        "D": "RBC 壽命延長"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "甲烯基藍（Methyleneblue）不染下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "DNA",
+        "B": "RNA",
+        "C": "Basophil 之嗜鹼性顆粒",
+        "D": "白血球之初級顆粒（primarygranules）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "下列紅血球包涵體（inclusionbodies）中，何者需要用活體染色觀察？",
+      "has_image": false,
+      "options": {
+        "A": "Basophilicstippling",
+        "B": "Howell-Jollybodies",
+        "C": "Heinzbodies",
+        "D": "Pappenheimerbodies"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "下列關於造血幹細胞的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "多潛能，能夠生成不同的細胞系列",
+        "B": "由免疫檢測得知為CD34+CD38-之細胞",
+        "C": "具有自我更新的能力，在一健康穩定狀態能使骨髓細胞維持不變",
+        "D": "周邊血不可能尋找到少數之幹細胞"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "關於繼發性多血症（secondaryerythrocytosis）之實驗室檢查，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "EPO 之分泌增高",
+        "B": "WBC 正常",
+        "C": "EPO 正常",
+        "D": "Platelet 正常"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "下列有關紅血球激素（EPO）之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "醣蛋白賀爾蒙",
+        "B": "90%是在腎臟製造",
+        "C": "可使紅血球前驅細胞分化、成熟",
+        "D": "90%是在骨髓製造"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "Plasmatransferrin 攜帶的鐵為：",
+      "has_image": false,
+      "options": {
+        "A": "Fe2+",
+        "B": "Fe3+",
+        "C": "hemosiderin",
+        "D": "ferritin"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "骨髓間質細胞不包括下列何種細胞？",
+      "has_image": false,
+      "options": {
+        "A": "脂肪細胞",
+        "B": "纖維母細胞",
+        "C": "內皮細胞",
+        "D": "顆粒性白血球"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "下列紅血球之前期細胞中，何者不具分裂能力？",
+      "has_image": false,
+      "options": {
+        "A": "Pronormoblast",
+        "B": "Basophilicnormoblast",
+        "C": "Polychromaticnormoblast",
+        "D": "Orthochromaticnormoblast"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "紅血球老廢後，那種成分被代謝後排泄？",
+      "has_image": false,
+      "options": {
+        "A": "porphyrin",
+        "B": "Fe",
+        "C": "globin",
+        "D": "nucleus"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "Perlsreaction 可染下列何種形式的鐵，且在顯微鏡下觀察？",
+      "has_image": false,
+      "options": {
+        "A": "transferrin",
+        "B": "ferritin",
+        "C": "apoferritin",
+        "D": "hemosiderin"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "下列何者不是Echinocyte（crenatedcells）發生的原因？",
+      "has_image": false,
+      "options": {
+        "A": "血中BUN 上升",
+        "B": "製片用玻片pH 值太",
+        "C": "agedblood",
+        "D": "血中缺乏β-lipoprotein"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "plasmatransferrin 所攜帶的鐵主要來源為：",
+      "has_image": false,
+      "options": {
+        "A": "飲食吸收",
+        "B": "老廢紅血球中Hb 代謝回收而得",
+        "C": "肝臟中貯存鐵轉換而來",
+        "D": "肌紅素轉換而來"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列何者不是小球性貧血的原因？",
+      "has_image": false,
+      "options": {
+        "A": "缺鐵性貧血",
+        "B": "海洋性貧血",
+        "C": "鐵芽球性貧血（Sideroblasticanemia）",
+        "D": "遺傳性球狀紅血球症"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "遺傳性球狀紅血球症之實驗診斷特徵為：",
+      "has_image": false,
+      "options": {
+        "A": "RDW 偏高",
+        "B": "MCHC 偏",
+        "C": "紅血球數目上升",
+        "D": "紅血球脆性降低"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "下列何種染色體異常最常出現下述之形態特徵：eosinophils 增加；不成熟的eosinophils 覆\n蓋著basophilicgranules；myelomonocyticdifferentiation？",
+      "has_image": false,
+      "options": {
+        "A": "t(8;21)(q22;q22)",
+        "B": "t(15;17)(q22;q12)",
+        "C": "inv(16)(p13;q22)",
+        "D": "AMLwith11q23（MLL）abnormalities"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "Multiplemyeloma 的病患常在尿液中檢測出下列何種蛋白？",
+      "has_image": false,
+      "options": {
+        "A": "Alkalinephosphatase",
+        "B": "Bence-Jonesprotein",
+        "C": "C-reactiveprotein",
+        "D": "Urobilinogen"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "白血球中的Primarygranules 開始製造並結束於那個階段？",
+      "has_image": false,
+      "options": {
+        "A": "Promyelocyte",
+        "B": "Metamyelocyte",
+        "C": "Myelocyte",
+        "D": "Myeloblast"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列何者正確地顯示嗜中性白血球的成熟順序？",
+      "has_image": false,
+      "options": {
+        "A": "Promyelocyte→metamyelocyte→myelocyte→band→segmentedneutrophil",
+        "B": "Metamyelocyte→myelocyte→segmentedneutrophil→myelocyte",
+        "C": "Promyelocyte→myelocyte→metamyelocyte→band→segmentedneutrophil",
+        "D": "Myeloblast→promyelocyte→metamyelocyte→myelocyte→band→segmentedneutrophil"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "具有灰藍色（gray-blue）,ground-glass 的細胞質，最適於形容下列何種白血球？",
+      "has_image": false,
+      "options": {
+        "A": "Monocyte",
+        "B": "Basophil",
+        "C": "Mastcell",
+        "D": "Myeloblast"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "下列 T 細胞的表面標記中，何者最早出現？",
+      "has_image": false,
+      "options": {
+        "A": "CD4",
+        "B": "CD8",
+        "C": "CD3",
+        "D": "CD2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "下列那種表面標記可出現在正常的B 細胞與T 細胞的成熟過程之中？",
+      "has_image": false,
+      "options": {
+        "A": "CD10",
+        "B": "CD4",
+        "C": "CD3",
+        "D": "CD19"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何種急性白血病常會引起DIC 及thrombocytopenia？",
+      "has_image": false,
+      "options": {
+        "A": "AML,M1",
+        "B": "AML,M2",
+        "C": "AML,M3",
+        "D": "AML,M4"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "某病人的周邊血液中，每100 顆白血球就有20 顆normoblasts，則24.0×109/L 的有核血\n球，經過矯正後，應有多少真正的白血球？",
+      "has_image": false,
+      "options": {
+        "A": "20.0×109/L",
+        "B": "18.8×109/L",
+        "C": "16.0×109/L",
+        "D": "22.4×109/L"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "下列那一個名詞代表急性嚴重感染時，白血球細胞質中的殘餘RNA？",
+      "has_image": false,
+      "options": {
+        "A": "Döhlebody",
+        "B": "Auerrod",
+        "C": "Toxicgranules",
+        "D": "Barrbody"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "下列那一個敘述與Pseudo-Pelger-Huëtanomaly 最沒有關係？",
+      "has_image": false,
+      "options": {
+        "A": "Myelodysplasticsyndrome",
+        "B": "Myeloproliferativedisorders",
+        "C": "Nuclearhypersegmentation",
+        "D": "Somedrugs"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "Tissuebasophils 是指下列何種細胞？",
+      "has_image": false,
+      "options": {
+        "A": "Mastcells",
+        "B": "Megakaryocytes",
+        "C": "Macrophages",
+        "D": "Fagotcells"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "下列那些是多發性骨髓瘤（multiplemyeloma）患者常出現的症狀？①腎功能受損 ①血小\n板增多症 ①澱粉樣病變（Amyloidosis） ①鬆骨症 ①免疫功能不全，容易重複感染",
+      "has_image": false,
+      "options": {
+        "A": "①①①①",
+        "B": "①①",
+        "C": "①①①①",
+        "D": "①①①①①"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "某骨髓抹片的細胞分類如下：40%neutrophilsandprecursors;20%lymphocytes andprecursors;\n20%nuclearerythroidcells;20%monocytesandprecursors. 則M：Eratio 是多少？",
+      "has_image": false,
+      "options": {
+        "A": "3:1",
+        "B": "2:1",
+        "C": "1:1",
+        "D": "1:2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "Waldenströmmacroglobulinemia 是屬於下列那一種疾病？",
+      "has_image": false,
+      "options": {
+        "A": "Lymphoproliferativedisorders",
+        "B": "Myeloproliferativedisorders",
+        "C": "Multiplemyeloma",
+        "D": "Carcinoma"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "下列有關myeloperoxidase 染色之敘述，何者最不恰當？",
+      "has_image": false,
+      "options": {
+        "A": "Myeloperoxidase 存在於neutrophils 中的cytoplasmicgranules",
+        "B": "染色後的陽性反應在細胞質中呈現灰黑色顆粒",
+        "C": "超過14 天的抹片不適於此項染色",
+        "D": "最常用甲醇固定"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "附圖是一位血液病患者的周邊血液抹片。則這些細胞最有可能是下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "Monocytes",
+        "B": "Myeloblasts",
+        "C": "Lymphoblasts",
+        "D": "Promyelocytes"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "所謂“Basketcells”是指下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "無規則地聚集的紅血球",
+        "B": "遭遇外力破壞的白血球",
+        "C": "結集成堆的血小板",
+        "D": "血液中的血管內皮細胞"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "附圖是一位血液病患者的骨髓血液抹片。則這些細胞最有可能是下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "Normoblasts",
+        "B": "Plasmacells",
+        "C": "Lymphoblasts",
+        "D": "Basophils\n \n \n情況：某24 歲男性病人，因胸部疼痛而來求診，胸部X 光顯示有一縱膈腔腫瘤，周邊血液顯示有些\n不成熟細胞。下圖顯示骨髓抹片有成群之不成熟細胞；此外，免疫分型另如下圖所示（免疫\n分型是基於CD45/SSLOG 中所收集起來的細胞，以紅色點標示）。請回答第40~42 題。"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "則這些不成熟的細胞最有可能是下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "Lymphoblasts",
+        "B": "Myeloblasts",
+        "C": "Carcinomacells",
+        "D": "Sarcomacells"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "根據此患者之細胞抹片及其免疫分型，此患者最有可能患下列何種疾病？",
+      "has_image": false,
+      "options": {
+        "A": "PrecursorBcelllymphoblasticleukemia/lymphoma",
+        "B": "PrecursorTcelllymphoblasticleukemia/lymphoma",
+        "C": "Acutemyeloidleukemia",
+        "D": "Germcelltumor"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "免疫分型的panelA 中，箭頭所指的細胞是屬於下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "Precursorcells",
+        "B": "Monocytes",
+        "C": "Plasmacells",
+        "D": "Granulocytes\n \n \n情況：某27 歲女性病人，因發燒及皮膚瘀血而到急診，血液資料顯示Hb7.8g/dL,PLT22k/μL,\nWBC180600/μL，白血球分類顯示blast70%,segmentedneutrophil14%,lymphocyte5%。骨髓\n抹片如下圖A 及B 所示，blasts 佔全部有核細胞的55%,promyelocytes 及更成熟的細胞佔全\n部有核細胞的35%。下圖C 是myeloperoxidasestaining，下圖D 是combinedchloroacetate\nesterase （陽性細胞呈藍色，佔全部有核細胞的24%）andnon-specificesterasestaining（陽性\n細胞呈棕色，佔全部有核細胞的1%）。請回答第43~44 題。\nＡ Ｂ\nＣ Ｄ"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "則此病人最有可能患了下列那一種病？",
+      "has_image": false,
+      "options": {
+        "A": "AMLM0",
+        "B": "AMLM1",
+        "C": "AMLM2",
+        "D": "AMLM4"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "下列何種免疫分型對這位病人的骨髓細胞，最有可能是陰性的？",
+      "has_image": false,
+      "options": {
+        "A": "CD117",
+        "B": "CD34",
+        "C": "HLA-DR",
+        "D": "CD20"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "以低分子量肝素治療血管栓塞時，會影響下列何種檢驗？",
+      "has_image": false,
+      "options": {
+        "A": "activatedpartialthromboplastintime",
+        "B": "prothrombintime",
+        "C": "anti-factorXa 活性",
+        "D": "bleedingtime"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "下列何種檢查可用來監控Warfarintherapy？",
+      "has_image": false,
+      "options": {
+        "A": "PT",
+        "B": "APTT",
+        "C": "TT",
+        "D": "Bleedingtime"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "下列那一個ISI（internationalsensitivityindex）值之凝血酶原試劑最適合監測口服抗凝劑？",
+      "has_image": false,
+      "options": {
+        "A": "1.0",
+        "B": "2.0",
+        "C": "3.0",
+        "D": "4.0"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列那些物質組成“prothrombinasecomplex”？①FactorVa ①FactorVIIIa ①FactorXa ①\nPhospholipids ①Tissuefactor",
+      "has_image": false,
+      "options": {
+        "A": "①①①",
+        "B": "①①①",
+        "C": "①①①",
+        "D": "①①①"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "下列有關Thrombomodulin 的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "Vit.K-dependent 的factor",
+        "B": "由肝細胞合成",
+        "C": "可以改變thrombin 的特性",
+        "D": "只存在內皮細胞中"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "進行血小板凝集試驗時，何者用來設定100%凝集？",
+      "has_image": false,
+      "options": {
+        "A": "病人的platelet-poorplasma",
+        "B": "病人的platelet-richplasma",
+        "C": "蒸餾水",
+        "D": "緩衝液"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "血管內皮下組織的膠原（collagen）在高血流的情形下會和血漿中何種蛋白結合？",
+      "has_image": false,
+      "options": {
+        "A": "vonWillebrandfactor",
+        "B": "Tissuefactor",
+        "C": "Fibrinogen",
+        "D": "AntithrombinIII"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "下列那些物質存在於euglobulin 的成分中？①fibrinogen ①plasminogen ①α -antiplasmin\n2\n①Tpa ①PAI",
+      "has_image": false,
+      "options": {
+        "A": "①①①",
+        "B": "①①①",
+        "C": "①①①",
+        "D": "①①①"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列有關anticoagulantsystem 的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "AntithrombinIII 必須與thrombomodulin 結合才會被活化",
+        "B": "ProteinS 本身有抑制FactorVa&FactorVIIIa 之作用",
+        "C": "AntithrombinIII 只有在heparin 存在下才有作用",
+        "D": "活化的proteinC 有抑制FactorVa&FactorVIIIa 之作用"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "下列何種測試不需添加Ca2+？",
+      "has_image": false,
+      "options": {
+        "A": "PT",
+        "B": "APTT",
+        "C": "TT",
+        "D": "Plasmacoagulationtime"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "下列有關vonWillebranddisease 的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "TypeIandtypeIIIvWD 是vWF 質的問題",
+        "B": "TypeIIa 病人之Plateletaggregation 對Ristocetin 反應比正常人Sensitive",
+        "C": "TypeIIb 乃缺乏所有Largestmolecules 的vWF",
+        "D": "所有vWD 的病人皆有Bleedingtime 和APTT 延長的現象"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列何者不是血液循環中之pro-coagulationfactorinhibitor？",
+      "has_image": false,
+      "options": {
+        "A": "ProteinC",
+        "B": "Tissuefactorpathwayinhibitor",
+        "C": "AntithrombinIII",
+        "D": "α -antiplasmin\n2"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "下列何者不能活化plasminogen？",
+      "has_image": false,
+      "options": {
+        "A": "Streptokinase",
+        "B": "Urokinase",
+        "C": "FDP",
+        "D": "FactorXIIa"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "下列有關肝素（heparin）治療監測之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "以APTT（activatedpartialthromboplastintime）為監測試驗時，其敏感度區間為肝素濃\n度 0.1~1.0U/mL",
+        "B": "當肝素濃度為1~5U/mL 時，應以凝血酶時間（thrombintime）監測",
+        "C": "肝素之治療區間為病人用藥前1.5~2.5 倍APTT",
+        "D": "魚精胺酸（protaminesulfate）可以拮抗肝素之毒性"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "vonWillebrandfactor（vWF）因子的分析包括vWF 抗原量與Ristocetin 誘發血小板凝集\n（vWF：RCo），當vWF 抗原量正常而vWF：RCo 不一致時，要考慮是下列何狀況？",
+      "has_image": false,
+      "options": {
+        "A": "第一型vonWillebrand 症",
+        "B": "第二型vonWillebrand 症",
+        "C": "第三型vonWillebrand 症",
+        "D": "第八凝血因子缺乏之干擾"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "下列何者不是影響出血時間（bleedingtime）試驗之常見因素？",
+      "has_image": false,
+      "options": {
+        "A": "切割之深度",
+        "B": "切割之位置",
+        "C": "凝血因子活性下降",
+        "D": "thrombasthenia"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "以DDAVP（1-desamino-8-d-argininevasopressin）治療第一型vonWillebrand 症時，最好的\n監測試驗是：",
+      "has_image": false,
+      "options": {
+        "A": "vonWillebrand 因子以ristocetin 誘發活性檢查",
+        "B": "出血時間（bleedingtime）",
+        "C": "activatedpartialthromboplastintime",
+        "D": "vonWillebrand 因子抗原量分析"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "下列何物質具有中和肝素（heparin）的作用？",
+      "has_image": false,
+      "options": {
+        "A": "血小板第四因子（plateletfactor4）",
+        "B": "纖維蛋白原（fibrinogen）",
+        "C": "抗凝血酶（antithrombin）",
+        "D": "凝血蛋白酶原（prothrombin）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "下列有關凝血酶時間（thrombintime）試驗之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "可以測定共同路徑之所有凝血因子活性",
+        "B": "可以用來監測肝素（heparin）治療",
+        "C": "可以用來測定凝血酶原（prothrombin）活性",
+        "D": "可以用來測定纖維蛋白溶解路徑功能"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "下列有關INR 之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "作為肝素（heparin）治療監測",
+        "B": "為活化部分凝血酶原時間（activatedpartialthromboplastintime）試驗之報告格式",
+        "C": "由公式：INR=（病人凝血酶原時間/品管檢體凝血酶原時間）ISI求得",
+        "D": "肝功能不好時，INR 值可能上升"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "下列那一種遺傳性血管栓塞危險因子在西方人常見，但在亞洲人很罕見？",
+      "has_image": false,
+      "options": {
+        "A": "prothrombinG20210Amutation",
+        "B": "proteinCdeficiency",
+        "C": "proteinSdeficiency",
+        "D": "lupusanticoagulant"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "下列何種抗體，較常見於Mycoplasmapneumoniae 感染而發生冷凝血症（Coldagglutinin\ndisease）的病人？",
+      "has_image": false,
+      "options": {
+        "A": "Anti-H",
+        "B": "Anti-i",
+        "C": "Auto-anti-I",
+        "D": "Auto-anti-P"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列何種抗體，較常見於陣發性冷血色素尿症（Paroxysmalcoldhemoglobinuria）病人？",
+      "has_image": false,
+      "options": {
+        "A": "Anti-H",
+        "B": "Anti-i",
+        "C": "Auto-anti-I",
+        "D": "Auto-anti-P"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "某病人於手術前檢體抗體篩檢為陰性，但自體對照細胞為陽性，直接球蛋白試驗以anti-IgG\n測試為（2+）。病人最後一次輸血為9 個月之前，病人並未服用藥物。則該病人紅血球沖\n出液中所含抗體為：",
+      "has_image": false,
+      "options": {
+        "A": "無抗體存在",
+        "B": "異體抗體",
+        "C": "異體抗體及自體抗體",
+        "D": "自體抗體"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "下列有關弱D 陽性捐血人血袋的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "弱部份D（WeakpartialD）捐血者的血液可標示為Rh 陰性",
+        "B": "TransC 抑制性弱D 捐血者的血袋應標示為Rh 陽性",
+        "C": "遺傳基因弱D 捐血者的血袋應標示為Rh 陽性",
+        "D": "Del 捐血者的血袋應標示為Rh 陽性"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "某服用Aldomet 的病人為DAT 陽性，下列有關紅血球沖出液的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "將只會與Aldomet 被覆的紅血球反應",
+        "B": "此沖出液會被Aldomet 溶液中和掉",
+        "C": "會跟所有未經Aldomet 處理的正常紅血球反應",
+        "D": "只會跟未經Aldomet 處理的D 陽性紅血球反應"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "早產嬰兒（Prematureinfant）需要交換性輸血（Exchangetransfusion）時，下列關於其所使\n用血液的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "血液經照射，以預防GVHD（graft-versus-hostdisease）的機會",
+        "B": "使用貯存超過7 天的血液，以減少GVHD 的機會",
+        "C": "使用與母親血清相容的血液",
+        "D": "最好是CMV 抗體陰性的血液"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "下列有關核黃疸（kernicterus）的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "與發生新生兒溶血的抗體的特異性有關",
+        "B": "與抗體的效價（titer）有關",
+        "C": "是因為貧血的緣故",
+        "D": "與indirect（unconjugated）bilirubin 有關"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "病人兩星期前輸過血，再次需要輸血。但病人血清與所有測試細胞（臍帶血除外），包括\n抗體篩檢細胞以及抗體鑑定細胞在立即離心均有（3+）反應，在抗球蛋白期也有（1+）反\n應，自體細胞對照也有相似反應。應如何做交叉試驗？",
+      "has_image": false,
+      "options": {
+        "A": "應用PEG 加強反應",
+        "B": "應做預溫試驗",
+        "C": "病人血清應做自體細胞吸附後再做交叉試驗",
+        "D": "鑑定出抗體，並由稀有捐血者中要求供應血液"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "某對夫妻及其新生嬰兒的Rh 系統測試結果如下：夫D(0)C(+)E(0)c(+)e(+)weakD(+)；妻\nD(0)C(0)E(0)c(+)e(+)weakD(0)；小孩D(+)C(0)E(0)c(+)e(+)。則下列結論何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "此位先生並不是小孩的親生父親",
+        "B": "此位先生可以證明為小孩的父親",
+        "C": "無法排除“此先生為小孩的親生父親”之可能性",
+        "D": "小孩的D(+)為偽陽性"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "基因型為CDe/cde（夫）與cde/cde（妻）組合，小孩為Rh 陰性的機率為：",
+      "has_image": false,
+      "options": {
+        "A": "0%",
+        "B": "25%",
+        "C": "50%",
+        "D": "75%"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "某病人的Rh 系統測試結果如下：D(+)C(+)E(0)c(+)e(+)。其最可能的基因型為何？",
+      "has_image": false,
+      "options": {
+        "A": "R1R1",
+        "B": "R1r",
+        "C": "R1R2",
+        "D": "R0r’"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "下列有關血庫品管測試的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "GelTest 比傳統方法更具標準化",
+        "B": "抗血清力價測試有凝集即判為陽性",
+        "C": "品管測試方法要與平時方法一致",
+        "D": "Anti-D 抗血清品管需大於32 倍以上"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "有關血液分離術的捐血者的要求，下列敘述何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "體重50 公斤即可做連續性流動儀器之分離",
+        "B": "間隔須逾三個月以上",
+        "C": "只要健康允許每年捐出血漿量不受限制",
+        "D": "每次血漿只能捐250ml"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "下列有關ABO 血型檢查的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "年齡會影響血型檢查的反應強度",
+        "B": "血型抗體試劑效價已達256 倍，即可用於日常檢測上",
+        "C": "必須使用洗滌過的紅血球測定",
+        "D": "溶血檢體不能用於血型測定"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "下列有關米田堡血型系列（Miltenbergerseries,Mi）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "其形成為GPA（GlycophorinA）與GPB（GlycophorinB）的雜交蛋白（Hybridprotein）",
+        "B": "Anti-“Mia”為臺灣最常被鑑定的抗體之一",
+        "C": "Anti-“Mia”與MiIII 抗原有關",
+        "D": "MiIII 之生化結構主要為GPA/GPB 雜交蛋白GPABA 之形式"
+      },
+      "answer": "D",
+      "bonus": false
+    }
+  ]
+}

@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 106,
+    "sitting": 2,
+    "subject": "臨床血清免疫學與臨床病毒學",
+    "exam_code": "6308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "白血球滲出血管（leukocyte extravasation）的步驟排列順序為何？①activation ②adhesion ③migration\n④rolling",
+      "has_image": false,
+      "options": {
+        "A": "①②③④",
+        "B": "②①④③",
+        "C": "④②①③",
+        "D": "④①②③"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "NK細胞表面不表現下列何種分子？",
+      "has_image": false,
+      "options": {
+        "A": "CD2",
+        "B": "CD16",
+        "C": "CD19",
+        "D": "CD56"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "下列何者是發育成熟的B細胞會同時表現IgM與IgD分子的機制？",
+      "has_image": false,
+      "options": {
+        "A": "B細胞會同時辨認兩種抗原",
+        "B": "對偶基因剔除（allelic exclusion）",
+        "C": "類別轉換（class switch）",
+        "D": "選擇性RNA剪接作用（alternative RNA splicing）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "下列有關T細胞與B細胞抗原接受器形成多樣性機制的差異，在於T細胞接受器缺乏下列何種過程？",
+      "has_image": false,
+      "options": {
+        "A": "具有多種V基因片段",
+        "B": "由V-D-J/V-J基因片段重組而成",
+        "C": "基因片段序列之連接位置不精準可增加其抗原接受器的多樣性（junctional diversity）",
+        "D": "體基因超突變（somatic hypermutation）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "毒殺性T細胞殺死標的細胞的活性，需要下列那些分子共同作用？①T細胞接受器 ②第一型組織相容性抗原\n（class I MHC） ③第二型組織相容性抗原（class II MHC） ④抗原 ⑤抗體",
+      "has_image": false,
+      "options": {
+        "A": "①②④",
+        "B": "②③④",
+        "C": "①③⑤",
+        "D": "②④⑤"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "下列有關B細胞與T細胞之抗原接受器（antigen receptor）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "兩種細胞之抗原接受器基因都必須經過重組後才能表現",
+        "B": "兩種細胞之抗原接受器蛋白都可表現在細胞膜上",
+        "C": "兩種細胞之抗原接受器蛋白都會和其它傳遞訊息蛋白質形成複合體",
+        "D": "兩種細胞經抗原活化之後，都會將其抗原接受器蛋白分泌到細胞外"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "Toll-like receptor具有下列那些domain？①leucine-rich domain ②proline-rich domain ③TIR domain\n④immunoglobulin domain",
+      "has_image": false,
+      "options": {
+        "A": "①④",
+        "B": "①③",
+        "C": "②③",
+        "D": "③④"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "下列有關dinitrophenol（DNP）的性質敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "具有免疫性（immunogenicity）和抗原性（antigenicity）",
+        "B": "不具有免疫性（immunogenicity）和抗原性（antigenicity）",
+        "C": "只具有免疫性（immunogenicity）",
+        "D": "只具有抗原性（antigenicity）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "經由下列何種機制能確保B細胞只會產生一種抗原特異性的免疫球蛋白？",
+      "has_image": false,
+      "options": {
+        "A": "體細胞重組（somatic recombination）",
+        "B": "體細胞超突變（somatic hypermutation）",
+        "C": "對偶基因剔除（allelic exclusion）",
+        "D": "類型轉換（class switch）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "採用間接免疫螢光分析法（indirect immunofluorescent assay）測定檢體中的梅毒螺旋菌抗體時，必須使用下\n列何種試劑組合？",
+      "has_image": false,
+      "options": {
+        "A": "患者血清／fluorescein-labeled killed Treponema pallidum",
+        "B": "患者生殖道滲出液／fluorescein-labeled rabbit anti-human抗體",
+        "C": "killed Treponema pallidum／fluorescein-標示之患者血清／rabbit anti-human 抗體",
+        "D": "killed Treponema pallidum／患者血清／fluorescein-labeled rabbit anti-human抗體"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "下列何種免疫分析法的原理不是利用溶解性抗原與溶解性抗體的相互作用？",
+      "has_image": false,
+      "options": {
+        "A": "免疫比濁法（nephelometry）",
+        "B": "免疫固定法（immunofixation）",
+        "C": "紅血球凝集法（hemagglutination）",
+        "D": "輻射免疫擴散法（radioimmunodiffusion）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "混合淋巴球反應（mixed lymphocyte reaction）主要是檢測下列何種抗原的差異？",
+      "has_image": false,
+      "options": {
+        "A": "HLA-A",
+        "B": "HLA-B",
+        "C": "HLA-C",
+        "D": "HLA-D"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "下列有關單向輻射免疫擴散分析（single radial immunodiffusion）的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "待測物置於抗原槽內，先進行電泳",
+        "B": "血清放在血清槽中，先進行電泳",
+        "C": "待測物的濃度和其擴散直徑平方成正比",
+        "D": "此分析法僅能應用於抗原或抗體的定性分析"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "血清病（serum sickness）的症狀通常在注射後多久發生？",
+      "has_image": false,
+      "options": {
+        "A": "幾分鐘",
+        "B": "幾小時",
+        "C": "1～3天",
+        "D": "7～21天"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "下列有關passive cutaneous anaphylaxis的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "就是P-K test",
+        "B": "把過敏病人的血清打入正常人皮膚，再打入過敏原而引起",
+        "C": "把過敏原打入過敏病人的皮膚而引起",
+        "D": "主要是由IgE引起"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "下列何種藥物不適用於治療第一型過敏反應？",
+      "has_image": false,
+      "options": {
+        "A": "cromolyn sodium",
+        "B": "cyclophosphamide",
+        "C": "cortisone",
+        "D": "epinephrine"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "過敏原皮膚試驗通常多久會發生風疹塊（wheal-and-flare response）？",
+      "has_image": false,
+      "options": {
+        "A": "20～30分鐘",
+        "B": "6～12小時",
+        "C": "1～3天",
+        "D": "4～7天"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "抗核抗體檢測結果如圖所示，報告應為下列何種型態？",
+      "has_image": false,
+      "options": {
+        "A": "斑點型（speckled）",
+        "B": "核仁型（nucleolar）",
+        "C": "周邊型（peripheral）",
+        "D": "均勻型（homogeneous）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列何種因子可能與狼瘡疾病引起的習慣性流產最相關？",
+      "has_image": false,
+      "options": {
+        "A": "抗磷脂質抗體",
+        "B": "抗核抗體",
+        "C": "免疫複合體",
+        "D": "漿細胞"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "嚴重型的全身性紅斑狼瘡病患，常因下列何種原因而死亡？",
+      "has_image": false,
+      "options": {
+        "A": "感染",
+        "B": "貧血",
+        "C": "原發性腫瘤",
+        "D": "次發性腫瘤"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "如患有類風濕性關節炎病人1000人中，10人有DR4，而正常人1000人中，1人有DR4，則DR4在類風濕性關\n節炎的相對危險率（relative risk）為何？",
+      "has_image": false,
+      "options": {
+        "A": "0.1",
+        "B": "10",
+        "C": "90",
+        "D": "100"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "骨髓移植最常用的方式是：",
+      "has_image": false,
+      "options": {
+        "A": "isograft",
+        "B": "autograft",
+        "C": "xenograft",
+        "D": "syngraft"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "下列有關HLA class II的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "由α鏈和β鏈所組成",
+        "B": "α鏈有α1、α2兩個domain，β鏈有β1、β2兩個domain",
+        "C": "β1、β2 domain是抗原結合位",
+        "D": "是immunoglobulin superfamily的一員"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "下列何者是目前嘗試移植豬的器官給人類，技術上不易成功的最大障礙？",
+      "has_image": false,
+      "options": {
+        "A": "豬和人的主要組織相容性抗原（major histocompatibility complex）差異過大，產生排斥",
+        "B": "豬和人的紅血球抗原差異過大，產生排斥",
+        "C": "人體內的自然抗體（natural antibodies）對抗豬的細胞表面醣抗原，產生排斥",
+        "D": "豬器官的特殊微生物，造成移植病人感染"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "下列何種器官移植病人不需服用免疫抑制劑？",
+      "has_image": false,
+      "options": {
+        "A": "骨髓",
+        "B": "眼角膜",
+        "C": "心臟",
+        "D": "腎臟"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "HIV病毒藉由下列何種分子與T細胞表面的CD4接受器結合而感染細胞？",
+      "has_image": false,
+      "options": {
+        "A": "gp120",
+        "B": "p17",
+        "C": "p24",
+        "D": "p32"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "目前最常用的被動免疫是注射下列何種動物的血清？",
+      "has_image": false,
+      "options": {
+        "A": "羊",
+        "B": "馬",
+        "C": "牛",
+        "D": "小鼠"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "下列何者屬於非活性疫苗（killed vaccine）？",
+      "has_image": false,
+      "options": {
+        "A": "A型肝炎疫苗",
+        "B": "B型肝炎疫苗",
+        "C": "麻疹疫苗",
+        "D": "沙賓疫苗"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "有關活性減毒（live attenuated）流感疫苗FluMist之敘述，下列那些正確？①經由肌肉注射施打疫苗 ②此疫\n苗病毒株可在低於37℃之溫度生長 ③此疫苗病毒株可以在上呼吸道生長而誘發免疫力 ④此疫苗病毒株可\n以在下呼吸道生長 ⑤此疫苗施打後能誘發好的黏膜免疫力",
+      "has_image": false,
+      "options": {
+        "A": "①②③",
+        "B": "①③⑤",
+        "C": "②③⑤",
+        "D": "②④⑤"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "Mucin類腫瘤標誌CA 27.29與下列何種癌症最相關？",
+      "has_image": false,
+      "options": {
+        "A": "乳癌",
+        "B": "卵巢癌",
+        "C": "小細胞肺癌",
+        "D": "大腸癌"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "細菌的lipopolysaccharide活化巨噬細胞是透過下列何種Toll-like receptor（TLR）？",
+      "has_image": false,
+      "options": {
+        "A": "TLR2",
+        "B": "TLR4",
+        "C": "TLR5",
+        "D": "TLR9"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "下列何種細胞激素可促使調節性T細胞的增生?",
+      "has_image": false,
+      "options": {
+        "A": "IL-5",
+        "B": "IL-8",
+        "C": "TNF-α",
+        "D": "TGF-β"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "下列有關T細胞及B細胞在辨識抗原上差異的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "B細胞與T細胞的特異性由其所辨識並結合的抗體決定",
+        "B": "B細胞只能辨識由10～14個胺基酸所形成的抗原胜肽，T細胞則可辨識抗原的三級結構",
+        "C": "B細胞以免疫球蛋白與抗原結合，而T細胞以其表現之細胞激素接受器與抗原結合",
+        "D": "B細胞能辨識可溶性抗原，而T細胞只能辨識與MHC相結合的抗原"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "下列何者與Th1輔助型T細胞引起之反應較無關？",
+      "has_image": false,
+      "options": {
+        "A": "分泌IFN-γ",
+        "B": "幫助B細胞產生IgE",
+        "C": "幫助巨噬細胞活化",
+        "D": "產生遲發性過敏反應"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "IgA的secretory component是由下列何種分子而來？",
+      "has_image": false,
+      "options": {
+        "A": "poly-Ig receptor",
+        "B": "neonatal Fc receptor",
+        "C": "IgA Fc receptor",
+        "D": "J chain"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "可與相同抗原決定位（epitope）結合之IgM及IgG，其affinity與avidity的比較，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "IgG之affinity與avidity都較高",
+        "B": "IgG之affinity與avidity都較低",
+        "C": "IgG之affinity較高，但avidity較低",
+        "D": "IgG之affinity較低，但avidity較高"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下列對於梅毒血清學VDRL試驗的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "屬於絮狀凝集試驗（Flocculation test）",
+        "B": "血清檢體先以56℃，30分鐘去補體",
+        "C": "試劑成分是Triglyceride、Cholesterol和Lecithin",
+        "D": "腦脊髓檢體可用來診斷神經性梅毒"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "利用下列何項試驗可檢測萊姆病患者的關節液中是否有致病菌DNA存在？",
+      "has_image": false,
+      "options": {
+        "A": "間接免疫螢光分析法（IFA）",
+        "B": "聚合酶鏈鎖反應（PCR）",
+        "C": "酵素免疫分析法（ELISA）",
+        "D": "西方墨點法（Western blot）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "下列何者不是傳染性單核球增多症（Infectious mononucleosis）急性期的實驗室數據？",
+      "has_image": false,
+      "options": {
+        "A": "嗜異性抗體試驗陽性",
+        "B": "Anti-VCA IgM抗體效價上升",
+        "C": "Anti-EBNA IgG抗體效價上升",
+        "D": "非典型淋巴球計數增加"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "有關人體對於不同微生物感染原之免疫防衛機制，下列配對何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "Parasites－抗體依賴細胞毒殺反應（ADCC）",
+        "B": "Bacteria－分泌干擾素（Interferon）",
+        "C": "Viruses－吞噬作用（phagocytosis）",
+        "D": "Yeast－注射免疫球蛋白（Immunoglobulin）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "使用HEp-2細胞主要用來培養下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "流感病毒（influenza virus）",
+        "B": "呼吸道融合病毒（respiratory syncytial virus）",
+        "C": "鼻病毒（rhinovirus）",
+        "D": "冠狀病毒（coronavirus）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "使用螢光顯微鏡觀察FITC標記的螢光時，所用的激發光源波長（nm）應為何？",
+      "has_image": false,
+      "options": {
+        "A": "220",
+        "B": "313",
+        "C": "490",
+        "D": "540"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "下列有關acyclovir抗藥性的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "可以PRA（plaque-reduction assay）來確定臨床病毒株的抗藥程度",
+        "B": "DNA polymerase突變對於抗藥性的影響大於thymidine kinase突變",
+        "C": "acyclovir抗藥性的病毒株對於foscarnet不具有感受性",
+        "D": "目前無法以基因型抗藥性檢測來決定病毒的acyclovir抗藥性"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "有關抗流感藥物amantadine及rimantadine的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "二者都藉由與M2蛋白結合來發揮作用",
+        "B": "主要作用在流感病毒的release階段",
+        "C": "只對influenza A virus有效",
+        "D": "可以預防或縮短症狀"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "下列何種肝炎病毒不具套膜（envelope）？",
+      "has_image": false,
+      "options": {
+        "A": "hepatitis A virus",
+        "B": "hepatitis B virus",
+        "C": "hepatitis C virus",
+        "D": "hepatitis D virus"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "目前較不易以細胞培養方式鑑定的病毒是：",
+      "has_image": false,
+      "options": {
+        "A": "單純疱疹病毒（herpes simplex virus）",
+        "B": "流感病毒（influenza virus）",
+        "C": "人類巨細胞病毒（human cytomegalovirus）",
+        "D": "人類乳突病毒（human papillomavirus）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "對於懷疑cytomegalovirus pneumonia的病人，最好採取下列何種檢體做cytopathology檢查？",
+      "has_image": false,
+      "options": {
+        "A": "bronchial aveolar lavage",
+        "B": "nasopharyngeal swab",
+        "C": "sputum",
+        "D": "urine"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "免疫螢光染色試驗，檢測病毒分離之細胞內病毒抗原的直接抹片製備步驟為何？①將細胞製成懸浮液，低速\n離心，去上清液 ②加磷酸鹽緩衝液 ③室溫自然乾燥 ④細胞沉澱製成懸浮液 ⑤滴細胞懸浮液於玻璃抹\n片 ⑥用丙酮固定",
+      "has_image": false,
+      "options": {
+        "A": "①③④⑤②⑥",
+        "B": "③①④⑤②⑥",
+        "C": "①②④⑤③⑥",
+        "D": "③①④②⑤⑥"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "為避免聚合酶連鎖反應（polymerase chain reaction, PCR）汙染，下列敘述何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "檢體以紫外線處理，去除DNA污染",
+        "B": "分別於不同房間處理：核酸抽取、聚合酶連鎖反應、跑DNA電泳",
+        "C": "使用aerosol-resistant tip，避免DNA污染到吸量管分注器",
+        "D": "即使是RT-PCR，儘量於單一試管（single tube）處理及反應"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "下列何種試驗會利用到DNA探針（probe）？",
+      "has_image": false,
+      "options": {
+        "A": "南方墨點試驗（Southern blot )",
+        "B": "西方墨點試驗（Western blot )",
+        "C": "電子顯微鏡病毒顆粒計數",
+        "D": "酵素免疫分析（ELISA）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "下列那一個病毒特性無法以分子技術來檢測？",
+      "has_image": false,
+      "options": {
+        "A": "病毒量",
+        "B": "抗藥性",
+        "C": "病毒大小",
+        "D": "基因型"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "下列何種B型肝炎血清標記與感染力高低的相關性最強？",
+      "has_image": false,
+      "options": {
+        "A": "HBsAg",
+        "B": "HBcAg",
+        "C": "HBeAg",
+        "D": "Anti-HBs"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "以RT-PCR偵測病毒之RNA基因體，可包括下列那些肝炎病毒？",
+      "has_image": false,
+      "options": {
+        "A": "HAV、HBV、HCV、HDV",
+        "B": "HAV、HBV、HCV、HEV",
+        "C": "HAV、HCV、HDV、HEV",
+        "D": "HBV、HCV、HDV、HEV"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "造成nephropathy的BK病毒屬於下列何種病毒科？",
+      "has_image": false,
+      "options": {
+        "A": "Flaviviridae",
+        "B": "Herpesviridae",
+        "C": "Paramyxoviridae",
+        "D": "Polyomaviridae"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "下列何者最需要C型肝炎病毒的核酸定量分析？",
+      "has_image": false,
+      "options": {
+        "A": "捐血帶原者",
+        "B": "肝癌患者",
+        "C": "使用干擾素與雷巴威靈（ribavirin）治療的慢性病患者",
+        "D": "未知自己是否感染者"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "在下列那種病毒高盛行區旅行時，最易經由飲食感染？",
+      "has_image": false,
+      "options": {
+        "A": "B型肝炎病毒",
+        "B": "C型肝炎病毒",
+        "C": "D型肝炎病毒",
+        "D": "E型肝炎病毒"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "有關痘病毒科（Poxviridae）的敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "所有病毒中最小型的",
+        "B": "帶有直線狀的雙股DNA",
+        "C": "所有複製過程均在細胞質中進行",
+        "D": "可藉由接觸傳染"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "下列有關腺病毒（adenovirus）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "主要感染黏膜上皮細胞",
+        "B": "造成的症狀包括結膜角膜炎",
+        "C": "感染後數週內，可能在淋巴組織或腺體細胞可以找到病毒",
+        "D": "在感染細胞的細胞質內複製病毒基因"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "一位68歲男性患者有帶狀疱疹（shingles），下列何者為其最可能的治療藥物？",
+      "has_image": false,
+      "options": {
+        "A": "indinavir",
+        "B": "zidovudine",
+        "C": "amantadine",
+        "D": "acyclovir"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "Herpes simplex virus type 2較不會造成下列何種感染或疾病？",
+      "has_image": false,
+      "options": {
+        "A": "新生兒感染",
+        "B": "腦膜炎",
+        "C": "中耳炎",
+        "D": "黏膜感染"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "有關單核球增生症（infectious mononucleosis）的敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "最常見於12歲以下孩童",
+        "B": "Epstein-Barr virus為最常見之致病原",
+        "C": "臨床上以ribavirin治療",
+        "D": "治癒後一定會產生heterophil antibody"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "臨床上懷疑Epstein-Barr virus（EBV）感染所引起的infectious mononucleosis，下列那些檢測結果可幫助確\n認？",
+      "has_image": false,
+      "options": {
+        "A": "EA IgG（-）/ EBNA IgG（+）/ VCA IgG（+）",
+        "B": "EA IgG（-）/ EBNA IgG（+）/ VCA IgG（-）",
+        "C": "EA IgG（-）/ EBNA IgG（-）/ VCA IgG（+）",
+        "D": "EA IgG（+）/ EBNA IgG（-）/ VCA IgG（+）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "人類巨細胞病毒（human cytomegalovirus）的培養鑑定應利用下列何種細胞？",
+      "has_image": false,
+      "options": {
+        "A": "MDCK",
+        "B": "A549",
+        "C": "MRC-5/HEL",
+        "D": "RD"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "有一株流感病毒命名為A/Hong Kong/56/68（H3N2）-like virus，下列關於這個病毒的敘述何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "是A型流感病毒",
+        "B": "是1956年分離的",
+        "C": "是由人類分離出來的",
+        "D": "是在Hong Kong分離出，而且是H3N2亞型"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "有關鼻病毒（rhinovirus）之敘述，下列何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "single-stranded、positive-sense RNA virus",
+        "B": "ether sensitive",
+        "C": "acid labile",
+        "D": "核蛋白成正二十面體對稱（icosahedral symmetry）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "下列何種病毒一般不易造成眼睛的感染？",
+      "has_image": false,
+      "options": {
+        "A": "adenovirus",
+        "B": "enterovirus A71",
+        "C": "coxsackievirus A24",
+        "D": "herpes simplex virus"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列有關HIV-1的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "在愛滋病末期，可能測不到p24抗體",
+        "B": "在急性感染期，無法自血清中測到病毒的核酸",
+        "C": "在急性感染期，HIV-1主要是CXCR4向性（tropism）",
+        "D": "在大多數沒接受雞尾酒療法的病人，其潛伏期的病毒量會下降至real-time RT-PCR測不到的範圍"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "HIV-1藥物protease inhibitor的作用機制為何？",
+      "has_image": false,
+      "options": {
+        "A": "抑制病毒蛋白質轉譯",
+        "B": "抑制生成具感染力的成熟病毒顆粒",
+        "C": "抑制病毒基因體嵌入宿主染色體",
+        "D": "抑制病毒外套膜蛋白的切割而無法與細胞受器CD4結合"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "人類免疫缺乏病毒蛋白中，下列何者可結合於LTR區域，進而與細胞轉錄因子形成複合體，活化病毒基因表\n現？",
+      "has_image": false,
+      "options": {
+        "A": "p24",
+        "B": "reverse transcriptase",
+        "C": "RNA polymerase II",
+        "D": "Tat"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "下列何種病毒的感染與老鼠有關？",
+      "has_image": false,
+      "options": {
+        "A": "SARS-CoV",
+        "B": "漢他病毒（hantavirus）",
+        "C": "日本腦炎病毒（Japanese encephalitis virus）",
+        "D": "腮腺炎病毒（mumps virus）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "下列那一種病毒的外殼含套膜（envelope）？",
+      "has_image": false,
+      "options": {
+        "A": "正黏液病毒科（Orthomyxoviridae）",
+        "B": "腺病毒科（Adenoviridae）",
+        "C": "小RNA病毒科（Picornaviridae）",
+        "D": "杯狀病毒科（Caliciviridae）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "雷氏症（Reye's syndrome）的致死率高（10～40%），但引起雷氏症的原因不明；一般建議，有類似流感\n（flu-like）症狀，應避免服用含下列那一樣藥品，以減少雷氏症的發生？",
+      "has_image": false,
+      "options": {
+        "A": "aspirin",
+        "B": "ribavirin",
+        "C": "tamiflu",
+        "D": "amantadine"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "下列有關輪狀病毒（rotavirus）之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "為單股RNA病毒",
+        "B": "含套膜（envelope）",
+        "C": "可產生混種病毒（reassortant virus）",
+        "D": "RotaTaq疫苗為死病毒疫苗"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "下列關於SARS冠狀病毒（SARS coronavirus）之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "具有套膜、正性單股RNA病毒",
+        "B": "引發感染病人高燒（＞38℃）",
+        "C": "angiotensin-converting enzyme 2（ACE-2）為受體",
+        "D": "只能由呼吸道檢體測出"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "下列何種病毒不具神經趨性（neurotropism）？",
+      "has_image": false,
+      "options": {
+        "A": "influenza C virus",
+        "B": "rabies virus",
+        "C": "enterovirus A71",
+        "D": "Japanese encephalitis virus"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "人類間質肺炎病毒（human metapneumovirus）屬於下列那一種病毒科？",
+      "has_image": false,
+      "options": {
+        "A": "小RNA病毒科（Picornaviridae）",
+        "B": "副黏液病毒科（Paramyxoviridae）",
+        "C": "正黏液病毒科（Orthomyxoviridae）",
+        "D": "冠狀病毒科（Coronaviridae）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "以PCR檢測下列病毒時，何者必須先進行反轉錄（reverse transcription）步驟？",
+      "has_image": false,
+      "options": {
+        "A": "JC virus",
+        "B": "dengue virus",
+        "C": "Kaposi's sarcoma herpesvirus",
+        "D": "parvovirus B19"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "下列有關flavivirus的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "都是藉由節肢動物傳播",
+        "B": "可藉由套膜蛋白與唾液酸結合而進入細胞",
+        "C": "整個病毒的基因體可被轉譯成一個單獨的多蛋白",
+        "D": "需藉由DNA-dependent RNA polymerase進行複製"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "下列何種病毒已有疫苗可以預防感染？",
+      "has_image": false,
+      "options": {
+        "A": "yellow fever virus",
+        "B": "hepatitis C virus",
+        "C": "human cytomegalovirus",
+        "D": "rhinovirus"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "下列何者是可引發出血熱的節肢動物媒介病毒（arthropod-borne virus）？",
+      "has_image": false,
+      "options": {
+        "A": "Marburg virus",
+        "B": "dengue virus",
+        "C": "hantavirus",
+        "D": "Lassa virus\n測驗式試題標準答案\n考試名稱：106年第二次醫師考試分階段考試（第一階段考試）、牙醫師藥師考試分階段考試、藥師\n、醫事檢驗師、醫事放射師、物理治療師、職能治療師、呼吸治療師、獸醫師考試、106\n類科名稱：醫事檢驗師\n年助產師考試\n科目名稱：臨床血清免疫學與臨床病毒學(試題代號：6308)\n題 數：80題\n標準答案：\n題號 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20\n答案 Ｄ Ｃ Ｄ Ｄ Ａ Ｄ Ｂ Ｄ Ｃ Ｄ Ｃ Ｄ Ｃ Ｄ Ｃ Ｂ Ａ Ｄ Ａ Ａ\n題號 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40\n答案 Ｂ Ｂ Ｃ Ｃ Ｂ Ａ Ｂ Ａ Ｃ Ａ Ｂ Ｄ Ｄ Ｂ Ａ Ｃ Ｃ Ｂ Ｃ Ａ\n題號 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60\n答案 Ｂ Ｃ Ａ Ｂ Ａ Ｄ Ａ Ｃ Ａ Ａ Ｃ Ｃ Ｃ Ｄ Ｃ Ｄ Ａ Ｄ Ｄ Ｃ\n題號 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80\n答案 Ｂ Ｄ Ｃ Ｂ Ｂ Ｂ Ａ Ｂ Ｄ Ｂ Ａ Ａ Ｃ Ｄ Ａ Ｂ Ｂ Ｃ Ａ Ｂ\n題號\n答案\n備 註："
+      },
+      "answer": "B",
+      "bonus": false
+    }
+  ]
+}

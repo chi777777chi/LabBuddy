@@ -26,8 +26,10 @@ ENV/
 # Reflex
 .web/
 .states/
+.reflex/
 frontend/.web/
 frontend/.states/
+frontend/.reflex/
 
 # Database (local dev)
 *.db
@@ -57,3 +59,6 @@ htmlcov/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Question bank PDFs（原始試卷，JSON 已含完整資料）
+Question/**/*.pdf

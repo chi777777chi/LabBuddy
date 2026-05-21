@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     secret_key: str
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24 * 7  # 7 days
+    gemini_api_key: str = ""
+    groq_api_key: str = ""
 
     class Config:
         env_file = str(_ENV_FILE)

@@ -1,0 +1,1053 @@
+{
+  "exam_info": {
+    "year": 105,
+    "sitting": 1,
+    "subject": "臨床生理學與病理學",
+    "exam_code": "1308",
+    "exam_type": "專技高考醫事檢驗師",
+    "duration_minutes": 60,
+    "total_questions": 80
+  },
+  "questions": [
+    {
+      "number": 1,
+      "content": "心電圖中，心房去極化（depolarization）之波形稱為：",
+      "has_image": false,
+      "options": {
+        "A": "P波",
+        "B": "QRS波",
+        "C": "T波",
+        "D": "U波"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 2,
+      "content": "這張心電圖最恰當的診斷為何？",
+      "has_image": false,
+      "options": {
+        "A": "第一度房室間傳導阻斷",
+        "B": "第二度房室間傳導阻斷",
+        "C": "第三度房室間傳導阻斷",
+        "D": "2：1房室間傳導阻斷"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 3,
+      "content": "這張心電圖的診斷下列何者最適當？",
+      "has_image": false,
+      "options": {
+        "A": "心房性頻脈（atrial tachycardia）",
+        "B": "心房性纖維顫動（atrial fibrillation）",
+        "C": "心室性頻脈（ventricular tachycardia）",
+        "D": "心室性纖維顫動（ventricular fibrillation）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 4,
+      "content": "Prinzmetal氏心絞痛（Prinzmetal's angina）通常發生在休息狀態，主要是由於下列何種缺氧\n所造成？",
+      "has_image": false,
+      "options": {
+        "A": "心內膜下缺氧",
+        "B": "心外膜下缺氧",
+        "C": "心肌全壁缺氧",
+        "D": "心包膜缺氧"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 5,
+      "content": "下列何者傳導的速度最慢？",
+      "has_image": false,
+      "options": {
+        "A": "心房",
+        "B": "心室",
+        "C": "右側枝",
+        "D": "房室結"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 6,
+      "content": "在心電圖的標準十二導中，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "I＝II＋III",
+        "B": "II＝I＋III",
+        "C": "III＝I＋II",
+        "D": "I＝2II＋3III"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 7,
+      "content": "此張心電圖的心跳速率最接近每分鐘幾次？",
+      "has_image": false,
+      "options": {
+        "A": "100",
+        "B": "185",
+        "C": "80",
+        "D": "60"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 8,
+      "content": "心電圖之六個右胸電極導，主要之用途為診斷下列何種狀況？",
+      "has_image": false,
+      "options": {
+        "A": "肺心症",
+        "B": "右位心臟",
+        "C": "心臟順時鐘旋轉",
+        "D": "心臟逆時鐘旋轉"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 9,
+      "content": "冠狀動脈阻塞是引起心肌梗塞的主要原因，而其阻塞最常發生的位置為：",
+      "has_image": false,
+      "options": {
+        "A": "左後枝",
+        "B": "左前下枝",
+        "C": "右枝",
+        "D": "左環枝"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 10,
+      "content": "下列何種現象不會出現於Wolff-Parkinson-White症候群之心電圖？",
+      "has_image": false,
+      "options": {
+        "A": "PR間隔變短",
+        "B": "出現δ波",
+        "C": "QRS波正常",
+        "D": "P-T間隔固定"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 11,
+      "content": "記錄心電圖時，標準感度常打在何波之間？",
+      "has_image": false,
+      "options": {
+        "A": "TP波",
+        "B": "PR波",
+        "C": "RS波",
+        "D": "ST波"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 12,
+      "content": "腦波記錄操作時，紀錄紙之送紙速度通常訂為多少cm/sec？",
+      "has_image": false,
+      "options": {
+        "A": "10",
+        "B": "3",
+        "C": "1",
+        "D": "0.5"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 13,
+      "content": "腦波之β波的頻率範圍為何？",
+      "has_image": false,
+      "options": {
+        "A": "＜4 Hz",
+        "B": "4 Hz～8 Hz",
+        "C": "9 Hz～13 Hz",
+        "D": "14 Hz～30 Hz"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 14,
+      "content": "α波抑制（α block）是指，腦波中的α波會因緊張、開眼及聲音等因素而轉變成：",
+      "has_image": false,
+      "options": {
+        "A": "連續性銳波（sharp wave）",
+        "B": "連續性棘波（spike wave）",
+        "C": "低振幅的快波",
+        "D": "高振幅的慢波"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 15,
+      "content": "腦波記錄時會因受測者的生理狀況而干擾，但下列何者除外？",
+      "has_image": false,
+      "options": {
+        "A": "睡眠",
+        "B": "眼球運動",
+        "C": "流汗",
+        "D": "咬牙"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 16,
+      "content": "正常人在安靜、清醒、閉眼的狀態，其腦波呈現 10 Hz左右的 α 波可能為：",
+      "has_image": false,
+      "options": {
+        "A": "前頭部（F\n3\n，F\n4\n）",
+        "B": "後頭部（O\n1\n，O\n2\n）",
+        "C": "中心部（C\n3\n，C\n4\n）",
+        "D": "前頭極（F\nP1\n，F\nP2\n）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 17,
+      "content": "睡眠生理多功能檢查（polysomnography）不包括下列何者？",
+      "has_image": false,
+      "options": {
+        "A": "眼動圖（electro-oculogram）",
+        "B": "腦波圖（electroencephalogram）",
+        "C": "肌電圖（electromyogram）",
+        "D": "運動心電圖（exercise electrocardiogram）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 18,
+      "content": "最容易受到長期服用benzodiazepine（valium）影響而受抑制的腦波是：",
+      "has_image": false,
+      "options": {
+        "A": "α波",
+        "B": "β波",
+        "C": "θ波",
+        "D": "δ波"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 19,
+      "content": "下列有關代謝性酸鹼中毒時呼吸代償作用之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "比腎臟代償來的慢",
+        "B": "可迅速調整HCO -\n3",
+        "C": "調整血液 以達代償作用",
+        "D": "亦見於呼吸性酸中毒病患"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 20,
+      "content": "有關呼吸性酸中毒病人血液氣體之變化，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "↑、pH↓",
+        "B": "↓、pH↑",
+        "C": "↑、pH↑",
+        "D": "↓、pH↓"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 21,
+      "content": "血液氣體分析檢驗動脈血液時，採檢後檢體若置於37℃但未能即時分析，則檢體內 的變\n化為：",
+      "has_image": false,
+      "options": {
+        "A": "降低，1 mmHg/60 min",
+        "B": "升高，2～10 mmHg/60 min",
+        "C": "降低，5～10 mmHg/60 min",
+        "D": "升高，33 mmHg/60 min"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 22,
+      "content": "下列有關動脈化微血管採血之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "皮膚穿刺要自然流血，不可擠壓",
+        "B": "成人以手指，嬰兒以足跟為宜",
+        "C": "CO\n2\n及pH值近似動脈血",
+        "D": "O\n2\n稍高於動脈血"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 23,
+      "content": "下列何者最容易造成代謝性鹼中毒？",
+      "has_image": false,
+      "options": {
+        "A": "注射大量重碳酸鹽（bicarbonate）輸液",
+        "B": "糖尿病併發酮中毒（ketosis）",
+        "C": "甲狀腺亢進（hyperthyroidism）",
+        "D": "過度換氣症候群（hyperventilation syndrome）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 24,
+      "content": "在代償作用未發生之前，腸道液體大量流失，最容易導致下列何者發生？",
+      "has_image": false,
+      "options": {
+        "A": "代謝性酸中毒",
+        "B": "代謝性鹼中毒",
+        "C": "呼吸性酸中毒",
+        "D": "呼吸性鹼中毒"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 25,
+      "content": "在 1 大氣壓（760 mmHg）下吸氣，此時咽氣管開口端之氮氣分壓最接近多少mmHg？",
+      "has_image": false,
+      "options": {
+        "A": "0.25",
+        "B": "47",
+        "C": "160",
+        "D": "560"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 26,
+      "content": "在以流量計測量混合型肺部疾病（mixed pulmonary disease）患者之肺功能時，最可能發生\n下列何種狀況？",
+      "has_image": false,
+      "options": {
+        "A": "最大呼氣流速（peak expiratory flow rate, PEFR）接近正常值，但用力肺活量（forced\nvital capacity, FVC）低於預測值的 80%",
+        "B": "最大呼氣流速（peak expiratory flow rate, PEFR）低於預測值的 80%，但用力肺活量\n（forced vital capacity, FVC）接近正常值",
+        "C": "最大呼氣流速（peak expiratory flow rate, PEFR）與用力肺活量（forced vital capacity,\nFVC）皆低於預測值的80%",
+        "D": "最大呼氣流速（peak expiratory flow rate, PEFR）與用力肺活量（forced vital capacity,\nFVC）皆接近正常值"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 27,
+      "content": "平靜呼氣後，再用力呼氣至最大程度，所吐出的氣體量稱為：",
+      "has_image": false,
+      "options": {
+        "A": "潮氣容積（tidal volume）",
+        "B": "功能餘氣量（functional residual capacity）",
+        "C": "呼氣儲備容積（expiratory reserve volume）",
+        "D": "吸氣儲備容積（inspiratory reserve volume）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 28,
+      "content": "肺功能檢查顯示受試者的總肺量（TLC）5.2 L、功能肺容量（FRC）3.4 L、潮氣容積\n（TV）0.5 L、肺活量（VC）3.1 L；則此人的吸氣儲備容積（IRV）為多少 L？",
+      "has_image": false,
+      "options": {
+        "A": "1.2",
+        "B": "1.3",
+        "C": "1.8",
+        "D": "2.2"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 29,
+      "content": "圖中肺功能檢查 FEF50% 約為多少L/min？",
+      "has_image": false,
+      "options": {
+        "A": "3.5",
+        "B": "2",
+        "C": "1",
+        "D": "0.5"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 30,
+      "content": "下列何種肺功能數值，在測量過程中需要受試者用力且快速吸氣或吐氣？①TLC ②DL\nCO\n③MVV ④FRC",
+      "has_image": false,
+      "options": {
+        "A": "①③",
+        "B": "②④",
+        "C": "①④",
+        "D": "②③"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 31,
+      "content": "在下列何種情況下音波傳導速度最大？",
+      "has_image": false,
+      "options": {
+        "A": "固體介質中",
+        "B": "液體介質中",
+        "C": "氣體介質中",
+        "D": "無介質的空間中"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 32,
+      "content": "超音波橫向解析值（lateral resolution）愈小，表示：",
+      "has_image": false,
+      "options": {
+        "A": "音束直徑愈小",
+        "B": "音束直徑愈大",
+        "C": "回音愈強",
+        "D": "回音愈弱"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 33,
+      "content": "應用於心瓣膜、血流速度及胎兒心跳檢查之超音波為：",
+      "has_image": false,
+      "options": {
+        "A": "A-mode",
+        "B": "B-mode",
+        "C": "C-mode",
+        "D": "Doppler echo"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 34,
+      "content": "下列各種超音波探頭之頻率，何者最高？",
+      "has_image": false,
+      "options": {
+        "A": "乳房超音波",
+        "B": "心臟超音波",
+        "C": "腹部超音波",
+        "D": "腎臟超音波"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 35,
+      "content": "下列何器官最常使用M-mode超音波檢查？",
+      "has_image": false,
+      "options": {
+        "A": "肝臟",
+        "B": "甲狀腺",
+        "C": "心臟",
+        "D": "肺臟"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 36,
+      "content": "脈波式超音波之發射頻率每秒約為多少次？",
+      "has_image": false,
+      "options": {
+        "A": "小於50",
+        "B": "50～5000",
+        "C": "5000～50000",
+        "D": "大於50000"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 37,
+      "content": "下列有關測試膝反射（knee jerk reflex）之敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "以測試鎚敲擊肱二頭肌肌腱",
+        "B": "興奮珈瑪運動神經元（gamma motor neuron）引發股四頭肌收縮",
+        "C": "小腿反射性踢出",
+        "D": "反射過低者多為上神經元病變"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 38,
+      "content": "下列何種現象最可能在小腦病變時發生？",
+      "has_image": false,
+      "options": {
+        "A": "意向性震顫（intension tremor）",
+        "B": "多發性硬化症（multiple sclerosis）",
+        "C": "躁鬱症（bipolar disorder）",
+        "D": "失語症（aphasia）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 39,
+      "content": "下列何者是腦下腺後葉（posterior pituitary gland）所生成的荷爾蒙？",
+      "has_image": false,
+      "options": {
+        "A": "生長激素（growth hormone）",
+        "B": "促性腺素（gonadotropins）",
+        "C": "助孕酮（progesterone）",
+        "D": "催產素（oxytocin）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 40,
+      "content": "下列關於突觸（synapses）的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "突觸分為電性（electrical）和化學性（chemical）兩種",
+        "B": "興奮性化學突觸（excitatory chemical synapses）會開啟鈉鉀離子通道，使膜電位去極化",
+        "C": "抑制性化學突觸（inhibitory chemical synapses）會關閉鈉離子通道，使膜電位無法去極\n化",
+        "D": "前突觸末梢釋放神經傳導物質需要鈣離子的幫助"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 41,
+      "content": "下列有關細胞壞死（necrosis）與凋亡（apoptosis）的敘述，何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "凋亡的發生一定是病理性的變化",
+        "B": "凋亡過程通常會有細胞膜破裂",
+        "C": "壞死過程比較會引起發炎反應",
+        "D": "壞死過程比較不易有細胞腫脹"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 42,
+      "content": "下列何種膠原蛋白（collagen）為傷口癒合之結締組織中的主要成分？",
+      "has_image": false,
+      "options": {
+        "A": "第一型膠原蛋白",
+        "B": "第二型膠原蛋白",
+        "C": "第三型膠原蛋白",
+        "D": "第四型膠原蛋白"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 43,
+      "content": "Barrett氏食道症（Barrett esophagus）的最主要變化為：",
+      "has_image": false,
+      "options": {
+        "A": "肥大（hypertrophy）",
+        "B": "增生（hyperplasia）",
+        "C": "萎縮（atrophy）",
+        "D": "化生（metaplasia）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 44,
+      "content": "經由內在途徑（intrinsic pathway）引起細胞凋亡（apoptosis）的蛋白質，由下列何者所釋\n出？",
+      "has_image": false,
+      "options": {
+        "A": "細胞核（nucleus）",
+        "B": "凋亡小體（apoptotic body）",
+        "C": "粒線體（mitochondria）",
+        "D": "溶酶體（lysosome）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 45,
+      "content": "有關RAS致癌基因之敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "屬於位於細胞核內之訊息傳遞蛋白（signal-transducing protein）",
+        "B": "常以基因放大（gene amplification）模式出現於癌症細胞中",
+        "C": "在沒有突變的情況下，RAS需與GDP結合才能維持活化狀態，往下游傳遞訊息",
+        "D": "基因突變常出現於胰臟腺癌"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 46,
+      "content": "下列有關腫瘤抑制基因（tumor suppressor gene）因甲基化失去正常功能的敘述，何者錯\n誤？",
+      "has_image": false,
+      "options": {
+        "A": "因基因啟動子（promoter）甲基化所引起的表觀基因靜默（epigenetic silencing），其\nDNA序列並無結構之改變",
+        "B": "p16/INK4a於人類癌症可因過度甲基化而造成其功能喪失",
+        "C": "基因啟動子甲基化好發於CpG islands",
+        "D": "甲基化引起的基因靜默無法於有絲分裂後繼續維持"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 47,
+      "content": "下列有關去氧核醣核酸（DNA）研究技術的敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "南方墨點（Southern blot）可用於偵測DNA片段",
+        "B": "螢光原位雜交（fluorescence in situ hybridization, FISH）可用於偵測染色體的轉位\n（translocation）",
+        "C": "比較基因體雜交（comparative genomic hybridization, CGH）可用於偵測基因之單一核酸\n突變（single nucleotide mutation）",
+        "D": "PCR可用於偵測感染病原體與某些遺傳疾病"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 48,
+      "content": "下列關於孟德爾遺傳疾病（Mendelian genetic disorder）之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "可分為自體顯性、自體隱性及X染色體（性聯）遺傳等方式",
+        "B": "此類疾病多由單一個基因的突變造成",
+        "C": "單一X染色體（性聯）等位基因突變在女性多屬顯性遺傳",
+        "D": "自體隱性遺傳疾病的病人，其父母大多無臨床病徵"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 49,
+      "content": "下列何者與維生素C缺乏最不相關？",
+      "has_image": false,
+      "options": {
+        "A": "膠原蛋白（collagen）合成異常",
+        "B": "皮膚小出血點（petechiae）",
+        "C": "肝臟鐵質沉積",
+        "D": "傷口癒合不良"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 50,
+      "content": "高溫環境下，體溫調節功能喪失，體溫高於41℃，最可能為下列何種狀況？",
+      "has_image": false,
+      "options": {
+        "A": "熱痙攣（heat cramp）",
+        "B": "發燒（fever）",
+        "C": "熱衰竭（heat exhaustion）",
+        "D": "中暑（heat stroke）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 51,
+      "content": "孕婦缺乏何種營養素，最容易引起巨母細胞性貧血（megaloblastic anemia）及胎兒神經管\n缺損（neural tube defects）？",
+      "has_image": false,
+      "options": {
+        "A": "維生素A",
+        "B": "鐵",
+        "C": "鈣",
+        "D": "葉酸"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 52,
+      "content": "下列有關癌症傾向（cancer predisposing）症候群或疾病之敘述，何者錯誤？",
+      "has_image": false,
+      "options": {
+        "A": "RB腫瘤抑制基因之先天性突變之遺傳模式為體染色體顯性（autosomal dominant）",
+        "B": "Li-Fraumeni症候群是p53腫瘤抑制基因之先天性突變造成",
+        "C": "Li-Fraumeni症候群其遺傳模式為體染色體顯性（autosomal dominant）",
+        "D": "乳癌有關之BRCA1與BRCA2家族性基因突變，其遺傳模式為體染色體隱性（autosomal\nrecessive）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 53,
+      "content": "下列何種病原可藉由產生外毒素傷害上呼吸道上皮細胞並在患者口咽部形成一層偽膜？",
+      "has_image": false,
+      "options": {
+        "A": "金黃色葡萄球菌（Staphylococcus aureus）",
+        "B": "A群鏈球菌（Streptococcus pyogenes）",
+        "C": "肺炎鏈球菌（Streptococcus pneumoniae）",
+        "D": "白喉桿菌（Corynebacterium diphtheriae）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 54,
+      "content": "下列何者不屬於腸胃道系統的宿主屏障（host barriers）？",
+      "has_image": false,
+      "options": {
+        "A": "胃部酸性環境",
+        "B": "M型免疫球蛋白（IgM）",
+        "C": "腸道正常菌落",
+        "D": "胰臟酵素"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 55,
+      "content": "IgA（immunoglobulin A）缺乏疾病之症狀較少見於下列何種系統？",
+      "has_image": false,
+      "options": {
+        "A": "呼吸系統",
+        "B": "消化道系統",
+        "C": "內分泌系統",
+        "D": "泌尿道系統"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 56,
+      "content": "下列何種蛋白與人類免疫不全病毒（human immunodeficiency virus, HIV）進入宿主細胞之\n機制最不相關？",
+      "has_image": false,
+      "options": {
+        "A": "gp120",
+        "B": "CD4",
+        "C": "CCR5",
+        "D": "polymerase"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 57,
+      "content": "Sheehan症候群是指：",
+      "has_image": false,
+      "options": {
+        "A": "腦下垂體前葉腺瘤引起腎上腺機能亢進",
+        "B": "生產後腦下垂體前葉出現廣泛的缺血性壞死",
+        "C": "頭部外傷後腦下垂體後葉出現廣泛的缺血性壞死",
+        "D": "腦下垂體後葉激素不適當的過度分泌"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 58,
+      "content": "三十歲女性子宮頸抹片（Papanicolaou smear）檢查結果顯示為第三級子宮頸上皮內贅瘤\n（cervical intraepithelial neoplasia 3, CIN3）。請問下列何者最可能與此一病變有關？",
+      "has_image": false,
+      "options": {
+        "A": "陰道滴蟲（Trichomonas vaginalis）的感染",
+        "B": "第二型單純疱疹病毒（herpes simplex virus, type 2）的感染",
+        "C": "淋病雙球菌（Neisseria gonorrhoeae）的感染",
+        "D": "人類乳突瘤病毒（human papillomavirus）的感染"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 59,
+      "content": "引起心肌炎（myocarditis）最常見的原因是：",
+      "has_image": false,
+      "options": {
+        "A": "立克次體（rickettsia）感染",
+        "B": "病毒（virus）感染",
+        "C": "黴菌（fungus）感染",
+        "D": "錐蟲（trypanosome）感染"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 60,
+      "content": "最常見的心臟惡性腫瘤是：",
+      "has_image": false,
+      "options": {
+        "A": "橫紋肌肉瘤（rhabdomyosarcoma）",
+        "B": "血管肉瘤（angiosarcoma）",
+        "C": "轉移腫瘤（metastatic tumor）",
+        "D": "脂肪肉瘤（liposarcoma）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 61,
+      "content": "有關甲狀腺腫（goiter）之敘述，下列何者正確？",
+      "has_image": false,
+      "options": {
+        "A": "地區性甲狀腺腫（endemic goiter）主要的原因是飲食中缺乏碘",
+        "B": "偶發性甲狀腺腫（sporadic goiter）主要的原因是遺傳性缺乏甲狀腺素合成所需的酶",
+        "C": "絕大多數甲狀腺腫的病人，呈現甲狀腺機能亢進（hyperthyroidism）",
+        "D": "Plummer syndrome是指呈現甲狀腺機能不足的多結節性甲狀腺腫（multinodular goiter）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 62,
+      "content": "下列何種疾病在2A及2B型多發性內分泌腫瘤症候群（multiple endocrine neoplasm, MEN）\n都會出現？",
+      "has_image": false,
+      "options": {
+        "A": "副甲狀腺增生（parathyroid hyperplasia）",
+        "B": "胰島瘤（insulinoma）",
+        "C": "腦下腺腺瘤（pituitary adenoma）",
+        "D": "親鉻細胞瘤（pheochromocytoma）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 63,
+      "content": "大多數肺腺癌細胞對於下列何種標記的免疫染色呈陽性反應？",
+      "has_image": false,
+      "options": {
+        "A": "P63",
+        "B": "CDX-2",
+        "C": "TTF-1",
+        "D": "PSA"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 64,
+      "content": "絕大多數的感染性心內膜炎（infective endocarditis）是由下列何者引起？",
+      "has_image": false,
+      "options": {
+        "A": "黴菌",
+        "B": "立克次體",
+        "C": "細菌",
+        "D": "病毒"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 65,
+      "content": "下列何者為最常見的功能性腦下垂體腺瘤（functional pituitary adenoma）？",
+      "has_image": false,
+      "options": {
+        "A": "生長激素腺瘤（growth hormone-producing adenoma）",
+        "B": "促腎上腺皮質素腺瘤（corticotroph cell adenoma）",
+        "C": "泌乳激素腺瘤（prolactinoma）",
+        "D": "促性腺激素腺瘤（gonadotroph adenoma）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 66,
+      "content": "鼻咽癌與下列何種病毒關係最為密切？",
+      "has_image": false,
+      "options": {
+        "A": "人類乳突瘤病毒（human papillomavirus, HPV）",
+        "B": "單純疱疹病毒（herpes simplex virus, HSV）",
+        "C": "愛氏頓病毒（Epstein-Barr virus, EBV）",
+        "D": "巨細胞病毒（cytomegalovirus, CMV）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 67,
+      "content": "下列何者是孔恩氏症候群（Conn syndrome）的臨床表現？",
+      "has_image": false,
+      "options": {
+        "A": "腎上腺皮質機能亢進（hypercortisolism）",
+        "B": "甲狀腺機能亢進（hyperthyroidism）",
+        "C": "醛固酮增多症（hyperaldosteronism）",
+        "D": "腎上腺皮質機能不足（adrenocortical insufficiency）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 68,
+      "content": "Kimmelstiel-Wilson病灶最常見於下列何種疾病？",
+      "has_image": false,
+      "options": {
+        "A": "糖尿病腎病（diabetic nephropathy）",
+        "B": "急性感染後腎絲球腎炎（acute post-infectious glomerulonephritis）",
+        "C": "狼瘡性腎炎（lupus nephritis）",
+        "D": "膜性腎絲球腎炎（membranous glomerulonephritis）"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 69,
+      "content": "會陰部表皮細胞之人類乳突瘤病毒（human papillomavirus）感染，最典型的病理變化為：",
+      "has_image": false,
+      "options": {
+        "A": "漿細胞浸潤與血管內皮增生",
+        "B": "乾酪性肉芽腫（caseous granuloma）",
+        "C": "細胞空洞化（koilocytosis）",
+        "D": "考椎A型包涵體（Cowdry type A inclusion）"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 70,
+      "content": "下列何種大腸炎與困難梭狀芽孢桿菌（Clostridium difficile）感染有關？",
+      "has_image": false,
+      "options": {
+        "A": "壞死性腸炎（necrotizing enterocolitis）",
+        "B": "偽膜性大腸炎（pseudomembranous colitis）",
+        "C": "傷寒熱（typhoid fever）",
+        "D": "出血性大腸炎（hemorrhagic colitis）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 71,
+      "content": "下列何者與抗嗜中性球細胞質抗體（antineutrophil cytoplasmic antibody, ANCA）最為相\n關？",
+      "has_image": false,
+      "options": {
+        "A": "Goodpasture症候群",
+        "B": "Wegener 肉芽腫",
+        "C": "Henoch-Schönlein紫斑病（purpura）",
+        "D": "紅斑性狼瘡（systemic lupus erythematosus）"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 72,
+      "content": "下列何者最常引起肝細胞大空泡脂肪變性（macrovesicular fatty change）？",
+      "has_image": false,
+      "options": {
+        "A": "acetaminophen",
+        "B": "sulfonamide",
+        "C": "phenothiazine",
+        "D": "alcohol"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 73,
+      "content": "在肝臟發現的惡性腫瘤中，下列何者最常見？",
+      "has_image": false,
+      "options": {
+        "A": "肝細胞癌",
+        "B": "膽管癌",
+        "C": "淋巴癌",
+        "D": "轉移癌"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 74,
+      "content": "前列腺癌最常用的病理分級（grade）方法為：",
+      "has_image": false,
+      "options": {
+        "A": "Nottingham combined histologic grade",
+        "B": "Scarff-Bloom-Richardson grade",
+        "C": "Gleason grade",
+        "D": "WHO grading system"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 75,
+      "content": "胃切片發現戒指細胞（signet-ring cell）浸潤，最可能的診斷是：",
+      "has_image": false,
+      "options": {
+        "A": "消化性潰瘍",
+        "B": "腺型息肉",
+        "C": "增生型息肉",
+        "D": "腺癌"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 76,
+      "content": "食道鱗狀細胞癌的基因突變，下列何者最常見？",
+      "has_image": false,
+      "options": {
+        "A": "p53",
+        "B": "K-RAS",
+        "C": "APC",
+        "D": "B-RAF"
+      },
+      "answer": "A",
+      "bonus": false
+    },
+    {
+      "number": 77,
+      "content": "樹膠腫（gumma）與下列何者最相關？",
+      "has_image": false,
+      "options": {
+        "A": "淋病",
+        "B": "梅毒",
+        "C": "結核",
+        "D": "疱疹"
+      },
+      "answer": "B",
+      "bonus": false
+    },
+    {
+      "number": 78,
+      "content": "下列何者不屬於陰莖之原位癌（carcinoma in situ）？",
+      "has_image": false,
+      "options": {
+        "A": "波文病（Bowen disease）",
+        "B": "波文樣丘疹（Bowenoid papulosis）",
+        "C": "奎瑞氏紅皮增生症（erythroplasia of Queyrat）",
+        "D": "尖銳濕疣（condyloma acuminatum）"
+      },
+      "answer": "D",
+      "bonus": false
+    },
+    {
+      "number": 79,
+      "content": "下列何者是診斷口腔單純疱疹病毒感染的方法？",
+      "has_image": false,
+      "options": {
+        "A": "Schiller test",
+        "B": "Tinel test",
+        "C": "Tzanck test",
+        "D": "Hoffman test"
+      },
+      "answer": "C",
+      "bonus": false
+    },
+    {
+      "number": 80,
+      "content": "單純疱疹病毒第一型（Herpes simplex virus, type I）感染引起的腦炎最典型的位置在：",
+      "has_image": false,
+      "options": {
+        "A": "額葉（frontal lobe）",
+        "B": "枕葉（occipital lobe）",
+        "C": "顳葉（temporal lobe）",
+        "D": "頂葉（parietal lobe）\n測驗式試題標準答案\n105年第一次專門職業及技術人員高等考試醫師牙醫師藥師考試分階段考試、藥師、醫事\n考試名稱：\n檢驗師、醫事放射師、助產師、物理治療師、職能治療師、呼吸治療師、獸醫師考試\n類科名稱：醫事檢驗師\n科目名稱：臨床生理學與病理學(試題代號：1308)\n題 數：80題\n標準答案：\n題號 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20\n答案 Ａ Ａ Ｄ Ｂ Ｄ Ｂ Ｂ Ｂ Ｂ Ｃ Ａ Ｂ Ｄ Ｃ Ａ Ｂ Ｄ Ｄ Ｃ Ａ\n題號 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40\n答案 Ｃ Ｄ Ａ Ａ Ｄ Ｃ Ｃ Ｂ Ｃ Ａ Ａ Ｂ Ｄ Ａ Ｃ Ｂ Ｃ Ａ Ｄ Ｃ\n題號 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60\n答案 Ｃ Ａ Ｄ Ｃ Ｄ Ｄ Ｃ Ｃ Ｃ Ｄ Ｄ Ｄ Ｄ Ｂ Ｃ Ｄ Ｂ Ｄ Ｂ Ｃ\n題號 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80\n答案 Ａ Ｄ Ｃ Ｃ Ｃ Ｃ Ｃ Ａ Ｃ Ｂ Ｂ Ｄ Ｄ Ｃ Ｄ Ａ Ｂ Ｄ Ｃ Ｃ\n題號\n答案\n備 註："
+      },
+      "answer": "C",
+      "bonus": false
+    }
+  ]
+}

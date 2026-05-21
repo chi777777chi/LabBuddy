@@ -140,6 +140,58 @@ def quit_dialog() -> rx.Component:
     )
 
 
+def ai_hint_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.hstack(
+                    rx.icon("sparkles", size=18, color=rx.color("violet", 9)),
+                    rx.heading("AI 提示", size="5"),
+                    spacing="2",
+                    align="center",
+                ),
+                rx.divider(),
+                rx.cond(
+                    ExamState.ai_hint_loading,
+                    rx.center(
+                        rx.vstack(
+                            rx.spinner(size="3"),
+                            rx.text("AI 分析中，請稍候…", size="2", color=rx.color("gray", 9)),
+                            spacing="3",
+                            align="center",
+                        ),
+                        padding_y="6",
+                        width="100%",
+                    ),
+                    rx.text(
+                        ExamState.ai_hint_text,
+                        size="3",
+                        line_height="1.8",
+                        white_space="pre-wrap",
+                    ),
+                ),
+                rx.hstack(
+                    rx.dialog.close(
+                        rx.button(
+                            "關閉",
+                            variant="soft",
+                            color_scheme="gray",
+                            on_click=ExamState.close_ai_hint_dialog,
+                        ),
+                    ),
+                    justify="end",
+                    width="100%",
+                ),
+                spacing="4",
+                width="100%",
+            ),
+            max_width="480px",
+        ),
+        open=ExamState.show_ai_hint_dialog,
+        on_open_change=lambda v: ExamState.close_ai_hint_dialog(),
+    )
+
+
 def top_bar() -> rx.Component:
     return rx.hstack(
         rx.button(
@@ -241,6 +293,35 @@ def question_area() -> rx.Component:
             spacing="3",
             width="100%",
         ),
+        rx.cond(
+            ExamState.use_ai_hint,
+            rx.button(
+                rx.cond(
+                    ExamState.ai_hint_loading,
+                    rx.spinner(size="2"),
+                    rx.icon("sparkles", size=15),
+                ),
+                rx.cond(
+                    ExamState.ai_hint_loading,
+                    "AI 提示載入中…",
+                    rx.cond(
+                        ExamState.current_hint_level == 0,
+                        "AI 提示",
+                        rx.cond(
+                            ExamState.current_hint_level >= 3,
+                            "已達最大提示（3/3）",
+                            f"再提示一層（{ExamState.current_hint_level}/3）",
+                        ),
+                    ),
+                ),
+                on_click=ExamState.fetch_ai_hint,
+                disabled=ExamState.ai_hint_loading | (ExamState.current_hint_level >= 3),
+                variant="soft",
+                color_scheme="violet",
+                size="2",
+            ),
+            rx.fragment(),
+        ),
         spacing="4",
         width="100%",
     )
@@ -288,6 +369,7 @@ def exam_page() -> rx.Component:
         rx.box(
             early_submit_dialog(),
             quit_dialog(),
+            ai_hint_dialog(),
             top_bar(),
             rx.center(
                 rx.vstack(

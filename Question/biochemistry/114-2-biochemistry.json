@@ -11,963 +11,1043 @@
   "questions": [
     {
       "number": 1,
-      "content": "下列那一個測定儀器最常用於尿液試紙的臨床生化檢測？",
+      "content": "下 列那一個測定儀器最常用於尿液試紙的臨床生化檢測？",
       "has_image": false,
       "options": {
-        "A": "散射濁度計（nephelometer）",
-        "B": "透射濁度計（turbidimeter）",
-        "C": "分光光度計（spectrophotometer）",
-        "D": "反射光度計（reflectance photometer）"
+        "A": "散 射濁度計（nephelometer）",
+        "B": "透 射濁度計（turbidimeter）",
+        "C": "分 光光度計（spectrophotometer）",
+        "D": "反 射光度計（reflectance photometer）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 2,
-      "content": "有關chemiluminescent immunoassay（LOCI）冷光免疫分析技術原理，下列何者最不適當？",
+      "content": "有 關chemiluminescent immunoassay（LOCI）冷光免疫分析技術原理，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "屬於一種異質性（heterogeneous assay）免疫分析法",
-        "B": "屬於一種非競爭型免疫分析法",
-        "C": "試劑中需製備光源激發物（sensitizer particle）",
-        "D": "試劑中需製備冷光標定物（chemiluminescent particle）"
+        "A": "屬 於一種異質性（heterogeneous assay）免疫分析法",
+        "B": "屬 於一種非競爭型免疫分析法",
+        "C": "試 劑中需製備光源激發物（sensitizer particle）",
+        "D": "試 劑中需製備冷光標定物（chemiluminescent particle）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 3,
-      "content": "根據臨床實驗室標準協會（Clinical and Laboratory Standards Institute, CLSI），臨床實驗室試劑水\n（Clinical Laboratory Reagent water, CLRW）規格，下列何者正確？",
+      "content": "根 據臨床實驗室標準協會（Clinical and Laboratory Standards Institute, CLSI），臨床實驗室試劑水\n（Clinical Laboratory Reagent water, CLRW）規格，下列何者正確？",
       "has_image": false,
       "options": {
-        "A": "顆粒物須通過0.45 μm 濾紙",
-        "B": "25℃時電阻≧8 MΩ/cm",
-        "C": "微生物含量＜10 cfu/mL",
-        "D": "總有機物＜600 ng/g"
+        "A": "顆 粒物須通過0.45 μm濾紙",
+        "B": "2 5℃時電阻≧8 MΩ/cm",
+        "C": "微 生物含量＜10 cfu/mL",
+        "D": "總 有機物＜600 ng/g"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 4,
-      "content": "MALDI-TOF 質譜儀較不適合用來鑑定或分析下列何種微生物或分子？",
+      "content": "M ALDI-TOF質譜儀較不適合用來鑑定或分析下列何種微生物或分子？",
       "has_image": false,
       "options": {
-        "A": "病毒",
-        "B": "細菌",
-        "C": "蛋白質",
-        "D": "醣類"
+        "A": "病 毒",
+        "B": "細 菌",
+        "C": "蛋 白質",
+        "D": "醣 類"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 5,
-      "content": "針對特定疾病，下列何種分析最適合用於同時評估多個檢測標誌的優劣？",
+      "content": "針 對特定疾病，下列何種分析最適合用於同時評估多個檢測標誌的優劣？",
       "has_image": false,
       "options": {
-        "A": "簡單直線迴歸（simple linear regression）",
-        "B": "接受者操作特性曲線（receiver operating characteristic curve, ROC curve）",
-        "C": "Bland-Altman 圖（Bland-Altman plot）",
-        "D": "相關係數（correlation coefficient）"
+        "A": "簡 單直線迴歸（simple linear regression）",
+        "B": "接 受者操作特性曲線（receiver operating characteristic curve, ROC curve）",
+        "C": "B land-Altman圖（Bland-Altman plot）",
+        "D": "相 關係數（correlation coefficient）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 6,
-      "content": "有關隨機誤差的敘述，下列何者最不適當？",
+      "content": "有 關隨機誤差的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "可用來評估重複測量後的不精密度（imprecision）",
-        "B": "可利用變異係數（coefficient of variation, CV）表示，CV 越大代表誤差越大",
-        "C": "當分析數據出現連續性正偏差或負偏差，代表有隨機誤差出現",
-        "D": "為評估檢驗項目之總誤差值的參數之一"
+        "A": "可 用來評估重複測量後的不精密度（imprecision）",
+        "B": "可 利用變異係數（coefficient of variation, CV）表示，CV越大代表誤差越大",
+        "C": "當 分析數據出現連續性正偏差或負偏差，代表有隨機誤差出現",
+        "D": "為 評估檢驗項目之總誤差值的參數之一"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 7,
-      "content": "有關一般檢驗試劑盒外面的標示，下列何者為非必要資訊？",
+      "content": "有 關一般檢驗試劑盒外面的標示，下列何者為非必要資訊？",
       "has_image": false,
       "options": {
-        "A": "試劑名稱（reagent identification）",
-        "B": "單價（price）",
-        "C": "批號（lot number）",
-        "D": "到期日（expiration date）"
+        "A": "試 劑名稱（reagent identification）",
+        "B": "單 價（price）",
+        "C": "批 號（lot number）",
+        "D": "到 期日（expiration date）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 8,
-      "content": "下列何種檢體前處理，可以在自動分析系統中最有效降低分析前錯誤？",
+      "content": "下 列何種檢體前處理，可以在自動分析系統中最有效降低分析前錯誤？",
       "has_image": false,
       "options": {
-        "A": "採用自動開蓋系統",
-        "B": "寫上身分證字號",
-        "C": "使用條碼",
-        "D": "標示抗凝劑成分"
+        "A": "採 用自動開蓋系統",
+        "B": "寫 上身分證字號",
+        "C": "使 用條碼",
+        "D": "標 示抗凝劑成分"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 9,
-      "content": "若血清蛋白電泳圖像呈現β與𝛾區帶間的融接（β–𝛾 bridge），可能是下列何種疾病？",
+      "content": "若 血清蛋白電泳圖像呈現β與𝛾區帶間的融接（β–𝛾 bridge），可能是下列何種疾病？",
       "has_image": false,
       "options": {
-        "A": "肝硬化",
-        "B": "單株免疫球蛋白增高血症",
-        "C": "急性發炎",
-        "D": "腎病症候群"
+        "A": "肝 硬化",
+        "B": "單 株免疫球蛋白增高血症",
+        "C": "急 性發炎",
+        "D": "腎 病症候群"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 10,
-      "content": "甘胺酸（glycine）具有兩個可以解離的基團，其pKa 分別是2.3 及9.6，其pI 大約是多少？",
+      "content": "甘 胺酸（glycine）具有兩個可以解離的基團，其pKa分別是2.3及9.6，其pI大約是多少？",
       "has_image": false,
       "options": {
-        "A": "2.3",
-        "B": "6.0",
-        "C": "9.6",
-        "D": "11.9"
+        "A": "2 .3",
+        "B": "6 .0",
+        "C": "9 .6",
+        "D": "1 1.9"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 11,
-      "content": "慢性溶血（chronic hemolysis）患者的血漿蛋白中，下列何者上升最顯著？",
+      "content": "慢 性溶血（chronic hemolysis）患者的血漿蛋白中，下列何者上升最顯著？",
       "has_image": false,
       "options": {
-        "A": "白蛋白（albumin）",
-        "B": "運鐵蛋白（transferrin）",
-        "C": "甲型胎兒蛋白（α-fetoprotein）",
-        "D": "血紅素結合蛋白（haptoglobin）"
+        "A": "白 蛋白（albumin）",
+        "B": "運 鐵蛋白（transferrin）",
+        "C": "甲 型胎兒蛋白（α-fetoprotein）",
+        "D": "血 紅素結合蛋白（haptoglobin）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 12,
-      "content": "有關低尿酸血症（hypouricemia）的敘述，下列何者最不適當？",
+      "content": "有 關低尿酸血症（hypouricemia）的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "血清尿酸濃度低於2 mg/dL",
-        "B": "xanthine oxidase 活性增加",
-        "C": "可見於Fanconi syndrome 患者",
-        "D": "服用6-mercaptopurine 藥物造成"
+        "A": "血 清尿酸濃度低於2 mg/dL",
+        "B": "x anthine oxidase活性增加",
+        "C": "可 見於Fanconi syndrome患者",
+        "D": "服 用6-mercaptopurine藥物造成"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 13,
-      "content": "有關新生兒疾病苯丙酮尿症（phenylketonuria, PKU）之敘述，下列何者最適當？",
+      "content": "有 關新生兒疾病苯丙酮尿症（phenylketonuria, PKU）之敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "疾病症狀包括病人尿液有甜味",
-        "B": "病患血中常出現苯丙胺酸（phenylalanine）及酪胺酸（tyrosine）濃度增加",
-        "C": "可補充左旋多巴（L-DOPA），避免新生兒腦部發育受損",
-        "D": "需飲食控制將血中苯丙胺酸（phenylalanine）濃度維持在700～900 µmol/L"
+        "A": "疾 病症狀包括病人尿液有甜味",
+        "B": "病 患血中常出現苯丙胺酸（phenylalanine）及酪胺酸（tyrosine）濃度增加",
+        "C": "可 補充左旋多巴（L-DOPA），避免新生兒腦部發育受損",
+        "D": "需 飲食控制將血中苯丙胺酸（phenylalanine）濃度維持在700～900 µmol/L"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 14,
-      "content": "下列何者屬於生酮性胺基酸（ketogenic amino acids）？",
+      "content": "下 列何者屬於生酮性胺基酸（ketogenic amino acids）？",
       "has_image": false,
       "options": {
-        "A": "離胺酸（lysine）",
-        "B": "組胺酸（histidine）",
-        "C": "甘胺酸（glycine）",
-        "D": "絲胺酸（serine）"
+        "A": "離 胺酸（lysine）",
+        "B": "組 胺酸（histidine）",
+        "C": "甘 胺酸（glycine）",
+        "D": "絲 胺酸（serine）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 15,
-      "content": "有關蛋白質定量的方法，下列敘述何者最為適當？",
+      "content": "有 關蛋白質定量的方法，下列敘述何者最為適當？",
       "has_image": false,
       "options": {
-        "A": "Biuret 方法是酸性條件下銅離子（Cu\n2+）結合胜肽鍵產生顏色變化",
-        "B": "bromocresol green（BCG）方法是於酸性環境結合白蛋白（albumin）產生顏色變化",
-        "C": "Bradford 方法是酸性條件下Folin-Ciocalteu 結合蛋白質產生顏色變化",
-        "D": "Lowry 方法是酸性條件下Coomassie Brilliant Blue 結合蛋白質產生顏色變化"
+        "A": "B iuret方法是酸性條件下銅離子（Cu2+）結合胜肽鍵產生顏色變化",
+        "B": "b romocresol green（BCG）方法是於酸性環境結合白蛋白（albumin）產生顏色變化",
+        "C": "B radford方法是酸性條件下Folin-Ciocalteu結合蛋白質產生顏色變化",
+        "D": "L owry方法是酸性條件下Coomassie Brilliant Blue結合蛋白質產生顏色變化"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 16,
-      "content": "有關腎臟疾病的敘述，下列何者最不適當？",
+      "content": "有 關腎臟疾病的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "體染色體顯性多囊性腎臟病（autosomal dominant polycystic kidney disease）是最常見的腎臟遺傳性疾\n病",
-        "B": "急性腎絲球腎炎（acute glomerulonephritis）最常見的致病菌為A 群β型溶血性鏈球菌（group A β-\nhemolytic streptococcus）",
-        "C": "腎病症候群（nephrotic syndrome）病人血清中的β2-microglobulin 濃度會上升",
-        "D": "糖尿病腎病變（diabetic nephropathy）早期病變時，會出現微白蛋白尿（microalbuminuria）"
+        "A": "體 染色體顯性多囊性腎臟病（autosomal dominant polycystic kidney disease）是最常見的腎臟遺傳性疾\n病",
+        "B": "急 性腎絲球腎炎（acute glomerulonephritis）最常見的致病菌為A群β型溶血性鏈球菌（group A β-\nhemolytic streptococcus）",
+        "C": "腎 病症候群（nephrotic syndrome）病人血清中的β-microglobulin濃度會上升\n2",
+        "D": "糖 尿病腎病變（diabetic nephropathy）早期病變時，會出現微白蛋白尿（microalbuminuria）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 17,
-      "content": "一般來說，產前篩檢唐氏症建議利用四重檢測，其中不包含下列何種分子的篩檢？",
+      "content": "一 般來說，產前篩檢唐氏症建議利用四重檢測，其中不包含下列何種分子的篩檢？",
       "has_image": false,
       "options": {
-        "A": "人類絨毛膜性腺激素（hCG）",
-        "B": "非結合性雌三醇（unconjugated estriol, uE3）",
-        "C": "抑制素A（inhibin A）",
-        "D": "運鐵蛋白（transferrin）"
+        "A": "人 類絨毛膜性腺激素（hCG）",
+        "B": "非 結合性雌三醇（unconjugated estriol, uE3）",
+        "C": "抑 制素A（inhibin A）",
+        "D": "運 鐵蛋白（transferrin）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 18,
-      "content": "有關威爾森病（Wilson disease）的敘述，下列何者最為適當？",
+      "content": "有 關威爾森病（Wilson disease）的敘述，下列何者最為適當？",
       "has_image": false,
       "options": {
-        "A": "肝臟合成的藍胞漿素（ceruloplasmin）下降",
-        "B": "患者肝組織中的銅離子減少",
-        "C": "由於銅離子的減少造成神經細胞損傷",
-        "D": "可以在血液抹片中發現凱－費環（Kayser-Fleischer ring）"
+        "A": "肝 臟合成的藍胞漿素（ceruloplasmin）下降",
+        "B": "患 者肝組織中的銅離子減少",
+        "C": "由 於銅離子的減少造成神經細胞損傷",
+        "D": "可 以在血液抹片中發現凱－費環（Kayser-Fleischer ring）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 19,
-      "content": "以瓊脂凝膠電泳分析血清蛋白，主要是依據蛋白質的何種性質？",
+      "content": "以 瓊脂凝膠電泳分析血清蛋白，主要是依據蛋白質的何種性質？",
       "has_image": false,
       "options": {
-        "A": "蛋白質分子中氫鍵的數量",
-        "B": "蛋白質的四級結構",
-        "C": "蛋白質與電泳介質的親和力",
-        "D": "蛋白質的電荷與質量"
+        "A": "蛋 白質分子中氫鍵的數量",
+        "B": "蛋 白質的四級結構",
+        "C": "蛋 白質與電泳介質的親和力",
+        "D": "蛋 白質的電荷與質量"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 20,
-      "content": "以uricase 法測定尿酸，下列敘述何者最不適當？",
+      "content": "以 uricase法測定尿酸，下列敘述何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "uricase 法比phosphotungstic acid 化學法特異性低",
-        "B": "會產生CO2分子與allantoin",
-        "C": "peroxidase 為偶合酵素來進行呈色反應",
-        "D": "guanine 會干擾反應造成正誤差"
+        "A": "u ricase法比phosphotungstic acid化學法特異性低",
+        "B": "會 產生CO 分子與allantoin\n2",
+        "C": "p eroxidase為偶合酵素來進行呈色反應",
+        "D": "g uanine會干擾反應造成正誤差"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 21,
-      "content": "有關腎元的對流倍增機制（countercurrent multiplication mechanism），當抗利尿激素\n（vasopressin, ADH）存在時，集尿管管腔的變化情況為何？",
+      "content": "有 關腎元的對流倍增機制（countercurrent multiplication mechanism），當抗利尿激素\n（vasopressin, ADH）存在時，集尿管管腔的變化情況為何？",
       "has_image": false,
       "options": {
-        "A": "變成低滲性（hyposmotic）",
-        "B": "由低滲性（hyposmotic）變成高滲性（hyperosmotic）",
-        "C": "由等滲性（isosmotic）變成高滲性（hyperosmotic）",
-        "D": "由高滲性（hyperosmotic）變成等滲性（isosmotic）"
+        "A": "變 成低滲性（hyposmotic）",
+        "B": "由 低滲性（hyposmotic）變成高滲性（hyperosmotic）",
+        "C": "由 等滲性（isosmotic）變成高滲性（hyperosmotic）",
+        "D": "由 高滲性（hyperosmotic）變成等滲性（isosmotic）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 22,
-      "content": "有關測量腎絲球過濾率（GFR）的指標cystatin C 之敘述，下列何者最不適當？",
+      "content": "有 關測量腎絲球過濾率（GFR）的指標cystatin C之敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "為內生性的指標",
-        "B": "為silver standard",
-        "C": "為cysteine protease inhibitor",
-        "D": "甲狀腺機能亢進時體內產量增加"
+        "A": "為 內生性的指標",
+        "B": "為 silver standard",
+        "C": "為 cysteine protease inhibitor",
+        "D": "甲 狀腺機能亢進時體內產量增加"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 23,
-      "content": "下列何者是組成麩胱甘肽（glutathione）的胺基酸之一？",
+      "content": "下 列何者是組成麩胱甘肽（glutathione）的胺基酸之一？",
       "has_image": false,
       "options": {
-        "A": "甘胺酸（glycine）",
-        "B": "麩醯胺酸（glutamine）",
-        "C": "丙胺酸（alanine）",
-        "D": "甲硫胺酸（methionine）"
+        "A": "甘 胺酸（glycine）",
+        "B": "麩 醯胺酸（glutamine）",
+        "C": "丙 胺酸（alanine）",
+        "D": "甲 硫胺酸（methionine）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 24,
-      "content": "下列何種分子的結構中含有多單元之異戊二烯，被歸類為萜烯（terpenes）？",
+      "content": "下 列何種分子的結構中含有多單元之異戊二烯，被歸類為萜烯（terpenes）？",
       "has_image": false,
       "options": {
-        "A": "維生素E",
-        "B": "血栓素（thromboxanes）",
-        "C": "維生素D",
-        "D": "神經鞘磷脂（sphingomyelin）"
+        "A": "維 生素E",
+        "B": "血 栓素（thromboxanes）",
+        "C": "維 生素D",
+        "D": "神 經鞘磷脂（sphingomyelin）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 25,
-      "content": "三酸甘油酯（triglycerides）是由那兩種物質結合而成？",
+      "content": "三 酸甘油酯（triglycerides）是由那兩種物質結合而成？",
       "has_image": false,
       "options": {
-        "A": "磷脂質（phospholipid）與膽固醇（cholesterol）",
-        "B": "甘油（glycerol）與脂肪酸（fatty acid）",
-        "C": "膽固醇（cholesterol）與脂肪酸（fatty acid）",
-        "D": "脂肪酸（fatty acid）與葡萄糖（glucose）"
+        "A": "磷 脂質（phospholipid）與膽固醇（cholesterol）",
+        "B": "甘 油（glycerol）與脂肪酸（fatty acid）",
+        "C": "膽 固醇（cholesterol）與脂肪酸（fatty acid）",
+        "D": "脂 肪酸（fatty acid）與葡萄糖（glucose）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 26,
-      "content": "美國國家膽固醇教育計畫（NCEP）訂定理想血脂質濃度標準，下列何者最適當？",
+      "content": "美 國國家膽固醇教育計畫（NCEP）訂定理想血脂質濃度標準，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "LDL-C＜130 mg/dL、HDL-C≧60 mg/dL、total cholesterol＜150 mg/dL",
-        "B": "LDL-C＜100 mg/dL、HDL-C≧40 mg/dL、total cholesterol＜200 mg/dL",
-        "C": "LDL-C＜130 mg/dL、HDL-C≧40 mg/dL、total cholesterol＜150 mg/dL",
-        "D": "LDL-C＜100 mg/dL、HDL-C≧60 mg/dL、total cholesterol＜200 mg/dL"
+        "A": "L DL-C＜130 mg/dL、HDL-C≧60 mg/dL、total cholesterol＜150 mg/dL",
+        "B": "L DL-C＜100 mg/dL、HDL-C≧40 mg/dL、total cholesterol＜200 mg/dL",
+        "C": "L DL-C＜130 mg/dL、HDL-C≧40 mg/dL、total cholesterol＜150 mg/dL",
+        "D": "L DL-C＜100 mg/dL、HDL-C≧60 mg/dL、total cholesterol＜200 mg/dL"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 27,
-      "content": "Lp(a)表現過多也被認為是造成動脈粥樣硬化症的原因，有關Lp(a)之敘述，下列何者最不適當？",
+      "content": "L p(a)表現過多也被認為是造成動脈粥樣硬化症的原因，有關Lp(a)之敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "Lp(a)為LDL 之亞型，多了兩個apo(a)為其特徵",
-        "B": "巨噬細胞會吞噬Lp(a)而變成泡沫細胞",
-        "C": "Lp(a)會促進血管平滑肌或內皮細胞增生，導致血管壁增厚",
-        "D": "目前臨床上無法檢測Lp(a)"
+        "A": "L p(a)為LDL之亞型，多了兩個apo(a)為其特徵",
+        "B": "巨 噬細胞會吞噬Lp(a)而變成泡沫細胞",
+        "C": "L p(a)會促進血管平滑肌或內皮細胞增生，導致血管壁增厚",
+        "D": "目 前臨床上無法檢測Lp(a)"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 28,
-      "content": "下列何者為六碳酮糖？",
+      "content": "下 列何者為六碳酮糖？",
       "has_image": false,
       "options": {
-        "A": "L-葡萄糖（L-glucose）",
-        "B": "D-果糖（D-fructose）",
-        "C": "D-半乳糖（D-galactose）",
-        "D": "D-麥芽糖（D-maltose）"
+        "A": "L -葡萄糖（L-glucose）",
+        "B": "D -果糖（D-fructose）",
+        "C": "D -半乳糖（D-galactose）",
+        "D": "D -麥芽糖（D-maltose）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 29,
-      "content": "有關血糖檢測的敘述，下列何者最適當？",
+      "content": "有 關血糖檢測的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "微血管中的血糖濃度比靜脈血低",
-        "B": "室溫下，全血中血糖每小時減少20％",
-        "C": "氟化鈉可抑制糖質新生",
-        "D": "全血血糖濃度較血漿血糖濃度低"
+        "A": "微 血管中的血糖濃度比靜脈血低",
+        "B": "室 溫下，全血中血糖每小時減少20％",
+        "C": "氟 化鈉可抑制糖質新生",
+        "D": "全 血血糖濃度較血漿血糖濃度低"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 30,
-      "content": "下列何種分子是組成脂蛋白核心（core）的成分之一？",
+      "content": "下 列何種分子是組成脂蛋白核心（core）的成分之一？",
       "has_image": false,
       "options": {
-        "A": "磷脂質（phospholipid）",
-        "B": "游離膽固醇（free cholesterol）",
-        "C": "脂蛋白元（apolipoprotein）",
-        "D": "膽固醇酯（cholesteryl ester）"
+        "A": "磷 脂質（phospholipid）",
+        "B": "游 離膽固醇（free cholesterol）",
+        "C": "脂 蛋白元（apolipoprotein）",
+        "D": "膽 固醇酯（cholesteryl ester）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 31,
-      "content": "下列那一種脂蛋白所含蛋白質重量百分比最高？",
+      "content": "下 列那一種脂蛋白所含蛋白質重量百分比最高？",
       "has_image": false,
       "options": {
-        "A": "極低密度脂蛋白（VLDL）",
-        "B": "低密度脂蛋白（LDL）",
-        "C": "高密度脂蛋白2（HDL2）",
-        "D": "高密度脂蛋白3（HDL3）"
+        "A": "極 低密度脂蛋白（VLDL）",
+        "B": "低 密度脂蛋白（LDL）",
+        "C": "高 密度脂蛋白2（HDL）\n2",
+        "D": "高 密度脂蛋白3（HDL）\n3"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 32,
-      "content": "除了細胞自行合成外，周邊細胞大多是以何種方式獲得膽固醇？",
+      "content": "除 了細胞自行合成外，周邊細胞大多是以何種方式獲得膽固醇？",
       "has_image": false,
       "options": {
-        "A": "吸收LDL 釋出的膽固醇",
-        "B": "吸收巨噬細胞釋出的膽固醇",
-        "C": "吞噬游離膽固醇",
-        "D": "吞噬LDL"
+        "A": "吸 收LDL釋出的膽固醇",
+        "B": "吸 收巨噬細胞釋出的膽固醇",
+        "C": "吞 噬游離膽固醇",
+        "D": "吞 噬LDL"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 33,
-      "content": "下列那一個糖化血色素（glycated hemoglobin）的檢測方法原理，不是利用電荷差異性？",
+      "content": "下 列那一個糖化血色素（glycated hemoglobin）的檢測方法原理，不是利用電荷差異性？",
       "has_image": false,
       "options": {
-        "A": "親和層析法（affinity chromatography）",
-        "B": "毛細管電泳法（capillary electrophoresis）",
-        "C": "等電點電泳（isoelectric focusing, IEF）",
-        "D": "離子交換層析法（ion-exchange chromatography）"
+        "A": "親 和層析法（affinity chromatography）",
+        "B": "毛 細管電泳法（capillary electrophoresis）",
+        "C": "等 電點電泳（isoelectric focusing, IEF）",
+        "D": "離 子交換層析法（ion-exchange chromatography）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 34,
-      "content": "糖尿病病患如有貧血或血紅素疾病時，糖化白蛋白可用於血糖控制之評估，糖化白蛋白通常可反映多久的平\n均血糖濃度？",
+      "content": "糖 尿病病患如有貧血或血紅素疾病時，糖化白蛋白可用於血糖控制之評估，糖化白蛋白通常可反映多久的平\n均血糖濃度？",
       "has_image": false,
       "options": {
-        "A": "2～3 月",
-        "B": "4～5 月",
-        "C": "2～3 週",
-        "D": "4～5 週"
+        "A": "2 ～3月",
+        "B": "4 ～5月",
+        "C": "2 ～3週",
+        "D": "4 ～5週"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 35,
-      "content": "某空腹受檢者的血清總膽固醇250 mg/dL，三酸甘油酯200 mg/dL，HDL-C 30 mg/dL，則其LDL-C 約為多少\nmg/dL？",
+      "content": "某 空腹受檢者的血清總膽固醇250 mg/dL，三酸甘油酯200 mg/dL，HDL-C 30 mg/dL，則其LDL-C約為多少\nmg/dL？",
       "has_image": false,
       "options": {
-        "A": "220",
-        "B": "180",
-        "C": "110",
-        "D": "20"
+        "A": "2 20",
+        "B": "1 80",
+        "C": "1 10",
+        "D": "2 0"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 36,
-      "content": "下列何者是造成酮酸血症最主要的酮體？",
+      "content": "下 列何者是造成酮酸血症最主要的酮體？",
       "has_image": false,
       "options": {
-        "A": "α-ketoglutarate",
-        "B": "acetoacetic acid",
-        "C": "β-hydroxybutyric acid",
-        "D": "acetone"
+        "A": "α -ketoglutarate",
+        "B": "a cetoacetic acid",
+        "C": "β -hydroxybutyric acid",
+        "D": "a cetone"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 37,
-      "content": "有關合成膽固醇之速率決定步驟（rate-limiting step），需要何種酵素與輔酶參與？",
+      "content": "有 關合成膽固醇之速率決定步驟（rate-limiting step），需要何種酵素與輔酶參與？",
       "has_image": false,
       "options": {
-        "A": "acetoacetyl-CoA synthetase 與pyridoxal-5-phosphate",
-        "B": "HMG-CoA synthase 與FADH2",
-        "C": "HMG-CoA reductase 與NADPH",
-        "D": "HMG-CoA lyase 與thiamine pyrophosphate"
+        "A": "a cetoacetyl-CoA synthetase與pyridoxal-5-phosphate",
+        "B": "H MG-CoA synthase與FADH\n2",
+        "C": "H MG-CoA reductase與NADPH",
+        "D": "H MG-CoA lyase與thiamine pyrophosphate"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 38,
-      "content": "下列血漿電解質中，何者影響滲透壓最大？",
+      "content": "下 列血漿電解質中，何者影響滲透壓最大？",
       "has_image": false,
       "options": {
-        "A": "氯離子（Cl\n-）",
-        "B": "重碳酸根離子（HCO3\n-）",
-        "C": "鉀離子（K\n+）",
-        "D": "鈣離子（Ca\n2+）"
+        "A": "氯 離子（Cl-）",
+        "B": "重 碳酸根離子（HCO-）\n3",
+        "C": "鉀 離子（K+）",
+        "D": "鈣 離子（Ca2+）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 39,
-      "content": "有關囊腫性纖維化（cystic fibrosis）的敘述，下列何者最不適當？",
+      "content": "有 關囊腫性纖維化（cystic fibrosis）的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "主要為cystic fibrosis transmembrane conductance regulator（CFTR）基因有缺陷",
-        "B": "是一種體染色體顯性遺傳疾病",
-        "C": "可檢測糞便中pancreatic elastase-1 含量",
-        "D": "可檢測汗水中的氯離子含量"
+        "A": "主 要為cystic fibrosis transmembrane conductance regulator（CFTR）基因有缺陷",
+        "B": "是 一種體染色體顯性遺傳疾病",
+        "C": "可 檢測糞便中pancreatic elastase-1含量",
+        "D": "可 檢測汗水中的氯離子含量"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 40,
-      "content": "有關利用凝固點下降之原理來測定血漿滲透壓的敘述，下列何者最不適當？",
+      "content": "有 關利用凝固點下降之原理來測定血漿滲透壓的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "將檢體超冷卻至凝固點以下",
-        "B": "超冷卻後檢體須混合均勻",
-        "C": "當凝固與融化平衡時的溫度，即為檢體的凝固點",
-        "D": "血漿滲透壓的正常參考值為275～300 mOsmol/L"
+        "A": "將 檢體超冷卻至凝固點以下",
+        "B": "超 冷卻後檢體須混合均勻",
+        "C": "當 凝固與融化平衡時的溫度，即為檢體的凝固點",
+        "D": "血 漿滲透壓的正常參考值為275～300 mOsmol/L"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 41,
-      "content": "有關第一型與第二型維生素D 缺乏性佝僂病（vitamin D-dependent rickets），下列何者最適當？",
+      "content": "有 關第一型與第二型維生素D缺乏性佝僂病（vitamin D-dependent rickets），下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "第一型是25(OH)D-1α-hydroxylase 缺陷",
-        "B": "第二型血清1,25-dihydroxyvitamin D 數值明顯下降",
-        "C": "第一型血清1,25-dihydroxyvitamin D 數值明顯上升",
-        "D": "第一型與第二型血漿ALP 含量皆較正常人低"
+        "A": "第 一型是25(OH)D-1α-hydroxylase缺陷",
+        "B": "第 二型血清1,25-dihydroxyvitamin D數值明顯下降",
+        "C": "第 一型血清1,25-dihydroxyvitamin D數值明顯上升",
+        "D": "第 一型與第二型血漿ALP含量皆較正常人低"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 42,
-      "content": "下列何種微量元素參與構成麩胱甘肽過氧化酶（glutathione peroxidase）？",
+      "content": "下 列何種微量元素參與構成麩胱甘肽過氧化酶（glutathione peroxidase）？",
       "has_image": false,
       "options": {
-        "A": "硒（selenium）",
-        "B": "矽（silicon）",
-        "C": "砷（arsenic）",
-        "D": "鋅（zinc）"
+        "A": "硒 （selenium）",
+        "B": "矽 （silicon）",
+        "C": "砷 （arsenic）",
+        "D": "鋅 （zinc）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 43,
-      "content": "有關動脈血氣體分析的檢體處理敘述，下列何者最不適當？",
+      "content": "有 關動脈血氣體分析的檢體處理敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "通常使用含有heparin 抗凝劑的採血管",
-        "B": "若沒有妥善密封，氧分壓將會上升",
-        "C": "運送過程中若使用過低的溫度保存，將導致氧分壓下降",
-        "D": "檢體放置過久，二氧化碳分壓將會上升"
+        "A": "通 常使用含有heparin抗凝劑的採血管",
+        "B": "若 沒有妥善密封，氧分壓將會上升",
+        "C": "運 送過程中若使用過低的溫度保存，將導致氧分壓下降",
+        "D": "檢 體放置過久，二氧化碳分壓將會上升"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 44,
-      "content": "在正常生理狀態下，血液中的蛋白質最常利用何種胺基酸緩衝酸鹼值？",
+      "content": "在 正常生理狀態下，血液中的蛋白質最常利用何種胺基酸緩衝酸鹼值？",
       "has_image": false,
       "options": {
-        "A": "酪胺酸（tyrosine）",
-        "B": "組胺酸（histidine）",
-        "C": "白胺酸（leucine）",
-        "D": "苯丙胺酸（phenylalanine）"
+        "A": "酪 胺酸（tyrosine）",
+        "B": "組 胺酸（histidine）",
+        "C": "白 胺酸（leucine）",
+        "D": "苯 丙胺酸（phenylalanine）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 45,
-      "content": "長期使用利尿劑（diuretics）的患者，若缺乏適當的指導和監控，容易併發何種酸鹼失衡？",
+      "content": "長 期使用利尿劑（diuretics）的患者，若缺乏適當的指導和監控，容易併發何種酸鹼失衡？",
       "has_image": false,
       "options": {
-        "A": "呼吸性酸中毒",
-        "B": "呼吸性鹼中毒",
-        "C": "代謝性酸中毒",
-        "D": "代謝性鹼中毒"
+        "A": "呼 吸性酸中毒",
+        "B": "呼 吸性鹼中毒",
+        "C": "代 謝性酸中毒",
+        "D": "代 謝性鹼中毒"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 46,
-      "content": "冠狀動脈疾病中，下列何種心臟生物標誌分子（cardiac biomarker）與其病理過程的配對最不適當？",
+      "content": "冠 狀動脈疾病中，下列何種心臟生物標誌分子（cardiac biomarker）與其病理過程的配對最不適當？",
       "has_image": false,
       "options": {
-        "A": "interleukin-6／促發炎分子",
-        "B": "high-sensitivity CRP／急性期反應物",
-        "C": "CK-MB／心肌細胞壞死",
-        "D": "NT-proBNP／斑塊不穩定"
+        "A": "i nterleukin-6／促發炎分子",
+        "B": "h igh-sensitivity CRP／急性期反應物",
+        "C": "C K-MB／心肌細胞壞死",
+        "D": "N T-proBNP／斑塊不穩定"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 47,
-      "content": "檢驗下列何種分子在血液中的濃度最適合用來評估肝臟合成功能？",
+      "content": "檢 驗下列何種分子在血液中的濃度最適合用來評估肝臟合成功能？",
       "has_image": false,
       "options": {
-        "A": "氨（ammonia）",
-        "B": "總膽紅素（total bilirubin）",
-        "C": "丙胺酸轉胺酶（alanine aminotransferase）",
-        "D": "白蛋白（albumin）"
+        "A": "氨 （ammonia）",
+        "B": "總 膽紅素（total bilirubin）",
+        "C": "丙 胺酸轉胺酶（alanine aminotransferase）",
+        "D": "白 蛋白（albumin）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 48,
-      "content": "下列何種血清蛋白在慢性肝病時最可能上升？",
+      "content": "下 列何種血清蛋白在慢性肝病時最可能上升？",
       "has_image": false,
       "options": {
-        "A": "α1-抗胰蛋白酶（α1-antitrypsin, AAT）",
-        "B": "酸性醣蛋白（α1-acid glycoprotein, AAG）",
-        "C": "免疫球蛋白（IgG）",
-        "D": "運鐵蛋白（transferrin, TRF）"
+        "A": "α -抗胰蛋白酶（α-antitrypsin, AAT）\n1 1",
+        "B": "酸 性醣蛋白（α-acid glycoprotein, AAG）\n1",
+        "C": "免 疫球蛋白（IgG）",
+        "D": "運 鐵蛋白（transferrin, TRF）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 49,
-      "content": "下列何種酵素最不適用於檢測膽道阻塞性疾病？",
+      "content": "下 列何種酵素最不適用於檢測膽道阻塞性疾病？",
       "has_image": false,
       "options": {
-        "A": "鹼性磷酸酶（ALP）",
-        "B": "5'-核苷酸酶（5'-nucleotidase）",
-        "C": "CA19-9",
-        "D": "α1-抗胰蛋白酶（α1-antitrypsin）"
+        "A": "鹼 性磷酸酶（ALP）",
+        "B": "5 '-核苷酸酶（5'-nucleotidase）",
+        "C": "C A19-9",
+        "D": "α -抗胰蛋白酶（α-antitrypsin）\n1 1"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 50,
-      "content": "酵素催化的反應中，對於非競爭性抑制作用（noncompetitive inhibition）的敘述，下列何者最不適當？",
+      "content": "酵 素催化的反應中，對於非競爭性抑制作用（noncompetitive inhibition）的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "抑制劑可以與受質同時結合到酵素上",
-        "B": "抑制劑結合到活化點以外的調節部位",
-        "C": "可提高受質濃度來達到無抑制劑存在下之最高反應速率",
-        "D": "Km值保持不變"
+        "A": "抑 制劑可以與受質同時結合到酵素上",
+        "B": "抑 制劑結合到活化點以外的調節部位",
+        "C": "可 提高受質濃度來達到無抑制劑存在下之最高反應速率",
+        "D": "K 值保持不變\nm"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 51,
-      "content": "Lineweaver-Burk 繪出的酵素反應直線圖形（x 軸: 1/[S]; y 軸: 1/v）中，y 軸截距的意義為何？",
+      "content": "L ineweaver-Burk繪出的酵素反應直線圖形（x軸: 1/[S]; y軸: 1/v）中，y軸截距的意義為何？",
       "has_image": false,
       "options": {
-        "A": "1/Km",
-        "B": "-1/Km",
-        "C": "1/Vmax",
-        "D": "-1/Vmax"
+        "A": "1 /K\nm",
+        "B": "- 1/K\nm",
+        "C": "1 /V\nmax",
+        "D": "- 1/V\nmax"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 52,
-      "content": "酵素與受質在零級反應時，反應速率（v）與下列何者濃度成正比？",
+      "content": "酵 素與受質在零級反應時，反應速率（v）與下列何者濃度成正比？",
       "has_image": false,
       "options": {
-        "A": "受質",
-        "B": "輔酶",
-        "C": "酵素",
-        "D": "酵素受質複合物"
+        "A": "受 質",
+        "B": "輔 酶",
+        "C": "酵 素",
+        "D": "酵 素受質複合物"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 53,
-      "content": "有關肌酸激酶（creatine kinase, CK）同功酶CK-MB 的敘述，何者最適當？",
+      "content": "有 關肌酸激酶（creatine kinase, CK）同功酶CK-MB的敘述，何者最適當？",
       "has_image": false,
       "options": {
-        "A": "最具心臟特異性的CK 同功酶",
-        "B": "血清中含量最高的CK 同功酶",
-        "C": "增加於腦部疾病患者血清中",
-        "D": "骨骼肌最主要的CK 同功酶"
+        "A": "最 具心臟特異性的CK同功酶",
+        "B": "血 清中含量最高的CK同功酶",
+        "C": "增 加於腦部疾病患者血清中",
+        "D": "骨 骼肌最主要的CK同功酶"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 54,
-      "content": "下列有關lipase 的敘述，何者最不適當？",
+      "content": "下 列有關lipase的敘述，何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "triglyceride 可以做為其受質",
-        "B": "可做為急性胰臟炎的診斷",
-        "C": "尿液是檢測lipase 的主要檢體",
-        "D": "glomerular filtration rate 下降的病人，其lipase 活性可能會升高"
+        "A": "t riglyceride可以做為其受質",
+        "B": "可 做為急性胰臟炎的診斷",
+        "C": "尿 液是檢測lipase的主要檢體",
+        "D": "g lomerular filtration rate下降的病人，其lipase活性可能會升高"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 55,
-      "content": "下列有關酵素催化反應速率的敘述，何者最不適當？",
+      "content": "下 列有關酵素催化反應速率的敘述，何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "酵素催化的反應速率會受到反應溫度、pH 值及受質濃度影響",
-        "B": "酵素濃度固定且與受質結合未達飽和時，反應速率會隨受質濃度增加而增大",
-        "C": "酵素與受質結合到達飽和時的反應速率，為此酵素的起始反應速率",
-        "D": "酵素濃度固定且與受質結合未達飽和時，反應速率會隨酵素量增加而增大"
+        "A": "酵 素催化的反應速率會受到反應溫度、pH值及受質濃度影響",
+        "B": "酵 素濃度固定且與受質結合未達飽和時，反應速率會隨受質濃度增加而增大",
+        "C": "酵 素與受質結合到達飽和時的反應速率，為此酵素的起始反應速率",
+        "D": "酵 素濃度固定且與受質結合未達飽和時，反應速率會隨酵素量增加而增大"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 56,
-      "content": "酒精性肝炎（alcoholic hepatitis）會導致下列何種血清酵素的活性增加？",
+      "content": "酒 精性肝炎（alcoholic hepatitis）會導致下列何種血清酵素的活性增加？",
       "has_image": false,
       "options": {
-        "A": "alkaline phosphatase（ALP）",
-        "B": "γ-glutamyltransferase（GGT）",
-        "C": "amylase（AMY）",
-        "D": "creatine kinase（CK）"
+        "A": "a lkaline phosphatase（ALP）",
+        "B": "γ -glutamyltransferase（GGT）",
+        "C": "a mylase（AMY）",
+        "D": "c reatine kinase（CK）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 57,
-      "content": "酵素抑制反應中，noncompetitive inhibition 對Vmax及Km值的影響 ，下列何者最適當？",
+      "content": "酵 素抑制反應中，noncompetitive inhibition對V 及K值的影響 ，下列何者最適當？\nmax m",
       "has_image": false,
       "options": {
-        "A": "會使Vmax下降及Km上升",
-        "B": "會使Vmax上升及Km下降",
-        "C": "會使Vmax下降及Km不變",
-        "D": "會使Vmax不變及Km上升"
+        "A": "會 使V 下降及K上升\nmax m",
+        "B": "會 使V 上升及K下降\nmax m",
+        "C": "會 使V 下降及K不變\nmax m",
+        "D": "會 使V 不變及K上升\nmax m"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 58,
-      "content": "關於未結合型膽紅素（unconjugated bilirubin, α-bilirubin）的敘述，下列何者最適當？",
+      "content": "關 於未結合型膽紅素（unconjugated bilirubin, α-bilirubin）的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "與白蛋白共價結合",
-        "B": "可用重氮反應（diazo reaction）直接測量",
-        "C": "正常人的膽汁幾乎不含未結合型膽紅素",
-        "D": "膽道阻塞病人血清中會增高"
+        "A": "與 白蛋白共價結合",
+        "B": "可 用重氮反應（diazo reaction）直接測量",
+        "C": "正 常人的膽汁幾乎不含未結合型膽紅素",
+        "D": "膽 道阻塞病人血清中會增高"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 59,
-      "content": "有關抑鈣素（calcitonin）的敘述，下列何者最適當？",
+      "content": "有 關抑鈣素（calcitonin）的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "主要由甲狀腺分泌",
-        "B": "正常人血中濃度小於100 μg/L",
-        "C": "在甲狀腺髓質癌（medullary thyroid carcinoma, MTC）病患血液濃度會下降",
-        "D": "血清濃度只會在惡性腫瘤疾病中增加，無需確認就能當做特異性腫瘤標誌"
+        "A": "主 要由甲狀腺分泌",
+        "B": "正 常人血中濃度小於100 μg/L",
+        "C": "在 甲狀腺髓質癌（medullary thyroid carcinoma, MTC）病患血液濃度會下降",
+        "D": "血 清濃度只會在惡性腫瘤疾病中增加，無需確認就能當做特異性腫瘤標誌"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 60,
-      "content": "血管收縮素Ⅰ（angiotensin Ⅰ）轉化成血管收縮素Ⅱ（angiotensin Ⅱ）發生在何處？",
+      "content": "血 管收縮素Ⅰ（angiotensin Ⅰ）轉化成血管收縮素Ⅱ（angiotensin Ⅱ）發生在何處？",
       "has_image": false,
       "options": {
-        "A": "肺臟",
-        "B": "肝臟",
-        "C": "腎臟",
-        "D": "腦下垂體"
+        "A": "肺 臟",
+        "B": "肝 臟",
+        "C": "腎 臟",
+        "D": "腦 下垂體"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 61,
-      "content": "有關副甲狀腺素（parathyroid hormone, PTH）調節血液中鈣離子及磷酸鹽濃度的機制，下列敘述何者最不\n適當？",
+      "content": "有 關副甲狀腺素（parathyroid hormone, PTH）調節血液中鈣離子及磷酸鹽濃度的機制，下列敘述何者最不\n適當？",
       "has_image": false,
       "options": {
-        "A": "血液中鈣離子濃度低時，會誘發副甲狀腺素分泌到血液中",
-        "B": "副甲狀腺素可增加血液中鈣離子的濃度",
-        "C": "副甲狀腺素可增加血液中磷酸鹽的濃度",
-        "D": "副甲狀腺素會協同維生素D 進行血鈣的調節"
+        "A": "血 液中鈣離子濃度低時，會誘發副甲狀腺素分泌到血液中",
+        "B": "副 甲狀腺素可增加血液中鈣離子的濃度",
+        "C": "副 甲狀腺素可增加血液中磷酸鹽的濃度",
+        "D": "副 甲狀腺素會協同維生素D進行血鈣的調節"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 62,
-      "content": "下列何種檢驗項目數值不會因為病患在白天或夜晚被採檢而有顯著差異？",
+      "content": "下 列何種檢驗項目數值不會因為病患在白天或夜晚被採檢而有顯著差異？",
       "has_image": false,
       "options": {
-        "A": "皮質醇（cortisol）",
-        "B": "醛固酮（aldosterone）",
-        "C": "紅血球生成素（erythropoietin）",
-        "D": "生長激素（growth hormone）"
+        "A": "皮 質醇（cortisol）",
+        "B": "醛 固酮（aldosterone）",
+        "C": "紅 血球生成素（erythropoietin）",
+        "D": "生 長激素（growth hormone）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 63,
-      "content": "有關腦下腺（pituitary）分泌激素的敘述，下列何者最不適當？",
+      "content": "有 關腦下腺（pituitary）分泌激素的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "腎上腺皮質刺激素（ACTH）刺激皮質醇（cortisol）分泌",
-        "B": "濾泡刺激素（FSH）刺激雌性素（estrogen）分泌",
-        "C": "甲狀腺刺激素（TSH）刺激T3與T4分泌",
-        "D": "腎上腺皮質促素釋素（CRH）刺激腎上腺素（epinephrine）的分泌"
+        "A": "腎 上腺皮質刺激素（ACTH）刺激皮質醇（cortisol）分泌",
+        "B": "濾 泡刺激素（FSH）刺激雌性素（estrogen）分泌",
+        "C": "甲 狀腺刺激素（TSH）刺激T 與T 分泌\n3 4",
+        "D": "腎 上腺皮質促素釋素（CRH）刺激腎上腺素（epinephrine）的分泌"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 64,
-      "content": "病患血清的TSH、total T3與free T4濃度皆升高，該病患可能罹患何種疾病？",
+      "content": "病 患血清的TSH、total T 與free T 濃度皆升高，該病患可能罹患何種疾病？\n3 4",
       "has_image": false,
       "options": {
-        "A": "原發性甲狀腺功能亢進（primary hyperthyroidism）",
-        "B": "次發性甲狀腺功能亢進（secondary hyperthyroidism）",
-        "C": "葛瑞夫茲病（Graves disease）",
-        "D": "原發性甲狀腺功能低下（primary hypothyroidism）"
+        "A": "原 發性甲狀腺功能亢進（primary hyperthyroidism）",
+        "B": "次 發性甲狀腺功能亢進（secondary hyperthyroidism）",
+        "C": "葛 瑞夫茲病（Graves disease）",
+        "D": "原 發性甲狀腺功能低下（primary hypothyroidism）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 65,
-      "content": "維生素D 在肝腎中是透過下列那一類酵素的電子轉移催化反應，而形成具活性的維生素D（1,25-\ndihydroxyvitamin D）？",
+      "content": "維 生素D在肝腎中是透過下列那一類酵素的電子轉移催化反應，而形成具活性的維生素D（1,25-\ndihydroxyvitamin D）？",
       "has_image": false,
       "options": {
-        "A": "氧化還原酶（oxidoreductase）",
-        "B": "轉移酶（transferase）",
-        "C": "水解酶（hydrolase）",
-        "D": "異構酶（isomerase）"
+        "A": "氧 化還原酶（oxidoreductase）",
+        "B": "轉 移酶（transferase）",
+        "C": "水 解酶（hydrolase）",
+        "D": "異 構酶（isomerase）"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 66,
-      "content": "診斷兒童神經母細胞瘤（neuroblastoma）時，可檢測尿液vanillylmandelic acid（VMA）與下列何者的濃\n度？",
+      "content": "診 斷兒童神經母細胞瘤（neuroblastoma）時，可檢測尿液vanillylmandelic acid（VMA）與下列何者的濃\n度？",
       "has_image": false,
       "options": {
-        "A": "5-hydroxyindoleacetic acid（5-HIAA）",
-        "B": "17-ketosteroids（17-KS）",
-        "C": "homovanillic acid（HVA）",
-        "D": "3,4-dihydroxyphenylglycol（DHPG）"
+        "A": "5 -hydroxyindoleacetic acid（5-HIAA）",
+        "B": "1 7-ketosteroids（17-KS）",
+        "C": "h omovanillic acid（HVA）",
+        "D": "3 ,4-dihydroxyphenylglycol（DHPG）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 67,
-      "content": "有關睪固酮的敘述，下列何者最不適當？",
+      "content": "有 關睪固酮的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "睪固酮為血中雄性素最主要的成分",
-        "B": "只有游離型睪固酮具有生物利用性（bioavailability）",
-        "C": "可使用免疫法測定血清中濃度",
-        "D": "睪固酮與二氫睪固酮（DHT）在免疫法測定時會產生交叉反應"
+        "A": "睪 固酮為血中雄性素最主要的成分",
+        "B": "只 有游離型睪固酮具有生物利用性（bioavailability）",
+        "C": "可 使用免疫法測定血清中濃度",
+        "D": "睪 固酮與二氫睪固酮（DHT）在免疫法測定時會產生交叉反應"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 68,
-      "content": "下列那一種激素是由腦下腺（pituitary）後葉分泌？",
+      "content": "下 列那一種激素是由腦下腺（pituitary）後葉分泌？",
       "has_image": false,
       "options": {
-        "A": "甲狀腺刺激素（TSH）",
-        "B": "黃體生成素（LH）",
-        "C": "抗利尿激素（ADH）",
-        "D": "腎上腺皮質刺激素（ACTH）"
+        "A": "甲 狀腺刺激素（TSH）",
+        "B": "黃 體生成素（LH）",
+        "C": "抗 利尿激素（ADH）",
+        "D": "腎 上腺皮質刺激素（ACTH）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 69,
-      "content": "若受檢者經篩檢後懷疑罹患庫欣病（Cushing disease），可用下列何種測試確認？",
+      "content": "若 受檢者經篩檢後懷疑罹患庫欣病（Cushing disease），可用下列何種測試確認？",
       "has_image": false,
       "options": {
-        "A": "深夜血中皮質醇試驗（late night serum cortisol test）",
-        "B": "深夜唾液皮質醇試驗（late night salivary cortisol test）",
-        "C": "低劑量的地塞松抑制試驗（low-dose dexamethasone suppression test）",
-        "D": "高劑量的地塞松抑制試驗（high-dose dexamethasone suppression test）"
+        "A": "深 夜血中皮質醇試驗（late night serum cortisol test）",
+        "B": "深 夜唾液皮質醇試驗（late night salivary cortisol test）",
+        "C": "低 劑量的地塞松抑制試驗（low-dose dexamethasone suppression test）",
+        "D": "高 劑量的地塞松抑制試驗（high-dose dexamethasone suppression test）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 70,
-      "content": "產生dihydroxyphenylalanine（dopa）是生成正腎上腺素（norepinephrine）的速率決定步驟，由下列那一\n種酵素催化？",
+      "content": "產 生dihydroxyphenylalanine（dopa）是生成正腎上腺素（norepinephrine）的速率決定步驟，由下列那一\n種酵素催化？",
       "has_image": false,
       "options": {
-        "A": "tryptophan hydroxylase",
-        "B": "tyrosine hydroxylase",
-        "C": "11β-hydroxylase",
-        "D": "21-hydroxylase"
+        "A": "t ryptophan hydroxylase",
+        "B": "t yrosine hydroxylase",
+        "C": "1 1β-hydroxylase",
+        "D": "2 1-hydroxylase"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 71,
-      "content": "有關激素（hormone）、促素（trophic hormone）與釋素（releasing hormone）調節的敘述，下列何者最不\n適當？",
+      "content": "有 關激素（hormone）、促素（trophic hormone）與釋素（releasing hormone）調節的敘述，下列何者最不\n適當？",
       "has_image": false,
       "options": {
-        "A": "腦下腺後葉分泌釋素",
-        "B": "釋素刺激腦下腺前葉分泌促素",
-        "C": "促素活化其標的腺體器官分泌特異的激素",
-        "D": "釋素、促素與激素的分泌量會互相回饋抑制，相互調節"
+        "A": "腦 下腺後葉分泌釋素",
+        "B": "釋 素刺激腦下腺前葉分泌促素",
+        "C": "促 素活化其標的腺體器官分泌特異的激素",
+        "D": "釋 素、促素與激素的分泌量會互相回饋抑制，相互調節"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 72,
-      "content": "在正常狀況下，皮質醇（cortisol）與醛固酮（aldosterone）血漿濃度的敘述，下列何者最適當？",
+      "content": "在 正常狀況下，皮質醇（cortisol）與醛固酮（aldosterone）血漿濃度的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "皮質醇少於醛固酮",
-        "B": "皮質醇高出醛固酮10 倍以上",
-        "C": "皮質醇與醛固酮差異不大",
-        "D": "皮質醇約為醛固酮的2 倍"
+        "A": "皮 質醇少於醛固酮",
+        "B": "皮 質醇高出醛固酮10倍以上",
+        "C": "皮 質醇與醛固酮差異不大",
+        "D": "皮 質醇約為醛固酮的2倍"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 73,
-      "content": "有關腫瘤標誌在臨床上的運用，下列何者最適當？",
+      "content": "有 關腫瘤標誌在臨床上的運用，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "CA15-3 可篩檢病人是否得到肺癌",
-        "B": "Cyfra 21-1 常用於追蹤乳癌化療後的效果",
-        "C": "neuron specific enolase（NSE）可幫助大腸癌診斷",
-        "D": "AFP 可用於追蹤肝癌是否復發"
+        "A": "C A15-3可篩檢病人是否得到肺癌",
+        "B": "C yfra 21-1常用於追蹤乳癌化療後的效果",
+        "C": "n euron specific enolase（NSE）可幫助大腸癌診斷",
+        "D": "A FP可用於追蹤肝癌是否復發"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 74,
-      "content": "有關治療藥物監測（TDM）與基因藥理學（pharmacogenomics）的敘述，下列何者最適當？",
+      "content": "有 關治療藥物監測（TDM）與基因藥理學（pharmacogenomics）的敘述，下列何者最適當？",
       "has_image": false,
       "options": {
-        "A": "基因藥理學僅能反映病人一時的生理特徵",
-        "B": "TDM 可預測藥物副作用的產生",
-        "C": "TDM 可預測病患的治療效果",
-        "D": "基因藥理學可提供藥物選用的資訊"
+        "A": "基 因藥理學僅能反映病人一時的生理特徵",
+        "B": "T DM可預測藥物副作用的產生",
+        "C": "T DM可預測病患的治療效果",
+        "D": "基 因藥理學可提供藥物選用的資訊"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 75,
-      "content": "有關毒性元素（toxic elements）的診斷和治療，下列何者最不適當？",
+      "content": "有 關毒性元素（toxic elements）的診斷和治療，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "毒性元素所引發之徵象和症狀常與非元素引發的疾病相似",
-        "B": "要確認元素中毒需有明顯的暴露源和驗出體內組織相對濃度",
-        "C": "病人臨床上常出現不明腎病、神經病變、精神變化和呼吸道急性發炎",
-        "D": "毒性金屬一但進入人體很難解毒及將之排出體外"
+        "A": "毒 性元素所引發之徵象和症狀常與非元素引發的疾病相似",
+        "B": "要 確認元素中毒需有明顯的暴露源和驗出體內組織相對濃度",
+        "C": "病 人臨床上常出現不明腎病、神經病變、精神變化和呼吸道急性發炎",
+        "D": "毒 性金屬一但進入人體很難解毒及將之排出體外"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 76,
-      "content": "下列何種分子不常出現於藥物促成的性侵犯罪（drug-facilitated sexual assault, DFSA）行為？",
+      "content": "下 列何種分子不常出現於藥物促成的性侵犯罪（drug-facilitated sexual assault, DFSA）行為？",
       "has_image": false,
       "options": {
-        "A": "氟硝西泮（flunitrazepam）",
-        "B": "苯二氮平類（benzodiazepines, BZD）",
-        "C": "γ-羥基丁酸（gamma-hydroxybutyrate, GHB）",
-        "D": "安非他命（amphetamine）"
+        "A": "氟 硝西泮（flunitrazepam）",
+        "B": "苯 二氮平類（benzodiazepines, BZD）",
+        "C": "γ -羥基丁酸（gamma-hydroxybutyrate, GHB）",
+        "D": "安 非他命（amphetamine）"
       },
-      "answer": "D"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 77,
-      "content": "有關一氧化碳的敘述，下列何者最不適當？",
+      "content": "有 關一氧化碳的敘述，下列何者最不適當？",
       "has_image": false,
       "options": {
-        "A": "含碳物質的不完全燃燒會產生一氧化碳",
-        "B": "血基質（heme）代謝為膽綠素（biliverdin）會產生一氧化碳",
-        "C": "溶血性貧血病人血液內一氧化碳濃度會低於正常人",
-        "D": "瓦斯中毒常因高濃度一氧化碳與血紅素中的亞鐵離子（Fe\n2+）結合導致缺氧"
+        "A": "含 碳物質的不完全燃燒會產生一氧化碳",
+        "B": "血 基質（heme）代謝為膽綠素（biliverdin）會產生一氧化碳",
+        "C": "溶 血性貧血病人血液內一氧化碳濃度會低於正常人",
+        "D": "瓦 斯中毒常因高濃度一氧化碳與血紅素中的亞鐵離子（Fe2+）結合導致缺氧"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 78,
-      "content": "液態活檢（liquid biopsy）相關技術，無法直接應用在那項檢測？",
+      "content": "液 態活檢（liquid biopsy）相關技術，無法直接應用在那項檢測？",
       "has_image": false,
       "options": {
-        "A": "循環腫瘤DNA（circulating tumor cell free DNA, ctDNA）",
-        "B": "循環腫瘤細胞（circulating tumor cells, CTC）",
-        "C": "腫瘤組織細胞基因體（tumor tissue cell genome）",
-        "D": "腫瘤細胞外泌體（tumor cell exosome）"
+        "A": "循 環腫瘤DNA（circulating tumor cell free DNA, ctDNA）",
+        "B": "循 環腫瘤細胞（circulating tumor cells, CTC）",
+        "C": "腫 瘤組織細胞基因體（tumor tissue cell genome）",
+        "D": "腫 瘤細胞外泌體（tumor cell exosome）"
       },
-      "answer": "C"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 79,
-      "content": "目前臨床檢驗對實驗室開發檢測（lab developed tests, LDTs）的建立與需求，最主要源自於那一個因素？",
+      "content": "目 前臨床檢驗對實驗室開發檢測（lab developed tests, LDTs）的建立與需求，最主要源自於那一個因素？",
       "has_image": false,
       "options": {
-        "A": "缺乏已查驗登記的體外診斷（IVD）器材供臨床檢驗使用",
-        "B": "LDTs 相較體外診斷器材可免除方法確認，使用上更便利",
-        "C": "LDTs 在敏感度與特異性上的效能明顯優於體外診斷器材",
-        "D": "LDTs 相較體外診斷器材更能夠在所有實驗室間流通"
+        "A": "缺 乏已查驗登記的體外診斷（IVD）器材供臨床檢驗使用",
+        "B": "L DTs相較體外診斷器材可免除方法確認，使用上更便利",
+        "C": "L DTs在敏感度與特異性上的效能明顯優於體外診斷器材",
+        "D": "L DTs相較體外診斷器材更能夠在所有實驗室間流通"
       },
-      "answer": "A"
+      "answer": "",
+      "bonus": false
     },
     {
       "number": 80,
-      "content": "下列那種技術或儀器最常用來進行蛋白體學（proteomics）相關的檢測分析？",
+      "content": "下 列那種技術或儀器最常用來進行蛋白體學（proteomics）相關的檢測分析？",
       "has_image": false,
       "options": {
-        "A": "西方墨點法（Western blot）",
-        "B": "質譜儀（mass spectrometry）",
-        "C": "流式細胞儀（flow cytometry）",
-        "D": "核磁共振光譜法（NMR spectrometry）"
+        "A": "西 方墨點法（Western blot）",
+        "B": "質 譜儀（mass spectrometry）",
+        "C": "流 式細胞儀（flow cytometry）",
+        "D": "核 磁共振光譜法（NMR spectrometry）"
       },
-      "answer": "B"
+      "answer": "",
+      "bonus": false
     }
   ]
 }
