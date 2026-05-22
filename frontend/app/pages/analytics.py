@@ -114,6 +114,92 @@ def weak_questions_list() -> rx.Component:
     )
 
 
+def subject_badge(s: dict, color: str) -> rx.Component:
+    return rx.badge(s["subject_short"], color_scheme=color, variant="solid", size="2")
+
+
+def highlight_section() -> rx.Component:
+    return rx.card(
+        rx.vstack(
+            rx.heading("重點摘要", size="4"),
+            rx.divider(),
+            # 科目分類
+            rx.vstack(
+                rx.cond(
+                    AnalyticsState.weak_subjects.length() > 0,
+                    rx.hstack(
+                        rx.text("需加強", size="2", weight="bold", color=rx.color("red", 9), min_width="60px"),
+                        rx.hstack(
+                            rx.foreach(AnalyticsState.weak_subjects, lambda s: subject_badge(s, "red")),
+                            flex_wrap="wrap",
+                            spacing="2",
+                        ),
+                        align="center",
+                        spacing="3",
+                        width="100%",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.cond(
+                    AnalyticsState.ok_subjects.length() > 0,
+                    rx.hstack(
+                        rx.text("可進步", size="2", weight="bold", color=rx.color("orange", 9), min_width="60px"),
+                        rx.hstack(
+                            rx.foreach(AnalyticsState.ok_subjects, lambda s: subject_badge(s, "orange")),
+                            flex_wrap="wrap",
+                            spacing="2",
+                        ),
+                        align="center",
+                        spacing="3",
+                        width="100%",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.cond(
+                    AnalyticsState.strong_subjects.length() > 0,
+                    rx.hstack(
+                        rx.text("表現佳", size="2", weight="bold", color=rx.color("green", 9), min_width="60px"),
+                        rx.hstack(
+                            rx.foreach(AnalyticsState.strong_subjects, lambda s: subject_badge(s, "green")),
+                            flex_wrap="wrap",
+                            spacing="2",
+                        ),
+                        align="center",
+                        spacing="3",
+                        width="100%",
+                    ),
+                    rx.fragment(),
+                ),
+                spacing="3",
+                width="100%",
+            ),
+            # 成績趨勢
+            rx.cond(
+                AnalyticsState.trend_direction != "none",
+                rx.hstack(
+                    rx.text("成績趨勢", size="2", weight="bold", min_width="60px"),
+                    rx.cond(
+                        AnalyticsState.trend_direction == "improving",
+                        rx.badge(rx.icon("trending-up", size=13), "持續進步", color_scheme="green", variant="solid", size="2"),
+                        rx.cond(
+                            AnalyticsState.trend_direction == "declining",
+                            rx.badge(rx.icon("trending-down", size=13), "需要注意", color_scheme="red", variant="solid", size="2"),
+                            rx.badge(rx.icon("minus", size=13), "成績平穩", color_scheme="blue", variant="solid", size="2"),
+                        ),
+                    ),
+                    align="center",
+                    spacing="3",
+                ),
+                rx.fragment(),
+            ),
+            spacing="4",
+            width="100%",
+        ),
+        width="100%",
+        padding="5",
+    )
+
+
 def ai_analysis_card() -> rx.Component:
     return rx.cond(
         AnalyticsState.ai_analysis != "",
@@ -130,7 +216,7 @@ def ai_analysis_card() -> rx.Component:
                 rx.text(
                     AnalyticsState.ai_analysis,
                     size="2",
-                    line_height="1.9",
+                    line_height="2.0",
                     white_space="pre-wrap",
                 ),
                 width="100%",
@@ -189,6 +275,7 @@ def analytics_page() -> rx.Component:
                         ),
                         score_trend_chart(),
                         weak_questions_list(),
+                        highlight_section(),
                         ai_analysis_card(),
                         rx.hstack(
                             rx.button(

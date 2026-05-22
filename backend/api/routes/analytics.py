@@ -9,6 +9,14 @@ from services.ai_service import get_weakness_analysis
 router = APIRouter(prefix="/analytics", tags=["analytics"])
 
 SITTING_LABEL = {1: "第一次", 2: "第二次"}
+SUBJECT_SHORT = {
+    "臨床生理學與病理學":         "臨床生理",
+    "臨床血液學與血庫學":          "臨床血液",
+    "醫學分子檢驗學與臨床鏡檢學": "分子鏡檢",
+    "微生物學與臨床微生物學":      "微生物",
+    "生物化學與臨床生化學":        "生物化學",
+    "臨床血清免疫學與臨床病毒學":  "血清免疫",
+}
 
 
 def get_current_user(token: str = Query(...), db: Session = Depends(get_db)) -> User:
@@ -47,6 +55,7 @@ async def get_my_analytics(
         subject_stats.append({
             "subject_id": subj.id,
             "subject_name": subj.name,
+            "subject_short": SUBJECT_SHORT.get(subj.name, subj.name),
             "total_answered": total,
             "correct_count": correct,
             "accuracy_rate": rate,
@@ -104,7 +113,20 @@ async def get_my_analytics(
             "source": f"{q.year}年{SITTING_LABEL.get(q.sitting, '')} 第{q.number}題",
         })
 
-    # ── 4. AI 弱點分析 ───────────────────────────────────────────
+    # ── 4. 成績趨勢方向 ──────────────────────────────────────────
+    trend_direction = "none"
+    if len(score_trend) >= 3:
+        recent = [s["percentage"] for s in score_trend[-3:]]
+        first_half = sum(recent[:len(recent)//2 + 1]) / (len(recent)//2 + 1)
+        second_half = sum(recent[len(recent)//2:]) / (len(recent) - len(recent)//2)
+        if second_half - first_half >= 5:
+            trend_direction = "improving"
+        elif first_half - second_half >= 5:
+            trend_direction = "declining"
+        else:
+            trend_direction = "stable"
+
+    # ── 5. AI 弱點分析 ───────────────────────────────────────────
     has_data = any(s["total_answered"] > 0 for s in subject_stats)
     if has_data:
         ai_analysis = await get_weakness_analysis(
@@ -120,4 +142,5 @@ async def get_my_analytics(
         "score_trend": score_trend,
         "weak_questions": weak_questions,
         "ai_analysis": ai_analysis,
+        "trend_direction": trend_direction,
     }
