@@ -20,6 +20,18 @@ def nav_bar() -> rx.Component:
                 variant="ghost",
                 color_scheme="violet",
             ),
+            rx.cond(
+                AuthState.user_role == "admin",
+                rx.button(
+                    rx.icon("shield", size=15),
+                    "管理員",
+                    on_click=rx.redirect("/admin"),
+                    size="2",
+                    variant="ghost",
+                    color_scheme="red",
+                ),
+                rx.fragment(),
+            ),
             rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
             rx.text(AuthState.user_name, weight="medium"),
             rx.button(

@@ -52,10 +52,11 @@ def shuffle_question_options(q: Question) -> tuple[dict, str]:
 # ── Request / Response schemas ────────────────────────────────
 class ExamStartRequest(BaseModel):
     subject_id: int
-    mode: str                    # single_full | single_random | multi_random
+    mode: str                    # single_full | single_random | multi_random | adaptive
     question_count: int          # 5 / 10 / 80
     year: int | None = None      # single_full / single_random 必填
     sitting: int | None = None   # single_full / single_random 必填
+    difficulty: str | None = None  # all | easy | medium | hard
     shuffle_options: bool = False
     timed: bool = False
     instant_review: bool = True
@@ -87,6 +88,8 @@ def start_exam(
 
     # ── 抽題邏輯 ──
     base_q = db.query(Question).filter(Question.subject_id == body.subject_id)
+    if body.difficulty and body.difficulty != "all":
+        base_q = base_q.filter(Question.difficulty == body.difficulty)
 
     if body.mode == "single_full":
         if not body.year or not body.sitting:
@@ -126,6 +129,43 @@ def start_exam(
         pool = base_q.filter(Question.id.in_(list(stats_map.keys()))).all()
         pool.sort(key=lambda q: stats_map[q.id].wrong_count, reverse=True)
         questions = pool[:body.question_count]
+
+    elif body.mode == "adaptive":
+        all_qs = base_q.all()
+        if not all_qs:
+            raise HTTPException(status_code=404, detail="找不到符合條件的題目")
+        stats_map = {
+            s.question_id: s
+            for s in db.query(QuestionStats).filter(
+                QuestionStats.user_id == user.id,
+                QuestionStats.question_id.in_([q.id for q in all_qs]),
+            ).all()
+        }
+        # 加權：從未作答=2，全答對=1，有答錯=wrong_count*3+1
+        weights = []
+        for q in all_qs:
+            s = stats_map.get(q.id)
+            if s is None:
+                weights.append(2)
+            elif s.wrong_count == 0:
+                weights.append(1)
+            else:
+                weights.append(s.wrong_count * 3 + 1)
+        # 加權不重複抽樣
+        count = min(body.question_count, len(all_qs))
+        questions = []
+        pool = list(all_qs)
+        wts = list(weights)
+        while len(questions) < count:
+            total_w = sum(wts)
+            r = random.uniform(0, total_w)
+            cumsum = 0
+            for i, w in enumerate(wts):
+                cumsum += w
+                if r <= cumsum:
+                    questions.append(pool.pop(i))
+                    wts.pop(i)
+                    break
 
     else:
         raise HTTPException(status_code=422, detail=f"未知的出題模式：{body.mode}")

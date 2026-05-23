@@ -29,6 +29,7 @@ def mode_select() -> rx.Component:
         ("single_full",   "單份完整（指定年份梯次，依序出題）"),
         ("single_random", "單份隨機（從單份隨機抽題）"),
         ("multi_random",  "多份隨機（跨所有考古題隨機抽題）"),
+        ("adaptive",      "自適應（依你的弱點加權出題，答錯越多越常出現）"),
     ]
     return rx.vstack(
         rx.text("出題模式", weight="bold", size="2"),
@@ -53,9 +54,43 @@ def mode_select() -> rx.Component:
     )
 
 
+def difficulty_select() -> rx.Component:
+    difficulties = [
+        ("all",    "全部"),
+        ("easy",   "簡單"),
+        ("medium", "中等"),
+        ("hard",   "困難"),
+    ]
+    return rx.cond(
+        ExamState.selected_mode != "wrong_review",
+        rx.vstack(
+            rx.text("難度篩選", weight="bold", size="2"),
+            rx.radio_group.root(
+                rx.hstack(
+                    *[
+                        rx.hstack(
+                            rx.radio_group.item(value=val),
+                            rx.text(label, size="2"),
+                            align="center",
+                            spacing="2",
+                        )
+                        for val, label in difficulties
+                    ],
+                    spacing="5",
+                ),
+                value=ExamState.selected_difficulty,
+                on_change=ExamState.set_difficulty,
+            ),
+            align="start",
+            width="100%",
+        ),
+        rx.fragment(),
+    )
+
+
 def year_sitting_select() -> rx.Component:
     return rx.cond(
-        ExamState.selected_mode != "multi_random",
+        (ExamState.selected_mode != "multi_random") & (ExamState.selected_mode != "adaptive"),
         rx.vstack(
             rx.text("考古題年份／梯次", weight="bold", size="2"),
             rx.select.root(
@@ -147,6 +182,7 @@ def exam_setup_page() -> rx.Component:
                     subject_select(),
                     mode_select(),
                     year_sitting_select(),
+                    difficulty_select(),
                     count_select(),
                     options_toggles(),
                     rx.cond(

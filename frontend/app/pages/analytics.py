@@ -114,6 +114,98 @@ def weak_questions_list() -> rx.Component:
     )
 
 
+def time_efficiency_card() -> rx.Component:
+    return rx.cond(
+        AnalyticsState.time_has_data,
+        rx.vstack(
+            rx.heading("作答時間效率", size="4"),
+            rx.card(
+                rx.vstack(
+                    rx.hstack(
+                        rx.icon("timer", size=16, color=rx.color("blue", 9)),
+                        rx.text("國考標準：100分鐘 / 80題 = 75秒/題", size="2", color=rx.color("gray", 10)),
+                        spacing="2",
+                        align="center",
+                    ),
+                    rx.divider(margin_y="2"),
+                    rx.hstack(
+                        rx.vstack(
+                            rx.text("平均作答時間", size="1", color=rx.color("gray", 9)),
+                            rx.heading(
+                                AnalyticsState.time_avg_seconds.to_string() + " 秒",
+                                size="6",
+                                color=rx.color(AnalyticsState.time_speed_color, 9),
+                            ),
+                            rx.text(
+                                "速度：", AnalyticsState.time_speed_label,
+                                size="1", color=rx.color("gray", 9),
+                            ),
+                            align="center",
+                            spacing="1",
+                        ),
+                        rx.divider(orientation="vertical", height="60px"),
+                        rx.vstack(
+                            rx.badge(
+                                rx.icon("alarm-clock", size=12),
+                                AnalyticsState.time_slow_count.to_string(), " 題超過120秒",
+                                color_scheme="red", variant="soft", size="2",
+                            ),
+                            rx.badge(
+                                rx.icon("zap", size=12),
+                                AnalyticsState.time_fast_count.to_string(), " 題低於20秒",
+                                color_scheme="orange", variant="soft", size="2",
+                            ),
+                            rx.text(
+                                "統計樣本：", AnalyticsState.time_total_with_time.to_string(), " 題",
+                                size="1", color=rx.color("gray", 9),
+                            ),
+                            spacing="2",
+                            align="start",
+                        ),
+                        spacing="5",
+                        align="center",
+                        width="100%",
+                    ),
+                    rx.cond(
+                        AnalyticsState.time_speed_color == "red",
+                        rx.callout(
+                            "作答速度偏慢，建議加強對熟悉題型的直覺判斷，減少長時間猶豫。",
+                            icon="triangle-alert",
+                            color_scheme="red",
+                            size="1",
+                            width="100%",
+                        ),
+                        rx.cond(
+                            AnalyticsState.time_speed_color == "orange",
+                            rx.callout(
+                                "作答速度偏快，請注意避免因過快而看錯題意或漏掉關鍵細節。",
+                                icon="triangle-alert",
+                                color_scheme="orange",
+                                size="1",
+                                width="100%",
+                            ),
+                            rx.callout(
+                                "作答速度在合理範圍內，繼續保持！",
+                                icon="circle-check",
+                                color_scheme="green",
+                                size="1",
+                                width="100%",
+                            ),
+                        ),
+                    ),
+                    spacing="3",
+                    width="100%",
+                ),
+                width="100%",
+                padding="5",
+            ),
+            width="100%",
+            spacing="3",
+        ),
+        rx.fragment(),
+    )
+
+
 def subject_badge(s: dict, color: str) -> rx.Component:
     return rx.badge(s["subject_short"], color_scheme=color, variant="solid", size="2")
 
@@ -274,6 +366,7 @@ def analytics_page() -> rx.Component:
                             spacing="3",
                         ),
                         score_trend_chart(),
+                        time_efficiency_card(),
                         weak_questions_list(),
                         highlight_section(),
                         ai_analysis_card(),

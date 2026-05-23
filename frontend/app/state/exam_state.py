@@ -1,5 +1,6 @@
 import httpx
 import reflex as rx
+import time as _time
 from pydantic import BaseModel
 from .auth_state import AuthState, BACKEND_URL
 
@@ -21,6 +22,7 @@ class ExamState(rx.State):
     selected_count: int = 10
     selected_year: int = 114
     selected_sitting: int = 2
+    selected_difficulty: str = "all"
     shuffle_options: bool = False
     timed: bool = False
     instant_review: bool = True
@@ -58,6 +60,10 @@ class ExamState(rx.State):
     ai_hint_text: str = ""
     ai_hint_loading: bool = False
     hint_levels: dict[str, int] = {}  # {question_id: 已看層數}
+
+    # ── 每題計時 ─────────────────────────────────────────────
+    q_start_time: dict[str, float] = {}   # {qid: timestamp when user arrived}
+    q_time_spent: dict[str, int] = {}     # {qid: accumulated seconds}
 
     # ── 成績 ─────────────────────────────────────────────────
     result_score: int = 0
@@ -246,6 +252,26 @@ class ExamState(rx.State):
     def wrong_d(self) -> bool:
         return self.has_current_feedback and self.selected_d and not self.current_is_correct
 
+    # ── 每題計時 helpers ──────────────────────────────────────
+    def _record_time_for(self, qid: str):
+        """累計 qid 的停留時間，並清除其起始時戳。"""
+        if not qid:
+            return
+        start = self.q_start_time.get(qid, 0.0)
+        if start > 0.0:
+            elapsed = max(0, int(_time.time() - start))
+            prev = self.q_time_spent.get(qid, 0)
+            self.q_time_spent = {**self.q_time_spent, qid: prev + elapsed}
+        new_starts = dict(self.q_start_time)
+        new_starts.pop(qid, None)
+        self.q_start_time = new_starts
+
+    def _begin_timing(self, qid: str):
+        """開始記錄 qid 的停留時間。"""
+        if not qid:
+            return
+        self.q_start_time = {**self.q_start_time, qid: _time.time()}
+
     # ── 設定頁事件 ────────────────────────────────────────────
     async def load_subjects(self):
         async with httpx.AsyncClient() as client:
@@ -288,6 +314,9 @@ class ExamState(rx.State):
 
     def set_sitting(self, value: str):
         self.selected_sitting = int(value)
+
+    def set_difficulty(self, value: str):
+        self.selected_difficulty = value
 
     def set_exam(self, value: str):
         """設定考古題年份＋梯次（格式：'114-1'）"""
@@ -337,6 +366,8 @@ class ExamState(rx.State):
         self.is_timer_running = False
         self.time_left = 0
         self.show_quit_dialog = False
+        self.q_start_time = {}
+        self.q_time_spent = {}
         return rx.redirect("/home")
 
     async def start_wrong_review(self, subject_id: int):
@@ -361,6 +392,8 @@ class ExamState(rx.State):
         self.hint_levels = {}
         self.time_left = 0
         self.is_timer_running = False
+        self.q_start_time = {}
+        self.q_time_spent = {}
         return ExamState.start_exam
 
     async def start_exam(self):
@@ -372,12 +405,14 @@ class ExamState(rx.State):
         self.is_loading = True
         self.error_msg = ""
 
+        no_year_modes = ("multi_random", "adaptive")
         payload = {
             "subject_id": self.selected_subject_id,
             "mode": self.selected_mode,
             "question_count": self.selected_count,
-            "year": self.selected_year if self.selected_mode != "multi_random" else None,
-            "sitting": self.selected_sitting if self.selected_mode != "multi_random" else None,
+            "year": self.selected_year if self.selected_mode not in no_year_modes else None,
+            "sitting": self.selected_sitting if self.selected_mode not in no_year_modes else None,
+            "difficulty": self.selected_difficulty if self.selected_difficulty != "all" else None,
             "shuffle_options": self.shuffle_options,
             "timed": self.timed,
             "instant_review": self.instant_review,
@@ -405,6 +440,12 @@ class ExamState(rx.State):
         self.feedback = {}
         self.answered_via_api = {}
         self.hint_levels = {}
+        self.q_start_time = {}
+        self.q_time_spent = {}
+        if self.questions:
+            first_qid = self.questions[0].get("question_id", "")
+            if first_qid:
+                self.q_start_time = {first_qid: _time.time()}
 
         if self.timed:
             self.time_left = len(self.questions) * 90
@@ -454,12 +495,20 @@ class ExamState(rx.State):
         self.eliminated = {**self.eliminated, qid: current}
 
     def go_next(self):
+        if self.questions and self.current_index < len(self.questions):
+            self._record_time_for(self.questions[self.current_index].get("question_id", ""))
         if self.current_index < self.total_questions - 1:
             self.current_index += 1
+            if self.questions and self.current_index < len(self.questions):
+                self._begin_timing(self.questions[self.current_index].get("question_id", ""))
 
     def go_prev(self):
+        if self.questions and self.current_index < len(self.questions):
+            self._record_time_for(self.questions[self.current_index].get("question_id", ""))
         if self.current_index > 0:
             self.current_index -= 1
+            if self.questions and self.current_index < len(self.questions):
+                self._begin_timing(self.questions[self.current_index].get("question_id", ""))
 
     async def handle_next(self):
         """下一題 / 交卷按鈕：即時對答模式先送 API 顯示回饋 1 秒，再前進。"""
@@ -473,8 +522,14 @@ class ExamState(rx.State):
         if qid in self.answered_via_api:
             if is_last:
                 return ExamState.submit_exam
+            self._record_time_for(qid)
             self.current_index += 1
+            if self.questions and self.current_index < len(self.questions):
+                self._begin_timing(self.questions[self.current_index].get("question_id", ""))
             return
+
+        self._record_time_for(qid)
+        time_spent = self.q_time_spent.get(qid, 0) or None
 
         if self.instant_review and chosen:
             auth = await self.get_state(AuthState)
@@ -483,7 +538,7 @@ class ExamState(rx.State):
                 resp = await client.post(
                     f"{BACKEND_URL}/exam/{self.session_id}/answer",
                     params={"token": t},
-                    json={"question_id": qid, "chosen": chosen},
+                    json={"question_id": qid, "chosen": chosen, "time_spent_seconds": time_spent},
                 )
             if resp.status_code == 200:
                 data = resp.json()
@@ -502,6 +557,8 @@ class ExamState(rx.State):
         if is_last:
             return ExamState.submit_exam
         self.current_index += 1
+        if self.questions and self.current_index < len(self.questions):
+            self._begin_timing(self.questions[self.current_index].get("question_id", ""))
 
     @rx.event(background=True)
     async def feedback_delay(self):
@@ -513,6 +570,8 @@ class ExamState(rx.State):
             do_submit = self.pending_submit
             if not do_submit:
                 self.current_index += 1
+                if self.questions and self.current_index < len(self.questions):
+                    self._begin_timing(self.questions[self.current_index].get("question_id", ""))
         if do_submit:
             yield ExamState.submit_exam
 
@@ -552,16 +611,20 @@ class ExamState(rx.State):
         self.show_early_submit_dialog = False
         self.is_loading = True
         self.is_timer_running = False
+        # 記錄當前題目的停留時間（計時器到期或提早交卷時）
+        if self.questions and self.current_index < len(self.questions):
+            self._record_time_for(self.questions[self.current_index].get("question_id", ""))
         auth = await self.get_state(AuthState)
         t = auth.token
         async with httpx.AsyncClient() as client:
             for qid, chosen in self.selected_answers.items():
                 if qid in self.answered_via_api:  # 即時對答已送過，跳過
                     continue
+                time_spent = self.q_time_spent.get(qid, 0) or None
                 await client.post(
                     f"{BACKEND_URL}/exam/{self.session_id}/answer",
                     params={"token": t},
-                    json={"question_id": qid, "chosen": chosen},
+                    json={"question_id": qid, "chosen": chosen, "time_spent_seconds": time_spent},
                 )
             resp = await client.post(
                 f"{BACKEND_URL}/exam/{self.session_id}/submit",

@@ -9,6 +9,7 @@ class AuthState(rx.State):
     user_name: str = ""
     user_email: str = ""
     user_avatar: str = ""
+    user_role: str = ""
 
     def handle_callback(self):
         """OAuth callback：從 URL path param 讀取 token，存入 LocalStorage 後導向主選單。"""
@@ -34,10 +35,12 @@ class AuthState(rx.State):
         self.user_name = data["name"]
         self.user_email = data["email"]
         self.user_avatar = data.get("avatar_url", "")
+        self.user_role = data.get("role", "student")
 
     def logout(self):
         self.token = ""
         self.user_name = ""
         self.user_email = ""
         self.user_avatar = ""
+        self.user_role = ""
         return rx.redirect("/")

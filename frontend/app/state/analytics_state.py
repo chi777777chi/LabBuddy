@@ -9,6 +9,7 @@ class AnalyticsState(rx.State):
     weak_questions: list[dict] = []
     ai_analysis: str = ""
     trend_direction: str = "none"
+    time_stats: dict = {}
     is_loading: bool = False
     has_loaded: bool = False
     error_msg: str = ""
@@ -16,6 +17,49 @@ class AnalyticsState(rx.State):
     @rx.var
     def has_data(self) -> bool:
         return any(s.get("total_answered", 0) > 0 for s in self.subject_stats)
+
+    # ── 時間效率 computed vars ────────────────────────────────
+    @rx.var
+    def time_has_data(self) -> bool:
+        return bool(self.time_stats.get("has_data", False))
+
+    @rx.var
+    def time_avg_seconds(self) -> float:
+        return float(self.time_stats.get("avg_time_seconds", 0))
+
+    @rx.var
+    def time_speed_ratio(self) -> float:
+        return float(self.time_stats.get("speed_ratio", 1.0))
+
+    @rx.var
+    def time_slow_count(self) -> int:
+        return int(self.time_stats.get("slow_count", 0))
+
+    @rx.var
+    def time_fast_count(self) -> int:
+        return int(self.time_stats.get("fast_count", 0))
+
+    @rx.var
+    def time_total_with_time(self) -> int:
+        return int(self.time_stats.get("total_answered_with_time", 0))
+
+    @rx.var
+    def time_speed_label(self) -> str:
+        ratio = float(self.time_stats.get("speed_ratio", 1.0))
+        if ratio > 1.3:
+            return "偏慢"
+        if ratio < 0.5:
+            return "偏快"
+        return "適中"
+
+    @rx.var
+    def time_speed_color(self) -> str:
+        ratio = float(self.time_stats.get("speed_ratio", 1.0))
+        if ratio > 1.3:
+            return "red"
+        if ratio < 0.5:
+            return "orange"
+        return "green"
 
     @rx.var
     def answered_subjects(self) -> list[dict]:
@@ -55,6 +99,7 @@ class AnalyticsState(rx.State):
                 self.weak_questions = data.get("weak_questions", [])
                 self.ai_analysis = data.get("ai_analysis", "")
                 self.trend_direction = data.get("trend_direction", "none")
+                self.time_stats = data.get("time_stats", {})
         except Exception:
             self.error_msg = "無法連線至伺服器，請確認後端是否運行。"
         finally:

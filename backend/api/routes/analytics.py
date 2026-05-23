@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from db.database import get_db
 from db.models import Answer, ExamSession, Question, QuestionStats, Subject, User
 from core.security import decode_token
-from services.ai_service import get_weakness_analysis
+from services.ai_service import get_weakness_analysis_with_time
 
 router = APIRouter(prefix="/analytics", tags=["analytics"])
 
@@ -113,7 +113,36 @@ async def get_my_analytics(
             "source": f"{q.year}年{SITTING_LABEL.get(q.sitting, '')} 第{q.number}題",
         })
 
-    # ── 4. 成績趨勢方向 ──────────────────────────────────────────
+    # ── 4. 時間效率統計 ──────────────────────────────────────────
+    EXPECTED_SECONDS = 75  # 國考標準：100 分鐘 / 80 題
+    answers_with_time = (
+        db.query(Answer)
+        .join(ExamSession, Answer.session_id == ExamSession.id)
+        .filter(
+            ExamSession.user_id == user.id,
+            Answer.time_spent_seconds.isnot(None),
+            Answer.chosen.isnot(None),
+            Answer.time_spent_seconds > 0,
+        )
+        .all()
+    )
+    if answers_with_time:
+        avg_time = round(sum(a.time_spent_seconds for a in answers_with_time) / len(answers_with_time), 1)
+        slow_count = sum(1 for a in answers_with_time if a.time_spent_seconds > 120)
+        fast_count = sum(1 for a in answers_with_time if a.time_spent_seconds < 20)
+        time_stats = {
+            "has_data": True,
+            "avg_time_seconds": avg_time,
+            "expected_time_seconds": EXPECTED_SECONDS,
+            "total_answered_with_time": len(answers_with_time),
+            "slow_count": slow_count,
+            "fast_count": fast_count,
+            "speed_ratio": round(avg_time / EXPECTED_SECONDS, 2),
+        }
+    else:
+        time_stats = {"has_data": False}
+
+    # ── 5. 成績趨勢方向 ──────────────────────────────────────────
     trend_direction = "none"
     if len(score_trend) >= 3:
         recent = [s["percentage"] for s in score_trend[-3:]]
@@ -126,13 +155,14 @@ async def get_my_analytics(
         else:
             trend_direction = "stable"
 
-    # ── 5. AI 弱點分析 ───────────────────────────────────────────
+    # ── 6. AI 弱點 + 時間分析 ─────────────────────────────────────
     has_data = any(s["total_answered"] > 0 for s in subject_stats)
     if has_data:
-        ai_analysis = await get_weakness_analysis(
+        ai_analysis = await get_weakness_analysis_with_time(
             subject_stats=subject_stats,
             score_trend=score_trend,
             weak_questions=weak_questions,
+            time_stats=time_stats,
         )
     else:
         ai_analysis = ""
@@ -143,4 +173,5 @@ async def get_my_analytics(
         "weak_questions": weak_questions,
         "ai_analysis": ai_analysis,
         "trend_direction": trend_direction,
+        "time_stats": time_stats,
     }

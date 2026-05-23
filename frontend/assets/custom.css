@@ -1,0 +1,5 @@
+button,
+[role="button"],
+[data-radix-collection-item] {
+  cursor: pointer !important;
+}
