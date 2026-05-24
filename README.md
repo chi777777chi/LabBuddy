@@ -4,22 +4,27 @@
 
 ## 功能特色
 
-### 已完成（學生端）
+### 學生端
 - Google OAuth 登入
 - 六大科目考古題練習（96–115 年，5 / 10 / 80 題）
-- 出題模式：單份完整、單份隨機、多份隨機、選項順序隨機
+- 出題模式：單份完整、單份隨機、多份隨機、選項順序隨機、**自適應模式**（弱點題優先出現）
+- **難度篩選**（全部 / 簡單 / 中等 / 困難，由 AI 批次分級）
 - 計時模式（每題 90 秒，< 30 秒變紅，時間到自動交卷）
 - 刪去法輔助答題
 - 即時對答 / 模擬考模式切換
 - 成績頁、歷史紀錄、錯題複習
 - PDF 匯出（答題記錄含對錯標色）
 - **AI 分階段提示**（答題中 3 層遞進提示，由 Groq AI 生成）
-- **AI 弱點分析頁**（各科答對率、成績趨勢折線圖、最常答錯題目、AI 學習建議）
+- **AI 弱點分析頁**（各科答對率、成績趨勢折線圖、最常答錯題目、AI 學習建議、時間效率分析）
 - **個人資料頁**（學習統計、快速導航）
 
+### 管理員端
+- 平台總覽（總使用者數、答題數、題庫量、各科題數）
+- 使用者管理（指派角色 student / teacher / admin、停權 / 恢復）
+- 題庫維護（新增、編輯、刪除題目；科目 / 年份篩選、分頁跳頁）
+
 ### 規劃中
-- 老師端（班級管理、學生進度監控）
-- 管理員端（使用者管理、題庫維護）
+- 老師端（班級管理、邀請學生、全班統計、學生個人進度）
 
 ## 考試科目
 
@@ -48,19 +53,21 @@
 
 ```
 ├── backend/
-│   ├── api/routes/       # auth, users, subjects, questions, exam, ai, analytics
+│   ├── api/routes/       # auth, users, subjects, questions, exam, ai, analytics, admin
 │   ├── core/             # 設定、JWT 安全性
 │   ├── db/               # SQLAlchemy models + database
 │   ├── services/         # ai_service（Groq hint + weakness analysis）
 │   └── utils/            # PDF 匯出
 ├── frontend/
+│   ├── assets/           # 全域 CSS
 │   └── app/
 │       ├── pages/        # login, home, exam_setup, exam, result, history,
-│       │                 # wrong_review, analytics, profile
-│       └── state/        # auth, exam, analytics, profile states
+│       │                 # wrong_review, analytics, profile, admin, admin_users, admin_questions
+│       └── state/        # auth, exam, analytics, profile, admin states
 ├── scripts/
-│   ├── import_questions.py   # 批次匯入 JSON 至資料庫
-│   └── gen_test_token.py     # 產生測試用 JWT
+│   ├── import_questions.py     # 批次匯入 JSON 至資料庫
+│   ├── classify_difficulty.py  # AI 批次難易度分級（可重跑，自動跳過已分類）
+│   └── gen_test_token.py       # 產生測試用 JWT（student / teacher / admin）
 ├── Question/             # 各科目考古題 JSON（96–115 年）
 └── docs/                 # 規格文件
 ```
@@ -98,6 +105,19 @@ reflex run
 
 網址：http://localhost:3000
 
+### 4. 測試帳號（開發用）
+
+```bash
+python scripts/gen_test_token.py          # student（預設）
+python scripts/gen_test_token.py teacher
+python scripts/gen_test_token.py admin
+```
+
+取得 token 後，在瀏覽器網址列輸入：
+```
+http://localhost:3000/callback/<token>
+```
+
 ## 開發進度
 
 | Phase | 目標 | 狀態 |
@@ -106,9 +126,9 @@ reflex run
 | Phase 2 | 題庫系統（匯入、CRUD） | ✅ 完成 |
 | Phase 3 | 核心答題流程 | ✅ 完成 |
 | Phase 4 | 成績與歷史紀錄 | ✅ 完成 |
-| Phase 5 | AI 功能（hint、弱點分析） | ✅ 完成 |
-| Phase 6 | 老師端 | 規劃中 |
-| Phase 7 | 管理員端 | 規劃中 |
+| Phase 5 | AI 功能（hint、弱點分析、自適應、難度分級） | ✅ 完成 |
+| Phase 7 | 管理員端（使用者管理、題庫維護） | ✅ 完成 |
+| Phase 6 | 老師端（班級管理、學生進度） | 開發中 |
 
 ## 環境變數（backend/.env）
 
@@ -126,6 +146,6 @@ GROQ_API_KEY=...
 
 - [`docs/Spec.md`](docs/Spec.md) — 頁面規格文件
 - [`docs/Todo.md`](docs/Todo.md) — 開發任務清單
-- [`docs/Future.md`](docs/Future.md) — 未來擴充規劃（老師端 / 管理員端）
+- [`docs/Future.md`](docs/Future.md) — 未來擴充規劃（老師端）
 - [`docs/QuestionBank.md`](docs/QuestionBank.md) — 題庫格式說明
 - [`docs/AddingQuestions.md`](docs/AddingQuestions.md) — 新增考古題流程

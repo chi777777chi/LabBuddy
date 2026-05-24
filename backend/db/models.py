@@ -91,6 +91,31 @@ class Answer(Base):
     question: Mapped["Question"] = relationship(back_populates="answers")
 
 
+class Class(Base):
+    __tablename__ = "classes"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    name: Mapped[str] = mapped_column(String, nullable=False)
+    teacher_id: Mapped[str] = mapped_column(ForeignKey("users.id"), nullable=False)
+    invite_code: Mapped[str] = mapped_column(String, unique=True, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    members: Mapped[list["ClassMember"]] = relationship(back_populates="class_ref")
+
+
+class ClassMember(Base):
+    __tablename__ = "class_members"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    class_id: Mapped[str] = mapped_column(ForeignKey("classes.id"), nullable=False)
+    student_id: Mapped[str] = mapped_column(ForeignKey("users.id"), nullable=False)
+    joined_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    class_ref: Mapped["Class"] = relationship(back_populates="members")
+
+    __table_args__ = (UniqueConstraint("class_id", "student_id"),)
+
+
 class QuestionStats(Base):
     """每位使用者對每道題的累計作答統計（答對/答錯次數）"""
     __tablename__ = "question_stats"

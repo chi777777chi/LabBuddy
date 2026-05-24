@@ -11,12 +11,23 @@ class AuthState(rx.State):
     user_avatar: str = ""
     user_role: str = ""
 
-    def handle_callback(self):
-        """OAuth callback：從 URL path param 讀取 token，存入 LocalStorage 後導向主選單。"""
+    async def handle_callback(self):
+        """OAuth callback：從 URL path param 讀取 token，存入 LocalStorage 後依角色導向。"""
         token = self.router.page.params.get("jwt", "")
         if not token:
             return rx.redirect("/")
         self.token = token
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/users/me",
+                params={"token": token},
+            )
+        if resp.status_code == 200:
+            role = resp.json().get("role", "student")
+            if role == "teacher":
+                return rx.redirect("/teacher")
+            if role == "admin":
+                return rx.redirect("/admin")
         return rx.redirect("/home")
 
     async def load_user(self):

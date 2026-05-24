@@ -1,5 +1,6 @@
 import reflex as rx
 from ..state.auth_state import AuthState
+from ..state.teacher_state import TeacherState
 
 
 def nav_bar() -> rx.Component:
@@ -19,6 +20,18 @@ def nav_bar() -> rx.Component:
                 size="2",
                 variant="ghost",
                 color_scheme="violet",
+            ),
+            rx.cond(
+                AuthState.user_role == "teacher",
+                rx.button(
+                    rx.icon("graduation-cap", size=15),
+                    "老師後台",
+                    on_click=rx.redirect("/teacher"),
+                    size="2",
+                    variant="ghost",
+                    color_scheme="violet",
+                ),
+                rx.fragment(),
             ),
             rx.cond(
                 AuthState.user_role == "admin",
@@ -50,6 +63,70 @@ def nav_bar() -> rx.Component:
         padding_y="4",
         border_bottom=f"1px solid {rx.color('gray', 4)}",
         background="white",
+    )
+
+
+def join_class_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.dialog.title("加入班級"),
+            rx.dialog.description(
+                "輸入老師提供的 6 碼邀請碼",
+                size="1",
+                color_scheme="gray",
+            ),
+            rx.vstack(
+                rx.input(
+                    value=TeacherState.join_code_input,
+                    on_change=TeacherState.set_join_code_input,
+                    on_key_down=TeacherState.handle_join_key,
+                    placeholder="如：ABC123",
+                    width="100%",
+                ),
+                rx.cond(
+                    TeacherState.join_error != "",
+                    rx.callout(
+                        TeacherState.join_error,
+                        icon="triangle-alert",
+                        color_scheme="red",
+                        size="1",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.cond(
+                    TeacherState.join_success != "",
+                    rx.callout(
+                        TeacherState.join_success,
+                        icon="check",
+                        color_scheme="green",
+                        size="1",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.hstack(
+                    rx.button(
+                        "關閉",
+                        on_click=TeacherState.close_join_dialog,
+                        variant="soft",
+                        color_scheme="gray",
+                    ),
+                    rx.button(
+                        "加入",
+                        on_click=TeacherState.join_class,
+                        color_scheme="blue",
+                    ),
+                    spacing="2",
+                    justify="end",
+                    width="100%",
+                ),
+                spacing="3",
+                width="100%",
+                padding_top="2",
+            ),
+            max_width="380px",
+        ),
+        open=TeacherState.show_join_dialog,
+        on_open_change=TeacherState.set_join_dialog_open,
     )
 
 
@@ -89,10 +166,30 @@ def home_page() -> rx.Component:
                     menu_card("bookmark-x", "錯題複習", "針對答錯的題目加強練習", "/wrong-review"),
                     menu_card("bar-chart-2", "學習分析", "AI 弱點分析與成績趨勢", "/analytics"),
                     menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
+                    rx.cond(
+                        AuthState.user_role == "student",
+                        rx.card(
+                            rx.vstack(
+                                rx.icon("users", size=36, color=rx.color("blue", 9)),
+                                rx.heading("加入班級", size="4"),
+                                rx.text("輸入邀請碼加入老師的班級", color_scheme="gray", text_align="center", size="2"),
+                                align="center",
+                                spacing="3",
+                                padding="4",
+                            ),
+                            on_click=TeacherState.open_join_dialog,
+                            cursor="pointer",
+                            _hover={"box_shadow": "0 4px 16px rgba(0,0,0,0.10)"},
+                            transition="box-shadow 0.2s",
+                            width="200px",
+                        ),
+                        rx.fragment(),
+                    ),
                     spacing="6",
                     flex_wrap="wrap",
                     justify="center",
                 ),
+                join_class_dialog(),
                 spacing="8",
                 align="center",
             ),

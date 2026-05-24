@@ -82,22 +82,69 @@
 > 目標：AI 輔助分析與智慧出題
 
 ### 後端
-- [ ] 題目難易度分級（easy / medium / hard）
-- [ ] 自適應出題加權邏輯（弱點題型出現頻率提升）
+- [x] 題目難易度分級（easy / medium / hard）— `Question.difficulty` 欄位已建，`scripts/classify_difficulty.py` 批次分類中（進行中，每日額度重置後繼續跑）
+- [x] 自適應出題加權邏輯（弱點題型出現頻率提升）— `adaptive` 出題模式，加權不重複抽樣
 - [x] `GET /analytics/me`：各科答對率、成績趨勢、最常答錯題目、AI 學習建議
 - [x] `POST /ai/hint`：分階段 AI 提示（Groq llama-3.3-70b）
 - [x] `GET /users/me/stats`：個人學習統計（場數、答題數、答對率、最愛科目）
 
 ### 前端
 - [x] 答題中 AI 分階段提示按鈕（3 層遞進，每題各自計算，設定頁開關控制）
+- [x] 難度篩選選項（全部／簡單／中等／困難）
+- [x] 自適應模式選項（設定頁）
 - [x] 弱點分析頁（/analytics）：科目卡片、成績折線圖、弱點題列表、AI 建議
 - [x] 個人資料頁（/profile）：學習統計、快速導航
 - [ ] AI 生成模擬試卷（stretch goal）
 
 ---
 
-## Phase 6｜老師端（未來）
-> 見 docs/Future.md
+## Phase 6｜老師端
+> 目標：老師可建立班級、邀請學生、查看全班與個人進度
 
-## Phase 7｜管理員端（未來）
-> 見 docs/Future.md
+### 6-A. DB 擴充
+- [x] 新增 `Class` 表：id, name, teacher_id (FK→users), invite_code (6碼英數), created_at
+- [x] 新增 `ClassMember` 表：id, class_id (FK→classes), student_id (FK→users), joined_at
+- [x] `backend/main.py` 加自動 migration（同 `is_active` 的 ALTER TABLE 做法）
+
+### 6-B. 後端 API（新增 `backend/api/routes/teacher.py`）
+- [x] `require_teacher` dependency（role=teacher 或 admin，否則 403）
+- [x] `POST /teacher/classes` — 建立班級（自動產生隨機 6 碼邀請碼）
+- [x] `GET /teacher/classes` — 取得老師所有班級列表
+- [x] `GET /teacher/classes/{class_id}` — 班級詳情＋學生名單（含最近作答日、場次、平均分）
+- [x] `POST /teacher/classes/{class_id}/regenerate-code` — 重新產生邀請碼
+- [x] `GET /teacher/classes/{class_id}/students/{student_id}` — 學生個人進度（歷史紀錄＋各科答對率）
+- [x] `GET /teacher/classes/{class_id}/stats` — 全班統計（各科平均答對率、Top 10 錯誤題）
+- [x] `POST /classes/join` — 學生輸入邀請碼加入班級（學生端呼叫，不需 teacher 角色）
+- [x] `backend/main.py` 註冊 teacher router
+
+### 6-C. 前端 State（新增 `frontend/app/state/teacher_state.py`）
+- [x] 班級列表、當前班級詳情、學生名單、全班統計資料等欄位
+- [x] `load_classes` / `create_class` / `regenerate_code`
+- [x] `load_class_detail` / `load_student_progress` / `load_class_stats`
+
+### 6-D. 前端頁面
+- [x] `/teacher` — 老師主選單（班級列表卡片、建立新班級按鈕）
+- [x] `/teacher/class/[class_id]` — 班級管理頁（學生名單、邀請碼顯示／複製／重新產生）
+- [x] `/teacher/student/[student_id]` — 學生個人進度頁（各科答對率卡片＋測驗歷史）
+- [x] `/teacher/stats/[class_id]` — 全班統計頁（各科平均答對率、全班最常答錯 Top 10）
+- [x] 學生端主選單加「加入班級」入口（輸入邀請碼 dialog）
+- [x] 登入後依 role 自動導向：student→/home、teacher→/teacher、admin→/admin
+- [x] `frontend/app/app.py` 註冊新頁面
+
+## Phase 7｜管理員端
+> 目標：管理員可管理使用者與題庫
+
+### 後端
+- [x] `GET /admin/users`：所有使用者列表
+- [x] `PATCH /admin/users/{id}/role`：指派角色（student／teacher／admin）
+- [x] `PATCH /admin/users/{id}/ban`：停權／恢復
+- [x] `GET /admin/stats`：全平台數據（使用者數、答題數、題庫量、各科題數）
+- [x] `GET /admin/questions`：題庫列表（科目／年份篩選＋分頁）
+- [x] `POST /admin/questions`：新增題目
+- [x] `PATCH /admin/questions/{id}`：編輯題目
+- [x] `DELETE /admin/questions/{id}`：刪除題目
+
+### 前端
+- [x] `/admin`：平台總覽（7 張統計卡＋各科題數）
+- [x] `/admin/users`：使用者管理（角色指派＋停權按鈕）
+- [x] `/admin/questions`：題庫維護（篩選／分頁／跳頁／新增編輯刪除）
