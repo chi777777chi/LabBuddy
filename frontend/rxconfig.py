@@ -4,6 +4,6 @@ import reflex as rx
 config = rx.Config(
     app_name="app",
     frontend_port=3000,
-    backend_port=8001,  # Reflex 內部 backend，避免與 FastAPI :8000 衝突
-    api_url=os.environ.get("REFLEX_API_URL", "http://localhost:8001"),
+    backend_port=3000,
+    api_url=os.environ.get("REFLEX_API_URL", "http://localhost:3000"),
 )

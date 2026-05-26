@@ -20,11 +20,14 @@ def login_page() -> rx.Component:
                     align="center",
                 ),
                 rx.divider(),
-                rx.button(
-                    rx.icon("log-in", size=18),
-                    "使用 Google 帳號登入",
-                    on_click=rx.redirect(f"{BACKEND_URL}/auth/google"),
-                    size="3",
+                rx.link(
+                    rx.button(
+                        rx.icon("log-in", size=18),
+                        "使用 Google 帳號登入",
+                        size="3",
+                        width="100%",
+                    ),
+                    href=f"{BACKEND_URL}/auth/google",
                     width="100%",
                 ),
                 spacing="6",
