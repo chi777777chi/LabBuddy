@@ -219,9 +219,9 @@ def top_bar() -> rx.Component:
             rx.badge(
                 rx.icon("timer", size=14),
                 ExamState.time_display,
-                color_scheme=rx.cond(ExamState.time_left < 30, "red", "blue"),
+                color_scheme="blue",
                 size="3",
-                variant="solid",
+                variant="soft",
             ),
             rx.fragment(),
         ),
@@ -250,14 +250,14 @@ def question_area() -> rx.Component:
             ExamState.is_wrong_review,
             rx.hstack(
                 rx.badge(
-                    rx.icon("x-circle", size=13),
+                    rx.icon("circle-x", size=13),
                     "答錯 ", ExamState.current_wrong_count, " 次",
                     color_scheme="red",
                     variant="soft",
                     size="2",
                 ),
                 rx.badge(
-                    rx.icon("check-circle", size=13),
+                    rx.icon("circle-check", size=13),
                     "答對 ", ExamState.current_correct_count, " 次",
                     color_scheme="green",
                     variant="soft",

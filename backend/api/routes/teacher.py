@@ -42,6 +42,10 @@ class ClassRename(BaseModel):
     name: str
 
 
+class AnnouncementUpdate(BaseModel):
+    announcement: Optional[str] = None
+
+
 class JoinRequest(BaseModel):
     invite_code: str
 
@@ -135,9 +139,25 @@ def get_class_detail(
         "id": cls.id,
         "name": cls.name,
         "invite_code": cls.invite_code,
+        "announcement": cls.announcement or "",
         "created_at": cls.created_at.strftime("%Y/%m/%d"),
         "students": students,
     }
+
+
+@router.patch("/teacher/classes/{class_id}/announcement")
+def update_announcement(
+    class_id: str,
+    body: AnnouncementUpdate,
+    teacher: User = Depends(require_teacher),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    cls.announcement = body.announcement.strip() if body.announcement else None
+    db.commit()
+    return {"ok": True, "announcement": cls.announcement or ""}
 
 
 @router.patch("/teacher/classes/{class_id}")
@@ -365,6 +385,36 @@ def get_class_stats(
 
 
 # ── 學生加入班級（學生端呼叫）─────────────────────────────────
+
+@router.get("/classes/mine")
+def my_classes(
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """學生查詢自己加入的所有班級。"""
+    memberships = (
+        db.query(ClassMember)
+        .filter(ClassMember.student_id == user.id)
+        .order_by(ClassMember.joined_at.desc())
+        .all()
+    )
+    result = []
+    for m in memberships:
+        cls = db.query(Class).filter(Class.id == m.class_id).first()
+        if not cls:
+            continue
+        teacher = db.query(User).filter(User.id == cls.teacher_id).first()
+        member_count = db.query(ClassMember).filter(ClassMember.class_id == cls.id).count()
+        result.append({
+            "id": cls.id,
+            "name": cls.name,
+            "teacher_name": teacher.name if teacher else "—",
+            "member_count": member_count,
+            "announcement": cls.announcement or "",
+            "joined_at": m.joined_at.strftime("%Y/%m/%d"),
+        })
+    return result
+
 
 @router.post("/classes/join")
 def join_class(

@@ -47,7 +47,8 @@ class Question(Base):
     answer: Mapped[str] = mapped_column(String, nullable=False)      # A / B / C / D
     has_image: Mapped[bool] = mapped_column(Boolean, default=False)
     image_path: Mapped[str | None] = mapped_column(String, nullable=True)
-    difficulty: Mapped[str | None] = mapped_column(String, nullable=True)  # easy/medium/hard (Phase 5 AI)
+    difficulty: Mapped[str | None] = mapped_column(String, nullable=True)  # easy/medium/hard
+    tags: Mapped[str | None] = mapped_column(Text, nullable=True)           # 逗號分隔知識點標籤，如「血液凝固機制,凝血因子活化」
 
     subject: Mapped["Subject"] = relationship(back_populates="questions")
     answers: Mapped[list["Answer"]] = relationship(back_populates="question")
@@ -98,6 +99,7 @@ class Class(Base):
     name: Mapped[str] = mapped_column(String, nullable=False)
     teacher_id: Mapped[str] = mapped_column(ForeignKey("users.id"), nullable=False)
     invite_code: Mapped[str] = mapped_column(String, unique=True, nullable=False)
+    announcement: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     members: Mapped[list["ClassMember"]] = relationship(back_populates="class_ref")

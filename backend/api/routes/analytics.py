@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
@@ -142,7 +144,31 @@ async def get_my_analytics(
     else:
         time_stats = {"has_data": False}
 
-    # ── 5. 成績趨勢方向 ──────────────────────────────────────────
+    # ── 5. 慢題知識點分析 ────────────────────────────────────────
+    slow_tags = []
+    if answers_with_time:
+        tag_times: dict[str, list[int]] = defaultdict(list)
+        q_ids = {a.question_id for a in answers_with_time}
+        q_map = {
+            q.id: q
+            for q in db.query(Question).filter(Question.id.in_(q_ids)).all()
+        }
+        time_map = {a.question_id: a.time_spent_seconds for a in answers_with_time}
+        for qid, q in q_map.items():
+            if q.tags and qid in time_map:
+                for tag in q.tags.split(","):
+                    tag = tag.strip()
+                    if tag:
+                        tag_times[tag].append(time_map[qid])
+        slow_tags = [
+            {"tag": tag, "avg_seconds": round(sum(ts) / len(ts), 1), "count": len(ts)}
+            for tag, ts in tag_times.items()
+            if len(ts) >= 3
+        ]
+        slow_tags.sort(key=lambda x: x["avg_seconds"], reverse=True)
+        slow_tags = slow_tags[:8]
+
+    # ── 6. 成績趨勢方向 ──────────────────────────────────────────
     trend_direction = "none"
     if len(score_trend) >= 3:
         recent = [s["percentage"] for s in score_trend[-3:]]
@@ -155,7 +181,7 @@ async def get_my_analytics(
         else:
             trend_direction = "stable"
 
-    # ── 6. AI 弱點 + 時間分析 ─────────────────────────────────────
+    # ── 7. AI 弱點 + 時間分析 ─────────────────────────────────────
     has_data = any(s["total_answered"] > 0 for s in subject_stats)
     if has_data:
         ai_analysis = await get_weakness_analysis_with_time(
@@ -163,6 +189,7 @@ async def get_my_analytics(
             score_trend=score_trend,
             weak_questions=weak_questions,
             time_stats=time_stats,
+            slow_tags=slow_tags,
         )
     else:
         ai_analysis = ""
@@ -174,4 +201,5 @@ async def get_my_analytics(
         "ai_analysis": ai_analysis,
         "trend_direction": trend_direction,
         "time_stats": time_stats,
+        "slow_tags": slow_tags,
     }

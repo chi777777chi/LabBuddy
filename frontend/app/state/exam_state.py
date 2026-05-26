@@ -12,6 +12,7 @@ class ResultDetail(BaseModel):
     correct_answer: str = ""
     is_correct: bool = False
     is_unanswered: bool = False
+    time_spent_seconds: int = 0
 
 
 class ExamState(rx.State):
@@ -28,6 +29,7 @@ class ExamState(rx.State):
     instant_review: bool = True
     save_to_history: bool = True
     available_exams: list[dict] = []
+    is_loading_exams: bool = False
 
     # ── 考試中 ────────────────────────────────────────────────
     session_id: str = ""
@@ -40,8 +42,9 @@ class ExamState(rx.State):
     is_loading: bool = False
     error_msg: str = ""
 
-    # ── 計時器 ────────────────────────────────────────────────
-    time_left: int = 0
+    # ── 計時器（碼表，計總時間） ──────────────────────────────
+    elapsed_seconds: int = 0
+    show_time_breakdown: bool = True   # 作答後是否顯示各題用時分析
     is_timer_running: bool = False
 
     # ── 放棄確認 dialog ───────────────────────────────────────
@@ -70,7 +73,9 @@ class ExamState(rx.State):
     result_total: int = 0
     result_percentage: float = 0.0
     result_details: list[ResultDetail] = []
-    result_session_id: str = ""  # 交卷後保留 session_id 供 PDF 匯出
+    result_session_id: str = ""       # 交卷後保留 session_id 供 PDF 匯出
+    result_elapsed_seconds: int = 0   # 本場總作答秒數
+    result_show_time_breakdown: bool = False  # 是否顯示各題用時分析
 
     # ── 基本 computed vars ────────────────────────────────────
     @rx.var
@@ -128,8 +133,14 @@ class ExamState(rx.State):
 
     @rx.var
     def time_display(self) -> str:
-        mins = self.time_left // 60
-        secs = self.time_left % 60
+        mins = self.elapsed_seconds // 60
+        secs = self.elapsed_seconds % 60
+        return f"{mins:02d}:{secs:02d}"
+
+    @rx.var
+    def result_time_display(self) -> str:
+        mins = self.result_elapsed_seconds // 60
+        secs = self.result_elapsed_seconds % 60
         return f"{mins:02d}:{secs:02d}"
 
     # ── 題目內容 computed vars ────────────────────────────────
@@ -280,11 +291,13 @@ class ExamState(rx.State):
             self.subjects = resp.json()
 
     async def load_available_exams(self):
+        self.is_loading_exams = True
         async with httpx.AsyncClient() as client:
             resp = await client.get(
                 f"{BACKEND_URL}/questions/exams/list",
                 params={"subject_id": self.selected_subject_id},
             )
+        self.is_loading_exams = False
         if resp.status_code == 200:
             sitting_label = {1: "第一次", 2: "第二次"}
             self.available_exams = [
@@ -296,8 +309,14 @@ class ExamState(rx.State):
                 for e in resp.json()
             ]
             if self.available_exams:
-                self.selected_year = self.available_exams[0]["year"]
-                self.selected_sitting = self.available_exams[0]["sitting"]
+                # 只有當前選擇不在新列表中時才重置（切換科目時）
+                current_valid = any(
+                    e["year"] == self.selected_year and e["sitting"] == self.selected_sitting
+                    for e in self.available_exams
+                )
+                if not current_valid:
+                    self.selected_year = self.available_exams[0]["year"]
+                    self.selected_sitting = self.available_exams[0]["sitting"]
 
     def set_subject(self, value: str):
         self.selected_subject_id = int(value)
@@ -329,11 +348,19 @@ class ExamState(rx.State):
     def selected_exam_value(self) -> str:
         return f"{self.selected_year}-{self.selected_sitting}"
 
+    @rx.var
+    def selected_exam_label(self) -> str:
+        sitting_label = {1: "第一次", 2: "第二次"}
+        return f"{self.selected_year}年{sitting_label.get(self.selected_sitting, '')}"
+
     def toggle_shuffle(self, value: bool):
         self.shuffle_options = value
 
     def toggle_timed(self, value: bool):
         self.timed = value
+
+    def toggle_time_breakdown(self, value: bool):
+        self.show_time_breakdown = value
 
     def toggle_instant_review(self, value: bool):
         self.instant_review = value
@@ -364,7 +391,7 @@ class ExamState(rx.State):
         self.session_id = ""
         self.questions = []
         self.is_timer_running = False
-        self.time_left = 0
+        self.elapsed_seconds = 0
         self.show_quit_dialog = False
         self.q_start_time = {}
         self.q_time_spent = {}
@@ -379,7 +406,7 @@ class ExamState(rx.State):
         self.eliminated = {}
         self.feedback = {}
         self.answered_via_api = {}
-        self.time_left = 0
+        self.elapsed_seconds = 0
         self.is_timer_running = False
         return ExamState.start_exam
 
@@ -390,7 +417,7 @@ class ExamState(rx.State):
         self.feedback = {}
         self.answered_via_api = {}
         self.hint_levels = {}
-        self.time_left = 0
+        self.elapsed_seconds = 0
         self.is_timer_running = False
         self.q_start_time = {}
         self.q_time_spent = {}
@@ -448,28 +475,21 @@ class ExamState(rx.State):
                 self.q_start_time = {first_qid: _time.time()}
 
         if self.timed:
-            self.time_left = len(self.questions) * 90
+            self.elapsed_seconds = 0
             self.is_timer_running = True
             return [rx.redirect("/exam"), ExamState.run_timer]
         return rx.redirect("/exam")
 
-    # ── 計時器背景任務 ────────────────────────────────────────
+    # ── 計時器背景任務（碼表，計總時間） ─────────────────────
     @rx.event(background=True)
     async def run_timer(self):
         import asyncio
         while True:
             await asyncio.sleep(1)
-            expired = False
             async with self:
                 if not self.is_timer_running:
                     return
-                self.time_left -= 1
-                if self.time_left <= 0:
-                    self.is_timer_running = False
-                    expired = True
-            if expired:
-                yield ExamState.submit_exam
-                return
+                self.elapsed_seconds += 1
 
     # ── 答題介面事件 ──────────────────────────────────────────
     def select_option(self, option: str):
@@ -639,6 +659,13 @@ class ExamState(rx.State):
             self.result_score = data.get("score", 0)
             self.result_total = data.get("total", 0)
             self.result_percentage = data.get("percentage", 0.0)
+            self.result_elapsed_seconds = self.elapsed_seconds
+            self.result_show_time_breakdown = self.timed and self.show_time_breakdown
+            # 建立 order（1-based）→ time_spent 對照表
+            order_to_time: dict[int, int] = {}
+            for i, q in enumerate(self.questions):
+                qid = q.get("question_id", "")
+                order_to_time[i + 1] = self.q_time_spent.get(qid, 0)
             self.result_details = [
                 ResultDetail(
                     order=d.get("order", 0),
@@ -647,9 +674,12 @@ class ExamState(rx.State):
                     correct_answer=d.get("correct_answer") or "",
                     is_correct=bool(d.get("is_correct", False)),
                     is_unanswered=d.get("chosen") is None,
+                    time_spent_seconds=order_to_time.get(d.get("order", 0), 0),
                 )
                 for d in data.get("details", [])
             ]
             self.result_session_id = self.session_id
             self.session_id = ""
+            self.elapsed_seconds = 0
+            self.is_timer_running = False
             return rx.redirect("/result")

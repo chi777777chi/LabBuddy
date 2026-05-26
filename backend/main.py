@@ -19,7 +19,29 @@ def _migrate_user_is_active():
             conn.commit()
 
 
+def _migrate_questions_tags():
+    """SQLite: 對舊 DB 補上 questions.tags 欄位（如果不存在）。"""
+    with engine.connect() as conn:
+        rows = conn.execute(text("PRAGMA table_info(questions)")).fetchall()
+        cols = [row[1] for row in rows]
+        if "tags" not in cols:
+            conn.execute(text("ALTER TABLE questions ADD COLUMN tags TEXT"))
+            conn.commit()
+
+
+def _migrate_classes_announcement():
+    """SQLite: 對舊 DB 補上 classes.announcement 欄位（如果不存在）。"""
+    with engine.connect() as conn:
+        rows = conn.execute(text("PRAGMA table_info(classes)")).fetchall()
+        cols = [row[1] for row in rows]
+        if "announcement" not in cols:
+            conn.execute(text("ALTER TABLE classes ADD COLUMN announcement TEXT"))
+            conn.commit()
+
+
 _migrate_user_is_active()
+_migrate_questions_tags()
+_migrate_classes_announcement()
 
 app = FastAPI(title="醫檢師國考題庫平台 API", version="0.1.0")
 

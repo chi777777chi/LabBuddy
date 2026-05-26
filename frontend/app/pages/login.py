@@ -1,6 +1,7 @@
+import os
 import reflex as rx
 
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = os.environ.get("BACKEND_PUBLIC_URL", "http://localhost:8000")
 
 
 @rx.page(route="/")

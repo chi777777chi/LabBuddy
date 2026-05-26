@@ -62,3 +62,9 @@ htmlcov/
 
 # Question bank PDFs（原始試卷，JSON 已含完整資料）
 Question/**/*.pdf
+
+# 臨時除錯腳本
+check_difficulty.py
+check_tags.py
+check_tags_out.txt
+clear_tags.py

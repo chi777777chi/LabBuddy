@@ -2,6 +2,58 @@ import reflex as rx
 from ..state.exam_state import ExamState, ResultDetail  # noqa: F401
 
 
+def format_seconds(secs: int) -> str:
+    mins = secs // 60
+    s = secs % 60
+    return f"{mins:02d}:{s:02d}"
+
+
+def time_bar_row(item: ResultDetail) -> rx.Component:
+    """各題用時列：只在 time_spent_seconds > 0 時顯示。"""
+    bar_width = rx.cond(
+        item.time_spent_seconds > 0,
+        (item.time_spent_seconds * 200 // 300).to_string() + "px",
+        "4px",
+    )
+    color = rx.cond(
+        item.time_spent_seconds > 120, "red",
+        rx.cond(item.time_spent_seconds > 75, "orange", "green")
+    )
+    return rx.hstack(
+        rx.text(f"第", rx.text.span(item.order, weight="bold"), "題", size="2", width="52px"),
+        rx.box(
+            rx.box(
+                height="10px",
+                width=bar_width,
+                background=rx.cond(
+                    item.time_spent_seconds > 120, rx.color("red", 7),
+                    rx.cond(item.time_spent_seconds > 75, rx.color("orange", 7), rx.color("green", 7))
+                ),
+                border_radius="4px",
+                max_width="200px",
+            ),
+            background=rx.color("gray", 3),
+            border_radius="4px",
+            width="200px",
+            height="10px",
+            overflow="hidden",
+        ),
+        rx.text(item.time_spent_seconds, " 秒", size="1", color=rx.color("gray", 10), width="50px"),
+        rx.cond(
+            item.time_spent_seconds > 120,
+            rx.badge("偏慢", color_scheme="red", size="1"),
+            rx.cond(
+                item.time_spent_seconds > 75,
+                rx.badge("稍慢", color_scheme="orange", size="1"),
+                rx.fragment(),
+            ),
+        ),
+        align="center",
+        spacing="3",
+        width="100%",
+    )
+
+
 def detail_row(item: ResultDetail) -> rx.Component:
     return rx.table.row(
         rx.table.cell(item.order, justify="center"),
@@ -60,6 +112,23 @@ def result_page() -> rx.Component:
                                 rx.text(ExamState.result_percentage, " %", size="8", weight="bold", color=rx.color("green", 9)),
                                 rx.text("答對率", size="2", color=rx.color("gray", 10)),
                                 align="center",
+                            ),
+                            rx.cond(
+                                ExamState.result_elapsed_seconds > 0,
+                                rx.fragment(
+                                    rx.separator(orientation="vertical", size="3"),
+                                    rx.vstack(
+                                        rx.hstack(
+                                            rx.icon("timer", size=18, color=rx.color("violet", 9)),
+                                            rx.text(ExamState.result_time_display, size="6", weight="bold", color=rx.color("violet", 9)),
+                                            align="center",
+                                            spacing="1",
+                                        ),
+                                        rx.text("作答時間", size="2", color=rx.color("gray", 10)),
+                                        align="center",
+                                    ),
+                                ),
+                                rx.fragment(),
                             ),
                             spacing="8",
                             justify="center",
@@ -127,6 +196,31 @@ def result_page() -> rx.Component:
                     ),
                     width="100%",
                     padding="5",
+                ),
+                rx.cond(
+                    ExamState.result_show_time_breakdown & (ExamState.result_elapsed_seconds > 0),
+                    rx.card(
+                        rx.vstack(
+                            rx.hstack(
+                                rx.icon("clock", size=18, color=rx.color("violet", 9)),
+                                rx.heading("各題用時分析", size="4"),
+                                spacing="2",
+                                align="center",
+                            ),
+                            rx.text(
+                                "花較多時間的題目，可能代表該主題概念較不熟悉，可優先複習。",
+                                size="2",
+                                color=rx.color("gray", 10),
+                            ),
+                            rx.divider(),
+                            rx.foreach(ExamState.result_details, time_bar_row),
+                            spacing="3",
+                            width="100%",
+                        ),
+                        width="100%",
+                        padding="5",
+                    ),
+                    rx.fragment(),
                 ),
                 width="760px",
                 max_width="100%",

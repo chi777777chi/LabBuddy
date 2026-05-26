@@ -52,6 +52,14 @@ class TeacherState(rx.State):
     join_error: str = ""
     join_success: str = ""
 
+    # ── 我的班級（學生端）────────────────────────────────────
+    my_classes: list[dict] = []
+    is_my_classes_loading: bool = False
+
+    # ── 公告編輯（老師端）────────────────────────────────────
+    announcement_input: str = ""
+    announcement_saving: bool = False
+
     # ── flash ──────────────────────────────────────────────────
     flash_msg: str = ""
     flash_kind: str = "info"
@@ -135,8 +143,10 @@ class TeacherState(rx.State):
                 "id": data["id"],
                 "name": data["name"],
                 "invite_code": data["invite_code"],
+                "announcement": data.get("announcement", ""),
                 "created_at": data["created_at"],
             }
+            self.announcement_input = data.get("announcement", "")
             self.class_students = data["students"]
 
     async def regenerate_code(self):
@@ -221,6 +231,47 @@ class TeacherState(rx.State):
             for s in data["subject_stats"]
         ]
         self.top_wrong_questions = data["top_wrong_questions"]
+
+    # ── 我的班級（學生端）────────────────────────────────────
+    async def load_my_classes(self):
+        auth = await self.get_state(AuthState)
+        if not auth.token:
+            return rx.redirect("/")
+        self.is_my_classes_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/classes/mine",
+                params={"token": auth.token},
+            )
+        self.is_my_classes_loading = False
+        if resp.status_code == 200:
+            self.my_classes = resp.json()
+
+    # ── 公告編輯（老師端）────────────────────────────────────
+    def set_announcement_input(self, val: str):
+        self.announcement_input = val
+
+    async def save_announcement(self):
+        auth = await self.get_state(AuthState)
+        class_id = self.current_class.get("id", "")
+        if not class_id:
+            return
+        self.announcement_saving = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.patch(
+                f"{BACKEND_URL}/teacher/classes/{class_id}/announcement",
+                params={"token": auth.token},
+                json={"announcement": self.announcement_input},
+            )
+        self.announcement_saving = False
+        if resp.status_code == 200:
+            saved = resp.json()["announcement"]
+            self.current_class = {**self.current_class, "announcement": saved}
+            self.flash_msg = "公告已儲存"
+            self.flash_kind = "info"
+        else:
+            self.flash_msg = resp.json().get("detail", "儲存失敗")
+            self.flash_kind = "error"
 
     # ── 加入班級（學生端）────────────────────────────────────
     def set_join_code_input(self, val: str):

@@ -146,8 +146,18 @@ def options_toggles() -> rx.Component:
         ),
         rx.hstack(
             rx.switch(checked=ExamState.timed, on_change=ExamState.toggle_timed),
-            rx.text("開啟計時（每題 90 秒）", size="2"),
+            rx.text("開啟計時（記錄本場作答時間）", size="2"),
             align="center",
+        ),
+        rx.cond(
+            ExamState.timed,
+            rx.hstack(
+                rx.box(width="28px"),
+                rx.switch(checked=ExamState.show_time_breakdown, on_change=ExamState.toggle_time_breakdown),
+                rx.text("作答後顯示各題用時分析（推測弱點主題）", size="2", color=rx.color("gray", 11)),
+                align="center",
+            ),
+            rx.fragment(),
         ),
         rx.hstack(
             rx.switch(checked=ExamState.instant_review, on_change=ExamState.toggle_instant_review),
@@ -190,15 +200,29 @@ def exam_setup_page() -> rx.Component:
                         rx.callout(ExamState.error_msg, color="red"),
                         rx.fragment(),
                     ),
+                    rx.cond(
+                        (ExamState.selected_mode != "multi_random") & (ExamState.selected_mode != "adaptive"),
+                        rx.text(
+                            "已選擇：",
+                            rx.text.span(ExamState.selected_exam_label, weight="bold", color=rx.color("blue", 9)),
+                            size="2",
+                            color=rx.color("gray", 10),
+                        ),
+                        rx.fragment(),
+                    ),
                     rx.button(
                         rx.cond(
-                            ExamState.is_loading,
+                            ExamState.is_loading | ExamState.is_loading_exams,
                             rx.spinner(size="2"),
                             rx.icon("play", size=16),
                         ),
-                        "開始測驗",
+                        rx.cond(
+                            ExamState.is_loading_exams,
+                            "載入中...",
+                            "開始測驗",
+                        ),
                         on_click=ExamState.start_exam,
-                        disabled=ExamState.is_loading,
+                        disabled=ExamState.is_loading | ExamState.is_loading_exams,
                         size="3",
                         width="100%",
                         color_scheme="blue",

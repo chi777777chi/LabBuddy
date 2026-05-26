@@ -18,13 +18,16 @@
 - **AI 弱點分析頁**（各科答對率、成績趨勢折線圖、最常答錯題目、AI 學習建議、時間效率分析）
 - **個人資料頁**（學習統計、快速導航）
 
+### 老師端
+- 班級管理（建立班級、6 碼邀請碼、重新產生邀請碼、改名、刪除）
+- 學生管理（查看名單、移出學生）
+- 學生個人進度（各科平均答對率、最近 20 場測驗歷史）
+- 全班統計（各科平均答對率排序、全班最常答錯 Top 10 題目）
+
 ### 管理員端
 - 平台總覽（總使用者數、答題數、題庫量、各科題數）
 - 使用者管理（指派角色 student / teacher / admin、停權 / 恢復）
 - 題庫維護（新增、編輯、刪除題目；科目 / 年份篩選、分頁跳頁）
-
-### 規劃中
-- 老師端（班級管理、邀請學生、全班統計、學生個人進度）
 
 ## 考試科目
 
@@ -53,7 +56,7 @@
 
 ```
 ├── backend/
-│   ├── api/routes/       # auth, users, subjects, questions, exam, ai, analytics, admin
+│   ├── api/routes/       # auth, users, subjects, questions, exam, ai, analytics, admin, teacher
 │   ├── core/             # 設定、JWT 安全性
 │   ├── db/               # SQLAlchemy models + database
 │   ├── services/         # ai_service（Groq hint + weakness analysis）
@@ -62,8 +65,9 @@
 │   ├── assets/           # 全域 CSS
 │   └── app/
 │       ├── pages/        # login, home, exam_setup, exam, result, history,
-│       │                 # wrong_review, analytics, profile, admin, admin_users, admin_questions
-│       └── state/        # auth, exam, analytics, profile, admin states
+│       │                 # wrong_review, analytics, profile, admin, admin_users, admin_questions,
+│       │                 # teacher, teacher_class, teacher_student, teacher_stats
+│       └── state/        # auth, exam, analytics, profile, admin, teacher states
 ├── scripts/
 │   ├── import_questions.py     # 批次匯入 JSON 至資料庫
 │   ├── classify_difficulty.py  # AI 批次難易度分級（可重跑，自動跳過已分類）
@@ -127,8 +131,8 @@ http://localhost:3000/callback/<token>
 | Phase 3 | 核心答題流程 | ✅ 完成 |
 | Phase 4 | 成績與歷史紀錄 | ✅ 完成 |
 | Phase 5 | AI 功能（hint、弱點分析、自適應、難度分級） | ✅ 完成 |
+| Phase 6 | 老師端（班級管理、學生進度、全班統計） | ✅ 完成 |
 | Phase 7 | 管理員端（使用者管理、題庫維護） | ✅ 完成 |
-| Phase 6 | 老師端（班級管理、學生進度） | 開發中 |
 
 ## 環境變數（backend/.env）
 

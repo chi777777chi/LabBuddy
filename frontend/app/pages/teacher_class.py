@@ -242,6 +242,51 @@ def teacher_class_page() -> rx.Component:
                             width="100%",
                         ),
 
+                        # 公告區
+                        rx.card(
+                            rx.vstack(
+                                rx.hstack(
+                                    rx.icon("megaphone", size=18, color=rx.color("orange", 9)),
+                                    rx.heading("班級公告", size="4"),
+                                    spacing="2",
+                                    align="center",
+                                ),
+                                rx.text(
+                                    "公告會顯示在學生「我的班級」頁面，可留空代表無公告。",
+                                    size="1",
+                                    color=rx.color("gray", 9),
+                                ),
+                                rx.text_area(
+                                    value=TeacherState.announcement_input,
+                                    on_change=TeacherState.set_announcement_input,
+                                    placeholder="輸入公告內容，例如：下週考試範圍為第一章到第三章...",
+                                    rows="4",
+                                    width="100%",
+                                ),
+                                rx.hstack(
+                                    rx.button(
+                                        rx.cond(
+                                            TeacherState.announcement_saving,
+                                            rx.spinner(size="2"),
+                                            rx.icon("save", size=15),
+                                        ),
+                                        "儲存公告",
+                                        on_click=TeacherState.save_announcement,
+                                        disabled=TeacherState.announcement_saving,
+                                        color_scheme="orange",
+                                        size="2",
+                                    ),
+                                    justify="end",
+                                    width="100%",
+                                ),
+                                spacing="3",
+                                width="100%",
+                                align="start",
+                            ),
+                            padding="5",
+                            width="100%",
+                        ),
+
                         # 學生名單
                         rx.vstack(
                             rx.hstack(
