@@ -8,7 +8,7 @@ def subject_select() -> rx.Component:
     return rx.vstack(
         rx.text("科目", weight="bold", size="2"),
         rx.select.root(
-            rx.select.trigger(placeholder="選擇科目", width="100%"),
+            rx.select.trigger(placeholder="選擇科目", width="100%", max_width="100%"),
             rx.select.content(
                 rx.foreach(
                     ExamState.subjects,
@@ -76,7 +76,8 @@ def difficulty_select() -> rx.Component:
                         )
                         for val, label in difficulties
                     ],
-                    spacing="5",
+                    spacing="4",
+                    flex_wrap="wrap",
                 ),
                 value=ExamState.selected_difficulty,
                 on_change=ExamState.set_difficulty,
@@ -94,7 +95,7 @@ def year_sitting_select() -> rx.Component:
         rx.vstack(
             rx.text("考古題年份／梯次", weight="bold", size="2"),
             rx.select.root(
-                rx.select.trigger(width="200px"),
+                rx.select.trigger(width="100%"),
                 rx.select.content(
                     rx.foreach(
                         ExamState.available_exams,
@@ -126,7 +127,8 @@ def count_select() -> rx.Component:
                     )
                     for val, label in counts
                 ],
-                spacing="5",
+                spacing="4",
+                flex_wrap="wrap",
             ),
             value=ExamState.selected_count.to_string(),
             on_change=ExamState.set_count,

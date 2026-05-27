@@ -4,65 +4,127 @@ from ..state.teacher_state import TeacherState
 
 
 def nav_bar() -> rx.Component:
-    return rx.hstack(
-        rx.heading(
-            "醫檢師國考練習平台",
-            size="4",
-            on_click=rx.redirect("/home"),
-            cursor="pointer",
-        ),
-        rx.spacer(),
+    return rx.box(
+        # 桌機導覽（sm 以上顯示）
         rx.hstack(
-            rx.button(
-                rx.icon("bar-chart-2", size=15),
-                "學習分析",
-                on_click=rx.redirect("/analytics"),
-                size="2",
-                variant="ghost",
-                color_scheme="violet",
+            rx.heading(
+                "醫檢師國考練習平台",
+                size="4",
+                on_click=rx.redirect("/home"),
+                cursor="pointer",
             ),
-            rx.cond(
-                AuthState.user_role == "teacher",
+            rx.spacer(),
+            rx.hstack(
                 rx.button(
-                    rx.icon("graduation-cap", size=15),
-                    "老師後台",
-                    on_click=rx.redirect("/teacher"),
+                    rx.icon("bar-chart-2", size=15),
+                    "學習分析",
+                    on_click=rx.redirect("/analytics"),
                     size="2",
                     variant="ghost",
                     color_scheme="violet",
                 ),
-                rx.fragment(),
-            ),
-            rx.cond(
-                AuthState.user_role == "admin",
+                rx.cond(
+                    AuthState.user_role == "teacher",
+                    rx.button(
+                        rx.icon("graduation-cap", size=15),
+                        "老師後台",
+                        on_click=rx.redirect("/teacher"),
+                        size="2",
+                        variant="ghost",
+                        color_scheme="violet",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.cond(
+                    AuthState.user_role == "admin",
+                    rx.button(
+                        rx.icon("shield", size=15),
+                        "管理員",
+                        on_click=rx.redirect("/admin"),
+                        size="2",
+                        variant="ghost",
+                        color_scheme="red",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
+                rx.text(AuthState.user_name, weight="medium"),
                 rx.button(
-                    rx.icon("shield", size=15),
-                    "管理員",
-                    on_click=rx.redirect("/admin"),
+                    rx.icon("log-out", size=16),
+                    "登出",
+                    on_click=AuthState.logout,
                     size="2",
                     variant="ghost",
-                    color_scheme="red",
+                    color_scheme="gray",
                 ),
-                rx.fragment(),
+                align="center",
+                spacing="3",
             ),
-            rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
-            rx.text(AuthState.user_name, weight="medium"),
-            rx.button(
-                rx.icon("log-out", size=16),
-                "登出",
-                on_click=AuthState.logout,
-                size="2",
-                variant="ghost",
-                color_scheme="gray",
-            ),
+            width="100%",
+            padding_x="6",
+            padding_y="4",
             align="center",
-            spacing="3",
+            display={"initial": "none", "sm": "flex"},
         ),
-        width="100%",
-        padding_x="6",
-        padding_y="4",
+        # 手機導覽（initial 顯示，sm 以上隱藏）
+        rx.hstack(
+            rx.heading(
+                "醫檢師練習平台",
+                size="3",
+                on_click=rx.redirect("/home"),
+                cursor="pointer",
+            ),
+            rx.spacer(),
+            rx.hstack(
+                rx.button(
+                    rx.icon("bar-chart-2", size=14),
+                    on_click=rx.redirect("/analytics"),
+                    size="1",
+                    variant="ghost",
+                    color_scheme="violet",
+                ),
+                rx.cond(
+                    AuthState.user_role == "teacher",
+                    rx.button(
+                        rx.icon("graduation-cap", size=14),
+                        on_click=rx.redirect("/teacher"),
+                        size="1",
+                        variant="ghost",
+                        color_scheme="violet",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.cond(
+                    AuthState.user_role == "admin",
+                    rx.button(
+                        rx.icon("shield", size=14),
+                        on_click=rx.redirect("/admin"),
+                        size="1",
+                        variant="ghost",
+                        color_scheme="red",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="1"),
+                rx.button(
+                    rx.icon("log-out", size=14),
+                    on_click=AuthState.logout,
+                    size="1",
+                    variant="ghost",
+                    color_scheme="gray",
+                ),
+                align="center",
+                spacing="2",
+            ),
+            width="100%",
+            padding_x="3",
+            padding_y="3",
+            align="center",
+            display={"initial": "flex", "sm": "none"},
+        ),
         border_bottom=f"1px solid {rx.color('gray', 4)}",
         background="white",
+        width="100%",
     )
 
 
@@ -144,7 +206,7 @@ def menu_card(icon: str, title: str, description: str, route: str) -> rx.Compone
         cursor="pointer",
         _hover={"box_shadow": "0 4px 16px rgba(0,0,0,0.10)"},
         transition="box-shadow 0.2s",
-        width="200px",
+        width="100%",
     )
 
 
@@ -167,10 +229,10 @@ def home_page() -> rx.Component:
                     menu_card("bar-chart-2", "學習分析", "AI 弱點分析與成績趨勢", "/analytics"),
                     menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
                     menu_card("school", "我的班級", "查看班級資訊與老師公告", "/my-class"),
-                    columns="3",
-                    spacing="6",
-                    width="700px",
-                    max_width="100%",
+                    columns={"initial": "2", "sm": "3"},
+                    spacing="4",
+                    width="100%",
+                    max_width="720px",
                 ),
                 spacing="8",
                 align="center",

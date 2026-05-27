@@ -8,6 +8,28 @@
 """
 import sys, json, time, asyncio, argparse, re
 from pathlib import Path
+
+
+def _repair_json(raw: str) -> list | None:
+    """嘗試從 AI 可能格式錯誤的回應中救出結果。"""
+    # 先試直接解析
+    try:
+        start, end = raw.find("["), raw.rfind("]") + 1
+        if start != -1 and end > 0:
+            return json.loads(raw[start:end])
+    except Exception:
+        pass
+
+    # 用 regex 逐項擷取 {"idx": N, "tags": [...]}
+    results = []
+    for m in re.finditer(r'\{\s*"idx"\s*:\s*(\d+)\s*,\s*"tags"\s*:\s*\[([^\]]*)\]', raw):
+        idx = int(m.group(1))
+        tags_raw = m.group(2)
+        tags = re.findall(r'"([^"]+)"', tags_raw)
+        if tags:
+            results.append({"idx": idx, "tags": tags})
+
+    return results if results else None
 sys.path.insert(0, str(Path(__file__).parent.parent / "backend"))
 
 from db.database import SessionLocal
@@ -62,10 +84,10 @@ async def classify_batch(questions: list[dict]) -> list[str | None]:
                 temperature=0.2,
             )
             raw = resp.choices[0].message.content.strip()
-            start, end = raw.find("["), raw.rfind("]") + 1
-            if start == -1 or end == 0:
+            results = _repair_json(raw)
+            if results is None:
+                print(f"  [ParseFail] 無法解析回應", end=" ")
                 return [None] * len(questions)
-            results = json.loads(raw[start:end])
             output = [None] * len(questions)
             for r in results:
                 idx = r.get("idx")

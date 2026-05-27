@@ -203,11 +203,11 @@ def top_bar() -> rx.Component:
             color_scheme="gray",
         ),
         rx.vstack(
-            rx.text(ExamState.current_source, size="1", color=rx.color("gray", 10)),
+            rx.text(ExamState.current_source, size="1", color=rx.color("gray", 10), display={"initial": "none", "sm": "block"}),
             rx.progress(
                 value=ExamState.current_index + 1,
                 max=ExamState.total_questions,
-                width="200px",
+                width={"initial": "120px", "sm": "200px"},
                 color_scheme="blue",
             ),
             rx.text(ExamState.progress_text, size="2", weight="bold"),
@@ -220,14 +220,14 @@ def top_bar() -> rx.Component:
                 rx.icon("timer", size=14),
                 ExamState.time_display,
                 color_scheme="blue",
-                size="3",
+                size={"initial": "2", "sm": "3"},
                 variant="soft",
             ),
             rx.fragment(),
         ),
         rx.button(
             rx.icon("flag", size=14),
-            "提早交卷",
+            rx.text("提早交卷", display={"initial": "none", "sm": "block"}),
             on_click=ExamState.open_early_submit_dialog,
             disabled=ExamState.is_loading,
             size="2",
@@ -235,12 +235,12 @@ def top_bar() -> rx.Component:
             variant="soft",
         ),
         width="100%",
-        padding_x="6",
+        padding_x={"initial": "3", "sm": "6"},
         padding_y="3",
         border_bottom=f"1px solid {rx.color('gray', 4)}",
         background="white",
         align="center",
-        spacing="3",
+        spacing="2",
     )
 
 

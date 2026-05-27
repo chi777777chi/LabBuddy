@@ -358,7 +358,7 @@ def analytics_page() -> rx.Component:
                             rx.heading("各科答對率", size="4"),
                             rx.grid(
                                 rx.foreach(AnalyticsState.subject_stats, subject_card),
-                                columns="3",
+                                columns={"initial": "2", "sm": "3"},
                                 spacing="3",
                                 width="100%",
                             ),
