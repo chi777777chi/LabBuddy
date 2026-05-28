@@ -24,7 +24,10 @@ def _get_font() -> str:
         "C:/Windows/Fonts/mingliu.ttc",        # Windows：細明體
         "C:/Windows/Fonts/simsun.ttc",         # Windows：新細明體
         "/System/Library/Fonts/PingFang.ttc",  # macOS
-        "/usr/share/fonts/truetype/noto/NotoSansCJKtc-Regular.otf",  # Linux
+        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",     # Ubuntu apt fonts-noto-cjk
+        "/usr/share/fonts/opentype/noto/NotoSansCJKtc-Regular.otf",   # Ubuntu 變體
+        "/usr/share/fonts/truetype/noto/NotoSansCJKtc-Regular.otf",   # 舊版路徑
+        "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",          # 其他 Linux 發行版
     ]
     for path in candidates:
         if os.path.exists(path):
