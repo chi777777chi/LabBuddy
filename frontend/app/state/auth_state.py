@@ -1,7 +1,11 @@
 import httpx
+import os
 import reflex as rx
 
 BACKEND_URL = "http://localhost:8000"
+# 使用者瀏覽器可直接訪問的後端 URL（用於 redirect，如 PDF 下載）
+# Server 上由 systemd 環境變數注入，本機 fallback 到 localhost:8000
+BACKEND_PUBLIC_URL = os.environ.get("BACKEND_PUBLIC_URL", "http://localhost:8000")
 
 
 class AuthState(rx.State):

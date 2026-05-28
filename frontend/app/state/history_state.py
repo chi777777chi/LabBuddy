@@ -2,7 +2,7 @@ from datetime import datetime
 import httpx
 import reflex as rx
 from pydantic import BaseModel
-from .auth_state import AuthState, BACKEND_URL
+from .auth_state import AuthState, BACKEND_URL, BACKEND_PUBLIC_URL
 
 MODE_LABELS = {
     "single_full": "完整考卷",
@@ -114,7 +114,7 @@ class HistoryState(rx.State):
     # ── 載入單次詳情 ──────────────────────────────────────────
     async def download_pdf(self):
         auth = await self.get_state(AuthState)
-        url = f"{BACKEND_URL}/exam/{self.detail_session_id}/export-pdf?token={auth.token}"
+        url = f"{BACKEND_PUBLIC_URL}/exam/{self.detail_session_id}/export-pdf?token={auth.token}"
         return rx.redirect(url, is_external=True)
 
     async def load_detail(self, session_id: str):

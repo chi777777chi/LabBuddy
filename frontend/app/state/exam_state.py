@@ -2,7 +2,7 @@ import httpx
 import reflex as rx
 import time as _time
 from pydantic import BaseModel
-from .auth_state import AuthState, BACKEND_URL
+from .auth_state import AuthState, BACKEND_URL, BACKEND_PUBLIC_URL
 
 
 class ResultDetail(BaseModel):
@@ -390,7 +390,7 @@ class ExamState(rx.State):
 
     async def download_result_pdf(self):
         auth = await self.get_state(AuthState)
-        url = f"{BACKEND_URL}/exam/{self.result_session_id}/export-pdf?token={auth.token}"
+        url = f"{BACKEND_PUBLIC_URL}/exam/{self.result_session_id}/export-pdf?token={auth.token}"
         return rx.redirect(url, is_external=True)
 
     def open_early_submit_dialog(self):
