@@ -13,6 +13,14 @@ from utils.pdf import generate_exam_pdf
 
 router = APIRouter(prefix="/exam", tags=["exam"])
 
+
+def _fix_cjk_space(text: str) -> str:
+    """Remove spurious space after first CJK character (PDF parsing artifact)."""
+    if text and len(text) >= 3 and '一' <= text[0] <= '鿿' and text[1] == ' ':
+        return text[0] + text[2:]
+    return text
+
+
 # ── 科目簡稱（題目來源標註用） ──────────────────────────────────
 SUBJECT_SHORT = {
     "臨床生理學與病理學":         "臨床生理",
@@ -216,8 +224,8 @@ def start_exam(
         q_data = {
             "order": order,
             "question_id": q.id,
-            "content": q.content,
-            "options": options,
+            "content": _fix_cjk_space(q.content or ""),
+            "options": {k: _fix_cjk_space(v or "") for k, v in options.items()},
             "source": build_source(q.year, q.sitting, subject.name, q.number),
             "has_image": q.has_image,
             "image_path": q.image_path,
