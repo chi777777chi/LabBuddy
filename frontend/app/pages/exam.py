@@ -276,6 +276,17 @@ def question_area() -> rx.Component:
                 color=rx.color("blue", 9),
                 margin_bottom="2",
             ),
+            rx.cond(
+                ExamState.current_is_bonus,
+                rx.callout(
+                    rx.icon("gift", size=14),
+                    " 送分題：任何選項均給分",
+                    color_scheme="amber",
+                    size="1",
+                    margin_bottom="2",
+                ),
+                rx.fragment(),
+            ),
             rx.text(
                 ExamState.current_content,
                 size="3",

@@ -157,6 +157,12 @@ class ExamState(rx.State):
         return self.questions[self.current_index].get("source", "")
 
     @rx.var
+    def current_is_bonus(self) -> bool:
+        if not self.questions or self.current_index >= len(self.questions):
+            return False
+        return bool(self.questions[self.current_index].get("is_bonus", False))
+
+    @rx.var
     def option_a_text(self) -> str:
         if not self.questions or self.current_index >= len(self.questions):
             return ""

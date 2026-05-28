@@ -51,7 +51,8 @@ def shuffle_question_options(q: Question) -> tuple[dict, str]:
     items = list(original.items())
     random.shuffle(items)
     new_options = {chr(65 + i): text for i, (_, text) in enumerate(items)}
-    # 找原本正確答案的文字在新排列的位置
+    if not q.answer:  # 送分題
+        return new_options, ""
     correct_text = original[q.answer]
     new_answer = next(k for k, v in new_options.items() if v == correct_text)
     return new_options, new_answer
@@ -213,6 +214,7 @@ def start_exam(
             "question_id": q.id,
             "order": order,
             "effective_answer": effective_answer,
+            "is_bonus": not bool(q.answer),
         })
 
         db.add(Answer(
@@ -229,6 +231,7 @@ def start_exam(
             "source": build_source(q.year, q.sitting, subject.name, q.number),
             "has_image": q.has_image,
             "image_path": q.image_path,
+            "is_bonus": not bool(q.answer),
         }
         if body.mode == "wrong_review" and q.id in stats_map:
             stat = stats_map[q.id]
@@ -279,7 +282,11 @@ def submit_answer(
     if not answer:
         raise HTTPException(status_code=404, detail="Answer record not found")
 
-    is_correct = (body.chosen == q_meta["effective_answer"]) if body.chosen else False
+    is_bonus = q_meta.get("is_bonus", False) or not q_meta.get("effective_answer", "")
+    if is_bonus:
+        is_correct = bool(body.chosen)
+    else:
+        is_correct = (body.chosen == q_meta["effective_answer"]) if body.chosen else False
     answer.chosen = body.chosen
     answer.is_correct = is_correct
     answer.time_spent_seconds = body.time_spent_seconds
@@ -288,6 +295,7 @@ def submit_answer(
     return {
         "is_correct": is_correct,
         "correct_answer": q_meta["effective_answer"],
+        "is_bonus": is_bonus,
     }
 
 
