@@ -269,12 +269,14 @@ def question_area() -> rx.Component:
         ),
         rx.box(
             rx.text(
-                rx.text.span(
-                    f"第 ",
-                    rx.text.span(ExamState.current_index + 1, weight="bold"),
-                    " 題　",
-                    color=rx.color("blue", 9),
-                ),
+                "第 ",
+                rx.text.span(ExamState.current_index + 1, weight="bold"),
+                " 題",
+                size="2",
+                color=rx.color("blue", 9),
+                margin_bottom="2",
+            ),
+            rx.text(
                 ExamState.current_content,
                 size="3",
                 line_height="1.8",

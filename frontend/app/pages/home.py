@@ -4,127 +4,66 @@ from ..state.teacher_state import TeacherState
 
 
 def nav_bar() -> rx.Component:
-    return rx.box(
-        # 桌機導覽（sm 以上顯示）
+    return rx.hstack(
+        rx.heading(
+            "醫檢師國考練習平台",
+            size={"initial": "3", "sm": "4"},
+            on_click=rx.redirect("/home"),
+            cursor="pointer",
+        ),
+        rx.spacer(),
         rx.hstack(
-            rx.heading(
-                "醫檢師國考練習平台",
-                size="4",
-                on_click=rx.redirect("/home"),
-                cursor="pointer",
+            rx.button(
+                rx.icon("bar-chart-2", size=15),
+                rx.text("學習分析", display={"initial": "none", "sm": "block"}),
+                on_click=rx.redirect("/analytics"),
+                size="2",
+                variant="ghost",
+                color_scheme="violet",
             ),
-            rx.spacer(),
-            rx.hstack(
+            rx.cond(
+                AuthState.user_role == "teacher",
                 rx.button(
-                    rx.icon("bar-chart-2", size=15),
-                    "學習分析",
-                    on_click=rx.redirect("/analytics"),
+                    rx.icon("graduation-cap", size=15),
+                    rx.text("老師後台", display={"initial": "none", "sm": "block"}),
+                    on_click=rx.redirect("/teacher"),
                     size="2",
                     variant="ghost",
                     color_scheme="violet",
                 ),
-                rx.cond(
-                    AuthState.user_role == "teacher",
-                    rx.button(
-                        rx.icon("graduation-cap", size=15),
-                        "老師後台",
-                        on_click=rx.redirect("/teacher"),
-                        size="2",
-                        variant="ghost",
-                        color_scheme="violet",
-                    ),
-                    rx.fragment(),
-                ),
-                rx.cond(
-                    AuthState.user_role == "admin",
-                    rx.button(
-                        rx.icon("shield", size=15),
-                        "管理員",
-                        on_click=rx.redirect("/admin"),
-                        size="2",
-                        variant="ghost",
-                        color_scheme="red",
-                    ),
-                    rx.fragment(),
-                ),
-                rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
-                rx.text(AuthState.user_name, weight="medium"),
+                rx.fragment(),
+            ),
+            rx.cond(
+                AuthState.user_role == "admin",
                 rx.button(
-                    rx.icon("log-out", size=16),
-                    "登出",
-                    on_click=AuthState.logout,
+                    rx.icon("shield", size=15),
+                    rx.text("管理員", display={"initial": "none", "sm": "block"}),
+                    on_click=rx.redirect("/admin"),
                     size="2",
                     variant="ghost",
-                    color_scheme="gray",
+                    color_scheme="red",
                 ),
-                align="center",
-                spacing="3",
+                rx.fragment(),
             ),
-            width="100%",
-            padding_x="6",
-            padding_y="4",
+            rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="2"),
+            rx.text(AuthState.user_name, weight="medium", display={"initial": "none", "sm": "block"}),
+            rx.button(
+                rx.icon("log-out", size=16),
+                rx.text("登出", display={"initial": "none", "sm": "block"}),
+                on_click=AuthState.logout,
+                size="2",
+                variant="ghost",
+                color_scheme="gray",
+            ),
             align="center",
-            display={"initial": "none", "sm": "flex"},
+            spacing={"initial": "2", "sm": "3"},
         ),
-        # 手機導覽（initial 顯示，sm 以上隱藏）
-        rx.hstack(
-            rx.heading(
-                "醫檢師國考練習平台",
-                size="3",
-                on_click=rx.redirect("/home"),
-                cursor="pointer",
-            ),
-            rx.spacer(),
-            rx.hstack(
-                rx.button(
-                    rx.icon("bar-chart-2", size=14),
-                    on_click=rx.redirect("/analytics"),
-                    size="1",
-                    variant="ghost",
-                    color_scheme="violet",
-                ),
-                rx.cond(
-                    AuthState.user_role == "teacher",
-                    rx.button(
-                        rx.icon("graduation-cap", size=14),
-                        on_click=rx.redirect("/teacher"),
-                        size="1",
-                        variant="ghost",
-                        color_scheme="violet",
-                    ),
-                    rx.fragment(),
-                ),
-                rx.cond(
-                    AuthState.user_role == "admin",
-                    rx.button(
-                        rx.icon("shield", size=14),
-                        on_click=rx.redirect("/admin"),
-                        size="1",
-                        variant="ghost",
-                        color_scheme="red",
-                    ),
-                    rx.fragment(),
-                ),
-                rx.avatar(src=AuthState.user_avatar, fallback=AuthState.user_name, size="1"),
-                rx.button(
-                    rx.icon("log-out", size=14),
-                    on_click=AuthState.logout,
-                    size="1",
-                    variant="ghost",
-                    color_scheme="gray",
-                ),
-                align="center",
-                spacing="2",
-            ),
-            width="100%",
-            padding_x="3",
-            padding_y="3",
-            align="center",
-            display={"initial": "flex", "sm": "none"},
-        ),
+        width="100%",
+        padding_x={"initial": "3", "sm": "6"},
+        padding_y={"initial": "3", "sm": "4"},
+        align="center",
         border_bottom=f"1px solid {rx.color('gray', 4)}",
         background="white",
-        width="100%",
     )
 
 
