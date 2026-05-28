@@ -628,17 +628,21 @@ class ExamState(rx.State):
         self.explain_question_label = f"第 {order} 題"
         self.show_explain_dialog = True
         auth = await self.get_state(AuthState)
-        async with httpx.AsyncClient(timeout=60) as client:
-            resp = await client.post(
-                f"{BACKEND_URL}/ai/explain",
-                params={"token": auth.token},
-                json={"question_id": question_id, "chosen": chosen or None},
-            )
-        self.explain_loading = False
-        if resp.status_code == 200:
-            self.explain_text = resp.json().get("explain", "")
-        else:
+        try:
+            async with httpx.AsyncClient(timeout=60) as client:
+                resp = await client.post(
+                    f"{BACKEND_URL}/ai/explain",
+                    params={"token": auth.token},
+                    json={"question_id": question_id, "chosen": chosen or None},
+                )
+            if resp.status_code == 200:
+                self.explain_text = resp.json().get("explain", "")
+            else:
+                self.explain_text = "無法取得解析，請稍後再試。"
+        except Exception:
             self.explain_text = "無法取得解析，請稍後再試。"
+        finally:
+            self.explain_loading = False
 
     async def fetch_ai_hint(self):
         qid = self.current_qid

@@ -123,7 +123,10 @@ async def get_weakness_analysis_with_time(
         time_stats="\n".join(time_lines),
         slow_tags="\n".join(slow_tag_lines),
     )
-    response = await _model.generate_content_async(prompt)
+    response = await _model.generate_content_async(
+        prompt,
+        request_options={"timeout": 30, "retry": None},
+    )
     return response.text
 
 
@@ -177,7 +180,10 @@ async def get_explain(
         chosen_display=chosen_display,
         weakness_summary=weakness_summary,
     )
-    response = await _model.generate_content_async(prompt)
+    response = await _model.generate_content_async(
+        prompt,
+        request_options={"timeout": 30, "retry": None},
+    )
     return response.text
 
 
@@ -189,5 +195,8 @@ async def get_hint(content: str, option_a: str, option_b: str, option_c: str, op
         option_c=option_c,
         option_d=option_d,
     )
-    response = await _model.generate_content_async(prompt)
+    response = await _model.generate_content_async(
+        prompt,
+        request_options={"timeout": 30, "retry": None},
+    )
     return response.text
