@@ -409,6 +409,7 @@ def get_session_detail(
         q = db.query(Question).filter(Question.id == a.question_id).first()
         details.append({
             "order": a.order,
+            "question_id": a.question_id,
             "content": q.content if q else "",
             "chosen": a.chosen,
             "correct_answer": meta.get(a.question_id, {}).get("effective_answer"),

@@ -7,6 +7,7 @@ from .auth_state import AuthState, BACKEND_URL
 
 class ResultDetail(BaseModel):
     order: int = 0
+    question_id: str = ""
     content: str = ""
     chosen: str = ""
     correct_answer: str = ""
@@ -63,6 +64,12 @@ class ExamState(rx.State):
     ai_hint_text: str = ""
     ai_hint_loading: bool = False
     hint_levels: dict[str, int] = {}  # {question_id: 已看層數}
+
+    # ── AI 解析 ───────────────────────────────────────────────
+    show_explain_dialog: bool = False
+    explain_loading: bool = False
+    explain_text: str = ""
+    explain_question_label: str = ""
 
     # ── 每題計時 ─────────────────────────────────────────────
     q_start_time: dict[str, float] = {}   # {qid: timestamp when user arrived}
@@ -608,6 +615,31 @@ class ExamState(rx.State):
         self.show_ai_hint_dialog = False
         self.ai_hint_text = ""
 
+    def set_show_explain_dialog(self, value: bool):
+        self.show_explain_dialog = value
+        if not value:
+            self.explain_text = ""
+
+    async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        if self.explain_loading or not question_id:
+            return
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        auth = await self.get_state(AuthState)
+        async with httpx.AsyncClient(timeout=60) as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/ai/explain",
+                params={"token": auth.token},
+                json={"question_id": question_id, "chosen": chosen or None},
+            )
+        self.explain_loading = False
+        if resp.status_code == 200:
+            self.explain_text = resp.json().get("explain", "")
+        else:
+            self.explain_text = "無法取得解析，請稍後再試。"
+
     async def fetch_ai_hint(self):
         qid = self.current_qid
         current_level = self.hint_levels.get(qid, 0)
@@ -675,6 +707,7 @@ class ExamState(rx.State):
             self.result_details = [
                 ResultDetail(
                     order=d.get("order", 0),
+                    question_id=d.get("question_id", ""),
                     content=d.get("content", ""),
                     chosen=d.get("chosen") or "",
                     correct_answer=d.get("correct_answer") or "",

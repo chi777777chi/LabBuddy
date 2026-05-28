@@ -129,6 +129,63 @@ async def get_weakness_analysis_with_time(
     return response.choices[0].message.content
 
 
+_EXPLAIN_PROMPT = """你是醫檢師國考的專業解析老師。請根據學生的作答狀況與學習背景，提供這道題的個人化解析。
+
+【題目】
+{content}
+
+【選項】
+A. {option_a}
+B. {option_b}
+C. {option_c}
+D. {option_d}
+
+【正確答案】{correct_answer}（{correct_option_text}）
+【學生選擇】{chosen_display}
+
+【學生學習背景】
+{weakness_summary}
+
+請用繁體中文，依以下三段輸出，每段開頭用「◆ 標題」標示，不要使用任何 Markdown 符號（不要用 ** # - 等）：
+
+◆ 解題解析
+（說明這題的考點與正確答案的原因，2-4句）
+
+◆ 常見錯誤分析
+（說明為何學生可能選錯，針對學生的選擇進行分析，2-3句）
+
+◆ 學習建議
+（根據學生的學習背景，給出針對性的複習建議，1-2句）"""
+
+
+async def get_explain(
+    content: str,
+    option_a: str, option_b: str, option_c: str, option_d: str,
+    correct_answer: str,
+    chosen: str,
+    weakness_summary: str,
+) -> str:
+    options_map = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
+    correct_option_text = options_map.get(correct_answer, "")
+    chosen_display = f"{chosen}（{options_map.get(chosen, '')}）" if chosen else "未作答"
+    prompt = _EXPLAIN_PROMPT.format(
+        content=content,
+        option_a=option_a,
+        option_b=option_b,
+        option_c=option_c,
+        option_d=option_d,
+        correct_answer=correct_answer,
+        correct_option_text=correct_option_text,
+        chosen_display=chosen_display,
+        weakness_summary=weakness_summary,
+    )
+    response = await _client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.choices[0].message.content
+
+
 async def get_hint(content: str, option_a: str, option_b: str, option_c: str, option_d: str, level: int = 1) -> str:
     prompt = _PROMPTS.get(level, _PROMPTS[3]).format(
         content=content,

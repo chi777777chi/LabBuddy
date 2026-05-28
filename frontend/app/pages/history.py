@@ -7,7 +7,19 @@ def detail_row(item: HistoryDetail) -> rx.Component:
     return rx.table.row(
         rx.table.cell(item.order, justify="center"),
         rx.table.cell(
-            rx.text(item.content, size="1", no_of_lines=2),
+            rx.vstack(
+                rx.text(item.content, size="1", no_of_lines=2),
+                rx.button(
+                    rx.icon("sparkles", size=12),
+                    "AI 解析",
+                    size="1",
+                    variant="ghost",
+                    color_scheme="violet",
+                    on_click=HistoryState.fetch_explain(item.question_id, item.chosen, item.order),
+                ),
+                align="start",
+                spacing="1",
+            ),
         ),
         rx.table.cell(
             rx.cond(
@@ -33,6 +45,46 @@ def detail_row(item: HistoryDetail) -> rx.Component:
             ),
             justify="center",
         ),
+    )
+
+
+def explain_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.hstack(
+                    rx.icon("sparkles", size=20, color=rx.color("violet", 9)),
+                    rx.heading(HistoryState.explain_question_label + " AI 解析", size="5"),
+                    align="center",
+                    spacing="2",
+                ),
+                rx.separator(width="100%"),
+                rx.cond(
+                    HistoryState.explain_loading,
+                    rx.center(
+                        rx.vstack(
+                            rx.spinner(size="3"),
+                            rx.text("AI 正在分析中…", size="2", color=rx.color("gray", 8)),
+                            align="center",
+                            spacing="3",
+                        ),
+                        padding_y="8",
+                        width="100%",
+                    ),
+                    rx.text(HistoryState.explain_text, size="2", white_space="pre-wrap"),
+                ),
+                rx.dialog.close(
+                    rx.button("關閉", variant="ghost", color_scheme="gray", size="2"),
+                ),
+                spacing="4",
+                width="100%",
+            ),
+            max_width="600px",
+            max_height="80vh",
+            overflow_y="auto",
+        ),
+        open=HistoryState.show_explain_dialog,
+        on_open_change=HistoryState.set_show_explain_dialog,
     )
 
 
@@ -189,6 +241,7 @@ def history_page() -> rx.Component:
     return rx.box(
         nav_bar(),
         detail_dialog(),
+        explain_dialog(),
         rx.center(
             rx.vstack(
                 rx.hstack(

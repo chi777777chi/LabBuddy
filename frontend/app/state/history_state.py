@@ -26,6 +26,7 @@ class HistoryItem(BaseModel):
 
 class HistoryDetail(BaseModel):
     order: int = 0
+    question_id: str = ""
     content: str = ""
     chosen: str = ""
     correct_answer: str = ""
@@ -47,6 +48,12 @@ class HistoryState(rx.State):
     detail_score: int = 0
     detail_total: int = 0
     detail_items: list[HistoryDetail] = []
+
+    # ── AI 解析 ───────────────────────────────────────────────
+    show_explain_dialog: bool = False
+    explain_loading: bool = False
+    explain_text: str = ""
+    explain_question_label: str = ""
 
     @rx.var
     def has_history(self) -> bool:
@@ -143,6 +150,7 @@ class HistoryState(rx.State):
         self.detail_items = [
             HistoryDetail(
                 order=d["order"],
+                question_id=d.get("question_id", ""),
                 content=d.get("content", ""),
                 chosen=d.get("chosen") or "",
                 correct_answer=d.get("correct_answer") or "",
@@ -156,3 +164,28 @@ class HistoryState(rx.State):
         self.is_detail_open = value
         if not value:
             self.detail_items = []
+
+    def set_show_explain_dialog(self, value: bool):
+        self.show_explain_dialog = value
+        if not value:
+            self.explain_text = ""
+
+    async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        if self.explain_loading or not question_id:
+            return
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        auth = await self.get_state(AuthState)
+        async with httpx.AsyncClient(timeout=60) as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/ai/explain",
+                params={"token": auth.token},
+                json={"question_id": question_id, "chosen": chosen or None},
+            )
+        self.explain_loading = False
+        if resp.status_code == 200:
+            self.explain_text = resp.json().get("explain", "")
+        else:
+            self.explain_text = "無法取得解析，請稍後再試。"

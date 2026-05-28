@@ -148,3 +148,66 @@
 - [x] `/admin`：平台總覽（7 張統計卡＋各科題數）
 - [x] `/admin/users`：使用者管理（角色指派＋停權按鈕）
 - [x] `/admin/questions`：題庫維護（篩選／分頁／跳頁／新增編輯刪除）
+
+---
+
+## Phase 8｜Bug 修復與功能補完（2026-05-28）
+
+### Bug 1：Safari Google 登入 403
+- [ ] 用 Safari DevTools → Network tab 確認 403 來自 Google 端還是 `/api/auth/callback`
+- [ ] 確認 Google Console 的 Authorized redirect URIs 格式是否相容 Safari
+- [ ] 查 nginx 有無缺少 CORS header
+- [ ] 測試是否為 SameSite cookie 問題（Safari 對第三方 cookie 限制較嚴）
+
+### Bug 2：學習分析頁面跳轉失敗
+- 症狀：點學習分析按鈕後跳回主頁，無法停在 `/analytics`
+- 根本原因：`load_analytics` 有 race condition，token 未就緒時觸發 `rx.redirect("/")`
+- 已修正：改為靜默 return，並在 home page on_load 預先觸發 analytics 載入
+- **Debug 步驟（若問題仍存在）：**
+  - [ ] 點按鈕後觀察 URL 有無閃到 `/analytics`（有閃 = 頁面進去但被踢走；沒閃 = 按鈕問題）
+  - [ ] 直接在網址列輸入 `/analytics` 測試能否停留
+  - [ ] server 執行 `sudo journalctl -u medexam-api -f` 同時點按鈕，確認是否有 `/analytics/me` 請求抵達
+  - [ ] `curl "http://127.0.0.1:8000/analytics/me?token=<token>"` 確認 API 正常回傳
+  - [ ] 瀏覽器 F12 → Console 看有無 JS 錯誤
+
+### Bug 3：PDF 匯出壞掉
+- 症狀：手機 `ERR_CONNECTION_REFUSED`；電腦跳至 `http://localhost:8000/...`
+- 根本原因：export URL 寫死 `localhost:8000`，沒走 nginx
+- 目標：**使用者不需安裝任何套件，點按鈕直接下載 PDF（伺服器端產生後回傳）**
+- [ ] 查 `result.py` / `history.py` 的 PDF 按鈕，確認 URL 組法
+- [ ] 查 `backend/api/routes/exam.py` 的 export-pdf endpoint，確認 PDF 產生方式
+- [ ] 確認 server 上 PDF 套件是否安裝：`pip list | grep -i pdf`
+- [ ] 修正前端：export URL 改走 nginx 路徑（`/api/exam/.../export-pdf?token=...`）
+- [ ] 若 weasyprint 有系統依賴問題，改用純 Python 的 reportlab 或 fpdf2
+- [ ] 手機 + 電腦各測試一次，確認能直接下載
+
+### Bug 4：classify_tags.py 解析失敗
+- 症狀：每批 15 題全部 `ParseFail`，ok=0 fail=15
+- 原因：AI 回傳格式與解析 regex 不符
+- [ ] 加 debug 輸出，印出 AI 實際回傳的原始文字
+- [ ] 縮小批次為 1 題，確認單題是否可解析
+- [ ] 調整 prompt，明確要求回傳固定 JSON 格式
+- [ ] 更新解析邏輯
+- [ ] 全量跑完後確認 DB 的 `questions.tags` 已填入
+
+### Feature：AI 解析（答題後個人化解釋）
+- 目標：答完一題後，AI 結合多維弱點依據提供個人化解析
+- **四個弱點分析維度（已確認採用）：**
+  1. **難度失分分布**：easy/medium/hard 各難度答對率，判斷基礎或進階哪裡弱
+  2. **作答時間**：花時間長但答錯 = 強烈弱點；花時間長但答對 = 不夠熟練
+  3. **錯誤選項模式**：使用者重複選同一個錯誤選項，代表有特定錯誤觀念
+  4. **科目層級正確率**：宏觀弱點科目
+  - （bonus）**知識點標籤**：classify_tags 完成後可加入，更精準指出弱點單元
+- 優點：前四項立即可用，不需等 classify_tags 跑完
+- [ ] 後端：彙整弱點資料的 helper function
+  - 撈 Answer 計算各難度答對率
+  - 撈 Answer 計算平均作答時間（與 75秒/題 標準比較）
+  - 撈 Answer 統計重複錯誤選項（`chosen` 出現最多次的非正解）
+  - 撈 QuestionStats 算各科正確率
+- [ ] 後端：新增 `POST /ai/explain` endpoint
+  - 輸入：question_id, session_id, token
+  - 組合弱點摘要 + 題目內容 + 正確答案 + 使用者選擇 → prompt
+  - 呼叫 Groq API 回傳解析文字
+- [ ] 前端：成績頁各題加「AI 解析」按鈕（點擊呼叫 API，顯示 loading → 解析文字）
+- [ ] 前端：即時對答答完後也可選擇看 AI 解析
+- [ ] 考慮 cache：同一 question_id 的解析可暫存，避免重複呼叫
