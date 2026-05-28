@@ -2,7 +2,7 @@ import google.generativeai as genai
 from core.config import settings
 
 genai.configure(api_key=settings.gemini_api_key)
-_model = genai.GenerativeModel("gemini-2.0-flash")
+_model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 _PROMPTS = {
     1: """你是醫檢師國考的輔導老師。學生正在作答下面這題，請給出【第一層提示】。
