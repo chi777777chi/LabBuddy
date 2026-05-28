@@ -12,8 +12,13 @@ class AuthState(rx.State):
     user_role: str = ""
 
     async def handle_callback(self):
-        """OAuth callback：從 URL path param 讀取 token，存入 LocalStorage 後依角色導向。"""
+        """OAuth callback：從 URL query string 讀取 token，存入 LocalStorage 後依角色導向。"""
         token = self.router.page.params.get("jwt", "")
+        if not token:
+            # fallback: parse manually from raw_path query string
+            raw = getattr(self.router.page, "raw_path", "") or ""
+            if "jwt=" in raw:
+                token = raw.split("jwt=", 1)[1].split("&", 1)[0]
         if not token:
             return rx.redirect("/")
         self.token = token

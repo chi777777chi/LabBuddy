@@ -2,7 +2,7 @@ import reflex as rx
 from ..state.auth_state import AuthState
 
 
-@rx.page(route="/callback/[jwt]", on_load=AuthState.handle_callback)
+@rx.page(route="/callback", on_load=AuthState.handle_callback)
 def callback_page() -> rx.Component:
     return rx.center(
         rx.vstack(
