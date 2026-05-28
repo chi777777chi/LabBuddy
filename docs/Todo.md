@@ -3,7 +3,10 @@
 ## 技術選型
 - 後端：FastAPI
 - 前端：Reflex 0.9（純 Python，底層編譯成 React，支援手機端響應式）
-- AI：Groq API（llama-3.3-70b-versatile）
+- AI（使用者端功能）：Google Gemini API（`google-generativeai` 套件，目前模型 `gemini-2.0-flash-lite`）
+  - 包含：AI 提示、AI 解析、學習分析 AI 建議
+- AI（開發者腳本）：Groq API（llama-3.3-70b-versatile）
+  - 包含：classify_difficulty.py、classify_tags.py 等批次處理腳本
 
 ---
 
@@ -85,7 +88,10 @@
 - [x] 題目難易度分級（easy / medium / hard）— `Question.difficulty` 欄位已建，`scripts/classify_difficulty.py` 批次分類中（進行中，每日額度重置後繼續跑）
 - [x] 自適應出題加權邏輯（弱點題型出現頻率提升）— `adaptive` 出題模式，加權不重複抽樣
 - [x] `GET /analytics/me`：各科答對率、成績趨勢、最常答錯題目、AI 學習建議
-- [x] `POST /ai/hint`：分階段 AI 提示（Groq llama-3.3-70b）
+  - AI 建議結果持久化存入 DB（`users.ai_analysis_text` + `users.ai_analysis_answer_count`）
+  - 答題數不變時直接回傳 DB 快取，不重打 Gemini API，避免每次進首頁就耗配額
+- [x] `POST /ai/hint`：分階段 AI 提示（Gemini）
+- [x] `POST /ai/explain`：個人化 AI 解析（Gemini），結合四個弱點維度
 - [x] `GET /users/me/stats`：個人學習統計（場數、答題數、答對率、最愛科目）
 
 ### 前端
@@ -94,6 +100,7 @@
 - [x] 自適應模式選項（設定頁）
 - [x] 弱點分析頁（/analytics）：科目卡片、成績折線圖、弱點題列表、AI 建議
 - [x] 個人資料頁（/profile）：學習統計、快速導航
+- [x] 成績頁 / 歷史詳情每題加「AI 解析」按鈕（dialog 顯示，loading 狀態＋錯誤處理）
 - [ ] AI 生成模擬試卷（stretch goal）
 
 ---
@@ -190,7 +197,7 @@
 - [ ] 更新解析邏輯
 - [ ] 全量跑完後確認 DB 的 `questions.tags` 已填入
 
-### Feature：AI 解析（答題後個人化解釋）
+### Feature：AI 解析（答題後個人化解釋）✅ 已完成（待配額重置驗證）
 - 目標：答完一題後，AI 結合多維弱點依據提供個人化解析
 - **四個弱點分析維度（已確認採用）：**
   1. **難度失分分布**：easy/medium/hard 各難度答對率，判斷基礎或進階哪裡弱
@@ -199,15 +206,28 @@
   4. **科目層級正確率**：宏觀弱點科目
   - （bonus）**知識點標籤**：classify_tags 完成後可加入，更精準指出弱點單元
 - 優點：前四項立即可用，不需等 classify_tags 跑完
-- [ ] 後端：彙整弱點資料的 helper function
+- [x] 後端：彙整弱點資料的 helper function
   - 撈 Answer 計算各難度答對率
   - 撈 Answer 計算平均作答時間（與 75秒/題 標準比較）
   - 撈 Answer 統計重複錯誤選項（`chosen` 出現最多次的非正解）
   - 撈 QuestionStats 算各科正確率
-- [ ] 後端：新增 `POST /ai/explain` endpoint
-  - 輸入：question_id, session_id, token
+- [x] 後端：新增 `POST /ai/explain` endpoint
+  - 輸入：question_id, chosen, token
   - 組合弱點摘要 + 題目內容 + 正確答案 + 使用者選擇 → prompt
-  - 呼叫 Groq API 回傳解析文字
-- [ ] 前端：成績頁各題加「AI 解析」按鈕（點擊呼叫 API，顯示 loading → 解析文字）
+  - 呼叫 Gemini API 回傳三段式解析（解題解析 / 常見錯誤分析 / 學習建議）
+- [x] 前端：成績頁 / 歷史詳情每題加「AI 解析」按鈕（點擊呼叫 API，顯示 loading → 解析文字）
+- [x] 前端 try/except 修正：timeout 後正確顯示錯誤訊息，不再卡在轉圈
 - [ ] 前端：即時對答答完後也可選擇看 AI 解析
-- [ ] 考慮 cache：同一 question_id 的解析可暫存，避免重複呼叫
+- [ ] 知識點標籤維度：等 classify_tags 跑完後加入 prompt
+- [ ] 考慮 cache：同一 question_id + 使用者的解析可暫存，避免重複呼叫
+
+**已知問題與 Background（2026-05-28）：**
+- Gemini free tier 每日配額（RPD）容易被耗盡：
+  - 根本原因：`/analytics/me` 每次載入都打一次 AI，而 home page 有預先載入 analytics
+  - 已修：analytics AI 建議改存 DB，答題數不變就不重打（`users.ai_analysis_text` + `users.ai_analysis_answer_count`）
+- Gemini 模型命名問題（`google-generativeai` v1beta）：
+  - `gemini-1.5-flash` / `gemini-1.5-flash-latest` → 404 不支援
+  - `gemini-2.0-flash` → 可用，但今日測試已耗盡 RPD
+  - `gemini-2.0-flash-lite` → 目前使用中，配額獨立
+  - 明日（UTC 00:00 / 台灣時間 08:00）配額重置後可正常測試
+- Gemini 內部 auto-retry 在配額耗盡時會靜默重試數分鐘才報錯 → 已加 `retry=None` 停用
