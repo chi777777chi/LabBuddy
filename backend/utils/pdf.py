@@ -32,7 +32,10 @@ def _get_font() -> str:
     for path in candidates:
         if os.path.exists(path):
             try:
-                pdfmetrics.registerFont(TTFont("CJKFont", path))
+                if path.endswith(".ttc"):
+                    pdfmetrics.registerFont(TTFont("CJKFont", path, subfontIndex=0))
+                else:
+                    pdfmetrics.registerFont(TTFont("CJKFont", path))
                 _FONT_NAME = "CJKFont"
                 break
             except Exception:
