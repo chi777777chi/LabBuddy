@@ -19,7 +19,7 @@
         "C": "視野中心的球面相差與色相差已被完全校正",
         "D": "可以不用蓋玻片來觀察檢體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "增加物鏡孔徑值",
         "D": "改善解析度"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "醛固酮（Aldosterone）",
         "D": "甲狀腺激素（Thyroid hormone）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "膽紅素（＋）、尿膽素原（Normal）",
         "D": "膽紅素（－）、尿膽素原（＋＋）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "①③",
         "D": "②④"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "葡萄糖及乳糖",
         "D": "還原糖均可"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "yeast",
         "D": "bacteria"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "尿崩症",
         "D": "感冒"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "leukocyte esterase",
         "D": "nitrite"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "蛋白質",
         "D": "葡萄糖"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "脾臟",
         "D": "心臟"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "腎後性蛋白尿",
         "D": "腎前性蛋白尿"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "食用紅肉火龍果",
         "D": "服用Rifampin藥物"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "傷寒",
         "D": "霍亂"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "血紅質（heme）",
         "D": "血鐵質（hemosiderin）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "鮮紅色痰液，是因為血管破裂，見於肺梗塞（pulmonary infarction）",
         "D": "乾酪狀痰液，是因為肺組織壞死，見於結核菌感染"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "使用生理食鹽水誘導咳痰",
         "D": "病人無意識狀態下使用氣管抽取術抽痰"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "巨噬細胞（macrophage）內含有血鐵質（hemosiderin）可出現於腦蜘蛛膜下出血",
         "D": "正常成年人的CSF中，單核球佔的比例較淋巴球高"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "高張生理食鹽水（hypertonic saline）",
         "D": "蒸餾水（distilled water）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "結核性腦膜炎",
         "D": "黴菌性腦膜炎"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "India ink stain",
         "D": "Papanicolaou stain"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "胸膜液之乳酸高濃度有助於診斷感染性胸膜炎",
         "D": "腹膜液之乳酸濃度並不具任何臨床意義"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "罹患類風濕及狼瘡性胸膜炎時，其補體濃度多會上升",
         "D": "抗核抗體專一性不高，因多種臨床狀況皆可出現力價上升"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "濾出液有較高量的白血球計數值（大於1,000個/μL）",
         "D": "滲出液有較高的體液與血清總蛋白比值（大於0.5）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "①③",
         "D": "②④"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "補色鏡安裝在偏光濾光鏡與分析器之間",
         "D": "偏光濾光鏡與分析器平行"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "精液收集前應連續禁慾3天",
         "D": "精液射出後10分鐘之內會液化完成"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "附睪",
         "D": "睪丸"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "β次單元之氨基末端（N terminal）",
         "D": "β次單元之羧基末端（C terminal）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "一種抗完整hCG之抗體",
         "D": "兩種分別抗α和抗β次單元hCG之抗體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "在采采蠅（tsetse fly）是側鞭毛體（epimastigote）；在人體是錐鞭毛體（trypomastigote）",
         "D": "在采采蠅（tsetse fly）是側鞭毛體（epimastigote）；在人體是前鞭毛體（promastigote）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "血液",
         "D": "痰液"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "僅②③",
         "D": "①②③"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "唇鞭毛蟲（Chilomastix mesnili）",
         "D": "陰道滴蟲（Trichomonas vaginalis）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "蟠尾絲蟲（Onchocerca volvulus）",
         "D": "斑氏絲蟲（Wuchereria bancrofti）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "惡性瘧原蟲（P. falciparum）",
         "D": "三日瘧原蟲（P. malariae）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "Rothera 試驗",
         "D": "Watson-Schwartz 試驗"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "肺泡巨噬細胞",
         "D": "支氣管圓柱體"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "福馬林－硫酸鋅浮游法（Formalin-zinc sulfate flotation）－分離糞便中蟲卵－鑑定寄生蟲感染",
         "D": "Guthrie 試驗－瓊脂培養基細菌抑制試驗－尿路感染篩檢"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "腹水",
         "D": "羊水"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "唐氏症－第21號染色體三倍體（trisomy）",
         "D": "鐮刀型貧血－β基因缺失（deletion）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "GAU＞GUU",
         "D": "UAU＞UAA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "virus-like retrotransposons",
         "D": "poly-A retrotransposons"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "DNA methylation",
         "D": "microRNA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "sequence rearrangement",
         "D": "gene amplification"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "衛生福利部食品藥物管理署查驗登記的檢測試劑",
         "D": "檢體運送及儲存環境"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "Western blot被檢測物是protein，探針是DNA",
         "D": "Southwestern blot被檢測物是protein，探針是DNA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "在RT-PCR反應中可以設計加入螢光物質或螢光探針（probe），利用螢光訊號的偵測來判斷結果",
         "D": "這三種技術都可以使用瓊脂凝膠電泳分析結果"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "舅舅",
         "D": "堂哥"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "以Student's t-test對基因在各樣本間進行顯著差異分析",
         "D": "忽略訊號變異最大的第3樣本後，再進行分析"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "使用獨立分子索引（unique molecular index, UMI）作為條碼",
         "D": "增加文庫建構（library construction）時，聚合酶連鎖反應（PCR）的循環次數"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "Sanger sequencing",
         "D": "reverse transcription-polymerase chain reaction（RT-PCR）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "DNA晶片上的探針長度大多介於20～25個核苷酸",
         "D": "DNA晶片只能偵測基因變異，無法用來檢測基因表達量的差別"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "這檢驗方法侷限於已知突變的偵測",
         "D": "需要設計具有限制酶位點序列的引子"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "欲決定出變性劑的最佳使用濃度範圍，宜使用電泳方向與變性劑梯度垂直的電泳方式",
         "D": "電泳操作之溫度需隨變性劑濃度增加而增加"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "就每個鹼基而言，次世代定序費用較桑格定序高",
         "D": "就資料分析而言，桑格定序較次世代定序複雜"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "相較於序列特異性引子檢驗法，特異性寡核苷酸試紙法需要人工操作的步驟較少",
         "D": "此兩種檢測法皆需要positive control組"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "heparin",
         "D": "sodium oxalate"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "最好保存在-70℃或更低溫度的冰櫃",
         "D": "即使經常使用，也不需分裝，以節省空間並避免RNA降解"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "PCR儀器建議擺放在postamplification room",
         "D": "preamplification room應該設計為負壓，postamplification room則應該設計為正壓"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "提高序列比對的準確度",
         "D": "辨識出基因變異的種類（如點突變，插入／刪除等）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "PubMed",
         "D": "OMIM"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "檢驗程序的確認（validation）",
         "D": "檢驗量測值的量測不確定度（measurement uncertainty, MU）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "HLA-B*5801新批號試劑驗收紀錄：7年",
         "D": "脊髓性肌肉萎縮症（spinal muscular atrophy, SMA）修改報告紀錄：7年"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "HIV定量檢驗，每個月監測陽性率作為量測不確定度評估的依據",
         "D": "關於檢測SARS-CoV-2 RNA之Ct值，每次操作時都需連同高濃度品管檢體、低濃度品管檢體（接近可檢測下\n限）以及陰性品管檢體一同測試"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -865,7 +865,7 @@
         "D": "RealTime（Abbott）檢測HCV，是利用RT-qPCR去偵測5' UTR"
       },
       "answer": "",
-      "bonus": false
+      "bonus": true
     },
     {
       "number": 67,
@@ -877,7 +877,7 @@
         "C": "triosephosphate isomerase (tpi) - Clostridium difficile",
         "D": "superoxide dismutase gene (sodA) - Enterococcus faeculis"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "金黃色葡萄球菌額外獲得mefA基因所致",
         "D": "院內感染（nosocomial infection）及社區感染（community-acquired infection）之MRSA的菌株特性相\n似"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "reverse hybridization",
         "D": "hybridization onto high-density microarrays"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "同一檢體由不同人操作試驗",
         "D": "同一檢體不同天再進行一次試驗"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "寡核苷酸陣列診斷",
         "D": "質體分型法"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "deletion",
         "D": "insertion"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "105～106 copies",
         "D": "107～108 copies"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "HLA-B*5701",
         "D": "HLA-B*5801"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "腫瘤組織活檢（tumor tissue biopsy）",
         "D": "循環腫瘤細胞（circulating tumor cell, CTC）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "HPV晶片是適合用於進行HPV分型的檢驗方法",
         "D": "HPV-16與HPV-18是屬於最常見的低致癌力病毒"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "次世代定序（next-generation sequencing）：腫瘤基因突變檢測",
         "D": "免疫組織化學染色（immunohistochemistry）：基因融合表現"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "BRCA1",
         "D": "TP53"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "藥物的代謝較慢",
         "D": "藥物代謝產物不穩定"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "此突變基因能以PCR變性梯度電泳法與正常基因辨別之",
         "D": "變性高效能液相層析法可以有效分辨此種突變基因與正常基因"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     }
   ]

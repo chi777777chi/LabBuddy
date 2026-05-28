@@ -19,7 +19,7 @@
         "C": "菌體染色後呈現深藍色",
         "D": "背景為淺綠色"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "ionizing radiation可用於消毒導管與手套",
         "D": "HEPA filter可用於去除空氣中所有微生物"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "trypticase soy broth",
         "D": "tetrathionate broth"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "為細菌於液體中的主要運動小器官",
         "D": "比鞭毛更粗且長"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "Mycobacterium avium complex",
         "D": "Mycobacterium chelonae"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "B. cepacia complex",
         "D": "B. gladioli"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "H. aphrophilus",
         "D": "H. segnis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "Vibrio cholerae",
         "D": "Enterococcus faecalis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "中性球（neutrophil）＞25，鱗狀上皮細胞＜10",
         "D": "中性球（neutrophil）＜25，鱗狀上皮細胞＞25"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "①②③④⑥",
         "D": "①②④⑤⑦"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "發布泌尿生殖系統的正常菌群之報告",
         "D": "重新採檢，再重做"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "Bacillus anthracis",
         "D": "Bacillus mycoides"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "眼部",
         "D": "肺部"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "Mycobacterium avium",
         "D": "Mycobacterium smegmatis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "group Ⅲ",
         "D": "group Ⅳ"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "isoniazid（INH）",
         "D": "ethambutol（EMB）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "改變細胞膜通透性",
         "D": "合成將萬古黴素打出胞外的幫浦（efflux pump）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "為superantigens",
         "D": "為A型鏈球菌的重要致病因子"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "Streptococcus pyogenes",
         "D": "Listeria monocytogenes"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "Lancefield's serogrouping",
         "D": "CAMP試驗"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "臨床上主要以immunochromatographic strip來偵測MRSA",
         "D": "可偵測mecA基因"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "分枝桿菌分類於革蘭氏陰性菌",
         "D": "結核分枝桿菌生長速度約2小時分裂一次"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "Shigella sonnei",
         "D": "Morganella morganii"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "Pseudomonas aeruginosa",
         "D": "Streptococcus pneumoniae"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "fructose",
         "D": "lactose"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "sucrose (＋)",
         "D": "DNase (＋)"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "cefsulodin-irgasan-novobiocin（CIN）培養基",
         "D": "MacConkey-sorbitol（MAC-SOR）培養基"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "P. stomatis",
         "D": "P. pneumotropica"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "大部分弧菌無法在高鹼性（pH 9）生存",
         "D": "鞭毛為其致病因子"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "進行ONPG試驗結果",
         "D": "發酵麥芽糖（maltose）能力"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "growth in 0％ NaCl broth",
         "D": "indole test"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "奇異變形桿菌（Proteus mirabilis）能產生大量尿素酶（urease），造成pH值上升，容易導致結石",
         "D": "變形桿菌大多可以發酵葡萄糖、乳糖與蔗糖"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "麥芽糖（maltose）",
         "D": "果糖（fructose）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "綠色",
         "D": "紫色"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "不具運動性",
         "D": "發酵葡萄糖"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "無法生長在MacConkey agar",
         "D": "屬於革蘭氏陽性桿菌，且不具有觸酶（catalase）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "在MacConkey agar上生長",
         "D": "水解esculin的能力"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "Toll-like receptor",
         "D": "HDL（high-density lipoprotein）receptor"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "H. aphrophilus（Aggregatibacter aphrophilus）",
         "D": "H. segnis（Aggregatibacter segnis）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "Bacteroides fragilis呈陽性反應",
         "D": "鋅粉為還原劑"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "Clostridium perfringens",
         "D": "Clostridium botulinum"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "Mycoplasma pneumoniae的adhesin",
         "D": "Rickettsia spp.的外膜蛋白質"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "Mycoplasma pneumoniae ／tuberculosis",
         "D": "Mycobacterium leprae／sodoku"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "以二分裂法進行增殖",
         "D": "在血液瓊脂平板上呈現α溶血的現象"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "Staphylococcus epidermidis",
         "D": "Vibrio cholerae"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "Porphyromonas asaccharolytica",
         "D": "Veillonella parvula"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "tetrazolium test",
         "D": "porphyrin test"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "Leptospira interrogans",
         "D": "Brachyspira aalborgi"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "avibactam",
         "D": "vaborbactam"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "imipenem",
         "D": "aztreonam"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "拮抗作用（antagonism）",
         "D": "容忍作用（tolerance）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "bacitracin",
         "D": "teicoplanin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "4 μg/mL",
         "D": "8 μg/mL"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "levofloxacin",
         "D": "tetracycline"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "kanamycin",
         "D": "rifampin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "2％ NaCl",
         "D": "cysteine-free supplements"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "vancomycin",
         "D": "methicillin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "烯丙基胺（allylamines）",
         "D": "灰黃黴素（griseofulvin）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "抑制蛋白質的合成",
         "D": "抑制DNA的合成"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "腦脊髓液感染",
         "D": "外科部位感染"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "杜克氏嗜血桿菌（Haemophilus ducreyi）",
         "D": "副溶血嗜血桿菌（Haemophilus parahaemolyticus）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "Porphyromonas spp.",
         "D": "Staphylococcus spp."
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "Gemella haemolysans",
         "D": "Staphylococcus aureus"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "group B streptococci",
         "D": "group A streptococci"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "allylamine／naftifine",
         "D": "echinocandin／caspofungin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "Blastomyces dermatitidis",
         "D": "Coccidioides immitis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "Epidermophyton floccosum",
         "D": "Microsporum canis"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "蟲霉菌（Entomophthorales）",
         "D": "蛙糞菌（Basidiobolales）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "Piedraia hortae",
         "D": "Hortaea werneckii"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "擔子菌門（Basidiomycota）",
         "D": "不完全菌門（Deuteromycota）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "Trichophyton interdigitale",
         "D": "Blastomyces dermatitidis"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "Niger seed agar培養呈褐色的菌落",
         "D": "常造成女性陰道炎"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "Haemphilus ducreyi",
         "D": "Streptococcus agalactiae"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "shiga toxin",
         "D": "anthracis toxin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "風濕熱（rheumatic fever）",
         "D": "猩紅熱（scarlet fever）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "仙人掌桿菌（Bacillus cereus）",
         "D": "產氣莢膜梭狀桿菌（Clostridium perfringens）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "空腸曲狀桿菌（Campylobacter jejuni）",
         "D": "幽門螺旋桿菌（Helicobacter pylori）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "methyl red test",
         "D": "Voges-Proskauer test"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "可應用於菌株分型（typing）以及抗藥性檢測",
         "D": "質譜分析可以精準的測定分子之質量／電價比（m/z）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "置於35℃培養箱",
         "D": "置於厭氧傳送培養基"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     }
   ]

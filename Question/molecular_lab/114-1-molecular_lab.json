@@ -19,7 +19,7 @@
         "C": "螢光顯微鏡",
         "D": "相位差顯微鏡"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "像散",
         "D": "視野彎曲"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "600 xg，3分鐘",
         "D": "800 xg，5分鐘"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "Glucose",
         "D": "Occult blood"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "糖尿病",
         "D": "Fanconi氏症候群"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "腎小管酸中毒尿液呈現酸性",
         "D": "使用尿試紙測酸鹼值時不受尿蛋白高低的影響"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "鏡檢沉渣可見細菌、白血球、白血球圓柱體",
         "D": "必要時可進行尿液培養確認"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "①③",
         "D": "②④"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "melanuria",
         "D": "myoglobinuria"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "危險值未通報",
         "D": "未核對病患姓名"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "試紙自動判讀儀",
         "D": "尿沉渣自動判讀儀"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "食入之魚、肉及蔬果不會造成偽陽性",
         "D": "傳統的糞便潛血檢驗常以Guaiac為呈色劑"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "Guaiac test",
         "D": "HemeSelect test"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "絛蟲",
         "D": "阿米巴"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "Watson-Schwartz法",
         "D": "尿膽素原（urobilinogen）定量"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "碘液",
         "D": "結晶紫（crystal violet）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "含碳的肺泡巨噬細胞",
         "D": "吞噬紅血球的巨噬細胞"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "肌酸激酶（creatine kinase, CK）的CK-BB同功酶，可以提供缺氧造成腦損傷病患預後的訊息",
         "D": "鞘磷脂蛋白（Myelin-basic protein） 對於多發性硬化症不具有專一性，但是可用於追蹤此疾病\n的病程訊息"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "室管膜細胞（ependymal cells）",
         "D": "巨噬細胞（macrophages）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "血糖正常，腦脊髓液葡萄糖太低",
         "D": "血糖正常，腦脊髓液葡萄糖太高"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "腎病症候群",
         "D": "病毒感染"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "膽固醇大於45 mg/dL",
         "D": "血清－胸水白蛋白濃度差異大於1.2 g/dL"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "嗜酸性白血球",
         "D": "嗜中性白血球"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "漿液與血清的乳酸脫氫酶比值＞0.6",
         "D": "白血球計數＞1,000個/μL"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "Normal saline",
         "D": "Samson’s solution"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "Reiter cell",
         "D": "Lymphophage"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "輸精管",
         "D": "前列腺"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "存活力",
         "D": "凝集力"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "AFP（alpha-fetoprotein）",
         "D": "uE3（unconjugated estriol 3）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "兩種不同抗原決定點的抗α次單元抗體",
         "D": "抗α和抗β次單元的抗體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "Masson’s trichrome染色法",
         "D": "Hansel’s染色法"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "胞幼（sporocysts）",
         "D": "囊幼（metacercariae）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "腹吸盤位於體中線上",
         "D": "大小約有1.5毫米（mm）長"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "前者不吃紅血球",
         "D": "後者不會誘發宿主產生抗體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "加碘劑",
         "D": "以單層紗布過濾"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "土壤中的幼蟲鑽入皮膚",
         "D": "被蜱（ticks）叮咬"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "尿液",
         "D": "羊水"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "檢體的白血球數量應該在～1,000 WBCs/μL",
         "D": "每個W區域的總體積相當於0.1 μL"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "膽管癌（cholangiocarcinoma）",
         "D": "內胚層竇腫瘤（endodermal sinus tumor）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "胎盤（placenta）－progesterone",
         "D": "卵巢（ovary）－hCG（human chorionic gonadotropin）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "發生在蛋白質序列中，紀錄為 p.Leu84Phe",
         "D": "發生在外顯子序列中，紀錄為 i.1382451C＞T"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "UGA",
         "D": "UGG"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "DNA嵌入劑（intercalating agents）如乙錠（ethidium）",
         "D": "誘變劑（mutagens）如N-methyl-N1-nitro-N-nitrosoguanidine"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "組織蛋白H1可使nucleosomal DNA纏繞得更緊密",
         "D": "組織蛋白N 端的修飾，會改變染色質的功能"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "①③②④",
         "D": "④①②③"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "磁珠萃取純化法是利用pH值及離子強度（strength）的不同，調控磁珠與核酸之間的吸附能力，進\n行DNA純化",
         "D": "有機溶劑萃取純化法比較耗時、無法萃取完全、產量低"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "臨床上，PCR-SSP常用於多樣性基因的分型",
         "D": "nested PCR反應在執行時，需先將RNA反轉錄成cDNA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "可用南方點墨法（Southern blot hybridization）分析",
         "D": "可用於執行親子鑑定"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "寡核苷酸微陣列（oligonucleotide microarray）",
         "D": "晶片實驗室（lab-on-a-chip）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "SNP並不一定會造成顯著的基因表現型（phenotype）差異",
         "D": "有些SNP與藥物治療反應有關，可作為個人化醫療（personalized medicine）的評估"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "分析流程",
         "D": "機台種類"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "反應中的piperidine針對修飾後的胞嘧啶（cytosine）及胸腺嘧啶（thymine）位置進行切割",
         "D": "僅適用於短的（小於1 kb）DNA片段分析"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "進行南方墨點法時，使用RNA探針比DNA探針偵測靈敏度更高",
         "D": "peptide nucleic acid（PNA）探針的骨架減少了負電荷，因此結合至標的基因會更有效率"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "全基因組定序（whole genome sequencing）",
         "D": "標的基因定序（targeted sequencing）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "加入酸性溶液後，才可以繼續下一個鹼基的定序",
         "D": "此法是運用乳化式增幅（emulsion amplification）原理"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "氣相層析（gas chromatography）和質譜儀（mass spectrometry）",
         "D": "蛋白質晶片和二維電泳（2-dimension electrophoresis）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "進行DNA晶片分析前，檢測的DNA檢體必須進行擴增反應",
         "D": "次世代基因定序可以鑑定未知的基因變異"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "適合用來發現新的等位基因",
         "D": "適合用來解決混型難辨（ambiguity）的問題"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "僅③",
         "D": "僅①③"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "尿液pH值太低，會很快地降解DNA",
         "D": "尿素濃度太低，容易造成DNA降解"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "tblastn",
         "D": "tblastx"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "進行適當的陰性控制組（negative control）測試",
         "D": "進行不含試劑的控制組（reagent-blank control）測試"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "理想的檢體前處理工作區域，空調應設計為正壓",
         "D": "postamplification room的空調宜設計為負壓，避免造成污染"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "檢測時需要使用RNase H",
         "D": "只能偵測RNA病毒，不能偵測DNA病毒"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "bla\nTEM",
         "D": "vanA"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "EBV、HSV、coronavirus",
         "D": "HAV、HBV、measles virus"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "ITS建構的演化樹與16S rRNA不同",
         "D": "需要用多對primers來進行PCR反應"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "pp65 antigenemia assay",
         "D": "病毒培養"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "multi-locus sequence typing（MLST）",
         "D": "amplified fragment length polymorphism（AFLP）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "東南亞型（SEA type）",
         "D": "右端缺失型（-α 4.2 type）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "四個片段",
         "D": "一個片段"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "EML4（exon 20）-ALK（exon 20）",
         "D": "EML4（exon 6）-ALK（exon 20）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "基因突變導致基因表現量變化的程度",
         "D": "腫瘤組織所含腫瘤細胞的比率"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "短片段串聯重複（short tandem repeat）",
         "D": "基因組重組"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "會造成EGFR酪胺酸激酶下游的訊息傳遞持續活化",
         "D": "會促進細胞凋亡"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "以螢光探針與突變位置雜合",
         "D": "以突變專一引子進行PCR"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "CYP2D6會去活化（inactivate）tamoxifen",
         "D": "UGT1A1與irinotecan的代謝速率有關"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "del(5q)與del(7q)",
         "D": "del(6q)與del(8q)"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "相較於CC與TT，CT異合子基因型對oxaliplatin治療的反應最差",
         "D": "變性高效能液相層析法適用於檢測此基因的單一核苷酸多型性（SNP）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "大腸直腸癌（colorectal cancer）",
         "D": "神經母細胞瘤（neuroblastoma）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     }
   ]

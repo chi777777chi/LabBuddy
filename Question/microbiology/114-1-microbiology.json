@@ -19,7 +19,7 @@
         "C": "Stenotrophomonas maltophilia",
         "D": "Shewanella putrefaciens"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "胸水中的Candida albicans",
         "D": "腦脊髓液中的Cryptococcus neoformans"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "脫色劑為3％酸性酒精",
         "D": "複染劑為methylene blue"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "malachite green, methylene blue",
         "D": "acridine orange, methylene blue"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "methylene blue",
         "D": "india ink"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "可以用來做為腸內桿菌的初步鑑別",
         "D": "培養基含有酚紅（phenol red）作為酸鹼指示劑"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "10％ KOH",
         "D": "10％ methylene blue"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "①④⑥⑦",
         "D": "②③④⑦"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "出血型（hemorrhagic symptom）",
         "D": "神經型（neurotic symptom）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "Loeffler's medium",
         "D": "xylose-lysine-deoxycholate agar"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "Enterococcus faecium",
         "D": "Streptococcus bovis"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "屬於快速生長mycobacteria",
         "D": "屬於抗酸桿菌"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "毒性休克毒素（toxic shock syndrome toxin-1, TSST-1）會切割上皮組織的黏多醣而產生水泡",
         "D": "腸毒素（enterotoxin）屬於超級抗原（superantigen）會引起嘔吐及腹瀉"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "破傷風毒素",
         "D": "百日咳毒素"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "Luria-Bertani media",
         "D": "Petragnani media"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "主要造成腸胃道及泌尿道感染，不會入侵血液",
         "D": "對萬古黴素的抗藥性基因可位於質體或染色體DNA上"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "T細胞激素",
         "D": "補體"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "16 μg/mL",
         "D": "32 μg/mL"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "Streptococcus pyogenes／scarlet fever",
         "D": "Streptococcus pneumoniae／meningitis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "血液的pneumolysin",
         "D": "血液的pneumococcal surface protein"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "nitrate reduction",
         "D": "生長在綿羊血培養基（SBA）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "內含mannitol",
         "D": "cefsulodin、irgasan、novobiocin、bile salts與crystal violet為抑菌劑"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "Salmonella Typhi",
         "D": "Streptococcus agalactiae"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "PBS",
         "D": "BHI broth"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "通常發酵glucose產酸不產氣",
         "D": "通常oxidase (＋)"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "Pseudomonas aeruginosa",
         "D": "Acinetobacter baumannii"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "K/K",
         "D": "K/A"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "Enterobacter spp.",
         "D": "Salmonella spp."
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "傷寒沙門氏菌（Salmonella Typhi）可以在人類以外其他動物宿主中被發現",
         "D": "沙門氏桿菌是腸道微生物相的一員，能造成宿主的伺機性感染"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "Serratia marcescens可以造成伺機性感染，包含泌尿道感染、呼吸道感染以及菌血症",
         "D": "Serratia spp.對ampicillin以及第一代頭孢菌素（cephalosporin）大多具有抗藥性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "Porin蛋白（porin protein）",
         "D": "脂寡糖（lipooligosaccharide, LOS）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "glucose asaccharolytic",
         "D": "無法生長於MacConkey agar"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "M蛋白（M protein）",
         "D": "藻酸鹽（alginate）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "B. cepacia complex",
         "D": "B. gladioli"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "生長需V factor",
         "D": "革蘭氏染色呈現似魚群現象"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "Streptobacillus moniliformis",
         "D": "Brucella melitensis"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "僅②③",
         "D": "僅③"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "Porin蛋白（porin protein）",
         "D": "胜肽聚醣（peptidoglycan）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "Vibrio cholerae-like “Traveler's diarrhea”",
         "D": "Shigella-like dysentery syndrome"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "若細菌能代謝medium中的醣類，則medium會從綠色轉黃色",
         "D": "比TSI agar含有較低濃度的peptone"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "Rickettsia typhi",
         "D": "Shewanella algae"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "D",
         "D": "L"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "缺乏脂多醣（lipopolysaccharide）",
         "D": "在XLD agar上呈現黃色菌落"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "產生catalase酵素",
         "D": "革蘭氏染色結果"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "manganous-chloride-urea test",
         "D": "Weil-Felix reaction"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "Acidaminococcus",
         "D": "Peptostreptococcus anaerobius"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "脂醇（sterol）不利於生長",
         "D": "M. hominis菌落可呈現似荷包蛋狀"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "20％ bile salts耐性",
         "D": "H S產生\n2"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "作用需要金屬離子（metallo-β-lactamase）",
         "D": "活性可被β-lactamase inhibitors所抑制"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "Candida albicans",
         "D": "Corynebacterium urealyticum"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "病灶滲出的膿可觀察到硫磺顆粒（sulfur granules）為重要特徵",
         "D": "經由傷口侵入皮膚或皮下組織造成的慢性感染症，多數病灶出現於足部及下肢"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "Coxiella burnetii",
         "D": "Francisella tularensis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "amphotericin B",
         "D": "griseofulvin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "fluconazole",
         "D": "penicillin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "②③",
         "D": "僅②"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "ciprofloxacin",
         "D": "tetracycline"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "fluoroquinolone",
         "D": "metronidazole"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "broth microdilution最終接種菌量為105 CFU/mL",
         "D": "通常於厭氧環境培養48小時後判讀"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "0°C",
         "D": "-20°C"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "肉湯稀釋法（broth dilution method）",
         "D": "E-test擴散法"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "以H-agar plate培養Mycoplasma hominis",
         "D": "以Müeller-Hinton-based chocolate agar，再加X factor及vancomycin培養Hameophilus ducreyi"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "上呼吸道採檢之拭子棉頭主要成分為無菌之天然棉花",
         "D": "呼吸道採集之檢體，可暫存於低溫保存"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "Prevotella spp.",
         "D": "Fusobacterium spp."
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "應再送第三套血液培養",
         "D": "實驗操作污染"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "Histoplasma capsulatum",
         "D": "Paracoccidioides brasiliensis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "Microsporum canis",
         "D": "Trichophyton mentagrophytes"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "Trichophyton mentagrophytes",
         "D": "Microsporum audouinii"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "具aerial hyphae結構",
         "D": "經budding或fission繁殖"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "Mucor",
         "D": "Rhizopus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "tinea capitis",
         "D": "tinea corporis"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "Pneumocystis jirovecii",
         "D": "Listeria monocytogenes"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "4週",
         "D": "8週"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "都是革蘭氏陰性菌",
         "D": "都能造成腹瀉"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "蛋白酶（protease）",
         "D": "核酸酶（nuclease）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "玫瑰園丁症／Sporothrix schenckii",
         "D": "足菌腫／Candida krusei"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "Burkholderia pseudomallei",
         "D": "Mycobacterium leprae"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "Erysipelothrix rhusiopathiae／BAP／H S黑色菌落\n2",
         "D": "Actinomyces israelii／CDC BAP／臼齒狀菌落"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "抑制蛋白質的新合成",
         "D": "破壞細胞膜"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "細菌形成生物膜更能抵抗宿主的免疫系統攻擊",
         "D": "生物膜中的細菌可藉由基因互相轉移，而更具抗藥性或毒性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "為降低檢驗成本，菌血症之確定只須採取一套血液檢體做培養即可",
         "D": "為了提高尿液中細菌之檢出率，尿液檢體之酸鹼度pH值越低越好"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]

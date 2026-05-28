@@ -19,7 +19,7 @@
         "C": "電內滲流方法（electroendosmotic flow method）",
         "D": "離子選擇電極方法（ion-selective electrode method）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "enzyme multiplied immunoassay technique（EMIT）",
         "D": "fluorescence polarization immunoassay（FPIA）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "麗春紅染劑（Ponceau S）",
         "D": "蘇丹黑B染劑（Sudan Black B）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "離心時血液檢體接觸空氣會造成CO 下降、O 上升和pH上升\n2 2",
         "D": "血液檢體若無法在2小時內進行離心時，應放置於4℃"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "兩者皆為離子源元件",
         "D": "ESI為質量分析儀，MALDI為真空系統"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "條碼上的資料包括：病患姓名、病歷號碼、時間和檢查疾病費用",
         "D": "條碼黏貼過度傾斜時亦不會造成辨識錯誤"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "peristaltic pump",
         "D": "reagent delivery system"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "精密度（precision）",
         "D": "分析敏感度（analytical sensitivity）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "唐氏症（Down syndrome）",
         "D": "小頭症（microcephaly）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "β電泳區帶",
         "D": "γ電泳區帶"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "α-acid glycoprotein\n1",
         "D": "α-lipoprotein\n1"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "mg/mL/1.73m2",
         "D": "mL/min/1.73m2"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "增加ADH（antidiuretic hormone）分泌",
         "D": "減少尿量"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "cystatin C",
         "D": "β-microglobulin\n1"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "尚需搭配sarcosine oxidase進行反應",
         "D": "ascorbic acid會造成負干擾"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "胱蛋白C（cystatin C）",
         "D": "尿酸（uric acid）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "協助肝分泌血管收縮素Ⅱ（angiotensin Ⅱ）",
         "D": "增加醛固酮（aldosterone）釋放"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "紅血球生成素（erythropoietin）",
         "D": "腎素（renin）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "血紅素下降",
         "D": "酸中毒"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "黑尿症（alkaptonuria）",
         "D": "楓糖尿症（maple syrup urine disease）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "色胺酸（tryptophan）",
         "D": "酪胺酸（tyrosine）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "丙胺酸（alanine）",
         "D": "甘胺酸（glycine）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "ketone bodies",
         "D": "bilirubin"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "apo C-Ⅱ",
         "D": "apo C-Ⅲ"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "HDL／LDL",
         "D": "VLDL／chylomicron"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "平滑肌細胞增生",
         "D": "血管內產生血栓堵住血管，導致組織缺血"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "HDL → VLDL → LDL → CM",
         "D": "CM → VLDL → LDL → HDL"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "低密度脂蛋白（LDL）",
         "D": "高密度脂蛋白（HDL）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "反覆發作的急性胰臟炎伴隨腹痛",
         "D": "可觀察到高量的LDL cholesterol"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "aldolase（ALD）",
         "D": "γ-glutamyltransferase（GGT）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "雌二醇（estradiol）",
         "D": "17-羥基皮質酮類（17-hydroxycorticosteroid, 17-OHCS）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "過氧化酶（peroxidase）",
         "D": "膽固醇激酶（cholesterol kinase）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "可應用於糖尿病酮酸血症檢查",
         "D": "可以酵素法定量血中濃度"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "糖化血色素（HbA ）超過6.5％\n1c",
         "D": "隨機血糖超過200 mg/dL"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "葡萄糖去氫酶法（glucose dehydrogenase method）",
         "D": "本氏液檢測法（Benedict's reagent test）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "2與1",
         "D": "2與2"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "醣基與天門冬醯胺（Asn）形成N-糖苷鍵",
         "D": "醣基與絲胺酸（Ser）形成N-糖苷鍵"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "反應以340 nm吸光度進行測定",
         "D": "檢體以冰浴或低溫方式傳送，並於15分鐘內分離血漿"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "cholesterol oxidase",
         "D": "lecithin cholesterol acyltransferase（LCAT）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "可被α-amylase水解",
         "D": "人體內無纖維酶（cellulase）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "Fe",
         "D": "Cu"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "運鐵蛋白（transferrin）濃度上升",
         "D": "儲鐵蛋白（ferritin）濃度下降"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "促進腎臟磷的排放",
         "D": "慢性腎臟疾病（chronic kidney disease）數值會增加"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "鎂離子（Mg2+）",
         "D": "鈣離子（Ca2+）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "鈣",
         "D": "銅"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "10",
         "D": "20"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "病患血液pH檢測值小於7.35",
         "D": "嚴重糖尿病與腎臟病患者屬於此種類型的酸鹼失調"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "氧分壓測量法是基於pH電極（pH electrode）",
         "D": "pH測量儀中具有對氫離子敏感的玻璃膜"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "CD40配體（CD40L）",
         "D": "半乳糖凝集素-3（galectin-3）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "乳酸去氫酶（lactate dehydrogenase）",
         "D": "天門冬胺酸轉胺酶（aspartate transaminase）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "威爾森病（Wilson disease）",
         "D": "溶血性尿毒症綜合症（hemolytic uremic syndrome）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "kat是指每秒能催化1 μmol受質之酵素活性",
         "D": "kat是指每分鐘能催化1 μmol受質之酵素活性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "酸性磷酸酶（acid phosphatase）",
         "D": "γ-麩胺醯轉移酶（γ-glutamyltransferase）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "BNP",
         "D": "NT-proBNP"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "肝臟",
         "D": "腎臟"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "咖啡因（caffeine）",
         "D": "氨（ammonia）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "三級結構（tertiary structure）",
         "D": "四級結構（quaternary structure）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "未結合型膽紅素（unconjugated bilirubin）",
         "D": "結合型膽紅素（conjugated bilirubin）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "k\ncat",
         "D": "k /K\ncat m"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "α-fetoprotein（AFP）",
         "D": "prolactin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "脂酶（lipase）",
         "D": "天門冬胺酸轉胺酶（aspartate aminotransferase）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "生長激素（growth hormone）",
         "D": "泌乳素（prolactin）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "檢測容易被鎂離子（Mg2+）所干擾",
         "D": "可用肝素（heparin）作為抗凝劑的血漿偵測"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "血清素（serotonin）",
         "D": "黃體素（progesterone）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "甲狀腺刺激素受體抗體（TSH-receptor antibody, TRAb）",
         "D": "抗甲狀腺氧化酶抗體（anti-thyroid oxidase antibody, TOAb）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "尿液17-ketosteroid（17-KS）的測定可作為皮質醇代謝產物的檢測",
         "D": "檢測早晨第一次尿液檢體皮質醇／肌酸酐的比值，作為庫欣症候群的篩檢方法，其特異性和敏感度差"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "前列腺素 E2（prostaglandin E2）",
         "D": "甲狀腺刺激素（thyroid stimulating hormone）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "ACTH製造及釋放增加會引發愛迪生病（Addison disease）",
         "D": "原發性腎上腺機能不足（primary adrenal insufficiency）負回饋將使ACTH分泌量減少"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "是主要的glucocorticoid",
         "D": "有保留鈉離子的功能"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "下視丘性（hypothalamic）性腺功能低下（hypogonadism）",
         "D": "雄性素不敏感（androgen insensitivity）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "維生素B\n6",
         "D": "維生素B\n12"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "growth hormone-releasing hormone（GHRH）",
         "D": "relaxin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "僅能使用免疫分析法定量",
         "D": "methotrexate可能造成胃腸道黏膜炎"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "臍帶血（umbilical cord blood）",
         "D": "胎便（meconium）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "cocaine",
         "D": "amphetamine"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "②③",
         "D": "③④"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "可觀察到偏差值（bias）",
         "D": "分析數據高度集中，表示準確度高"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "C區域可能存在染色體拷貝數的變異（copy number variants, CNVs）",
         "D": "此方法常用來檢測單一核苷酸變異（single nucleotide variants, SNVs）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "此技術是進行PCR反應後，偵測分割單元內的螢光訊號",
         "D": "此技術具有極高的敏感度（sensitivity），適合檢測樣本中低拷貝數的標靶DNA"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "衛生福利部中央健康保險署",
         "D": "各地方政府衛生局"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     }
   ]

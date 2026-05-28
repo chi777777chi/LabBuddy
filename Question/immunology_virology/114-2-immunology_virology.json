@@ -19,7 +19,7 @@
         "C": "當 一條重鏈基因被重組形成功能性的pre-B-cell receptor，則其他重鏈就不會再進行重組",
         "D": "p re-B 細胞階段同時表現了pre-B-cell receptor及membrane IgM"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "調 節型T細胞（Tregcells）",
         "D": "第 17型輔助型T細胞（Th17 cells）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "病 毒感染時細胞上的MHC class Ⅰ呈獻內源性分子活化CD8 T細胞",
         "D": "樹 突細胞上的MHC class Ⅱ呈獻外源性分子活化CD4 T細胞"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "第 三型MHC",
         "D": "β 2 microglobulin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "巨 噬細胞（macrophage）",
         "D": "肥 大細胞（mast cell）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "m ercaptoethanol",
         "D": "t rypsin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "培 氏斑塊（Peyer's patches）",
         "D": "髓 質（medulla）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "R IG-I–like receptor（RLR）",
         "D": "C -type lectin receptor（CLR）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "C CL19",
         "D": "C XCL8"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "A ID能夠對單股及雙股DNA的胞嘧啶核苷（cytidine）進行脫氨基的作用",
         "D": "A ID能夠啟動免疫球蛋白之類別轉換（class switch recombination）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "S yk",
         "D": "B tk"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "T 細胞受體複合體需藉由Igβ的ITAM傳遞訊息",
         "D": "C D45為去磷酸酶（phosphatase），可調控T細胞受體訊息傳遞"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "C D40",
         "D": "C D45"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "① ③④⑤",
         "D": "① ②④⑤"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "細 胞釋放ATP",
         "D": "細 胞穿透膜的大小"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "f rustrated phagocytosis",
         "D": "m yeloperoxidase staining"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "細 胞存活率檢測需要酒精固定再染色",
         "D": "前 方散射光可以反應出細胞大小"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "產 生立體阻礙反應（steric hindrance）",
         "D": "進 行聚合酶連鎖反應（polymerase chain reaction）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "p rocalcitonin",
         "D": "c eruloplasmin"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "多 醣莢膜",
         "D": "纖 毛"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "相 較於比濁法，乳膠凝集試驗具有較高的精確性",
         "D": "在 鏈球菌引起的皮膚感染中，ASO產生通常無顯著變化"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "間 接免疫螢光法具有極高的靈敏度與特異性",
         "D": "患 者血清中EA-D抗體在恢復期才會出現"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "喉 頭拭子",
         "D": "血 清"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "I L-33",
         "D": "I FN-γ"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "甲 狀腺",
         "D": "胃 主細胞"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "乳 膠經常誘發type Ⅱ hypersensitivity",
         "D": "乳 膠可引起type Ⅰ hypersensitivity"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "c opper（銅）",
         "D": "血 清病"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "產 生自然殺手細胞",
         "D": "產 生免疫複合物"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "涉 及免疫調節基因的遺傳突變",
         "D": "減 少自體反應性T細胞的活性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "m ultiple sclerosis（MS）",
         "D": "m yasthenia gravis（MG）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "m yelin basic protein（MBP）抗體會造成 p-ANCA陽性",
         "D": "m yelin basic protein（MBP）抗體會造成 c-ANCA陽性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "免 疫延遲區",
         "D": "免 疫生成區"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "H LA抗原",
         "D": "急 性期蛋白"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "慢 性肉芽腫（chronic granulomatous disease）",
         "D": "選 擇性高免疫球蛋白A缺乏症（selective IgA deficiency）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "K -ras",
         "D": "c -myc"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "樹 突細胞",
         "D": "癌 細胞"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "I L-2可活化NK細胞",
         "D": "N K細胞可藉由NKG2A辨識腫瘤的MIC蛋白而活化"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "可 活化毒殺型T細胞",
         "D": "抗 原可經由TAP運送到內質網"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "C ovishield（AZ, AstraZeneca）",
         "D": "C ovovax（諾瓦瓦克斯, Novavax）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "A FP",
         "D": "H ER-2"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "快 篩試劑測病毒非特異性抗原",
         "D": "西 方墨點法測C型肝病毒特異性抗原"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "",
         "D": ""
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "r ecombinase polymerase amplification",
         "D": "t ranscription mediated amplification"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "通 常會儘可能簡化操作流程",
         "D": "通 常會儘可能減低操作者在檢體前處理步驟中發生錯誤的風險"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "輪 狀病毒（rotavirus）",
         "D": "諾 羅病毒（norovirus）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "被 分離出的病毒具有感染性",
         "D": "可 放大檢體中病毒量供進一步的檢驗和確認"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "A PTIMA HPV assay是以PCR進行HPV DNA擴幅反應",
         "D": "C obas HPV test是以即時PCR原理進行基因分型檢驗"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "R NA聚合酶（RNA polymerase）",
         "D": "神 經胺酸酶（neuraminidase）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "單 純疱疹病毒",
         "D": "呼 吸道融合病毒"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "伯 奇氏淋巴瘤（Burkitt lymphoma）",
         "D": "小 腦症（microcephaly）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "感 染14天內，血液檢體可測得IgM",
         "D": "單 一檢驗快速診斷陰性即可排除感染"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "i ntegrase",
         "D": "p rotease"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "只 有一種血清型",
         "D": "有 去活化病毒疫苗可用於預防"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "德 國麻疹疫苗",
         "D": "日 本腦炎疫苗"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "H PV／E1 VLP",
         "D": "i nfluenza virus／inactivated virus"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "水 痘病毒（varicella-zoster virus）",
         "D": "E B病毒（Epstein-Barr virus）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "多 造成腦部病徵",
         "D": "復 發後在尿液中可測得病毒"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "猴 痘病毒（monkeypox virus）",
         "D": "牛 痘病毒（cowpox virus）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "f iber protein",
         "D": "c ore protein"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "o ccult hepatitis B infection",
         "D": "c hronic hepatitis B infection"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "D AF",
         "D": "g lycophorin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "分 生檢測主要檢驗HPV L1 RNA",
         "D": "接 種HPV疫苗僅能預防子宮頸癌的發生"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "多 數人在感染HPV病毒後無明顯的症狀",
         "D": "H PV疫苗是使用病毒的E蛋白形成類病毒顆粒（VLPs）來製作抗原"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "孕 婦如果感染，則其新生兒應服用抗病毒藥",
         "D": "建 議孕婦施打parvovirus B19疫苗"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "病 毒基因體複製過程會產生RNA中間產物",
         "D": "病 毒的DNA不會插入宿主染色體DNA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "常 以免疫螢光染色法區分",
         "D": "兩 者可藉由細胞病變的不同，做明確的區分"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "帶 有病毒的排泄物及分泌物乾燥後，可透過飄散於空氣中的微粒傳播",
         "D": "漢 他病毒在全世界都可發現，為人畜共同傳染疾病"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "其 細胞受體為dipeptidyl peptidase 4（DPP4）",
         "D": "病 毒顆粒上具有hemagglutinin esterase（HE）蛋白質"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "以 70％酒精作為清潔消毒，可有效抑制輪狀病毒的傳播",
         "D": "口 服疫苗可引發良好的腸道黏膜IgA反應"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "病 毒M2蛋白質之基因序列位於M基因片段中",
         "D": "病 毒顆粒中的RNA基因組結合nucleocapsid（NP）蛋白質及其複製酶複合體"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "糞 口傳染（fecal-oral route）為此科病毒唯一的傳染途徑",
         "D": "某 些此科病毒成員，例如腸病毒A71型，具胃酸耐受性"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "造 成幼兒腹瀉的主要型別為type B",
         "D": "醫 療照護主要使用ribavirin治療"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "p olymerase，因二者共用相同基因體複製酵素",
         "D": "H Bx，因二者共用以調控相同的複製效率"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "E V-D68／ICAM-5",
         "D": "E V-D70／ICAM-1"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "外 套膜上的蛋白質具有高度的醣修飾",
         "D": "可 藉由空氣或氣膠傳播"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "登 革出血熱",
         "D": "屈 公熱"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "h uman metapneumovirus",
         "D": "N ipah virus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "可 切割宿主mRNA的5'cap來幫助合成病毒mRNA",
         "D": "皆 經由蟲媒傳播"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "當 HIV-1 RNA濃度小於100 copies/mL時，也可用Sanger sequencing偵測到突變基因",
         "D": "基 因型抗藥性檢測（genotypic resistance testing）相較於表現型測試（phenotypic testing），具有價\n格較低與測試時間周期較短之優勢"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "感 染可能造成急性或慢性肝炎",
         "D": "在 細胞核中進行病毒的RNA轉錄作用"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]

@@ -19,7 +19,7 @@
         "C": "3：2第二度房室傳導阻斷",
         "D": "2：1第二度房室阻斷"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "心電圖T波為心室再極化波",
         "D": "心電圖PR間期為從P波開始到QRS波開始的時間"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "竇性心律（sinus rhythm）",
         "D": "一度房室傳導阻斷（first degree AV block）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "Ⅲ",
         "D": "Ⅳ"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "通常心肌壞死後大部分人Q波波會會持持續續存存在在",
         "D": "病理性Q波只出現在單一誘導"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "心跳規律，是竇性頻脈（ssiinnuuss ttaacchhyyccaarrddiiaa）",
         "D": "心跳規律，是上心室頻脈（ssuupprraavveennttrriiccuullaarr ttaacchhyyccaarrddiiaa）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "縱軸代表電壓，一一個個小小格格的的距距離離代代表表0.1 mV",
         "D": "標準心電圖記錄的速度為25 mm/s"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "V1放在胸骨左側第二肋間",
         "D": "RL放在右腳"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "右心室肥大",
         "D": "正常"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "T波",
         "D": "PR節段（PR segment）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "aVF有ST段上升",
         "D": "aVL有ST段下降"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "急性肌肉發炎",
         "D": "同軸雙極針損壞"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "可依據進針後不同狀態分為插入活動、自發活動及動員召集狀態",
         "D": "運動單位電位不同波型可區別神經或肌肉病變"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "針電極的分極電流較小",
         "D": "火綿膠電極常用於長時間的腦波監測"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "常出現80～120 Hz頻率，但穩定規律的固定波形",
         "D": "出現鮮少律動且近乎直線的波動或波型"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "單纖維肌電圖檢查，出現阻斷現象",
         "D": "重複神經刺激檢查，近端肌肉較易出現異常現象"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "內呼吸產生CO 由腎臟排除\n2",
         "D": "CO 以擴散作用進入微血管\n2"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "慢性肺間質疾病",
         "D": "呼吸神經肌肉異常"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "血氧過高",
         "D": "呼吸速率偏低"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "心血管病變導致心衰竭可使用心臟超音波檢查",
         "D": "周邊血管病變可使用周邊血管超音波"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "傳導速度（conduction velocity）",
         "D": "F波潛值（F wave latency）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "感覺神經傳導檢查",
         "D": "重複神經刺激"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "血液之PaO、［HCO-］、PaCO\n2 3 2",
         "D": "血液之pH、PaO、PaCO\n2 2"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "靠緩慢呼吸來代償",
         "D": "靠PCO 上升來代償\n2"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "形成碳胺基化合物（carbamino compounds）",
         "D": "和血紅素（hemoglobin）結合"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "腎衰竭引起之尿毒症",
         "D": "慢性阻塞性肺病造成的呼吸衰竭"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "一般狀態下進行平靜吸氣，主要是靠橫膈的收縮下移",
         "D": "一般狀態下進行呼氣是靠橫膈的放鬆及肺臟回縮的彈力來完成"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "肥胖",
         "D": "肺氣腫"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "年齡愈大，VC會減少",
         "D": "女性的各種肺容積約較男性少5～10％"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "肺總通氣量（total ventilation）＝潮氣容積 × 每分鐘呼吸次數",
         "D": "解剖死腔是指傳導呼吸道（conducting airways）內的空氣容積"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "用力肺活量（FVC）",
         "D": "總肺量（total lung capacity, TLC）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "橫掃描",
         "D": "右肋緣下斜"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "彩色杜卜勒（color Doppler Echo）",
         "D": "連續波杜卜勒（continuous Doppler Echo）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "超音波的原理是應用壓電效應（piezoelectric effect）",
         "D": "頻率愈高穿透能力愈好"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "橫向掃描時是將肝臟置於影像的左側",
         "D": "脂肪肝的患者常可見肝臟的回音較腎臟強"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "與波長成反比、與週波數成正比、與頻率成反比",
         "D": "與波長成正比、與週波數成反比、與頻率成反比"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "肝硬化",
         "D": "慢性肝炎"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "運動肺功能",
         "D": "腸胃道超音波"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "HCO- 上升很多，PCO 略為代償上升\n3 2",
         "D": "HCO- 上升很多，PCO 代償下降許多\n3 2"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "急性氣喘發作，代謝性鹼中毒",
         "D": "心肌梗塞併心臟衰竭，代謝性鹼中毒"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "活性氧類（reactive oxygen species）降低",
         "D": "蛋白質合成下降"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "骨骼肌化生（metaplasia）",
         "D": "肝醣堆積"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "纖維母細胞生長因子受體（fibroblast growth factor receptor）",
         "D": "血小板衍生生長因子受體（platelet-derived growth factor receptor）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "發炎細胞浸潤",
         "D": "遠端轉移"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "內皮細胞受損",
         "D": "外膜（adventitia）發炎"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "子宮內膜（endometrium）",
         "D": "初級神經上皮（primitive neuroepithelium）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "第一型糖尿病與自體免疫有關，第二型糖尿病則與周邊組織之胰島素拮抗有關",
         "D": "第一型糖尿病之胰島組織常有發炎細胞浸潤，第二型糖尿病之胰島組織則常有類澱粉沉積"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "舌下腺（sublingual gland）",
         "D": "小唾液腺（minor salivary gland）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "致病機制大多是免疫媒介（immunologically mediated）",
         "D": "古德巴斯德病（Goodpasture disease）造成的腎絲球變化常是這種快速進展型腎絲球腎炎"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "僅出現在腫瘤，非腫瘤細胞不會出現瓦爾堡效應",
         "D": "可提供合成細胞成分所需的代謝中間產物"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "T3N0M0",
         "D": "T4N2M1"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "染色體數目及構造異常",
         "D": "粒線體DNA突變"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "抗體攻擊紅血球",
         "D": "X染色體發生基因突變"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "超過標準體重10％以上稱為過重",
         "D": "超過標準體重30％以上為輕度肥胖"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "患者可出現皮膚蒼白濕冷、血壓下降、虛弱或昏倒情形",
         "D": "處理方式為將患者移到陰涼處，躺平、頭部放低，補充水分及鹽分"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "基底細胞癌（basal cell carcinoma）",
         "D": "黑色素瘤（melanoma）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "皮膚水泡主要是發生在表皮與真皮交接處",
         "D": "皮膚水泡主要是發生在表皮內的顆粒層（stratum granulosum）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "放線菌病（actinomycosis）",
         "D": "鵝口瘡（thrush）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "代謝性疾病",
         "D": "感染性疾病"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "形成壞死性動脈硬化",
         "D": "極度血管增生"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "類風濕因子（rheumatoid factor）",
         "D": "抗史密斯抗原抗體（anti-Smith antigen antibody）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "小淋巴球性淋巴瘤（small lymphocytic lymphoma）",
         "D": "被套細胞淋巴瘤（mantle cell lymphoma）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "古德帕斯德症候群（Goodpasture syndrome）",
         "D": "卡尼氏症候群（Carney-Stratakis syndrome）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "冠狀動脈血管炎",
         "D": "肺部血管高壓"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "橋本氏甲狀腺炎（Hashimoto thyroiditis）",
         "D": "腦下垂體功能低下（hypopituitarism）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "ER(＋)、PR(－)、HER2(＋)",
         "D": "ER(－)、PR(－)、HER2(－)"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "造成的原因為休克、吸入胃酸、溺水、嚴重感染等",
         "D": "病理觀察到的玻璃膜（hyaline membrane）主要堆積在肺微血管壁上"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "上腔靜脈症候群（SVC syndrome）",
         "D": "重症肌無力症候群（myasthenia syndrome）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "預後優於子宮內膜之內膜樣癌（endometrioid carcinoma）",
         "D": "常見有TP53基因突變"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "大多為良性",
         "D": "惡性轉變以腺癌（adenocarcinoma）居多"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "體染色體隱性遺傳",
         "D": "皮膚黏膜色素減退（hypopigmentation）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "常出現淋巴球或肉芽腫性膽管破壞",
         "D": "常出現T淋巴細胞介導對膽管的攻擊"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "抗肝細胞質-1抗體（anti-liver cytosol-1, ALC-1 antibody）",
         "D": "抗粒線體抗體（anti-mitochondrial antibody, AMA）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "蜘蛛膜出血通常是中腦膜動脈斷裂而造成",
         "D": "腦部底部是容易有撕裂傷（laceration）的位置"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "Masson trichrome stain",
         "D": "Prussian blue stain"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "鈣質代謝異常，包括鈣質缺乏，副甲狀腺分泌過多，維生素D缺乏",
         "D": "細胞激素（cytokine）異常，導致蝕骨細胞（osteoclast）活化"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "②④",
         "D": "僅①③"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "hepatitis D virus",
         "D": "hepatitis E virus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "動靜脈畸形（arteriovenous malformation）",
         "D": "大腦澱粉樣血管病變（cerebral amyloid angiopathy）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "肌腱滑膜巨細胞瘤（tenosynovial giant cell tumor）",
         "D": "腱鞘囊腫（ganglion）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]

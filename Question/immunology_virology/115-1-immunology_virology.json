@@ -19,7 +19,7 @@
         "C": "只有少數T細胞在胸腺中經過篩選後存活並達到成熟",
         "D": "CD4和CD8 T細胞在正向選擇過程中被篩選出來，因為它們能夠識別外來抗原"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "大部分的T細胞及B細胞會凋亡無法成熟進入周邊",
         "D": "T細胞及B細胞的負選擇（negative selection）都需要辨識MHC所呈獻的胜肽"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "AP-1",
         "D": "NF-κB"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "double negative（DN）的胸腺細胞表型皆為CD3+CD4-CD8-",
         "D": "DN1～DN4胸腺細胞可由c-kit、CD25及CD44分子來辨別"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "適應性免疫無抗原耐受性",
         "D": "先天免疫較能迅速產生免疫反應"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "MHC class Ⅱ從內質網到late endosome運送過程需要invariant chain協助",
         "D": "HLA-DM可以幫助短胜肽被呈獻出來"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "輕鏈基因的重組一般由κ輕鏈先發生",
         "D": "RAG1/2參與在免疫球蛋白的基因重組"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "L-selectin",
         "D": "CD44"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "CD19",
         "D": "CD2"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "過敏原濃度太高有偽陽性",
         "D": "24小時判讀結果"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "IgE",
         "D": "IgA"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "疱疹性皮膚炎（dermatitis herpetiformis）",
         "D": "帶狀疱疹（herpes zoster）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "人類白血球抗原（human leukocyte antigen, HLA）",
         "D": "第一型組織相容相關鏈蛋白A（MHC class I chain-related protein A, MICA）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "CD35",
         "D": "CD45"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "arginine",
         "D": "tyrosine"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "type Ⅱ干擾素能夠透過cGAS辨識病毒核酸成分並活化下游STING而產生",
         "D": "type Ⅰ干擾素能夠誘導PKR kinase之產生導致eIF2α磷酸化，達到抑制病毒複製之功效"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "3：1",
         "D": "1：4"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "HLA-C",
         "D": "HLA-DR"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "toll-like receptor",
         "D": "C-type lectin receptor"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "血清0.01 mL與稀釋液0.09 mL",
         "D": "血清0.1 mL與稀釋液0.9 mL"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "Hoechst 33342",
         "D": "Sudan Ⅲ"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "32P",
         "D": "125I"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "IgG是主要常用的檢測指標",
         "D": "IgA可與IgG合併使用以提高敏感性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "結合肥大細胞釋放趨化因子",
         "D": "增強吞噬細胞的吞噬能力"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "DNase B的中和試驗可評估化膿性鏈球菌的病程",
         "D": "相較於ASO的試驗結果，抗DNase B抗體較不易產生偽陽性"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "真菌",
         "D": "寄生蟲"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "glomerulonephritis",
         "D": "graft-versus-host disease（GVHD）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "肥大細胞釋放組織胺",
         "D": "移除被抗體致敏的紅血球"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "interleukin-4",
         "D": "transforming growth factor-β"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "ILC3為淋巴球亞群與IBD的形成相關",
         "D": "屬腸胃道的自體發炎性疾病"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "primary biliary cholangitis",
         "D": "progressive systemic sclerosis"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "③④",
         "D": "①④"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "①②③④",
         "D": "②③④⑤"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "抗體依賴性細胞介導毒殺反應（antibody-dependent cell-mediated cytotoxicity, ADCC）",
         "D": "酵素連結免疫反應（enzyme-linked immunosorbent assay, ELISA）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "抗體",
         "D": "組織抗原單體"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "Bcl-2",
         "D": "p53"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "僅適用於年輕人，對老年人的效果有限",
         "D": "可迅速修改設計以應對新型變異病原體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "Treg cells",
         "D": "CD4 T cells"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "所有佐劑均為礦物鹽類，例如氫氧化鋁或磷酸鋁，這些成分是佐劑應用的唯一來源",
         "D": "佐劑僅能提高抗體的濃度，對細胞免疫反應無法產生作用"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "M2 macrophages",
         "D": "eosinophils"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "麻疹病毒",
         "D": "EB病毒"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "urea可破壞抗體氫鍵",
         "D": "urea可移除avidity低的抗體"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "dNTP",
         "D": "HSV-1 specific primers"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "BK病毒在免疫不全的病人中可造成視網膜炎（retinitis）",
         "D": "JC病毒在免疫不全的病人中可造成進行性多病灶腦白質病（progressive multifocal\nleukoencephalopathy）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "同時誘發T、B細胞及黏膜免疫反應",
         "D": "病毒在37℃生長情況不佳"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "通常以病毒的HA蛋白作為抗原",
         "D": "可以肉眼判讀結果"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "可縮短病毒檢測時間",
         "D": "可用來培養及鑑定巨細胞病毒"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "腺病毒／HEp-2細胞",
         "D": "人類巨細胞病毒／A549細胞"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "二者皆使用RT-PCR進行病毒定量檢驗",
         "D": "二者致死最重要原因皆為猛爆性感染"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "解凍細胞時放在冰上讓其慢慢溶解",
         "D": "冷凍細胞時需要外加抗凍劑"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "MRC-5細胞是屬於二倍體細胞（diploid cells）",
         "D": "同一種病毒對不同細胞的感染能力相近"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "NS1 protein",
         "D": "NS5B polymerase"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "human T-cell lymphotropic virus type 1",
         "D": "human T-cell lymphotropic virus type 2"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "成人初次感染比兒童更嚴重",
         "D": "病毒會潛伏於神經元中"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "血清檢體不需要經過前處理即可進行檢測",
         "D": "紅血球沉降聚集於U型盤底中央表示陽性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "HIV-1/HCV",
         "D": "HBV/HEV"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "herpes simplex virus type 1",
         "D": "adenovirus"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "adenovirus type 5",
         "D": "herpes simplex virus type 2"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "可利用帶有E7的假病毒進行中和抗體實驗，測試施打疫苗的效價",
         "D": "anti-L1的抗體檢測可作為子宮頸癌篩檢方法"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "腺病毒",
         "D": "BK病毒"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "parvovirus B19",
         "D": "human papillomavirus 16"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "HBsAg(－)，anti-HBcAb(－)，anti-HBsAb(＋)",
         "D": "HBsAg(＋)，anti-HBcAb(－)，anti-HBsAb(－)"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "HCV",
         "D": "HEV"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "呼吸道症狀",
         "D": "胸痛（pleurodynia）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "respiratory syncytial virus",
         "D": "rubella virus"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "varicella-zoster virus",
         "D": "hepatitis B virus"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "C型肝炎病毒疫苗",
         "D": "E型肝炎病毒疫苗"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "MERS-CoV／dipeptidyl peptidase 4（DPP4）",
         "D": "HCoV-NL63／alpha 2,6-linked sialic acid"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "病毒的RNA聚合酶複合體由PB1、PB2及PA三個蛋白質組成",
         "D": "病毒的BM2蛋白質具有離子通道的活性"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "在細胞質中完成病毒的複製",
         "D": "F蛋白與N蛋白會黏附在一起"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "具胃酸耐受性，可感染小腸上皮細胞",
         "D": "僅有一種血清型（serotype）及一種基因型（genotype）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "病毒外套膜（envelope）上有E1及E2 醣蛋白（glycoproteins）",
         "D": "目前並無疫苗可供預防"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "是套膜病毒中病毒顆粒最大的",
         "D": "是造成普通感冒的最主要病毒"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "第二次得到相同型別登革病毒感染容易引發出血熱",
         "D": "患者感染登革病毒後會出現病毒血症（viremia）的現象"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "可使用專一性抗病毒藥物預防胎兒小頭症發生",
         "D": "主要經由性行為傳染"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "measles virus",
         "D": "respiratory syncytial virus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "以dimer的型態存在",
         "D": "其功能包括促進病毒膜與細胞融合"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "已有疫苗可預防感染",
         "D": "rotavirus type A可依據VP4及VP8抗原進行分型"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "類感冒症狀為病毒刺激宿主產生干擾素的結果",
         "D": "常以控制病媒來作為流行病的控制方法"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "在高於攝氏85℃環境10分鐘，會失去感染活性",
         "D": "在pH＜3.0的酸性室溫環境中極不穩定，會立刻失去感染活性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     }
   ]

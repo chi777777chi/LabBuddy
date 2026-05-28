@@ -19,7 +19,7 @@
         "C": "l actophenol cotton blue",
         "D": "m ethylene blue"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "l ong-chain fatty acid",
         "D": "N -acetylmuramic acid"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "E lizabethkingia meningoseptica",
         "D": "S tenotrophomonas maltophilia"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "只 有革蘭氏陽性菌才會產生外毒素",
         "D": "外 毒素具有抗原性，可以製成疫苗誘發人體產生抗體"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "缺 乏細胞壁",
         "D": "產 生大量β-內醯胺酶"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "一 般含有agar，呈半固狀以防止檢體流出",
         "D": "S tuart's、Amies和Cary-Blair為常見的運送培養基"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "臨 床結核菌藥敏主要於生物安全第四等級實驗室中操作",
         "D": "醫 院的細菌檢驗室主要為生物安全第二等級實驗室"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "綿 羊血須先經濾紙過濾法滅菌後，才能加入培養基中",
         "D": "添 加綿羊血的培養基一起經濾紙過濾法滅菌"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "測 試病人血液中T cell對結核菌抗原的反應",
         "D": "兩 個工作天內可得檢驗結果"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "M ycobacterium arosiense",
         "D": "M ycobacterium vulneris"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "p henylethyl alcohol agar",
         "D": "M acConkey agar"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "S taphylococcus saprophyticus",
         "D": "S taphylococcus epidermidis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "C",
         "D": "D"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "1 .5 McFarland standard",
         "D": "2 .0 McFarland standard"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "C lostridium perfringens",
         "D": "P seudomonas syringea"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "＞ 0.1％",
         "D": "＞ 0.01％"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "不 能在PEA（phenylethyl alcohol agar）中生長",
         "D": "主 要是食草動物疾病的病原體"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "S treptococcus pyogenes／streptococcal pyrogenic exotoxin-A",
         "D": "N eisseria meningitidis／endotoxin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "M ycobacterium canettii",
         "D": "M ycobacterium smegmatis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "s treptococcal pyrogenic exotoxin",
         "D": "s treptolysin O"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "Y ersinia enterocolitica",
         "D": "C itrobacter freundii"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "大 部分菌株的bipolar staining測試為陽性",
         "D": "大 部分菌株的hemolysis測試為陽性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "紅 色為陽性",
         "D": "P roteus、Providencia 與Morganella 呈陽性反應"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "兩 菌皆為catalase (＋)",
         "D": "兩 菌同為需氧細菌"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "P roteus mirabilis",
         "D": "S almonella Typhi"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "黏 絲試驗（string test）陽性反應",
         "D": "D Nase試驗陽性反應"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "E scherichia coli",
         "D": "Y ersinia enterocolitica"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "可 生長於Ashdown's agar",
         "D": "易 對polymyxin B呈感受性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "v iridans group streptococci",
         "D": "S treptococcus pneumoniae"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "① ②④",
         "D": "③ ④⑤"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "H aemophilus influenzae",
         "D": "P seudomonas aeruginosa"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "不 具有nitrate reductase，不能將硝酸鹽（nitrate）還原成亞硝酸鹽（nitrite）",
         "D": "尿 素酶（urease）將urea分解產生氨（ammonia），進而使培養基偏鹼性"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "抑 制腸細胞（enterocyte）G protein的活化，進而造成cyclic adenosine monophosphate（cAMP）的產量\n上升",
         "D": "可 以促進電解質（electrolytes）由細胞內分泌至腸腔，造成水狀下痢"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "施 行過氣切（tracheostomy）的病人可能有此菌的移生（colonization）",
         "D": "在 MacConkey agar中菌落呈粉紅色"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "B urkholderia cepacia",
         "D": "B urkholderia mallei"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "利 用inositol產酸",
         "D": "對 O/129（150 μg）產生抗性"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "S treptococcus pneumoniae",
         "D": "C ryptococcus neoformans"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "具 有去氧核糖核酸酶（DNase）",
         "D": "能 利用麥芽糖（maltose）產酸"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "V ibrio parahaemolyticus",
         "D": "V ibrio vulnificus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "鞭 毛抗原",
         "D": "腸 毒素抗原"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "產 生氧化酶（oxidase）",
         "D": "水 解吲哚（indole）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "B orrelia burgdorferi",
         "D": "B acteroides fragilis"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "C lostridium perfringens",
         "D": "C lostridium tetani"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "抑 制神經傳導物質乙醯膽鹼的釋放",
         "D": "阻 斷骨骼肌細胞的菸鹼性受體"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "③ ④",
         "D": "① ④"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "e ndotoxins",
         "D": "n eurotoxin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "C lostridium perfringens",
         "D": "C lostridium botulinum"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "1 5％",
         "D": "2 0％"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "o xacillin",
         "D": "t etracycline"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "A mbler class B的β-lactamases作用需要金屬離子",
         "D": "目 前尚無對carbapenems具有水解能力的ESBLs"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "① ③④",
         "D": "② ③④"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "n ystatin",
         "D": "g riseofulvin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "僅 ②④",
         "D": "② ③④"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "p enicillin",
         "D": "r ifampin"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "可 藉由細胞壁增厚降低對萬古黴素的感受性",
         "D": "可 形成生物膜抵抗抗生素的攻擊"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "金 黃色葡萄球菌（Staphylococcus aureus）",
         "D": "流 行性感冒嗜血桿菌（Haemophilus influenzae）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "磷 酸根離子",
         "D": "鎂 離子"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "K lebsiella pneumoniae",
         "D": "S taphylococcus aureus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "l inezolid",
         "D": "v ancomycin"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "T zanck test",
         "D": "V enereal Disease Research Laboratory test"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "仙 人掌桿菌（Bacillus cereus）",
         "D": "腸 炎弧菌（Vibrio parahaemolyticus）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "L euconostoc mesenteroides",
         "D": "H elcococcus kunzii"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "生 化鑑定主要為niacin陽性再加上nitrate還原反應陽性",
         "D": "結 核桿菌培養的陰性結果須觀察24天才發報告"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "C utibacterium acnes",
         "D": "H aemophilus influenzae"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "H istoplasma capsulatum",
         "D": "P aracoccidioides brasiliensis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "抗 原檢查",
         "D": "D NA檢查"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "① ③",
         "D": "② ④"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "T alaromyces marneffei",
         "D": "H istoplasma capsulatum"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "P iedraia hortae",
         "D": "H ortaea werneckii"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "p otassium iodide抑制細胞膜合成",
         "D": "p olyenes抑制蛋白質合成"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "G ram stain",
         "D": "i odine stain"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "僅 ②④⑤",
         "D": "① ②③④⑤"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "酚 紅（phenol red）",
         "D": "中 性紅（neutral red）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "淋 病雙球菌（Neisseria gonorrhoeae）",
         "D": "大 腸桿菌O157：H7型（E. coli O157:H7）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "C hlamydia trachomatis",
         "D": "C utibacterium acnes"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "鸚 鵡熱披衣菌（Chlamydia psittaci）／花柳性淋巴肉芽腫",
         "D": "貝 氏考克斯菌（Coxiella burnetii）／Q fever"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "C orynebacterium diphtheriae",
         "D": "S taphylococcus saprophyticus"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "H aemophilus influenzae／polysaccharide",
         "D": "S treptococcus pyogenes／hyaluronic acid"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "C ampylobacter jejuni",
         "D": "S almonella Choleraesuis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "偽 膜性結腸炎（pseudomembranous colitis）",
         "D": "溶 血性尿毒症（hemolytic uremic syndrome, HUS）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     }
   ]

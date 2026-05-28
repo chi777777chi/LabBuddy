@@ -19,7 +19,7 @@
         "C": "Ankyrin-1",
         "D": "Band 3"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "Serum bilirubin下降",
         "D": "Hemoglobinuria"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "Absolute neutrophil count下降",
         "D": "Thrombocytopenia"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "% transferrin saturation降低",
         "D": "TIBC（total iron-binding capacity）降低"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "Hb A 是α δ\n2 2 2",
         "D": "正常情形下，人類出生後，β-globin的量增加，而γ-globin的量減少"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "飲食中的無機鐵質以ferrous (Fe2+)態進入腸道細胞",
         "D": "無機鐵質進入腸細胞的通道DMT-1，在缺鐵情況下鐵質調節蛋白（IRP-1）可結合至DMT-1 mRNA 5'-\n非轉譯區促進DMT-1的表現"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "Sideroblastic anemia",
         "D": "Anemia of chronic renal disease"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "Ring sideroblast是因heme生成異常，鐵質堆積於溶小體",
         "D": "是normocytic normochromic anemia"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "Globin基因出現突變為常見",
         "D": "需定時輸血"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "缺乏cobalamin",
         "D": "骨髓無法吸收葉酸"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "ATP",
         "D": "2,3-DPG"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "Glucose-6-phosphate dehydrogenase deficiency",
         "D": "Hereditary spherocytosis"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "缺鐵性貧血",
         "D": "溶血性貧血"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "有些neutrophils會有hypersegmented nuclei",
         "D": "血清中的lactate dehydrogenase通常上升"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "不帶電",
         "D": "部分帶正電荷，部分負電荷"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "Band 3 protein",
         "D": "Glycophorin B"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "Decreased ferritin",
         "D": "Decreased liver iron index"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "必須利用檸檬酸鹽瓊脂電泳（citrate agar electrophoresis）才能區分出來",
         "D": "不是溶血性貧血的一種"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "36～45",
         "D": "46～50"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "Phospholipid",
         "D": "Glycoprotein"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "Lin-/CD34+/CD90-/CD38+",
         "D": "Lin+/CD34-/CD90+/CD38-"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "Increased myeloid precursor cells",
         "D": "Myeloid dysplasia"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "IgA通常可以穿越胎盤",
         "D": "IgA可以存在於體液，如胃腸道分泌物中"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "Chronic myeloid leukemia",
         "D": "Chronic lymphocytic leukemia"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "巨大血小板",
         "D": "淋巴球"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "CD3+/CD19+/CD117-/TdT+",
         "D": "CD13-/CD34+/CD117-/TdT+"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "Primary myelofibrosis",
         "D": "Severe megaloblastic anemia"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "EZH2",
         "D": "DNMT3A"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "移除血漿中的異常顆粒，如carbon particles",
         "D": "儲藏紅血球、血小板與白血球"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "Nasopharyngeal carcinoma",
         "D": "Hodgkin lymphoma"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "Myeloperoxidase（MPO）stain",
         "D": "Acid phosphatase（ACP）stain"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "Antibody production of B cells",
         "D": "Cytotoxicity of T cells"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "Sézary syndrome",
         "D": "Hairy cell leukemia"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "CD64",
         "D": "CD117"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "周邊血中白血球數目升高",
         "D": "腫瘤細胞常見JAK2 mutation"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "Monocyte",
         "D": "Reactive lymphocyte"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "①②④⑤",
         "D": "②③⑤⑥"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "Chronic myeloid leukemia",
         "D": "Chronic lymphoid leukemia"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "出現Ph+者，預後較好",
         "D": "在小兒病人中，T-ALL較B-ALL的預後好"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "①Lymphocyte，②Neutrophil",
         "D": "①Monocyte，②Basophil"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "可能會出現在病毒性肝炎感染患者",
         "D": "可能會出現在leukemoid reaction患者"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "Periodic acid Schiff／myeloperoxidase",
         "D": "Sudan black B／myeloperoxidase"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "2",
         "D": "4"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "Within normal range",
         "D": "Shorter than normal range"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "病人antithrombin濃度太高而誘發",
         "D": "病人出現自體免疫抗體"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "Protein S",
         "D": "Factor VIII"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "使用低分子量肝素（low-molecular weight heparin）治療時仍須嚴密監控，主要是因其引起HIT\n的發生率與傳統肝素（unfractionated heparin）相似",
         "D": "主要是由於血小板所釋出的PF3與肝素形成具抗原性的複合體而誘發抗血小板抗體所導致"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "一個Bethesda單位（BU）是指可以完全中和一個單位（U）的factor VIII活性的抗體量",
         "D": "檢測步驟是須將病人之檢體與試劑混合後於室溫反應兩個小時"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "F-actin藉由解開DMS（demarcation system）的纏繞而拉長proplatelet，為成熟血小板的裂解做\n準備",
         "D": "一個MK可產生10000～50000顆血小板"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "乳酸",
         "D": "肝醣"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "①原發性血小板過多症，②正常對照組，③再生不良性貧血",
         "D": "①原發性血小板過多症，②再生不良性貧血，③正常對照組"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "Glycoprotein IIb/IIIa及collagen",
         "D": "Glycoprotein Ib/IX/V及collagen"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "血液抹片可以觀察到許多schistocyte",
         "D": "Direct Coombs’ test陰性"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "Wiskott-Aldrich syndrome",
         "D": "Bernard-Soulier syndrome"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "Protein S",
         "D": "Factor X"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "活化factor XIII",
         "D": "活化protein C"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "血小板被剌激後的光學分析可用來評估血小板凝集及分泌的功能",
         "D": "PFA-100結果會受血漿中的VWF濃度及功能影響"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "檢體中含fibrin degradation product",
         "D": "檢體中含heparin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "FVIII，FIX",
         "D": "Thrombin，FIX"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "Type 2A VWD",
         "D": "Type 3 VWD"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "與VWF血中濃度無關",
         "D": "與血小板膜上GPII III 相關\nb a"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "VWF",
         "D": "Protein C"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "外顯子（exon）6、7占77.5%的編碼子（codon）",
         "D": "正向調控啟動子（promoter）所在位置為-117～+31"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "病人為A 亞型，產生anti-A\n2 1",
         "D": "唾液檢驗結果含有A及H物質"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "半乳糖（galactose）",
         "D": "甘露醣（mannose）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "紅血球本身並不製造Lewis抗原，是由血漿中吸附上去的",
         "D": "LE基因產物不可作用到第二型前驅物質"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "加入特異性抗球蛋白抗體最主要是為了避免偽陽性反應",
         "D": "無法得知紅血球表面是否已吸附抗體"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "5×105",
         "D": "2.5×105"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "其紅血球上H抗原極少",
         "D": "其唾液檢驗結果B物質含量極少"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "Anti-Lua",
         "D": "Anti-Fyb"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "白血球濃厚液保存於室溫中，並在24小時內快速使用完畢",
         "D": "新鮮冷凍血漿在-20℃保存期限為1年"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "過濾法的白血球去除率最佳，高於95%",
         "D": "開封後，再經過濾器所製作的減除白血球之紅血球濃厚液，只能儲存24小時"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "Anti-M",
         "D": "Anti-Jka"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "Jk（a-b-）",
         "D": "Lu（a-b-）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "①②③",
         "D": "②③④"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "發熱性非溶血性輸血反應",
         "D": "輸血後肝炎"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "表現A和B抗原",
         "D": "不表現A和B抗原"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "亞孟買A型",
         "D": "亞孟買B型"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "Sulfhemoglobin",
         "D": "Carboxyhemoglobin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "成熟淋巴球比顆粒球之正向散射訊號強度高",
         "D": "嗜酸性球比單核球之側向散射訊號強度高"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     }
   ]

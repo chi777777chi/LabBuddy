@@ -19,7 +19,7 @@
         "C": "乙型海洋性貧血（β-thalassemia minor）",
         "D": "G6PD缺乏之溶血性貧血（G6PD deficient hemolytic anemia）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "原紫質合成需Vit. B 參與\n6",
         "D": "原紫質與鐵組裝成heme是在ribosome完成"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "MCV 95 fL／MCH 35 pg",
         "D": "MCV 105 fL／MCH 37 pg"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "惡性貧血主因是嚴重缺乏葉酸",
         "D": "幽門螺旋桿菌（H.pylori）是引起老年人惡性貧血的原因之一"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "methionine",
         "D": "deoxythymidine monophosphate（dTMP）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "部分胃切除",
         "D": "部分迴腸（ileum）切除"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "與NADPH供應異常有關",
         "D": "紅血球ATP減少"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "由天門冬胺酸（aspartic acid）變成麩胺酸（glutamic acid）",
         "D": "由麩胺酸（glutamic acid）變成由纈胺酸（valine）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "尿液中的urobilinogen增加",
         "D": "血清中的haptoglobin減少"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "紅血球細胞膜上的CD55下降，導致無法抑制補體活化反應",
         "D": "血清中lactate dehydrogenase增加"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "3：1",
         "D": "1：2"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "ε切換成β",
         "D": "γ切換成β"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "dyskeratosis congenita",
         "D": "paroxysmal nocturnal hemoglobinuria"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "血漿中與haptocorrin結合的vitamin B 不會運送到骨髓\n12",
         "D": "在myeloproliferative neoplasm的病人血液中有大量的vitamin B\n12"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "α-thalassemia病人接受葉酸治療",
         "D": "megaloblastic anemia病人接受Vit. B 治療\n12"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "monocyte",
         "D": "plasma cell"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "elliptocytosis",
         "D": "anisocytosis"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "網狀紅血球數上升",
         "D": "脾腫大"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "chloramphenicol",
         "D": "hepatitis virus"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "blister cell",
         "D": "schistocyte（fragmented RBC）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "acute promyelocytic leukemia",
         "D": "acute myelomonocytic leukemia"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "primary myelofibrosis",
         "D": "refractory anemia with ring sideroblast"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "原發性骨髓纖維化症（primary myelofibrosis）",
         "D": "慢性骨髓性白血病（chronic myeloid leukemia）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "nitroblue-tetrazolium（NBT）試驗結果為陰性",
         "D": "會產生過多的超氧化物（superoxide）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "monocyte比嗜中性球（neutrophil）大",
         "D": "GM-CSF和M-CSF皆可促進monocyte的生成"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "淋巴母細胞",
         "D": "活化單核球"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "急性感染者，小孩較成人易發生此現象",
         "D": "病毒感染者，慢性期較急性期易發生此現象"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "白血球的RNA及顆粒",
         "D": "含病原菌之內噬體"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "骨髓中嗜中性球總數下降",
         "D": "骨髓中嗜中性球比例下降"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "CD138",
         "D": "CD38"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "acute lymphoblastic leukemia（ALL）",
         "D": "aplastic anemia（AA）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "e14a2 = p210",
         "D": "e19a2 = p230"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "Bruton tyrosine kinase（BTK）",
         "D": "BCL-2"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "metamyelocyte",
         "D": "band neutrophil"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "acute myeloid leukemia（AML）",
         "D": "chronic myeloid leukemia（CML）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "CD20",
         "D": "CD38"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -488,7 +488,7 @@
         "D": "normal spleen size"
       },
       "answer": "",
-      "bonus": false
+      "bonus": true
     },
     {
       "number": 38,
@@ -500,7 +500,7 @@
         "C": "補體活化系統有三種不同路徑：classical pathway、alternative pathway、lectin complement pathway",
         "D": "classical pathway中補體系統的活化是因為抗體與抗原結合引發的"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "發生於約5％的成人急性骨髓性白血病患者",
         "D": "帶有此突變的患者，已有標靶藥物可選擇"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "eosinophilia",
         "D": "basophilia"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "neutrophils with toxic granules",
         "D": "leukocyte alkaline phosphatase（LAP）score"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "大量血小板結合VWF，造成長鏈VWF消耗，導致VWF功能下降",
         "D": "大量血小板結合內皮細胞，造成血管之完整性受損而出血"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "維生素K還原酶（vitamin K epoxide reductase complex, VKORC）之基因多型性",
         "D": "合併使用會影響CYP2C9代謝路徑的藥物"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "dipyridamole：ADP receptor P2Y1",
         "D": "aspirin：cyclooxygenase（COX）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "出現巨大血小板（giant platelet）",
         "D": "WAS基因的產物是血小板之穿膜（transmembrane）醣蛋白"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "a disintegrin and metalloprotease with thrombospondin motif 13（ADAMTS 13）負責切割水解二者之\n共價鍵結",
         "D": "Type 2B VWD之疾病機制是VWF鍵結factor VIII能力異常過強"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "thrombin",
         "D": "factor Xa"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "protein C/protein S",
         "D": "factor IXa/factor VIIIa"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "將fibrinogen轉化為fibrin",
         "D": "抑制prothrombin活化形成prethrombin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "釋出α-granule內的ADP來增強血小板的次級凝集反應",
         "D": "釋出Dense granules內的serotonin來促進血管收縮"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "thromboxane synthase",
         "D": "ADAMTS 13"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "fibrinogen",
         "D": "factor V"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "標準參考曲線使用3點（含）以上濃度執行校正時，病人檢體應至少以2個不同稀釋倍數檢測",
         "D": "標準參考曲線使用單點濃度執行校正時，病人檢體無須以不同稀釋倍數檢測"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "anticardiolipin antibody",
         "D": "狼瘡抗凝血素（lupus anticoagulant）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "factor IX",
         "D": "factor X"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "由factor XIIIa作用於fibrinogen所產生的產物",
         "D": "由trypsin作用於fibrin聚合物所產生的產物"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "Clauss fibrinogen assay",
         "D": "血栓彈力圖（thromboelastography）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "GPIIb/IIIa結合區塊",
         "D": "GPIb結合區塊"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "磷脂質（phospholipid）",
         "D": "肝素（heparin）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "可結合至血小板表面醣蛋白GPIIb/IIIa及GPIb/IX/V",
         "D": "多以單體（monomer）形式存在，以增加其與血小板的附著面積"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "C，B",
         "D": "均在A區塊"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "使用免疫抑制劑",
         "D": "血漿置換"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "ABO血型系統之亞血型成因源自基因變異",
         "D": "其相對應抗體為規則抗體"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "交叉試驗（crossmatch）",
         "D": "紅血球凝集抑制試驗（hemagglutination-inhibition test）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "有部分陽離子會隨著紅血球移動",
         "D": "是紅血球內部所測得的靜電壓"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "國人最常見的是GP.Mur（Mi. III）抗原所產生的抗體",
         "D": "與MNSs血型相關"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "輸入之淋巴球對抗受血者之反應，可導致輸血相關移植物抗宿主反應（transfusion associated graft vs.\nhost reaction）",
         "D": "輸入之顆粒球抗體與顆粒球結合，可導致輸血相關急性肺損傷（transfusion related acute lung\ninjury）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "殘餘白血球數為＞107，發生HLA異體免疫之比例約為50％",
         "D": "殘餘白血球數與發生HLA異體免疫之比例並無相關性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "LISS介質主要可以促進抗體吸附至血球，減少孵育時間，提高偵測敏感度",
         "D": "polyethylene glycol（PEG）可以縮短紅血球間的距離，幫助凝集反應"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "hemolytic disease of the newborn",
         "D": "Quinidine-induced hemolytic anemia"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "瘧疾原蟲感染風險，以問卷或口頭詢問方式進行篩檢，未做檢驗",
         "D": "HTLV病毒感染風險，以血清學方式篩檢，未做核酸檢驗"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "新鮮冷凍血漿保存於-20℃以下，其保存期限為2年",
         "D": "冷凍沉澱品保存於-20℃以下，輸用前需在30～37℃解凍"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "紅血球血品之細菌污染的風險較血小板血品大",
         "D": "愛滋病病患可以輸注未經輻射照射之血品"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "4小時",
         "D": "8小時"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "B\n3",
         "D": "B\nm"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "加入檸檬酸鈉之目的是驅散紅血球的非特異性凝聚",
         "D": "可檢測出anti-K抗體"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "分離後紅血球濃厚液分配到的抗凝保存液較少",
         "D": "成分含有dextrose"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "低敏感性",
         "D": "氣泡或血脂可能干擾結果"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "①⑤",
         "D": "②④"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "CD45螢光訊號平均強度：嗜中性球大於淋巴球",
         "D": "CD45螢光訊號平均強度：紅血球大於淋巴球"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]

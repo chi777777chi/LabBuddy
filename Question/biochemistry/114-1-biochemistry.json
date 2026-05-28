@@ -19,7 +19,7 @@
         "C": "氯",
         "D": "氧"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "二氧化碳分壓（pCO）\n2",
         "D": "血氧分壓（pO）\n2"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "ATP",
         "D": "NADH"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "質量分析器（mass analyzer）",
         "D": "光譜儀（spectrophotometer）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "affinity chromatography",
         "D": "thin-layer chromatography"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "",
         "D": ""
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "使使用用具具拋拋棄棄式式微微量量吸吸管管的的自自動動化化儀儀器器進進行行檢檢體體與與試試劑劑吸吸注注",
         "D": "檢體上機前，確認檢體量足夠"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "α -巨球蛋白（α- macroglobulin））\n2 2",
         "D": "白蛋白（albumin）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "產物之一為天門冬胺酸（aspartate）",
         "D": "催化尿素形成的酵素為 arginase"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "急性發炎反應的指標蛋白",
         "D": "體內濃度上升可能有心血管疾病的風險"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "性別",
         "D": "尿液體積"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "ninhydrin",
         "D": "biuret"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "感應耦合電漿質譜（ICP-MS）",
         "D": "質譜串聯質譜（MS/MS）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "羥化（hydroxylation）",
         "D": "醣化（glycosylation）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "可與三胜肽（tri-peptide）反應良好",
         "D": "透過銅離子與游離胺基酸形成複合物（multivalent complex）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "4-OH-phenylpyruvate dioxygenase",
         "D": "homogentisic acid oxidase"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "白胺酸（leucine）",
         "D": "纈胺酸（valine）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "isoelectric focusing",
         "D": "SDS-PAGE"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "是血清中含量最多的蛋白質",
         "D": "是維持血漿中膠體滲透壓（colloid osmotic pressure）平衡的主要蛋白質"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "尿酸（uric acid）",
         "D": "肌酸酐（creatinine）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "α-胎兒蛋白（α-fetoprotein）",
         "D": "運鐵蛋白質（transferrin）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "屬於第三型高血脂症（type III hyperlipoproteinemia）",
         "D": "顯示該病人血清中的膽固醇已過量"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "HDL-C上升",
         "D": "Lp(a)上升"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "丙酮（acetone）與β-羥基丁酸（β-hydroxybutyrate）",
         "D": "β-羥基丁酸（β-hydroxybutyrate）與醋酸（acetate）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "果糖胺（fructosamine）檢驗",
         "D": "糖化血紅素（HbA ）檢驗\n1c"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "與生長激素共同幫助細胞成長",
         "D": "IGF-1 缺乏會導致肢端肥大症"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "Benedict's 試驗",
         "D": "葡萄糖脫氫酶法"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "適合以葡萄糖氧化酶法測定",
         "D": "腦脊髓液檢體通常不需要加抗凝劑"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "apo C-II",
         "D": "apo E"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "丙酮（acetone）",
         "D": "乙醯丙酮（acetylacetone）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "﹝triglyceride﹞/ 4",
         "D": "﹝triglyceride﹞/ 5"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "膽固醇（cholesterol）",
         "D": "鞘磷脂（sphingolipid）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "Niemann-Pick disease",
         "D": "Fabry disease"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "GLUT3",
         "D": "GLUT4"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "脂肪分解反應",
         "D": "糖質新生作用"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "血中鉀離子",
         "D": "汗中鉀離子"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "所有酵素皆需有某些特定金屬離子作為輔因子（cofactor）",
         "D": "同樣的酵素在不同組織中的含量不一定相同"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "抑制劑多與受質結構相似並結合至酵素活性部位",
         "D": "K上升\nm"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "lipase",
         "D": "amylase"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "gluconic acid",
         "D": "glucuronic acid"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "macroglobulin",
         "D": "transferrin"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "amino group",
         "D": "methyl group"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "肺部過度換氣，導致低碳酸血症（hypocarbia）",
         "D": "肺部過度換氣，導致高碳酸血症（hypercarbia）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "650 nm and 805 nm",
         "D": "660 nm and 940 nm"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "immunoglobulins",
         "D": "glycogen"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "零級反應指反應速率與酵素活性成正比",
         "D": "溫度每增加攝氏1度，反應速率增加10%"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "C",
         "D": "D"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "lipase",
         "D": "choline esterase"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "amylase",
         "D": "glucose-6-phosphate dehydrogenase"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "代謝功能（metabolic function）",
         "D": "儲存功能（storage function）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "成人血液值上升，表示有肝細胞肝癌的高風險",
         "D": "成人血液值上升，表示有肝硬化的高風險"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "轉移酶（transferase）",
         "D": "連接酶（ligase）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "NADH",
         "D": "NADPH"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "HSP60",
         "D": "LDL"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "γ-glutamyltransferase（GGT）",
         "D": "aspartate aminotransferase（AST）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "B-type natriuretic peptide",
         "D": "myosin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "fibroblast growth factor 23及vitamin D",
         "D": "calcitonin及vitamin D"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "AFP-L3之結合力最高，與卵黃囊腫瘤有關",
         "D": "AFP-L3之結合力最高，與肝癌有關"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "AFP",
         "D": "PSA"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "敏感度與特異性不佳的腫瘤標誌檢驗，會限制其腫瘤診斷之臨床應用",
         "D": "全基因定序可成為所有癌症的篩檢方法"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "維生素 B\n6",
         "D": "維生素 B\n12"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "通常無甲狀腺腫大症狀",
         "D": "產生 thyroid peroxidase抗體（anti-TPO）是主要成因之一"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "第 3 個碳上的酮基與活性無關",
         "D": "第 4 個碳與第 5 個碳之間的雙鍵與活性無關"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "兩者的 hydroxyl group 數相同",
         "D": "兩者皆由腎上腺顆粒層（zona glomerulosa）製造與分泌"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "患者 GnRH 增加，LH 與 FSH 增加",
         "D": "患者 GnRH 增加，LH 與 FSH 減少"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "早發性卵巢衰竭（premature ovarian failure）",
         "D": "多囊性卵巢症候群（polycystic ovary syndrome）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "T\n3",
         "D": "thyroglobulin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "雌三醇（estriol, E）\n3",
         "D": "黃體激素（progesterone）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "酪胺酸（tyrosine）",
         "D": "色胺酸（tryptophan）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "1,25-(OH) cholecalciferol\n2",
         "D": "25-(OH) cholecalciferol"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "會造成胡蘿蔔素血症及維生素A中毒",
         "D": "會全數轉為維生素A，並造成維生素A中毒"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "immunoglobulin A",
         "D": "apolipoprotein A"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "其代謝是藉由體內cytochrome P450 3A家族的酵素作用",
         "D": "病人血中如存在其抗體，會影響檢驗結果"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "CO-Hb在前處理後，產物有 Fe2+-Hb 可檢測",
         "D": "CO-Hb在前處理後，產物有 CO 可檢測\n2"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "有其他客觀性方法判定療效者",
         "D": "在不同個體中代謝差異較大者"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "同時服用的藥物，抑制了代謝酵素的活性",
         "D": "同時服用的藥物，影響腸道中轉運蛋白（transporters）的活性"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "砷（As）",
         "D": "鋁（Al）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "奈米孔定序（nanopore sequencing）",
         "D": "增幅阻礙突變系統（amplification refractory mutation system, ARMS）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "所檢測的結果影響到病人疾病診斷與治療",
         "D": "所帶動的產業商機龐大"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "乙醯化（acetylation）",
         "D": "醣化（glycosylation）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     }
   ]

@@ -19,7 +19,7 @@
         "C": "檢 體實際可視範圍為10/20 mm",
         "D": "在 距離人眼20x10 mm處，產生虛像，得以觀察放大之影像"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "色 相差（Chromatic aberration）屬於必然的現象，無法做彌補或校正",
         "D": "顯 微鏡使用無限校正鏡頭，可彌補大部分球面相差（Spherical aberration）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "苯 酮尿",
         "D": "菌 尿"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "肌 紅素尿（Myoglobinuria）",
         "D": "血 鐵質尿（Hemosiderinuria）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "① ③",
         "D": "② ④"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "B ence-Jones protein",
         "D": "U romodulin（Tamm-Horsfall protein）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "酸 鹼平衡",
         "D": "醣 類及脂肪代謝"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "常 見蛋白尿類型的以白蛋白居多",
         "D": "任 何種類的尿蛋白皆可被尿試紙測出結果"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "亨 利式環上升枝",
         "D": "遠 曲小管"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "1 .20",
         "D": "1 .30"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "1 .13",
         "D": "1 .26"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "o -Toluidine",
         "D": "E hrlich aldehyde"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "H emeSelect test",
         "D": "E iken OC-LIGHT test"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "大 腸阿米巴成熟囊體",
         "D": "微 小阿米巴的囊體"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "總 膽管阻塞",
         "D": "直 腸腫瘤"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "咳 嗽拭子法",
         "D": "氣 管穿刺抽痰"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "嗜 中性白血球",
         "D": "杯 狀細胞"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "印 度墨水染色法檢驗C. neoformans",
         "D": "核 酸聚合酶連鎖反應檢驗Enterovirus 71"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "血 液紅血球計數",
         "D": "血 液白血球計數"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "胰 臟炎",
         "D": "腎 病症候群"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "嗜 酸性白血球",
         "D": "嗜 鹼性白血球"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "草 酸鈣",
         "D": "不 定形磷酸鹽"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "檢 體含有高量蛋白質時，冰醋酸不能用作稀釋液",
         "D": "進 行白血球分類計數時，檢體不能離心，以避免血球破裂"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "5 00",
         "D": "1 ,000"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "類 風濕性關節炎",
         "D": "痛 風"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "纖 維蛋白原",
         "D": "嗜 中性白血球"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "精 囊",
         "D": "前 列腺"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "鋅 濃度",
         "D": "e osin-nigrosin染色"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "放 射受體分析法（radioreceptor assay, RRA），較放射免疫法（radioimmunoassay, RIA），更快速且特\n異性高",
         "D": "固 相免疫分析法（solid phase immunoassay），使用雙抗體，必須辨識不同的抗原表位（hCG epitopes）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "游 離α-hCG與甲型胎兒蛋白（AFP）的比值",
         "D": "游 離β-hCG與甲型胎兒蛋白（AFP）的比值"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "縮 小胞膜絛蟲（Hymenolepis diminuta）",
         "D": "豬 肉絛蟲（Taenia solium）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "雙 核阿米巴（Dientamoeba fragilis）",
         "D": "哈 門氏阿米巴（Entamoeba hartmanni）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "童 蟲（schistosomula）",
         "D": "蟲 卵"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "C harcot-Leyden結晶",
         "D": "原 頭節（protoscolices）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "僅 ②③",
         "D": "① ②③"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "杜 氏利什曼原蟲（Leishmania donovani）",
         "D": "弓 蟲（Toxoplasma gondii）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "胰 臟功能不足",
         "D": "乳 糖不耐症"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "3 % 醋酸",
         "D": "1 % 皂素（saponin）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "S amson stain",
         "D": "H ansel’s stain"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "滑 膜液",
         "D": "精 液"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "5 '-GAAUAGAGUCGGGGCU-3'",
         "D": "5 '-UCGGGGCUGAGAUAAG-3'"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "c .1253dup",
         "D": "c .250C>T"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "D NA polymerase II 不參與染色體複製",
         "D": "完 成整個染色體複製的時間約40分鐘"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "第 18號染色體三體（trisomy 18）",
         "D": "粒 線體基因發生點突變或大片段缺損影響了ATPase功能"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "D NA倒轉（DNA inversion）",
         "D": "染 色體易位（chromosome translocation）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "③ ①②④",
         "D": "④ ①②③"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "萃 取出的RNA較不穩定，最好是保存在-70℃，並儘快執行後續分析",
         "D": "可 以使用紫外分光光度計，測定260 nm吸光度並換算為核酸量"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "通 常在模板DNA含量較高時使用",
         "D": "所 使用的第二組引子（primer）會結合在第一次PCR產物的內部"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "a 曲線是基因啟動子區域沒有甲基化的結果",
         "D": "可 選用富含CpG位點的Alu elements來作為DNA input control"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "K pnI",
         "D": "N deI"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "已 知家族遺傳突變位點的單基因遺傳疾病",
         "D": "計 算腫瘤突變量來評估是否適用免疫檢查點抑制劑"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "可 用於抗藥性病原體的檢驗",
         "D": "可 以篩檢新穎（novel）單一核苷酸變異位點"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "操 作時，需有增幅內生性對照組（internal control）",
         "D": "反 應完後，需要進行電泳分析"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "c hemical cleavage of mismatch duplexes（CCM）",
         "D": "a mplified created restriction sites（ACRS）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "偵 測translocation時，可設計兩條probes進行檢測",
         "D": "進 行metaphase FISH時，需加入colcemides，使細胞停在metaphase"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "螢 光染劑標示二維凝膠電泳（fluorescent two dimensional difference in-gel electrophoresis,\nfluorescent 2D-DIGE）",
         "D": "膠 體過濾層析法（gel filtration chromatography）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "a CGH可檢測出多數基因轉錄區（coding region）中的點突變",
         "D": "a CGH可用於比較不同家族基因組中單一核苷酸多型性（SNP）的差別"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "H LA第一類型（HLA class I）等位基因的變異大多數集中在exon 1",
         "D": "H LA檢測的檢體來源主要是骨髓"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "生 長因子的受體過度表現",
         "D": "微 衛星不穩定性"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "- 70℃，可達7年以上",
         "D": "室 溫，可達1年"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "品 管物質最好能以至少10家實驗室所建立之允收標準作為參考",
         "D": "校 正物質若可追溯至國際標準，則不需再比對或驗證"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "僅 ①②③⑤",
         "D": "① ②③④⑤"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "M ycoplasma pneumoniae",
         "D": "S taphylococcus aureus"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "為 使檢驗報告以最快速度送回B醫院，A實驗室提供平台讓B醫院可以查詢電子簽章的電子報告",
         "D": "B 醫院在自己醫院資訊系統轉發報告，並備註由A實驗室代檢"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "偽 陰性率：1-[A/(A+C)]",
         "D": "偽 陽性率：1-[D/(B+D+F)]"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "t ranscription-mediated amplification（TMA）",
         "D": "r estriction fragment length polymorphism（RFLP）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "以 標準參考菌株比對為最佳",
         "D": "可 序列比對之基因長度，應至少500個核苷酸以上"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "v anA基因可轉譯出D-ala-D-ala ligase",
         "D": "v anA表現型對vancomycin的MIC約為2～4 μg/mL"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "S ARS-CoV-2：DNA polymerase gene",
         "D": "B K virus（polyomavirus）：fusion gene"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "若 無已建立之標準資料庫，不易比對不同地區之菌株資訊",
         "D": "脈 衝式電泳分型法（pulsed field gel electrophoresis）可以得到欲鑑定細菌的基因序列"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "h ybrid capture assay",
         "D": "r andom PCR"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "鑲 嵌型（mosaicism）",
         "D": "點 突變（point mutation）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "1 2.5%",
         "D": "1 6.7%"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "過 度表現的MYC基因家族常見於小細胞肺癌與非小細胞肺癌",
         "D": "H ER2基因大量表現是肺癌病人具有較佳預後的指標"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "C C同合子基因型對oxaliplatin治療的反應最差",
         "D": "T T同合子基因型對oxaliplatin治療的反應為中等"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "染 色體核型分析",
         "D": "即 時定量聚合酶連鎖反應"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "H LA-B*5701",
         "D": "H LA-B*5801"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "c etuximab對BRAF V600E突變的大腸直腸癌病人治療效果較好",
         "D": "t rastuzumab對Her2/neu過度表現的乳癌病人治療效果較好"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "i rinotecan化療藥物的毒性副作用與UGT1A1的基因多型性最有關",
         "D": "C YP2D6*2基因多型性產生的酵素活性高於CYP2D6*1野生型的酵素"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "具 有特異的細胞表面標記，可以發展為治療的標的",
         "D": "不 具有基因變異"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     }
   ]

@@ -19,7 +19,7 @@
         "C": "V6導程的R波高度為28 mm",
         "D": "aVF導程的R波高度達15 mm"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "PR segment橫跨心電圖紙剛好滿一個大格",
         "D": "PR segment橫跨心電圖紙剛好滿十個小格"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "心軸右移",
         "D": "極度心軸右移"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "心電圖顯示心搏過速",
         "D": "心電圖顯示心搏過緩"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "評估是否為心房顫動，常利用T波",
         "D": "評估是否為心搏過緩，需評估T波速度"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "S波是R波之後出現的向下波",
         "D": "R波是Q波之後出現的向下波"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "-9 mm",
         "D": "+1 mm"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "不定軸（indeterminated axis）",
         "D": "正常軸位"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "aVR、Ⅰ、Ⅱ、aVF",
         "D": "aVL、Ⅰ、Ⅱ、Ⅲ"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "I",
         "D": "aVL"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "②③①④",
         "D": "③①②④"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "眨眼反射",
         "D": "顏面神經刺激試驗"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "肌纖維動作電位（muscle fiber action potential）",
         "D": "肌束震顫電位（fasciculation potential）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "施予聲光刺激",
         "D": "請其自然睡眠"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "呼吸及心跳速率變快",
         "D": "呼吸及心跳速率變慢"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "90～110",
         "D": "210～250"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "服用低劑量抗焦慮藥物",
         "D": "低血氧"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "耳朵基準導出法較容易發現大腦深部病變",
         "D": "雙極導出法較容易發現異位項的異常波"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "溫度上升會造成曲線右移",
         "D": "血球之 2,3-DPG 減少會造成曲線左移"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "糖尿病引起之酮酸中毒",
         "D": "腎衰竭引起的尿毒症"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "呼吸變慢",
         "D": "過度酸中毒會危及生命"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "PO 、pH\n2",
         "D": "PCO 、pH\n2"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "FVC＜SVC",
         "D": "二者無法比較"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "僅②③④⑥",
         "D": "①②③④⑤⑥"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "大部分停留在呼吸道的空氣可與血液作氣體交換",
         "D": "解剖無效腔和肺泡無效腔（alveolar dead space）合稱為生理無效腔（physiological dead\nspace）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "呼氣儲備容積（ERV）",
         "D": "潮氣容積（TV）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "1.8",
         "D": "3.7"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "除氧氣外，還須吸入50％的氦氣",
         "D": "當有阻塞性肺功能異常時，功能餘氣量（FRC）可能被低估"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "中度阻塞性肺功能異常",
         "D": "輕度侷限型肺功能異常"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "體箱計法（body plethysmography）",
         "D": "一氧化碳肺瀰散量（DL ）\nCO"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "可以用於評估最大耗氧量",
         "D": "可以用於評估肺動脈壓力"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "正常人肝臟的音波阻抗大於腎臟的音波阻抗",
         "D": "回音高低與介質的阻抗有關"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "頻率越高則衰減係數越小，穿透率越小",
         "D": "頻率越高則衰減係數越大，穿透率越大"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "每衰減5 dB，強度降低為原來的10％",
         "D": "每衰減10 dB，強度降低為原來的10％"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "血液在超音波上的成像為高超音波反射",
         "D": "利用杜卜勒效應觀測血流變化"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "利用2D測量左心室面積改變",
         "D": "利用3D測量左心室體積改變"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "心包膜炎",
         "D": "高血鉀症"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "界面活性素（surfactant）、肺泡上皮細胞、組織間隙、微血管內皮細胞",
         "D": "肺泡上皮細胞、組織間隙、微血管內皮細胞、界面活性素（surfactant）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "與腦下腺（pituitary）製造的褪黑激素（melatonin）分泌同步化",
         "D": "黃昏入夜之際便開始濃度上升，在入睡前分泌達到最高"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "氣喘的病人因為呼吸道狹窄所以通常用力肺活量（FVC）及總肺量（TLC）都會減少",
         "D": "腹部超音波檢查如果是膽息肉通常不會看見音響陰影（acoustic shadow）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "呼吸道黏膜的鱗狀上皮化生（squamous metaplasia）",
         "D": "骨骼肌肥大"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "肺臟",
         "D": "大腦"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "可產生少量一氧化氮（nitric oxide）",
         "D": "可分泌大量溶小體酵素"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "JAK2",
         "D": "RET"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "beta-HCG",
         "D": "CA-125"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "肋膜滲液（pleural effusion）",
         "D": "腦脊髓液（cerebrospinal fluid）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "21三體症候群（trisomy 21）最常發生的原因是減數分裂染色體不分離（meiotic\nnondisjunction）",
         "D": "21三體症候群中多出的染色體95％來自母親"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "酒精（alcohol）",
         "D": "膽紅素（bilirubin）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "酒精傷害腸胃道黏膜及肝臟",
         "D": "酒精可造成男性女乳症或睪丸萎縮的現象"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "小孩如果體重低於正常同年齡及同性別小孩體重的60％，就被認為是消瘦症（marasmus）",
         "D": "消瘦症（marasmus）對內臟影響較大，對骨骼肌影響較小"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "砷",
         "D": "鎘"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "病理組織切片檢查是梅毒確定診斷的最主要工具",
         "D": "可利用過碘酸希夫瓦染色（Periodic Acid-Schiff stain）偵測病理組織切片梅毒螺旋體的存在"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "原蟲（protozoa）",
         "D": "披衣菌（Chlamydia）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "黴菌",
         "D": "基因缺陷"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "B淋巴球",
         "D": "肥胖細胞"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "抗著絲粒抗體（anti-centromere antibody）",
         "D": "抗史密斯抗原抗體（anti-Smith antigen antibody）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "僅②③④",
         "D": "僅①②③"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "肺水腫",
         "D": "下肢水腫"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "濾泡性淋巴瘤（follicular lymphoma）",
         "D": "被套細胞淋巴瘤（mantle cell lymphoma）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "心肌梗塞可造成心因性休克",
         "D": "細菌感染可造成敗血性休克"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "腦轉移（brain metastases）是子宮頸癌末期病人最常見的死因",
         "D": "人類乳突瘤病毒（HPV）疫苗可施打於男性及女性，施打三劑後則有終身的保護力"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "慢性不排卵（chronic anovulation）",
         "D": "肥胖（obesity）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "併發症包含胸膜炎、胸膜腔積膿、肺膿腫及敗血症",
         "D": "病理變化四期依序為：紅色肝變期（red hepatization）、灰色肝變期（gray hepatization）、\n水腫充血期（congestion）、消解期（resolution）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "嗜鉻細胞瘤",
         "D": "小細胞肺癌"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "組織型態可為epithelioid, sarcomatoid, mixed（biphasic），臨床預後以epithelioid較佳",
         "D": "常見的基因突變為CDKN2A增幅（amplification）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "多結節性甲狀腺腫（multinodular goiter）",
         "D": "甲狀腺乳突癌（papillary carcinoma）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "抽菸",
         "D": "動脈硬化"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "冠狀病毒（coronavirus）",
         "D": "呼吸道融合病毒（respiratory syncytial virus）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "③②①",
         "D": "③①②"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "ERBB2",
         "D": "CDKN2A"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "米氏體（Michaelis-Gutmann bodies）",
         "D": "蕭曼小體（Schaumann bodies）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "腦膜瘤（meningioma）好發於成人",
         "D": "髓母細胞瘤（medulloblastoma）好發於兒童"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "ETV::NTRK",
         "D": "PML::RARA"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "多發性的結核性骨髓炎通常發生在免疫力缺乏的人",
         "D": "組織形態特徵為非特異性的急性與慢性發炎，需藉培養才能診斷"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "血管內皮細胞（endothelial cells）",
         "D": "系膜細胞（mesangial cells）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "雌激素（estrogen）",
         "D": "黃體素（progesterone）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "Klebsiella",
         "D": "E. coli"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "小腸的未成熟腸上皮細胞（immature enterocytes）是病毒選擇性感染及破壞的主要對象",
         "D": "造成營養物質吸收不全引起滲透性腹瀉（osmotic diarrhea）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "cyclin D1",
         "D": "PTEN"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "運動神經元疾病（motor neuron disease）－脊髓（spinal cord）",
         "D": "多發性硬化症（multiple sclerosis）－腦部白質（white matter）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]

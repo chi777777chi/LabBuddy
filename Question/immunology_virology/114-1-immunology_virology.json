@@ -19,7 +19,7 @@
         "C": "雙硫鍵",
         "D": "離子鍵"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -32,7 +32,7 @@
         "C": "1：20",
         "D": "20：1"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -45,7 +45,7 @@
         "C": "IL-5",
         "D": "IL-13"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -58,7 +58,7 @@
         "C": "Syk",
         "D": "Lck"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -71,7 +71,7 @@
         "C": "CCR9",
         "D": "CCR6"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -84,7 +84,7 @@
         "C": "A型IELs表現α:β TCR且具有CD8α:α",
         "D": "腸道上皮細胞受刺激時可分泌IL-15活化IELs"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -97,7 +97,7 @@
         "C": "Lysozyme對於革蘭氏陰性菌細胞壁之分解能力比革蘭氏陽性菌更有效",
         "D": "小腸中的Paneth細胞能夠分泌抗菌蛋白酶"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -110,7 +110,7 @@
         "C": "IL-4：抑制IgM、IgG3、IgG1、IgE產生",
         "D": "TGF-β：抑制IgG3、IgG2b、IgA產生"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -123,7 +123,7 @@
         "C": "CD36",
         "D": "CD80"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -136,7 +136,7 @@
         "C": "Interleukin-10（IL-10）",
         "D": "Interleukin-12（IL-12）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -149,7 +149,7 @@
         "C": "其細胞受體也可以辨識CD1呈獻的特定脂質和醣脂質",
         "D": "與人類哮喘（asthma）可能有關"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -162,7 +162,7 @@
         "C": "使用ConA刺激T細胞",
         "D": "一般需要培養3～6天左右"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -175,7 +175,7 @@
         "C": "Caspase assay",
         "D": "3H-thymidine\nincorporation"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -188,7 +188,7 @@
         "C": "混合淋巴球測試（mixed lymphocyte reaction）",
         "D": "紅血球凝集法（hemagglutination）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -201,7 +201,7 @@
         "C": "化學冷光免疫法利用化學反應發光",
         "D": "兩者皆可用光度計測量"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -214,7 +214,7 @@
         "C": "外源凝集素路徑（lectin pathway）",
         "D": "內在路徑（intrinsic pathway）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -227,7 +227,7 @@
         "C": "在患者血清中，CMV專一性IgM含量升高可代表復發及近期感染",
         "D": "CMV可透過胎盤造成胎兒先天性感染，目前仍無疫苗可預防"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -240,7 +240,7 @@
         "C": "①③⑥",
         "D": "②③⑥"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -253,7 +253,7 @@
         "C": "Anti-streptolysin O（ASO）",
         "D": "Anti-DNase B"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -266,7 +266,7 @@
         "C": "Innate lymphoid cells 2（ILC2）",
         "D": "Innate lymphoid cells 3（ILC3）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -279,7 +279,7 @@
         "C": "免疫複合物在肺泡壁中形成",
         "D": "重複暴露在乾草灰塵或黴菌孢子"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -292,7 +292,7 @@
         "C": "IgD",
         "D": "IgE"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -305,7 +305,7 @@
         "C": "第三型",
         "D": "第四型"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -318,7 +318,7 @@
         "C": "全身性硬化症（systemic sclerosis, SS）",
         "D": "多發性骨髓瘤（multiple myeloma, MM）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -331,7 +331,7 @@
         "C": "和血小板減少相關",
         "D": "和習慣性流產相關"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -344,7 +344,7 @@
         "C": "懷孕的狼瘡病人出現 anti-Ro（SS-A）時，其新生兒可能會罹患心臟疾病",
         "D": "SLE病人血中有anti-ribosomal P存在時，則出現雷諾現象（Raynaud phenomenon）之比例會增加"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -357,7 +357,7 @@
         "C": "③④",
         "D": "④⑤"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -370,7 +370,7 @@
         "C": "（NZB × NZW）F\n1",
         "D": "AA（autoimmune arthritis）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -383,7 +383,7 @@
         "C": "C反應蛋白（C-reactive protein, CRP）",
         "D": "人類白血球組織抗原分型（HLA typing）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -396,7 +396,7 @@
         "C": "因為誘發Th17細胞，而生成免疫耐受區",
         "D": "植入此區的移植物，不易產生免疫反應"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -409,7 +409,7 @@
         "C": "預先存在於移植物的免疫細胞排斥受贈者的組織",
         "D": "受贈者的T細胞引起延遲性過敏"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -422,7 +422,7 @@
         "C": "Isograft",
         "D": "Allograft"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -435,7 +435,7 @@
         "C": "Cyclosporin A",
         "D": "Rapamycin"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -448,7 +448,7 @@
         "C": "該技術已有FDA核准上市",
         "D": "CAR-T治療不會引起發炎反應"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -461,7 +461,7 @@
         "C": "Humanized antibody",
         "D": "Human antibody"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -474,7 +474,7 @@
         "C": "腫瘤細胞降低其CD80的表現量",
         "D": "腫瘤細胞降低其PD-L1的表現量"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -487,7 +487,7 @@
         "C": "流感疫苗",
         "D": "白喉百日咳破傷風"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -500,7 +500,7 @@
         "C": "小兒痲痺沙克疫苗",
         "D": "德國麻疹疫苗"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -513,7 +513,7 @@
         "C": "IL-17／IL-23",
         "D": "IL-12／IL-23"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -526,7 +526,7 @@
         "C": "Real-time polymerase chain reaction",
         "D": "Flow cytometry"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -539,7 +539,7 @@
         "C": "可同時偵測單一病毒多個蛋白質的抗體反應",
         "D": "HSV-1/2主要用UL42、UL29、UL5、UL52等蛋白當WB抗原"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -552,7 +552,7 @@
         "C": "猴痘病毒之DNA",
         "D": "B型肝炎病毒之cccDNA"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -565,7 +565,7 @@
         "C": "登革熱疫苗",
         "D": "德國麻疹疫苗"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -578,7 +578,7 @@
         "C": "PCR跑35 cycles時產物放大2×35倍",
         "D": "TaqMan系統中的DNA polymerase具有exonuclease活性"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -591,7 +591,7 @@
         "C": "1.5×105",
         "D": "1.5×106"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -604,7 +604,7 @@
         "C": "當檢測為HI＞40即代表陰性結果",
         "D": "流感病毒感染恢復期患者的血清呈陽性反應"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -617,7 +617,7 @@
         "C": "一般以HIV的gp120抗原及抗體作為快速診斷試劑之標的",
         "D": "對於急性高風險暴露族群應以此檢測取代核酸篩檢"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -630,7 +630,7 @@
         "C": "C型肝炎病毒感染較A型肝炎病毒感染容易變成慢性感染",
         "D": "D型肝炎病毒感染與造成嚴重猛爆性肝炎症狀無關"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -643,7 +643,7 @@
         "C": "以同一種病毒感染不同細胞時，出現細胞病變（cytopathic effect）的時間大致相同",
         "D": "可用一種細胞株培養出所有臨床常見的病毒"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -656,7 +656,7 @@
         "C": "靈敏度通常超過90％",
         "D": "通常僅能區分A型及B型，無法區分亞型（subtype）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -669,7 +669,7 @@
         "C": "單純疱疹病毒",
         "D": "呼吸道融合病毒"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -682,7 +682,7 @@
         "C": "根據卜瓦松分布（Poisson distributions）以定量病毒核酸",
         "D": "通常定量病毒的準確度低於即時聚合酶鏈反應（real-time PCR）"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -695,7 +695,7 @@
         "C": "Direct acting antivirals（DAAs）可治癒大於90％的感染者",
         "D": "DAAs的標的包括NS3/4A polymerase及NS5B protease"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -708,7 +708,7 @@
         "C": "臨床上不會與其他呼吸道病毒共同感染",
         "D": "可針對具臨床症狀或有流行病學危險因子者進行real-time RT-PCR篩檢"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -721,7 +721,7 @@
         "C": "外套膜醣蛋白（envelope glycoprotein）",
         "D": "DNA聚合酶（polymerase）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -734,7 +734,7 @@
         "C": "感染後之主要症狀為突然發燒、肺水腫、呼吸窘迫和低血壓",
         "D": "容易從囓齒動物糞便經由空氣傳播"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -747,7 +747,7 @@
         "C": "bovine spongiform encephalopathy（mad cow disease）",
         "D": "erythema infectiosum（fifth disease）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -760,7 +760,7 @@
         "C": "單純疱疹病毒第二型（herpes simplex virus type 2）",
         "D": "疱疹病毒第六型（herpesvirus 6）"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -773,7 +773,7 @@
         "C": "可在雞胚胎蛋複製",
         "D": "痘苗病毒（vaccinia virus）可用來做為疫苗以防治天花"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -786,7 +786,7 @@
         "C": "varicella-zoster virus",
         "D": "influenza virus"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -799,7 +799,7 @@
         "C": "human herpesvirus 3",
         "D": "human herpesvirus 8"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -812,7 +812,7 @@
         "C": "以分離病毒為最佳檢測方法／二者致病性皆強",
         "D": "以PCR為最佳檢測方法／二者致病性皆強"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -825,7 +825,7 @@
         "C": "95％的女性在感染後均能檢測出病毒DNA及特異性抗體反應",
         "D": "Hybrid Capture Ⅱ主要用DNA探針來偵測HPV的存在"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -838,7 +838,7 @@
         "C": "與HHV-6同屬於betaherpesvirus",
         "D": "可感染淋巴球"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -851,7 +851,7 @@
         "C": "主要潛伏於B細胞中",
         "D": "治療藥物包括acyclovir及famciclovir"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -864,7 +864,7 @@
         "C": "過去感染B型肝炎病毒並曾施打過B型肝炎病毒疫苗",
         "D": "從未感染B型肝炎病毒但曾施打過B型肝炎病毒疫苗"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -877,7 +877,7 @@
         "C": "SFTSV病毒每段基因只編碼一個病毒蛋白",
         "D": "感染SFTSV也可能出現肝指數上升及器官衰竭等症狀"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -890,7 +890,7 @@
         "C": "利用hepatitis B virus（HBV）所帶之polymerase進行複製",
         "D": "帶有anti-HBs Ab的健康人仍可能被HDV感染"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -903,7 +903,7 @@
         "C": "成熟病毒顆粒不具有脂質外套膜（envelope）",
         "D": "電子顯微鏡下的病毒形態可能為球狀（spherical）或絲狀（filamentous）"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -916,7 +916,7 @@
         "C": "rhinovirus A不易以細胞培養分離",
         "D": "適合在33℃生長"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -929,7 +929,7 @@
         "C": "臨床上可以抗原快篩作為初步篩檢",
         "D": "可以RT-PCR進行亞型檢測"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -942,7 +942,7 @@
         "C": "dengue virus",
         "D": "norovirus"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -955,7 +955,7 @@
         "C": "只會感染人類",
         "D": "有次單位疫苗可用於預防"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -968,7 +968,7 @@
         "C": "主要是以蚊蟲叮咬傳播",
         "D": "造成的出血熱，目前以支持性療法為主"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -981,7 +981,7 @@
         "C": "日本腦炎病毒（Japanese encephalitis virus）",
         "D": "黃熱病毒（yellow fever virus）"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     },
     {
@@ -994,7 +994,7 @@
         "C": "通常不會造成長時間的viremia",
         "D": "自然感染後可終身免疫"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1007,7 +1007,7 @@
         "C": "non-nucleoside reverse transcriptase inhibitors（nNRTI）對於HIV-2的治療效果差",
         "D": "病毒Gag-Pol與Gag蛋白產物的切割，由病毒蛋白酶負責"
       },
-      "answer": "",
+      "answer": "A",
       "bonus": false
     },
     {
@@ -1020,7 +1020,7 @@
         "C": "症狀輕微，不會造成死亡",
         "D": "可在感染初期的人類鼻咽分泌物測到病毒"
       },
-      "answer": "",
+      "answer": "C",
       "bonus": false
     },
     {
@@ -1033,7 +1033,7 @@
         "C": "yellow fever virus",
         "D": "dengue virus"
       },
-      "answer": "",
+      "answer": "D",
       "bonus": false
     },
     {
@@ -1046,7 +1046,7 @@
         "C": "病毒會感染中樞神經系統",
         "D": "目前用於人類的疫苗為去活化病毒疫苗"
       },
-      "answer": "",
+      "answer": "B",
       "bonus": false
     }
   ]
