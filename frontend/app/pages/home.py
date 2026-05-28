@@ -1,6 +1,7 @@
 import reflex as rx
 from ..state.auth_state import AuthState
 from ..state.teacher_state import TeacherState
+from ..state.analytics_state import AnalyticsState
 
 
 def nav_bar() -> rx.Component:
@@ -149,7 +150,7 @@ def menu_card(icon: str, title: str, description: str, route: str) -> rx.Compone
     )
 
 
-@rx.page(route="/home", on_load=AuthState.load_user)
+@rx.page(route="/home", on_load=[AuthState.load_user, AnalyticsState.load_analytics])
 def home_page() -> rx.Component:
     return rx.box(
         nav_bar(),
