@@ -1,7 +1,8 @@
-from groq import AsyncGroq
+import google.generativeai as genai
 from core.config import settings
 
-_client = AsyncGroq(api_key=settings.groq_api_key)
+genai.configure(api_key=settings.gemini_api_key)
+_model = genai.GenerativeModel("gemini-1.5-flash")
 
 _PROMPTS = {
     1: """你是醫檢師國考的輔導老師。學生正在作答下面這題，請給出【第一層提示】。
@@ -122,11 +123,8 @@ async def get_weakness_analysis_with_time(
         time_stats="\n".join(time_lines),
         slow_tags="\n".join(slow_tag_lines),
     )
-    response = await _client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.choices[0].message.content
+    response = await _model.generate_content_async(prompt)
+    return response.text
 
 
 _EXPLAIN_PROMPT = """你是醫檢師國考的專業解析老師。請根據學生的作答狀況與學習背景，提供這道題的個人化解析。
@@ -179,11 +177,8 @@ async def get_explain(
         chosen_display=chosen_display,
         weakness_summary=weakness_summary,
     )
-    response = await _client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.choices[0].message.content
+    response = await _model.generate_content_async(prompt)
+    return response.text
 
 
 async def get_hint(content: str, option_a: str, option_b: str, option_c: str, option_d: str, level: int = 1) -> str:
@@ -194,8 +189,5 @@ async def get_hint(content: str, option_a: str, option_b: str, option_c: str, op
         option_c=option_c,
         option_d=option_d,
     )
-    response = await _client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.choices[0].message.content
+    response = await _model.generate_content_async(prompt)
+    return response.text
