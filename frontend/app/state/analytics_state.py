@@ -82,7 +82,7 @@ class AnalyticsState(rx.State):
             return
         auth = await self.get_state(AuthState)
         if not auth.token:
-            return rx.redirect("/")
+            return
         self.is_loading = True
         self.has_loaded = False
         self.error_msg = ""
