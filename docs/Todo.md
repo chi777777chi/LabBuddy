@@ -177,16 +177,15 @@
   - [ ] `curl "http://127.0.0.1:8000/analytics/me?token=<token>"` 確認 API 正常回傳
   - [ ] 瀏覽器 F12 → Console 看有無 JS 錯誤
 
-### Bug 3：PDF 匯出壞掉
+### Bug 3：PDF 匯出壞掉 ✅ 已修復
 - 症狀：手機 `ERR_CONNECTION_REFUSED`；電腦跳至 `http://localhost:8000/...`
-- 根本原因：export URL 寫死 `localhost:8000`，沒走 nginx
-- 目標：**使用者不需安裝任何套件，點按鈕直接下載 PDF（伺服器端產生後回傳）**
-- [ ] 查 `result.py` / `history.py` 的 PDF 按鈕，確認 URL 組法
-- [ ] 查 `backend/api/routes/exam.py` 的 export-pdf endpoint，確認 PDF 產生方式
-- [ ] 確認 server 上 PDF 套件是否安裝：`pip list | grep -i pdf`
-- [ ] 修正前端：export URL 改走 nginx 路徑（`/api/exam/.../export-pdf?token=...`）
-- [ ] 若 weasyprint 有系統依賴問題，改用純 Python 的 reportlab 或 fpdf2
-- [ ] 手機 + 電腦各測試一次，確認能直接下載
+- 根本原因 1：export URL 使用 `BACKEND_URL`（`localhost:8000`），瀏覽器無法連到 server 內部位址
+- 根本原因 2：server 缺少支援 TrueType outlines 的 CJK 字型，導致中文顯示為方塊
+- [x] `auth_state.py` 新增 `BACKEND_PUBLIC_URL`（從環境變數讀取，server 由 systemd 注入 `http://151.145.71.45/api`）
+- [x] `exam_state.py` / `history_state.py` PDF redirect 改用 `BACKEND_PUBLIC_URL`
+- [x] server 安裝 `fonts-wqy-microhei`（TrueType outlines，reportlab 相容）
+- [x] `backend/utils/pdf.py` 更新字型偵測路徑，加入 WQY 字型；`.ttc` 檔案改用 `subfontIndex=0` 載入
+- 注意：Noto CJK（`fonts-noto-cjk`）使用 PostScript outlines（CFF），reportlab 不支援，不可用
 
 ### Bug 4：classify_tags.py 解析失敗
 - 症狀：每批 15 題全部 `ParseFail`，ok=0 fail=15
