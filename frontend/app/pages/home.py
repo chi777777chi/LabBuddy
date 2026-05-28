@@ -69,7 +69,7 @@ def nav_bar() -> rx.Component:
         # 手機導覽（initial 顯示，sm 以上隱藏）
         rx.hstack(
             rx.heading(
-                "醫檢師練習平台",
+                "醫檢師國考練習平台",
                 size="3",
                 on_click=rx.redirect("/home"),
                 cursor="pointer",

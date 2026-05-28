@@ -183,16 +183,18 @@ async def get_my_analytics(
 
     # ── 7. AI 弱點 + 時間分析 ─────────────────────────────────────
     has_data = any(s["total_answered"] > 0 for s in subject_stats)
+    ai_analysis = ""
     if has_data:
-        ai_analysis = await get_weakness_analysis_with_time(
-            subject_stats=subject_stats,
-            score_trend=score_trend,
-            weak_questions=weak_questions,
-            time_stats=time_stats,
-            slow_tags=slow_tags,
-        )
-    else:
-        ai_analysis = ""
+        try:
+            ai_analysis = await get_weakness_analysis_with_time(
+                subject_stats=subject_stats,
+                score_trend=score_trend,
+                weak_questions=weak_questions,
+                time_stats=time_stats,
+                slow_tags=slow_tags,
+            )
+        except Exception:
+            ai_analysis = ""
 
     return {
         "subject_stats": subject_stats,

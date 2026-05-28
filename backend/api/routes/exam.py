@@ -89,7 +89,8 @@ def start_exam(
     # ── 抽題邏輯 ──
     base_q = db.query(Question).filter(Question.subject_id == body.subject_id)
     if body.difficulty and body.difficulty != "all":
-        base_q = base_q.filter(Question.difficulty == body.difficulty)
+        if base_q.filter(Question.difficulty == body.difficulty).limit(1).first():
+            base_q = base_q.filter(Question.difficulty == body.difficulty)
 
     if body.mode == "single_full":
         if not body.year or not body.sitting:
