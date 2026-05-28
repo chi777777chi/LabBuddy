@@ -39,9 +39,29 @@ def _migrate_classes_announcement():
             conn.commit()
 
 
+def _migrate_exam_sessions_columns():
+    """SQLite: 對舊 DB 補上 exam_sessions 中可能缺少的欄位。"""
+    with engine.connect() as conn:
+        rows = conn.execute(text("PRAGMA table_info(exam_sessions)")).fetchall()
+        cols = [row[1] for row in rows]
+        if "instant_review" not in cols:
+            conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN instant_review BOOLEAN DEFAULT 1"))
+            conn.commit()
+        if "shuffle_options" not in cols:
+            conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN shuffle_options BOOLEAN DEFAULT 0"))
+            conn.commit()
+        if "save_to_history" not in cols:
+            conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN save_to_history BOOLEAN DEFAULT 1"))
+            conn.commit()
+        if "timed" not in cols:
+            conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN timed BOOLEAN DEFAULT 0"))
+            conn.commit()
+
+
 _migrate_user_is_active()
 _migrate_questions_tags()
 _migrate_classes_announcement()
+_migrate_exam_sessions_columns()
 
 app = FastAPI(title="醫檢師國考題庫平台 API", version="0.1.0")
 

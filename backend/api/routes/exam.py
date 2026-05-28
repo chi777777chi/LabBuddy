@@ -276,10 +276,10 @@ def submit_answer(
     answer.time_spent_seconds = body.time_spent_seconds
     db.commit()
 
-    resp = {"is_correct": is_correct}
-    if session.instant_review:
-        resp["correct_answer"] = q_meta["effective_answer"]
-    return resp
+    return {
+        "is_correct": is_correct,
+        "correct_answer": q_meta["effective_answer"],
+    }
 
 
 # ── GET /exam/history ────────────────────────────────────────
