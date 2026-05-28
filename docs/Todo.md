@@ -220,6 +220,21 @@
 - [ ] 知識點標籤維度：等 classify_tags 跑完後加入 prompt
 - [ ] 考慮 cache：同一 question_id + 使用者的解析可暫存，避免重複呼叫
 
+### Bug 5：HTTPS 升級後登入與 WebSocket 全面失效 ✅ 已修復（2026-05-28）
+- 症狀：
+  1. Google 登入後跳到 `http://labbuddy.duckdns.org/callback/?jwt=...`，nginx 回 404
+  2. 登入成功後 WebSocket 連線失敗：`Cannot connect to server at ws://151.145.71.45/_event`
+- 根本原因：
+  1. `backend/.env` 的 `GOOGLE_REDIRECT_URI` 和 `FRONTEND_URL` 仍指向 `duckdns.org`（HTTP），但 SSL cert 只有 `dpdns.org`
+  2. 前端登入按鈕用 `rx.link`，React Router 把同源 URL 當 client-side route 處理，導致 Reflex 回 404
+  3. `REFLEX_API_URL` 未設定，Reflex 編譯時嵌入 server IP（`151.145.71.45`），瀏覽器用 `ws://`（非加密）連線
+- 修復：
+  - [x] `backend/.env`：`GOOGLE_REDIRECT_URI` 和 `FRONTEND_URL` 統一改為 `https://labbuddy.dpdns.org`
+  - [x] `frontend/app/pages/login.py`：登入按鈕改用 `rx.call_script("window.location.href=...")`，繞過 React Router
+  - [x] 前端重啟時帶入 `REFLEX_API_URL=https://labbuddy.dpdns.org`，WebSocket 改走 `wss://`（加密）
+  - [x] Google OAuth Console 新增 `https://labbuddy.dpdns.org/api/auth/callback`
+- 注意：統一使用 `https://labbuddy.dpdns.org`，`duckdns.org` 僅作 nginx alias，但不用於 OAuth
+
 **已知問題與 Background（2026-05-28）：**
 - Gemini free tier 每日配額（RPD）容易被耗盡：
   - 根本原因：`/analytics/me` 每次載入都打一次 AI，而 home page 有預先載入 analytics
