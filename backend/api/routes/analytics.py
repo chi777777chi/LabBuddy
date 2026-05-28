@@ -1,5 +1,4 @@
 from collections import defaultdict
-from datetime import datetime, timedelta
 
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
@@ -8,9 +7,6 @@ from db.database import get_db
 from db.models import Answer, ExamSession, Question, QuestionStats, Subject, User
 from core.security import decode_token
 from services.ai_service import get_weakness_analysis_with_time
-
-_ai_cache: dict[str, tuple[str, datetime]] = {}
-_AI_CACHE_TTL = timedelta(hours=1)
 
 router = APIRouter(prefix="/analytics", tags=["analytics"])
 
@@ -186,13 +182,15 @@ async def get_my_analytics(
             trend_direction = "stable"
 
     # ── 7. AI 弱點 + 時間分析 ─────────────────────────────────────
-    has_data = any(s["total_answered"] > 0 for s in subject_stats)
+    total_answered = sum(s["total_answered"] for s in subject_stats)
+    has_data = total_answered > 0
     ai_analysis = ""
     if has_data:
-        cache_key = str(user.id)
-        cached = _ai_cache.get(cache_key)
-        if cached and datetime.utcnow() - cached[1] < _AI_CACHE_TTL:
-            ai_analysis = cached[0]
+        if (
+            user.ai_analysis_text
+            and user.ai_analysis_answer_count == total_answered
+        ):
+            ai_analysis = user.ai_analysis_text
         else:
             try:
                 ai_analysis = await get_weakness_analysis_with_time(
@@ -202,9 +200,11 @@ async def get_my_analytics(
                     time_stats=time_stats,
                     slow_tags=slow_tags,
                 )
-                _ai_cache[cache_key] = (ai_analysis, datetime.utcnow())
+                user.ai_analysis_text = ai_analysis
+                user.ai_analysis_answer_count = total_answered
+                db.commit()
             except Exception:
-                ai_analysis = ""
+                ai_analysis = user.ai_analysis_text or ""
 
     return {
         "subject_stats": subject_stats,

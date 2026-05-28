@@ -16,6 +16,8 @@ class User(Base):
     role: Mapped[str] = mapped_column(String, default="student")  # student / teacher / admin
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    ai_analysis_text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    ai_analysis_answer_count: Mapped[int] = mapped_column(Integer, default=0)
 
     sessions: Mapped[list["ExamSession"]] = relationship(back_populates="user")
 

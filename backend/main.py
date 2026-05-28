@@ -39,6 +39,19 @@ def _migrate_classes_announcement():
             conn.commit()
 
 
+def _migrate_users_ai_cache():
+    """SQLite: 對舊 DB 補上 users 的 AI 分析快取欄位。"""
+    with engine.connect() as conn:
+        rows = conn.execute(text("PRAGMA table_info(users)")).fetchall()
+        cols = [row[1] for row in rows]
+        if "ai_analysis_text" not in cols:
+            conn.execute(text("ALTER TABLE users ADD COLUMN ai_analysis_text TEXT"))
+            conn.commit()
+        if "ai_analysis_answer_count" not in cols:
+            conn.execute(text("ALTER TABLE users ADD COLUMN ai_analysis_answer_count INTEGER DEFAULT 0"))
+            conn.commit()
+
+
 def _migrate_exam_sessions_columns():
     """SQLite: 對舊 DB 補上 exam_sessions 中可能缺少的欄位。"""
     with engine.connect() as conn:
@@ -62,6 +75,7 @@ _migrate_user_is_active()
 _migrate_questions_tags()
 _migrate_classes_announcement()
 _migrate_exam_sessions_columns()
+_migrate_users_ai_cache()
 
 app = FastAPI(title="醫檢師國考題庫平台 API", version="0.1.0")
 
