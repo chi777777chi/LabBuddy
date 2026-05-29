@@ -359,7 +359,7 @@ def analytics_page() -> rx.Component:
                         rx.vstack(
                             rx.icon("wifi-off", size=40, color=rx.color("red", 7)),
                             rx.text(AnalyticsState.error_msg, size="3", color=rx.color("red", 9)),
-                            rx.button("重新載入", on_click=AnalyticsState.load_analytics, color_scheme="blue", size="2"),
+                            rx.button("重新載入", on_click=AuthState.init_analytics, color_scheme="blue", size="2"),
                             spacing="4",
                             align="center",
                             padding_top="20",

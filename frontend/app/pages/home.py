@@ -150,7 +150,7 @@ def menu_card(icon: str, title: str, description: str, route: str) -> rx.Compone
     )
 
 
-@rx.page(route="/home", on_load=[AuthState.load_user, AnalyticsState.load_analytics])
+@rx.page(route="/home", on_load=[AuthState.load_user, AuthState.init_analytics])
 def home_page() -> rx.Component:
     return rx.box(
         nav_bar(),
