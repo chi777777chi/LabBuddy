@@ -39,25 +39,35 @@ class AuthState(rx.State):
                 return rx.redirect("/admin")
         return rx.redirect("/home")
 
+    @rx.event(background=True)
     async def load_user(self):
         """主選單頁 on_load：用 token 向後端拿使用者資料。"""
-        if not self.token:
-            return rx.redirect("/")
-        async with httpx.AsyncClient() as client:
-            resp = await client.get(
-                f"{BACKEND_URL}/users/me",
-                params={"token": self.token},
-            )
+        async with self:
+            token = self.token
+        if not token:
+            yield rx.redirect("/")
+            return
+        try:
+            async with httpx.AsyncClient() as client:
+                resp = await client.get(
+                    f"{BACKEND_URL}/users/me",
+                    params={"token": token},
+                )
+        except Exception:
+            return
         if resp.status_code == 401:
-            self.token = ""
-            return rx.redirect("/")
+            async with self:
+                self.token = ""
+            yield rx.redirect("/")
+            return
         if resp.status_code != 200:
             return
         data = resp.json()
-        self.user_name = data["name"]
-        self.user_email = data["email"]
-        self.user_avatar = data.get("avatar_url", "")
-        self.user_role = data.get("role", "student")
+        async with self:
+            self.user_name = data["name"]
+            self.user_email = data["email"]
+            self.user_avatar = data.get("avatar_url", "")
+            self.user_role = data.get("role", "student")
 
     def logout(self):
         self.token = ""
