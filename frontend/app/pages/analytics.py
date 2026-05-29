@@ -16,9 +16,17 @@ def subject_card(s: dict) -> rx.Component:
                 ),
                 size="6",
                 color=rx.cond(
-                    s["accuracy_rate"] != None,
-                    rx.color(s["color"], 9),
+                    s["accuracy_rate"] == None,
                     rx.color("gray", 7),
+                    rx.cond(
+                        s["color"] == "red",
+                        rx.color("red", 9),
+                        rx.cond(
+                            s["color"] == "orange",
+                            rx.color("orange", 9),
+                            rx.color("green", 9),
+                        ),
+                    ),
                 ),
             ),
             rx.text(
@@ -134,7 +142,15 @@ def time_efficiency_card() -> rx.Component:
                             rx.heading(
                                 AnalyticsState.time_avg_seconds.to_string() + " 秒",
                                 size="6",
-                                color=rx.color(AnalyticsState.time_speed_color, 9),
+                                color=rx.cond(
+                                    AnalyticsState.time_speed_color == "red",
+                                    rx.color("red", 9),
+                                    rx.cond(
+                                        AnalyticsState.time_speed_color == "orange",
+                                        rx.color("orange", 9),
+                                        rx.color("green", 9),
+                                    ),
+                                ),
                             ),
                             rx.text(
                                 "速度：", AnalyticsState.time_speed_label,

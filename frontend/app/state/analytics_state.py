@@ -3,7 +3,7 @@ import reflex as rx
 from .auth_state import AuthState, BACKEND_URL
 
 
-class AnalyticsState(rx.State):
+class AnalyticsState(AuthState):
     subject_stats: list[dict] = []
     score_trend: list[dict] = []
     weak_questions: list[dict] = []
@@ -79,13 +79,11 @@ class AnalyticsState(rx.State):
         return [s for s in self.subject_stats if s.get("color") == "green" and s.get("total_answered", 0) > 0]
 
     async def load_analytics(self):
-        """Step 1 (regular handler): reads auth token, sets up loading state, triggers background fetch."""
         if self.is_loading or (self.has_loaded and not self.error_msg):
             return
-        auth = await self.get_state(AuthState)
-        if not auth.token:
+        if not self.token:
             return
-        self._bg_token = auth.token
+        self._bg_token = self.token
         self.is_loading = True
         self.has_loaded = False
         self.error_msg = ""
