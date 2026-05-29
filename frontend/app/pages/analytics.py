@@ -44,30 +44,7 @@ def subject_card(s: dict) -> rx.Component:
 
 
 def score_trend_chart() -> rx.Component:
-    return rx.cond(
-        AnalyticsState.score_trend.length() > 0,
-        rx.vstack(
-            rx.heading("成績趨勢", size="4"),
-            rx.recharts.line_chart(
-                rx.recharts.line(
-                    data_key="percentage",
-                    stroke=rx.color("blue", 9),
-                    stroke_width=2,
-                    dot=True,
-                ),
-                rx.recharts.x_axis(data_key="date", tick={"fontSize": 11}),
-                rx.recharts.y_axis(domain=[0, 100], tick={"fontSize": 11}, unit="%"),
-                rx.recharts.cartesian_grid(stroke_dasharray="3 3"),
-                rx.recharts.graphing_tooltip(),
-                data=AnalyticsState.score_trend,
-                width="100%",
-                height=220,
-            ),
-            width="100%",
-            spacing="3",
-        ),
-        rx.fragment(),
-    )
+    return rx.fragment()
 
 
 def weak_questions_list() -> rx.Component:
