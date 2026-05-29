@@ -374,7 +374,7 @@ def analytics_page() -> rx.Component:
                             rx.button(
                                 rx.icon("house", size=15),
                                 "回主選單",
-                                on_click=rx.redirect("/home"),
+                                on_click=rx.call_script("window.location.href='/home'"),
                                 variant="soft",
                                 color_scheme="gray",
                                 size="2",
@@ -382,7 +382,7 @@ def analytics_page() -> rx.Component:
                             rx.button(
                                 rx.icon("pencil", size=15),
                                 "開始練習",
-                                on_click=rx.redirect("/exam-setup"),
+                                on_click=rx.call_script("window.location.href='/exam-setup'"),
                                 variant="soft",
                                 color_scheme="blue",
                                 size="2",
@@ -390,7 +390,7 @@ def analytics_page() -> rx.Component:
                             rx.button(
                                 rx.icon("bookmark-x", size=15),
                                 "錯題複習",
-                                on_click=rx.redirect("/wrong-review"),
+                                on_click=rx.call_script("window.location.href='/wrong-review'"),
                                 variant="soft",
                                 color_scheme="red",
                                 size="2",
@@ -411,7 +411,7 @@ def analytics_page() -> rx.Component:
                             rx.text("完成幾場測驗後，這裡會顯示你的學習分析。", color=rx.color("gray", 9), size="3"),
                             rx.button(
                                 "前往練習",
-                                on_click=rx.redirect("/exam-setup"),
+                                on_click=rx.call_script("window.location.href='/exam-setup'"),
                                 color_scheme="blue",
                                 size="3",
                             ),

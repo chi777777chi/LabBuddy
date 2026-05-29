@@ -10,7 +10,7 @@ def teacher_nav_bar() -> rx.Component:
             rx.heading(
                 "老師後台",
                 size="4",
-                on_click=rx.redirect("/teacher"),
+                on_click=rx.call_script("window.location.href='/teacher'"),
                 cursor="pointer",
             ),
             spacing="2",
@@ -21,7 +21,7 @@ def teacher_nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("house", size=15),
                 "回主選單",
-                on_click=rx.redirect("/home"),
+                on_click=rx.call_script("window.location.href='/home'"),
                 size="2",
                 variant="ghost",
                 color_scheme="blue",

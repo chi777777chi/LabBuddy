@@ -248,7 +248,7 @@ def history_page() -> rx.Component:
                     rx.button(
                         rx.icon("arrow-left", size=16),
                         "返回",
-                        on_click=rx.redirect("/home"),
+                        on_click=rx.call_script("window.location.href='/home'"),
                         variant="ghost",
                         color_scheme="gray",
                         size="2",

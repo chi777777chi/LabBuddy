@@ -99,14 +99,14 @@ def profile_page() -> rx.Component:
                         rx.button(
                             rx.icon("pencil", size=15),
                             "開始練習",
-                            on_click=rx.redirect("/exam-setup"),
+                            on_click=rx.call_script("window.location.href='/exam-setup'"),
                             color_scheme="blue",
                             size="2",
                         ),
                         rx.button(
                             rx.icon("clock", size=15),
                             "歷史紀錄",
-                            on_click=rx.redirect("/history"),
+                            on_click=rx.call_script("window.location.href='/history'"),
                             variant="soft",
                             color_scheme="gray",
                             size="2",
@@ -114,7 +114,7 @@ def profile_page() -> rx.Component:
                         rx.button(
                             rx.icon("bookmark-x", size=15),
                             "錯題複習",
-                            on_click=rx.redirect("/wrong-review"),
+                            on_click=rx.call_script("window.location.href='/wrong-review'"),
                             variant="soft",
                             color_scheme="gray",
                             size="2",
@@ -122,7 +122,7 @@ def profile_page() -> rx.Component:
                         rx.button(
                             rx.icon("bar-chart-2", size=15),
                             "學習分析",
-                            on_click=rx.redirect("/analytics"),
+                            on_click=rx.call_script("window.location.href='/analytics'"),
                             variant="soft",
                             color_scheme="violet",
                             size="2",
@@ -130,7 +130,7 @@ def profile_page() -> rx.Component:
                         rx.button(
                             rx.icon("house", size=15),
                             "回主選單",
-                            on_click=rx.redirect("/home"),
+                            on_click=rx.call_script("window.location.href='/home'"),
                             variant="soft",
                             color_scheme="gray",
                             size="2",

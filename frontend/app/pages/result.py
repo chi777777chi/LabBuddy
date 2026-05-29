@@ -207,14 +207,14 @@ def result_page() -> rx.Component:
                             rx.button(
                                 rx.icon("clock", size=16),
                                 "歷史紀錄",
-                                on_click=rx.redirect("/history"),
+                                on_click=rx.call_script("window.location.href='/history'"),
                                 variant="soft",
                                 color_scheme="violet",
                             ),
                             rx.button(
                                 rx.icon("home", size=16),
                                 "回主選單",
-                                on_click=rx.redirect("/home"),
+                                on_click=rx.call_script("window.location.href='/home'"),
                                 variant="soft",
                                 color_scheme="gray",
                             ),

@@ -9,7 +9,7 @@ def nav_bar() -> rx.Component:
         rx.heading(
             "醫檢師國考練習平台",
             size={"initial": "3", "sm": "4"},
-            on_click=rx.redirect("/home"),
+            on_click=rx.call_script("window.location.href='/home'"),
             cursor="pointer",
         ),
         rx.spacer(),
@@ -17,7 +17,7 @@ def nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("bar-chart-2", size=15),
                 rx.text("學習分析", display={"initial": "none", "sm": "block"}),
-                on_click=rx.redirect("/analytics"),
+                on_click=rx.call_script("window.location.href='/analytics'"),
                 size="2",
                 variant="ghost",
                 color_scheme="violet",
@@ -27,7 +27,7 @@ def nav_bar() -> rx.Component:
                 rx.button(
                     rx.icon("graduation-cap", size=15),
                     rx.text("老師後台", display={"initial": "none", "sm": "block"}),
-                    on_click=rx.redirect("/teacher"),
+                    on_click=rx.call_script("window.location.href='/teacher'"),
                     size="2",
                     variant="ghost",
                     color_scheme="violet",
@@ -39,7 +39,7 @@ def nav_bar() -> rx.Component:
                 rx.button(
                     rx.icon("shield", size=15),
                     rx.text("管理員", display={"initial": "none", "sm": "block"}),
-                    on_click=rx.redirect("/admin"),
+                    on_click=rx.call_script("window.location.href='/admin'"),
                     size="2",
                     variant="ghost",
                     color_scheme="red",
@@ -142,7 +142,7 @@ def menu_card(icon: str, title: str, description: str, route: str) -> rx.Compone
             spacing="3",
             padding="4",
         ),
-        on_click=rx.redirect(route),
+        on_click=rx.call_script(f"window.location.href='{route}'"),
         cursor="pointer",
         _hover={"box_shadow": "0 4px 16px rgba(0,0,0,0.10)"},
         transition="box-shadow 0.2s",

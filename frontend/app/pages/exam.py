@@ -462,7 +462,7 @@ def exam_page() -> rx.Component:
         rx.center(
             rx.vstack(
                 rx.text("沒有進行中的考試"),
-                rx.button("回設定頁", on_click=rx.redirect("/exam-setup")),
+                rx.button("回設定頁", on_click=rx.call_script("window.location.href='/exam-setup'")),
                 align="center",
                 spacing="4",
                 padding="8",

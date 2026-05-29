@@ -10,7 +10,7 @@ def admin_nav_bar() -> rx.Component:
             rx.heading(
                 "管理員後台",
                 size="4",
-                on_click=rx.redirect("/admin"),
+                on_click=rx.call_script("window.location.href='/admin'"),
                 cursor="pointer",
             ),
             spacing="2",
@@ -21,7 +21,7 @@ def admin_nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("layout-dashboard", size=15),
                 "總覽",
-                on_click=rx.redirect("/admin"),
+                on_click=rx.call_script("window.location.href='/admin'"),
                 size="2",
                 variant="ghost",
                 color_scheme="gray",
@@ -29,7 +29,7 @@ def admin_nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("users", size=15),
                 "使用者",
-                on_click=rx.redirect("/admin/users"),
+                on_click=rx.call_script("window.location.href='/admin/users'"),
                 size="2",
                 variant="ghost",
                 color_scheme="gray",
@@ -37,7 +37,7 @@ def admin_nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("book-open", size=15),
                 "題庫",
-                on_click=rx.redirect("/admin/questions"),
+                on_click=rx.call_script("window.location.href='/admin/questions'"),
                 size="2",
                 variant="ghost",
                 color_scheme="gray",
@@ -45,7 +45,7 @@ def admin_nav_bar() -> rx.Component:
             rx.button(
                 rx.icon("house", size=15),
                 "回主選單",
-                on_click=rx.redirect("/home"),
+                on_click=rx.call_script("window.location.href='/home'"),
                 size="2",
                 variant="ghost",
                 color_scheme="blue",
@@ -110,7 +110,7 @@ def nav_card(icon: str, title: str, description: str, route: str, color: str) ->
             spacing="3",
             padding="4",
         ),
-        on_click=rx.redirect(route),
+        on_click=rx.call_script(f"window.location.href='{route}'"),
         cursor="pointer",
         _hover={"box_shadow": "0 4px 16px rgba(0,0,0,0.10)"},
         transition="box-shadow 0.2s",
