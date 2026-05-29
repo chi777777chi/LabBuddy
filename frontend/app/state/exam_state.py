@@ -627,10 +627,10 @@ class ExamState(rx.State):
         self.explain_text = ""
         self.explain_question_label = f"第 {order} 題"
         self.show_explain_dialog = True
-        return ExamState._do_fetch_explain
+        return ExamState.bg_fetch_explain
 
     @rx.event(background=True)
-    async def _do_fetch_explain(self):
+    async def bg_fetch_explain(self):
         """Step 2: HTTP request outside lock."""
         async with self:
             token = self._bg_explain_token
@@ -678,7 +678,7 @@ class ExamState(rx.State):
         self.explain_text = ""
         self.explain_question_label = f"第 {order} 題"
         self.show_explain_dialog = True
-        return ExamState._do_fetch_explain
+        return ExamState.bg_fetch_explain
 
     async def fetch_ai_hint(self):
         """Step 1: reads state + auth token, triggers background hint call."""
@@ -693,10 +693,10 @@ class ExamState(rx.State):
         self.ai_hint_loading = True
         self.ai_hint_text = ""
         self.show_ai_hint_dialog = True
-        return ExamState._do_fetch_ai_hint
+        return ExamState.bg_fetch_ai_hint
 
     @rx.event(background=True)
-    async def _do_fetch_ai_hint(self):
+    async def bg_fetch_ai_hint(self):
         """Step 2: HTTP request outside lock."""
         async with self:
             token = self._bg_hint_token

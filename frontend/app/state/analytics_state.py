@@ -89,10 +89,10 @@ class AnalyticsState(rx.State):
         self.is_loading = True
         self.has_loaded = False
         self.error_msg = ""
-        return AnalyticsState._fetch_analytics
+        return AnalyticsState.bg_fetch_analytics
 
     @rx.event(background=True)
-    async def _fetch_analytics(self):
+    async def bg_fetch_analytics(self):
         """Step 2 (background task): performs HTTP request without holding the state lock."""
         async with self:
             token = self._bg_token

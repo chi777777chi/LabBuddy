@@ -185,10 +185,10 @@ class HistoryState(rx.State):
         self.explain_text = ""
         self.explain_question_label = f"第 {order} 題"
         self.show_explain_dialog = True
-        return HistoryState._do_fetch_explain
+        return HistoryState.bg_fetch_explain
 
     @rx.event(background=True)
-    async def _do_fetch_explain(self):
+    async def bg_fetch_explain(self):
         """Step 2: HTTP request outside lock."""
         async with self:
             token = self._bg_explain_token
