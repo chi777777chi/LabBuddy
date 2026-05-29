@@ -64,6 +64,46 @@ def option_item(
     )
 
 
+def ai_explain_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.hstack(
+                    rx.icon("sparkles", size=20, color=rx.color("violet", 9)),
+                    rx.heading(ExamState.explain_question_label + " AI 解析", size="5"),
+                    align="center",
+                    spacing="2",
+                ),
+                rx.separator(width="100%"),
+                rx.cond(
+                    ExamState.explain_loading,
+                    rx.center(
+                        rx.vstack(
+                            rx.spinner(size="3"),
+                            rx.text("AI 正在分析中…", size="2", color=rx.color("gray", 8)),
+                            align="center",
+                            spacing="3",
+                        ),
+                        padding_y="8",
+                        width="100%",
+                    ),
+                    rx.text(ExamState.explain_text, size="2", white_space="pre-wrap"),
+                ),
+                rx.dialog.close(
+                    rx.button("關閉", variant="ghost", color_scheme="gray", size="2"),
+                ),
+                spacing="4",
+                width="100%",
+            ),
+            max_width="600px",
+            max_height="80vh",
+            overflow_y="auto",
+        ),
+        open=ExamState.show_explain_dialog,
+        on_open_change=ExamState.set_show_explain_dialog,
+    )
+
+
 def early_submit_dialog() -> rx.Component:
     return rx.dialog.root(
         rx.dialog.content(
@@ -307,6 +347,27 @@ def question_area() -> rx.Component:
             width="100%",
         ),
         rx.cond(
+            ExamState.has_current_feedback,
+            rx.button(
+                rx.cond(
+                    ExamState.explain_loading,
+                    rx.spinner(size="2"),
+                    rx.icon("sparkles", size=15),
+                ),
+                rx.cond(
+                    ExamState.explain_loading,
+                    "AI 解析載入中…",
+                    "AI 解析",
+                ),
+                on_click=ExamState.fetch_explain_current,
+                disabled=ExamState.explain_loading,
+                variant="soft",
+                color_scheme="violet",
+                size="2",
+            ),
+            rx.fragment(),
+        ),
+        rx.cond(
             ExamState.use_ai_hint,
             rx.button(
                 rx.cond(
@@ -383,6 +444,7 @@ def exam_page() -> rx.Component:
             early_submit_dialog(),
             quit_dialog(),
             ai_hint_dialog(),
+            ai_explain_dialog(),
             top_bar(),
             rx.center(
                 rx.vstack(

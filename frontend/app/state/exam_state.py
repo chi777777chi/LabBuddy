@@ -229,6 +229,10 @@ class ExamState(rx.State):
 
     # ── feedback computed vars ────────────────────────────────
     @rx.var
+    def current_chosen(self) -> str:
+        return self.selected_answers.get(self.current_qid, "")
+
+    @rx.var
     def current_hint_level(self) -> int:
         return self.hint_levels.get(self.current_qid, 0)
 
@@ -597,16 +601,37 @@ class ExamState(rx.State):
     async def feedback_delay(self):
         import asyncio
         await asyncio.sleep(1)
-        do_submit = False
         async with self:
             self.is_showing_feedback = False
-            do_submit = self.pending_submit
-            if not do_submit:
-                self.current_index += 1
-                if self.questions and self.current_index < len(self.questions):
-                    self._begin_timing(self.questions[self.current_index].get("question_id", ""))
-        if do_submit:
-            yield ExamState.submit_exam
+            self.pending_submit = False
+
+    async def fetch_explain_current(self):
+        """即時對答模式答完後，呼叫當前題目的 AI 解析。"""
+        qid = self.current_qid
+        chosen = self.selected_answers.get(qid, "")
+        order = self.current_index + 1
+        if self.explain_loading or not qid:
+            return
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        auth = await self.get_state(AuthState)
+        try:
+            async with httpx.AsyncClient(timeout=60) as client:
+                resp = await client.post(
+                    f"{BACKEND_URL}/ai/explain",
+                    params={"token": auth.token},
+                    json={"question_id": qid, "chosen": chosen or None},
+                )
+            if resp.status_code == 200:
+                self.explain_text = resp.json().get("explain", "")
+            else:
+                self.explain_text = "無法取得解析，請稍後再試。"
+        except Exception:
+            self.explain_text = "無法取得解析，請稍後再試。"
+        finally:
+            self.explain_loading = False
 
     def toggle_ai_hint(self, value: bool):
         self.use_ai_hint = value
