@@ -337,7 +337,7 @@ def ai_analysis_card() -> rx.Component:
     )
 
 
-@rx.page(route="/analytics", on_load=[AuthState.load_user, AnalyticsState.load_analytics])
+@rx.page(route="/analytics", on_load=[AuthState.load_user, AuthState.init_analytics])
 def analytics_page() -> rx.Component:
     return rx.box(
         nav_bar(),

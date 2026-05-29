@@ -69,6 +69,12 @@ class AuthState(rx.State):
             self.user_avatar = data.get("avatar_url", "")
             self.user_role = data.get("role", "student")
 
+    async def init_analytics(self):
+        from app.state.analytics_state import AnalyticsState
+        if not self.token:
+            return
+        return AnalyticsState.start_load(self.token)
+
     def logout(self):
         self.token = ""
         self.user_name = ""

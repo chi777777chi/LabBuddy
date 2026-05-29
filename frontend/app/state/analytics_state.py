@@ -3,7 +3,7 @@ import reflex as rx
 from .auth_state import AuthState, BACKEND_URL
 
 
-class AnalyticsState(AuthState):
+class AnalyticsState(rx.State):
     subject_stats: list[dict] = []
     score_trend: list[dict] = []
     weak_questions: list[dict] = []
@@ -13,6 +13,7 @@ class AnalyticsState(AuthState):
     is_loading: bool = False
     has_loaded: bool = False
     error_msg: str = ""
+    _bg_token: str = ""
 
     @rx.var
     def has_data(self) -> bool:
@@ -77,9 +78,13 @@ class AnalyticsState(AuthState):
     def strong_subjects(self) -> list[dict]:
         return [s for s in self.subject_stats if s.get("color") == "green" and s.get("total_answered", 0) > 0]
 
-    async def load_analytics(self):
+    async def start_load(self, token: str):
+        """Called by AuthState.init_analytics with the auth token."""
         if self.is_loading or (self.has_loaded and not self.error_msg):
             return
+        if not token:
+            return
+        self._bg_token = token
         self.is_loading = True
         self.has_loaded = False
         self.error_msg = ""
@@ -88,12 +93,7 @@ class AnalyticsState(AuthState):
     @rx.event(background=True)
     async def bg_fetch_analytics(self):
         async with self:
-            token = self.token
-            if not token:
-                self.is_loading = False
-                self.has_loaded = True
-                self.error_msg = "請先登入後再查看學習分析"
-                return
+            token = self._bg_token
 
         error = ""
         result = None
