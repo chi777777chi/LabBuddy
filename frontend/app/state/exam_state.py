@@ -605,32 +605,36 @@ class ExamState(rx.State):
             self.is_showing_feedback = False
             self.pending_submit = False
 
+    @rx.event(background=True)
     async def fetch_explain_current(self):
-        """即時對答模式答完後，呼叫當前題目的 AI 解析。"""
-        qid = self.current_qid
-        chosen = self.selected_answers.get(qid, "")
-        order = self.current_index + 1
-        if self.explain_loading or not qid:
-            return
-        self.explain_loading = True
-        self.explain_text = ""
-        self.explain_question_label = f"第 {order} 題"
-        self.show_explain_dialog = True
-        auth = await self.get_state(AuthState)
+        async with self:
+            qid = self.current_qid
+            chosen = self.selected_answers.get(qid, "")
+            order = self.current_index + 1
+            if self.explain_loading or not qid:
+                return
+            auth = await self.get_state(AuthState)
+            token = auth.token
+            self.explain_loading = True
+            self.explain_text = ""
+            self.explain_question_label = f"第 {order} 題"
+            self.show_explain_dialog = True
+
+        explain_text = "無法取得解析，請稍後再試。"
         try:
             async with httpx.AsyncClient(timeout=60) as client:
                 resp = await client.post(
                     f"{BACKEND_URL}/ai/explain",
-                    params={"token": auth.token},
+                    params={"token": token},
                     json={"question_id": qid, "chosen": chosen or None},
                 )
             if resp.status_code == 200:
-                self.explain_text = resp.json().get("explain", "")
-            else:
-                self.explain_text = "無法取得解析，請稍後再試。"
+                explain_text = resp.json().get("explain", "")
         except Exception:
-            self.explain_text = "無法取得解析，請稍後再試。"
-        finally:
+            pass
+
+        async with self:
+            self.explain_text = explain_text
             self.explain_loading = False
 
     def toggle_ai_hint(self, value: bool):
@@ -645,52 +649,69 @@ class ExamState(rx.State):
         if not value:
             self.explain_text = ""
 
+    @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
-        if self.explain_loading or not question_id:
-            return
-        self.explain_loading = True
-        self.explain_text = ""
-        self.explain_question_label = f"第 {order} 題"
-        self.show_explain_dialog = True
-        auth = await self.get_state(AuthState)
+        async with self:
+            if self.explain_loading or not question_id:
+                return
+            auth = await self.get_state(AuthState)
+            token = auth.token
+            self.explain_loading = True
+            self.explain_text = ""
+            self.explain_question_label = f"第 {order} 題"
+            self.show_explain_dialog = True
+
+        explain_text = "無法取得解析，請稍後再試。"
         try:
             async with httpx.AsyncClient(timeout=60) as client:
                 resp = await client.post(
                     f"{BACKEND_URL}/ai/explain",
-                    params={"token": auth.token},
+                    params={"token": token},
                     json={"question_id": question_id, "chosen": chosen or None},
                 )
             if resp.status_code == 200:
-                self.explain_text = resp.json().get("explain", "")
-            else:
-                self.explain_text = "無法取得解析，請稍後再試。"
+                explain_text = resp.json().get("explain", "")
         except Exception:
-            self.explain_text = "無法取得解析，請稍後再試。"
-        finally:
+            pass
+
+        async with self:
+            self.explain_text = explain_text
             self.explain_loading = False
 
+    @rx.event(background=True)
     async def fetch_ai_hint(self):
-        qid = self.current_qid
-        current_level = self.hint_levels.get(qid, 0)
-        if self.ai_hint_loading or not qid or current_level >= 3:
-            return
-        next_level = current_level + 1
-        self.ai_hint_loading = True
-        self.ai_hint_text = ""
-        self.show_ai_hint_dialog = True
-        auth = await self.get_state(AuthState)
-        async with httpx.AsyncClient(timeout=30) as client:
-            resp = await client.post(
-                f"{BACKEND_URL}/ai/hint",
-                params={"token": auth.token},
-                json={"question_id": qid, "level": next_level},
-            )
-        self.ai_hint_loading = False
-        if resp.status_code == 200:
-            self.hint_levels = {**self.hint_levels, qid: next_level}
-            self.ai_hint_text = resp.json().get("hint", "")
-        else:
-            self.ai_hint_text = "無法取得提示，請稍後再試。"
+        async with self:
+            qid = self.current_qid
+            current_level = self.hint_levels.get(qid, 0)
+            if self.ai_hint_loading or not qid or current_level >= 3:
+                return
+            next_level = current_level + 1
+            auth = await self.get_state(AuthState)
+            token = auth.token
+            self.ai_hint_loading = True
+            self.ai_hint_text = ""
+            self.show_ai_hint_dialog = True
+
+        hint_text = "無法取得提示，請稍後再試。"
+        new_level = None
+        try:
+            async with httpx.AsyncClient(timeout=30) as client:
+                resp = await client.post(
+                    f"{BACKEND_URL}/ai/hint",
+                    params={"token": token},
+                    json={"question_id": qid, "level": next_level},
+                )
+            if resp.status_code == 200:
+                hint_text = resp.json().get("hint", "")
+                new_level = next_level
+        except Exception:
+            pass
+
+        async with self:
+            self.ai_hint_loading = False
+            self.ai_hint_text = hint_text
+            if new_level is not None:
+                self.hint_levels = {**self.hint_levels, qid: new_level}
 
     async def submit_exam(self):
         if not self.session_id or self.is_loading:

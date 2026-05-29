@@ -77,33 +77,43 @@ class AnalyticsState(rx.State):
     def strong_subjects(self) -> list[dict]:
         return [s for s in self.subject_stats if s.get("color") == "green" and s.get("total_answered", 0) > 0]
 
+    @rx.event(background=True)
     async def load_analytics(self):
-        if self.is_loading or (self.has_loaded and not self.error_msg):
-            return
-        auth = await self.get_state(AuthState)
-        if not auth.token:
-            return
-        self.is_loading = True
-        self.has_loaded = False
-        self.error_msg = ""
+        async with self:
+            if self.is_loading or (self.has_loaded and not self.error_msg):
+                return
+            auth = await self.get_state(AuthState)
+            token = auth.token
+            if not token:
+                return
+            self.is_loading = True
+            self.has_loaded = False
+            self.error_msg = ""
+
+        error = ""
+        result = None
         try:
             async with httpx.AsyncClient(timeout=60) as client:
                 resp = await client.get(
                     f"{BACKEND_URL}/analytics/me",
-                    params={"token": auth.token},
+                    params={"token": token},
                 )
             if resp.status_code != 200:
-                self.error_msg = "載入失敗，請稍後再試。"
+                error = "載入失敗，請稍後再試。"
             else:
-                data = resp.json()
-                self.subject_stats = data.get("subject_stats", [])
-                self.score_trend = data.get("score_trend", [])
-                self.weak_questions = data.get("weak_questions", [])
-                self.ai_analysis = data.get("ai_analysis", "")
-                self.trend_direction = data.get("trend_direction", "none")
-                self.time_stats = data.get("time_stats", {})
+                result = resp.json()
         except Exception:
-            self.error_msg = "無法連線至伺服器，請確認後端是否運行。"
-        finally:
+            error = "無法連線至伺服器，請確認後端是否運行。"
+
+        async with self:
             self.is_loading = False
             self.has_loaded = True
+            if error:
+                self.error_msg = error
+            elif result is not None:
+                self.subject_stats = result.get("subject_stats", [])
+                self.score_trend = result.get("score_trend", [])
+                self.weak_questions = result.get("weak_questions", [])
+                self.ai_analysis = result.get("ai_analysis", "")
+                self.trend_direction = result.get("trend_direction", "none")
+                self.time_stats = result.get("time_stats", {})

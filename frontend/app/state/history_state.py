@@ -170,26 +170,31 @@ class HistoryState(rx.State):
         if not value:
             self.explain_text = ""
 
+    @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
-        if self.explain_loading or not question_id:
-            return
-        self.explain_loading = True
-        self.explain_text = ""
-        self.explain_question_label = f"第 {order} 題"
-        self.show_explain_dialog = True
-        auth = await self.get_state(AuthState)
+        async with self:
+            if self.explain_loading or not question_id:
+                return
+            auth = await self.get_state(AuthState)
+            token = auth.token
+            self.explain_loading = True
+            self.explain_text = ""
+            self.explain_question_label = f"第 {order} 題"
+            self.show_explain_dialog = True
+
+        explain_text = "無法取得解析，請稍後再試。"
         try:
             async with httpx.AsyncClient(timeout=60) as client:
                 resp = await client.post(
                     f"{BACKEND_URL}/ai/explain",
-                    params={"token": auth.token},
+                    params={"token": token},
                     json={"question_id": question_id, "chosen": chosen or None},
                 )
             if resp.status_code == 200:
-                self.explain_text = resp.json().get("explain", "")
-            else:
-                self.explain_text = "無法取得解析，請稍後再試。"
+                explain_text = resp.json().get("explain", "")
         except Exception:
-            self.explain_text = "無法取得解析，請稍後再試。"
-        finally:
+            pass
+
+        async with self:
+            self.explain_text = explain_text
             self.explain_loading = False
