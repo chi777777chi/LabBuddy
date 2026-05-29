@@ -1,8 +1,25 @@
-import google.generativeai as genai
+from groq import AsyncGroq
 from core.config import settings
 
-genai.configure(api_key=settings.gemini_api_key)
-_model = genai.GenerativeModel("gemini-2.0-flash-lite")
+# Gemini (suspended) — swap back by uncommenting and commenting out Groq block
+# import google.generativeai as genai
+# genai.configure(api_key=settings.gemini_api_key)
+# _model = genai.GenerativeModel("gemini-2.0-flash-lite")
+
+_groq = AsyncGroq(api_key=settings.groq_api_key)
+_MODEL = "llama-3.3-70b-versatile"
+
+
+async def _chat(prompt: str, max_tokens: int = 1024) -> str:
+    response = await _groq.chat.completions.create(
+        model=_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=max_tokens,
+        timeout=30,
+    )
+    return response.choices[0].message.content or ""
+
 
 _PROMPTS = {
     1: """你是醫檢師國考的輔導老師。學生正在作答下面這題，請給出【第一層提示】。
@@ -73,7 +90,6 @@ async def get_weakness_analysis_with_time(
     time_stats: dict | None = None,
     slow_tags: list[dict] | None = None,
 ) -> str:
-    # 格式化科目統計
     subj_lines = []
     for s in subject_stats:
         if s["accuracy_rate"] is not None:
@@ -81,19 +97,16 @@ async def get_weakness_analysis_with_time(
         else:
             subj_lines.append(f"  - {s['subject_name']}：尚無作答記錄")
 
-    # 格式化成績趨勢
     if score_trend:
         trend_lines = [f"  - {t['date']} {t['subject_name']}：{t['score']}/{t['total']}（{t['percentage']}%）" for t in score_trend[-10:]]
     else:
         trend_lines = ["  - 尚無考試記錄"]
 
-    # 格式化弱點題目
     if weak_questions:
         weak_lines = [f"  - [{w['subject_name']} {w['source']}] 答錯{w['wrong_count']}次：{w['content']}" for w in weak_questions[:5]]
     else:
         weak_lines = ["  - 尚無答錯記錄"]
 
-    # 格式化時間效率
     if time_stats and time_stats.get("has_data"):
         avg = time_stats["avg_time_seconds"]
         expected = time_stats["expected_time_seconds"]
@@ -123,11 +136,7 @@ async def get_weakness_analysis_with_time(
         time_stats="\n".join(time_lines),
         slow_tags="\n".join(slow_tag_lines),
     )
-    response = await _model.generate_content_async(
-        prompt,
-        request_options={"timeout": 30, "retry": None},
-    )
-    return response.text
+    return await _chat(prompt, max_tokens=1500)
 
 
 _EXPLAIN_PROMPT = """你是醫檢師國考的專業解析老師。請根據學生的作答狀況與學習背景，提供這道題的個人化解析。
@@ -180,11 +189,7 @@ async def get_explain(
         chosen_display=chosen_display,
         weakness_summary=weakness_summary,
     )
-    response = await _model.generate_content_async(
-        prompt,
-        request_options={"timeout": 30, "retry": None},
-    )
-    return response.text
+    return await _chat(prompt, max_tokens=1024)
 
 
 async def get_hint(content: str, option_a: str, option_b: str, option_c: str, option_d: str, level: int = 1) -> str:
@@ -195,8 +200,4 @@ async def get_hint(content: str, option_a: str, option_b: str, option_c: str, op
         option_c=option_c,
         option_d=option_d,
     )
-    response = await _model.generate_content_async(
-        prompt,
-        request_options={"timeout": 30, "retry": None},
-    )
-    return response.text
+    return await _chat(prompt, max_tokens=256)
