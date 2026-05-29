@@ -172,11 +172,11 @@ class HistoryState(rx.State):
 
     @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        auth = await self.get_state(AuthState)
+        token = auth.token
         async with self:
             if self.explain_loading or not question_id:
                 return
-            auth = await self.get_state(AuthState)
-            token = auth.token
             self.explain_loading = True
             self.explain_text = ""
             self.explain_question_label = f"第 {order} 題"

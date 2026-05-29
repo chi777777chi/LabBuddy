@@ -79,11 +79,11 @@ class AnalyticsState(rx.State):
 
     @rx.event(background=True)
     async def load_analytics(self):
+        auth = await self.get_state(AuthState)
+        token = auth.token
         async with self:
             if self.is_loading or (self.has_loaded and not self.error_msg):
                 return
-            auth = await self.get_state(AuthState)
-            token = auth.token
             if not token:
                 return
             self.is_loading = True

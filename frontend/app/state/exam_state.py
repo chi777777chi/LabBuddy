@@ -607,14 +607,14 @@ class ExamState(rx.State):
 
     @rx.event(background=True)
     async def fetch_explain_current(self):
+        auth = await self.get_state(AuthState)
+        token = auth.token
         async with self:
             qid = self.current_qid
             chosen = self.selected_answers.get(qid, "")
             order = self.current_index + 1
             if self.explain_loading or not qid:
                 return
-            auth = await self.get_state(AuthState)
-            token = auth.token
             self.explain_loading = True
             self.explain_text = ""
             self.explain_question_label = f"第 {order} 題"
@@ -651,11 +651,11 @@ class ExamState(rx.State):
 
     @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        auth = await self.get_state(AuthState)
+        token = auth.token
         async with self:
             if self.explain_loading or not question_id:
                 return
-            auth = await self.get_state(AuthState)
-            token = auth.token
             self.explain_loading = True
             self.explain_text = ""
             self.explain_question_label = f"第 {order} 題"
@@ -680,14 +680,14 @@ class ExamState(rx.State):
 
     @rx.event(background=True)
     async def fetch_ai_hint(self):
+        auth = await self.get_state(AuthState)
+        token = auth.token
         async with self:
             qid = self.current_qid
             current_level = self.hint_levels.get(qid, 0)
             if self.ai_hint_loading or not qid or current_level >= 3:
                 return
             next_level = current_level + 1
-            auth = await self.get_state(AuthState)
-            token = auth.token
             self.ai_hint_loading = True
             self.ai_hint_text = ""
             self.show_ai_hint_dialog = True
