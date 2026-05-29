@@ -48,9 +48,11 @@ class AuthState(rx.State):
                 f"{BACKEND_URL}/users/me",
                 params={"token": self.token},
             )
-        if resp.status_code != 200:
+        if resp.status_code == 401:
             self.token = ""
             return rx.redirect("/")
+        if resp.status_code != 200:
+            return
         data = resp.json()
         self.user_name = data["name"]
         self.user_email = data["email"]

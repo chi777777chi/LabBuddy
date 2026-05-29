@@ -78,7 +78,7 @@ class AnalyticsState(rx.State):
         return [s for s in self.subject_stats if s.get("color") == "green" and s.get("total_answered", 0) > 0]
 
     async def load_analytics(self):
-        if self.is_loading:
+        if self.is_loading or (self.has_loaded and not self.error_msg):
             return
         auth = await self.get_state(AuthState)
         if not auth.token:
