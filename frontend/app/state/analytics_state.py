@@ -13,7 +13,6 @@ class AnalyticsState(AuthState):
     is_loading: bool = False
     has_loaded: bool = False
     error_msg: str = ""
-    _bg_token: str = ""
 
     @rx.var
     def has_data(self) -> bool:
@@ -81,9 +80,6 @@ class AnalyticsState(AuthState):
     async def load_analytics(self):
         if self.is_loading or (self.has_loaded and not self.error_msg):
             return
-        if not self.token:
-            return
-        self._bg_token = self.token
         self.is_loading = True
         self.has_loaded = False
         self.error_msg = ""
@@ -91,9 +87,13 @@ class AnalyticsState(AuthState):
 
     @rx.event(background=True)
     async def bg_fetch_analytics(self):
-        """Step 2 (background task): performs HTTP request without holding the state lock."""
         async with self:
-            token = self._bg_token
+            token = self.token
+            if not token:
+                self.is_loading = False
+                self.has_loaded = True
+                self.error_msg = "請先登入後再查看學習分析"
+                return
 
         error = ""
         result = None
