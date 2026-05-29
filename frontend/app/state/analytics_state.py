@@ -13,6 +13,7 @@ class AnalyticsState(rx.State):
     is_loading: bool = False
     has_loaded: bool = False
     error_msg: str = ""
+    _bg_token: str = ""
 
     @rx.var
     def has_data(self) -> bool:
@@ -77,18 +78,24 @@ class AnalyticsState(rx.State):
     def strong_subjects(self) -> list[dict]:
         return [s for s in self.subject_stats if s.get("color") == "green" and s.get("total_answered", 0) > 0]
 
-    @rx.event(background=True)
     async def load_analytics(self):
+        """Step 1 (regular handler): reads auth token, sets up loading state, triggers background fetch."""
+        if self.is_loading or (self.has_loaded and not self.error_msg):
+            return
         auth = await self.get_state(AuthState)
-        token = auth.token
+        if not auth.token:
+            return
+        self._bg_token = auth.token
+        self.is_loading = True
+        self.has_loaded = False
+        self.error_msg = ""
+        return AnalyticsState._fetch_analytics
+
+    @rx.event(background=True)
+    async def _fetch_analytics(self):
+        """Step 2 (background task): performs HTTP request without holding the state lock."""
         async with self:
-            if self.is_loading or (self.has_loaded and not self.error_msg):
-                return
-            if not token:
-                return
-            self.is_loading = True
-            self.has_loaded = False
-            self.error_msg = ""
+            token = self._bg_token
 
         error = ""
         result = None

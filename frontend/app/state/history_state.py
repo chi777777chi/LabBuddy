@@ -54,6 +54,9 @@ class HistoryState(rx.State):
     explain_loading: bool = False
     explain_text: str = ""
     explain_question_label: str = ""
+    _bg_explain_token: str = ""
+    _bg_explain_qid: str = ""
+    _bg_explain_chosen: str = ""
 
     @rx.var
     def has_history(self) -> bool:
@@ -170,17 +173,27 @@ class HistoryState(rx.State):
         if not value:
             self.explain_text = ""
 
-    @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        """Step 1: reads auth token, sets up state, triggers background AI call."""
+        if self.explain_loading or not question_id:
+            return
         auth = await self.get_state(AuthState)
-        token = auth.token
+        self._bg_explain_token = auth.token
+        self._bg_explain_qid = question_id
+        self._bg_explain_chosen = chosen
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        return HistoryState._do_fetch_explain
+
+    @rx.event(background=True)
+    async def _do_fetch_explain(self):
+        """Step 2: HTTP request outside lock."""
         async with self:
-            if self.explain_loading or not question_id:
-                return
-            self.explain_loading = True
-            self.explain_text = ""
-            self.explain_question_label = f"第 {order} 題"
-            self.show_explain_dialog = True
+            token = self._bg_explain_token
+            question_id = self._bg_explain_qid
+            chosen = self._bg_explain_chosen
 
         explain_text = "無法取得解析，請稍後再試。"
         try:

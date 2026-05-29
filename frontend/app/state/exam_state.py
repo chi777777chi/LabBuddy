@@ -70,6 +70,13 @@ class ExamState(rx.State):
     explain_loading: bool = False
     explain_text: str = ""
     explain_question_label: str = ""
+    # private vars for background task handoff (not sent to frontend)
+    _bg_explain_token: str = ""
+    _bg_explain_qid: str = ""
+    _bg_explain_chosen: str = ""
+    _bg_hint_token: str = ""
+    _bg_hint_qid: str = ""
+    _bg_hint_next_level: int = 0
 
     # ── 每題計時 ─────────────────────────────────────────────
     q_start_time: dict[str, float] = {}   # {qid: timestamp when user arrived}
@@ -605,20 +612,30 @@ class ExamState(rx.State):
             self.is_showing_feedback = False
             self.pending_submit = False
 
-    @rx.event(background=True)
     async def fetch_explain_current(self):
+        """Step 1: reads state + auth token, then triggers background AI call."""
+        qid = self.current_qid
+        chosen = self.selected_answers.get(qid, "")
+        order = self.current_index + 1
+        if self.explain_loading or not qid:
+            return
         auth = await self.get_state(AuthState)
-        token = auth.token
+        self._bg_explain_token = auth.token
+        self._bg_explain_qid = qid
+        self._bg_explain_chosen = chosen
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        return ExamState._do_fetch_explain
+
+    @rx.event(background=True)
+    async def _do_fetch_explain(self):
+        """Step 2: HTTP request outside lock."""
         async with self:
-            qid = self.current_qid
-            chosen = self.selected_answers.get(qid, "")
-            order = self.current_index + 1
-            if self.explain_loading or not qid:
-                return
-            self.explain_loading = True
-            self.explain_text = ""
-            self.explain_question_label = f"第 {order} 題"
-            self.show_explain_dialog = True
+            token = self._bg_explain_token
+            qid = self._bg_explain_qid
+            chosen = self._bg_explain_chosen
 
         explain_text = "無法取得解析，請稍後再試。"
         try:
@@ -649,48 +666,42 @@ class ExamState(rx.State):
         if not value:
             self.explain_text = ""
 
-    @rx.event(background=True)
     async def fetch_explain(self, question_id: str, chosen: str, order: int = 0):
+        """Step 1: reads auth token, sets up state, triggers background AI call."""
+        if self.explain_loading or not question_id:
+            return
         auth = await self.get_state(AuthState)
-        token = auth.token
-        async with self:
-            if self.explain_loading or not question_id:
-                return
-            self.explain_loading = True
-            self.explain_text = ""
-            self.explain_question_label = f"第 {order} 題"
-            self.show_explain_dialog = True
+        self._bg_explain_token = auth.token
+        self._bg_explain_qid = question_id
+        self._bg_explain_chosen = chosen
+        self.explain_loading = True
+        self.explain_text = ""
+        self.explain_question_label = f"第 {order} 題"
+        self.show_explain_dialog = True
+        return ExamState._do_fetch_explain
 
-        explain_text = "無法取得解析，請稍後再試。"
-        try:
-            async with httpx.AsyncClient(timeout=60) as client:
-                resp = await client.post(
-                    f"{BACKEND_URL}/ai/explain",
-                    params={"token": token},
-                    json={"question_id": question_id, "chosen": chosen or None},
-                )
-            if resp.status_code == 200:
-                explain_text = resp.json().get("explain", "")
-        except Exception:
-            pass
-
-        async with self:
-            self.explain_text = explain_text
-            self.explain_loading = False
+    async def fetch_ai_hint(self):
+        """Step 1: reads state + auth token, triggers background hint call."""
+        qid = self.current_qid
+        current_level = self.hint_levels.get(qid, 0)
+        if self.ai_hint_loading or not qid or current_level >= 3:
+            return
+        auth = await self.get_state(AuthState)
+        self._bg_hint_token = auth.token
+        self._bg_hint_qid = qid
+        self._bg_hint_next_level = current_level + 1
+        self.ai_hint_loading = True
+        self.ai_hint_text = ""
+        self.show_ai_hint_dialog = True
+        return ExamState._do_fetch_ai_hint
 
     @rx.event(background=True)
-    async def fetch_ai_hint(self):
-        auth = await self.get_state(AuthState)
-        token = auth.token
+    async def _do_fetch_ai_hint(self):
+        """Step 2: HTTP request outside lock."""
         async with self:
-            qid = self.current_qid
-            current_level = self.hint_levels.get(qid, 0)
-            if self.ai_hint_loading or not qid or current_level >= 3:
-                return
-            next_level = current_level + 1
-            self.ai_hint_loading = True
-            self.ai_hint_text = ""
-            self.show_ai_hint_dialog = True
+            token = self._bg_hint_token
+            qid = self._bg_hint_qid
+            next_level = self._bg_hint_next_level
 
         hint_text = "無法取得提示，請稍後再試。"
         new_level = None
