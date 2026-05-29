@@ -166,16 +166,10 @@
 - [ ] 查 nginx 有無缺少 CORS header
 - [ ] 測試是否為 SameSite cookie 問題（Safari 對第三方 cookie 限制較嚴）
 
-### Bug 2：學習分析頁面跳轉失敗
-- 症狀：點學習分析按鈕後跳回主頁，無法停在 `/analytics`
-- 根本原因：`load_analytics` 有 race condition，token 未就緒時觸發 `rx.redirect("/")`
-- 已修正：改為靜默 return，並在 home page on_load 預先觸發 analytics 載入
-- **Debug 步驟（若問題仍存在）：**
-  - [ ] 點按鈕後觀察 URL 有無閃到 `/analytics`（有閃 = 頁面進去但被踢走；沒閃 = 按鈕問題）
-  - [ ] 直接在網址列輸入 `/analytics` 測試能否停留
-  - [ ] server 執行 `sudo journalctl -u medexam-api -f` 同時點按鈕，確認是否有 `/analytics/me` 請求抵達
-  - [ ] `curl "http://127.0.0.1:8000/analytics/me?token=<token>"` 確認 API 正常回傳
-  - [ ] 瀏覽器 F12 → Console 看有無 JS 錯誤
+### Bug 2：所有頁面跳轉失敗（SPA 導覽失效）✅ 已修復（2026-05-29）
+- 症狀：從主選單點任何卡片（開始測驗、學習分析等）均無法進入，console 顯示 `Error loading route module`
+- 根本原因：`rx.redirect()` 在 Reflex 0.9 production build 走 React Router 的 `navigate()`，觸發 lazy-load route module，在 `prerender:true, ssr:false` 設定下失敗
+- 修復：全部 13 個頁面的 `on_click=rx.redirect(path)` 改為 `on_click=rx.call_script("window.location.href='path'")`（與 Bug 5 中登入按鈕的修法相同）
 
 ### Bug 3：PDF 匯出壞掉 ✅ 已修復
 - 症狀：手機 `ERR_CONNECTION_REFUSED`；電腦跳至 `http://localhost:8000/...`
