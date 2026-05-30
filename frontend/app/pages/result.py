@@ -60,6 +60,18 @@ def detail_row(item: ResultDetail) -> rx.Component:
         rx.table.cell(
             rx.vstack(
                 rx.text(item.content, size="1", no_of_lines=2),
+                rx.cond(
+                    item.tags.length() > 0,
+                    rx.hstack(
+                        rx.foreach(
+                            item.tags,
+                            lambda tag: rx.badge(tag, color_scheme="teal", variant="soft", size="1"),
+                        ),
+                        flex_wrap="wrap",
+                        spacing="1",
+                    ),
+                    rx.fragment(),
+                ),
                 rx.button(
                     rx.icon("sparkles", size=12),
                     "AI 解析",

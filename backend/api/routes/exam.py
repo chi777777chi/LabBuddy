@@ -414,6 +414,7 @@ def get_session_detail(
             "chosen": a.chosen,
             "correct_answer": meta.get(a.question_id, {}).get("effective_answer"),
             "is_correct": a.is_correct,
+            "tags": q.tags or "" if q else "",
         })
 
     return {
@@ -563,6 +564,7 @@ def submit_exam(
             "correct_answer": meta.get(a.question_id, {}).get("effective_answer"),
             "is_correct": a.is_correct,
             "time_spent_seconds": a.time_spent_seconds,
+            "tags": q.tags or "" if q else "",
         })
 
     return {

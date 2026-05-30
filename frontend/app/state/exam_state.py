@@ -14,6 +14,7 @@ class ResultDetail(BaseModel):
     is_correct: bool = False
     is_unanswered: bool = False
     time_spent_seconds: int = 0
+    tags: list[str] = []
 
 
 class ExamState(rx.State):
@@ -775,6 +776,7 @@ class ExamState(rx.State):
                     is_correct=bool(d.get("is_correct", False)),
                     is_unanswered=d.get("chosen") is None,
                     time_spent_seconds=order_to_time.get(d.get("order", 0), 0),
+                    tags=[t for t in (d.get("tags") or "").split(",") if t],
                 )
                 for d in data.get("details", [])
             ]

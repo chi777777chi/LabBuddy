@@ -32,6 +32,7 @@ class HistoryDetail(BaseModel):
     correct_answer: str = ""
     is_correct: bool = False
     is_unanswered: bool = False
+    tags: list[str] = []
 
 
 class HistoryState(rx.State):
@@ -159,6 +160,7 @@ class HistoryState(rx.State):
                 correct_answer=d.get("correct_answer") or "",
                 is_correct=bool(d.get("is_correct", False)),
                 is_unanswered=d.get("chosen") is None,
+                tags=[t for t in (d.get("tags") or "").split(",") if t],
             )
             for d in data.get("details", [])
         ]
