@@ -11,12 +11,18 @@ DB_PATH = Path(__file__).parent.parent / "exam.db"
 OUT_PATH = Path(__file__).parent / "tags_update.sql"
 
 conn = sqlite3.connect(DB_PATH)
-rows = conn.execute("SELECT id, tags FROM questions WHERE tags IS NOT NULL AND tags != ''").fetchall()
+rows = conn.execute(
+    "SELECT year, sitting, subject_id, number, tags FROM questions WHERE tags IS NOT NULL AND tags != ''"
+).fetchall()
 conn.close()
 
 with open(OUT_PATH, "w", encoding="utf-8") as f:
-    for qid, tags in rows:
+    for year, sitting, subject_id, number, tags in rows:
         safe_tags = tags.replace("'", "''")
-        f.write(f"UPDATE questions SET tags='{safe_tags}' WHERE id='{qid}';\n")
+        f.write(
+            f"UPDATE questions SET tags='{safe_tags}'"
+            f" WHERE year={year} AND sitting={sitting}"
+            f" AND subject_id={subject_id} AND number={number};\n"
+        )
 
 print(f"匯出完成：{len(rows)} 題有 tags → {OUT_PATH}")
