@@ -75,6 +75,7 @@ class ExamState(rx.State):
     _bg_explain_token: str = ""
     _bg_explain_qid: str = ""
     _bg_explain_chosen: str = ""
+    _explain_cache: dict[str, str] = {}  # {question_id: explain_text}，session 內快取
     _bg_hint_token: str = ""
     _bg_hint_qid: str = ""
     _bg_hint_next_level: int = 0
@@ -620,6 +621,12 @@ class ExamState(rx.State):
         order = self.current_index + 1
         if self.explain_loading or not qid:
             return
+        # 若本 session 已生成過此題解析，直接顯示不重發
+        if cached := self._explain_cache.get(qid):
+            self.explain_text = cached
+            self.explain_question_label = f"第 {order} 題"
+            self.show_explain_dialog = True
+            return
         auth = await self.get_state(AuthState)
         self._bg_explain_token = auth.token
         self._bg_explain_qid = qid
@@ -654,6 +661,8 @@ class ExamState(rx.State):
         async with self:
             self.explain_text = explain_text
             self.explain_loading = False
+            if self._bg_explain_qid:
+                self._explain_cache[self._bg_explain_qid] = explain_text
 
     def toggle_ai_hint(self, value: bool):
         self.use_ai_hint = value

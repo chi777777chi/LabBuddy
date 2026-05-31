@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from db.database import get_db
@@ -62,6 +63,28 @@ async def explain(
     q = db.query(Question).filter(Question.id == body.question_id).first()
     if not q:
         raise HTTPException(status_code=404, detail="Question not found")
+
+    # 總答題數（用於判斷快取是否仍有效）
+    total_answers: int = (
+        db.query(func.count(Answer.id))
+        .join(ExamSession, Answer.session_id == ExamSession.id)
+        .filter(ExamSession.user_id == user.id, Answer.chosen.isnot(None))
+        .scalar()
+        or 0
+    )
+
+    # 若有快取且答題數未變，直接回傳
+    qs_cache = (
+        db.query(QuestionStats)
+        .filter_by(user_id=user.id, question_id=body.question_id)
+        .first()
+    )
+    if (
+        qs_cache
+        and qs_cache.explain_text
+        and qs_cache.explain_answer_count == total_answers
+    ):
+        return {"explain": qs_cache.explain_text}
 
     # 1. 難度答對率
     diff_buckets: dict[str, list[bool]] = {}
@@ -172,4 +195,11 @@ async def explain(
         weakness_summary=weakness_summary,
         tags=q.tags or "",
     )
+
+    # 存快取（只在 QuestionStats 存在時，即使用者曾作答過）
+    if qs_cache:
+        qs_cache.explain_text = text
+        qs_cache.explain_answer_count = total_answers
+        db.commit()
+
     return {"explain": text}

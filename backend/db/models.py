@@ -130,5 +130,7 @@ class QuestionStats(Base):
     correct_count: Mapped[int] = mapped_column(Integer, default=0)
     wrong_count: Mapped[int] = mapped_column(Integer, default=0)
     last_attempted_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    explain_text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    explain_answer_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
 
     __table_args__ = (UniqueConstraint("user_id", "question_id"),)
