@@ -170,5 +170,6 @@ async def explain(
         correct_answer=q.answer,
         chosen=body.chosen or "",
         weakness_summary=weakness_summary,
+        tags=q.tags or "",
     )
     return {"explain": text}

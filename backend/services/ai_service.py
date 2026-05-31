@@ -152,6 +152,7 @@ D. {option_d}
 
 【正確答案】{correct_answer}（{correct_option_text}）
 【學生選擇】{chosen_display}
+【知識點標籤】{tags}
 
 【學生學習背景】
 {weakness_summary}
@@ -174,6 +175,7 @@ async def get_explain(
     correct_answer: str,
     chosen: str,
     weakness_summary: str,
+    tags: str = "",
 ) -> str:
     options_map = {"A": option_a, "B": option_b, "C": option_c, "D": option_d}
     correct_option_text = options_map.get(correct_answer, "")
@@ -188,6 +190,7 @@ async def get_explain(
         correct_option_text=correct_option_text,
         chosen_display=chosen_display,
         weakness_summary=weakness_summary,
+        tags=tags or "無",
     )
     return await _chat(prompt, max_tokens=1024)
 
