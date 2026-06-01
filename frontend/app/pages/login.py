@@ -1,5 +1,6 @@
 import os
 import reflex as rx
+from ..components.webview_guard import WebViewGuard
 
 BACKEND_URL = os.environ.get("BACKEND_PUBLIC_URL", "http://localhost:8000")
 
@@ -20,51 +21,7 @@ def login_page() -> rx.Component:
                     align="center",
                 ),
                 rx.divider(),
-                rx.box(
-                    # WebView 警告（預設隱藏，偵測到 WebView 後由 JS 顯示）
-                    rx.vstack(
-                        rx.callout(
-                            rx.text("請用 Safari 或 Chrome 開啟此頁面", weight="bold"),
-                            icon="triangle_alert",
-                            color_scheme="orange",
-                            width="100%",
-                        ),
-                        rx.text(
-                            "在 LINE、Instagram 等 App 內開啟連結時，Google 會拒絕登入。請複製網址後用 Safari 或 Chrome 開啟。",
-                            size="2",
-                            color_scheme="gray",
-                            text_align="center",
-                        ),
-                        rx.button(
-                            rx.icon("copy", size=16),
-                            "複製網址",
-                            size="3",
-                            width="100%",
-                            variant="soft",
-                            color_scheme="orange",
-                            on_click=rx.call_script(
-                                "navigator.clipboard.writeText(window.location.href)"
-                            ),
-                        ),
-                        id="webview-warning",
-                        display="none",
-                        spacing="3",
-                        align="center",
-                        width="100%",
-                    ),
-                    # 正常登入按鈕
-                    rx.button(
-                        rx.icon("log-in", size=18),
-                        "使用 Google 帳號登入",
-                        id="login-btn",
-                        size="3",
-                        width="100%",
-                        on_click=rx.call_script(
-                            f"window.location.href='{BACKEND_URL}/auth/google'"
-                        ),
-                    ),
-                    width="100%",
-                ),
+                WebViewGuard.create(backend_url=BACKEND_URL),
                 spacing="6",
                 align="center",
                 width="100%",
