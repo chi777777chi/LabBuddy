@@ -160,11 +160,9 @@
 
 ## Phase 8｜Bug 修復與功能補完（2026-05-28）
 
-### Bug 1：Safari Google 登入 403
-- [ ] 用 Safari DevTools → Network tab 確認 403 來自 Google 端還是 `/api/auth/callback`
-- [ ] 確認 Google Console 的 Authorized redirect URIs 格式是否相容 Safari
-- [ ] 查 nginx 有無缺少 CORS header
-- [ ] 測試是否為 SameSite cookie 問題（Safari 對第三方 cookie 限制較嚴）
+### Bug 1：WebView 內開啟連結導致 Google 登入 403 ✅ 已修復
+- 根本原因：使用者在 LINE / Instagram 等 App 內建 WebView 開啟連結，Google OAuth 明確禁止 WebView 登入，回傳 `403: disallowed_useragent`
+- 修復：登入頁 `on_load` 偵測 WebView UA（FBAN/Instagram/Line/MicroMessenger/iOS-no-Version/Android-wv），偵測到時隱藏登入按鈕，改顯示橘色警告 + 複製網址按鈕，引導用戶到 Safari/Chrome 開啟
 
 ### Bug 2：所有頁面跳轉失敗（SPA 導覽失效）✅ 已修復（2026-05-29）
 - 症狀：從主選單點任何卡片（開始測驗、學習分析等）均無法進入，console 顯示 `Error loading route module`
@@ -181,14 +179,11 @@
 - [x] `backend/utils/pdf.py` 更新字型偵測路徑，加入 WQY 字型；`.ttc` 檔案改用 `subfontIndex=0` 載入
 - 注意：Noto CJK（`fonts-noto-cjk`）使用 PostScript outlines（CFF），reportlab 不支援，不可用
 
-### Bug 4：classify_tags.py 解析失敗
+### Bug 4：classify_tags.py 解析失敗 ✅ 已修復
 - 症狀：每批 15 題全部 `ParseFail`，ok=0 fail=15
 - 原因：AI 回傳格式與解析 regex 不符
-- [ ] 加 debug 輸出，印出 AI 實際回傳的原始文字
-- [ ] 縮小批次為 1 題，確認單題是否可解析
-- [ ] 調整 prompt，明確要求回傳固定 JSON 格式
-- [ ] 更新解析邏輯
-- [ ] 全量跑完後確認 DB 的 `questions.tags` 已填入
+- 修復：新增 `_repair_json()` 兩段式救援解析（直接 JSON parse → regex 逐項擷取）、TPM 429 限速自動重試、每日額度耗盡提示
+- [x] 全量跑完後確認 DB 的 `questions.tags` 已填入
 
 ### Feature：AI 解析（答題後個人化解釋）✅ 已完成（待配額重置驗證）
 - 目標：答完一題後，AI 結合多維弱點依據提供個人化解析
@@ -211,7 +206,7 @@
 - [x] 前端：成績頁 / 歷史詳情每題加「AI 解析」按鈕（點擊呼叫 API，顯示 loading → 解析文字）
 - [x] 前端 try/except 修正：timeout 後正確顯示錯誤訊息，不再卡在轉圈
 - [x] 前端：即時對答答完後也可選擇看 AI 解析
-- [ ] 知識點標籤維度：等 classify_tags 跑完後加入 prompt
+- [ ] 知識點標籤維度：classify_tags 已跑完，可加入 AI explain prompt
 - [ ] 考慮 cache：同一 question_id + 使用者的解析可暫存，避免重複呼叫
 
 ### Bug 5：HTTPS 升級後登入與 WebSocket 全面失效 ✅ 已修復（2026-05-28）

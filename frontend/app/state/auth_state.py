@@ -14,6 +14,25 @@ class AuthState(rx.State):
     user_email: str = ""
     user_avatar: str = ""
     user_role: str = ""
+    is_embedded_browser: bool = False
+
+    def set_embedded_browser(self, val: str):
+        self.is_embedded_browser = val == "true"
+
+    def detect_browser(self):
+        """偵測是否在 LINE / Instagram / WebView 等內建瀏覽器中開啟。"""
+        return rx.call_script(
+            """
+            (function() {
+                var ua = navigator.userAgent || '';
+                var knownApps = /FBAN|FBAV|Instagram|Line\\/|MicroMessenger|WeChat|GSA/.test(ua);
+                var iosWebview = /iPhone|iPad|iPod/.test(ua) && !ua.includes('Version/');
+                var androidWebview = /Android/.test(ua) && /wv/.test(ua);
+                return (knownApps || iosWebview || androidWebview) ? 'true' : 'false';
+            })()
+            """,
+            callback=AuthState.set_embedded_browser,
+        )
 
     async def handle_callback(self):
         """OAuth callback：從 URL query string 讀取 token，存入 LocalStorage 後依角色導向。"""
