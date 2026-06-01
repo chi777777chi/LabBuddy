@@ -1,46 +1,69 @@
 import reflex as rx
 
 
-class WebViewGuard(rx.Component):
-    """在 React render 時同步偵測 WebView UA，不依賴 WebSocket 或 DOM 操作。"""
+def google_login_button(backend_url: str) -> rx.Component:
+    return rx.fragment(
+        rx.script("""
+            (function() {
+                const ua = navigator.userAgent || '';
+                const isWV =
+                    /FBAN|FBAV|Instagram|Line\\/|MicroMessenger|WeChat|GSA/.test(ua) ||
+                    (/iPhone|iPad|iPod/.test(ua) && !ua.includes('Version/')) ||
+                    (/Android/.test(ua) && /wv/.test(ua));
+                if (!isWV) return;
 
-    tag = "WebViewGuard"
-    backend_url: rx.Var[str] = ""
-
-    def _get_custom_code(self) -> str:
-        return r"""
-        function WebViewGuard({ backendUrl }) {
-            const ua = navigator.userAgent || '';
-            const isWV =
-                /FBAN|FBAV|Instagram|Line\/|MicroMessenger|WeChat|GSA/.test(ua) ||
-                (/iPhone|iPad|iPod/.test(ua) && !ua.includes('Version/')) ||
-                (/Android/.test(ua) && /wv/.test(ua));
-
-            if (isWV) {
-                return (
-                    <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:'12px',width:'100%'}}>
-                        <div style={{background:'var(--orange-3)',border:'1px solid var(--orange-6)',padding:'12px 16px',borderRadius:'8px',width:'100%',boxSizing:'border-box'}}>
-                            <strong>⚠️ 請用 Safari 或 Chrome 開啟此頁面</strong>
-                        </div>
-                        <p style={{color:'var(--gray-11)',fontSize:'14px',textAlign:'center',margin:0}}>
-                            在 LINE、Instagram 等 App 內開啟連結時，Google 會拒絕登入。請複製網址後用 Safari 或 Chrome 開啟。
-                        </p>
-                        <button
-                            onClick={() => navigator.clipboard.writeText(window.location.href)}
-                            style={{width:'100%',padding:'10px',background:'var(--orange-9)',color:'white',border:'none',borderRadius:'8px',fontSize:'16px',cursor:'pointer'}}>
-                            📋 複製網址
-                        </button>
-                    </div>
-                );
-            }
-
-            return (
-                <button
-                    onClick={() => { window.location.href = backendUrl + '/auth/google'; }}
-                    style={{width:'100%',padding:'10px 16px',background:'var(--accent-9)',color:'white',border:'none',borderRadius:'8px',fontSize:'16px',cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',gap:'8px'}}>
-                    <span>&#x2192;</span>
-                    <span>使用 Google 帳號登入</span>
-                </button>
-            );
-        }
-        """
+                function apply() {
+                    const btn = document.getElementById('google-btn');
+                    const warn = document.getElementById('webview-warn');
+                    if (btn && warn) {
+                        btn.style.display = 'none';
+                        warn.style.display = 'flex';
+                    } else {
+                        setTimeout(apply, 50);
+                    }
+                }
+                apply();
+            })();
+        """),
+        rx.box(
+            rx.callout(
+                rx.text("請用 Safari 或 Chrome 開啟此頁面才能登入", weight="bold"),
+                icon="triangle_alert",
+                color_scheme="orange",
+                width="100%",
+            ),
+            rx.text(
+                "在 LINE、Instagram 等 App 內開啟連結時，Google 會拒絕登入。",
+                size="2",
+                color_scheme="gray",
+                text_align="center",
+            ),
+            rx.button(
+                rx.icon("copy", size=16),
+                "複製網址",
+                size="3",
+                width="100%",
+                variant="soft",
+                color_scheme="orange",
+                on_click=rx.call_script(
+                    "navigator.clipboard.writeText(window.location.href)"
+                ),
+            ),
+            id="webview-warn",
+            display="none",
+            flex_direction="column",
+            align_items="center",
+            gap="3",
+            width="100%",
+        ),
+        rx.button(
+            rx.icon("log-in", size=18),
+            "使用 Google 帳號登入",
+            id="google-btn",
+            size="3",
+            width="100%",
+            on_click=rx.call_script(
+                f"window.location.href='{backend_url}/auth/google'"
+            ),
+        ),
+    )

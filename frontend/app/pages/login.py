@@ -1,6 +1,6 @@
 import os
 import reflex as rx
-from ..components.webview_guard import WebViewGuard
+from ..components.webview_guard import google_login_button
 
 BACKEND_URL = os.environ.get("BACKEND_PUBLIC_URL", "http://localhost:8000")
 
@@ -21,7 +21,7 @@ def login_page() -> rx.Component:
                     align="center",
                 ),
                 rx.divider(),
-                WebViewGuard.create(backend_url=BACKEND_URL),
+                google_login_button(BACKEND_URL),
                 spacing="6",
                 align="center",
                 width="100%",
