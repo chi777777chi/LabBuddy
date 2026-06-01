@@ -8,8 +8,8 @@ def google_login_button(backend_url: str) -> rx.Component:
                 const ua = navigator.userAgent || '';
                 const isWV =
                     /FBAN|FBAV|Instagram|Line\\/|MicroMessenger|WeChat|GSA/.test(ua) ||
-                    (/iPhone|iPad|iPod/.test(ua) && !ua.includes('Version/')) ||
-                    (/Android/.test(ua) && /wv/.test(ua));
+                    (/iPhone|iPad|iPod/.test(ua) && !ua.match(/Version\\/|CriOS|FxiOS|EdgiOS/)) ||
+                    (/Android/.test(ua) && /wv/.test(ua) && !ua.includes('Chrome/'));
                 if (!isWV) return;
 
                 function apply() {
