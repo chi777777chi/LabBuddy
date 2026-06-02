@@ -1,30 +1,11 @@
 import reflex as rx
+from ..state.auth_state import AuthState
 
 
 def google_login_button(backend_url: str) -> rx.Component:
-    return rx.fragment(
-        rx.script("""
-            (function() {
-                const ua = navigator.userAgent || '';
-                const isWV =
-                    /FBAN|FBAV|Instagram|Line\\/|MicroMessenger|WeChat|GSA/.test(ua) ||
-                    (/iPhone|iPad|iPod/.test(ua) && !ua.match(/Version\\/|CriOS|FxiOS|EdgiOS/)) ||
-                    (/Android/.test(ua) && /wv/.test(ua) && !ua.includes('Chrome/'));
-                if (!isWV) return;
-
-                function apply() {
-                    const btn = document.getElementById('google-btn');
-                    const warn = document.getElementById('webview-warn');
-                    if (btn && warn) {
-                        btn.style.display = 'none';
-                        warn.style.display = 'flex';
-                    } else {
-                        setTimeout(apply, 50);
-                    }
-                }
-                apply();
-            })();
-        """),
+    return rx.cond(
+        AuthState.is_embedded_browser,
+        # WebView 警告 UI
         rx.box(
             rx.callout(
                 rx.text("請用 Safari 或 Chrome 開啟此頁面才能登入", weight="bold"),
@@ -49,13 +30,16 @@ def google_login_button(backend_url: str) -> rx.Component:
                     "navigator.clipboard.writeText(window.location.href)"
                 ),
             ),
-            id="webview-warn",
-            style={"display": "none", "flexDirection": "column", "alignItems": "center", "gap": "12px", "width": "100%"},
+            display="flex",
+            flex_direction="column",
+            align_items="center",
+            gap="3",
+            width="100%",
         ),
+        # 一般瀏覽器登入按鈕
         rx.button(
             rx.icon("log-in", size=18),
             "使用 Google 帳號登入",
-            id="google-btn",
             size="3",
             width="100%",
             on_click=rx.call_script(

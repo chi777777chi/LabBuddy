@@ -1,11 +1,12 @@
 import os
 import reflex as rx
+from ..state.auth_state import AuthState
 from ..components.webview_guard import google_login_button
 
 BACKEND_URL = os.environ.get("BACKEND_PUBLIC_URL", "http://localhost:8000")
 
 
-@rx.page(route="/")
+@rx.page(route="/", on_load=AuthState.detect_browser)
 def login_page() -> rx.Component:
     return rx.center(
         rx.card(
