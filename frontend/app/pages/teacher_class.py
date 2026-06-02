@@ -7,31 +7,34 @@ from .teacher import teacher_nav_bar
 def student_row(s) -> rx.Component:
     return rx.card(
         rx.hstack(
-            rx.vstack(
-                rx.text(s["name"], weight="medium", size="3"),
-                rx.text(s["email"], size="1", color=rx.color("gray", 9)),
-                spacing="0",
-                align="start",
-            ),
-            rx.spacer(),
-            rx.vstack(
-                rx.text("最近作答：", s["last_attempt"], size="1", color=rx.color("gray", 9)),
-                rx.text("測驗場次：", s["total_sessions"].to_string(), " 場", size="1", color=rx.color("gray", 9)),
-                spacing="0",
-                align="end",
-            ),
-            rx.cond(
-                s["avg_score"] != "",
-                rx.badge(s["avg_score"], "%", color_scheme="green", variant="soft"),
-                rx.badge("尚無紀錄", color_scheme="gray", variant="soft"),
-            ),
-            rx.button(
-                rx.icon("chevron-right", size=15),
+            # 可點擊區域（整列，不含移除按鈕）
+            rx.hstack(
+                rx.vstack(
+                    rx.text(s["name"], weight="medium", size="3"),
+                    rx.text(s["email"], size="1", color=rx.color("gray", 9)),
+                    spacing="0",
+                    align="start",
+                ),
+                rx.spacer(),
+                rx.vstack(
+                    rx.text("最近作答：", s["last_attempt"], size="1", color=rx.color("gray", 9)),
+                    rx.text("測驗場次：", s["total_sessions"].to_string(), " 場", size="1", color=rx.color("gray", 9)),
+                    spacing="0",
+                    align="end",
+                ),
+                rx.cond(
+                    s["avg_score"] != "",
+                    rx.badge(s["avg_score"], "%", color_scheme="green", variant="soft"),
+                    rx.badge("尚無紀錄", color_scheme="gray", variant="soft"),
+                ),
+                rx.icon("chevron-right", size=15, color=rx.color("gray", 9)),
                 on_click=TeacherState.go_to_student(s["id"]),
-                size="1",
-                variant="ghost",
-                color_scheme="gray",
+                cursor="pointer",
+                flex="1",
+                align="center",
+                spacing="3",
             ),
+            # 移除按鈕獨立，不觸發導覽
             rx.button(
                 rx.icon("user-x", size=15),
                 on_click=TeacherState.open_remove_student_dialog(s["id"], s["name"]),
@@ -41,7 +44,7 @@ def student_row(s) -> rx.Component:
             ),
             width="100%",
             align="center",
-            spacing="3",
+            spacing="2",
         ),
         width="100%",
         padding="3",

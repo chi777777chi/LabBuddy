@@ -261,10 +261,27 @@ def get_class_detail(
         student = db.query(User).filter(User.id == m.student_id).first()
         if not student:
             continue
+        sessions = (
+            db.query(ExamSession)
+            .filter(
+                ExamSession.user_id == student.id,
+                ExamSession.score.isnot(None),
+                ExamSession.save_to_history == True,
+            )
+            .all()
+        )
+        last_attempt = max((s.started_at for s in sessions), default=None)
+        avg_score = (
+            str(round(sum(s.score for s in sessions) / len(sessions)))
+            if sessions else ""
+        )
         students.append({
             "id": student.id,
             "name": student.name,
             "email": student.email,
+            "last_attempt": last_attempt.strftime("%Y/%m/%d") if last_attempt else "—",
+            "total_sessions": len(sessions),
+            "avg_score": avg_score,
             "joined_at": m.joined_at.strftime("%Y/%m/%d"),
         })
     return {

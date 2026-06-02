@@ -401,6 +401,9 @@ class AdminState(rx.State):
     def go_to_admin_class(self, class_id: str):
         return rx.redirect(f"/admin/classes/{class_id}")
 
+    def go_to_admin_student(self, class_id: str, student_id: str):
+        return rx.redirect(f"/teacher/student/{class_id}/{student_id}")
+
     async def load_admin_classes(self):
         auth = await self.get_state(AuthState)
         if not auth.token:

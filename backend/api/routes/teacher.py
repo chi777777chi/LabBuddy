@@ -293,7 +293,10 @@ def get_student_progress(
     teacher: User = Depends(require_teacher),
     db: Session = Depends(get_db),
 ):
-    cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
+    if teacher.role == "admin":
+        cls = db.query(Class).filter(Class.id == class_id).first()
+    else:
+        cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
     if not cls:
         raise HTTPException(status_code=404, detail="班級不存在")
     if not db.query(ClassMember).filter(
