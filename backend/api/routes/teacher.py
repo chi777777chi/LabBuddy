@@ -486,6 +486,51 @@ def my_classes(
     return result
 
 
+@router.get("/classes/{class_id}")
+def get_my_class_detail(
+    class_id: str,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """任何班級成員（含管理員）皆可查看班級詳情與成員名單。"""
+    cls = db.query(Class).filter(Class.id == class_id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    is_member = db.query(ClassMember).filter(
+        ClassMember.class_id == class_id, ClassMember.student_id == user.id
+    ).first()
+    if not is_member and user.role not in ("teacher", "admin"):
+        raise HTTPException(status_code=403, detail="你不在此班級中")
+    teacher = db.query(User).filter(User.id == cls.teacher_id).first()
+    anns = (
+        db.query(ClassAnnouncement)
+        .filter(ClassAnnouncement.class_id == class_id)
+        .order_by(ClassAnnouncement.created_at.desc())
+        .all()
+    )
+    members = db.query(ClassMember).filter(ClassMember.class_id == class_id).all()
+    member_list = []
+    for m in members:
+        s = db.query(User).filter(User.id == m.student_id).first()
+        if s:
+            member_list.append({
+                "id": s.id,
+                "name": s.name,
+                "joined_at": m.joined_at.strftime("%Y/%m/%d"),
+            })
+    return {
+        "id": cls.id,
+        "name": cls.name,
+        "teacher_name": teacher.name if teacher else "—",
+        "member_count": len(member_list),
+        "announcements": [
+            {"id": a.id, "content": a.content, "created_at": a.created_at.strftime("%Y/%m/%d %H:%M")}
+            for a in anns
+        ],
+        "members": member_list,
+    }
+
+
 @router.post("/classes/join")
 def join_class(
     body: JoinRequest,

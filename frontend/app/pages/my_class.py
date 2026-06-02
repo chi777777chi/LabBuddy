@@ -4,14 +4,29 @@ from ..state.teacher_state import TeacherState
 from .home import nav_bar, join_class_dialog
 
 
+def announcement_item(ann: dict) -> rx.Component:
+    return rx.vstack(
+        rx.text(ann["content"], size="2", line_height="1.7", white_space="pre-wrap"),
+        rx.text(ann["created_at"], size="1", color=rx.color("gray", 8)),
+        spacing="1",
+        align="start",
+        width="100%",
+        padding_bottom="2",
+        border_bottom=f"1px solid {rx.color('orange', 3)}",
+    )
+
+
 def class_card(cls) -> rx.Component:
     return rx.card(
         rx.vstack(
             rx.hstack(
                 rx.icon("graduation-cap", size=20, color=rx.color("violet", 9)),
                 rx.text(cls["name"], size="4", weight="bold"),
+                rx.spacer(),
+                rx.icon("chevron-right", size=16, color=rx.color("gray", 8)),
                 spacing="2",
                 align="center",
+                width="100%",
             ),
             rx.hstack(
                 rx.icon("user", size=13, color=rx.color("gray", 9)),
@@ -28,21 +43,23 @@ def class_card(cls) -> rx.Component:
                 color=rx.color("gray", 8),
             ),
             rx.cond(
-                cls["announcement"] != "",
+                cls["announcements"].length() > 0,
                 rx.box(
                     rx.vstack(
                         rx.hstack(
                             rx.icon("megaphone", size=14, color=rx.color("orange", 9)),
                             rx.text("老師公告", size="2", weight="bold", color=rx.color("orange", 9)),
+                            rx.badge(
+                                cls["announcements"].length().to_string(),
+                                " 則",
+                                color_scheme="orange",
+                                variant="soft",
+                                size="1",
+                            ),
                             spacing="2",
                             align="center",
                         ),
-                        rx.text(
-                            cls["announcement"],
-                            size="2",
-                            line_height="1.7",
-                            white_space="pre-wrap",
-                        ),
+                        rx.foreach(cls["announcements"], announcement_item),
                         spacing="2",
                         align="start",
                         width="100%",
@@ -61,6 +78,9 @@ def class_card(cls) -> rx.Component:
         ),
         width="100%",
         padding="5",
+        cursor="pointer",
+        on_click=TeacherState.go_to_my_class_detail(cls["id"]),
+        _hover={"box_shadow": "0 2px 10px rgba(0,0,0,0.08)"},
     )
 
 

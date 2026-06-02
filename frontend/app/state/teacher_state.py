@@ -55,6 +55,9 @@ class TeacherState(rx.State):
     # ── 我的班級（學生端）────────────────────────────────────
     my_classes: list[dict] = []
     is_my_classes_loading: bool = False
+    my_class_detail: dict = {}
+    my_class_members: list[dict] = []
+    is_my_class_detail_loading: bool = False
 
     # ── 公告編輯（老師端）────────────────────────────────────
     announcements: list[dict] = []
@@ -234,6 +237,35 @@ class TeacherState(rx.State):
         self.top_wrong_questions = data["top_wrong_questions"]
 
     # ── 我的班級（學生端）────────────────────────────────────
+    def go_to_my_class_detail(self, class_id: str):
+        return rx.redirect(f"/my-class/{class_id}")
+
+    async def load_my_class_detail(self):
+        auth = await self.get_state(AuthState)
+        if not auth.token:
+            return rx.redirect("/")
+        class_id = self.router.page.params.get("class_id", "")
+        if not class_id:
+            return rx.redirect("/my-class")
+        self.is_my_class_detail_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/classes/{class_id}",
+                params={"token": auth.token},
+            )
+        self.is_my_class_detail_loading = False
+        if resp.status_code != 200:
+            return rx.redirect("/my-class")
+        data = resp.json()
+        self.my_class_detail = {
+            "id": data["id"],
+            "name": data["name"],
+            "teacher_name": data["teacher_name"],
+            "member_count": data["member_count"],
+            "announcements": data.get("announcements", []),
+        }
+        self.my_class_members = data.get("members", [])
+
     async def load_my_classes(self):
         auth = await self.get_state(AuthState)
         if not auth.token:
