@@ -56,6 +56,7 @@ class TeacherState(rx.State):
     my_classes: list[dict] = []
     is_my_classes_loading: bool = False
     my_class_detail: dict = {}
+    my_class_announcements: list[dict] = []
     my_class_members: list[dict] = []
     is_my_class_detail_loading: bool = False
 
@@ -262,8 +263,8 @@ class TeacherState(rx.State):
             "name": data["name"],
             "teacher_name": data["teacher_name"],
             "member_count": data["member_count"],
-            "announcements": data.get("announcements", []),
         }
+        self.my_class_announcements = data.get("announcements", [])
         self.my_class_members = data.get("members", [])
 
     async def load_my_classes(self):

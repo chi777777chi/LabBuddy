@@ -92,14 +92,14 @@ def my_class_detail_page() -> rx.Component:
 
                         # 公告區
                         rx.cond(
-                            TeacherState.my_class_detail["announcements"].length() > 0,
+                            TeacherState.my_class_announcements.length() > 0,
                             rx.card(
                                 rx.vstack(
                                     rx.hstack(
                                         rx.icon("megaphone", size=16, color=rx.color("orange", 9)),
                                         rx.heading("老師公告", size="4", color=rx.color("orange", 9)),
                                         rx.badge(
-                                            TeacherState.my_class_detail["announcements"].length().to_string(),
+                                            TeacherState.my_class_announcements.length().to_string(),
                                             " 則",
                                             color_scheme="orange",
                                             variant="soft",
@@ -108,7 +108,7 @@ def my_class_detail_page() -> rx.Component:
                                         align="center",
                                     ),
                                     rx.foreach(
-                                        TeacherState.my_class_detail["announcements"],
+                                        TeacherState.my_class_announcements,
                                         announcement_block,
                                     ),
                                     spacing="3",
