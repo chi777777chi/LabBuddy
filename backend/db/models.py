@@ -105,6 +105,20 @@ class Class(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     members: Mapped[list["ClassMember"]] = relationship(back_populates="class_ref")
+    announcements: Mapped[list["ClassAnnouncement"]] = relationship(
+        back_populates="class_ref", order_by="ClassAnnouncement.created_at.desc()"
+    )
+
+
+class ClassAnnouncement(Base):
+    __tablename__ = "class_announcements"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    class_id: Mapped[str] = mapped_column(ForeignKey("classes.id"), nullable=False)
+    content: Mapped[str] = mapped_column(Text, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+    class_ref: Mapped["Class"] = relationship(back_populates="announcements")
 
 
 class ClassMember(Base):

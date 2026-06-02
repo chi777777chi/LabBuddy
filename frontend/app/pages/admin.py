@@ -43,6 +43,14 @@ def admin_nav_bar() -> rx.Component:
                 color_scheme="gray",
             ),
             rx.button(
+                rx.icon("school", size=15),
+                "班級",
+                on_click=rx.call_script("window.location.href='/admin/classes'"),
+                size="2",
+                variant="ghost",
+                color_scheme="gray",
+            ),
+            rx.button(
                 rx.icon("house", size=15),
                 "回主選單",
                 on_click=rx.call_script("window.location.href='/home'"),
@@ -184,6 +192,13 @@ def admin_page() -> rx.Component:
                         "新增、編輯、刪除題目",
                         "/admin/questions",
                         "violet",
+                    ),
+                    nav_card(
+                        "school",
+                        "班級管理",
+                        "查看所有班級、管理成員",
+                        "/admin/classes",
+                        "green",
                     ),
                     spacing="4",
                     justify="center",

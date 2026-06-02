@@ -248,36 +248,78 @@ def teacher_class_page() -> rx.Component:
                                 rx.hstack(
                                     rx.icon("megaphone", size=18, color=rx.color("orange", 9)),
                                     rx.heading("班級公告", size="4"),
+                                    rx.badge(
+                                        TeacherState.announcements.length().to_string(),
+                                        " 則",
+                                        color_scheme="orange",
+                                        variant="soft",
+                                    ),
                                     spacing="2",
                                     align="center",
                                 ),
-                                rx.text(
-                                    "公告會顯示在學生「我的班級」頁面，可留空代表無公告。",
-                                    size="1",
-                                    color=rx.color("gray", 9),
-                                ),
-                                rx.text_area(
-                                    value=TeacherState.announcement_input,
-                                    on_change=TeacherState.set_announcement_input,
-                                    placeholder="輸入公告內容，例如：下週考試範圍為第一章到第三章...",
-                                    rows="4",
-                                    width="100%",
-                                ),
-                                rx.hstack(
-                                    rx.button(
-                                        rx.cond(
-                                            TeacherState.announcement_saving,
-                                            rx.spinner(size="2"),
-                                            rx.icon("save", size=15),
-                                        ),
-                                        "儲存公告",
-                                        on_click=TeacherState.save_announcement,
-                                        disabled=TeacherState.announcement_saving,
-                                        color_scheme="orange",
-                                        size="2",
+                                # 新增公告輸入
+                                rx.vstack(
+                                    rx.text_area(
+                                        value=TeacherState.new_announcement_input,
+                                        on_change=TeacherState.set_new_announcement_input,
+                                        placeholder="輸入新公告內容...",
+                                        rows="3",
+                                        width="100%",
                                     ),
-                                    justify="end",
+                                    rx.hstack(
+                                        rx.button(
+                                            rx.cond(
+                                                TeacherState.announcement_saving,
+                                                rx.spinner(size="2"),
+                                                rx.icon("send", size=15),
+                                            ),
+                                            "發布公告",
+                                            on_click=TeacherState.add_announcement,
+                                            disabled=TeacherState.announcement_saving,
+                                            color_scheme="orange",
+                                            size="2",
+                                        ),
+                                        justify="end",
+                                        width="100%",
+                                    ),
+                                    spacing="2",
                                     width="100%",
+                                ),
+                                # 已發布公告列表
+                                rx.cond(
+                                    TeacherState.announcements.length() > 0,
+                                    rx.vstack(
+                                        rx.divider(),
+                                        rx.foreach(
+                                            TeacherState.announcements,
+                                            lambda ann: rx.card(
+                                                rx.hstack(
+                                                    rx.vstack(
+                                                        rx.text(ann["content"], size="2", white_space="pre-wrap"),
+                                                        rx.text(ann["created_at"], size="1", color=rx.color("gray", 9)),
+                                                        spacing="1",
+                                                        align="start",
+                                                        width="100%",
+                                                    ),
+                                                    rx.button(
+                                                        rx.icon("trash-2", size=14),
+                                                        on_click=TeacherState.delete_announcement(ann["id"]),
+                                                        size="1",
+                                                        variant="ghost",
+                                                        color_scheme="red",
+                                                    ),
+                                                    align="start",
+                                                    width="100%",
+                                                ),
+                                                padding="3",
+                                                width="100%",
+                                                variant="surface",
+                                            ),
+                                        ),
+                                        spacing="2",
+                                        width="100%",
+                                    ),
+                                    rx.fragment(),
                                 ),
                                 spacing="3",
                                 width="100%",

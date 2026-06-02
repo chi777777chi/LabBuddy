@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 from core.security import decode_token
 from db.database import get_db
-from db.models import Class, ClassMember, ExamSession, Question, QuestionStats, Subject, User
+from db.models import Class, ClassAnnouncement, ClassMember, ExamSession, Question, QuestionStats, Subject, User
 
 router = APIRouter(tags=["teacher"])
 
@@ -135,29 +135,87 @@ def get_class_detail(
             "avg_score": avg_score,
         })
 
+    anns = (
+        db.query(ClassAnnouncement)
+        .filter(ClassAnnouncement.class_id == class_id)
+        .order_by(ClassAnnouncement.created_at.desc())
+        .all()
+    )
     return {
         "id": cls.id,
         "name": cls.name,
         "invite_code": cls.invite_code,
-        "announcement": cls.announcement or "",
+        "announcements": [
+            {"id": a.id, "content": a.content, "created_at": a.created_at.strftime("%Y/%m/%d %H:%M")}
+            for a in anns
+        ],
         "created_at": cls.created_at.strftime("%Y/%m/%d"),
         "students": students,
     }
 
 
-@router.patch("/teacher/classes/{class_id}/announcement")
-def update_announcement(
+class AnnouncementCreate(BaseModel):
+    content: str
+
+
+@router.get("/teacher/classes/{class_id}/announcements")
+def list_announcements(
     class_id: str,
-    body: AnnouncementUpdate,
     teacher: User = Depends(require_teacher),
     db: Session = Depends(get_db),
 ):
     cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
     if not cls:
         raise HTTPException(status_code=404, detail="班級不存在")
-    cls.announcement = body.announcement.strip() if body.announcement else None
+    anns = (
+        db.query(ClassAnnouncement)
+        .filter(ClassAnnouncement.class_id == class_id)
+        .order_by(ClassAnnouncement.created_at.desc())
+        .all()
+    )
+    return [
+        {"id": a.id, "content": a.content, "created_at": a.created_at.strftime("%Y/%m/%d %H:%M")}
+        for a in anns
+    ]
+
+
+@router.post("/teacher/classes/{class_id}/announcements")
+def create_announcement(
+    class_id: str,
+    body: AnnouncementCreate,
+    teacher: User = Depends(require_teacher),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    if not body.content.strip():
+        raise HTTPException(status_code=400, detail="公告內容不能為空")
+    ann = ClassAnnouncement(class_id=class_id, content=body.content.strip())
+    db.add(ann)
     db.commit()
-    return {"ok": True, "announcement": cls.announcement or ""}
+    db.refresh(ann)
+    return {"id": ann.id, "content": ann.content, "created_at": ann.created_at.strftime("%Y/%m/%d %H:%M")}
+
+
+@router.delete("/teacher/classes/{class_id}/announcements/{ann_id}")
+def delete_announcement(
+    class_id: str,
+    ann_id: str,
+    teacher: User = Depends(require_teacher),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    ann = db.query(ClassAnnouncement).filter(
+        ClassAnnouncement.id == ann_id, ClassAnnouncement.class_id == class_id
+    ).first()
+    if not ann:
+        raise HTTPException(status_code=404, detail="公告不存在")
+    db.delete(ann)
+    db.commit()
+    return {"ok": True}
 
 
 @router.patch("/teacher/classes/{class_id}")
@@ -405,12 +463,21 @@ def my_classes(
             continue
         teacher = db.query(User).filter(User.id == cls.teacher_id).first()
         member_count = db.query(ClassMember).filter(ClassMember.class_id == cls.id).count()
+        anns = (
+            db.query(ClassAnnouncement)
+            .filter(ClassAnnouncement.class_id == cls.id)
+            .order_by(ClassAnnouncement.created_at.desc())
+            .all()
+        )
         result.append({
             "id": cls.id,
             "name": cls.name,
             "teacher_name": teacher.name if teacher else "—",
             "member_count": member_count,
-            "announcement": cls.announcement or "",
+            "announcements": [
+                {"id": a.id, "content": a.content, "created_at": a.created_at.strftime("%Y/%m/%d %H:%M")}
+                for a in anns
+            ],
             "joined_at": m.joined_at.strftime("%Y/%m/%d"),
         })
     return result

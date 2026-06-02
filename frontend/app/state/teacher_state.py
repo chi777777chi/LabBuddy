@@ -57,7 +57,8 @@ class TeacherState(rx.State):
     is_my_classes_loading: bool = False
 
     # ── 公告編輯（老師端）────────────────────────────────────
-    announcement_input: str = ""
+    announcements: list[dict] = []
+    new_announcement_input: str = ""
     announcement_saving: bool = False
 
     # ── flash ──────────────────────────────────────────────────
@@ -143,10 +144,10 @@ class TeacherState(rx.State):
                 "id": data["id"],
                 "name": data["name"],
                 "invite_code": data["invite_code"],
-                "announcement": data.get("announcement", ""),
                 "created_at": data["created_at"],
             }
-            self.announcement_input = data.get("announcement", "")
+            self.announcements = data.get("announcements", [])
+            self.new_announcement_input = ""
             self.class_students = data["students"]
 
     async def regenerate_code(self):
@@ -248,29 +249,49 @@ class TeacherState(rx.State):
             self.my_classes = resp.json()
 
     # ── 公告編輯（老師端）────────────────────────────────────
-    def set_announcement_input(self, val: str):
-        self.announcement_input = val
+    def set_new_announcement_input(self, val: str):
+        self.new_announcement_input = val
 
-    async def save_announcement(self):
+    async def add_announcement(self):
+        if not self.new_announcement_input.strip():
+            return
         auth = await self.get_state(AuthState)
         class_id = self.current_class.get("id", "")
         if not class_id:
             return
         self.announcement_saving = True
         async with httpx.AsyncClient() as client:
-            resp = await client.patch(
-                f"{BACKEND_URL}/teacher/classes/{class_id}/announcement",
+            resp = await client.post(
+                f"{BACKEND_URL}/teacher/classes/{class_id}/announcements",
                 params={"token": auth.token},
-                json={"announcement": self.announcement_input},
+                json={"content": self.new_announcement_input.strip()},
             )
         self.announcement_saving = False
         if resp.status_code == 200:
-            saved = resp.json()["announcement"]
-            self.current_class = {**self.current_class, "announcement": saved}
-            self.flash_msg = "公告已儲存"
+            self.announcements = [resp.json()] + self.announcements
+            self.new_announcement_input = ""
+            self.flash_msg = "公告已發布"
             self.flash_kind = "info"
         else:
-            self.flash_msg = resp.json().get("detail", "儲存失敗")
+            self.flash_msg = resp.json().get("detail", "發布失敗")
+            self.flash_kind = "error"
+
+    async def delete_announcement(self, ann_id: str):
+        auth = await self.get_state(AuthState)
+        class_id = self.current_class.get("id", "")
+        if not class_id:
+            return
+        async with httpx.AsyncClient() as client:
+            resp = await client.delete(
+                f"{BACKEND_URL}/teacher/classes/{class_id}/announcements/{ann_id}",
+                params={"token": auth.token},
+            )
+        if resp.status_code == 200:
+            self.announcements = [a for a in self.announcements if a["id"] != ann_id]
+            self.flash_msg = "公告已刪除"
+            self.flash_kind = "info"
+        else:
+            self.flash_msg = resp.json().get("detail", "刪除失敗")
             self.flash_kind = "error"
 
     # ── 加入班級（學生端）────────────────────────────────────

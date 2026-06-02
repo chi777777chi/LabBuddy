@@ -52,6 +52,16 @@ class AdminState(rx.State):
     # ── 跳頁輸入 ──────────────────────────────────────────────
     jump_page_input: str = ""
 
+    # ── 班級管理 ──────────────────────────────────────────────
+    admin_classes: list[dict] = []
+    admin_classes_loading: bool = False
+    admin_current_class: dict = {}
+    admin_class_students: list[dict] = []
+    admin_class_loading: bool = False
+    admin_add_email: str = ""
+    admin_add_error: str = ""
+    admin_add_loading: bool = False
+
     # ── 訊息 ──────────────────────────────────────────────────
     flash_msg: str = ""
     flash_kind: str = "info"   # info / error
@@ -386,6 +396,104 @@ class AdminState(rx.State):
             self.flash_kind = "error"
         self.cancel_delete()
         await self.load_questions()
+
+    # ── 班級管理 ──────────────────────────────────────────────
+    def go_to_admin_class(self, class_id: str):
+        return rx.redirect(f"/admin/classes/{class_id}")
+
+    async def load_admin_classes(self):
+        auth = await self.get_state(AuthState)
+        if not auth.token:
+            return rx.redirect("/")
+        self.admin_classes_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/admin/classes",
+                params={"token": auth.token},
+            )
+        self.admin_classes_loading = False
+        if resp.status_code == 403:
+            return rx.redirect("/home")
+        if resp.status_code == 200:
+            self.admin_classes = resp.json()
+
+    async def load_admin_class_detail(self):
+        auth = await self.get_state(AuthState)
+        if not auth.token:
+            return rx.redirect("/")
+        class_id = self.router.page.params.get("class_id", "")
+        if not class_id:
+            return rx.redirect("/admin/classes")
+        self.admin_class_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/admin/classes/{class_id}",
+                params={"token": auth.token},
+            )
+        self.admin_class_loading = False
+        if resp.status_code != 200:
+            return rx.redirect("/admin/classes")
+        data = resp.json()
+        self.admin_current_class = {
+            "id": data["id"],
+            "name": data["name"],
+            "invite_code": data["invite_code"],
+            "teacher_name": data["teacher_name"],
+            "teacher_email": data["teacher_email"],
+            "created_at": data["created_at"],
+        }
+        self.admin_class_students = data["students"]
+        self.admin_add_email = ""
+        self.admin_add_error = ""
+
+    def set_admin_add_email(self, val: str):
+        self.admin_add_email = val
+        self.admin_add_error = ""
+
+    async def admin_add_member(self):
+        if not self.admin_add_email.strip():
+            self.admin_add_error = "請輸入 email"
+            return
+        auth = await self.get_state(AuthState)
+        class_id = self.admin_current_class.get("id", "")
+        self.admin_add_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/admin/classes/{class_id}/members",
+                params={"token": auth.token},
+                json={"email": self.admin_add_email.strip()},
+            )
+        self.admin_add_loading = False
+        if resp.status_code == 200:
+            self.admin_add_email = ""
+            self.admin_add_error = ""
+            self.flash_msg = f"已加入「{resp.json()['name']}」"
+            self.flash_kind = "info"
+            await self.load_admin_class_detail()
+        else:
+            self.admin_add_error = resp.json().get("detail", "加入失敗")
+
+    async def admin_remove_member(self, student_id: str):
+        auth = await self.get_state(AuthState)
+        class_id = self.admin_current_class.get("id", "")
+        async with httpx.AsyncClient() as client:
+            resp = await client.delete(
+                f"{BACKEND_URL}/admin/classes/{class_id}/members/{student_id}",
+                params={"token": auth.token},
+            )
+        if resp.status_code == 200:
+            self.admin_class_students = [
+                s for s in self.admin_class_students if s["id"] != student_id
+            ]
+            self.flash_msg = "已將學生移出班級"
+            self.flash_kind = "info"
+        else:
+            self.flash_msg = resp.json().get("detail", "移除失敗")
+            self.flash_kind = "error"
+
+    def handle_add_member_key(self, key: str):
+        if key == "Enter":
+            return AdminState.admin_add_member
 
     def clear_flash(self):
         self.flash_msg = ""

@@ -1,3 +1,5 @@
+import uuid
+from datetime import datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
@@ -71,11 +73,40 @@ def _migrate_exam_sessions_columns():
             conn.commit()
 
 
+def _migrate_class_announcements_data():
+    """將 classes.announcement 舊資料遷移至 class_announcements 資料表（每班只跑一次）。"""
+    with engine.connect() as conn:
+        classes = conn.execute(
+            text("SELECT id, announcement FROM classes WHERE announcement IS NOT NULL AND announcement != ''")
+        ).fetchall()
+        for row in classes:
+            class_id, announcement = row
+            count = conn.execute(
+                text("SELECT COUNT(*) FROM class_announcements WHERE class_id = :cid"),
+                {"cid": class_id},
+            ).scalar()
+            if count == 0:
+                conn.execute(
+                    text(
+                        "INSERT INTO class_announcements (id, class_id, content, created_at) "
+                        "VALUES (:id, :cid, :content, :created_at)"
+                    ),
+                    {
+                        "id": str(uuid.uuid4()),
+                        "cid": class_id,
+                        "content": announcement,
+                        "created_at": datetime.utcnow().isoformat(),
+                    },
+                )
+        conn.commit()
+
+
 _migrate_user_is_active()
 _migrate_questions_tags()
 _migrate_classes_announcement()
 _migrate_exam_sessions_columns()
 _migrate_users_ai_cache()
+_migrate_class_announcements_data()
 
 app = FastAPI(title="醫檢師國考題庫平台 API", version="0.1.0")
 

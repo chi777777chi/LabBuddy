@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 from core.security import decode_token
 from db.database import get_db
-from db.models import Answer, ExamSession, Question, Subject, User
+from db.models import Answer, Class, ClassMember, ExamSession, Question, Subject, User
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -220,5 +220,108 @@ def delete_question(
     if not q:
         raise HTTPException(status_code=404, detail="Question not found")
     db.delete(q)
+    db.commit()
+    return {"ok": True}
+
+
+# ── 班級管理 ──────────────────────────────────────────────────────
+
+@router.get("/classes")
+def list_all_classes(admin: User = Depends(require_admin), db: Session = Depends(get_db)):
+    classes = db.query(Class).order_by(Class.created_at.desc()).all()
+    result = []
+    for cls in classes:
+        teacher = db.query(User).filter(User.id == cls.teacher_id).first()
+        member_count = db.query(ClassMember).filter(ClassMember.class_id == cls.id).count()
+        result.append({
+            "id": cls.id,
+            "name": cls.name,
+            "teacher_name": teacher.name if teacher else "—",
+            "teacher_email": teacher.email if teacher else "—",
+            "member_count": member_count,
+            "invite_code": cls.invite_code,
+            "created_at": cls.created_at.strftime("%Y/%m/%d"),
+        })
+    return result
+
+
+@router.get("/classes/{class_id}")
+def get_class_detail(
+    class_id: str,
+    admin: User = Depends(require_admin),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    teacher = db.query(User).filter(User.id == cls.teacher_id).first()
+    members = db.query(ClassMember).filter(ClassMember.class_id == class_id).all()
+    students = []
+    for m in members:
+        student = db.query(User).filter(User.id == m.student_id).first()
+        if not student:
+            continue
+        students.append({
+            "id": student.id,
+            "name": student.name,
+            "email": student.email,
+            "joined_at": m.joined_at.strftime("%Y/%m/%d"),
+        })
+    return {
+        "id": cls.id,
+        "name": cls.name,
+        "invite_code": cls.invite_code,
+        "teacher_name": teacher.name if teacher else "—",
+        "teacher_email": teacher.email if teacher else "—",
+        "created_at": cls.created_at.strftime("%Y/%m/%d"),
+        "students": students,
+    }
+
+
+class AddMemberBody(BaseModel):
+    email: str
+
+
+@router.post("/classes/{class_id}/members")
+def add_class_member(
+    class_id: str,
+    body: AddMemberBody,
+    admin: User = Depends(require_admin),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    student = db.query(User).filter(User.email == body.email.strip().lower()).first()
+    if not student:
+        raise HTTPException(status_code=404, detail=f"找不到 email 為 {body.email} 的使用者")
+    if student.id == cls.teacher_id:
+        raise HTTPException(status_code=400, detail="不能將授課老師加入自己的班級")
+    existing = db.query(ClassMember).filter(
+        ClassMember.class_id == class_id, ClassMember.student_id == student.id
+    ).first()
+    if existing:
+        raise HTTPException(status_code=400, detail=f"「{student.name}」已在此班級中")
+    db.add(ClassMember(class_id=class_id, student_id=student.id))
+    db.commit()
+    return {"ok": True, "name": student.name, "email": student.email}
+
+
+@router.delete("/classes/{class_id}/members/{student_id}")
+def remove_class_member(
+    class_id: str,
+    student_id: str,
+    admin: User = Depends(require_admin),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    member = db.query(ClassMember).filter(
+        ClassMember.class_id == class_id, ClassMember.student_id == student_id
+    ).first()
+    if not member:
+        raise HTTPException(status_code=404, detail="該學生不在此班級")
+    db.delete(member)
     db.commit()
     return {"ok": True}
