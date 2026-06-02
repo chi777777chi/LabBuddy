@@ -30,5 +30,6 @@ def login_page() -> rx.Component:
             padding="8",
         ),
         height="100vh",
+        width="100%",
         background=rx.color("gray", 2),
     )

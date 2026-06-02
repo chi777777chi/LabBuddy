@@ -50,11 +50,7 @@ def google_login_button(backend_url: str) -> rx.Component:
                 ),
             ),
             id="webview-warn",
-            display="none",
-            flex_direction="column",
-            align_items="center",
-            gap="3",
-            width="100%",
+            style={"display": "none", "flexDirection": "column", "alignItems": "center", "gap": "12px", "width": "100%"},
         ),
         rx.button(
             rx.icon("log-in", size=18),
