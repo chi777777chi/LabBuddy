@@ -6,7 +6,7 @@ from .home import nav_bar
 
 def member_row(m: dict) -> rx.Component:
     return rx.hstack(
-        rx.avatar(fallback=m["name"], size="2"),
+        rx.icon("user-circle", size=28, color=rx.color("violet", 8)),
         rx.vstack(
             rx.text(m["name"], size="2", weight="medium"),
             rx.text("加入於 ", m["joined_at"], size="1", color=rx.color("gray", 8)),
