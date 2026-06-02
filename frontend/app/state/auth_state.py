@@ -15,9 +15,11 @@ class AuthState(rx.State):
     user_avatar: str = ""
     user_role: str = ""
     is_embedded_browser: bool = False
+    browser_detected: bool = False
 
     def set_embedded_browser(self, val: str):
         self.is_embedded_browser = val == "true"
+        self.browser_detected = True
 
     def detect_browser(self):
         """偵測是否在 LINE / Instagram / WebView 等內建瀏覽器中開啟。"""
