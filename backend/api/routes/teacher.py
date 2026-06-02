@@ -477,10 +477,9 @@ def my_classes(
             "name": cls.name,
             "teacher_name": teacher.name if teacher else "—",
             "member_count": member_count,
-            "announcements": [
-                {"id": a.id, "content": a.content, "created_at": a.created_at.strftime("%Y/%m/%d %H:%M")}
-                for a in anns
-            ],
+            "has_announcements": len(anns) > 0,
+            "latest_announcement": anns[0].content if anns else "",
+            "announcement_count": len(anns),
             "joined_at": m.joined_at.strftime("%Y/%m/%d"),
         })
     return result

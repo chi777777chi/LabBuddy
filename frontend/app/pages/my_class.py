@@ -4,18 +4,6 @@ from ..state.teacher_state import TeacherState
 from .home import nav_bar, join_class_dialog
 
 
-def announcement_item(ann: dict) -> rx.Component:
-    return rx.vstack(
-        rx.text(ann["content"], size="2", line_height="1.7", white_space="pre-wrap"),
-        rx.text(ann["created_at"], size="1", color=rx.color("gray", 8)),
-        spacing="1",
-        align="start",
-        width="100%",
-        padding_bottom="2",
-        border_bottom=f"1px solid {rx.color('orange', 3)}",
-    )
-
-
 def class_card(cls) -> rx.Component:
     return rx.card(
         rx.vstack(
@@ -43,14 +31,14 @@ def class_card(cls) -> rx.Component:
                 color=rx.color("gray", 8),
             ),
             rx.cond(
-                cls["announcements"].length() > 0,
+                cls["has_announcements"],
                 rx.box(
                     rx.vstack(
                         rx.hstack(
                             rx.icon("megaphone", size=14, color=rx.color("orange", 9)),
                             rx.text("老師公告", size="2", weight="bold", color=rx.color("orange", 9)),
                             rx.badge(
-                                cls["announcements"].length().to_string(),
+                                cls["announcement_count"].to_string(),
                                 " 則",
                                 color_scheme="orange",
                                 variant="soft",
@@ -59,7 +47,13 @@ def class_card(cls) -> rx.Component:
                             spacing="2",
                             align="center",
                         ),
-                        rx.foreach(cls["announcements"], announcement_item),
+                        rx.text(
+                            cls["latest_announcement"],
+                            size="2",
+                            line_height="1.7",
+                            white_space="pre-wrap",
+                            no_of_lines=2,
+                        ),
                         spacing="2",
                         align="start",
                         width="100%",
