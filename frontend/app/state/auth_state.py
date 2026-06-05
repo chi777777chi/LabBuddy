@@ -16,6 +16,12 @@ class AuthState(rx.State):
     user_role: str = ""
     is_embedded_browser: bool = False
     browser_detected: bool = False
+    show_suspended_error: bool = False
+
+    def check_login_error(self):
+        """登入頁 on_load：檢查 URL 是否帶有 error=suspended 參數。"""
+        error = self.router.page.params.get("error", "")
+        self.show_suspended_error = error == "suspended"
 
     def set_embedded_browser(self, val: str):
         self.is_embedded_browser = val == "true"
@@ -52,6 +58,9 @@ class AuthState(rx.State):
                 f"{BACKEND_URL}/users/me",
                 params={"token": token},
             )
+        if resp.status_code == 403:
+            self.token = ""
+            return rx.redirect("/?error=suspended")
         if resp.status_code == 200:
             role = resp.json().get("role", "student")
             if role == "teacher":
@@ -76,10 +85,10 @@ class AuthState(rx.State):
                 )
         except Exception:
             return
-        if resp.status_code == 401:
+        if resp.status_code in (401, 403):
             async with self:
                 self.token = ""
-            yield rx.redirect("/")
+            yield rx.redirect("/?error=suspended" if resp.status_code == 403 else "/")
             return
         if resp.status_code != 200:
             return

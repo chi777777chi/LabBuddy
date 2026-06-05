@@ -79,6 +79,7 @@ class ExamState(rx.State):
     _bg_hint_token: str = ""
     _bg_hint_qid: str = ""
     _bg_hint_next_level: int = 0
+    _hint_cache: dict[str, str] = {}  # {question_id: level-3 hint text}
 
     # ── 每題計時 ─────────────────────────────────────────────
     q_start_time: dict[str, float] = {}   # {qid: timestamp when user arrived}
@@ -443,6 +444,7 @@ class ExamState(rx.State):
         self.feedback = {}
         self.answered_via_api = {}
         self.hint_levels = {}
+        self._hint_cache = {}
         self.elapsed_seconds = 0
         self.is_timer_running = False
         self.q_start_time = {}
@@ -493,6 +495,7 @@ class ExamState(rx.State):
         self.feedback = {}
         self.answered_via_api = {}
         self.hint_levels = {}
+        self._hint_cache = {}
         self.q_start_time = {}
         self.q_time_spent = {}
         if self.questions:
@@ -694,7 +697,11 @@ class ExamState(rx.State):
         """Step 1: reads state + auth token, triggers background hint call."""
         qid = self.current_qid
         current_level = self.hint_levels.get(qid, 0)
-        if self.ai_hint_loading or not qid or current_level >= 3:
+        if self.ai_hint_loading or not qid:
+            return
+        if current_level >= 3:
+            self.ai_hint_text = self._hint_cache.get(qid, "")
+            self.show_ai_hint_dialog = True
             return
         auth = await self.get_state(AuthState)
         self._bg_hint_token = auth.token
@@ -733,6 +740,8 @@ class ExamState(rx.State):
             self.ai_hint_text = hint_text
             if new_level is not None:
                 self.hint_levels = {**self.hint_levels, qid: new_level}
+                if new_level >= 3:
+                    self._hint_cache = {**self._hint_cache, qid: hint_text}
 
     async def submit_exam(self):
         if not self.session_id or self.is_loading:

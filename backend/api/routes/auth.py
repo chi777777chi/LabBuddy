@@ -59,5 +59,8 @@ async def google_callback(code: str, db: Session = Depends(get_db)):
         db.commit()
         db.refresh(user)
 
+    if not user.is_active:
+        return RedirectResponse(f"{settings.frontend_url}/?error=suspended")
+
     token = create_access_token({"sub": user.id, "email": user.email, "name": user.name})
     return RedirectResponse(f"{settings.frontend_url}/callback?jwt={token}")
