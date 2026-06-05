@@ -190,8 +190,11 @@ class TeacherState(rx.State):
         if class_id:
             return rx.redirect(f"/teacher/stats/{class_id}")
 
-    def back_to_class(self):
+    async def back_to_class(self):
         class_id = self.router.page.params.get("class_id", "")
+        auth = await self.get_state(AuthState)
+        if auth.user_role == "admin":
+            return rx.redirect(f"/admin/classes/{class_id}")
         return rx.redirect(f"/teacher/class/{class_id}")
 
     def back_from_stats(self):
