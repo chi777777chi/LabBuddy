@@ -250,6 +250,35 @@ def delete_class(
     return {"ok": True}
 
 
+class AddMemberBody(BaseModel):
+    email: str
+
+
+@router.post("/teacher/classes/{class_id}/members")
+def add_member(
+    class_id: str,
+    body: AddMemberBody,
+    teacher: User = Depends(require_teacher),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id, Class.teacher_id == teacher.id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    student = db.query(User).filter(User.email == body.email.strip()).first()
+    if not student:
+        raise HTTPException(status_code=404, detail="找不到此 email 的使用者")
+    if student.id == teacher.id:
+        raise HTTPException(status_code=400, detail="不能將自己加入班級")
+    existing = db.query(ClassMember).filter(
+        ClassMember.class_id == class_id, ClassMember.student_id == student.id
+    ).first()
+    if existing:
+        raise HTTPException(status_code=400, detail=f"「{student.name}」已在此班級中")
+    db.add(ClassMember(class_id=class_id, student_id=student.id))
+    db.commit()
+    return {"ok": True, "name": student.name, "email": student.email}
+
+
 @router.delete("/teacher/classes/{class_id}/members/{student_id}")
 def remove_member(
     class_id: str,

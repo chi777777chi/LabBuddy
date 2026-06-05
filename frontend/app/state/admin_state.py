@@ -61,6 +61,9 @@ class AdminState(rx.State):
     admin_add_email: str = ""
     admin_add_error: str = ""
     admin_add_loading: bool = False
+    show_admin_create_dialog: bool = False
+    admin_new_class_name: str = ""
+    admin_create_error: str = ""
 
     # ── 訊息 ──────────────────────────────────────────────────
     flash_msg: str = ""
@@ -398,6 +401,42 @@ class AdminState(rx.State):
         await self.load_questions()
 
     # ── 班級管理 ──────────────────────────────────────────────
+    def open_admin_create_dialog(self):
+        self.show_admin_create_dialog = True
+        self.admin_new_class_name = ""
+        self.admin_create_error = ""
+
+    def close_admin_create_dialog(self):
+        self.show_admin_create_dialog = False
+        self.admin_new_class_name = ""
+        self.admin_create_error = ""
+
+    def set_admin_create_dialog_open(self, is_open: bool):
+        if not is_open:
+            self.close_admin_create_dialog()
+
+    def set_admin_new_class_name(self, val: str):
+        self.admin_new_class_name = val
+
+    async def admin_create_class(self):
+        if not self.admin_new_class_name.strip():
+            self.admin_create_error = "班級名稱不能為空"
+            return
+        auth = await self.get_state(AuthState)
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/teacher/classes",
+                params={"token": auth.token},
+                json={"name": self.admin_new_class_name.strip()},
+            )
+        if resp.status_code == 200:
+            self.close_admin_create_dialog()
+            self.flash_msg = "班級已建立"
+            self.flash_kind = "info"
+            await self.load_admin_classes()
+        else:
+            self.admin_create_error = resp.json().get("detail", "建立失敗")
+
     def go_to_admin_class(self, class_id: str):
         return rx.redirect(f"/admin/classes/{class_id}")
 

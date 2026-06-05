@@ -4,6 +4,60 @@ from ..state.admin_state import AdminState
 from .admin import admin_nav_bar
 
 
+def admin_create_class_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.dialog.title("建立新班級"),
+            rx.vstack(
+                rx.vstack(
+                    rx.text("班級名稱", size="1", weight="medium"),
+                    rx.input(
+                        value=AdminState.admin_new_class_name,
+                        on_change=AdminState.set_admin_new_class_name,
+                        placeholder="如：113學年度 甲班",
+                        width="100%",
+                    ),
+                    spacing="1",
+                    width="100%",
+                ),
+                rx.cond(
+                    AdminState.admin_create_error != "",
+                    rx.callout(
+                        AdminState.admin_create_error,
+                        icon="triangle-alert",
+                        color_scheme="red",
+                        size="1",
+                    ),
+                    rx.fragment(),
+                ),
+                rx.hstack(
+                    rx.button(
+                        "取消",
+                        on_click=AdminState.close_admin_create_dialog,
+                        variant="soft",
+                        color_scheme="gray",
+                    ),
+                    rx.button(
+                        rx.icon("plus", size=15),
+                        "建立",
+                        on_click=AdminState.admin_create_class,
+                        color_scheme="green",
+                    ),
+                    spacing="2",
+                    justify="end",
+                    width="100%",
+                ),
+                spacing="3",
+                width="100%",
+                padding_top="3",
+            ),
+            max_width="400px",
+        ),
+        open=AdminState.show_admin_create_dialog,
+        on_open_change=AdminState.set_admin_create_dialog_open,
+    )
+
+
 def class_row(cls: dict) -> rx.Component:
     return rx.card(
         rx.hstack(
@@ -62,9 +116,21 @@ def admin_classes_page() -> rx.Component:
                     align="center",
                 ),
                 rx.hstack(
-                    rx.icon("school", size=22, color=rx.color("green", 9)),
-                    rx.heading("班級管理", size="6"),
-                    spacing="2",
+                    rx.hstack(
+                        rx.icon("school", size=22, color=rx.color("green", 9)),
+                        rx.heading("班級管理", size="6"),
+                        spacing="2",
+                        align="center",
+                    ),
+                    rx.spacer(),
+                    rx.button(
+                        rx.icon("plus", size=15),
+                        "建立班級",
+                        on_click=AdminState.open_admin_create_dialog,
+                        color_scheme="green",
+                        size="2",
+                    ),
+                    width="100%",
                     align="center",
                 ),
                 rx.cond(
@@ -77,6 +143,7 @@ def admin_classes_page() -> rx.Component:
                     ),
                     rx.fragment(),
                 ),
+                admin_create_class_dialog(),
                 rx.cond(
                     AdminState.admin_classes_loading,
                     rx.center(rx.spinner(size="3"), padding_y="8"),

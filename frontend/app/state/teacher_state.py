@@ -60,6 +60,11 @@ class TeacherState(rx.State):
     my_class_members: list[dict] = []
     is_my_class_detail_loading: bool = False
 
+    # ── 手動加入學生（老師端）────────────────────────────────
+    add_member_email: str = ""
+    add_member_error: str = ""
+    add_member_loading: bool = False
+
     # ── 公告編輯（老師端）────────────────────────────────────
     announcements: list[dict] = []
     new_announcement_input: str = ""
@@ -280,6 +285,40 @@ class TeacherState(rx.State):
         self.is_my_classes_loading = False
         if resp.status_code == 200:
             self.my_classes = resp.json()
+
+    # ── 手動加入學生（老師端）────────────────────────────────
+    def set_add_member_email(self, val: str):
+        self.add_member_email = val
+        self.add_member_error = ""
+
+    async def add_member_by_email(self):
+        if not self.add_member_email.strip():
+            self.add_member_error = "請輸入 email"
+            return
+        auth = await self.get_state(AuthState)
+        class_id = self.current_class.get("id", "")
+        if not class_id:
+            return
+        self.add_member_loading = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(
+                f"{BACKEND_URL}/teacher/classes/{class_id}/members",
+                params={"token": auth.token},
+                json={"email": self.add_member_email.strip()},
+            )
+        self.add_member_loading = False
+        if resp.status_code == 200:
+            self.add_member_email = ""
+            self.add_member_error = ""
+            self.flash_msg = f"已加入「{resp.json()['name']}」"
+            self.flash_kind = "info"
+            await self.load_class()
+        else:
+            self.add_member_error = resp.json().get("detail", "加入失敗")
+
+    def handle_add_member_key(self, key: str):
+        if key == "Enter":
+            return TeacherState.add_member_by_email
 
     # ── 公告編輯（老師端）────────────────────────────────────
     def set_new_announcement_input(self, val: str):

@@ -332,6 +332,61 @@ def teacher_class_page() -> rx.Component:
                             width="100%",
                         ),
 
+                        # 手動加入學生
+                        rx.card(
+                            rx.vstack(
+                                rx.hstack(
+                                    rx.icon("user-plus", size=18, color=rx.color("green", 9)),
+                                    rx.heading("手動加入學生", size="4"),
+                                    spacing="2",
+                                    align="center",
+                                ),
+                                rx.text(
+                                    "輸入已註冊帳號的 email，即可將該使用者加入此班級。",
+                                    size="1",
+                                    color=rx.color("gray", 9),
+                                ),
+                                rx.hstack(
+                                    rx.input(
+                                        value=TeacherState.add_member_email,
+                                        on_change=TeacherState.set_add_member_email,
+                                        on_key_down=TeacherState.handle_add_member_key,
+                                        placeholder="student@example.com",
+                                        width="100%",
+                                    ),
+                                    rx.button(
+                                        rx.cond(
+                                            TeacherState.add_member_loading,
+                                            rx.spinner(size="2"),
+                                            rx.icon("user-plus", size=15),
+                                        ),
+                                        "加入",
+                                        on_click=TeacherState.add_member_by_email,
+                                        disabled=TeacherState.add_member_loading,
+                                        color_scheme="green",
+                                        size="2",
+                                    ),
+                                    width="100%",
+                                    spacing="2",
+                                ),
+                                rx.cond(
+                                    TeacherState.add_member_error != "",
+                                    rx.callout(
+                                        TeacherState.add_member_error,
+                                        icon="triangle-alert",
+                                        color_scheme="red",
+                                        size="1",
+                                    ),
+                                    rx.fragment(),
+                                ),
+                                spacing="3",
+                                width="100%",
+                                align="start",
+                            ),
+                            padding="5",
+                            width="100%",
+                        ),
+
                         # 學生名單
                         rx.vstack(
                             rx.hstack(
