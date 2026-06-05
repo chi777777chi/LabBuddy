@@ -65,6 +65,12 @@ class TeacherState(rx.State):
     add_member_error: str = ""
     add_member_loading: bool = False
 
+    # ── 學生單場考試詳情 dialog ───────────────────────────────
+    show_session_detail: bool = False
+    session_detail_loading: bool = False
+    session_detail_label: str = ""
+    session_detail_items: list[dict] = []
+
     # ── 公告編輯（老師端）────────────────────────────────────
     announcements: list[dict] = []
     new_announcement_input: str = ""
@@ -285,6 +291,36 @@ class TeacherState(rx.State):
         self.is_my_classes_loading = False
         if resp.status_code == 200:
             self.my_classes = resp.json()
+
+    # ── 學生單場考試詳情 ─────────────────────────────────────
+    def close_session_detail(self):
+        self.show_session_detail = False
+        self.session_detail_items = []
+
+    async def load_session_detail(self, session_id: str):
+        auth = await self.get_state(AuthState)
+        student_id = self.router.page.params.get("student_id", "")
+        class_id = self.router.page.params.get("class_id", "")
+        if not student_id or not class_id:
+            return
+        self.session_detail_loading = True
+        self.session_detail_items = []
+        self.show_session_detail = True
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                f"{BACKEND_URL}/teacher/classes/{class_id}/students/{student_id}/sessions/{session_id}",
+                params={"token": auth.token},
+            )
+        self.session_detail_loading = False
+        if resp.status_code == 200:
+            data = resp.json()
+            year = data.get("year") or "—"
+            sitting = data.get("sitting") or "—"
+            subj = data.get("subject_name", "")
+            score = data.get("score", 0)
+            total = data.get("question_count", 0)
+            self.session_detail_label = f"{subj}　{year} 年第 {sitting} 次　{score}/{total} 題"
+            self.session_detail_items = data.get("details", [])
 
     # ── 手動加入學生（老師端）────────────────────────────────
     def set_add_member_email(self, val: str):

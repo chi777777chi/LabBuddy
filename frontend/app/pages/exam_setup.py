@@ -113,7 +113,7 @@ def year_sitting_select() -> rx.Component:
 
 
 def count_select() -> rx.Component:
-    counts = [("5", "5 題"), ("10", "10 題"), ("80", "80 題（完整）")]
+    counts = [("5", "5 題"), ("10", "10 題"), ("20", "20 題"), ("40", "40 題"), ("80", "80 題（完整）")]
     return rx.vstack(
         rx.text("題數", weight="bold", size="2"),
         rx.radio_group.root(

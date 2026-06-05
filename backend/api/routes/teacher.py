@@ -1,3 +1,4 @@
+import json
 import random
 import string
 from typing import Optional
@@ -8,7 +9,7 @@ from pydantic import BaseModel
 
 from core.security import decode_token
 from db.database import get_db
-from db.models import Class, ClassAnnouncement, ClassMember, ExamSession, Question, QuestionStats, Subject, User
+from db.models import Answer, Class, ClassAnnouncement, ClassMember, ExamSession, Question, QuestionStats, Subject, User
 
 router = APIRouter(tags=["teacher"])
 
@@ -352,6 +353,7 @@ def get_student_progress(
     for s in sessions:
         subj = subjects.get(s.subject_id)
         session_list.append({
+            "session_id": s.id,
             "date": s.started_at.strftime("%Y/%m/%d"),
             "subject_name": subj.name if subj else "—",
             "year": str(s.year) if s.year else "—",
@@ -388,6 +390,59 @@ def get_student_progress(
         "class_name": cls.name,
         "sessions": session_list,
         "subject_stats": subject_stats,
+    }
+
+
+# ── 學生單場考試詳情 ────────────────────────────────────────────
+
+@router.get("/teacher/classes/{class_id}/students/{student_id}/sessions/{session_id}")
+def get_student_session_detail(
+    class_id: str,
+    student_id: str,
+    session_id: str,
+    teacher: User = Depends(require_teacher),
+    db: Session = Depends(get_db),
+):
+    cls = db.query(Class).filter(Class.id == class_id).first()
+    if not cls:
+        raise HTTPException(status_code=404, detail="班級不存在")
+    if teacher.role != "admin" and cls.teacher_id != teacher.id:
+        raise HTTPException(status_code=403, detail="無權限")
+    if not db.query(ClassMember).filter(
+        ClassMember.class_id == class_id, ClassMember.student_id == student_id
+    ).first():
+        raise HTTPException(status_code=404, detail="該學生不在此班級")
+
+    session = db.query(ExamSession).filter(
+        ExamSession.id == session_id,
+        ExamSession.user_id == student_id,
+        ExamSession.finished_at.isnot(None),
+    ).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="找不到此考試紀錄")
+
+    subject = db.query(Subject).filter(Subject.id == session.subject_id).first()
+    meta = {m["question_id"]: m for m in json.loads(session.session_questions or "[]")}
+    answers = db.query(Answer).filter(Answer.session_id == session_id).order_by(Answer.order).all()
+
+    details = []
+    for a in answers:
+        q = db.query(Question).filter(Question.id == a.question_id).first()
+        details.append({
+            "order": a.order,
+            "content": q.content if q else "",
+            "chosen": a.chosen,
+            "correct_answer": meta.get(a.question_id, {}).get("effective_answer"),
+            "is_correct": a.is_correct,
+        })
+
+    return {
+        "subject_name": subject.name if subject else "",
+        "year": session.year,
+        "sitting": session.sitting,
+        "score": session.score or 0,
+        "question_count": session.question_count,
+        "details": details,
     }
 
 

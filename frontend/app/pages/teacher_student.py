@@ -29,17 +29,111 @@ def session_row(s) -> rx.Component:
         ),
         rx.badge(s["score"].to_string(), "%", color_scheme="blue", variant="soft"),
         rx.text(s["question_count"].to_string(), " 題", size="1", color=rx.color("gray", 9)),
+        rx.icon("chevron-right", size=14, color=rx.color("gray", 7)),
+        on_click=TeacherState.load_session_detail(s["session_id"]),
+        cursor="pointer",
         width="100%",
         align="center",
         spacing="3",
         padding_y="2",
         border_bottom=f"1px solid {rx.color('gray', 3)}",
+        _hover={"background": rx.color("gray", 2)},
+        border_radius="4px",
+        padding_x="2",
+    )
+
+
+def session_detail_dialog() -> rx.Component:
+    return rx.dialog.root(
+        rx.dialog.content(
+            rx.vstack(
+                rx.hstack(
+                    rx.heading(TeacherState.session_detail_label, size="4"),
+                    rx.spacer(),
+                    rx.dialog.close(
+                        rx.button(
+                            rx.icon("x", size=16),
+                            variant="ghost",
+                            color_scheme="gray",
+                            size="1",
+                        ),
+                    ),
+                    width="100%",
+                    align="center",
+                ),
+                rx.separator(width="100%"),
+                rx.cond(
+                    TeacherState.session_detail_loading,
+                    rx.center(rx.spinner(size="3"), padding_y="6"),
+                    rx.cond(
+                        TeacherState.session_detail_items.length() > 0,
+                        rx.table.root(
+                            rx.table.header(
+                                rx.table.row(
+                                    rx.table.column_header_cell("#", width="40px"),
+                                    rx.table.column_header_cell("題目"),
+                                    rx.table.column_header_cell("作答", width="60px"),
+                                    rx.table.column_header_cell("正解", width="60px"),
+                                    rx.table.column_header_cell("結果", width="50px"),
+                                ),
+                            ),
+                            rx.table.body(
+                                rx.foreach(
+                                    TeacherState.session_detail_items,
+                                    lambda item: rx.table.row(
+                                        rx.table.cell(item["order"], justify="center"),
+                                        rx.table.cell(
+                                            rx.text(item["content"], size="1", no_of_lines=2),
+                                        ),
+                                        rx.table.cell(
+                                            rx.cond(
+                                                item["chosen"] != None,
+                                                rx.badge(item["chosen"], color_scheme="blue"),
+                                                rx.text("未作答", size="1", color=rx.color("gray", 8)),
+                                            ),
+                                            justify="center",
+                                        ),
+                                        rx.table.cell(
+                                            rx.badge(item["correct_answer"], color_scheme="gray"),
+                                            justify="center",
+                                        ),
+                                        rx.table.cell(
+                                            rx.cond(
+                                                item["chosen"] == None,
+                                                rx.text("—", color=rx.color("gray", 8)),
+                                                rx.cond(
+                                                    item["is_correct"],
+                                                    rx.icon("check", color=rx.color("green", 9), size=16),
+                                                    rx.icon("x", color=rx.color("red", 9), size=16),
+                                                ),
+                                            ),
+                                            justify="center",
+                                        ),
+                                    ),
+                                ),
+                            ),
+                            width="100%",
+                            variant="surface",
+                        ),
+                        rx.text("無資料", color=rx.color("gray", 8), size="2"),
+                    ),
+                ),
+                spacing="3",
+                width="100%",
+            ),
+            max_width="700px",
+            max_height="80vh",
+            overflow_y="auto",
+        ),
+        open=TeacherState.show_session_detail,
+        on_open_change=lambda v: TeacherState.close_session_detail(),
     )
 
 
 @rx.page(route="/teacher/student/[class_id]/[student_id]", on_load=[AuthState.load_user, TeacherState.load_student_progress])
 def teacher_student_page() -> rx.Component:
     return rx.box(
+        session_detail_dialog(),
         teacher_nav_bar(),
         rx.center(
             rx.vstack(

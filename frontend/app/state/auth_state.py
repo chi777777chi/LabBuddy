@@ -23,6 +23,11 @@ class AuthState(rx.State):
         error = self.router.page.params.get("error", "")
         self.show_suspended_error = error == "suspended"
 
+    def check_home_redirect(self):
+        """主選單 on_load：老師直接跳轉到 /teacher，避免渲染學生卡片造成閃爍。"""
+        if self.user_role == "teacher":
+            return rx.redirect("/teacher")
+
     def set_embedded_browser(self, val: str):
         self.is_embedded_browser = val == "true"
         self.browser_detected = True
