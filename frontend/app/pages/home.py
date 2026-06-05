@@ -154,7 +154,7 @@ def menu_card(icon: str, title: str, description: str, route: str) -> rx.Compone
     )
 
 
-@rx.page(route="/home", on_load=[AuthState.check_home_redirect, AuthState.load_user, AuthState.init_analytics])
+@rx.page(route="/home", on_load=[AuthState.load_user, AuthState.init_analytics])
 def home_page() -> rx.Component:
     return rx.box(
         nav_bar(),
@@ -167,23 +167,27 @@ def home_page() -> rx.Component:
                     padding_top="8",
                 ),
                 rx.cond(
-                    AuthState.user_role == "teacher",
-                    rx.box(
-                        menu_card("school", "我的班級", "管理班級、學生與公告", "/teacher"),
-                        max_width="240px",
-                        width="100%",
-                    ),
-                    rx.grid(
-                        menu_card("pencil", "開始測驗", "選擇科目與模式，開始練習", "/exam-setup"),
-                        menu_card("clock", "歷史紀錄", "查看過去的測驗成績與詳解", "/history"),
-                        menu_card("bookmark-x", "錯題複習", "針對答錯的題目加強練習", "/wrong-review"),
-                        menu_card("bar-chart-2", "學習分析", "AI 弱點分析與成績趨勢", "/analytics"),
-                        menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
-                        menu_card("school", "我的班級", "查看班級資訊與老師公告", "/my-class"),
-                        columns={"initial": "2", "sm": "3"},
-                        spacing="4",
-                        width="100%",
-                        max_width="720px",
+                    AuthState.user_role == "",
+                    rx.center(rx.spinner(size="3"), padding_y="8"),
+                    rx.cond(
+                        AuthState.user_role == "teacher",
+                        rx.box(
+                            menu_card("school", "我的班級", "管理班級、學生與公告", "/teacher"),
+                            max_width="240px",
+                            width="100%",
+                        ),
+                        rx.grid(
+                            menu_card("pencil", "開始測驗", "選擇科目與模式，開始練習", "/exam-setup"),
+                            menu_card("clock", "歷史紀錄", "查看過去的測驗成績與詳解", "/history"),
+                            menu_card("bookmark-x", "錯題複習", "針對答錯的題目加強練習", "/wrong-review"),
+                            menu_card("bar-chart-2", "學習分析", "AI 弱點分析與成績趨勢", "/analytics"),
+                            menu_card("user", "個人資料", "管理帳號與學習統計", "/profile"),
+                            menu_card("school", "我的班級", "查看班級資訊與老師公告", "/my-class"),
+                            columns={"initial": "2", "sm": "3"},
+                            spacing="4",
+                            width="100%",
+                            max_width="720px",
+                        ),
                     ),
                 ),
                 spacing="8",
