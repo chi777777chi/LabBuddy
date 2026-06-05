@@ -13,7 +13,7 @@ class AuthState(rx.State):
     user_name: str = ""
     user_email: str = ""
     user_avatar: str = ""
-    user_role: str = ""
+    user_role: str = rx.LocalStorage("")
     is_embedded_browser: bool = False
     browser_detected: bool = False
     show_suspended_error: bool = False

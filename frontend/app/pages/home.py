@@ -14,13 +14,17 @@ def nav_bar() -> rx.Component:
         ),
         rx.spacer(),
         rx.hstack(
-            rx.button(
-                rx.icon("bar-chart-2", size=15),
-                rx.text("學習分析", display={"initial": "none", "sm": "block"}),
-                on_click=rx.call_script("window.location.href='/analytics'"),
-                size="2",
-                variant="ghost",
-                color_scheme="violet",
+            rx.cond(
+                AuthState.user_role != "teacher",
+                rx.button(
+                    rx.icon("bar-chart-2", size=15),
+                    rx.text("學習分析", display={"initial": "none", "sm": "block"}),
+                    on_click=rx.call_script("window.location.href='/analytics'"),
+                    size="2",
+                    variant="ghost",
+                    color_scheme="violet",
+                ),
+                rx.fragment(),
             ),
             rx.cond(
                 AuthState.user_role == "teacher",
